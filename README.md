@@ -10,25 +10,26 @@ Intended to simplify diving into the new competition information and keeping up 
 Current functionality is limited to simple questions about the competition & discussion forum info.   
 Internally built as RAG tool (retrieval augmented generation).
 
+
 **Main current use cases:**
 1. high-level competition overview
 2. learn about topics in the discussion forum
 3. leaderboard info
-4. text interaction: quick & easy way to get information without sifting through many pages of competition
+4. text & voice-based interaction: quick & easy way to get information without sifting through many pages of competition
+
 
 ### Demo
-
-(https://raw.githubusercontent.com/VladKha/kaggle-competition-assistant/main/media/demo.mp4)
-
 https://github.com/user-attachments/assets/43972114-4d9e-4abd-a4be-95c0f89c6c15
+
 
 ## Setup & dependencies
 1. Python 3.11
 2. Docker
 3. RAM available for Docker: ~9GB 
 4. Create API keys and put them in the `.env` file (see `.env_example`)
-   - kaggle api key: [how to create](https://github.com/Kaggle/kaggle-api/blob/main/docs/README.md#api-credentials)
-   - gemini api key (no credit card required, free quota for >1k `gemini-1.5-flash` requests per day): [how to create](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
+   - Kaggle API key: [how to create](https://github.com/Kaggle/kaggle-api/blob/main/docs/README.md#api-credentials)
+   - Gemini API key (no credit card required, free quota for >1k `gemini-1.5-flash` requests per day): [how to create](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
+
 
 ## Run the assistant
 1. Dockerized implementation
@@ -37,14 +38,14 @@ https://github.com/user-attachments/assets/43972114-4d9e-4abd-a4be-95c0f89c6c15
    1. `make up` (or `docker compose --env-file .env up`)
    2. Wait until all services are ready (takes ~10 mins)
    3. Open [localhost:8501](http://localhost:8501) to view streamlit UI
-   4. Open the `kaggle-assistant` dashboard from the Grafana UI [localhost:3000/dashboards](http://localhost:3000/dashboards) to view monitoring dashboard
-      - grafana credentials: login - `admin`, password - `admin` (keep unchanged when prompted)
+   4. Open the `kaggle-assistant` dashboard from the Grafana UI [localhost:3000/dashboards](http://localhost:3000/dashboards) to view the monitoring dashboard
+      - Grafana credentials: login - `admin`, password - `admin` (keep unchanged when prompted)
    5. To shut down the application run `make down` (or `docker compose down`)
-2. Core standalone python library
+2. Core standalone Python library
 
-    It's also possible to run the core logic of the assistant just as a python library.
+    It's also possible to run the core logic of the assistant just as a Python library.
 
-    For the retrieval instead of hybrid retrival via OpenSearch a simple lexical search in-memory implementation will be used.   
+    For the retrieval, instead of hybrid retrieval via OpenSearch, a simple lexical search in-memory implementation will be used.   
 
     No monitoring and feedback collection.
 
@@ -96,10 +97,11 @@ Key folders and files:
   - [`dashboard.json`](monitoring/dashboard.json) - configurations of dashboard to load by grafana
   - [`init_dashboard.py`](monitoring/init_dashboard.py) - script to initialize dashboard from [`dashboard.json`](monitoring/dashboard.json)
 
+
 ## Technologies & techniques used
 1. Knowledge base creation
    - web scrapping: [selenium](https://selenium-python.readthedocs.io), [tenacity](https://github.com/jd/tenacity)
-   - api access: [kaggle api](https://github.com/Kaggle/kaggle-api)
+   - API access: [kaggle api](https://github.com/Kaggle/kaggle-api)
 2. Retrieval
    - data preprocessing & chunking: [langchain](https://github.com/langchain-ai/langchain)
    - lexical & semantic search: [OpenSearch](https://github.com/opensearch-project/opensearch-py)
