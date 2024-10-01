@@ -17,7 +17,10 @@ Internally built as RAG tool (retrieval augmented generation).
 4. text interaction: quick & easy way to get information without sifting through many pages of competition
 
 ### Demo
-[Video demo](media/demo.mp4)
+
+(https://raw.githubusercontent.com/VladKha/kaggle-competition-assistant/main/media/demo.mp4)
+
+https://github.com/user-attachments/assets/43972114-4d9e-4abd-a4be-95c0f89c6c15
 
 ## Setup & dependencies
 1. Python 3.11
