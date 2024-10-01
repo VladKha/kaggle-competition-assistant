@@ -6,7 +6,6 @@ import uuid
 import logging
 import base64
 import joblib
-import weave
 
 import streamlit as st
 from streamlit_extras.stylable_container import stylable_container
@@ -310,8 +309,7 @@ def create_ui():
     st.write(f"Thumbs up: {feedback_stats['thumbs_up'] or 0}")
     st.write(f"Thumbs down: {feedback_stats['thumbs_down'] or 0}")
 
-# Initialise the weave project
-weave.init('kaggle-assistant')
+
 logger.info("Kaggle Assistant application started")
 assistants = init_assistants()
 stt_model, tts_model = load_audio_models()

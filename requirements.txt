@@ -46,9 +46,6 @@ streamlit==1.38.0
 streamlit-extras==0.4.7
 streamlit-free-text-select==0.2.0
 
-# weights & biases monitoring
-weave>=0.51
-
 # audio (streamlit UI, text to speech, speech to text)
 streamlit-audiorecorder==0.0.5
 pydub==0.25.1

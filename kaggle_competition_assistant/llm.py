@@ -1,6 +1,5 @@
 import time
 import os
-import weave
 from typing import Optional
 
 import google.generativeai as genai
@@ -50,7 +49,6 @@ CONTEXT:
     return prompt_template.format(question=query, context=context).strip()
 
 
-@weave.op()
 @retry(wait=wait_fixed(60))
 def llm(prompt: str, model_choice: str = 'google/gemini-1.5-flash-latest') -> tuple[str, dict, float]:
     logger.info(f'Starting LLM request to {model_choice}...')

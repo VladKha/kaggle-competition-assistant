@@ -3,7 +3,6 @@ import time
 from pathlib import Path
 from typing import Optional, Union
 
-import weave
 from tenacity import stop_after_attempt, retry
 
 from .index.minsearch import MinSearchIndex
@@ -53,7 +52,6 @@ class KaggleCompetitionAssistant:
 
         logger.info(f'Competition data successfully ingested to {self.index_type}.')
 
-    @weave.op()
     @retry(stop=stop_after_attempt(2))
     def _query_rewriting_retrieval(self, query: str, num_results: int = 10,
                                    retrieval_configs: Optional[dict] = None,
@@ -104,7 +102,6 @@ Please analyze the question and provide your additional questions in parsable JS
 
         return retrieval_results
 
-    @weave.op()
     def query(self, query: str,
               retrieval_n_results: int = 10, retrieval_configs: Optional[dict] = None,
               query_rewriting=True,

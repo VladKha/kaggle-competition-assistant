@@ -1,15 +1,12 @@
 import json
 import logging
 
-import weave
-
 from kaggle_competition_assistant.llm import llm
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__file__)
 
-# @weave.op()
 # def speech_to_text(audio: pydub.AudioSegment):
 #     import pydub
 #     logger.info('Translating speech to text...')
@@ -25,7 +22,6 @@ logger = logging.getLogger(__file__)
 #     return text
 
 
-@weave.op()
 def evaluate_relevance(question, answer):
     prompt_template = """
 You are an expert evaluator for a Retrieval-Augmented Generation (RAG) system.
