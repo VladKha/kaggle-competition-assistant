@@ -1,0 +1,103 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 3 months ago
+
+
+### A lottery competition?
+The test data for this competition is too limited. Aren't you afraid it will
+become a lottery competition?
+
+
+## 10 Comments
+
+
+### [Abhijit89Kumar](/abhijit89kumar)
+One plausible solution to this will be to reward more positions than just the
+top 3?
+
+
+### [techniquetwice](/techniquetwice)
+Totally agree, the test data set is so small that my data processing steps
+don't make much sense, sometimes a mistake leads to better results.
+[@mkecera](https://www.kaggle.com/mkecera), Could you consider that?
+
+
+### [MichalKecera](/mkecera)
+Hi [@techniquetwice](https://www.kaggle.com/techniquetwice) and
+[@abhijit89kumar](https://www.kaggle.com/abhijit89kumar). That’s a valid
+concern. Please see my response below. This pretty much reflects our
+challenges in practice. Let us consider other options as competition
+progresses.
+
+
+### [MichalKecera](/mkecera)
+Hi [@yunsuxiaozi](https://www.kaggle.com/yunsuxiaozi),  
+Good question and this is a valid concern that we thought of as well. The data
+setup to large extent reflects the challenges we have in real operations when
+we are forecasting orders. Our forecasting horizon is typically a few months
+and we have pretty much the same data to work with in train. Yes, there will
+be more randomness than with large data sets but I see reasonable correlation
+of public to private. Also, there is some train data to play with for
+validation.
+
+
+### [torino](/pnmanh2123)
+Hi [@mkecera](https://www.kaggle.com/mkecera),
+> Also, there is some train data to play with for validation.
+What does this mean when you say that? That means some data from public test
+will be used to evaluate in private test, right? And if yes, then what
+percentage will it be used, as some posts mentioned we are getting closer to
+overfitting.
+
+
+### [MichalKecera](/mkecera)
+Hi [@pnmanh2123](https://www.kaggle.com/pnmanh2123)  
+I meant you can run a more robust CV with the train data available to devise a
+robust model. So that you don’t overfit to the public LB.
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+[@yunsuxiaozi](https://www.kaggle.com/yunsuxiaozi) even the training data is
+too small- this could be a lottery process, especially the public LB
+
+
+### [Thomas Meißner](/thomasmeiner)
+Yes and no.
+The dataset is pretty small, but still random seeds seems to have very little
+impact on the public LB at least.  
+This is still much better than the ICR competition where the dataset was
+small, CV and public LB mostly uncorrelated and random seeds had much impact.
+I think it is fine that we have to deal with uncertainty, but stretching the
+price spots would be good.
+
+
+### [Gunes Evitan](/gunesevitan)
+Besides test set being too small, there are other things to worry about.
+People can find leaky data from internet for the test period. Would they still
+be prize eligible in that case?
+
+
+### [Yan Teixeira](/yantxx)
+What? How? Is the test data published somewhere?
+
+
+### [MichalKecera](/mkecera)
+Hi [@yantxx](https://www.kaggle.com/yantxx),  
+Test data is not published anywhere. I think Gunes might be referring to using
+for example weather data. That would be leaky as you don't know the weather in
+advance when you are making the prediction.
+
+
+### [Gunes Evitan](/gunesevitan)
+Yes, that's exactly what I was referring to.
+
+
+### [MichalKecera](/mkecera)
+Hi [@gunesevitan](https://www.kaggle.com/gunesevitan),  
+Good question. This is addressed in the rules. We are hoping that the
+submissions are done in good faith and we will be checking for leaky data
+usage in which case it is not prize eligible.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1044449%2Fc1144b144920522c1001bf5a5980464c%2FScreenshot%202024-06-08%20at%2022.56.11.png?generation=1717880294292060&alt=media)
+
+
+### [Karam Elhaj](/karamelhaj)
+I think the best validation will win

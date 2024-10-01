@@ -1,0 +1,55 @@
+[aimind](/aimind) · Posted 3 months ago
+arrow_drop_up12
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### https://github.com/IBM/abductive-rule-learner-with-context-awareness
+Learning Abductive Reasoning using VSA Distributed Representations
+<https://github.com/IBM/abductive-rule-learner-with-context-awareness>
+<https://arxiv.org/abs/2406.19121> Learning Abductive Reasoning using VSA
+Distributed Representations
+We introduce the Abductive Rule Learner with Context-awareness (ARLC), a model
+that solves abstract reasoning tasks based on Learn-VRF.  
+ARLC features a novel and more broadly applicable training objective for
+abductive reasoning, resulting in better interpretability and higher accuracy
+when solving Raven's progressive matrices (RPM).  
+ARLC allows both programming domain knowledge and learning the rules
+underlying a data distribution. We evaluate ARLC on the I-RAVEN dataset,
+showcasing state-of-the-art accuracy across both in-distribution and out-of-
+distribution (unseen attribute-rule pairs) tests.  
+ARLC surpasses neuro-symbolic and connectionist baselines, including large
+language models, despite having orders of magnitude fewer parameters.  
+We show ARLC's robustness to post-programming training by incrementally
+learning from examples on top of programmed knowledge, which only improves its
+performance and does not result in catastrophic forgetting of the programmed
+solution.  
+We validate ARLC's seamless transfer learning from a 2x2 RPM constellation to
+unseen constellations. Our code is available at this https URL.
+comment
+
+
+## 1 Comment
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up1
+  * format_quote
+  * link
+Solves I-Raven IQ tests with 88% score, and demonstrates ability to generalize
+inferred rules & patterns to similar but unseen situations. They mentioned
+Chollet's ARC as a future research direction for this project.
+**Pros:**  
+Learn from all train samples simultaneously  
+88% score  
+**Cons:**  
+Learn spurious rules in some cases  
+No consistency (sharing) of rules learned across train samples  
+Bad performance in case of multiple shapes / colored groups  
+Only 3x3 grids ie 2 train rows + 1 test row
+**More references:**
+91% accuracy <https://huggingface.co/posts/VictorSanh/696955717140106>
+<https://paperswithcode.com/dataset/i-raven>

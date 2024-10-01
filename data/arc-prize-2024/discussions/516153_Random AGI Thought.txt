@@ -1,0 +1,143 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Random AGI Thought
+Seeing as this competitive process largely involves 2D Objects… (Largely..)
+Here is a random thought:  
+"I see in two dimensions. I infer a third (and fourth) dimension to that two-
+dimensional data. Why do I do that? The only really compelling reason to go
+through that process is that I _exist_ in 3 (and 4) dimensions. One hand
+traverses 3-space through time, to clap the other hand. They do this a number
+of inches in front of my face, which they do not intersect with. And my (two)
+eyes drink that in as shifting 2D images. Through time." How can we relate
+this to an entity that, although it too exists in 3 and 4 Dimensions, is
+baselined at 1D + time? It manages time at the nanosecond level and everything
+else is managed in the single dimension of RAM. Turing's "paper tape." We can
+code these concepts. But is there anything _else_ we can do? What possible
+choice do we have?
+"Is this going to be on the final?" - from the Alan Arkin movie, "Simon"
+comment
+
+
+## 3 Comments
+
+
+### [evoalg](/evoalg)
+arrow_drop_up1
+  * format_quote
+  * link
+What you said has merit, as the tasks were make by someone living in 3 (and 4)
+dimensions.  
+When we see a task that looks like the trace of a ball bouncing off a wall,
+the creator of the task was probably thinking about time elapsing between the
+input & output.  
+Furthermore, when humans try to solve tasks, I've come across a surprising
+amount of people coming up with stories while solving a task (that the creator
+of the task probably wasn't thinking about), where the stories seem to help
+that particular solver solve the task (eg "the light bulb at the side shines
+across and…", or "as long as I walk on the ice and don't step off, then…").
+That's only based on me asking my friends to solve a task out loud.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+** _Delightful!_** Can you recall your own "head talk" when you solved your
+first few? That was the very first thing I noticed: the almost-tech-meeting-
+like quality of my own head talk. Very reverent, quiet. DEFINITELY more than
+one voice. Usually an "engineer" and a "tester". Doesn't happen with anything
+else in life. This challenge has shown a soft, welcoming light on that
+process. (Nothing else has. Thanks,
+[@francois](https://www.kaggle.com/francois)) I've noticed that my head talk
+still has "group decision" qualities, but everyone is on board, and the "words
+exchanged" are very frugal. Lot's of "mm hm"s. But it's a vanishing
+phenomenon. It's almost reflex. So NLP has a strong place in AGI…  
+Just not "we mined this data from the internet" NLP. :-P  
+Thank you for your insights, [@evoalg](https://www.kaggle.com/evoalg) !!!
+
+
+### [evoalg](/evoalg)
+arrow_drop_up1
+  * format_quote
+  * link
+That's a really good point, how initially I think I had lots of head talk, but
+I've been looking at these puzzles for a few years now and I didn't
+consciously realize that I wasn't talking much now. Maybe that's why I'm
+surprised when asking a new person to solve a task out loud how much head
+talking there is with them.
+Nowadays I sort of go down formulaic paths in mostly a subconscious level,
+with only a little bit of talking.  
+I guess it's like when I play chess, most of my thinking is with no
+(conscious) voice at all. If I get into quite an unfamiliar position, then the
+talking tends to come back.  
+I guess it's the same as learning to drive vs driving for years, or after
+driving for many years then having to drive in a different country that drives
+on the other side of the road, where lots of talking would come back.
+I can relate to more than one voice going on too (the engineer and the
+tester). I wouldn't have consciously came up with it but now you mention it I
+seem to do that, even if it's with half-words or feelings - really difficult
+to describe. Maybe talking is actually going on but it slowly moves to a
+subconscious level, and maybe it's not with words but a sort of subconscious
+language, comprised of reflexes (as you say)?
+Humans seem to be really good at coming across a novel task (or problem /
+situation) and relating previous experiences, and it seems to help us solve
+those problems when we say to ourselves "That bit is kind of similar to that
+other situation I was looking at last week, and if I kind of change it a
+bit…".  
+AI's are notoriously weak at adapting previous experience to novel problems.
+Maybe they need an inner voice to help nut out the problem.  
+That seems really difficult to implement. LLMs may do this a little bit,
+because as they are chatting away, they take into account what they've just
+said (for every new word / token they then select).
+When I give an arc task to a new person, I notice that they come up with some
+imaginative stories, and it seems to help them understand what's going on in
+the puzzle even though they haven't solved it yet. Often, before it "clicks"
+(and they solve it) they come up with a story that's maybe close to the
+solution, and then they quickly adapt the story based on the output testing,
+and they quickly end up with a refined story that explains everything.  
+If I get the person to solve a few more few tasks, the stories slowly go away.
+Of course this depends on the task and person solving it, and also I've only
+asked a few people, so I'm not doing science here.  
+Also it may be that this is how humans do it, because we're not very good at
+arc puzzles, and there may be much more efficient AI thinking techniques that
+can solve Arc puzzles easily.
+One more thing, when humans solve an arc task, we usually _know_ we've solved
+it. It seems obvious once we've seen it, and we don't usually need a 2nd guess
+(like we have in the kaggle competition). I do it too, and I'm so confident
+that I don't even need to look at the answer (for a lot of the easier ones
+anyway). It seems that this is missing from current AI's.  
+Maybe when I _know_ a solution, the pattern jumps out at me once I've seen it
+(and it's difficult to un-see it).  
+Maybe I form a connection to the setter's mind, and I'm thinking "Ahhh I see
+what they are trying to do" (like what people do when solving a cryptic
+crossword puzzle).  
+Maybe I've just got used to how these Arc tasks have been set so there's
+usually only one clear answer.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Roger the 2nd guess. It's like an insult… unless you are "guessing."
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+o. m. g.  
+Hey listen, this was great. I mean it,
+[@francois](https://www.kaggle.com/francois) , your ARC_AGI is truly an
+excellent test of the real deal, the true black meat, the OG AI. But it won't
+be enough. The cool part is, you got a lot of hot guns aiming at Arc Prize
+2024, and you're bound to get closer. Meanwhile…  
+I think I can play by the rules and leave a public email addr. -
+[james.r.huddle@gmail.com](mailto:james.r.huddle@gmail.com)  
+It's been… A delight!

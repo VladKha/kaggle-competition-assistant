@@ -1,0 +1,44 @@
+[dragon zhang](/dragonzhang) · 166th in this Competition · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### submission file name and format problem.
+I just forked a public notebook to learn.
+However, there are cyclic submission error messages.
+when submission.json is selected, error is that zip file needed.
+when store.tar.gz selected, error is that submission.json needed.
+comment
+
+
+## 2 Comments
+
+
+### [dragon zhang](/dragonzhang)
+arrow_drop_up0
+  * format_quote
+  * link
+found solution in another discussion topic, to submit the notebook from editor
+page.
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+arrow_drop_up0
+  * format_quote
+  * link
+Hello, I am a new contestant who has joined this competition. I have found the
+submission location you mentioned. I was wondering how to modify the official
+sample_submission and submit it? My current code is as follows:  
+`  
+import zipfile  
+with open("/kaggle/input/arc-
+prize-2024/sample_submission.json",encoding='utf-8') as f:  
+test_solution=json.load(f)
+# 创建 ZIP 文件并添加 JSON 文件内容
+with zipfile.ZipFile("submission.zip", 'w') as zipf:  
+zipf.writestr('submission.json', json.dumps(test_solution))  
+`

@@ -1,0 +1,42 @@
+[Jainam213](/jainam213) · 425th in this Competition · Posted 3 months ago
+
+
+### Is this only limited to places?
+Up till now all interactions seem to be limited to locations. In the private
+set are we just limited to locations or can the word be **_anything_** at all
+? Are the categories provided somehow?
+
+
+## 3 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Keywords will be limited to person, place or thing.
+The categories are provided to the answering agent to resolve any ambiguity in
+the keyword. For example "orange" the fruit vs "orange" the color (which color
+is more of a concept than a thing, so it wouldn't be included anyway).
+
+
+### [Jainam213](/jainam213)
+Ok thanks!
+
+
+### [Jainam213](/jainam213)
+Ok let's wait for the organisers:
+    
+    
+    johnny
+    Posted 4 days ago
+    
+    The keywords will be within those three categories? This is the real question that needs to be answered by the hosts
+    
+    Bovard Doerschuk-Tiberi
+    KAGGLE STAFF
+    Posted 2 days ago
+    
+    Stay tuned, we'll make an announcement to address this. Thank you!
+    
+    
+    content_copy

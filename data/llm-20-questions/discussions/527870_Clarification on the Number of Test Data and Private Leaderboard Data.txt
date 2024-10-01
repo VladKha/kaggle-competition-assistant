@@ -1,0 +1,33 @@
+[ISAKA Tsuyoshi](/isakatsuyoshi) · 9th in this Competition · Posted 19 days
+
+### Clarification on the Number of Test Data and Private Leaderboard Data
+Hi everyone,
+I wanted to confirm the calculation regarding the private leaderboard data.
+Based on the information that the private leaderboard is calculated with
+approximately 70% of the test data, and the latest public dataset contains
+1500 instances, it seems the total number of test data instances should be
+5000.
+Here's the calculation:
+Given:
+  * Public dataset: 1500 instances (30% of the test data)
+  * Private leaderboard: 70% of the test data
+Using the equation:  
+0.3 * total_test_data = 1500
+We find:  
+total_test_data = 1500 / 0.3 = 5000
+Therefore, the private dataset should consist of:  
+0.7 * 5000 = 3500 instances
+Can someone confirm if this calculation is correct?
+Thank you!
+
+
+## 2 Comments
+
+
+### [JK-Piece](/jeannkouagou)
+The 70% displayed on the leaderboard is probably an automatic message. I am
+not sure this means we will have 3500 new keywords
+
+
+### [Songling](/wolfmedal)
+I think this is okay

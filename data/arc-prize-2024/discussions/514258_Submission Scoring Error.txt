@@ -1,0 +1,46 @@
+[ljcheng](/ljcheng) · 693rd in this Competition · Posted 3 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Submission Scoring Error
+Hi, it's my first time participate in ARC Prize competition and I met a
+problem I don't know how to solve.
+I submitted my predictions a few times, but the result was always "Submission
+Scoring Error". The log shew my notebook successfully ran and generated
+"submission.json"( and I I checked it). But unfortunately, the scoring system
+always took a long time and throw "Submission Scoring Error" :(
+Can anybody tell me how to solve this?
+comment
+
+
+## 3 Comments
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up1
+  * format_quote
+  * link
+I made a very simple notebook at the begging of the challenge that is able to
+score 0: <https://www.kaggle.com/code/ironbar/minimal-submission>
+Check that you are using the right format, also I remember reading some people
+that had problems when saving more than one json file. If you are saving
+multiple files try removing all except from the submission file.
+
+
+### [Claudio Scan](/claudioscan)
+arrow_drop_up4
+  * format_quote
+  * link
+I also encountered the same problem.😭
+
+
+### [Jean-Baptiste Sevestre](/jeanbaptistesevestre)
+arrow_drop_up0
+  * format_quote
+  * link
+Hi guys! Any update on that? I'm encountering the same problem :(

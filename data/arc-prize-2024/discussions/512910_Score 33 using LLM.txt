@@ -1,0 +1,99 @@
+[Sirish Somanchi](/sirishks) · Posted 3 months ago
+arrow_drop_up47
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Score 33 using LLM
+Jack Cole, winner of ARCathon 2023, uses LLM on Google TPUs and not program-
+synthesis used in earlier competitions. The approach is called AIRV (augment,
+inference, reverse augmentation, and vote), which is analogous to test-time
+augmentation.
+Read his interview here:  
+<https://lab42.global/community-interview-jack-cole/>
+comment
+
+
+## 8 Comments
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up7
+  * format_quote
+  * link
+**Update** : A new interview 2-days ago on YouTube:  
+[https://youtu.be/jSAT_RuJ_Cg?si=3_6YXNcqZD3rknwQ&t=2140s](https://youtu.be/jSAT_RuJ_Cg?si=3_6YXNcqZD3rknwQ&t=2140s)
+Jack Cole, Mohammed Osman and their collaborator Michael Hodel discuss how
+they tackled ARC (Abstraction and Reasoning Corpus) using language models. We
+also discuss the new "50%" public set approach announced today from Redwood
+Research (Ryan Greenblatt).
+Jack and Mohammed explain their winning approach, which involves fine-tuning a
+language model on a large, specifically-generated dataset and then doing
+additional fine-tuning at test-time, a technique known in this context as
+"active inference". They use various strategies to represent the data for the
+language model and believe that with further improvements, the accuracy could
+reach above 50%. Michael talks about his work on generating new ARC-like tasks
+to help train the models.
+They also debate whether their methods stay true to the "spirit" of Chollet's
+measure of intelligence. Despite some concerns, they agree that their
+solutions are promising and adaptable for other similar problems.
+
+
+### [Markus.JM](/maiernator)
+arrow_drop_up8
+  * format_quote
+  * link
+His team reached 38 today, incredible feat!  
+Thanks for the link
+
+
+### [Yassine Alouini](/yassinealouini)
+arrow_drop_up1
+  * format_quote
+  * link
+Interesting, first time I hear about this AIRV approach. Thanks for sharing.  
+Could you give some examples of `reverse augmentation`?
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up2
+  * format_quote
+  * link
+  1. Augmentation of both input+output = flip lr/ud, rot90, scale,.. gives original train samples + many augmented samples
+  2. Fine-tune using all samples from (1)
+  3. Reverse Augmentation ie undo the above augmentations from (1), to get many ways in which original input can be transformed (into corresponding output)
+  4. Vote and select the minimal/shortest transformations from (3). PS: Also verify that input is correctly mapped to output
+
+
+### [somebodyOnKaggle](/somebodyonkaggle)
+arrow_drop_up1
+  * format_quote
+  * link
+I think by far the coolest part here is the test-time fine-tuning. I feel like
+nobody does that in the LLM space. I'd love to here how much the three
+different areas each contributed (fine tuning, test-time fine tuning, and
+AIRV). This is so awesome!
+
+
+### [Harinder Singhani](/harindersinghani)
+arrow_drop_up-1
+  * format_quote
+  * link
+Do you try the approach AIRV?
+
+
+### [Quickpanda](/quickpanda)
+arrow_drop_up0
+  * format_quote
+  * link
+beside this article, is there any detailed paper or report about the winner
+approach of 2023 arcathon competition?
+
+
+### [Pranav Belhekar](/pranavbelhekar)
+arrow_drop_up1
+  * reply
+Thanks for sharing!

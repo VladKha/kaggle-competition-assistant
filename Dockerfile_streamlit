@@ -1,0 +1,30 @@
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+RUN pip install --upgrade pip
+
+# Install git and other dependencies for tts
+RUN apt-get update \
+    && apt-get install -y git gcc build-essential libsndfile1 ffmpeg \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY data data
+
+COPY app/* .
+COPY requirements.txt .
+
+RUN sh install_tts.sh # install text to speech dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+RUN python -c "import nltk; nltk.download('averaged_perceptron_tagger_eng')" # install text to speech dependencies
+
+COPY kaggle_competition_assistant kaggle_competition_assistant
+
+# Make the entrypoint script executable
+RUN chmod +x /app/streamlit_entrypoint.sh
+
+# Set the entrypoint
+ENTRYPOINT ["/app/streamlit_entrypoint.sh"]

@@ -1,0 +1,17 @@
+[inversion](/inversion) · 832nd in this Competition · Posted 3 months ago
+· Kaggle Staff
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ACTION REQUIRED: (Slightly) Updated Data
+Please note, the `evaluation` task files have been updated to address a small
+inaccuracy. You should re-download the data files from the Data Page.
+comment
+
+
+## 0 Comments

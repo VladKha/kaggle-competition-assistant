@@ -1,0 +1,52 @@
+[Merlin Richter](/merlinrichter) · Posted 4 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Internet not allowed in submission? What about LLM APIs?
+I am a bit confused.  
+This Competition is supposed to prove that AGI like performance is possible,
+but we are not allowed to use the internet at all?
+Am I supposed to train my own GPT4 for this real quick or how is this supposed
+to work?
+Can someone clarify how I am supposed to use the APIs?
+comment
+
+
+## 2 Comments
+
+
+### [chris](/chris62)
+arrow_drop_up4
+  * format_quote
+  * link
+Correct, no internet access is allowed (otherwise you could just call your own
+server and leak the entire private test set).
+Instead, you'll have to use open source models in the limited time window.
+They won't be as powerful as the APIs, but that's part of the challenge! In a
+couple of podcasts, the competition hosts talk about how the largest LLMs
+still have a lot of trouble with ARC, so a large LLM may or may not even be
+helpful with this task.
+You're also of course free to try it out with any LLM API outside of Kaggle -
+if you can get good performance on the public eval set, I'm sure the
+competition hosts would be very interested to hear that result as well!
+
+
+### [Merlin Richter](/merlinrichter)
+arrow_drop_up0
+  * format_quote
+  * link
+Alright, makes sense. I think for an intelligent AGI-like system you still
+would rather have a strong underlying model than a bad one (notebook can not
+even run Llama 70B) but ok. I get it.
+
+
+### [steubk](/steubk)
+arrow_drop_up1
+  * format_quote
+  * link
+That's not completely true
+😀<https://www.kaggle.com/code/simjeg/platypus2-70b-with-wikipedia-rag>

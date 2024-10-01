@@ -1,0 +1,35 @@
+[Alejandra Villarreal](/alejandravillarreal) · Posted 2 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Playing ARC games 🎮🕹️
+Hello everyone. 🤗  
+I wanna share some overthinking about the ARCprize.  
+In case u think I’m wrong please let me know, cause sometimes I think that I’m
+losing time.
+Well, I personally think that we need to manually solve several ARC games to
+understand the steps of reasoning process needed to decide a way to solve each
+example and then develop an algorithm of classification, then work on each
+clasificación.
+[Classification](/discussions?tags=13302-Classification)
+comment
+
+
+## 1 Comment
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+That seems like the best way to proceed! :-)  
+That said, you will find that there are very many classifications!!!  
+You may experience what I experienced… The process of solving them does not
+rely on classifying them (certainly not at first) And it isn't until you do
+quite a few that you have your first, "oh yeah, this was like that one,"
+reaction (the start of classifying).

@@ -1,0 +1,119 @@
+[Adetoye](/adetoyeshearigbabuwo) · Posted 3 months ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### My GPT4o Attempts
+I thought I had struck gold when gpt-4o solved the first task from my simple
+prompt.
+[GPT Chat](https://chatgpt.com/share/f1bbb8a6-07c0-4c47-bfb0-e72d93d62941)
+`#task_id = 007bbfb7` from the `training_challenges`.
+I applied the function returned by GPT-4o back into the train inputs and the
+results was consistent with expected output.
+Afterwards, I applied the function on the test_input then voila I got the
+expected test_output.
+[Notebook
+Link](https://www.kaggle.com/code/adetoyeshearigbabuwo/gpt4o-correct-solution-
+for-task-007bbfb7)
+However, after several attempts at running the same prompt, gpt failed to
+return the function that solved the task.
+My other attempts included,
+
+### 1\. Instruction tuning
+For this approach, I would check if the returned solution solves the problem
+on the training set, if it doesn't I will ask chatgpt to modify the solution,
+however this approach ended in a loop where the returned function keeps given
+the same output.
+[GPT Prompt](https://chatgpt.com/share/3ea304f8-f3b2-461c-a205-cfdfe5d4d617)
+
+### Here is another approach I tried.
+    
+    
+        For a given task, Given an input set I that relates to an output set O.
+    
+        if we ask chatgpt to return a function f1 that transforms I => O.
+    
+        then, when we apply f1 on I we get a new set of outputs, let call that R1 i.e f1(I) = R1
+    
+        if R1 = O then we apply f1 to the test_input and should get our expected test_output
+        otherwise, if R1 is not equal to O, then we know for certain that there exist a function f1 that maps I => R1.
+    
+        Futhermore, we can assume that there maybe some sort of relations between R1 and O, yet again we can ask chatgpt to try to find a relationship between R1 and O, then return a function f2 that transforms R1 => O.
+    
+        We can keep doing this until presumeably, chatgpt returns a function fn that correctly transforms some output R[n-1] to O.
+    
+        If such a function is found, then we can define F(x) = fn(fn-1(fn-1(...(f1(x))))) to be the function that defines the transformations between I and O.
+        Then we can calculate test_output = F(test_input) with the hopes getting the expected test_output
+    
+    
+    content_copy
+#### Pros & Cons of this Approach:
+  1. Pros: This approach is less likely to end up in a loop.
+  2. Cons: There are no assurances that there exist a meaning relation between ank R[k] and O.
+  3. Cons: There is a guarantee that we will find fn that transforms some Rn-1 to O. Hence F(x) can not be estimated.
+  4. Cons: even if we found F that transforms I => O. There is no guaranteed that F(test_input) will return the expected test_output
+[Notebook on this
+Approach](https://www.kaggle.com/code/adetoyeshearigbabuwo/a-recursive-llm-
+approach)
+Another attempt am considering is brute-force prompting: to keep sending the
+same prompt down to the model then maybe, just maybe chatgpt can end up
+spilling out the correct solution 😂😂😂.
+Remark: Although GPT4o failed to solve the problems but I must confess. when
+compared to other models I had attempted, gpt-4o showed the most level of
+reasoning in its approach, As such, I am strongly of the opinion that we can
+fine-tune GPT4o to improve it for this dataset.
+My approach for gathering the dataset for fine-tuning the GPT4o model would be
+  1. Writing an algorithm(A pseudo-code) that solves a particular challenge.
+  2. Prompt GPT to translate the algorithm into a python function
+  3. Apply the function across the training and test sets for the particular training_challenge.
+  4. If the function does not return desired output keep updating the algorithm manually, till gpt can confidently return a function that solves the challenge.
+  5. Then I will prepare a data-set for a prompt that seeks for the algorithm that translate the problem, then to generate a python function for that algorithm and then fine-tune the model using this dataset.
+My bias is that if gpt-4o can come up with a much more precise algorithm that
+translates the problem then it can easily write a python function for that
+algorithm. So the aim would be to fine-tune the model into generating better
+algorithms for the arc-agi problem.
+Cheers Every🍻, Thanks for your time, Am so excited to be a part of this
+challenge. Let's keep brainstorming, Cheers🍻.
+comment
+
+
+## 3 Comments
+
+
+### [Ian Ozsvald](/ianozsvald)
+arrow_drop_up3
+  * format_quote
+  * link
+Playing devil's advocate - what stops OpenAI seeing repeated uses of the
+public data (e.g. [Ryan Greeblatt's
+post](https://redwoodresearch.substack.com/p/getting-50-sota-on-arc-agi-with-
+gpt) referenced by [@nikotong](https://www.kaggle.com/nikotong) ) and then
+using it as training data inside ChatGPT? It'd then do great on the public
+set, but would still presumably fail on the test set (which never gets
+revealed because you can't make API calls, IIRC), but since it can't be used
+in the benchmark we'd never know it wouldn't work. Doesn't that make using any
+of these APIs just a distraction?
+
+
+### [HashPanda](/hashpanda)
+arrow_drop_up2
+  * format_quote
+  * link
+OpenAI says it doesn't train on interactions through the API. However, there
+is of course a very high likelihood that its training data is already
+contaminated.
+
+
+### [niko_tong](/nikotong)
+arrow_drop_up2
+  * format_quote
+  * link
+I saw that Ryan Greenblatt also used GPT-4o to complete this task. He
+collected 5000 GPT-4o responses for each question and filtered best 12 answers
+out . But GPT-4o is not an open source big model. I don't quite understand if
+using only the data obtained after fine-tuning the GPT-4o means that you have
+given up the generalization ability that is truly needed for this task.

@@ -1,0 +1,31 @@
+[Dawid Motyka](/dawidmt) · 46th in this Competition · Posted 20 days ago
+
+### [solved] Need help interpreting an error
+Hello,
+I got error in an agent which was working correctly for some time. The error
+occurred in guesser agent in guessing phase. There's no error in agent log.
+  1. If this was due to out-of-memory, would it be visible in agent logs?
+  2. If it was due to too long guess (>100 characters), would it bu visible in agent logs/replay?
+replay: <https://www.kaggleusercontent.com/episodes/55707092.json>
+Thanks for any help,  
+and good luck :)
+
+
+## 2 Comments
+
+
+### [loh-maa](/lohmaa)
+  1. I think it wouldn't.
+  2. A too long guess would be just truncated, AFAIK
+> {"action": "", "info": {},
+It looks like your agent returned None, so it could be just any exception
+being thrown. I might be wrong, though. Look at the agent log, too.
+
+
+### [Dawid Motyka](/dawidmt)
+Thank you for your answer :) I didn't notice empty 'action'. I think I also
+misinterpreted logs: this was during asking question, not guessing.
+So I bet it returned an empty string, or maybe None somehow, but there are no
+exceptions in agent log.
+edit: after investigating I think there's a small possibility that my agent
+returned empty string. Thanks for your help!

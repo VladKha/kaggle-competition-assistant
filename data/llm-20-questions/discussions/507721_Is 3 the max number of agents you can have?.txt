@@ -1,0 +1,28 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+### Is 3 the max number of agents you can have?
+I was wondering why the highest number of agents on the leaderboard I saw was
+only 3. What happens if I submit 4 models? Do I have to choose 3 of them to
+compete? Thanks in advance!
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+It looks like only your most recent 3 submissions contribute to your LB score.
+So if you have 3 and submit 1 more. Then your first (out of the original 3)
+stops counting toward your LB score (and instead your newest i.e. 4th sub
+begins counting).
+
+
+### [OminousDude](/max1mum)
+Can you choose which ones to use or is it the 3 newest?
+
+
+### [Chris Deotte](/cdeotte)
+I cannot figure out how to choose. So for me, it is my most recent 3.
+
+
+### [OminousDude](/max1mum)
+Ok thanks for the help!

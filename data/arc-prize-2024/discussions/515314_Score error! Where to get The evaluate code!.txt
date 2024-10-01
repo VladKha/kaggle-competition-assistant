@@ -1,0 +1,39 @@
+[yipin zhang](/yipinzhang) · 854th in this Competition · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Score error! Where to get The evaluate code!
+<https://www.kaggle.com/code/yipinzhang/fork-of-notebookc805568275/output>
+comment
+
+
+## 3 Comments
+
+
+### [Guohun Zhu](/guohun)
+arrow_drop_up0
+  * format_quote
+  * link
+Hi, I also met the similar problem, did you solve it?
+
+
+### [yipin zhang](/yipinzhang)
+arrow_drop_up0
+  * format_quote
+  * link
+submission.json here
+[submission.json](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2893146/20860/submission.json)
+
+
+### [yipin zhang](/yipinzhang)
+arrow_drop_up0
+  * format_quote
+  * link
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F19241012%2Fcf19d0205302122bfe331693e3b61802%2F1719506941482.jpg?generation=1719507391721857&alt=media)

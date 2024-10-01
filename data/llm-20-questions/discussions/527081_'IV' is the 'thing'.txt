@@ -1,0 +1,18 @@
+[Nakanishi](/naka84) · 668th in this Competition · Posted 23 days ago
+
+### 'IV' is the 'thing'
+I found the "IV" in the keywords.py 🫠  
+I don't know if this represents a number or stands for other term, but I'm
+curious about how to collect those keywords and those keywords are checked or
+not.
+Did you find any other interesting keyword?  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1276367%2Fca0556ec0a91578adec9522681e24c04%2F2024-08-10%2011.37.50.png?generation=1723257548659287&alt=media)
+
+
+## 1 Comment
+
+
+### [Nicholas Broad](/nbroad)
+It probably stands for Intravenous
+<https://en.wikipedia.org/wiki/Intravenous_therapy>

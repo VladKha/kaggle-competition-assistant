@@ -1,0 +1,29 @@
+[Yuang Wu](/yuangwu) · 78th in this Competition · Posted a month ago
+
+### Submission of llama 3.1
+Has anyone succeeded to submit when using llama3.1-8B-Instruct? I encountered
+the problem of file size exceeding the maximum size of 19.5GB on kaggle
+notebooks. May anyone gives some advice? Thanks a lot…
+
+
+## 3 Comments
+
+
+### [Paul Pawletta](/paulpawletta)
+For me the following works:
+  1. copy Llama 3.1 to /kaggle/tmp  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F12162880%2Ffe6364fea3f3bcda4313efa0a9464ffe%2FScreenshot%202024-08-06%20at%2015.06.03.png?generation=1722949598040510&alt=media)
+  2. later build the tar-file for submission  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F12162880%2Fc9a052e004416bf67402a1fff72c8e25%2FScreenshot%202024-08-06%20at%2015.08.14.png?generation=1722949834088836&alt=media)
+
+
+### [Yuang Wu](/yuangwu)
+Well, I downloaded the model directly to /kaggle/tmp/submission…
+
+
+### [ERI_GOOO!](/erihu2333)
+Hi, have you solved this problem? Even though I copy Llama 3.1 to /kaggle/tmp
+and then build the tar-file for submission, the file size still exceeds the
+maximum size of 19.5GB on kaggle notebooks.💔

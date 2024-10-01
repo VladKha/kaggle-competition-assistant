@@ -1,0 +1,117 @@
+[Thoko Malizani](/thokomalizani) · Posted 2 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Instructions are unclear about multiple inputs
+Perhaps I misread the rules, but they don't seem to explain what is required
+of us in cases where there is not just one input and one output. For example,
+if there are two inputs, does that mean there will be two outputs? I feel that
+the instructions need to be made clearer
+comment
+
+
+## 1 Comment
+
+
+### [Tyler Vigen](/tylervigen)
+arrow_drop_up4
+  * format_quote
+  * link
+Yes. See here for an example: <https://arcprize.org/play?task=12997ef3>
+On the bottom of the test side of the page, you'll see "[**Previous**] Test 1
+of 2 [**Next**]." If you click next, you'll see the second test input/output
+pair.
+There are two inputs and two outputs for the test in that puzzle.
+In the data, the double-input is represented like thsi:
+    
+    
+    {
+        "12997ef3": {
+            "test": [
+                {
+                    "input": [
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 2, 0, 8, 0, 3, 0, 6, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                    ]
+                },
+                {
+                    "input": [
+                        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+                        [0, 7, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                    ]
+                }
+            ]
+        }
+    }
+    
+    
+    content_copy
+Therefore, the correct solution contains multiple outputs, like this:
+    
+    
+    {
+        "12997ef3": [
+            [
+                [0, 2, 2, 0, 8, 8, 0, 3, 3, 0, 6, 6],
+                [2, 2, 0, 8, 8, 0, 3, 3, 0, 6, 6, 0],
+                [2, 2, 0, 8, 8, 0, 3, 3, 0, 6, 6, 0]
+            ],
+            [
+                [0, 7, 0],
+                [7, 7, 7],
+                [0, 7, 0],
+                [0, 6, 0],
+                [6, 6, 6],
+                [0, 6, 0],
+                [0, 3, 0],
+                [3, 3, 3],
+                [0, 3, 0],
+                [0, 2, 0],
+                [2, 2, 2],
+                [0, 2, 0]
+            ]
+        ]
+    }
+    
+    
+    content_copy
+Other examples of double outputs in the evaluation data:  
+1d398264  
+31d5ba1a  
+3b4c2228  
+4852f2fa  
+4c177718  
+5d2a5c43  
+6ea4a07e  
+8b28cd80  
+9110e3c5  
+9b4c17c4  
+b1fc8b8e  
+bbb1b8b6  
+c074846d  
+d5c634a2  
+da2b0fe3  
+e21a174a  
+e345f17b  
+f3e62deb

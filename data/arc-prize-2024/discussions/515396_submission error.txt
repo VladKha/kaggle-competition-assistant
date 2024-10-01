@@ -1,0 +1,48 @@
+[emoji_people](/barirahzainal)
+[Barirah Zainal Abidin](/barirahzainal) · 814th in this Competition · Posted 3
+arrow_drop_up-1
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### submission error
+here my notebook = <https://www.kaggle.com/code/barirahzainal/my-project-arc-
+prize-2024-submission-15> . can someone expert to help me solve problem
+submission error? thank you
+comment
+
+
+## 3 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up3
+  * format_quote
+  * link
+I think [@alexis1024](https://www.kaggle.com/alexis1024) is correct. You could
+run a small sample and test it against this scoring function which will tell
+you if it is the correct format or not
+<https://www.kaggle.com/code/gregkamradt/arc-prize-scoring>
+You can also look at the submission.json that is default when the notebook
+loads to make sure you are using the same format there.
+
+
+### [alexis1024](/alexis1024)
+arrow_drop_up2
+  * format_quote
+  * link
+I think you output only one test case for each task, some tasks have several
+input test cases you can check my dummy sumbmission
+<https://www.kaggle.com/code/alexis1024/empty-successful-submission/>  
+also you might want to have a try/catch and fall back to a empty answer with
+the write format, just to check if you have a python error somewhere
+[emoji_people](/barirahzainal)
+
+
+### [Barirah Zainal Abidin](/barirahzainal)
+arrow_drop_up0
+  * format_quote
+  * link
+ok . thank you for your suggestion . i will try fix it 😉

@@ -1,0 +1,39 @@
+[gromml](/gromml) · 143rd in this Competition · Posted 12 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Empty outputs
+Is it right that a correct answer should contain at least one cell? In other
+words, I would like to know whether it is guaranteed that (where `x` is a
+correct test output for one test input):
+    
+    
+    len(x.shape) == 2
+    x.shape[0] >= 1
+    x.shape[1] >= 1
+    
+    
+    content_copy
+Knowing this will help me simplify some of my code. Thanks.
+comment
+
+
+## 1 Comment
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+The smallest matrix dimension is 1x1. You will not have an empty matrix,
+either as input or output. You should not have to do any checking to see if
+either matrix is (or will be) [[]]. And all matrices will be normal (numpy
+acceptable) matrices, where the number of cells (columns) is the same for each
+row.
+That said, [[0,0,0,0],[0,0,0,0],[0,0,0,0]] is a valid input or output. So it
+sort of depends on how you define "Empty".

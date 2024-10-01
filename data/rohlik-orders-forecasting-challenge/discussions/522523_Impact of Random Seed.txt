@@ -1,0 +1,21 @@
+[karimzade](/karimzade) · 217th in this Competition · Posted 2 months ago
+
+
+### Impact of Random Seed
+I set the random seed 777 and 42. That's how the scores changed:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16130458%2F11ae9a5f780ec5ce6a5f335ab8715441%2FScreenshot%20from%202024-07-26%2017-18-03.png?generation=1722000243726737&alt=media)
+If the public score is so sensitive, there may be a mighty shakeup when the
+private score is announced.
+
+
+## 2 Comments
+
+
+### [namnguyen](/manh152924)
+with small test size, we will have big shakeup.
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+We are in for a flipped leaderboard in a month’s time if this is happening now
+[@karimzade](https://www.kaggle.com/karimzade)

@@ -1,0 +1,28 @@
+[Cody Creed](/codycreed) · Posted 3 months ago
+
+### Binary Search Strategy
+Is there a team that is pursuing binary search strategy to eliminate half the
+possibilities each time? It would require a lot of tokens in the question.  
+I would like to join that team. I’m a teacher, and only a code dabbler but I
+like that strategy from playing “guess who.”
+[Binary Classification](/discussions?tags=14201-Binary+Classification)
+
+
+## 2 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+The max question length is 2000 characters which would limit this strategy.
+
+
+### [Cody Creed](/codycreed)
+I know so little about this that I believe it’s still possible. Now I will
+have to try.
+
+
+### [OminousDude](/max1mum)
+Would something like this be allowed in this competition
+though?![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F8531166%2Faa15182ce9e907740555f3e491708bd3%2FScreenshot%20from%202024-05-27%2010-30-09.png?generation=1716820276557877&alt=media)

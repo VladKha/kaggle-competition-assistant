@@ -1,0 +1,176 @@
+[Peter CXL](/a6893676) · 737th in this Competition · Posted 10 days ago
+arrow_drop_up-4
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### (Soldeved)
+It's a stupid question maybe^^, but if it's 92% I don't think my focus will be
+on this competition~
+It's 46%, we have long way to go~
+comment
+
+
+## 7 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Where did you get the 92% figure?  
+I mean, you can click and see the leaderboard, right?  
+There's the public leaderboard, which by being a little more lax, is also,
+unverified until it's tried on the private (hidden) test dataset… But that's
+not 92%, either.  
+Ahh… The **Public Leader board is 42% (Forty Two)**. Based on your follow-ups,
+you might have just seen that incorrectly.
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+it's 46% in the public leader board, 46*2 is 92 bro~
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Oh… OK. Thanks. It wasn't at all obvious that you had calculated the 92 from
+the 46. Most of us are struggling to get past 26, which was basically handed
+to us from 2023. An actual score of 92 would be damn near impossible. And yet
+there was some recent chatter about a potential score in the high 80's. So I
+assumed you had seen something. That's why I asked. I didn't realize that you
+had simply multiplied the high score by two. Even though it was right there in
+front of me. The simple math part, anyway. I did ask myself, "would he have
+simply doubled.." but rejected that notion. So, I guess my bad for asking _my_
+stupid question… Best of luck.
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+Best of luck~
+
+
+### [ExplorersAnchorage](/explorersanchorage)
+arrow_drop_up0
+  * format_quote
+  * link
+Where is the actual code from 2023? I cannot find it. Thank you
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+This is an early version:  
+<https://www.kaggle.com/code/mehrankazeminia/3-arc24-developed-2020-winning-
+solutions>  
+gives you 26 pts in 4.5 hours… Plant a tree.
+Hide repliesarrow_drop_up
+
+
+### [gromml](/gromml)
+arrow_drop_up2
+  * format_quote
+  * link
+In short, 46%.
+However, we should keep in mind that one task can consist of 2 test inputs.
+So, if your submission produced a correct output for only one test input of
+this task (and an incorrect output for the other input), you get 0.50 for this
+task (out of 1.00).
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+Thx~It's helpful~
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+By the way, I'm a single eye people(I can use only my left eye or right eye or
+both, when I use my left eye I'm like gpt4, when I use my right eye I tend to
+be a logical person.) Hope this would be useful to guys in this competition~
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+Not as strong as gpt4, but when I use my left eye I'm better at remembering
+things. But when I use my right eye I'm better at finding regular pattern in
+things.
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+So I think the neural network biologically behind two eyes are at least
+slightly different.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+That's pretty incredible. I have a similar condition. All my life I have
+bounced between genius and mental retardation (1970's term). Only this year
+did I realize how the genius comes and goes. With me, when I wake up,
+depending on which side I am sleeping on, I either "am" this searing genius,
+pushing toward unimaginable goals, or I'm an idiot who can't get a movie scene
+out of my head. I have very little control over it (I'd trade for your "close
+one eye" method in a heartbeat). But it has occurred to me that there is
+possibly a physical link to my corpus callosum, which bridges the brain's
+hemispheres. Sometimes (early morning) it's wide open and is my best friend.
+Other times, I just feel abandoned to… whatever. I can't thank you enough for
+sharing.
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+If a movie scene can't get out of head, watch more beautiful movies James^^.
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+I think if we mimic the design of neural networks behind the right eye, then
+there will be the time of agi.
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+For me there seems connection between left brain and right brain too. And I
+think it's the same for all people.
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+As for my situation, as long as I control the intimate relationship with
+girls, it's fine. But it's hard to do.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Word.
+Hide repliesarrow_drop_up

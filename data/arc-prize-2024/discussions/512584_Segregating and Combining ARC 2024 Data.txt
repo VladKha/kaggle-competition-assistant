@@ -1,0 +1,32 @@
+[Muhammad Tariq Pervez](/tariqcp) · Posted 3 months ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Segregating and Combining ARC 2024 Data
+Dear all, we have created a notebook which creates dataframes for train
+input/output, test input/output and finally combines all train data in single
+dataframe so it may be used conveniently for developing various models. Here
+is the detail you can get the desired dataframe and csv file using our
+notebook or some lines of the code.
+**Dataset Description** | **CSV File Name** | **Usage**  
+---|---|---  
+Train input and output for ARC 2024 train challenges | arc_2024_train_challenges_train_input_output.csv | Training/Validation  
+Test input for ARC 2024 train challenges | arc_2024_train_challenges_test_input.csv | Prediction  
+Test input and output for ARC 2024 train challenges | arc_2024_train_challenges_test_input_output.csv | Training/Validation  
+Train input and output for ARC 2024 evaluation challenges | arc_2024_evaluation_challenges_train_input_output.csv | Training/Validation  
+Test input for ARC 2024 evaluation challenges | arc_2024_evaluation_challenges_test_input.csv | Prediction  
+Test input and output for ARC 2024 evaluation challenges | arc_2024_evaluation_challenges_test_input_output.csv | Training/Validation  
+Train input and output for ARC 2024 test challenges | arc_2024_test_challenges_train_input_output.csv | Training/Validation  
+Test input for ARC 2024 test challenges | arc_2024_test_challenges_test_input.csv | Prediction  
+Complete train data for ARC 2024: This dataset combines data which is in input/output format from all files i.e. training, evaluation and test (challenges/solutions) | arc_2024_complete_train.csv | Training/Validation  
+link is:<https://www.kaggle.com/code/tariqcp/segregating-and-combining-arc-2024-data> |  |   
+  
+comment
+
+
+## 0 Comments

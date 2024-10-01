@@ -1,0 +1,61 @@
+[Michael Poluektov](/michaelpoluektov) · Posted 3 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Model checkpoints under non-commercial licences?
+Hi, I was wondering if we were allowed to use pre-trained model checkpoints
+licensed under CC-BY-NC or similar licenses? I understand our submission has
+to be MIT, but there's a quote in the rules about a potential exception:
+> If your winning solution has been generated with input data or pre-trained
+> models which either host or participant determine has been produced with an
+> incompatible license, you will have to provide the organizers with a
+> detailed description, to the Competition Sponsor’s satisfaction, of how the
+> winning submission was generated. This includes a detailed description of
+> methodology, where one must be able to reproduce the approach by reading the
+> description, and includes a detailed explanation of the architecture,
+> preprocessing, loss function, training details, hyper-parameters, etc. The
+> description should also include a link to a code repository with complete
+> and detailed instructions so that the results obtained can be reproduced.
+> Whether a submission meets the eligibility criteria or not shall be
+> determined by the Competition Sponsor, whose decision shall be final.
+Before I commit to anything, is it possible to get a clarification on this?
+For example, if checkpoints, training code and data are all available, but
+only under a non-commercial licence, are those criteria met?
+Could you provide examples of models that meet those criteria and models that
+don't?
+comment
+
+
+## 2 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up3
+  * format_quote
+  * link
+Hey! Thanks for asking!
+Models that wouldn't work would be like gpt-4 and claude sonnet. We don't have
+insight into their inner workings and wouldn't be able to reproduce the
+results from scratch.
+Models that do work are like llama 3, where everything is open sourced. Even
+though llama has restrictions around commercial use, etc. This is the "you
+will have to provide the organizers with a detailed description, to the
+Competition Sponsor’s satisfaction, of how the winning submission was
+generated" part
+So as long as the model is 100% explainable and can be made publicly available
+(at the end of the competition it would work)
+
+
+### [S J Moudry](/sethmoudry)
+arrow_drop_up0
+  * format_quote
+  * link
+Hi [@gregkamradt](https://www.kaggle.com/gregkamradt), a related question: Are
+datasets for fine tuning which are licensed as "Attribution-NonCommercial 4.0
+International" for example allowed, as long as we can provide steps to
+reproduce?

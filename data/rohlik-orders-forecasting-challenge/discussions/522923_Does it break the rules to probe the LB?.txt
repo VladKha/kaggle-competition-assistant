@@ -1,0 +1,109 @@
+[Aleix Gimenez](/aleixgim) · 430th in this Competition · Posted 2 months ago
+
+
+### Does it break the rules to probe the LB?
+The organizers have mentioned that they will check winning submissions for
+violations of the rules. I understand that external data is disallowed, but
+could the organizers clarify to what extent it's okay to probe the LB?
+To give an example, I've seen this code in a public notebook:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F311485%2F25033ea3bfb46eff8e58593867950d93%2FScreenshot%202024-07-29%20at%2007.55.22.png?generation=1722232682598435&alt=media)
+These are overall factors that multiply the predictions of the model. Although
+these numbers could come from an honest study using only train data, they
+could also be obtained by probing the public LB. Is this allowed?
+To clarify my point, although public and private LB are based on a different
+subset of the data, it is likely there is leakage from one to the other:
+  * If the public/private split is random, for each warehouse you can estimate the average number of orders during the test set by probing the LB.
+  * If the split is a temporal one, one can still extract useful information. For instance, if public LB contains the first 3 weeks of data, you can extract the average orders during these 3 weeks, which is "future" information from the point of view of the competition.
+In both cases, this info can be used to calibrate the models as in the picture
+above.
+To summarize, is it okay to probe the LB and use the results to calibrate the
+overall volume of orders in our models? If this is disallowed, how will this
+be checked?
+
+
+## 6 Comments
+
+
+### [MichalKecera](/mkecera)
+Hi [@aleixgim](https://www.kaggle.com/aleixgim),
+Good point. Thanks.
+The goal of the competition is to have an automated system that is also
+leakage free. So if there is some automated way that these factors were
+created with and it does not use any data from future, then we would allow it.
+If these factors are obtained by probing the LB then this is not replicable in
+real world and the solution uses future data from test set which is not
+allowed. There is clear leakage.
+Hope this clarifies it.
+Michal.
+
+
+### [torino](/pnmanh2123)
+Hi [@mkecera](https://www.kaggle.com/mkecera) ,  
+Is it allowed if I use prediction as training data? Predict 60 days to to
+long, so I am thinking of using autoregression(like in LLM), basically i will
+predict a next day for each warehouse and use the predicted day for re-
+training, then keep repeating till end of data.
+
+
+### [Arnold Kakas](/arnoldkakas)
+I don't see a reason why this would not be allowed, it is a standard recursive
+approach to use a forecasted values as a predictor
+
+
+### [torino](/pnmanh2123)
+thanks for confirming. If it is allowed, I would try it.
+
+
+### [MichalKecera](/mkecera)
+Yes, that's ok.
+
+
+### [Aleix Gimenez](/aleixgim)
+Hi [@mkecera](https://www.kaggle.com/mkecera), thanks for confirming this
+behavior is not allowed. I have no interest in using "future" data, but I
+wanted to make sure others won't use it either :)
+That's why I asked the second part of the question, namely, how will you check
+for wrong behavior? For example, how can you know whether training
+hyperparameters are determined by probing or not?
+
+
+### [torino](/pnmanh2123)
+[@aleixgim](https://www.kaggle.com/aleixgim), we can check it by finding fixed
+parameters in a notebook, something like above. I think checking it is simple,
+he only needs to check 3 prize notebooks.
+
+
+### [MichalKecera](/mkecera)
+[@aleixgim](https://www.kaggle.com/aleixgim)  
+We will be confirming if the algorithms/models/notebooks we get to claim the
+prize don't violate the rules. It would be difficult to hide this.
+
+
+### [BOOBA](/youneseloiarm)
+Hi [@mkecera](https://www.kaggle.com/mkecera),
+Could I ask about the current record of the MAPE metric with this dataset, at
+least for a 1-month unseen dataset your team has worked on offline (real
+world)?
+We observed that in the public leaderboard, the top 10 have MAPE < 0.035. We
+are unsure if this is due to leaking on the public leaderboard or the use of
+an exceptionally robust model. We understand that we are dealing with a
+forecasting problem with few features in the dataset. Please let us know your
+team's current record for the unseen dataset (at least 1 month). This will
+help us determine if we can break that record and if this competition could
+potentially break your team's record.
+Thank you.
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+Haha, I feel like you're talking about me. I don't know the attitude of the
+organizers of the competition, and I'm not currently at the forefront of the
+competition. My methods can indeed improve my scores to a certain extent. I
+hope to learn from the front row solution after the competition.
+
+
+### [Aleix Gimenez](/aleixgim)
+I mentioned your code as an example haha I'm quite sure LB probing should help
+in this competition, so I wanted to understand how the organizers are planning
+to address it. I'd prefer not to use LB probing, but I'd feel stupid if
+everyone else is doing it except for me.

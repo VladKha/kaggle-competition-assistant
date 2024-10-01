@@ -1,0 +1,25 @@
+[Benjamin Maréchal](/irmo322) · Posted 3 months ago
+
+
+### `keyword.py` only contains places, no people, no things
+Hi !
+I expected `keywords.py` to contain examples of places, people and things.
+Instead, it only contains places in three categories : 'country', 'city', and
+'landmark'.
+What am I missing here?
+
+
+## 2 Comments
+
+
+### [OminousDude](/max1mum)
+They will add more any day now but for right now there are only places.
+
+
+### [Aryan Singh](/aryansingh0909)
+Is there any mention of this somewhere? I can't seem to find it.
+
+
+### [OminousDude](/max1mum)
+Check this discussion:  
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/509035>

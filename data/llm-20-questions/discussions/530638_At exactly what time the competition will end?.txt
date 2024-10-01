@@ -1,0 +1,27 @@
+[Kha Vo](/khahuras) · 13th in this Competition · Posted 5 days ago
+
+### At exactly what time the competition will end?
+Should it be at the default time as usual for all Kaggle competition?  
+23:59:59 2024-08-29 UTC?  
+If so, will [@bovard](https://www.kaggle.com/bovard) or Kaggle stop all games
+at the exact time?
+
+
+## 4 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Good luck Kha Vo! I am hoping that you win solo gold and become Kaggle
+Competition Grandmaster!
+
+
+### [Kha Vo](/khahuras)
+Thanks Chris. Such a pleasure to see your bless. I also hope that comes true.
+I’ve had good memories and learned new things here, so in case I couldn’t make
+it I’ll get that as extra motivation and come back stronger very soon.
+
+
+### [dynamic24](/dynamic24)
+I'm assuming that they will stop at the above time and any games in progress
+won't count (similar to code competitions). I think the stop time is 23:59:00
+though.

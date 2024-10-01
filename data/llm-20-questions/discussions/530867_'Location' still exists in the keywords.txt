@@ -1,0 +1,66 @@
+[Ariocx](/ariocx) · 99th in this Competition · Posted 3 days ago
+
+
+### 'Location' still exists in the keywords
+[@bovard](https://www.kaggle.com/bovard)  
+In my recent failure(EpisodeId:55914594), 'Austria' was chosen as the keyword,
+and my teammate had clearly received the prior knowledge that the keyword
+could only be a 'thing'. Meanwhile, the opponent asked midway if the keyword
+was a type of location, so we inevitably lost.  
+Therefore, I hope that the result of this episode can be disregarded.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4842998%2F959c6c99dc57bdccbffed8546f83fbeb%2F925f58d9-9b2d-4f2a-8be6-94cc2fae2363.png?generation=1724917978598502&alt=media)
+Otherwise I would very likely miss out on my first 🥉.🥺
+
+
+## 10 Comments
+
+
+### [torino](/pnmanh2123)
+15 hours left to end competition, we can't do anything now. I'm praying for my
+silver 😂
+
+
+### [Ariocx](/ariocx)
+I tried my best, and now all we need is 🙏🙏🙏
+
+
+### [so_so](/shunsukeohashi)
+Yeah, there are non-thing keywords… (I noticed "Ohio" being used, so there
+could be more of them)  
+I really wish that host took a more careful look into the keyword list rather
+than taking time to adjust the "confidence".  
+Having the right keyword list is more important than having the right
+"confidence" in my opinion.
+BTW: Changing the confidence has led my bot to drop from gold to bronze medal.
+Sad… :(  
+I really hope the HOST does not make ANY changes after the final submission
+deadline, except for fixing bugs or mistakes like an incorrect keyword list.
+
+
+### [gguillard](/gguillard)
+> I really hope the HOST does not make ANY changes after the final submission
+> deadline, except for fixing bugs or mistakes like an incorrect keyword list.
+Not to mention that the host has been _repeatedly_ warned of the scoring's
+shortcomings, by _many_ people, and had plenty of time to consider
+alternatives _before_ the submission deadline…
+
+
+### [Kha Vo](/khahuras)
+Another confidence restart and 1 day extend would be great! 🥹
+
+
+### [loh-maa](/lohmaa)
+I wouldn't mind running it all over again, with proper fixes and parameters,
+fully on schedule from start to finish just 1 week… but otherwise it's not
+easy to cope with such a rollercoaster..
+
+
+### [ivan](/sorokin)
+[@ariocx](https://www.kaggle.com/ariocx) sorry about this 😅, indeed my agent
+only fine-tuned on "things" keywords. I wonder what
+[@paulpawletta](https://www.kaggle.com/paulpawletta) used for questioner?
+
+
+### [KKY](/evilpsycho42)
+Oh…..Its the time for Quantum mechanics

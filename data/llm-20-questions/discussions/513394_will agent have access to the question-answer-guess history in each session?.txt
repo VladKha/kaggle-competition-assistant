@@ -1,0 +1,77 @@
+[Haolx0824](/haolx0824) · 141st in this Competition · Posted 2 months ago
+
+
+### will agent have access to the question/answer/guess history in each
+session?
+will agent have access to the question/answer/guess history in each session?
+
+
+## 4 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Yes, our agent receives the entire history. It is contained in the `obs`
+dictionary. Here is an example of the dictionary's values for an agent that
+just randomly asks questions. This is the `obs` dictionary during somewhere
+around round 16:
+obs = {'remainingOverageTime': 300, 'questions': ['Is it equatorial guinea?',
+'Is it lyon france?', 'Is it hermosillo mexico?', 'Is it malta?', 'Is it
+belarus?', 'Is it porto portugal?', 'Is it istanbul turkey?', 'Is it dallas
+texas?', 'Is it orlando florida?', 'Is it caracas venezuela?', 'Is it libya?',
+'Is it zunyi china?', 'Is it mexico city mexico?', 'Is it london england?',
+'Is it osaka japan?', 'Is it enugu nigeria?'], 'guesses': ['kathmandu nepal',
+'slovenia', 'dhaka bangladesh', 'switzerland', 'guwahati india', 'athens
+georgia', 'bahrain', 'kyrgyzstan', 'guadalajara mexico', 'madrid spain',
+'antwerp belgium', 'uzbekistan', 'tirana albania', 'york england', 'essentuki
+russia'], 'answers': ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no',
+'no', 'no', 'no', 'no', 'no', 'no'], 'role': 'answerer', 'turnType': 'answer',
+'keyword': 'jabalpur india', 'category': 'city', 'step': 46}
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+> Yes, our agent receives the entire history. It is contained in the `obs`
+> dictionary. Here is an example of the dictionary's values for an agent that
+> just randomly asks questions. This is the `obs` dictionary during somewhere
+> around round 16:
+>
+> obs = {'remainingOverageTime': 300, 'questions': ['Is it equatorial
+> guinea?', 'Is it lyon france?', 'Is it hermosillo mexico?', 'Is it malta?',
+> 'Is it belarus?', 'Is it porto portugal?', 'Is it istanbul turkey?', 'Is it
+> dallas texas?', 'Is it orlando florida?', 'Is it caracas venezuela?', 'Is it
+> libya?', 'Is it zunyi china?', 'Is it mexico city mexico?', 'Is it london
+> england?', 'Is it osaka japan?', 'Is it enugu nigeria?'], 'guesses':
+> ['kathmandu nepal', 'slovenia', 'dhaka bangladesh', 'switzerland', 'guwahati
+> india', 'athens georgia', 'bahrain', 'kyrgyzstan', 'guadalajara mexico',
+> 'madrid spain', 'antwerp belgium', 'uzbekistan', 'tirana albania', 'york
+> england', 'essentuki russia'], 'answers': ['no', 'no', 'no', 'no', 'no',
+> 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no'], 'role':
+> 'answerer', 'turnType': 'answer', 'keyword': 'jabalpur india', 'category':
+> 'city', 'step': 46}
+This has been an interesting topic on my mind. I have utilized history in my
+script but since our agents are teamed with an agent that could answer
+incorrectly/poorly a history may or may not be helpful to guess the keyword.
+For example in Chris's output, the agent could ask "Is it a place?" and the
+answerer agent could say "no" which would make attempting deductive logic
+difficult. This has been a fun and challenging competition!
+
+
+### [Haolx0824](/haolx0824)
+Thanks Chris and Matthew - the fact that we can't rely on deductive logic is
+making this competition harder (if you are unlucky and get paired with a bad
+answerer, then no much you can do…)
+Another basic question - since 'keyword' is in the obs dictionary, did you
+guys make sure that the Questioner cannot access that by any mean? Thanks!
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+Correct, the Questioner cannot see the keyword. Each agent has its own
+observation.
+
+
+### [Haolx0824](/haolx0824)
+Thanks for confirming.
+
+
+### [KKY](/evilpsycho42)
+Very detailed explanation, even examples, thanks! chris.

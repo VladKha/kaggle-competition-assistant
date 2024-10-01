@@ -1,0 +1,65 @@
+[Jan Hesse](/janhesse97new) · 460th in this Competition · Posted 2 months ago
+
+### How to Leverage Training-Only Columns for Better Predictions
+Hi there,
+we have the following columns in the train_set but not in the test set.
+not_in_test_cols = [  
+'shutdown',  
+'mini_shutdown',  
+'blackout',  
+'mov_change',  
+'frankfurt_shutdown',  
+'precipitation',  
+'snow',  
+'user_activity_1',  
+'user_activity_2',  
+'warehouse_limited'  
+]
+i was thinking about, how you could use those columns to improve the overall
+performance and robustness.
+So, my idea is to use columns like shutdown, mimi_shutdown, blackout,
+frankfurt_shutdown to "correct" the target (orders), because they are quite
+unusual events and therefore i don't suspect them to occur in the test_set.
+In order to do that i would:
+  1. drop those rows out of the training data
+  2. train a model on the training data
+  3. then predict the orders on the dropped rows
+  4. then use the predicted orders in the actual training
+What do you guys think? does it makes sense? do you think it will have an
+impact?
+What are your ideas to use those columns not present in test?
+
+
+## 4 Comments
+
+
+### [Boyd Johnson](/boydjohnson)
+What I've been doing is training models to predict the fields not in the test
+set, and then having a final model predict based off of the full number of
+fields.
+
+
+### [Jan Hesse](/janhesse97new)
+do you do that for all the training_only columns or just a subset?
+
+
+### [Boyd Johnson](/boydjohnson)
+I only train models for a subset of the training only fields.
+
+
+### [LH](/leonhardhochfilzer)
+I think it's an interesting idea but I have a feeling it would only work for
+some features. For example if you train a model using user_activity_2, which
+is highly correlated with the order numbers, I suspect that a model might be
+having a hard time generating useful data if you set it to zero (or any other
+fixed values). I could imagine that working for features that indicate
+outliers such as weather/shutdown data though.
+
+
+### [Jan Hesse](/janhesse97new)
+Yeah that's what i thought… i am gonna try it for those "outlier features"
+But so far i don't have a smart idea to use user activity. You could use a
+deep learning model or random forest and make it a multi output regression
+problem, where you forecast user_activity_2 and orders. It might be that the
+model picks up on something and improves the performance on the orders as
+well.

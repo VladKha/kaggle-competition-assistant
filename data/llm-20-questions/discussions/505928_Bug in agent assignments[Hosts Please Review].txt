@@ -1,0 +1,38 @@
+[Kris Smith](/krist0phersmith) · 344th in this Competition · Posted 3 months
+
+### Bug in agent assignments[Hosts Please Review]
+I decided to start a new discussion thread to get some eyes on this.
+[@robikscube](https://www.kaggle.com/robikscube) mentioned this in another
+thread:
+> We noticed that in the `llm_20_questions.py` file there looks to be a bug
+> where both guesser and answerer are set as "guesser". Is this the same code
+> used on the leaderboard?
+>
+> <https://github.com/Kaggle/kaggle-
+> environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L31>
+>  
+>  
+>     GUESSER = "guesser"
+>     ANSWERER = "guesser"
+>  
+>  
+>     content_copy
+You can see his post here:
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/503163#2821043>
+I noticed the same thing in the code but ignored it as further down in the
+same script those variables are assigned using methods defined above them:
+>
+>     agents = {GUESSER: guesser_agent, ANSWERER: answerer_agent}
+>  
+>  
+>     content_copy
+>
+> <https://github.com/Kaggle/kaggle-
+> environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L87>
+Am I missing something? It does look like a bug when they are assigned the
+same value at the beginning of the code but then further down they appear to
+be assigned new appropriate values.
+Hosts could you please confirm this is not causing an issue?
+
+
+## 0 Comments

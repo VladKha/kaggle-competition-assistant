@@ -1,0 +1,65 @@
+[Serhii Hrynko](/elvenmonk) · 92nd in this Competition · Posted 3 months ago
+arrow_drop_up9
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Check out my work in 2020 ARC Competition
+I just checked out my work in [2020
+competition](https://www.kaggle.com/competitions/abstraction-and-reasoning-
+challenge) and found it really impressive.
+Younger and smarter version of me clearly surpassed my current abilities and
+imagination.  
+Please, check it out and let see maybe you will be able to build something on
+top.
+  * [Watch, draw, compare, evolve!](https://www.kaggle.com/code/elvenmonk/watch-draw-compare-evolve)  
+Ideas described there go well beyond my current ambitions and abilities.
+  * [Visualizing tasks, size/color EDA, solutions](https://www.kaggle.com/code/elvenmonk/visualizing-tasks-size-color-eda-solutions)  
+At least few steps ahead of my current effort:  
+[🧮ARC24🧠Visualization + Size
+Predictor](https://www.kaggle.com/code/elvenmonk/arc24-visualization-size-
+predictor)  
+[🧮ARC24🧠 Size, Background Stats + Grid line
+marks](https://www.kaggle.com/code/elvenmonk/arc24-size-background-stats-grid-
+line-marks)
+
+### What stands out:
+  * Comprehensive size pattern and constraints analysis. Very accurate and insightful.
+  * Clever use of `scipy.ndimage.measurements` for 2D object labelling. Visualization of labelled data (starting from task 14, default solver).
+    
+    
+    from scipy.ndimage.filters import generic_filter
+    from scipy.ndimage.measurements import find_objects, label
+    
+    def default_solver(x):
+        return label(x, structure=w3)[0]%10
+    
+    
+    content_copy
+Just one example of plotted labelling (3rd row):  
+![17. 0e206a2e
+visualization](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F2586962%2F771b7bd6cfd14f4e31f1501618047372%2F__results___12_53.png?generation=1720074385429786&alt=media)
+comment
+
+
+## 2 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up2
+  * format_quote
+  * link
+The `Watch, draw, compare, evolve!` link is 404. Kaggle shows a `We can't find
+that page.`.
+
+
+### [Serhii Hrynko](/elvenmonk)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for pointing that out. Looks like it was not shared publicly

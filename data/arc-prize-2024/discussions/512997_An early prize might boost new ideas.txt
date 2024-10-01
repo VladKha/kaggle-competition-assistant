@@ -1,0 +1,50 @@
+[emoji_people](/noorchauhan)
+[Noor Chauhan](/noorchauhan) · 198th in this Competition · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### An early prize might boost new ideas
+Leader board is speaking for itself, however I think in this competition there
+should be an early prize for publicizing the totally new approach to the
+solution for this problem. The prize should only be awarded if a new idea
+contrasting the DPS. This would help in generating new ideas for the process
+of solving these efficiently
+comment
+
+
+## 2 Comments
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up0
+  * format_quote
+  * link
+[@gregkamradt](https://www.kaggle.com/gregkamradt) The prizes section says:  
+"Additional $500K of prizes to be announced later".
+Could you please announce the details if they are already finalised, or are
+you open to consider Kagglers suggestions (such as this post).
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+Yes absolutely! We are learning a ton from this competition. Our #1 goal is to
+get ARC-AGI solved. To that end our intention is to use the prize money
+(including the additional tba money) as an incentive to drive behavior towards
+this.
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up2
+  * format_quote
+  * link
+> > as an incentive to drive behavior towards this
+[@gregkamradt](https://www.kaggle.com/gregkamradt) Perhaps announce prizes for
+the first team to reach intermediate thresholds such as 55, 65, 75? (in
+addition to the grand prize for 85)

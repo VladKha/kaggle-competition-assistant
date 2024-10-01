@@ -1,0 +1,41 @@
+[Madcat](/madcat) · Posted a month ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Has anyone succeeded in building a predictive model to determine the
+output dimensions with 100% accuracy?
+It seems a much easier task than outputting the full solution, and a
+prerequisite for any correct solution.  
+By dimensions I mean the numbers of rows and columns of output grids.
+comment
+
+
+## 1 Comment
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+Probably not. And here's why. A large majority of the challenges have equal
+sized input and output. An even larger majority include simple 3x3 -> 9x9
+differing sizes. There are only a handful of "tricky" sizings, based on
+mathematical details of the input. Unsurprisingly, those are among the hardest
+to solve (with very few exceptions). So, if you want to submit w/o errors so
+you can test a premise, start with something like the "PaulsCode" notebook,
+which gets a "submission accepted" with a score of zero. Then, work on getting
+something (anything) to work. There is no real benefit to getting all the
+matrix sizes right with the training or evaluation sets, because the secret
+test set promises to be different - and HARD. Plus…
+  1. If you somehow managed to get 100% of the secret test set matrix sizes correct, you'll still probably score 0% without any thought about what to put in those matrices!
+  2. No matter what parts you get right (or wrong!) in the secret test set, you have to just sort of guess as to what worked and what didn't work. So technically, there is no way you can really tell if you got all the matrices correctly sized. You would need to get 100% of the questions answered correctly, including matrix sizing. And I'll bet before you get to that point, you could win the competition, above 85%.
+OTOH, if you want to generate output matrix sizes that would be correct for a
+given (training or evaluation) set that you have in hand, that is an
+interesting challenge. You could at least judge whether that worked or not.
+Although a more lucrative challenge would be to score 47% on the private test
+set. And that's what most people are probably trying to do.

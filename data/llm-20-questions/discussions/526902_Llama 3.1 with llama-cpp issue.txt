@@ -1,0 +1,51 @@
+[Roberto Tessera](/robertotessera) · 186th in this Competition · Posted 24
+days ago
+
+### Llama 3.1 with llama-cpp issue
+I'm trying to use Llama 3.1 with the latest version of llama-cpp-python
+(0.2.87-cuda12.4) but I'm stuck with the following error:
+`RuntimeError: Failed to load shared library
+kaggle/working/submission/lib/llama_cpp/lib/libllama.so': /lib/x86_64-linux-
+gnu/libc.so.6: version GLIBC_2.32 not found (required by
+/kaggle/working/submission/lib/llama_cpp/lib/libllama.so)`
+It seems requiring glibc 2.32, but unfortunately the environment docker image
+has:
+    
+    
+    !ldd --version
+    ldd (Ubuntu GLIBC 2.31-0ubuntu9.14) 2.31
+    
+    
+    content_copy
+Btw, only pre-built releases of llama-cpp seemed to work, others (any version)
+give the following CMake compiler error:
+    
+    
+         Target "ggml" links to:
+    
+              CUDA::cuda_driver
+    
+            but the target was not found.  Possible reasons include:
+    
+              * There is a typo in the target name.
+              * A find_package call is missing for an IMPORTED target.
+              * An ALIAS target is missing.
+    
+          -- Generating done (0.1s)
+          CMake Generate step failed.  Build files cannot be regenerated correctly
+    
+    
+    content_copy
+(see also
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/511060>)
+Llama 3 with llama-cpp-python 0.2.74 works fine… but this version of llama-cpp
+doesn't support the newer model.
+Does anyone know a workaround for this problem? (I suppose that is impossible
+to upgrade the environment glibc…)
+Thank you for the support
+p.s I noticed that a workaround for Llama 3.1 with transformers exist
+(<https://www.kaggle.com/competitions/llm-20-questions/discussion/523619)>,
+maybe I should try that way…
+
+
+## 0 Comments

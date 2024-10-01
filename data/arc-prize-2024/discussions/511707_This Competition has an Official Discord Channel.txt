@@ -1,0 +1,76 @@
+[Myles O'Neill](/mylesoneill) · Posted 4 months ago
+· Kaggle Staff
+arrow_drop_up19
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### This Competition has an Official Discord Channel
+In addition to this competition forum, you can continue the discussion in our
+official Kaggle Discord Server here:
+# [discord.gg/kaggle](http://discord.gg/kaggle)
+The Discord is a great place to ask getting started questions, chat about the
+nuances of this competition, and connect with potential team mates. Learn more
+about Discord at our [announcement
+here](https://www.kaggle.com/discussions/general/429933). Here are a few
+things to keep in mind though:
+**1\. Discord Competition Channels are 'Public'**
+Discord channels for specific competitions are considered 'public' spaces
+where you are allowed to talk about competition details (it will not count as
+private sharing).
+**2\. Discord Competition Channels are Not Monitored by Staff**
+Kaggle Staff and Hosts running competitions will not monitor Discord or be
+available to answer questions in Discord. Always post important questions in
+the forums.
+**3\. Keep the Good Stuff on the Forums**
+Please keep important questions, insights, writeups, and other valuable
+conversation on the Kaggle forums. Discord is intended to be a more casual
+space to discuss competitions and help each other, we want to keep all the
+best information on the forums.
+**4\. Remember to never privately share competition code or data**
+Please remember that private sharing of competition code or data is, as
+always, not permitted. Code sharing must always be done publicly through the
+Kaggle forums/notebooks.
+I hope you’ll join us to chat on Discord soon!
+comment
+
+
+## 4 Comments
+
+
+### [Dhanu](/dhanupj)
+arrow_drop_up0
+  * format_quote
+  * link
+oh nice really needed some insights
+
+
+### [Hloni Pretorius](/hlonipretorius)
+arrow_drop_up0
+  * format_quote
+  * link
+great let me check…
+
+
+### [Muhammad Ehsan](/muhammadehsan000)
+arrow_drop_up0
+  * format_quote
+  * link
+The creation of an official Discord channel for the ARC Prize 2024 is a
+valuable addition for informal discussions and team-building. However, it's
+crucial to keep detailed insights and critical questions on the Kaggle forums
+to benefit the entire community. Let’s also ensure we follow the guidelines
+regarding code and data sharing to maintain a fair and collaborative
+environment. Looking forward to engaging with everyone on both platforms!
+[@mylesoneill](https://www.kaggle.com/mylesoneill)
+[emoji_people](/ankitcnarte)
+
+
+### [Ankit_CNARTE](/ankitcnarte)
+arrow_drop_up0
+  * format_quote
+  * link
+hey can we find team mates? on channel?

@@ -1,0 +1,74 @@
+[c-number](/cnumber) · 1st in this Competition · Posted 11 days ago
+
+
+### We're allowed to share our solutions, right?
+Almost nobody has shared their solutions yet, but since the submission
+deadline has passed, we're allowed to share our solutions, right?  
+Just want to make sure before making my solution public.
+(By the way, I did WAY MORE than just googling for a dataset with English
+words to use it for the binary search algorithm, although it may not be clear
+from the current LB)
+
+
+## 11 Comments
+
+
+### [c-number](/cnumber)
+Thanks everyone, I'll start writing my solution. Hopefully it'll be public by
+the end of the week.
+
+
+### [c-number](/cnumber)
+Maybe it will be late because I have to prepare for the USPTO winner's call…
+
+
+### [c-number](/cnumber)
+(Just for those who care, winner's call finished yesterday, so I'm currently
+writing the solution)
+
+
+### [Chris Deotte](/cdeotte)
+Yes, we can share our solutions. I am looking forward to reading about your
+solution C-Number.
+
+
+### [KKY](/evilpsycho42)
+It's great to learn some top solutions such as yours while waiting for the
+final result.
+
+
+### [Ilmari Vahteristo](/ilmarivahteristo)
+Looking at some of your games, your solution looks very impressive in many
+games! I hope we only get good solutions to the Top-5, and not lucky
+submissions.
+
+
+### [Andrew Tratz](/jademonk)
+In prior simulation competitions people started sharing immediately after
+submissions closed. Don't know why this competition would be any different.
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+I'm looking forward to seeing everyone's solutions! I also plan to share my
+solution and contribute to the community.
+[@bovard](https://www.kaggle.com/bovard)  
+Would it be okay to share the source code (on Kaggle, GitHub) and the dataset?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Definitely!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+How to make it public before competition ends?
+
+
+### [wasjaip](/wasjaip)
+An excellent, robust model. I would really like to take a look at the
+approach!
+
+
+### [NikhilR1436](/nikhilr1436)
+Very excited to see some of the solutions

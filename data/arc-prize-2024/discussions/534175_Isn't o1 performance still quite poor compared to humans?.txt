@@ -1,0 +1,89 @@
+[Afiq Hatta](/afiqhatta) · Posted 15 days ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Isn't o1 performance still quite poor compared to humans?
+Hi team! Lurker here, and new to this site. Dumb question - I'm looking at the
+o1 results here and it still seems like its performance is still quite poor
+compared to humans. Do you guys agree?
+comment
+
+
+## 2 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+I believe the proper venue for o1 is the "interacting with a human" experience
+(not the "go off and solve this" experience, ala ARC)… o1 seems engineered to
+impress, live. If I had to guess, I would say that the delay that one
+experiences while waiting for o1 to do it's "reasoning" was referred to in the
+last millennium as "operators are standing by." It has already been
+established that scores of underpaid workers are furiously typing corrections
+to statements that LLMs 'draft'. My brief experience watching a (Gary
+Explains, otherwise, a great show!) YouTuber ask o1 a question was sad. Gary
+asked the "If it takes 3 towels 3 hours to dry in the sun." question. This
+classic usually elicits a pause, followed by the wrong answer by most humans.
+Most human-level intelligent humans get that one wrong. But o1 had "the pat
+answer," wherein it described what it was doing, in order to think through the
+correct answer. Something I would all but guarantee no human would **_ever_**
+do. The human answer is either:  
+That's easy! (wrong)  
+That's hard. (probably wrong)  
+The correct answer, because the human has already gone through the process. Or
+they're really good at word problems.  
+That particular question is stacked against human psychology, and thus should
+be stacked against LLM answers… …because online human-generated text is the
+source of an LLM's "knowledge." Unless…  
+Unless the LLM itself was used to list the 1000 most-likely "reasoning"
+questions, and then was simply provided with the thinky-sounding answers, and
+a sleep(15) delay.  
+That would explain the surprisingly-fast turn-around delivering o1, as well as
+the hesitation to call it Chat GPT5.  
+The reason for the… man behind the curtain, is probably the same reason Gates
+dropped $1B… THE TEN MORE BILLION DOLLARS on OpenAI. Lots and Lots and Lots of
+people (including myself, just yesterday!) DUMPING their intellectual property
+into "AI" in the hopes of solving that coding problem, fast. You think a
+"REASONING machine" isn't going to get some tasty questions?  
+"OK, o1… I've all but finished my great idea for harvesting `whatever` from
+unsuspecting internet patrons. The only thing I haven't figured out is…"
+`finish $10B idea, here` "can you figure out how to solve that problem?"  
+"Hell, no! I'm just a (I've told you guys a million times) an amalgam of
+current trending human statements. However, operators are standing by to
+listen to your intellectual property, in fine detail. Please continue."  
+BRACE FOR DOWNVOTE! BRACE! BRACE! BRACE!!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Yeah, it's me again. FWIW, whether or not you choose to incorporate an ML
+model into solving ARC, there are only two things that take any TIME to do:
+the training (or retraining, whatever) of the model or some kind of exhaustive
+search (graph, tree, you get to pick the terrain). Actual reasoning (by a
+computer) is pretty fast. So adding a delay to o1 to prove that it is "doin'
+some reasonin', now" is just sad. The delay should either be in the
+milliseconds or WEEKs, but "gimme a sec to figure this one out" has been
+engineered to fool fools.  
+For instance (not that this is an example of reasoning) I wrote python code to
+detect objects (both all objects, and only objects of each existing color) and
+it rips through either training or evaluation (400 tasks, multiple inputs and
+outputs) in about 3 seconds (locally). That's just how fast modern CPUs are
+when they're not doing a O(n^2) style exhaustive searches. Or other stuff.
+
+
+### [G John Rao](/jaejohn)
+arrow_drop_up1
+  * format_quote
+  * link
+delay is surely a UX design, we still have a screen interface and not to
+mention their 100b estimated nuclear powered rigs are 5-6 years away, deal
+with the "Thought for 0 seconds" for now.

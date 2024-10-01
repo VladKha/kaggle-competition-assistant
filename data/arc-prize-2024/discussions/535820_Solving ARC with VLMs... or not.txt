@@ -1,0 +1,81 @@
+[simjeg](/simjeg) · Posted 6 days ago
+arrow_drop_up11
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Solving ARC with VLMs... or not
+Hello,
+ARC puzzles require both visual understanding (vision) and logical reasoning
+(language) which makes vision language models (VLM) a natural fit
+(@yusukemikami also noted it [here](https://www.kaggle.com/competitions/arc-
+prize-2024/discussion/512680)).
+I decided to test this idea using
+[Qwen2-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct/tree/main),
+the highest-ranked 7B VLM from the LMSYS Vision Arena in [this
+notebook](https://www.kaggle.com/code/simjeg/solving-arc-with-vlms)… and
+superbly failed.
+Instead of attempting to solve the puzzles directly (which is complex for
+VLMs), I focused on three simpler tasks:
+  1. Answering questions about a specific grid
+  2. Identifying and describing patterns in a task
+  3. Determining whether a given output is correct (by comparing logits scores compared to altered versions)
+Playing with the notebook I get:
+  1. Often wrong
+  2. Never right 
+  3. Random
+Some possible reasons for these results:
+  * There may be issues with the notebook itself (e.g., image preprocessing, prompt construction)
+  * ARC grids might be too different from the model's training data
+  * Qwen2-VL-7B-Instruct is not good enough
+  * As LLMs (which they don't fundamentally differ from), VLMs are not able to do this kind of reasoning
+If it had worked, I intended to use the VLM as a reward model to find the
+correct puzzle output. Any thoughts or suggestions?
+comment
+
+
+## 3 Comments
+
+
+### [S J Moudry](/sethmoudry)
+arrow_drop_up1
+  * format_quote
+  * link
+Hey [@simjeg](https://www.kaggle.com/simjeg) thanks for sharing! I'm also
+working on using VLMs since I think this is a largely visual task, hadn't seen
+the new Qwen model and was trying with Phi-3.5v.
+I think that VLMs just haven't seen this kind of thing in their training
+before. Most of them aren't heavily trained on matrices, much less in the
+format we are providing. Also performance of many VLMs is poor on other
+documents like charts.
+Personally I took a similar approach as you where I focused not on solving but
+rather describing the puzzles and their transformations. I'm thinking the
+smaller models do poorly at this either because of size or lack of similar
+training data. Claude 3.5 seems to do the best out of the proprietary models
+I've tried and can accurately describe the transformations but doesn't do well
+on outputting the result of the transformation applied to the test. My goal
+now is to generate more training data, and use different models. 800 samples
+is just not enough! Probably InternVL-26b would fit quantized into two T4s.
+
+
+### [S J Moudry](/sethmoudry)
+arrow_drop_up2
+  * format_quote
+  * link
+Also on the image processing, for many models it's hard to tell how they
+handle DPI and aspect ratio. I have been using large image sizes (like 1500 x
+2500 for example) which seems to give decent results for phi3. According to a
+forum I read that Phi3 max size is 1300x1300 and dynamic by aspect ratio
+<https://huggingface.co/microsoft/Phi-3-vision-128k-instruct/discussions/2>
+Not sure what Qwen supports
+
+
+### [simjeg](/simjeg)
+arrow_drop_up0
+  * format_quote
+  * link
+I also uploaded both Qwen2-VL-7B-Instruct and Qwen2-VL-2B-Instruct
+[here](https://www.kaggle.com/models/simjeg/qwen2-vl/)

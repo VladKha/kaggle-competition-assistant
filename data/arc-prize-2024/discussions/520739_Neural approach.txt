@@ -1,0 +1,414 @@
+[emoji_people](/vasileioscharatsidis)
+[Vasilis](/vasileioscharatsidis) · Posted 2 months ago
+arrow_drop_up9
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Neural approach
+Hello guys, does anybody tried a purely neural approach (sequence to sequence)
+that remotely works? like solving at least a few puzzles in evaluation set
+without having ever seen them? I have tried some transformer architecture
+where i use self-attention and cross-attention between inputs and outputs of
+every puzzle but the results are not good. The model overfits after a while
+and cannot solve anything. It achieves 54.2% tile accuracy and 0.28% solving
+accuracy (it solves maybe some very simple examples, maybe by luck since 0.28%
+is not consistent across the training)
+comment
+
+
+## 8 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+The problem is that neural networks recognize and predict. They recognize
+because they were born to do so. They are a product of the field of "pattern
+recognition." And prediction is the beautiful by-product of pattern
+recognition. If you have recognized the pattern in the cards being dealt, you
+can predict what the next one will probably be. These are great skills and
+have led to all kinds of "new skills" (Like NLP) that are merely taking
+advantage of the largeness of what has been modeled. There are other things
+that a human intelligence engages in, such as abstraction and reasoning. ARC-
+AGI is curated to reward the distilled version of these skills. Meaning, if
+your code is preparing to react to things it has seen before (pattern
+recognition) and predict what the correct answer is, your code will have a
+difficult time. The reason there are two OR THREE examples is that what is
+happening is an abstract rule is being presented, and sometimes the rule is
+simple enough to use only two examples. And sometimes you need 3, 4, 5, or
+more examples. WHY is important. Those examples answer questions. They add
+guardrails to the process. Each example is a direct communication. Unlike 1
+billion cat pictures. If your code can manage to model the strange "parts" of
+this process, then it stands a better chance.
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up2
+  * format_quote
+  * link
+If you read Chollet's paper, _On the Measure of Intelligence_ (and I highly
+recommend that you do), you will see he talks about such things as "Objectness
+Priors." My understanding of this is that he is saying that the problems
+require certain innate knowledge about objects, such as their persistence,
+elementary physics, contact and so forth. That is, you cannot have a "program"
+figure out these problems by looking at just the 3 examples. It needs this
+prior knowledge. How your program will get that knowledge seems to me to the
+issue.
+[emoji_people](/vasileioscharatsidis)
+
+
+### [Vasilis](/vasileioscharatsidis)
+arrow_drop_up2
+  * format_quote
+  * link
+well i agree thats why i think the storry about this competition forwarding
+general intelligence is very missleading. All these tests needs prior
+knowledge that we do not have, also starting to hardcode knowledge is very far
+away from trying to solve general intelligence (actually the opposite). So i
+think its exactly like putting these examples in front of a 1 year old baby
+and try to make the baby solve the problems …
+
+
+### [Chen](/chenku)
+arrow_drop_up1
+  * format_quote
+  * link
+Just saw the paper, and I agree with you. But at least Chollet listed out all
+the broad categories of Core Knowledge priors for ARC and promised this in the
+paper:
+> ARC seeks to control for its own assumptions by explicitly listing the
+> priors it assumes, and by avoiding reliance on any information that isn’t
+> part of these priors
+So it may be possible to hardcode the general framework to work with these
+priors knowledges. But this would make ARC-AGI a test of who can better
+hardcode the priors rather than a demonstration of generalized intelligence …
+[emoji_people](/vasileioscharatsidis)
+
+
+### [Vasilis](/vasileioscharatsidis)
+arrow_drop_up0
+  * format_quote
+  * link
+even knowing these general priors
+Objectness  
+Objects persist and cannot appear or disappear without reason. Objects can
+interact or not depending on the circumstances.  
+Goal-directedness  
+Objects can be animate or inanimate. Some objects are "agents" - they have
+intentions and they pursue goals.  
+Numbers & counting  
+Objects can be counted or sorted by their shape, appearance, or movement using
+basic mathematics like addition, subtraction, and comparison.  
+Basic geometry & topology  
+Objects can be shapes like rectangles, triangles, and circles which can be
+mirrored, rotated, translated, deformed, combined, repeated, etc. Differences
+in distances can be detected.
+it is still very unfair for any neural system since these can be fine grained
+to thousands others that humans learn through years of life experience. So
+basically this is a hardcoding contest and not really ai in my opinion
+
+
+### [dan4o](/dankrstev)
+arrow_drop_up0
+  * format_quote
+  * link
+Why would you want to hardcode priors? The whole point is designing a neural
+network to **enable** the possibility of learning concepts and abstractions. A
+baby is not born with these hardcoded priors of "objectness", but it has the
+ability to rapidly extract them from the statistics of its episodic memories.
+So you design, not a single but a system, of neural networks that can
+_abstract_ and represent _concepts_. You train this network on a bunch of
+generated situations so the network can learn the underlying statistics (Maybe
+first try to just learn "objectness" - use squares, rectangles, lines and
+perform transformations on these etc). These are then your so called _priors_
+and you use this as a starting point or baseline for the ARC Challenge.
+
+
+### [Chen](/chenku)
+arrow_drop_up3
+  * format_quote
+  * link
+[@dankrstev](https://www.kaggle.com/dankrstev) I think there just isn't enough
+data in the training set to acquire the amount of prior knowledge humans
+innately possess. I'd argue a baby already started off with an optimized
+architecture and initialization in their biological neural network, the
+outcome after millions of years of evolution, before they were born. Their
+learning is merely finetuning; they are also flooded with more sensory data
+every second than the entire ARC dataset. We can let an artificial neural
+network learn the "core knowledge" quickly as human do, but we need to
+carefully design the architecture around these concepts and abstractions. This
+is what I meant by hardcoding, infusing human biases into the system.
+Otherwise the model may learn some strange transformation, different from
+human intuition, that may still work on training data, but not on test data.
+This characteristic of neural network can be demonstrated by one pixel
+adversarial attack, where changing one pixel in an image does not affect human
+perception but vastly alters NN prediction.
+
+
+### [dan4o](/dankrstev)
+arrow_drop_up2
+  * format_quote
+  * link
+Let me clarify.
+> I think there just isn't enough data in the training set to acquire the
+> amount of prior knowledge humans innately possess.
+I never proposed training the Neural network on the training set. The way you
+do it, is you create artificial episodic memories. Let's take Objectness for
+example. You generate different objects (rectangles, squares, lines) and you
+set them in the grid. Then you create transformations to those objects,
+reflection, translation, rotation etc. you can use already premade DSL
+primitive functions to generate vast amount of diverse episodes on each object
+for the **core** knowledge. Then you train the neural network on this data.
+After the network sees many times that an object set at the top of the grid
+falls down regardless of its shape, the neurons that are active during the
+"fall" episode will overlap and this will be abstracted away.
+>   * they are also flooded with more sensory data every second than the
+> entire ARC dataset
+>
+>   * Otherwise the model may learn some strange transformation, different
+> from human intuition
+>
+>
+There are limited number of configurations objects can interact. For the ARC
+Task, it will be easy to simulate how objects behave. For the extension of the
+model to the real world, embodiment will be necessary because the universe
+already produces diverse, high quality training environment. But lets stick
+for now to the ARC Puzzle and simplify the problem.
+[emoji_people](/vasileioscharatsidis)
+
+
+### [Vasilis](/vasileioscharatsidis)
+arrow_drop_up0
+  * format_quote
+  * link
+rapidly you mean 5 - 8 years of constant video stimuli + reinforcement
+learning from society?
+
+
+### [Chen](/chenku)
+arrow_drop_up2
+  * format_quote
+  * link
+[@dankrstev](https://www.kaggle.com/dankrstev) I see you are proposing
+generating synthetic training data. However isn't the data synthesis also a
+form of hardcoding? You are still manually coding the concepts you want the
+model to learn. Using premade DSL is pushing the work on opensource projects,
+but does not change the fact it is fundamentally hardcoding.
+
+
+### [dan4o](/dankrstev)
+arrow_drop_up1
+  * format_quote
+  * link
+But inherently is not hard coding. These things happen in nature. These are
+the basis of our universe. That's why we can use statistical learning with our
+brains and extract the "objectness" from the real world. These things happen
+over and over again.
+> You are still manually coding the concepts you want the model to learn
+I am not "manually coding the concepts" I am simply exposing the
+model/architecture to things it would see in the real world. In a perfect
+world we can just let the neural network in the real world and it should learn
+from experience. Here we are just simplifying the process and showing only a
+part of the real world that is relevant to the task at hand at this level of
+complexity(arc puzzle). Am I hardcoding the concept of gravity if i repeatedly
+show the model a cube that falls, even if it would see the exact same thing in
+the real world?
+
+
+### [Chen](/chenku)
+arrow_drop_up1
+  * format_quote
+  * link
+[@dankrstev](https://www.kaggle.com/dankrstev) I understand what you mean and
+I think it is a good idea. But I consider the act of "writing code to generate
+images showing the effect of gravity" a form of hardcoding. You need to do the
+same for each of the concepts in the set of "core knowledge". The amount of
+"hardcoding" isn't that different from the act of "writing code to detect
+shape displacement downward".
+
+
+### [dan4o](/dankrstev)
+arrow_drop_up1
+  * format_quote
+  * link
+> rapidly you mean 5 - 8 years of constant video stimuli + reinforcement
+> learning from society?
+Actually object permanence is shown in infants of around 10-14 months. They
+can understand that objects persist even if they are not in sight. And this
+actually develops gradually, some infants cannot find the secluded objects, so
+its not the case that we are simply born and can understand that objects don't
+disappear.
+There was a study in 1999 by M. Keith Moore and Andrew N. Meltzoff
+[emoji_people](/vasileioscharatsidis)
+
+
+### [Vasilis](/vasileioscharatsidis)
+arrow_drop_up0
+  * format_quote
+  * link
+yes but this still means 10-14 months of collecting and analyzing multi-modal
+(vision, touch, taste, sound) input non stop. Anf even if the baby has this
+ability after 14 months, if you put it against an ARC puzzle he has no chanse
+to even understand the question right?
+
+
+### [dan4o](/dankrstev)
+arrow_drop_up1
+  * format_quote
+  * link
+> yes but this still means 10-14 months of collecting and analyzing multi-
+> modal (vision, touch, taste, sound) input non stop.
+You can look at it that way. But also don't forget in the calculations all of
+the attention that the baby lends to the motor cortex, proprioception and
+other areas that keep it alive and try to figure out what actually is going
+on, while also being asleep 70% of the time. So when we include the effective
+exposure of object-related data, I'd say that the baby acquires it rather
+quickly. But sure this is up for debate.
+> if you put it against an ARC puzzle he has no chanse to even understand the
+> question right?
+But having these priors and actually solving the ARC are two different beasts.
+What we were discussing is that a baby can rapidly learn these priors without
+any hardcoding because its architecture allows it to. And these priors are
+just - as Chollet said- _requirements_ for you to even be able to solve the
+puzzles in a generalized manner, not the end-all be-all.
+
+
+### [dan4o](/dankrstev)
+arrow_drop_up1
+  * format_quote
+  * link
+> You need to do the same for each of the concepts in the set of "core
+> knowledge". The amount of "hardcoding" isn't that different from the act of
+> "writing code to detect shape displacement downward".
+[@chenku](https://www.kaggle.com/chenku) I get your point of view. You want
+zero human interference in learning those priors.
+Let me ask. If instead of "hardcoding" a function that drops cubes from the
+top of the grid, I show the agent videos of objects falling due to gravity. Is
+this considered hardcoding as well?
+In other words is it the generation of the data, or the actual _selection of
+what we show_ to the agent that you consider to be "hardcoding"?
+
+
+### [Chen](/chenku)
+arrow_drop_up1
+  * format_quote
+  * link
+[@dankrstev](https://www.kaggle.com/dankrstev) For me, "generating synthetic
+data" is hardcoding, and "showing real-world video" does not fall into my
+definition of hardcoding. Even so, you still need a clear idea of what you are
+trying to teach the model. The amount of human involvement to curate the new
+dataset, including data collection, data cleaning, processing, is no less than
+hardcoding. So in spirit they are not different in my opinion.  
+p.s. In principle, you can collect raw data from the web indiscriminately and
+given enough data the model can acquire a general world-view aligned with
+human's. The "core knowledge" used in ARC would inadvertently be a subset of
+this world-view. Using a pretrained LLM to solve ARC without additional
+training is an example of this. But training such a model from scratch is
+impractical for the scale of data and compute budgets we have.
+Hide repliesarrow_drop_up
+
+
+### [Andrew](/andrewrrose)
+arrow_drop_up1
+  * format_quote
+  * link
+And here's a link to the paper: [On the Measure of
+Intelligence](https://arxiv.org/abs/1911.01547) to save you having to look for
+it.
+
+
+### [Chen](/chenku)
+arrow_drop_up2
+  * format_quote
+  * link
+Seq-to-seq with transformer has proven to work well for generation task where
+the generated output only need to fit inside a certain distribution, therefore
+there are infinite number of ways to generate valid outputs. However, in ARC
+task there is only one correct answer, where tile accuracy below 100% means
+nothing. This is why I think the sampling methods used in seq-to-seq
+generation would not work for ARC problems. We need to find a way to construct
+a direct mapping function from the input to the output. This mapping function
+can be programming code. In that case you can use LLM or DSL approach to
+create the mapping. But possibly a neural network can also be the mapping. In
+that case we can use one (mapping encoder) neural network to produce the
+weights for another (mapping) neural network. I need to implement to test if
+the idea works.  
+I said sampling should not be used during the mapping, but sampling is
+probably still required in the generation of the mapping function, because the
+main idea behind ARC is the ability to learn novel tasks during inference,
+relying solely on trained mapping would certainly fail. For example, with LLM
+approach we can generate 1000 programs and pick the one program that maps
+correctly from example inputs to example outputs, then use it on the test
+input. Alternatively, or jointly, we may use additional techniques to
+facilitate the inference-time searching, ie. test-time finetuning, RAG, self-
+feedback, just to name a few. But training a model capable of these techniques
+is non-trivial and may require some type of reinforcement learning or self-
+supervised learning.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Nicely explained. A little over my head. I had the thought that ML might speed
+things along by "identifying" the type of problem, so that the hard work could
+be done "navigating the labyrinth" so to speak. But even that is a "non-shot"
+because Francois has put so much energy into having 100 new puzzles in the
+private test. The likes of which have not been seen. The takeaway is, unless
+Chollet is cheating, the 100-item test should be pretty simple (at least most
+of the puzzles) and novel. Good luck with your mapping process!
+
+
+### [Chen](/chenku)
+arrow_drop_up3
+  * format_quote
+  * link
+Thanks. To expand on my previous comment, we should not aim to train a neural
+network model to map an input to an output, or even to classify or describe
+the type of mapping. This would never work on a truly novel problem that is
+unlike anything in the training set. Instead, try to train the neural network
+model to produce the optimal "mapping function search landscape", for a lack
+of better term, that the searching process can navigate on with high
+possibility to discover the right mapping. Pardon my very abstract and
+confusing wording, because I am still figuring out a concrete method to
+realize it. As an analogy, imagine training for the ARC competition as a human
+player. When solving an ARC problem, you have to generate multiple ideas, test
+them, until you find the right answer. To improve your time, you practice on a
+set of training problems, not to memorize how they are solved, but to optimize
+your process of searching the solution.
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up0
+  * format_quote
+  * link
+Your term "mapping function search landscape" is very appropriate, IMO. Well
+put.
+
+
+### [Jainam213](/jainam213)
+arrow_drop_up0
+  * format_quote
+  * link
+The search space for mapping is gets exponentially large though!
+
+
+### [Chen](/chenku)
+arrow_drop_up2
+  * format_quote
+  * link
+If we can somehow iteratively refine the mapping function base on feedback of
+previous attempts, rather than randomly sampling the search space, we will
+have a better chance of finding the correct mapping.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+"iteratively refine" - well said as well!

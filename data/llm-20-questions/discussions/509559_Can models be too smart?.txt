@@ -1,0 +1,75 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+### Can models be too smart?
+I was looking through my model logs of a new agent that I added all my changes
+to and I was extremely impressed later I thought that my model might be too
+complicated and too "smart" for other agents for example when my model is the
+questioner lower/"dumber" answerers might not be able to even answer
+correctly. I am not fully sure if this is a problem so I wanted to know what
+the wider community felt because I am sure that everyone who is regularly at
+the top has at least once considered this. Here are some images of my model's
+logs not sure if I just made a good/best agent or if other people already have
+similar results.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F4b2f69f31c7cc07137cf574bd490a604%2FScreenshot%20from%202024-06-03%2012-56-13.png?generation=1717433818284624&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F58c6e6d7e4320264ff21dffd75a5ea0b%2FScreenshot%20from%202024-06-02%2021-17-51.png?generation=1717377478745137&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Fbc1fc1ec5e638b84504d03f55441aa1c%2FScreenshot%20from%202024-06-02%2021-18-12.png?generation=1717377498654627&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Fcaebd503185101a828199584b8a534fe%2FScreenshot%20from%202024-06-02%2021-18-46.png?generation=1717377537124082&alt=media)
+_P.S. I am not trying to be narcissistic but I just had this question after
+what in my mind was a "godly" model. I also have many more "smart" question
+images from my model but can't post them here if you want a link with a file
+of my agent logs I can create a google drive or something (just ask)_  
+_P.P.S. Also not sure if anyone else has a model with results like this but
+this is my first good questioner model previously I had a good answerer that
+carried my score_
+
+
+## 2 Comments
+
+
+### [tr](/toma78)
+In case of LLMs, I just assume that both models will rely on more-or-less same
+knowledge from the training set.
+
+
+### [OminousDude](/max1mum)
+Are you sure this isn't to smart? Because I think that other models might not
+be able to answer correctly.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F666c67792a8011778ed6f6de06541399%2FScreenshot%20from%202024-06-03%2013-28-27.png?generation=1717435737099340&alt=media)
+
+
+### [tr](/toma78)
+Well, extracting that knowledge is whole other matter :)  
+But I expect models to fail even on simpler questions.
+
+
+### [OminousDude](/max1mum)
+Exactly my thinking! That's why I was sad when I saw how good the model was.
+The questions probably eliminated the most possible guesses but were too
+complicated. Well, whatever I'll just prompt engineer my model to be simpler
+lol.
+
+
+### [OminousDude](/max1mum)
+This has got to be too smart 😂  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F48a16174ef2d327cfb76fbdd7e2c1949%2FScreenshot%20from%202024-06-03%2022-35-31.png?generation=1717468583125954&alt=media)
+
+
+### [OminousDude](/max1mum)
+I can't tell is this too smart or too stupid? 🤣  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F55e4ad54ff2861d45c84ba9ae393fb80%2FScreenshot%20from%202024-06-06%2022-27-38.png?generation=1717727302036431&alt=media)
+
+
+### [tr](/toma78)
+😀  
+Well, it guessed correctly at least.
+
+
+### [OminousDude](/max1mum)
+That's true but it was a validation run so no points 😭

@@ -1,0 +1,24 @@
+[Mohammed Mustafa](/mohammedmustafa648) · 540th in this Competition · Posted 2
+
+### Need your help in two points
+1- meaning of those mov_change, warehouse_limited (train_calender.csv)
+variables  
+2- your suggestion for dealing with missing values in snow and precipitation
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8404360%2F591672aa651063ed58cc7db1ce169ed6%2Fmissing_values.png?generation=1720369242093213&alt=media)
+
+
+## 2 Comments
+
+
+### [Boyd Johnson](/boydjohnson)
+On #2, I use the mode (grouped by warehouse, year, month, weekday) of the snow
+and precipitation to fill in Nans.
+
+
+### [Boyd Johnson](/boydjohnson)
+![precipitation isna
+chart](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F52115%2F87069ba73983ca906f6efe7847292b7b%2Fprecipitation_isna.png?generation=1720908431475032&alt=media).
+So, I have changed course. Many of the NAs have to do with the warehouse not
+being open, and then some were just days that were missed.

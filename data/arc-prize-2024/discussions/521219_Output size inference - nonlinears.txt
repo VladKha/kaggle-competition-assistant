@@ -1,0 +1,130 @@
+[Arseni Ivanov](/arseniivanov) · Posted 2 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Output size inference - nonlinears
+Hey guys, output size is clearly an important factor in this competition. If
+you output the wrong shape, you are going to fail the task regardless of how
+good your prediction is.
+Using simple output size inference such as looking at example inputs and
+outputs and finding linear mappings gets you around 84% correct predictions on
+the training set. For the rest of the cases, something smarter is needed.
+I was wondering what people have tried and what seems to work. In the hard
+examples that i have looked at, it becomes clear that for a lot of the hard
+cases, the output size cannot be inferred from the shapes of the in-out
+examples alone. To verify this I ran a fine-tuned LSTM-predictor using the
+shape information for every example, but this alone gets me up to 87-89%.
+Has anyone solved this sub-problem successfully?
+comment
+
+
+## 5 Comments
+
+
+### [Pedro Henrique Monforte](/phmonforte)
+arrow_drop_up2
+  * format_quote
+  * link
+I have a nice function that gets around 87% of the task sizes correct. The
+ones it doesn't get correct it doesn't output, just let us know a strategy to
+get it:
+    
+    
+    def infer_output_size(challenge):
+        insights = set()
+        input_sizes = np.array([np.array(sample['input']).shape for sample in challenge.train])
+    
+        output_sizes = np.array([np.array(sample['output']).shape for sample in challenge.train])
+        test_input_size = np.array(np.array(challenge.test[0]['input']).shape)
+        # If the sizes doesn't change, just replicate
+        if (input_sizes == output_sizes).all():
+            if (input_sizes[:,0] == input_sizes[:,1]).all():
+                insights.add("Inputs are square matrices")
+            else:
+                insights.add("Inputs are non-square matrices, there might be a divisor")
+            return np.array(challenge.test[0]['input']).shape, insights
+        # Check if input and output size is fixed
+        same_input_sizes_for_all_samples = ((input_sizes - input_sizes.mean(axis=0)) == np.zeros_like(input_sizes)).all()
+        same_output_sizes_for_all_samples = ((output_sizes - output_sizes.mean(axis=0)) == np.zeros_like(output_sizes)).all()
+        same_input_size_for_train_and_test = (input_sizes.mean(axis=0)==test_input_size).all()
+        if same_input_sizes_for_all_samples and same_output_sizes_for_all_samples and same_input_size_for_train_and_test:
+            insights.add("Size of input and output are constants")
+            return np.array(challenge.train[0]['output']).shape, insights
+        # Check if everyone has the same output size:
+        if same_output_sizes_for_all_samples:
+            insights.add("Size of all outputs are the same, it might be some sort of reduction")
+            return np.array(challenge.train[0]['output']).shape, insights
+        # Check if the is a simple proportion of sizes
+        mean_proportion = (output_sizes/input_sizes).mean(axis=0)
+        if (((output_sizes/input_sizes)==mean_proportion).all()):
+            insights.add("Output and input sizes are proportional, there might be some scaling")
+            return tuple(int(i) for i in (np.array(np.array(challenge.test[0]['input']).shape)*mean_proportion)), insights
+        # Check if the shape just adds an arbitrary number
+        offset = (output_sizes-input_sizes).mean(axis=0)
+        if (((output_sizes-input_sizes)==offset).all()):
+            insights.add("Output and input sizes are offsetted, there might be the addition of some column or row")
+            return tuple(int(i) for i in (np.array(np.array(challenge.test[0]['input']).shape)+offset)), insights
+    
+        insights.add("Output shape is not easily inferred, there might be some sort of scaling or cropping")
+        return None, insights
+    
+    
+    content_copy
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up0
+  * format_quote
+  * link
+Just curious, what proportion of the examples are same size for input and
+output?
+
+
+### [Arseni Ivanov](/arseniivanov)
+arrow_drop_up2
+  * format_quote
+  * link
+About 1/3 for training and 1/4 for validation. Here is a good code that
+visualizes this:
+<https://www.kaggle.com/code/solverworld/2024-arc-detailed-input-output-size-
+analysis>
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+> Has anyone solved this sub-problem successfully?
+Just for myself, not for any code. Yet.
+So… You got any task IDs in mind?
+
+
+### [Arseni Ivanov](/arseniivanov)
+arrow_drop_up1
+  * format_quote
+  * link
+For example, 0934a4d8. You need to look at the input and identify the area of
+same-colored pixels in a chunk to know the output shape.
+There is no way to go about it using just the input and output shapes, you
+need to do operations on the input image itself.
+Im sure you can make an edge case by looking at contiguous colors and matching
+them to the output shape but this feels hacky.  
+I was curious is someone has gotten closer to 100% using non-case-specific
+techniques.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Ah. Sorry. Misunderstood what you meant. That is exactly correct for that and
+for others, as well. I think it was envisioned as part of the process…
+"Jumping out of the frame," so to speak. A talent that most humans share but
+has historically been problematic in the quest for AI, per se. It's just a
+difficult hurdle. But difficult is my middle name.
+I'll see your 0934a4d8 and raise you 91413438 !!!

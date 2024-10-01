@@ -1,0 +1,53 @@
+[fuzzthink](/fuzzthink) · 618th in this Competition · Posted 16 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Error submissions should not be counted
+Submission counts are to prevent leakages. There are no leakages on errored
+submissions. Tried 2 submissions that errored and decided to just use
+<https://www.kaggle.com/code/ironbar/minimal-submission> to see if that works.
+It does and now I can not retry for 24 hours.
+Btw, there seems to be no difference between my output structure and the
+minimal one. The only difference may be I used input path of '../input/…'
+instead of '/kaggle/input/…'. Even if this isn't the reason for the error, the
+default Notebook comment says to use '../input/…' , yet the code right under
+it is '/kaggle/input/…'.
+Very frustrating. Especially when the error doesn't even show my
+submission.json. Maybe it doesn't because the code didn't produce any? Anyone
+knows if it is shown if one is produced?
+comment
+
+
+## 3 Comments
+
+
+### [gromml](/gromml)
+arrow_drop_up1
+  * format_quote
+  * link
+You can use the type of error to probe the test data. That is why, error
+submissions are also counted.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Also, check out my "Weird Errors" post. neoneye has some great suggestions to
+keep the errors low.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+I had a similar issue last week. I probably should have shared what I learned.
+Scroll to the bottom of the page and you'll see "Input" Output" "Logs"… Like
+you, I assumed that errors would show up someplace like submission.json, or
+even output. But the error output is under Logs. It was such a duh moment, I
+kept it to myself.

@@ -1,0 +1,61 @@
+[hoon0303](/hoon0303) · 47th in this Competition · Posted 4 days ago
+
+
+### Only One Day Left in the LLM Agent Competition - Wishing You the Best
+Results!
+As we enter the final stretch of the LLM Agent competition with less than a
+day remaining, I wanted to take a moment to wish everyone the best of luck!
+It’s been incredible to see the innovation and creativity displayed throughout
+this challenge. Here's to hoping that all your hard work pays off with great
+results. 🚀
+
+
+## 5 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Wow, there are 4 hours left and the top 3 teams have LB scores 1249, 1242,
+1239. And currently wins and loses changes LB score +/-8. It will be a very
+close last 4 hours for Agent Alpha, C-Number, and Tricksy Hobbitses!
+
+
+### [loh-maa](/lohmaa)
+Scary to think what would be the score deduction for a loss with low-scored
+agents… I guess it should be limited to about -25 but we can't be sure how the
+algorithm would handle such an artificial case..
+
+
+### [Chris Deotte](/cdeotte)
+Wow, an unlucky thing occurred. Ioh-Maa's Agent Alpha played **both** of
+C-Number's bots. In the first image we see that Ioh-Maa played against
+C-Number twice in the last 2 hours. In the second image, we see that
+C-Number's best bot only played once against Ioh-Maa in the last 2 hours.
+Having two bots above LB score 1200 helps C-Number. Even if his 2nd bot lost
+to Ioh-Maa, it doesn't matter since his LB position is his first bot. So Ioh-
+Maa needs to beat C-Number twice to hold his ground!
+==========
+![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Aug-2024/agent_alpha.png)
+==========
+![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Aug-2024/c_number.png)
+
+
+### [loh-maa](/lohmaa)
+Yes, that was a major slip and chances for the top spot are buried, but still
+I hope it's not going to get worse because me and my agent we actually feel
+very lucky to be where we are. I can't imagine how it is for the other 7 or 8
+agents playing for the 4th and 5th. It's going to be a matter of 1 lucky
+strike I guess. Maybe some players can take it lightly, but for me it would be
+difficult, as this competition was my focus for the past 12 weeks.
+
+
+### [JK-Piece](/jeannkouagou)
+Well, stressful for the top-5, but entertaining for competitors in the 200's
+
+
+### [JK-Piece](/jeannkouagou)
+Yes, good luck to all the alpha agents. It is quite tough at the top of the
+leaderboard; lots of rollercoasters:)
+
+
+### [ravi tanwar](/ravijoe)
+Isn't the time running slow ? I mean still showing 19 hrs

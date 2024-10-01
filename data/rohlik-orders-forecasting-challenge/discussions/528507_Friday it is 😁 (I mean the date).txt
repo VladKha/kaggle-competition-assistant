@@ -1,0 +1,21 @@
+[Ahmed Alghali](/ahmedalghali) · 396th in this Competition · Posted a month
+
+### Friday it is 😁 (I mean the date)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F10524395%2F4756f381e987ed367bb591bed5102265%2FScreenshot%202024-08-16%20at%201.01.38%20PM.png?generation=1723802514955777&alt=media)
+Blessed Friday Everyone.  
+in early discussions [@yantxx](https://www.kaggle.com/yantxx) mentioned that
+Friday orders were always high alongside with other who agreed and confirmed
+that it is always high in all warehouses. I wanted to highlight this
+discussion again after it was forgotten due to the linearity of discussions
+[discussion link](https://www.kaggle.com/competitions/rohlik-orders-
+forecasting-challenge/discussion/511935)
+After engineering a feature to mark Friday, checking the top values in orders  
+`train[train['orders'] >10000.]`  
+and guess what! (as expected)  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F10524395%2Fe29b73424ec66547da459c982f7ccd84%2FScreenshot%202024-08-16%20at%201.06.08%20PM.png?generation=1723802822707906&alt=media)
+it was all Fridays! you may wanna try that!
+
+
+## 0 Comments

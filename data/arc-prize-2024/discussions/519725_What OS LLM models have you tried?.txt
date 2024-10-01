@@ -1,0 +1,19 @@
+[Luca Bottero](/lucabottero) · 771st in this Competition · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What OS LLM models have you tried?
+I saw some notebooks using both proprietary and open models. My question is:
+did you try to switch the model and measure the performance?  
+In addition (very important if, like me, you like to work on local machines):
+did you noticed a drop in performance for smaller models (as one would
+expect)?
+comment
+
+
+## 0 Comments

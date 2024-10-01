@@ -1,0 +1,36 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 18 days ago
+
+### End of competition submission bug (Error logs: Page not found)
+In my last week I had many errors in my code and the day before submission I
+finally fixed all of them. However, when I submit the agent I get an error
+that says page not found. I have had this error before and I think this
+happens because of too many submissions at one time. This made it so that my
+new and good submission that errors out unfairly is not counted however one of
+my old submissions that errors out in the code sometimes and is bad does not
+count. I was one of the first people in this competition and spent an entire 3
+months in this competition, but I was basically thrown out of the competition.
+I have counted my number of submissions in total and it is 342, which just
+shows how much time I have spent on this competition. This is incredibly
+unfair to me (and I believe others have had this problem too) and a waste of
+countless hours spent on this competition. I know that there is likely nothing
+the competition owners can do anymore, but I advise Kaggle to be more careful
+when the competition has this many submissions at a time.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Fa78edaf7b361af31a54e5daeeafd6550%2FScreenshot%20from%202024-08-14%2010-35-05.png?generation=1723646137461510&alt=media)
+[@bovard](https://www.kaggle.com/bovard) could I get a comment or update on
+this?
+
+
+## 2 Comments
+
+
+### [loh-maa](/lohmaa)
+You tried to submit just before midnight, got the error and the deadline had
+passed before you could try again? Sounds like a nightmare scenario after
+months of work… although look, those "technical blackouts" could be easily
+anticipated on the final day… Too bad you couldn't fix it earlier, but who
+knows, maybe it's gonna be OK, good luck^^
+
+
+### [OminousDude](/max1mum)
+Basically what happened, good luck to you too!

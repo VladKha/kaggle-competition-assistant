@@ -1,0 +1,64 @@
+[SeaXu](/seahifly) · 518th in this Competition · Posted 22 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Some questions about this task
+I am new here and I find this task is interesting. It demands more gerenral
+learning for logical inference to some extend based on my superficial
+understanding.But I am still puzzled with something.
+Let's take instance '007bbfb7' (the first one)as the example, it seems that we
+should predict the test input based on train pairs which contain some logical
+laws. Example '007bbfb7' only contains 0 and 7 while some other examples
+contain more numbers. I am wondering that whether the meanings of ’7‘ in all
+the examples are the same or each number in specific example is just a general
+symbol and it can be replaced by other numbers which are not repeated. To be
+more specific,  
+1）in instance '007bbfb7', can I replace all ’7‘s by ’2‘, '3' or some others
+else?  
+2) both instances ’017c7c7b‘ and '0520fde7' contain ’2‘, are they different
+exactly? Only the same numbers denote the same meaning inside a independent
+instance while different among all instances.
+comment
+
+
+## 4 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+The IDs are basically random hex values between (approx.) `0x10 0000` and `0x1
+0000 0000`. There is no real requirement to alter them in any sense, and
+probably all kinds of foolish errors would result from so doing. Best of luck
+with the harder parts!
+
+
+### [abdelhamid](/elhachimione)
+arrow_drop_up0
+  * format_quote
+  * link
+Les IDS représentent tout simplement les références ou keys pour chaque
+séquence d'I/O d'entrainement et de test .  
+Bonne chance
+
+
+### [CPMP](/cpmpml)
+arrow_drop_up0
+  * format_quote
+  * link
+I don't think that the sample id bears any useful information.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+I wondered a little about relative time stamp, possible human connection (i.e.
+all of Chollet's creations are modulo 13 == 0), potential categorical details,
+other cryptominutiae. But no - no role in Machine Learning, AFAIK.

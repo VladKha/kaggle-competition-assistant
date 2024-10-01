@@ -1,0 +1,78 @@
+[alekh](/aleksanderhan) · 502nd in this Competition · Posted 3 months ago
+
+### 3-bit cheat
+Just thought of something. Since the answerer can answer in any case without
+it being penalized, there is an opportunity to "cheat" by sending up to 3-bits
+of information in addition to the yes/no information by the answerer.
+Maybe someone could find a scheme to exploit this.
+
+
+## 7 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+No matter what case you send yes/no, the result in the replay is always lower
+case.
+
+
+### [alekh](/aleksanderhan)
+Okay, so the hack is effectively disabled. I guess it's good. But could have
+been a fun avenue to explore if possible.
+
+
+### [hengck23](/hengck23)
+i wonder can we ask questions like:  
+"does it begin with letter B?"  
+"does the word has more than 10 letters?"  
+"if it is …, answer yes, if it is …. answer yes slowly, …"
+we need to check for "cheaters" in the server
+
+
+### [Nicholas Broad](/nbroad)
+Can you explain what you mean? The rules say that if the answerer responds
+with anything other than yes or no, they will automatically lose the match.
+
+
+### [alekh](/aleksanderhan)
+You can answer yes/no in any case. So you can encode information in the case
+of the letters of yes. I.e. yes, Yes, yEs, yeS, YEs, YeS, yES and YES.
+You could make some kind of encoding scheme where you for instance said if the
+keywords first letter was in the first half of the alphabet, or the last, and
+so on. Narrowing down the possibilites.
+
+
+### [alekh](/aleksanderhan)
+I could be wrong about the case, and then it wont work. But I thought I've
+seen both "yes" and "Yes" answers in the replays.
+
+
+### [Nicholas Broad](/nbroad)
+I don’t think that works but I don’t know for certain
+
+
+### [Chris Deotte](/cdeotte)
+We can use time to encode information. Our LLM decides the answer in the first
+10 seconds. We then respond at time = 10, 20, 30, 40 seconds. This allows us
+to encode and pass 2 bits of information to the guesser.
+For example, if the word's first letter is between A-F we respond at time=10,
+if first letter is between G-L we respond at time=20, if first letter is
+between M-R we respond at time=30, if first letter is between S-Z we respond
+at time=40. (And of course our response is "yes" or "no" to the question
+asked).
+The problem with this approach is that both the questioner and answerer would
+need to follow this system. Perhaps this is why Kaggle chose to use teams of
+two instead of allowing one Kaggler to be both the questioner and answerer.
+
+
+### [Kris Smith](/krist0phersmith)
+This won't work as the hosts have thought of this.
+The answerer output is processed to be all lower case.  
+When you review the logs of games they are showing the raw LLM response before
+the 20 questions competition codes have processed it. This is why you see
+different casing.
+If you read the competition code base you can see they are all converted to
+lower casing here:  
+<https://github.com/Kaggle/kaggle-
+environments/blob/88d915db0a5db35536447a0ba2e2ca0845ef4e25/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L120>

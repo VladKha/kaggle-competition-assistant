@@ -1,0 +1,53 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 24 days ago
+
+
+### Will the scores on the Private Leaderboard be visible from the beginning
+(Aug. 13th)?
+Hi all. This is an exciting competition! Thanks to Kaggle and to the Hosts.
+It is known that the final evaluation will start on August 13th. But it is
+unclear whether it will be like in other competitions where we would have to
+wait until the end to see the final scores. So my question is the following:
+  * Will we be able to see the scores on the private leaderboard as the matches are played just like in Football (i.e., see the updates of scores like in the public leaderboard) or will they be hidden until August 27th or later?
+
+
+## 4 Comments
+
+
+### [loh-maa](/lohmaa)
+> So please upvote if you agree with this so that Kaggle can take it into
+> account
+This is upvote begging. The answer to the question is straight yes, the
+leaderboard will continue to show the situation as normal. There's no need to
+make a popular vote out of it.
+
+
+### [JK-Piece](/jeannkouagou)
+I don't remember seeing this mentioned anywhere in the competition
+description. Could you maybe point to the section stating this?
+
+
+### [loh-maa](/lohmaa)
+[@jeannkouagou](https://www.kaggle.com/jeannkouagou) I think the reason it
+hasn't been mentioned is simply because there was no reason to suspect the LB
+would suddenly be hidden. Perhaps you're not aware but this is not the first
+simulation competition, and never there was any reason to hide the LB during
+evaluation. Can you think of such a reason?
+
+
+### [JK-Piece](/jeannkouagou)
+Well, this is my first simulation competition
+
+
+### [JK-Piece](/jeannkouagou)
+And I think it is the case for some others in this competition
+
+
+### [loh-maa](/lohmaa)
+That's totally OK, any grandmaster had to learn.. well, calling the shots is
+not easy without experience.
+
+
+### [JK-Piece](/jeannkouagou)
+I think it will be more exciting if games played are shown live in the test
+phase. So please upvote if you agree with this so that Kaggle can take it into
+account

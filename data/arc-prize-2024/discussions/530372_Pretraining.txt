@@ -1,0 +1,28 @@
+[Jesse McCrosky](/mccrosky) · Posted a month ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Pretraining
+I was hoping someone can clarify the requirement that "External data, freely &
+publicly available, is allowed, including pre-trained models".
+I would like to pre-train a model as part of my solution and use that pre-
+trained model in my submission. However, I would prefer not to make that model
+public until after the competition closes.
+Is this acceptable?
+comment
+
+
+## 1 Comment
+
+
+### [ZXY](/xiangyizhang)
+arrow_drop_up1
+  * format_quote
+  * link
+I believe that is very acceptable if not every non program synthesis approach
+is doing so.

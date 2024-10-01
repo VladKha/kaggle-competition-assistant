@@ -1,0 +1,80 @@
+[Joost Dekker](/joostdekker) · Posted 3 months ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ChatGPT 4o
+For testing i tried to use chatgpt to see if it can pick up on patterns (as
+the point of this competition is that it cant and we need something else then
+a LLM). I found that it already did quite well, I just copied one of the input
+examples and tested if it could deduce how the transformation took place.
+The example I chose is a grid where the squares surrounded by 3's get filled
+in by a 4. Note that this is not the first transformation I asked it to do, I
+first asked it to transform a 4x4 grid of a and b's, where the result is just
+the a,b's swapped
+My input:  
+input: [[0, 0, 0, 0, 0, 0], [0, 0, 3, 0, 0, 0], [0, 3, 0, 3, 0, 0], [0, 0, 3,
+0, 3, 0], [0, 0, 0, 3, 0, 0], [0, 0, 0, 0, 0, 0]] output: [[0, 0, 0, 0, 0, 0],
+[0, 0, 3, 0, 0, 0], [0, 3, 4, 3, 0, 0], [0, 0, 3, 4, 3, 0], [0, 0, 0, 3, 0,
+0], [0, 0, 0, 0, 0, 0]]
+ChatGPT:  
+To achieve the desired transformation, where specific elements (specifically,
+replacing certain 0s with 4s) need to be modified in the matrix, you can
+follow a similar approach but with additional conditions. Here's the Python
+code to accomplish this transformation:  
+def transform_matrix(matrix):  
+# Get the dimensions of the matrix  
+rows = len(matrix)  
+cols = len(matrix[0])
+    
+    
+    # Create a copy of the input matrix to avoid modifying the original
+    output_matrix = [row[:] for row in matrix]
+    
+    # Iterate over each element in the matrix
+    for i in range(1, rows - 1):
+        for j in range(1, cols - 1):
+            # Check if the current element is 0 and the surrounding elements form a pattern with 3s
+            if (matrix[i-1][j] == 3 and matrix[i+1][j] == 3) or (matrix[i][j-1] == 3 and matrix[i][j+1] == 3):
+                output_matrix[i][j] = 4
+    
+    return output_matrix
+    
+    
+    content_copy
+# Input matrix
+input_matrix = [  
+[0, 0, 0, 0, 0, 0],  
+[0, 0, 3, 0, 0, 0],  
+[0, 3, 0, 3, 0, 0],  
+[0, 0, 3, 0, 3, 0],  
+[0, 0, 0, 3, 0, 0],  
+[0, 0, 0, 0, 0, 0]  
+]
+# Transform the matrix
+output_matrix = transform_matrix(input_matrix)
+# Display the output matrix
+for row in output_matrix:  
+print(row)
+I justed wanted to share and maybe inspire someone. I do think the formatting
+of your examples and question might be important. ChatGPT is trained on a
+bunch of online data so putting it in a format it recognizes will probably
+help (just like with humans and how we like it if it is a picture format with
+colored pixels and for us a list of lists is hard to visualise as we have not
+been "trained" on that)
+comment
+
+
+## 1 Comment
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up-1
+  * format_quote
+  * link
+Hi Dekker,  
+could ChatGPT write snippet to deliver ARC drawings?

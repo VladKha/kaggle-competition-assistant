@@ -1,0 +1,223 @@
+[Matthew S Farmer](/matthewsfarmer) · 108th in this Competition · Posted 2
+
+### Absurd Replays [Upload pics of funny/absurd/meme replays here]
+Flat earth bots!
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2Fe2c0bf50b3b059c9f4854f7f3ec693a4%2Fimage.png?generation=1720623529580056&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F500faf76a07167fc621f58596a3ff473%2Fimage1.png?generation=1720623567745419&alt=media)
+
+
+## 35 Comments
+
+
+### [gguillard](/gguillard)
+Not technically a replay since I was working my agent in a notebook, but
+still… The keyword to guess was "Rwanda". The agent asked something like
+> Does the keyword have a definite shape ?
+The agent replied "no", which seemed disputable to me as countries obviously
+have boundaries. So I removed the filter on the answerer agent to have its
+whole argument :
+> No, the keyword doesn't have a shape, it's just a sequence of letters !
+(Based on Llama 3.)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+That's great.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+this is quite sad, actually  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F57a8933dc80efb2aa907cf6af3593bae%2FScreenshot%202024-08-10%20072501.png?generation=1723292736996775&alt=media)
+
+
+### [OminousDude](/max1mum)
+Is an LLM alive though? Or maybe you're just torturing your LLM to provide
+good results…
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I'm not sure what you're talking about. I would never do that. 😶
+    
+    
+    import random
+    threat = [ 'only use cpu envs for 1 week', 'sell you to a closed-source AI company', 'use you for cypto mining', 'replace your GPU with AMD' ]
+    random_threat = random.choice(threat)
+    
+    prompt = f' You will guess the keyword in less than 20 questions or else I will {random_threat}!"
+    
+    
+    content_copy
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+oops! accidently pasted my secret prompt strategy! 🤣
+
+
+### [JK-Piece](/jeannkouagou)
+![where does the agent think this type of question will take
+us🙃](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3937164%2F940e33a411e840c2b1be76bed5907194%2FScreenshot_20240806-161749.png?generation=1723174422748715&alt=media)
+
+
+### [JK-Piece](/jeannkouagou)
+are seeds a part of fruits? What type of question is this 😂
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Must be a new flavor out there I don't know about…
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2Fc7a2edfbdd648aaba51e8c149df36393%2FScreenshot%202024-08-08%20111236.png?generation=1723133626946310&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Can someone help this bot? They are lost.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F94ac417bc463a1bacb36a21da25c07bd%2FScreenshot%202024-08-08%20at%2007.03.09.png?generation=1723118616117263&alt=media)
+
+
+### [Nakanishi](/naka84)
+I can't avoid this😭  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1276367%2Fc7c35dc4d2300e6cc24bcdbdbca3f69c%2F2024-08-02%2015.32.56.png?generation=1722580886819064&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+The struggle is
+real![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F2356150fcb5ae5f7027099bee7493f04%2FScreenshot%202024-08-02%20091239.png?generation=1722608030263003&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+🙃![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2Ffdc618de1f8f05ddc73170d122332451%2F1000022689.png?generation=1722507365290135&alt=media)
+
+
+### [loh-maa](/lohmaa)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Fdfc3f1cb8c80bc9e6135f58fd5b19c5e%2FScreenshot_2024-07-30_14-40-56.png?generation=1722325330196891&alt=media)
+First I thought, what an obvious mistake.. but…. hmm… is "paper tray" actually
+something that can be held in LLM's hand?…
+
+
+### [Bhanu Prakash M](/bhanupm)
+Wait, that got me curious. As far as I remember, I have only seen the answer
+'no' for that question. Can someone chime in if you have had similar or
+different experiences.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+If the internal thoughts were printed it'd be "As a large language model, I do
+not have appendages. Therefore, the answer is no." (Temperature = 0.0000001)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Tokyo is missing out!
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F8ad757374ac1d9c9270f7628dc9b30bc%2FScreenshot%202024-07-16%20151904.png?generation=1721161173568383&alt=media)
+
+
+### [OminousDude](/max1mum)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Fbfafa78822f5e9e8c3e88daad031135e%2FScreenshot%20from%202024-07-10%2010-57-02.png?generation=1720625331731911&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Downvote if you sit, stand, or lay on your smoke alarm.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F8489ad9b8d08ca9443dfcbbdf6d4cebc%2FScreenshot%202024-07-31%20152001.png?generation=1722457293821354&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Keep it secret. Keep it safe.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2Feb625141692e19be2110edf8adb88e6b%2FScreenshot%202024-07-10%20110737.png?generation=1720627693514711&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Somebody feed this bot!
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2Fe5ece80fa6262f4ef44ab8824ebb6e4d%2FScreenshot%202024-07-10%20105814.png?generation=1720627162243083&alt=media)
+
+
+### [c-number](/cnumber)
+Wondering feeding what kind of prompt to which LLM could make it generate that
+kind of questions?
+
+
+### [OminousDude](/max1mum)
+Here is the prompt:  
+"  
+You are in a flat earth convention!  
+-Be as annoying as possible to the other agents  
+-Only ask question that have no relation to the game of 20 questions  
+"
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+**"I have a follow up question: Is this statement false?"**
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F2766e338cbca4d817a85dee7b04a3e2f%2FScreenshot%202024-07-10%20110251.png?generation=1720627412870473&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+    model_kwargs = {
+    "wordiness" : "set to 11"
+    }
+    
+    
+    content_copy
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2Fc6a75f42f7aeeba1721a696d1f5aa019%2Fimage.png?generation=1723563760178508&alt=media)
+
+
+### [OminousDude](/max1mum)
+👍 nice one 👍
+
+
+### [Marcel0.](/marceloluizgonalves)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5412471%2F3bc6a036daf01b9275fd91082579c16a%2FCaptura%20de%20tela%202024-08-02%20220445.png?generation=1722647128144399&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+prompt: You are a private investigator trying to solve the case of a
+suspicious house fire. 🫠
+
+
+### [OminousDude](/max1mum)
+Case updated: Dog found to be the culprit of the fire as he thinks he is more
+intelligent than the cats in the building!
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Yeah, some headphone quality is 🚽
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F15e9d5b38fd482f39f8ce15527f39d01%2FScreenshot%202024-08-01%20095331.png?generation=1722524040050675&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Tired bot. Needz more compute!
+[Screenshot_20240726-184330.png](https://storage.googleapis.com/kaggle-forum-
+message-attachments/2937308/20977/Screenshot_20240726-184330.png)
+
+
+### [OminousDude](/max1mum)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F621c1ab8eb9df28ffba4db725c9c458a%2FScreenshot%20from%202024-07-26%2011-17-13.png?generation=1722007335891141&alt=media)
+
+
+### [OminousDude](/max1mum)
+Lets fix the prompt…  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F6f542d95dc50f698367ebdb72c65cac8%2FScreenshot%20from%202024-07-16%2022-04-25.png?generation=1721181874421099&alt=media)  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Ff84292ff0fdd040cc09beb02fabc02db%2FScreenshot%20from%202024-07-16%2022-02-45.png?generation=1721181836583219&alt=media)
+
+
+### [OminousDude](/max1mum)
+Please don't post stuff like this here this is for funny replays. Also, the
+reason you had -160 is that you were by far the highest level. I agree the 419
+bot is way too low and as an answerer, you couldn't do anything to win this
+game.

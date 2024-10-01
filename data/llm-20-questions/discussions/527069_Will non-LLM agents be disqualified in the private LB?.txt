@@ -1,0 +1,76 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 23 days ago
+
+### Will non-LLM agents be disqualified in the private LB?
+I believe that this competition should not allow "mainly"-deterministic
+approaches as the name is "LLM 20 Questions" not just "20 Questions" I also
+believe it is unfair for a lot of reasons but mainly since LLMs are in a
+slight disadvantage until true AGI is born no LLM will be able to beat a human
+at a game such as 20 questions. This means that more deterministic agents will
+win as they are made by a human, not an AI. I think for the fairness and
+spirit of this competition letter-based, deterministic, or other "hardcoded"
+bots should be automatically disqualified. These types of bots will always
+have an advantage over current AI-based bots.  
+I also think that questions should not be hardcoded even at the start. Most
+competitors (including myself) ask a couple of questions at the beginning of
+the game to find the approx. category of the keyword. This is not nearly as
+"unfair" as the bots mentioned above; however, what is the line between
+"hardcoded first questions" and "fully hardcoded bots"? For this reason, I
+think the bots should not be allowed any hardcoded first few questions. The
+final 4 days are long enough for all people who use the above strategies to
+change their code. Because of the above ideas I advocate for a fair
+competition that is fully reliant on how advanced your LLM, your prompt, and
+other AI-based features are. If someone has any other ideas on what to "ban"
+please explain in the comments. I think that if enough people side with me on
+this topic we can change the rules. If you agree with me give me a like or
+reaction to my discussion. Thanks for such an interesting competition!
+[@bovard](https://www.kaggle.com/bovard) please consider my proposition.
+**Like or react with "K" for an agreement! Downvote or react with "!" for a
+disagreement!**
+
+
+## 6 Comments
+
+
+### [Kha Vo](/khahuras)
+Competition rules can’t be drastically changed twice: 2 weeks before deadline,
+and then 3-4 days before deadline on a whim like this.
+
+
+### [OminousDude](/max1mum)
+I agree with this and believe that someone should have released something like
+this a long time ago but 4 days is way too close to the deadline.
+
+
+### [Vitaly Kudelya](/vitalykudelya)
+The problem of banning a specific technique is much more difficult to solve
+than it might seem, just a few thoughts for consideration:
+  * It is possible to fine-tune LLM with "hardcoded" logic. Eventually it will be LLM that repeats "hardcoded" logic
+  * it will be necessary to spend a huge amount of resources on models verification (including training process) and many complicated decision on borderline situations if you choose to ban something
+  * I think that it is in the spirit of Kaggle to find the best algorithm that optimizes the target metric. It would be strange to ban certain approaches that show efficiency, such as logistic regression, constant prediction, or hardcoded logic.
+In my opinion, the leaderboard should be without restrictions on the
+algorithms used. Special prizes can be made to promote certain approaches in
+addition to the leaderboard prizes if desired.
+
+
+### [loh-maa](/lohmaa)
+It's a pleasure to read such a thoughtful and patient explanation.
+
+
+### [loh-maa](/lohmaa)
+I don't know why, but after I've read this, funny thoughts keep coming… for
+instance "this kind of a proposition could easily pass in a parliament
+provided your party had the majority"… what a relief Kaggle has more integrity
+than that..
+Another one: "was it his master plan? to keep working on LLMs and then at 4
+days before the deadline ask the administration to change the rules?" … ,)
+
+
+### [JK-Piece](/jeannkouagou)
+Well, I proposed a different idea for future LLM 20 Questions competitions
+here: <https://www.kaggle.com/competitions/llm-20-questions/discussion/526928>
+which was not well received by at leat 5 people who downvoted. Instead of
+banning, I proposed to reduce the frequency at which some specific agents
+(those with questions that lead to nowhere, an example "Is Monday a weekday?"
+which has nothing to do with the game) play. Another alternative was to
+temporarily disable submissions for users who would continue submitting such
+agents.

@@ -1,0 +1,28 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+### How is the score calculated?
+I was looking through some episodes and in some, I see massive changes in the
+score up to +64 and -64 but in some, I see stuff like +0 +1 +4 etc. I was
+wondering how this is calculated. Thank you for the help!
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+The evaluation page says:
+> Each submission has an estimated skill rating which is modeled by a Gaussian
+> N(μ,σ2) where μ is the estimated skill and σ represents the uncertainty of
+> that estimate which will decrease over time.
+>
+> When you upload a submission, we first play a validation episode where that
+> submission plays against copies of itself to make sure it works properly. If
+> the episode fails, the submission is marked as error and you can download
+> the agent logs to help figure out why. Otherwise, we initialize the
+> submission with μ0=600 and it joins the pool of for ongoing evaluation.
+I have noticed that a true win or loss changes score more than a tie (i.e. no
+team gets a correct answer).
+
+
+### [OminousDude](/max1mum)
+Thanks very much!

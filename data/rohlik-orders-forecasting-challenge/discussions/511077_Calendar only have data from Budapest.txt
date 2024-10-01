@@ -1,0 +1,39 @@
+[Yan Teixeira](/yantxx) · 19th in this Competition · Posted 3 months ago
+
+
+### Calendar only have data from Budapest
+Both the train and test calendars only contain data from Budapest. Was this
+intended? From reading the description of the data, I thought this dataset was
+supposed to include data for all warehouses.
+
+
+## 3 Comments
+
+
+### [MichalKecera](/mkecera)
+Hi [@yantxx](https://www.kaggle.com/yantxx),  
+Good catch. Thanks. This is now corrected - it has all the warehouses.
+
+
+### [Yan Teixeira](/yantxx)
+[@mkecera](https://www.kaggle.com/mkecera) I have another quick question
+Budapest_1 is the only warehouse with a latest date of 2024-03-14, whereas all
+the other warehouses have a latest date of 2024-03-15. The first date for all
+warehouses in the test set is 2024-03-16, which makes me think that the
+training data might be missing the 2024-03-15 data for Budapest.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13062964%2Ffc26ef9639b3c309efea6bd0f3d99b51%2Fwarehouses.png?generation=1717963982169724&alt=media)
+
+
+### [MichalKecera](/mkecera)
+Hi [@yantxx](https://www.kaggle.com/yantxx) 2024-03-15 was a public holiday in
+Budapest - the warehouse was not open.
+
+
+### [Yan Teixeira](/yantxx)
+[@mkecera](https://www.kaggle.com/mkecera) Can you share a MAPE benchmark for
+one or more models that Rohlik uses?
+
+
+### [MichalKecera](/mkecera)
+[@yantxx](https://www.kaggle.com/yantxx) yes, we will do it in a few weeks.

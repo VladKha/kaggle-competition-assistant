@@ -1,0 +1,29 @@
+[Marcel0.](/marceloluizgonalves) · 347th in this Competition · Posted 2 months
+
+### Suggestions to avoid being stuck on 600's.
+I just entered this competition and noticed a huge number of agents with
+around 600 points that were only made for testing purposes (answering only yes
+for example), which could be hindering new players from climbing the
+leaderboard. I've read about the 10% chance to play with higher-rated players,
+but it seems to take a lot of time to take effect. It would be interesting to
+see how long a copy of the top 1 on LB beginning with 600 points would take to
+return to have a high score again. Maybe two alternative possibilities to try
+to solve this problem:
+1 - When entering a new agent, if you win the test episode against yourself,
+your agent begins with something like 650 or 700 points instead of 600.  
+2 - Remove agents without a single win in the last 100 games and less than 650
+points.
+What do you think about it?
+
+
+## 1 Comment
+
+
+### [RS Turley](/rturley)
+I agree that this is a challenging aspect of the competition structure. In a
+different thread, [@lowmaa](https://www.kaggle.com/lowmaa) called this
+"escaping the pit of dumbness."
+In my experience, when I submit a good agent, it plays around 10 matches on
+the first day, which usually allows it to get one win and rise to the 700
+range. Unfortunately, it then only plays one or two matches each day, so
+further progress is slow.

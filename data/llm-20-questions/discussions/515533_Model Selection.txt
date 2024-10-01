@@ -1,0 +1,46 @@
+[Matthew S Farmer](/matthewsfarmer) · 108th in this Competition · Posted 2
+
+### Model Selection
+Outside of fine-tuning a model on a specific 20 Q dataset, I've been thinking
+about how to select the best model for the competition. This has led to me
+check out the [HF Open LLM Leaderboard](https://huggingface.co/spaces/open-
+llm-leaderboard/open_llm_leaderboard) and dig into the different benchmarks.
+The key to performance should be deductive reasoning and the model's ability
+to follow explicit instructions (to help with parsing). That leads me to
+prioritize two benchmarks:  
+MUSR and IFEval
+`MuSR (Multistep Soft Reasoning) (https://arxiv.org/abs/2310.16049) – MuSR is
+a new dataset consisting of algorithmically generated complex problems, each
+around 1,000 words in length. The problems include murder mysteries, object
+placement questions, and team allocation optimizations. Solving these problems
+requires models to integrate reasoning with long-range context parsing. Few
+models achieve better than random performance on this dataset.`
+`IFEval (https://arxiv.org/abs/2311.07911) – IFEval is a dataset designed to
+test a model’s ability to follow explicit instructions, such as “include
+keyword x” or “use format y.” The focus is on the model’s adherence to
+formatting instructions rather than the content generated, allowing for the
+use of strict and rigorous metrics.`
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F9148b0742b9782ac96dad776d99ba51b%2FScreenshot%202024-06-28%20104606.png?generation=1719589628809662&alt=media)
+  * Phi 3, Qwen 2, Openchat 3.5, Yi, Hermes 2… all at the top of the board when considering the benchmarks above. 
+  * In contrast: Gemma 2 7b it (the starter notebook model) has a MUSR of 12.53 whereas Intel's Neural Chat has a MUSR or 23.02…
+Just some things to think about. Happy kaggleing!
+
+
+## 2 Comments
+
+
+### [Azim Sonawalla](/asonawalla)
+> The key to performance should be deductive reasoning and the model's ability
+> to follow explicit instructions (to help with parsing).
+I'm not sure about this assumption. The bots need reasoning to the extent that
+they can find a keyword that satisfies up to 20 simultaneous conditions as the
+questioner/guesser, but actual knowledge of facts in order to come up with
+late game questions to narrow down the last few candidates.
+I've been toying with the idea that a model trained on a higher token count
+(e.g. llama3) might do well for this reason, but haven't gotten around to
+creating an experiment along those lines.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+a larger vocabulary training than English only models?

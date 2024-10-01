@@ -1,0 +1,36 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up1
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Strange beautiful...
+3 hours ago, I watched part of a FC interview on YouTube. They discussed the
+notion of "coming up with new puzzles," so I took a minute to think one
+through. Just now, as I was walking a few of the challenges, I stumbled across
+2dd70a9a. Which was essentially what I had imagined, earlier. Just one of
+those things.  
+"Your people I do not understand…"
+comment
+
+
+## 2 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up2
+  * format_quote
+  * link
+The referenced [task
+2dd70a9a](https://neoneye.github.io/arc/edit.html?dataset=ARC&task=2dd70a9a)
+is a snake game. The orientation of snakehead and snaketail, determines how
+the snake bends. Indeed a beautiful puzzle.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+And perhaps a little more "time traveling" than average.

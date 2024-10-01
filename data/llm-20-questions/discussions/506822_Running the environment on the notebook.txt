@@ -1,0 +1,179 @@
+[EduMI95](/itsnotedu) · Posted 3 months ago
+
+
+### Running the environment on the notebook
+Has anyone managed to run the kaggle_environments library environment on your
+notebook (either from kaggle or on your machine)? I have tried to run the
+notebook code <https://www.kaggle.com/code/jazivxt/llm20q-gemma-2b-it>
+changing at the end the code to test with various agents:
+    
+    
+    from kaggle_environments import make
+    env = make("llm_20_questions")
+    
+    #Run Code
+    %run submission/main.py
+    
+    env.run([get_agent('questioner'), get_agent('answerer'), get_agent('questioner'), get_agent('answerer')])
+    env.render(mode="ipython")
+    
+    
+    content_copy
+And I get the following error:
+    
+    
+    File /opt/conda/lib/python3.10/site-packages/kaggle_environments/envs/llm_20_questions/llm_20_questions.py:123, in interpreter(state, env)
+        121 active1.observation.category = category
+        122 response = active1.action
+    --> 123 if response.lower().__contains__("yes"):
+        124     response = "yes"
+        125 elif response.lower().__contains__("no"):
+    
+    AttributeError: 'NoneType' object has no attribute 'lower'
+    
+    
+    content_copy
+
+
+## 5 Comments
+
+
+### [jazivxt](/jazivxt)
+The environment is working offline if you have enough memory for 4 agents, it
+errors out on notebooks due to limit of 15Gb memory but runs ok because your
+only using one agent when submitted. The issue with responses is in the class
+GemmaAgent for the raise NotImplementedError at the end. See changes on my
+script.
+
+
+### [EduMI95](/itsnotedu)
+Perfect! Thanks!
+
+
+### [Lyubomir Klyambarski](/lyubomirklyambarski)
+Update your kaggle_environments package.  
+!pip install 'kaggle_environments>=1.14.8'
+
+
+### [G John Rao](/jaejohn)
+I have tried the follow, with some errors yet to fix. Maybe it will help get
+some ideas
+    
+    
+    class Observation:
+        def __init__(self, questions, answers, turnType, keyword=None, category=None):
+            self.questions = questions
+            self.answers = answers
+            self.turnType = turnType
+            self.keyword = keyword
+            self.category = category
+    
+    
+    content_copy
+    
+    
+    # Initialize the agents
+    questioner = GemmaQuestionerAgent(
+        device='cpu',  # Use 'cpu'
+        system_prompt=system_prompt,
+        few_shot_examples=few_shot_examples,
+    )
+    
+    answerer = GemmaAnswererAgent(
+        device='cpu',  # Use 'cpu'
+        system_prompt=system_prompt,
+        few_shot_examples=few_shot_examples,
+    )
+    
+    # Define the initial game state
+    questions = []  # List to hold questions asked
+    answers = []    # List to hold answers given
+    turnType = 'ask'  # Initial turn type ('ask' or 'guess' for Questioner, 'answer' for Answerer)
+    keyword = 'France'  # Example keyword for the Answerer
+    category = 'country'  # Example category for the Answerer
+    
+    # Simulate the game loop
+    for _ in range(20):  # Play 20 turns or until the keyword is guessed correctly
+        obs = Observation(questions, answers, turnType, keyword, category)
+    
+        if obs.turnType == 'ask':
+            # Questioner's turn to ask a question
+            question = questioner(obs)
+            print(f"Questioner: {question}")
+            questions.append(question)
+    
+            # Answerer's turn to answer the question
+            turnType = 'answer'
+            obs = Observation(questions, answers, turnType, keyword, category)
+            answer = answerer(obs)
+            print(f"Answerer: {answer}")
+            answers.append(answer)
+    
+            # Switch back to Questioner's turn
+            turnType = 'ask'
+    
+        elif obs.turnType == 'guess':
+            # Questioner's turn to guess the keyword
+            guess = questioner(obs)
+            print(f"Questioner guesses: {guess}")
+    
+            if guess.lower() == keyword.lower():
+                print("Questioner guessed the correct keyword!")
+                break
+            else:
+                print("Incorrect guess. Continue playing.")
+                turnType = 'ask'
+    
+        # Simulate ending the game if we want to stop early
+        if len(questions) >= 20:
+            print("Reached the maximum number of turns.")
+            break
+    
+    
+    content_copy
+Output:
+    
+    
+    Initializing model
+    response='Sure, please ask your first question: Is the keyword a food?'
+    Questioner: Sure, please ask your first question: Is the keyword a food?
+    
+    
+    content_copy
+Error:
+    
+    
+    NotImplementedError                       Traceback (most recent call last)
+    Cell In[16], line 34
+         32 turnType = 'answer'
+         33 obs = Observation(questions, answers, turnType, keyword, category)
+    ---> 34 answer = answerer(obs)
+         35 print(f"Answerer: {answer}")
+         36 answers.append(answer)
+    
+    Cell In[8], line 23, in GemmaAgent.__call__(self, obs, *args)
+         22 def __call__(self, obs, *args):
+    ---> 23     self._start_session(obs)  # Start a new session with the given observation
+         24     prompt = str(self.formatter)  # Generate the prompt from the formatter
+         25     response = self._call_llm(prompt)  # Get the model's response
+    
+    Cell In[8], line 31, in GemmaAgent._start_session(self, obs)
+         30 def _start_session(self, obs: dict):
+    ---> 31     raise NotImplementedError
+    
+    NotImplementedError: 
+    
+    
+    content_copy
+I don't understand how the kaggle environment runs the code yet. We have a
+link to the github repo which I am yet to explore.
+here -> <https://github.com/Kaggle/kaggle-environments>
+
+
+### [RS Turley](/rturley)
+Yes, I wrote an example notebook with tips on how to run and debug in the
+environment.
+<https://www.kaggle.com/code/rturley/run-llm-20-questions-in-a-notebook>
+![screenshot](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F642735%2F07aeeac8fae5685cbeef59b8ed1ad3c4%2Fnotebook_example.png?generation=1716827668088280&alt=media)

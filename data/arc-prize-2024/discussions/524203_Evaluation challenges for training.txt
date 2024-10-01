@@ -1,0 +1,42 @@
+[Ish](/ishgirwan) · Posted 2 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Evaluation challenges for training
+[@gregkamradt](https://www.kaggle.com/gregkamradt) Since the evaluation
+challenges and solutions are in separate files, I am unsure if we are allowed
+to use evaluation challenges for training?
+comment
+
+
+## 3 Comments
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up1
+  * format_quote
+  * link
+You can use whatever data you want for training, the train/eval partition in
+this competition is just a suggestion.
+
+
+### [Ish](/ishgirwan)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for clarifying.
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up0
+  * format_quote
+  * link
+As [@ironbar](https://www.kaggle.com/ironbar) said, you can use whatever you
+want. According to Chollet, the eval set is meant to be a little bit harder.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F651278%2F2808067354f2dbdf9a1671769bf4b88d%2FScreenshot%20from%202024-08-07%2017-55-25.png?generation=1723067760931627&alt=media)

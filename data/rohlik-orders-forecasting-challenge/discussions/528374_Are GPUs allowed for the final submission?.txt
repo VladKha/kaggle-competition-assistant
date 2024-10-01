@@ -1,0 +1,30 @@
+[Ern711](/ern711) · 11th in this Competition · Posted a month ago
+
+
+### Are GPUs allowed for the final submission?
+I might be completely blind, but have not seen anything about this. Is it
+allowed?
+
+
+## 2 Comments
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+You need to submit a file of predictions here- you can choose to create them
+with CPU/ GPU/ Kaggle/ Colab/ local PC/ cloud GPU provider/ excel file, etc.
+All the best [@ern711](https://www.kaggle.com/ern711)
+
+
+### [Ern711](/ern711)
+Thank you [@ravi20076](https://www.kaggle.com/ravi20076)
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+[@ern711](https://www.kaggle.com/ern711) wishing you the best for the
+competition!
+
+
+### [Ern711](/ern711)
+Same to you [@ravi20076](https://www.kaggle.com/ravi20076)! Will be
+interesting to see whether or not there will be a huge shake-up. I'm kind of
+50-50.

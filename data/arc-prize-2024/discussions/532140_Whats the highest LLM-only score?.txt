@@ -1,0 +1,115 @@
+[OminousDude](/max1mum) · 440th in this Competition · Posted a month ago
+arrow_drop_up8
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Whats the highest LLM-only score?
+I have been working on LLMs to solve ARC and wanted to know the highest score
+that someone has achieved with a language model. I know that multiple people
+have a score of 1 using llama but has anyone exceeded this?
+comment
+
+
+## 8 Comments
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up5
+  * format_quote
+  * link
+With fine-tuning, you can score at least as high as 46 (the current LB score
+of the MindsAI team 😜)
+Without fine-tuning it would be very hard to score above 1, because LLMs are
+used to work with 1D data, not with the 2D data like the ARC tasks.
+
+
+### [Play4fun$$](/play4funn)
+arrow_drop_up2
+  * format_quote
+  * link
+im trying locally to run this using groq API and a reflection agent using
+mixtral 7*7B and LLama 3 70b as backbone models, im gettting 11% to 14% in
+both training and eval , we are talking exact matches , cuz im getting often
+scorees up to 0.98 with 1 or 2 pixels being wrong  
+i have a setup of back and forth communciation between actor and revisor nodes
+, with a final refinement layer .  
+the actor gets 50% of the training pairs , generates a descrption (the
+detailed explanation of the transformation.) , the revisor takes the
+descrption applies it to other pairs and try to optimize more the descrption
+(this process loops around until training pairs are over )  
+the final layer of refinement takes about 80% of training pairs and best
+description to refine it.  
+then best description get fed to both revisor & actor that applie it to test
+pairs.
+I would say this model would achieve much higher score when paired with a kind
+of search algo or tool calling (like python REPL).  
+he could use a set of transformation like the ones proposed by
+[@ice](https://www.kaggle.com/ice)_cuber in ([top 1 in ARC
+2020](https://www.kaggle.com/code/hansuelijud/template-arc2020-1st-place-
+solution-by-icecuber)) (142 transfomations) ..
+but all of this is is against this competition rules : API , and runtime .
+NB :
+  * evalution : i have a hybrid evalution technique , it rates exact colors matching , exact shape matching , and objects matching (ignores colors) 
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+Now I'm **_really_** curious. Has anyone scored higher than 1 using LLMs? I
+have only worked with straight python, and my score is still zero, so I don't
+think you could do worse than that. And frankly, I don't get the downvoting. I
+though Priyaiot spoke well toward the answer. I know the (most of the) big
+scores use an amalgam of "solutions", but I haven't noticed a lot of LLM
+action in these "best of" from 2020, forward.
+
+
+### [OminousDude](/max1mum)
+arrow_drop_up1
+  * format_quote
+  * link
+I didn't run my model but I expect it to make at least 2 or 3! I have a couple
+things that could improve it (still a full-llm solution)
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+** _Something_** got you to 436th! :-) When you run your pure LLM, let us know
+how it does with the private test set. And thank you for weighing in. This
+challenge is extremely difficult. And the LLM route is to be admired (ala
+Ginger Rogers, backwards and in heels). Not only is this not your typical ML
+challenge, it was engineered to be transcendently difficult for LLMs and their
+brethren. Respect.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+I took a second to ask myself what the heck I am doing, and the oddest thing
+struck me about my current tack: I'm using an agile approach! I'll let it go
+at that, but it was very amusing to realize that **_that_** was the
+cornerstone of my current approach. I can put that on my resume! "maintained a
+score of zero using agile methodologies."
+
+
+### [OminousDude](/max1mum)
+arrow_drop_up0
+  * format_quote
+  * link
+I am not sure if others have similar llm-only results but it gets really
+close…
+Hide repliesarrow_drop_up
+
+
+### [Manipal ECE](/manipalece)
+arrow_drop_up0
+  * format_quote
+  * link
+i think it is 46

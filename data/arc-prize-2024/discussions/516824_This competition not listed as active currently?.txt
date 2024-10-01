@@ -1,0 +1,38 @@
+[Matt McDonagh](/mattmcdonagh) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### This competition not listed as active currently?
+Hi all I just noted ARC Prize 2024 isn't showing on my list of Active
+Competitions
+I haven't withdrawn and can still submit predictions… curious if anyone else
+noticed the same thing?
+comment
+
+
+## 2 Comments
+
+
+### [chris](/chris62)
+arrow_drop_up1
+  * format_quote
+  * link
+If you join a competition and then don't submit for a while (I'm not sure what
+the time frame is), Kaggle moves the competition from "My Active" competition
+list to just the "Active" list. You're still enrolled and can still submit,
+and if you do then it will pop back up into your active competition list.
+I think it's just a UI thing to keep the "my active" list to only list the
+competitions that you're actively submitting to.
+
+
+### [Matt McDonagh](/mattmcdonagh)
+arrow_drop_up1
+  * format_quote
+  * link
+Thanks that tracks with my experience.
+Happy Kaggling and I hope you learn something new and useful this week 👍

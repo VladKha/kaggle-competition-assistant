@@ -1,0 +1,16 @@
+[Wajahat Waheed](/wajahat1064) · 95th in this Competition · Posted a month ago
+
+
+### Did someone try predicting user_activity_2 first?
+Hi I was trying to predict user_activity_2 feature first and then input it as
+a feature to the overall model but I didn't get any good results. Any one
+tried it this way and could make it work?
+
+
+## 2 Comments
+
+
+### [Ahmed Samir A.Fattah](/ahmedsamirafattah)
+I’ve found that using Facebook Prophet for this kind of task can be quite
+effective Prophet is a robust tool for time-series forecasting and can handle
+trends and seasonality well

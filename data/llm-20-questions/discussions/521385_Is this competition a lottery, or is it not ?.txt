@@ -1,0 +1,221 @@
+[gguillard](/gguillard) · 217th in this Competition · Posted a month ago
+
+
+### Is this competition a lottery, or is it not ?
+No offense to the Kaggle team, but I was quite puzzled after watching episodes
+from my first submission and reading many concerns in discussions, so I had to
+convince myself of the fairness of the ranking system in order to decide if it
+was worth investing more time in this competition.
+Therefore I made a small toying notebook to play with it :  
+<https://www.kaggle.com/code/gguillard/llm-20-questions-trueskill-simulator>
+I was really hoping it would prove my intuition wrong, but it didn't. On the
+contrary, assuming there's no serious flaw in my investigation, my finding is
+that the ranking never converges enough to distinguish between opponents of
+not-so-similar skills :  
+![Evolution of players' mu
+score](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2708023%2Fced460c3b51326087890b87de9a0920e%2Fsimulated_all_players_mu.png?generation=1721910847074472&alt=media)
+![Evolution of the top 10 simulated
+players](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F2708023%2Fe095e9c4e39a102341052bbac1f58581%2Fsimulated_top10_players_mu.png?generation=1721910867827444&alt=media)
+Hopefully I got some parameter wrong and the organizers will point it out,
+otherwise it is not too late to amend the ranking system.
+Amongst many discussions about this subject, I think [@c-number (opens in a
+new tab)">the spectacular example recently shown by
+](https://www.kaggle.com/competitions/llm-20-questions/discussion/520928)[@c-number](https://www.kaggle.com/c-number),
+where the same model posted at the same date is ranked both 1st, 6th and and
+60th (!) on the current leaderboard, is quite convincing that there is no
+point in using the current evaluation system.
+In its current state, the competition is indeed a (biased, but still) lottery.
+Not that I have anything against lotteries, but it's good to know when it's
+one, because it's better not to expect too much of it.
+If they want the competition to be meaningful in terms of rewarding the best
+submissions, I urge the host to reconsider the ranking options. It'd be a pity
+if the competition was despised because of its scoring system, because that's
+really a fun competition.
+[@bovard](https://www.kaggle.com/bovard)
+[@addisonhoward](https://www.kaggle.com/addisonhoward)
+PS : Maybe that changed with the latests improvements of my notebook (I didn't
+check), but from my firsts tests the TrueSkill system didn't seem very stable
+whatever the combination of parameters for such a competition. For what it's
+worth, I'd just go for a plain `n_wins` ranking (guesser + answerer), with a
+fixed number of games per submission.
+**Edit  :**
+Here are the leaderboards for 4 such experiments with just a different random
+seed (see the bottom of the last version of the notebook) :
+    
+    
+    Leaderboard 1
+    rank    id  skill   mu
+    1        1   0.98    977
+    2        4   0.77    985
+    3        0   0.98    962
+    4        2   0.96    926
+    5        20  0.43    978
+    
+    Leaderboard 2
+    rank    id  skill   mu
+    1        0   0.98    1021
+    2        2   0.96    925
+    3        9   0.58    974
+    4        4   0.77    854
+    5        8   0.59    941
+    
+    Leaderboard 3
+    rank    id  skill   mu
+    1        1   0.98    1019
+    2        0   0.98    1038
+    3        2   0.96    1014
+    4        4   0.77    913
+    5        5   0.73    988
+    
+    Leaderboard 4
+    rank    id  skill   mu
+    1        4   0.77    969
+    2        8   0.59    978
+    3        1   0.98    912
+    4        0   0.98    948
+    5        3   0.82    986
+    
+    
+    content_copy
+
+
+## 7 Comments
+
+
+### [Andrew Tratz](/jademonk)
+I think this reflects a few realities of this competition as it currently
+stands:
+  1. The highest-ranked bots still lose the majority of their games.
+  2. Some of the high-ranking bots are relying on the public keyword list and may not be robust when the private list is released
+  3. Pairing two bots together compounds this randomness
+  4. Wins seem to be awarded lots of points, losses do not seem to decrease points as rapidly
+  5. When a bot errors, all others receive a win
+  6. Relatively slow frequency of games played for "mature" bots
+This means a few lucky wins will cause a quick jump on the LB but a fairly
+slow decay. Using over-reliance on the keyword list may allow bots to remain
+on top for a while but also expose them to risk when private keywords are
+released.
+I think the organizers should change #5 to have the error bot penalized but
+give no reward to the other players, since this just adds distortion. It makes
+sense in other simulation competitions but perhaps not this one. Perhaps some
+tweaks would help with #4 as well.
+I imagine we'll see some healthy shake-up on the private LB, although this
+shake-up may also be somewhat random unless a few people come up with
+distinctly better bots.
+
+
+### [OminousDude](/max1mum)
+I think the shake-up on private will be quite massive too. I am almost fully
+convinced everyone in the top ~25 uses the public LB keywords list.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Nope my agent doesn't know about keywords but it has only categories. But
+unfortunately this is very much luck based.
+
+
+### [gguillard](/gguillard)
+Bots relying on the public keyword list is the responsibility of their
+developers, it's not the matter of the organizers IMO — although I am curious
+if non-LLM or part-LLM bots may be disqualified, since it's an LLM
+competition.
+Point #4 is slightly wrong : you're confusing losses with draws. The relation
+between a win and a loss is roughly symmetric, although it depends on the
+different mu and sigma of the players. Anyway this is by design, due to the
+TrueSkill settings (see notebook), and I believe it was deliberately chosen by
+the hosts.
+
+
+### [loh-maa](/lohmaa)
+No disqualifications should/can be applied on a whim, there must be solid
+grounds to do so. Since there are no specific rules regarding techniques, then
+presumably all techniques are allowed (except cheating in general of course.)
+And surely it is way too late to change the rules.
+
+
+### [gguillard](/gguillard)
+Well beside its title, the competition description _does_ state (emphasis
+mine) :
+> **Each team will consist of one guesser LLM** , responsible for asking
+> questions and making guesses, and **one answerer LLM** […]
+>
+> **This competition will evaluate LLMs**
+It would be quite questionable if a winner comes with a non-LLM solution, IMO.
+
+
+### [loh-maa](/lohmaa)
+Yes, but this is in a "description" section, to give the basic idea of the
+competition. If those were the rules, they would be also in the "rules"
+section, clearly specified. I don't think there are many competitions on
+Kaggle which restrict techniques, if any. And this is just a good general
+principle of problem solving in CS -- whatever works best.
+
+
+### [gguillard](/gguillard)
+You're probably right, but still, that'd be a clumsy situation IMO.
+
+
+### [OminousDude](/max1mum)
+I fully agree and believe that this is a massive problem and I sincerely hope
+that the competition hosts find a way to fix this.
+One way this score deviation could be minimized is by removing agents that
+have not had a single win in the last ~50 rounds. This will stop them from
+bringing down agents at the top of the leaderboard as low bots and high bots
+will sometimes be placed with each other to help overcome the "pit of
+dumbness" that comes between scores ~650 down to zero.
+Another way is to play the game three times instead of one so that each agent
+will play against each other. For example, if round one is won by team a
+consisting of agent1 and agent2, in the next round agent1 will go against
+agent3 and then agent4, this way each agent will play each other model. The
+second option would fix the problem of one questioner agent getting a "bad"
+answerer. If no one wins any round then the default points will be given. If 2
+rounds are won the agent that is included in both of the winning teams will
+get a boost and the other agents in those rounds that only won one round will
+get a smaller (but still substantial) reward.
+Finally, a third way to fix this could be if one agent constantly loses/does
+not win the other agent in its team will get a small boost (+10 or so) and the
+losing bot will lose a bit (-10 or so) this will split bots that win and lose
+quicker so that the bots that actually can play and win will be playing
+against higher level bots.
+I hope the competition hosts consider at least one of these options
+(preferably the second and third ones). Such small changes as I have described
+above will make massive changes to the "lottery" aspect of the scoring.
+
+
+### [gguillard](/gguillard)
+The good thing is that all these options are now straightforward to test
+through the simulator notebook, so they can decide which is best based on
+facts.
+
+
+### [OminousDude](/max1mum)
+Oh yes, I just realized that! I suggest that we run a few of the possible
+strategies on your notebook to find the best.
+
+
+### [gguillard](/gguillard)
+As far as I'm concerned I will try to focus for a while on making a second
+submission. :D
+But if the hosts acknowledge that they're open to modifying the evaluation
+I'll be happy to help if needed.
+
+
+### [loh-maa](/lohmaa)
+There is much confusion and good reasons to wonder what's going, on especially
+for new players. If you notice, any agent reaching the score of around 750,
+suddenly stops playing frequently and plays only a game or two a day. This
+obviously affects the LB and I'm pretty sure it's going to be reverted to
+normal in the final stage. I'm not really sure why this alteration has been
+introduced but it could be to obscure real performance, it could help in
+preventing particular solutions from gaining too much of critical mass and
+thus spoiling the whole thing. So, anyway, I think there's no need to worry,
+join in with your best ideas!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Wouldn't answerer mixture of answerers improve this competition? I see the
+single answer is driving into completely wrong direction :( It wont solve the
+problem for 100% but still could improve alot

@@ -1,0 +1,85 @@
+[JK-Piece](/jeannkouagou) · 1060th in this Competition · Posted 10 days ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Why is it so hard to train a deep learning model for ARC?
+I have spent an entire week trying to develop a model which can be properly
+trained on the provided data. However I encounter the following issues:
+  1. It seems that the model is unable to understand the patterns in the data
+  2. The model keeps overfitting to the training split. The loss on the training set and that on the validation set move in completely opposite directions. I can achieve 100% accuracy on the training, and 0% on the validation set (5-fold cross validation)
+  3. I tried using a pretrained resnet34 model, extracted features from it, but no chance.
+  4. I used techniques like counting digits in different grids, and used them as features; validation loss and training loss still move in different directions. 
+Has anyone experienced this? I am tackling the problem in a wrong angle?
+comment
+
+
+## 6 Comments
+
+
+### [Chen](/chenku)
+arrow_drop_up2
+  * format_quote
+  * link
+You are probably doing supervised training. It doesn't work when every
+instance requires a new skill (a way to transform the inputs). If you still
+want to train a deep learning model, my suggestion is to tackle the problem
+from a reinforcement learning angle. Treat the problem as a MDP where the
+terminal state corresponds to a solution, and reward is given if the solution
+is correct. Teach not the agent the answer to a problem, but let it learn how
+to find the answer to any problem. You may ask, what difference does it make?
+The answer to each ARC puzzle is not related and therefore is not a
+transferable skill. But the process to solving each puzzle has a lot in common
+and therefore is a transferable skill.
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for your reply
+
+
+### [Click Mintaka](/muhammadismailo)
+arrow_drop_up0
+  * format_quote
+  * link
+Training a deep learning model for the Abstraction and Reasoning Corpus (ARC)
+is especially challenging due to several reasons related to the nature of the
+problem and the limitations of current AI techniques:
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up0
+  * format_quote
+  * link
+Yes, very challenging.
+
+
+### [Ivan Martin Valle](/ivanmartinvalle)
+arrow_drop_up0
+  * format_quote
+  * link
+I spent MONTHS on a neural network, training 1 model per problem. My reasoning
+here is that if a human can solve a problem by looking at only a few examples,
+then training a single model per problem should allow the capacity of the
+model to be focused solely at the task at hand and theoretically lead to an
+answer. I only got to about 8% 100% accuracy on the public training set
+(meaning, 32 / 400 test predictions were correct).
+The issue I was running into is that a good chunk of the problems were ALMOST
+correct. Like, literally off by 1 pixel. This is after
+  * data augmentation (transformations, recoloring, padding, noise)
+  * voting (training multiple times and merging the results, training once and predicting from augmented data and merging the results)
+  * every neural network technique I could think of. the fancier the model got, the harder it was to train, and the longer, which was a problem given that I only have like 10 minutes per problem on slow GPUs.
+I'm gonna go in another direction. I tried.
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for sharing what you have tried. Recoloring seems to be something one
+should try

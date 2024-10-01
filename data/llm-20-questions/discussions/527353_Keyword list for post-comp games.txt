@@ -1,0 +1,29 @@
+[raconion](/raconion) · 10th in this Competition · Posted 21 days ago
+
+### Keyword list for post-comp games
+Can we get the confirmation from competition hosts that the keywords used now
+(those in keywords.py and those sampled from hidden set) will not be reused in
+post-comp games? I have seen some posts talking about this but just want to
+confirm this fact. Thank you!
+
+
+## 4 Comments
+
+
+### [raconion](/raconion)
+I am posting this post because there are datasets of scraped hidden keywords
+from current lb. Want to make sure they will **NOT** be included in post-comp
+games.
+
+
+### [Nicholas Broad](/nbroad)
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/523198>
+
+
+### [raconion](/raconion)
+Thank you for your reply. This post is just for reconfirmation
+
+
+### [Chris Deotte](/cdeotte)
+Kaggle says they will not reuse words
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/523198#2954374)

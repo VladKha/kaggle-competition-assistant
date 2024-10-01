@@ -1,0 +1,11 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+### Why am I still getting NaNs?
+I noticed that a few hours ago mine and all/almost all (not sure) I was
+getting NaN errors and this was solved for a while but why am I getting it
+again?  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F53f85f4ac7e9f29c676b825a0c6b139e%2FScreenshot%20from%202024-05-29%2020-23-14.png?generation=1717028605040395&alt=media)
+
+
+## 0 Comments

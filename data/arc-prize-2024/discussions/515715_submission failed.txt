@@ -1,0 +1,48 @@
+[kymoji](/kymoji) · 659th in this Competition · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### submission failed
+i have manuly edit my submission dictionary. and the submission failed. I
+don't know why.
+this is my notebook <https://www.kaggle.com/code/kymoji/my-template-
+arc2020-5-crop-tasks-by-brute-force/edit>
+my added code is like this:
+# submission_dict['007bbfb7'] = [
+# {
+# "attempt_1": [
+# [7, 0, 7, 7, 0, 7, 7, 0, 7],
+# [7, 0, 7, 7, 0, 7, 7, 0, 7],
+# [7, 7, 0, 7, 7, 0, 7, 7, 0],
+# [7, 0, 7, 7, 0, 7, 7, 0, 7],
+# [7, 7, 0, 7, 7, 0, 7, 7, 0],
+# [7, 0, 7, 7, 0, 7, 7, 0, 7],
+# [7, 0, 7, 7, 0, 7, 7, 0, 7],
+# [7, 7, 0, 7, 7, 0, 7, 7, 0],
+# [7, 0, 7, 7, 0, 7, 7, 0, 7]],
+# "attempt_2": []
+# }]
+comment
+
+
+## 2 Comments
+
+
+### [Zoltan](/szabo7zoltan)
+arrow_drop_up1
+  * format_quote
+  * link
+During submission your code will be rerun on a hidden dataset with different
+task names. The task id you entered is likely not in the hidden dataset.
+
+
+### [kymoji](/kymoji)
+arrow_drop_up0
+  * format_quote
+  * link
+solved. thks~

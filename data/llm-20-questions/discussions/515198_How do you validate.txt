@@ -1,0 +1,9 @@
+[Varun Jagannath](/vjagannath786) · 279th in this Competition · Posted 2
+
+### How do you validate
+For these sort competitions where you are randomly paired, how do you build
+validation logic or some kind of loop to actually verify how good your
+prompts/ model is ?
+
+
+## 0 Comments

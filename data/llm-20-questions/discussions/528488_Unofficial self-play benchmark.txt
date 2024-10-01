@@ -1,0 +1,210 @@
+[Andrew Tratz](/jademonk) · 2nd in this Competition · Posted 16 days ago
+
+
+### Unofficial self-play benchmark
+For purposes of like-for-like agent comparision, I've randomly sampled the
+private keyword list to create a subset of 50 keywords which I propose to use
+as a self-play benchmark. Feel free to post your agent's self-play performance
+on this keyword list. Please use your first run only--no re-runs or cherry-
+picking of results. If you are using an alphabet-based strategy I suggest
+posting both this as well as your best LLM/offline/other approach.
+'alligator
+clip','armadillo','barracks','beech','boardwalk','bobcat','bubble','bucket','bunker','camera','ceiling
+fan','celery','court file','cow','cruiser bike','cupping','door
+handle','emergency siren','eyelash','fabric
+glue','fawn','garage','garlic','glacier','golf','guinea
+pig','hairpin','jug','kart','lilypad','lobster','meringue','neon','orchid','peach','plate','plier','poster','pufferfish','railway','rat','sea','spanish
+moss','stair','steel','styrofoam','terrace','trout','underwire','wallet'
+**Results:**
+Team | Alpha off | Alpha on  
+---|---|---  
+Tricksy Hobbitses | 8% | 90%  
+ISAKA Tsuyoshi | see below | 72%  
+GizMonic Mattstitute | 12% | n/a  
+Inquisition | 2% | n/a  
+-SANTACLAWS- | 19.2%* | n/a  
+  
+* slightly different keyword list used
+
+
+## 11 Comments
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Is it just luck ? :)
+# | Keyword | Is Success | Total steps | Log  
+---|---|---|---|---  
+1 | alligator clip | False | 20 |   
+2 | armadillo | False | 20 |   
+3 | barracks | False | 20 |   
+4 | beech | True | 16 |   
+5 | boardwalk | False | 20 |   
+6 | bobcat | True | 18 |   
+7 | bubble | False | 20 |   
+8 | bucket | True | 20 |   
+9 | bunker | False | 20 |   
+10 | camera | False | 20 |   
+11 | ceiling fan | True | 15 |   
+12 | celery | True | 14 |   
+13 | court file | False | 20 |   
+14 | cow | True | 5 |   
+15 | cruiser bike | False | 20 |   
+16 | cupping | False | 20 |   
+17 | door handle | False | 20 |   
+18 | emergency siren | False | 20 |   
+19 | eyelash | False | 20 |   
+20 | fabric glue | False | 20 |   
+21 | fawn | False | 20 |   
+22 | garage | False | 20 |   
+23 | garlic | True | 11 |   
+24 | glacier | True | 9 |   
+25 | golf | False | 20 |   
+26 | guinea pig | False | 20 |   
+27 | hairpin | False | 20 |   
+28 | jug | False | 20 |   
+29 | kart | True | 16 |   
+30 | lilypad | False | 20 |   
+31 | lobster | False | 20 |   
+32 | meringue | False | 20 |   
+33 | neon | False | 20 |   
+34 | orchid | True | 13 |   
+35 | peach | True | 10 |   
+36 | plate | False | 20 |   
+37 | plier | False | 20 |   
+38 | poster | True | 15 |   
+39 | pufferfish | False | 20 |   
+40 | railway | False | 20 |   
+41 | rat | True | 16 |   
+42 | sea | False | 20 |   
+43 | spanish moss | False | 20 |   
+44 | stair | False | 20 |   
+45 | steel | False | 20 |   
+46 | styrofoam | False | 20 |   
+47 | terrace | False | 20 |   
+48 | trout | True | 9 |   
+49 | underwire | False | 20 |   
+50 | wallet | False | 20 |   
+51 | hoodie | False | 20 |   
+52 | microphone | False | 20 |   
+53 | quilt | False | 20 |   
+Success=14, Total=53, Success rate=0.2641509433962264 |  |  |  |   
+  
+PS. Cant publish my notebook yet until competition ends…
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Updated stats in other comment
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+If I am counting correctly, I am seeing 20%? That's impressive!! Is this a
+model fine-tuned for the game? If not, this is close to GPT 3.5 performance on
+guessing Things in 20 questions!  
+[source, p.16](https://arxiv.org/pdf/2310.01468v3)
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+pura llama 3.1
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+I did not go to fine tuning since my Tesla M40 has only 24GB. But
+theoretically that could be next step
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+That's incredible. I hope other pure LLM participants submit their self-eval
+here. So far, yours is #1 on the pure LLM leaderboard. I would love to learn
+from your notebook and others to see how to push LLM's further.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+I will share already started preparation. with some learned lessons :D
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+After 8 hours of GPU time, I have my results - 12%
+I have no alphabet version. Mine is 100% LLM.
+
+
+### [Caitlin](/cemccoll)
+My higher-ranked agent won 1/50 games (2%). It's LLM-based, no alphabetic
+strategy. It asks well-formed questions that would make sense to a human, but
+the same LLM is often unable to answer them correctly. Outside of this test,
+it's possible that some other agent might be a better match to answering them.
+When guessing, it fairly often repeats guesses in the same game; I included
+previous guesses in the prompt with instructions not to repeat them, but this
+did not work as intended.
+My lower-ranked agent uses the same setup except a different LLM I tried at
+the last minute. It does not do well at all (0/50 games won in this test) and
+clearly more things needed to be adjusted when the model changed (or it is
+just not as capable at this task).
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+Thanks! [@jademonk](https://www.kaggle.com/jademonk)
+Let me share alpha results only for now (due to no GPU quote)  
+I removed public keywords in my dataset.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F4ea737ae81b8d04b47a4c17cb4daa8c2%2F2024-08-16%20233237.png?generation=1723818961697691&alt=media)
+
+
+### [Kha Vo](/khahuras)
+Is "-1" a loss ? and reward is the number of steps?
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+[@khahuras](https://www.kaggle.com/khahuras)  
+A large reward indicates an answer provided in the early rounds.  
+-1 represents a loss (because I removed public keywords from my dataset).
+The reward can be calculated like this:
+    
+    
+    game_output = env.run(agents=[agent, agent, simple_agent, simple_agent]) 
+    reward = env.state[0]["reward"]
+    
+    
+    content_copy
+
+
+### [Kha Vo](/khahuras)
+shame that you have more than 10% loss just due to Kaggle staff mistake
+
+
+### [Andrew Tratz](/jademonk)
+Thanks for sharing the details. I didn't calculate the rewards in my example,
+just looking at binary win/loss only. In cases where it is alpha vs. alpha the
+number of guesses will probably matter a lot.
+I also excluded public keywords from my bot, although I did not exclude their
+plural forms so occasionally my bot will still "win" even with an excluded
+keyword.
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+Hi! [@jademonk](https://www.kaggle.com/jademonk)  
+I’m sharing the results with Alpha turned off. However, the algorithm that
+returns the answer if it matches the previous question and keyword pair is
+still turned on. When this algorithm is on, the success rate of self-play
+increases dramatically. I am currently calculating the results with both Alpha
+and this algorithm turned off, so please wait a little longer.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F2a1240b6a90b15c2d1cfabd1abe6f94d%2Falpha_off_use_table_answer_on.png?generation=1723872181823894&alt=media)
+**Results and Analysis**
+  * Keywords that Alpha cannot answer remain unanswered.
+  * The error number has increased by five compared to when Alpha was on, resulting in a 62% success rate.
+  * **Many of the rewards are outperforming Alpha.**
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+The results with both Alpha and this algorithm turned off is **10%**.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F7bda504eed62b2a3eff48a9624b2ba23%2Falpha_off_use_table_answer_off.png?generation=1723874068158923&alt=media)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I'll try to run next week. I used all my GPU compute time (allotted by Kaggle)
+to test my submissions. 😭
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+Same for me 😭

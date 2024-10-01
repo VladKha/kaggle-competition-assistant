@@ -1,0 +1,160 @@
+[ParsaH](/parsahriri) · 916th in this Competition · Posted 2 months ago
+arrow_drop_up9
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### 🧬genetic algorithm as sloution 🧬
+Dear ARCers,  
+I am trying GA with Matrix multiplication, the following is the result. It is
+always close but never 100% correct, any idea how to avoid local optimum?🥲  
+my ideas is something like:
+**if input (-/*/+) something = output**  
+**then fine best operation and matrix for this solution with GA**
+![!\[](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5143577%2F1bc18bbe01775d62ce1296c021fe3ae9%2Fe740f00b-b062-4bd6-9a79-a71b765a5a2d.jpeg?generation=1722946958095411&alt=media)]
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5143577%2F890ed15fb691b8ba5cd73b943afd9943%2F92962da6-2010-4ea6-b5f3-c576a54554d2.jpeg?generation=1722947097491108&alt=media)
+comment
+
+
+## 8 Comments
+[emoji_people](/saedghgdg)
+
+
+### [Elephant_Z](/saedghgdg)
+arrow_drop_up11
+  * format_quote
+  * link
+sounds great.i will try.
+
+
+### [Chen](/chenku)
+arrow_drop_up7
+  * format_quote
+  * link
+I don't believe ARC problems can be solved at all with simple matrix
+operations. No matrix addition or multiplication can reproduce the
+transformation you see in the example. So you need to start by coming up with
+a more complicated set of operations, not a simple task I'd imagine.  
+Maybe applying GA to [arc-dsl](https://github.com/michaelhodel/arc-dsl) is
+another option.
+
+
+### [ParsaH](/parsahriri)
+arrow_drop_up1
+  * format_quote
+  * link
+very good idead , i will try and if it works i will let u know
+
+
+### [Juliaaaaama](/xuluo1)
+arrow_drop_up0
+  * format_quote
+  * link
+I am also very concerned about this issue and can discuss it together
+
+
+### [MarkStudioMEAT](/markstudiomeat)
+arrow_drop_up0
+  * format_quote
+  * link
+maybe add bitshift, logic etc to the mix?
+
+
+### [ParsaH](/parsahriri)
+arrow_drop_up0
+  * format_quote
+  * link
+sure, what is you input? also i think this cant be a general answer to this
+problem but still can be interesting to work on it
+
+
+### [Arseni Ivanov](/arseniivanov)
+arrow_drop_up0
+  * format_quote
+  * link
+Disagree, in the example above, the solution is an identity transform with a
+changed color for the top/larger object, and a null transform for the
+bottom/smaller object.
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up1
+  * format_quote
+  * link
+Interesting idea. Can you show some examples of inputs and the outputs your GA
+finds?
+Is the larger image a GA solution to the input on the far right, above?
+
+
+### [ParsaH](/parsahriri)
+arrow_drop_up1
+  * format_quote
+  * link
+I have 2 optimizer, one that randomly chose o operator , a second one wich
+will generate random matrixes and choose the best one so if inpuinput is 9by9
+I will multiply it by 100 random 9by9 matrixes and chose the best , change it
+10% randomly 100 times  
+,right it is
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up1
+  * format_quote
+  * link
+How do you measure fitness of a candidate solution?
+Just a wild guess, but it looks like your solution set is converging too
+quickly and you may be losing diversity.
+Also, how would you apply your algorithm to an input for which you do not know
+the output?
+
+
+### [ParsaH](/parsahriri)
+arrow_drop_up0
+  * format_quote
+  * link
+For each pixel which predict corect fitness+=1, true, First I fit the solution
+on 3 seen data, then apply it on unseen
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up0
+  * format_quote
+  * link
+Do the 3 seen data examples predict perfectly?
+
+
+### [ParsaH](/parsahriri)
+arrow_drop_up0
+  * format_quote
+  * link
+no :), all are just close
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up1
+  * format_quote
+  * link
+I wondered if that were the case. The result you show is impressive for just
+matrix operations, but I think you need more complex operations.
+[@chenku](https://www.kaggle.com/chenku)'s suggestion is a really good one. If
+you try that, please post the results.
+Hide repliesarrow_drop_up
+
+
+### [Charlie Kinnian](/thonicc)
+arrow_drop_up0
+  * format_quote
+  * link
+How do you choose the matrix dimensions?
+
+
+### [ParsaH](/parsahriri)
+arrow_drop_up0
+  * format_quote
+  * link
+based on the previous examples

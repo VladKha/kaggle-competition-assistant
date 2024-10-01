@@ -1,0 +1,57 @@
+[Ravi Ramakrishnan](/ravi20076) · 614th in this Competition · Posted 3 months
+
+### The leaderboard is not split sequentially
+Hello participants,
+I wish to inform you that the public and private leaderboard are unlikely to
+be created sequentially. I conducted a simple probe test to determine this a
+while ago.
+
+
+## Experiment Details
+Experiment Details | Result   
+(LB score) | Inference  
+---|---|---  
+* Submitted the sample submission file   
+* This is my usual opening submission benchmark | 0.5108 | * Benchmark  
+* Placed garbage values after the first 31% of rows (row 124+)   
+* First 123 rows have the same value as in sample submission   
+* If the score stays the same as the sample submission file, we infer that the public LB comprises of the first 123 rows | 0.8255 | * The public LB is not the first 123 rows of data  
+* Grouped by the location and placed sample submission value for the first 31% rows across the grouper   
+* Other rows are garbage values   
+* If we obtain the same score as in sample submission, then we infer that the public LB is split by location groups | 0.8612 | * The public LB is not split with location and date sequence  
+  
+  
+Associated kernel for the last experiment is
+[here](https://www.kaggle.com/code/ravi20076/rohlik2024-publiclbtest)
+We therefore infer that the leaderboard is likely to be split in a random
+fashion, without any sequence discerned from the experiments above.
+
+
+## Why do we do this
+  * We strive for CV-leaderboard relation as a base for any competition, especially if the dataset is small. 
+  * We often ensue such trials to ensure we can structure a reasonable CV scheme to check our subsequent experiments
+  
+This process indicates 2 elements for future endeavors-
+  1. The CV scheme should factor the non-sequential split between public and private LB 
+  2. We are currently unsure of the inclusion/ exclusion of locations in the public LB. This too is important for the final model evaluation
+Thoughts? Comments?
+
+
+## 2 Comments
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+Thank you for conducting this experiment. I have learned how to test which
+data is in public leaderboard and which data is in private leaderboard.To be
+honest, the test data for this game is too limited. On the one hand, there is
+randomness in the scores, and on the other hand, as is done in open-source
+high scoring code, I found that training a model with the last few weeks of
+data is better than training the model with all the data. That is to say, we
+don't need to train a model with strong generalization ability at all, we just
+need to fit these test data.
+
+
+### [MichalKecera](/mkecera)
+Hi [@ravi20076](https://www.kaggle.com/ravi20076),  
+Thanks for the thorough analysis. Very helpful. I can confirm that it is not
+split sequentially and that all locations are in public LB.

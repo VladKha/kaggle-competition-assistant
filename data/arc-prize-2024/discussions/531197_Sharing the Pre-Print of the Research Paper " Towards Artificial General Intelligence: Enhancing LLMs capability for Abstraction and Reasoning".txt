@@ -1,0 +1,75 @@
+[C R Suthikshn Kumar](/crsuthikshnkumar) · 26th in this Competition · Posted a
+month ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Sharing the Pre-Print of the Research Paper " Towards Artificial General
+Intelligence: Enhancing LLMs capability for Abstraction and Reasoning"
+With respect to ARC Prize 2024 Competition:  
+<https://www.kaggle.com/competitions/arc-prize-2024/>
+This is a very exciting competition indeed. In this regard, I am sharing the
+pre-print of my research paper relevant for this competition:  
+CRS Kumar, "Towards Artificial General Intelligence: Enhancing LLMs capability
+for Abstraction and Reasoning"  
+DOI: <https://doi.org/10.31224/3863>,  
+<https://engrxiv.org/preprint/view/3863>
+Welcome comments and suggestions on this paper from participants in this
+competition.
+[Artificial
+Intelligence](/discussions?tags=12101-Artificial+Intelligence)[Programming](/discussions?tags=12125-Programming)[Research](/discussions?tags=1219-Research)[Intermediate](/discussions?tags=13103-Intermediate)[Advanced](/discussions?tags=13104-Advanced)
+comment
+
+
+## 2 Comments
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up1
+  * format_quote
+  * link
+> We propose a novel framework that integrates AGI-driven modules with LLMs to
+> augment their capabilities in these areas.
+  * What is an `AGI-driven module`?
+  * What is the accuracy of your approach in the hidden test set?
+
+
+### [C R Suthikshn Kumar](/crsuthikshnkumar)
+arrow_drop_up0
+  * format_quote
+  * link
+The accuracy is to be based on testing on Competition dataset. Currently work
+is in progress. AGI block is to transform problem statements into prompting
+for the LLMs. It should pre-process problems and extract useful insights and
+pass it to llm. I am planning to add all the details once the competition
+ends.
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up0
+  * format_quote
+  * link
+> AGI block is to transform problem statements into prompting for the LLMs.
+It seems to me like a very confusing name. I don't see any relation between
+AGI and a module that creates prompts for an LLM.
+Good luck anyway!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Actually, writing code to "create prompts" seems like a natural for AGI. Try
+doing anything like that without a serious chunk of AGI magic and you probably
+won't get very far. Very likely my opinion is flawed, here. It just seems if
+you have **_enough AGI_** to analyze a problem statement, create a prompt
+(from basically nothing but the problem statement, right?) in order to get
+details from an LLM, and then put that response to good use, you could have
+skipped the LLM part!! Alternatively, if you don't have enough AGI to create
+the LLM prompt, it doesn't seem like such a shortcoming. People are prompting
+LLMs with their human-level intelligence to try to get a good solution to a
+problem, and that seems to be coming up short, as well!

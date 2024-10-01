@@ -1,0 +1,83 @@
+[tanaka](/tanakasandesuka) · 249th in this Competition · Posted 3 months ago
+
+
+### Missing time series data of the test data
+Many of you may already know, there are some missing time series values vary
+by region.  
+Both the train and test data have missing values, but here focusing on the
+missing values in the test data.
+  * target dates range: 2024/3/16 - 2024/5/15
+
+
+## Czech
+There is no missing data.
+  * warehouse: Prague_[1-3], Brno_1
+
+
+## Hungary
+There is 4 missing data, which is national holiday.
+  * warehouse: Budapest_1
+  * dates(national holiday): ["2024-03-29", "2024-03-31", "2024-04-01", "2024-05-01"]
+    * Good Friday, Easter, Easter Monday, Labour
+
+
+## Germany
+There is 13 missing data, 5 is national holiday and 8 is Sunday.
+  * warehouse: Frankfurt_1, Munich_1
+  * dates: ["2024-03-17", "2024-03-24", "2024-03-29", "2024-03-31", "2024-04-01", "2024-04-07", "2024-04-14", "2024-04-21", "2024-04-28", "2024-05-01", "2024-05-05", "2024-05-09", "2024-05-12"] 
+  * national holiday: ["2024-03-29", "2024-03-31", "2024-04-01", "2024-05-01", "2024-05-09"]
+    * Karfreitag, Ostersonntag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt 
+And please note that many of these holidays vary from year to year.
+
+
+## 1 Comment
+
+
+### [Yan Teixeira](/yantxx)
+All missing data are from dates when the warehouse was closed. The reason why
+Frankfurt and Munich have more missing data is that the warehouses in these
+cities do not open on Sundays.
+I did not check the test data, but for the training data, all the missing
+dates can be found in the train_calendar.
+For train:
+    
+    
+    Warehouse: Prague_1
+      Status: Not Consecutive
+      Total Missing Dates: 4
+    Warehouse: Brno_1
+      Status: Not Consecutive
+      Total Missing Dates: 4
+    Warehouse: Prague_2
+      Status: Not Consecutive
+      Total Missing Dates: 4
+    Warehouse: Prague_3
+      Status: Not Consecutive
+      Total Missing Dates: 4
+    Warehouse: Munich_1
+      Status: Not Consecutive
+      Total Missing Dates: 184
+    Warehouse: Frankfurt_1
+      Status: Not Consecutive
+      Total Missing Dates: 128
+    Warehouse: Budapest_1
+      Status: Not Consecutive
+      Total Missing Dates: 42
+    
+    Warehouse: Prague_1
+      Status: All missing dates are in train_calendar
+    Warehouse: Brno_1
+      Status: All missing dates are in train_calendar
+    Warehouse: Prague_2
+      Status: All missing dates are in train_calendar
+    Warehouse: Prague_3
+      Status: All missing dates are in train_calendar
+    Warehouse: Munich_1
+      Status: All missing dates are in train_calendar
+    Warehouse: Frankfurt_1
+      Status: All missing dates are in train_calendar
+    Warehouse: Budapest_1
+      Status: All missing dates are in train_calendar
+    
+    
+    content_copy

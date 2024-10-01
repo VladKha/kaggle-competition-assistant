@@ -1,0 +1,94 @@
+services:
+  opensearch:
+    image: opensearchproject/opensearch:2.16.0
+    container_name: opensearch-node
+    environment:
+      - discovery.type=single-node
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=${OPENSEARCH_PASSWORD}
+    ports:
+      - "${OPENSEARCH_PORT:-9200}:9200"
+      - "9600:9600"
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+#    networks:
+#      - opensearch-net
+
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      TZ: ${TZ}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+#    networks:
+#      - opensearch-net
+
+  grafana:
+    build:
+      context: .
+      dockerfile: Dockerfile_monitoring
+    container_name: monitoring
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/monitoring
+    environment:
+      - GRAFANA_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
+      - GRAFANA_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
+      - GF_AUTH_DISABLE_LOGIN_FORM=false
+      - GF_AUTH_ANONYMOUS_ENABLED=false
+      - GF_SECURITY_ALLOW_EMBEDDING=true
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_USERS_ALLOW_ORG_CREATE=false
+      - GF_USERS_AUTO_ASSIGN_ORG=true
+      - GF_USERS_AUTO_ASSIGN_ORG_ROLE=Viewer
+      - GF_SECURITY_SECRET_KEY=${GRAFANA_SECRET_KEY:-your_secret_key_here}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    depends_on:
+      - postgres
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile_streamlit
+    container_name: streamlit
+    environment:
+      - OPENSEARCH_HOST=opensearch  # same name as the service name above
+      - OPENSEARCH_PORT=${OPENSEARCH_PORT}
+      - OPENSEARCH_USER=${OPENSEARCH_USER}
+      - OPENSEARCH_PASSWORD=${OPENSEARCH_PASSWORD}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - WANDB_API_KEY=${WANDB_API_KEY}
+    ports:
+      - "${STREAMLIT_PORT:-8501}:8501"
+    depends_on:
+      - opensearch
+      - postgres
+      - grafana
+#    networks:
+#      - opensearch-net
+
+volumes:
+  opensearch_data:
+  postgres_data:
+  grafana_data:
+
+#networks:
+#  opensearch-net:

@@ -1,0 +1,49 @@
+[yuzuhais](/yuzuhais) · 941st in this Competition · Posted 16 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### [propose] Split Estimate Reasoning & Answer Image
+Hi ! I propose **Split 'Estimate Reasoning' & 'Answer Image' Model
+Architecture**
+
+
+## Propose
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F21738685%2Fec4ebf804db85f0b25eceda3ecc81c23%2F2.png?generation=1726323737438529&alt=media)
+the architecture is intended
+  * improve more stability of reasoning from samples on same challenge
+  * explicitly conditional image generation
+
+
+## Discussion
+~~Most of the problems were solved by looking at two samples, so I think two
+samples are sufficient for Estimate Reasoning.~~  
+Referring to "[A wrong sample?](https://www.kaggle.com/competitions/arc-
+prize-2024/discussion/536066)", it seems that I need to modify the model.
+* * *
+I will try …
+comment
+
+
+## 2 Comments
+
+
+### [yuzuhais](/yuzuhais)
+arrow_drop_up0
+  * format_quote
+  * link
+I don't have a GPU so someone please try…😭
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up0
+  * format_quote
+  * link
+Did you try on Kaggle GPUs?
+You can also try on Google Colab  
+<https://colab.research.google.com/signup>

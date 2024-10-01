@@ -1,0 +1,59 @@
+[Omar Isbaitan](/omarisbaitan) · 998th in this Competition · Posted 3 months
+arrow_drop_up-4
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ARC-Prize Flip H or V is important !
+import numpy as np  
+import matplotlib.pyplot as plt  
+from matplotlib.colors import ListedColormap
+# Define colors for visualization
+colors = ['#000000', '#0074D9', '#FF4136', '#2ECC40', '#FFDC00',  
+'#AAAAAA', '#F012BE', '#FF851B', '#7FDBFF', '#870C25']  
+color_map = ListedColormap(colors)
+def visualize_grid(grid, title="Grid"):  
+plt.imshow(grid, cmap=color_map)  
+plt.title(title)  
+plt.colorbar(ticks=range(10))  
+plt.show()
+# Example transformation functions
+def flip_horizontal(grid):  
+return np.fliplr(grid)
+def flip_vertical(grid):  
+return np.flipud(grid)
+# Example input and output grids
+input_grid = np.array([[6, 3, 5],  
+[6, 8, 0],  
+[4, 0, 0]])
+# Visualize input grid
+visualize_grid(input_grid, title="Input Grid")
+# Apply transformations and visualize results
+transformed_grids = {
+    
+    
+    "Flip Horizontal": flip_horizontal(input_grid),
+    "Flip Vertical": flip_vertical(input_grid)
+    
+    
+    content_copy
+}
+for title, transformed_grid in transformed_grids.items():  
+visualize_grid(transformed_grid, title=title)
+comment
+
+
+## 1 Comment
+
+
+### [Andrew](/andrewrrose)
+arrow_drop_up0
+  * format_quote
+  * link
+I see you've been roundly down-voted for this post and your other very similar
+post. A few suggestions for starting more helpful discussions…
+  * If you think it's important (which you state in your title), show why. For example, what do you score without using this technique and what do you score when you add this technique in? How many of the test cases need this technique to solve them?
+  * This particular idea already appears in basically all the existing notebooks. What novel ideas do you have? Or how does your contribution here improve on the existing versions?
+  * Perhaps give the exclamation mark a miss. I'm sure this is an exciting discovery for you, but it's better to let the idea speak for itself.

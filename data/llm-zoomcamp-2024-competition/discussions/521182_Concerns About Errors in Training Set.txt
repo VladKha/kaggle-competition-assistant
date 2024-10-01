@@ -1,0 +1,16 @@
+[morsondak](/morsondak) · 32nd in this Competition · Posted 2 months ago
+
+
+### Concerns About Errors in Training Set
+I've sampled a few random examples from the training set and already
+encountered errors in the answers. Has anyone else noticed similar issues? I
+hope the test set is validated more thoroughly to ensure accurate evaluation.
+for example, question id 9294 : the question asks: Which routes should the
+traveler choose to visit all four museums while spending the least amount of
+money on tickets?
+In the answer, indicate any one set of route numbers without spaces, commas,
+or other additional symbols.  
+but the answer is actually the total cost, rather than the path.
+
+
+## 0 Comments

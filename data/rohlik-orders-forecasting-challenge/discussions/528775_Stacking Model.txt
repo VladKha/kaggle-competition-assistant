@@ -1,0 +1,26 @@
+[karimzade](/karimzade) · 217th in this Competition · Posted a month ago
+
+
+### Stacking Model
+Why does everyone use logistic regression in stacking code?
+Logistic regression is a classification problem, what we are trying to solve
+is a regression problem. Below are the MAPE values in the stacking training
+model loop:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16130458%2Fa0aca94e894b907effef814b88e1decd%2Flogreg.png?generation=1723879886934711&alt=media)
+
+
+## 2 Comments
+
+
+### [shota](/ikarishota)
+I examined the importance of each regression model after ensemble. As shown
+below, the importance for the logistic regression data was much smaller than
+the others, about 4.5%. What this result means depends on the model, but it
+does not seem to make much of a difference.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F9418425%2F23684ea49a6b2a797e1b3c900a033675%2FUnknown-1.png?generation=1723978094452451&alt=media)
+
+
+### [Rafał Pawłowski](/jankowalski2000)
+It is just a mistake. Feel free to remove it.

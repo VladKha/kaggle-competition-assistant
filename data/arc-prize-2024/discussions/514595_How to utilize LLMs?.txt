@@ -1,0 +1,36 @@
+[kazuki_kazukazu](/kazukikazukazu) · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### How to utilize LLMs?
+I want to utilize LLMs to solve this ARC problem, but don't know how.
+**My understanding**  
+[[Template] Llama 3 8b ARC Prize 2024
+inference](https://www.kaggle.com/code/hansuelijud/template-llama-3-8b-arc-
+prize-2024-inference) is a good starter code.  
+So, my current opinion is that LLMs are used for coding generation by
+prompting and main focus of this competition is fintuning the LLMs.
+**Question**
+  1. is this understanding correct?
+  2. Is there any useful tips, websites, or past competitions for using LLMs in the ARC task?
+~~~~  
+Thanks in advance.
+comment
+
+
+## 1 Comment
+
+
+### [Gaurav Bindra](/gauravb57)
+arrow_drop_up-1
+  * format_quote
+  * link
+Regarding question 1, the main focus of the competition is not really fine-
+tuning LLMs but rather to come up with any approach that solves ARC.  
+In case you go with an LLM based approach, then I would say that fine-tuning
+is a really important part of the approaching solving ARC.

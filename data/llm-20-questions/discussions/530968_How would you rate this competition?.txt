@@ -1,0 +1,183 @@
+[gaolicious](/tianzhenggao) · 66th in this Competition · Posted 3 days ago
+
+
+### How would you rate this competition?
+I would give a 2/5.
+I use pure LLM agents. I fell frustrated in this competition not because I am
+losing to Alpha Agents, which I'll fully accept, but because of the changing
+rules.
+The rationale provided for the latest confidence update seems flawed to me. If
+this were a year-long competition, convergence would naturally occur for
+everyone. However, this competition is about achieving the highest possible
+skill rating within a set time frame. We all knew the two-week limit, and when
+we create a solution, we should take this into consideration. Every choice
+comes with its pros and cons. While Alpha Agents benefit from a high winning
+rate and a swift climb to the top of the leaderboard, they also face
+downsides: less ties lead to fewer and less frequent matches as the
+competition goes, potentially much less than other agents.
+Clipping the confidence is not beneficial to any group. For top Alpha Agents,
+they now face frequent and random ranking fluctuations. Meanwhile, LLM agents
+are falling as a whole, as they now have to play frequently with Alpha Agents
+whose sigma used to be much lower than theirs.
+Moreover, the previous violent resetting of confidence instead of restarting
+the game, and the emergence of the new issue with places appearing in the test
+set, have significantly impacted the participants' experience.
+I believe Kaggle should consider adding a scoring feature to competitions,
+allowing future competitions to benefit from the lessons learned here.
+
+
+## 9 Comments
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+Their Algo for convergence is obviously problematic
+
+
+### [Kha Vo](/khahuras)
+1/5  
+Poorly designed. Multiple sudden rule changes (half way before deadline, 2
+weeks before deadline, 1 mistake right after deadline, fixed it then , but
+still not clean, then took 5 days to fix again after hundreds of calls, but
+still not totally fixed a simple issue, then confidence restart causing a big
+storm, then 3 days later manually tweaked it again to cause the 2nd big storm
+just 3 days before final showdown. Careless transitioning to the evaluation
+period. Despite fixing many times the keywords are still not clean, and pretty
+simple. The host didn’t keep their promise, didn’t take the competitors
+seriously. They didn’t even have a clue about anything, such as convergence,
+confidence range, keyword length distributions, match distribution… Many
+inpromptu updates. Total frustration Kaggle seems lost its way?
+I’m sorry for the rude straight words, but do you think they even care about
+that? I’m sure they’re NOT.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+I think the problem is the competition is hosted by Kaggle, not by another
+company or even Google, so the price of an error is small.
+
+
+### [Kha Vo](/khahuras)
+You’re wrong. In the past there are tons of Kaggle hosted competitions, like
+Santa series. I had great experience then. Even a simulation competition such
+as Halite there were tons of praises for the guy who developed this whole
+simulation platform thing and his super fast responses to community comments
+everyday, he didn’t even miss replying a single one
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+I’m not saying that all their competitions are bad. On the contrary, I agree
+with you - Kaggle competitions are generally great. What I’m suggesting is
+that they might be focused on preparing a few competitions for their clients
+right now and simply don’t have time for this one.
+
+
+### [Kha Vo](/khahuras)
+C’mon. Properly preparing the keyword list takes you only half an hour at
+most. 😞 and you need to do it only once and for all. They have only 1 job to
+do… so disappointed
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+I am pretty sure this task was outsourced to Gemma :D
+
+
+### [gguillard](/gguillard)
+Very disappointing indeed. 2/5 because the concept was very fun, but poorly
+designed (it should have been clearly stated that the competition was only
+about LLMs, or it should have been named otherwise ; also, given the enormous
+impact of dummy bots there should have been simple rules to disqualify them).
+But most of all, the host didn't take care of the warnings from the community.
+As I said in another thread :
+> The host has been repeatedly warned of the scoring's shortcomings, by many
+> people, and had plenty of time to consider alternatives before the
+> submission deadline…
+As far as I'm concerned, I stopped working on my bots as soon as I figured
+this competition was a lottery. I felt it was a joke. I continued to follow
+the discussions closely hoping for an awakening from the host, but was
+disappointed at almost every decision. There was something I really wanted to
+try so I got back on track the last two days to have a working submission with
+this strategy but obviously I didn't have time to fine tune anything (I'm sure
+it's worth more than its 598.6 points :D).
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Older people remember the Mercedes manufacturing challenge from about 10 years
+ago - it was even worse! 😄  
+I’m not frustrated by the sudden changes to sigma or the intersection between
+public and private worlds, but by the complete disregard for the community and
+it's numerous discussions highlighting the problems and suggestions for
+improving the competition during 2 months.
+
+
+### [so_so](/shunsukeohashi)
+I would give a 2/5.  
+We all knew binary search will be efficient and the idea of using LLM to beat
+this was interesting challenge, but the rule changes after final submission
+deadline and wrong keyword list was unacceptable for me.
+> We all knew the two-week limit, and when we create a solution, we should
+> take this into consideration. Every choice comes with its pros and cons.
+I totally agree. We optimize our solution based on the given rule. So frequent
+change of rule is pain and change after final submission deadline is totally
+unacceptable. Hope this won’t happen in future competition.
+
+
+### [OminousDude](/max1mum)
+1/5
+The start would be a 4 or even 5/5 for me but the end is dominated by
+alphabots…
+
+
+### [loh-maa](/lohmaa)
+OminousDude… time to confess! ,) Do you recognize your mistake now?
+
+
+### [OminousDude](/max1mum)
+Ok lol, I agree that alpha bots (at least until true AGI/ASI) will always win
+against traditional LLMs. I agree that Agent Alpha Is a great idea but my goal
+in this competition is not to win but to learn everything I possibly can. That
+is why I stuck with LLMs, I prize what I learned over the money or placement
+at the end. Thanks for making the competition more interesting for me! Good
+luck with your next ones!
+
+
+### [raconion](/raconion)
+Alphabetical bisection search guarantees max information gain given that
+response is reliable. I don't think AGI etc would beat it. That being said,
+many strategies accompanying alphabetical search can greatly boost the
+performance
+
+
+### [Chris Deotte](/cdeotte)
+I believe the strength of "Agent Alpha" isn't because alphabetical bisection
+is better than general yes/no questions, I believe Agent Alpha is more
+successful because it uses an agreed upon handshake/syntax and we are
+guaranteed that the yes/no answer is correct.
+Theoretically, if we have 1000s of yes/no questions and a word bank, we can
+find a general (non alphabetical) yes/no questions that bisects the remaining
+possibilities in half (similar to alphabetical bisection). The problem is that
+we cannot trust the Answerer's yes/no answer to be correct as we can with
+Agent Alpha syntax.
+And one wrong yes/no answer (that we assume to be correct) will ruin a binary
+search and exclude the correct keyword guess.
+
+
+### [raconion](/raconion)
+I agree that the unification of "Agent Alpha"'s protocol is the key to its
+performance in this competition.
+However, a probability-based bisection will always achieve equivalent or
+better performance compared with yes/no questions given same keyword list and
+associated probability. The reason is that whether the best yes/no question
+set exist for a given keyword list is not known (and most probabily non-
+existent or super hard to find). Even such set exist, the performance will
+still be the same as "Agent Alpha" style bisection (both of them will divide
+the search space in half in terms of probability each time).
+The above is just theoretical analysis but it is true that this strategy is
+sensitive to answer quality while LLM's guesses are more robust but a lot less
+efficient. Fault-tolorent search strategy will be interesting to develop
+
+
+### [C R Suthikshn Kumar](/crsuthikshnkumar)
+I think we should evaluate this competition not just by how the scoring was
+done, but the outcome also. Whether the competition has delivered new ideas
+and innovations that impact the LLMs?  
+This will be soon visible from solutions to be published by top ranking
+participants.

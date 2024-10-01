@@ -1,0 +1,38 @@
+[Eyas Taifour](/etaifour) · Posted 3 months ago
+arrow_drop_up-1
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Paper question: Ordering local generalization to achieve broad
+generalization
+I'm reading the core paper (amazing insights!), and I was wondering:
+  * Whether the ordering of the task matters, since we're attempting at building a system that can achieve higher level of generalization. For a human, it would be unsafe to assume that a person can learn a new mathematical concept (calculate pi, for example) unless they've met some pre-requisites first (understand shapes, understand measuring distance, understand the definition of a circle, etc..)
+  * Still reading through the paper, but I believe that at one point or another some developer-knowledge must be hardcoded into the solution. Axioms of some sort (such as information and constraints about the universe, in this case a grid with pixels, and key permissible actions (a single pixel can not be rotated. a pixel can not be added outside of the grid. a pixel can only have 1 of x colors)  
+what are your thoughts?
+comment
+
+
+## 1 Comment
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+> Whether the ordering of the task matters
+The spirit of the tasks is that ordering should not matter. They should be
+able to stand on their own and be solved without needing information from
+other tasks
+> developer-knowledge must be hardcoded into the solution
+Yes! Some developer knowledge and influence will be in every submission. The
+key part is the [developer aware
+generalization](https://nagilla748.medium.com/the-spectrum-of-generalisation-
+robustness-flexibility-
+generality-407a24670bd8#:~:text=Developer%2Daware%20generalisation%3A%20This%20is,the%20system%20have%20encountered%20before.)
+A proper test would have problems that the developer is not aware of before
+hand. If the developer doesn't know the problems, then they wouldn't be able
+to overfit their model to them. Requiring that the model handles new
+situations.

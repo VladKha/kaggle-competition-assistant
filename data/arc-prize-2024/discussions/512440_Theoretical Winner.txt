@@ -1,0 +1,93 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up-1
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Theoretical Winner
+I'm trying to square the economics with the nature of this contest. AGI will
+usher in a multi-trillion dollar industry. If I _use_ AGI to enter and win, I
+will get a share of… one million dollars? But my code will be published. So it
+will be in the public domain. AGI will be online, free for the taking. But
+that's cool, because I'll have $600,000 in my pocket. So I code and "train"
+something. And this thing scores 95% on the public ARC test. Now what? Of
+course, I enter and WIN! Then what? There are no guarantees other than the
+aforementioned fraction of a million. You see the uncomfortable position one
+would find oneself in, should one have a high degree of confidence in one's
+own AGI process.
+comment
+
+
+## 7 Comments
+
+
+### [Matt S.](/msthil)
+arrow_drop_up1
+  * format_quote
+  * link
+To be fair, if you do win, a top notch research firm will probably pick you up
+if you truly find something groundbreaking. The big three that won imagenet in
+2012 sold their "company" (aka talent) to Google for $45 million.
+On top of this, that's kinda the name of the research game. The people who
+build Unix, HTTP, or hell even discovered the transistor I don't think made
+Bill Gates level money, even though they all make a multi-trillion dollar tech
+economy hum.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Word.
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up1
+  * format_quote
+  * link
+First get 85 or more on the LB, and after that decide whether to open source
+your solution or not?
+PS: My personal opinion is that it is extremely difficult to even reach 60 in
+this competition.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Agreed on both points. But imagine scoring 85. You're almost guaranteed to win
+top prize with that. And then everybody gets to see all the code you wrote. So
+while you're shaking hands and paying your mortgage off, the trillion dollar
+industry is starting behind your back. It is starting because of your code.  
+All I'm saying is, run it through one more time… See what the next word in the
+sentence is.
+If you submit your 85+ entry, it will win. And according to the agreement, it
+will become open source.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+I imagine one _could_ "clean" ones code of most of the relevant IP, and still
+submit and possibly even win. working…
+
+
+### [Michael Timbs](/michaeltimbs)
+arrow_drop_up0
+  * format_quote
+  * link
+Even solving 85+ on this competition isn’t guaranteed to be the missing link
+for AGI. If anything this competition highlights current limitations of state
+of the art transformer models and is trying to incentivise exploration instead
+of hyper exploitation and compute scaling. I think solving ARC will be just
+one more step towards AGI, not the final one
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Thumb's Up Emoji (…he would have used if there was one)

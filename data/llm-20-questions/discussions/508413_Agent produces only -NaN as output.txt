@@ -1,0 +1,18 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+### Agent produces only -NaN as output
+Why is this happening? This screwed up my score by a lot.
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+This has been fixed. Discussion is
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/508278).
+It is my understanding that the NAN scores did not affect any scores. (i.e. it
+was just like the game never happened).
+
+
+### [OminousDude](/max1mum)
+Oh sorry didn't see your post! Thanks very much!

@@ -1,0 +1,61 @@
+[Adam Logman](/adamlogman) · 514th in this Competition · Posted 2 months ago
+
+
+### Why Simplicity is Better than Complexity in Forecasting
+What do you think ?!
+
+
+## 7 Comments
+
+
+### [Yan Teixeira](/yantxx)
+It's just a matter of how much data you have and how complex it is.
+
+
+### [Adam Logman](/adamlogman)
+[@yantxx](https://www.kaggle.com/yantxx) for this competition , we have small
+dataset so that is why I think simplicity is good option
+
+
+### [Thomas Meißner](/thomasmeiner)
+I think it depends.
+When complexity gives better performance, complexity is better.  
+When simplicity gives almost same performance, then simplicity can still be
+better.  
+When explainability has high importance, simplicity is better.
+
+
+### [Arnold Kakas](/arnoldkakas)
+well said, this really depends on the goals you want to achieve.  
+I can imagine that in monthly forecast you can have more simplicity in order
+to improve explainability to identify the strategic points you need to focus
+on. However if your forecast is for e.g. S&OP, you would probably go with more
+complex model to increase the accuracy in short term prediction.
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+That's a very interesting question also if you think beyond this scope. I
+mainly think that the nature of forecasting comes from knowing the known
+patterns from the unknown. I don't want to answer this technically, but more
+in a philosophical way. The unknown set, thought of as a mass of possible
+events, is much larger than the data you have that represents the occurred
+events. So, you are given a very small subset of the possible complex
+superset. Thus, the main problem, especially in forecasting, is
+generalization. You want to be as flexible as possible to even perform well on
+unseen events that you didn't train explicitly. What I first thought of was
+the [Occam’s Razor Principle](https://en.wikipedia.org/wiki/Occam%27s_razor)
+> The simplest explanation is usually the best one.
+In forecasting, this principle implies that a model should be no more complex
+than necessary to capture the essential nuances or patterns of the data
+without being too narrowed down (overfitting).
+
+
+### [Adam Logman](/adamlogman)
+exactly [@etiennekaiser](https://www.kaggle.com/etiennekaiser) , that is why I
+think best way to avoid overfitting in forecasting competitions  
+. to use simple model or we can say always simple models are win .
+
+
+### [Josh Haber](/joshhaber)
+Simple enough to avoid overfitting, complex enough to capture the patterns of
+the data.

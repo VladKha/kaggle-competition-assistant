@@ -1,0 +1,51 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Some problems to be solved: Unit capacity.
+Given the nature of the perceptron, and in particular, the subtle and complex
+nature of the gradient, it occurs to me that there is one part that is
+problematic: a single incoming weight of a single perceptron. I discovered
+this problem while examining the loss curve of a basic model. I noticed that
+loss starts at a random height and, depending on the Learning Rate, begins to
+descend. Over time, the descent of the loss value forms a curve, the nature of
+which is, I am certain, a "mathematical summary" of the underlying complexity.
+Here is what is consistent: as the curve approaches the end of the
+predetermined "fit" process, it gets lumpy. Because the graph includes the
+start loss, which is randomly large, the lumpiness might go unnoticed. But
+it's there. Running another "fit group" shows that, without the "offsetting
+original height," there is a pronounced noise visible in the output. Reducing
+the LR along the way helps lower the noise. And further "fit runs" can be made
+with the lowered LR, to good effect. Until the noise creeps back in. Once that
+happens, manually reducing the LR has great results, until it doesn't. (btw,
+for those of you thinking, 'you're over-fitting!', running the test set seems
+to suggest otherwise.) What I did realize in the process, is that having an LR
+of 0.000000000000000001 might be stretching the limits of IEEE double
+precision to handle matters. I think I'm right, and I am working on a fixed-
+point number system to handle the more subtle "unit capacities." The Float16
+used in tensor equations does the opposite, for speed.  
+So far, so good, with two exceptions: speed and functionality. The speed issue
+may be irrelevant (it's slower by more than 1M x) because the slow down is
+mostly in training, and maybe not as much of a factor in predicting. But the
+functionality is crippling, as more and more it looks like it's a "first
+principles" solution. I.E. not only does TensorFlow not play ball, but numpy
+rejects my "BigFix" numbers in some cases, like .var and .std. So I am using
+the golden book by Joel Grus, Data Science from Scratch, to roll my own.  
+Progress is slow, but usually rewarding with detail to 1/googol handled (even
+by numpy) w/o issue. A test value I like to work with is 1/97 which is a
+repeating decimal with a period of 97. It shows up well. And bc comparison
+tests show 100% precision.  
+A different problem is that I am running out of time. So I'm showing all of my
+cards. This is just the first one.  
+Please feel free to set me straight, as I am still pretty new at this.  
+ps: I just fixed the .var and .std issue with a horrible hack - a .conjugate()
+function that returns self.
+comment
+
+
+## 2 Comments

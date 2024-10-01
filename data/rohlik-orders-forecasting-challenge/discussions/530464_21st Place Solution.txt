@@ -1,0 +1,43 @@
+[Musab Ahmed](/musabyagoub) · 21st in this Competition · Posted 19 days ago
+
+
+### 21st Place Solution
+Firstly thank you kaggle and Rohilk for this competition, it was a great
+opportunity to learn a lot about time series analysis and forecasting,and
+congrats for all winners.
+I used many features and ideas shared in discussions and code sections,so
+thank you for all those who made their work public,the features i added :
+1-week before holiday.  
+2-week before and after shops closed.  
+3-mean_user_activity_2/mean_mov_change.
+I used the last two months for validation,and i also replaced the orders in
+2020 with the average of orders in 2022.
+Models and Ensemble:
+1-LGBM(objective = 'tweedie',boosting_type = 'gbdt', num_leaves =
+131,learning_rate=0.17,n_estimators = 60,  
+max_depth=-1,  
+min_data_in_leaf=20,  
+bagging_fraction=0.77,  
+feature_fraction=0.9)  
+2-CatBoostRegressor() 3-HistGradientBoostingRegressor(max_iter = 116)  
+With weights  
+LGBM : 0.58  
+Catboost : 0.30  
+HistGradientBoosting : 0.12
+
+
+## 2 Comments
+
+
+### [Ern711](/ern711)
+Congrats!
+Do you know how much replacing the orders in 2020 with the avg of orders 2022
+helped? Wonder if doing someting like w1 * orders for date in 2020 + w2 *
+orders for date in 2022 where w1+w2 ~ 1 might work?
+
+
+### [Musab Ahmed](/musabyagoub)
+Thank you  
+Using the average of 2022 improved my Private score from 0.0445 to 0.0437.  
+but i didn't try the approach you mentioned,also using average of other years
+dropped the score.

@@ -1,0 +1,68 @@
+[Bhanu Prakash M](/bhanupm) · 22nd in this Competition · Posted 17 days ago
+
+
+### Man this is so unlucky
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F18484549%2Fd4eae2c02b42727dc5948713ace60649%2Fsed.png?generation=1723707347478328&alt=media)
+It makes me wonder, shouldn't 'labrador retriever' be in the 'alts' category
+given that it is the full name?
+
+
+## 3 Comments
+
+
+### [dynamic24](/dynamic24)
+I had one with keyword = "dogwood" and guess = "dogwood tree". Frustrating,
+for sure
+
+
+### [Helen](/jasminegreenj)
+This is indeed a problem. I have encountered the issue of "toothbrush" correct
+but "Toothbrush" incorrect before.🫠
+
+
+### [yukky_maru](/yukkymaru)
+Is that true? That sounds like a bug in the game. Since the correctness is
+determined by [the following code](https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/llm_20_questions.py),
+it means the code has been altered, which is a fundamental issue that should
+be reported to the organizers.
+    
+    
+    def normalize(s: str) -> str:
+        t = str.maketrans("", "", string.punctuation)
+        return s.lower().replace("the", "").replace(" ", "").translate(t)
+    
+    def compare_words(a, b) -> bool:
+        a = normalize(a)
+        b = normalize(b)
+        if a == b:
+            return True
+        # don't check for plurals if string is too short
+        if len(a) < 3 or len(b) < 3:
+            return False
+        # accept common plurals
+        if a[-1] == "s" and a[:-1] == b:
+            return True
+        if b[-1] == "s" and a == b[:-1]:
+            return True
+        if a[-2:] == "es" and a[:-2] == b:
+            return True
+        if b[-2:] == "es" and a == b[:-2]:
+            return True
+        return False
+    
+    
+    content_copy
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+This is the code that is currently running. `Toothbrush` would be treated the
+same as `toothbrush` by the code.
+
+
+### [sethpointaverage](/sethpointaverage)
+This code shouldn't allow for the case issue that was mentioned. Obviously,
+plural checking is not an exact science, so some of those are definitely
+missed out

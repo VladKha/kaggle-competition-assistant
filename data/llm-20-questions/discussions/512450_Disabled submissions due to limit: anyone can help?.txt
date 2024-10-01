@@ -1,0 +1,27 @@
+[ Octavio Grau](/octaviograu) · 180th in this Competition · Posted 3 months
+
+### Disabled submissions due to limit: anyone can help?
+Hi guys,
+I have submitted two additional notebooks in our team with
+[@risanraja32](https://www.kaggle.com/risanraja32) &
+[@chandreshjsutariya](https://www.kaggle.com/chandreshjsutariya) but the
+former submissions have become "Disabled due to the competition's active
+submission limit". I have read again the docs of the competition but I can't
+find info on this limit.
+Can someone explain me how many submissions we can have and how does that work
+to select the valid ones?
+Thanks!
+Best,
+Octavio
+
+
+## 2 Comments
+
+
+### [loh-maa](/lohmaa)
+That's really not a mystery, it is explained in the competition overview,
+section "Evaluation".
+
+
+### [Octavio Grau](/octaviograu)
+Thanks! I just missed it [@lohmaa](https://www.kaggle.com/lohmaa)

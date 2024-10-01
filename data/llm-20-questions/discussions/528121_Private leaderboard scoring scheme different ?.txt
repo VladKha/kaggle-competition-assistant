@@ -1,0 +1,18 @@
+[kothiwsk28](/kothiwsk28) · 81st in this Competition · Posted 18 days ago
+
+### Private leaderboard scoring scheme different ?
+Just probed into one of the first game plays and curiously found that
+deductions are not taking place in private leaderboard run? Are we still in
+testing phase?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F21112366%2Fc9f472f8b3a74d59d9cda232f024fc03%2FScreenshot%202024-08-14%20at%203.07.04PM.png?generation=1723666210484193&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F21112366%2F82e62500bb9bc22816866be4d5a314c6%2FScreenshot%202024-08-14%20at%203.02.07PM.png?generation=1723666189337223&alt=media)
+
+
+## 1 Comment
+
+
+### [dynamic24](/dynamic24)
+The leaderboard is the maximum score of your two bots. One bot lost points,
+one bot is still at 600, so the leaderboard says 600.

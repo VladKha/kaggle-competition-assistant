@@ -1,0 +1,59 @@
+[Tobias Domhan](/tdomhan) · 658th in this Competition · Posted 3 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Question competition rules around validation data labeling
+Hi! I noticed the following statement in the rules:
+> Submissions may not use or incorporate information from hand labeling or
+> human prediction of the validation dataset or test data records.
+I wanted to clarify what this means in practice. A common approach so far
+seems to be to derive DSL rules from the existing training and validation
+examples, like the 2020 winning solution (which had the same rule):
+<https://www.kaggle.com/competitions/abstraction-and-reasoning-
+challenge/discussion/154597>
+So just to make sure: labeling evaluation data, like extracting DSL rules
+and/or training a model on those, is still permitted for the ARC prize 2024,
+right?
+comment
+
+
+## 3 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up3
+  * format_quote
+  * link
+The key part here is
+> validation dataset or test data records.
+The intent of this line is to say the private test set can not be used. Only a
+very small number of non-contestants have access to it which makes this a non-
+issue for contestants.
+
+
+### [HashPanda](/hashpanda)
+arrow_drop_up1
+  * format_quote
+  * link
+Is the public test set not the validation dataset?
+
+
+### [Shreyansh Murathia](/shreyanshmurathia)
+arrow_drop_up-1
+  * format_quote
+  * link
+Dear organizer, is it necessary to use AI models? Can we use simple python
+based algorithms instead and win the prize?
+
+
+### [Andrew](/andrewrrose)
+arrow_drop_up0
+  * format_quote
+  * link
+They've said several times that you can use any approach you like - indeed
+they actively encourage a diversity of approaches.

@@ -1,0 +1,49 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 21 days ago
+
+### How to timeout an LLM?
+Hello players, I tried to use a common timeout function/wrapper based on the
+`signal` module.. something along these lines:
+    
+    
+     def handler(signum, frame):
+         raise TimeoutError()
+    
+     signal.signal(signal.SIGALRM, handler)
+     signal.alarm(timeout_duration)
+     try:
+         result = func(*args, **kwargs)
+     finally:
+         signal.alarm(0)
+    
+    
+    content_copy
+and it works locally or in notebooks… but not on the host evaluating
+submissions (i.e. in the real game):
+`ValueError: signal only works in main thread of the main interpreter`
+So.. does anyone have an idea how to timeout an LLM if it takes too long to
+return?
+
+
+## 4 Comments
+
+
+### [Siva Sankari Sivakaminathan](/sivas1292)
+Have you given a try for asynchronous timeouts ? It continuously check the
+task's status and cancel it if it exceeds the timeout.
+
+
+### [loh-maa](/lohmaa)
+Thanks for the suggestion, no, I haven't tried anything except `signal`.. do
+you mean `asyncio`?… Well anyway it's too late for such experimentation,
+especially that the problem is only on the evaluation host, so very
+inconvenient to test, and thus it's either a ready-made solution or nevermind.
+Matthew's suggestion was very helpful though.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Calculate token generation speed and set max new tokens on generation to match
+the time constraints.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Example: ~15t/sec * 60 seconds = 900 max new tokens

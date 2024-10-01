@@ -1,0 +1,14 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 2 months ago
+
+### Will keywords ever have people or not?
+I wanted to know if later on or in the private lb we will have people so that
+we could all know how to prompt engineer our models ahead of time!
+
+
+## 1 Comment
+
+
+### [waechter](/waechter)
+> `people` category is dropped from the full competition.
+Answered here:
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/512955#2884981>

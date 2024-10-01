@@ -1,0 +1,21 @@
+[Azat Akhtyamov](/azakhtyamov) · 26th in this Competition · Posted a month ago
+
+
+### Something is wrong with the submissions
+Currently, my second and third submissions are active, not the first and
+second:
+[2024-08-05 22.03.09.png](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2948164/21025/2024-08-05  22.03.09.png)
+
+
+## 3 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Should be fixed now! I disabled the wrong one initially.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Thank you, it's fine now

@@ -1,0 +1,34 @@
+[alf hickey](/alfhickey) · Posted 4 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Black always "null"?
+From the examples it seems like black is always a null type variable. ie there
+will not be rules like Black to blue. But this is a bad assumption to make
+given the nature of the test, have people come across examples where black is
+not a null?
+comment
+
+
+## 2 Comments
+
+
+### [chris](/chris62)
+arrow_drop_up2
+  * format_quote
+  * link
+I think that's generally true, but perhaps not 100%; check out 272f95fa for
+example - the entire black sections change (based on what section it is within
+blue, but still); the entire black section changes.
+
+
+### [alf hickey](/alfhickey)
+arrow_drop_up1
+  * format_quote
+  * link
+thanks, figured there would be something like that out there

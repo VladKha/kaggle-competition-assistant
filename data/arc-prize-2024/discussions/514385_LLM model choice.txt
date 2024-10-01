@@ -1,0 +1,24 @@
+[Sebastian Squire](/squiresof) · 830th in this Competition · Posted 3 months
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### LLM model choice
+Is the llama 3 model just a suggestion or can we use any LLM we want? I'd use
+Mistral preferably
+comment
+
+
+## 1 Comment
+
+
+### [HashPanda](/hashpanda)
+arrow_drop_up1
+  * format_quote
+  * link
+You can use any openly available LLM you want. LLama 3 8B is just a really
+popular model that is pretty good for its small size.

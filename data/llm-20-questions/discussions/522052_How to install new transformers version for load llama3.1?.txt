@@ -1,0 +1,64 @@
+[TuMinhDang](/darkswordmg) · 57th in this Competition · Posted a month ago
+
+
+### How to install new transformers version for load llama3.1?
+I try to use new llama3.1 model, and recieved error when install, seem
+transformer cannot upgrade, it requied 4.43.1 to run, agent log is:
+    
+    
+    [[{"duration": 35.35021, "stdout": "new trans\n4.41.2\n\n", "stderr": "Traceback (most recent call last):\n  File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 50, in get_last_callable\n    exec(code_object, env)\n  File \"/kaggle_simulations/agent/main.py\", line 56, in <module>\n    model = AutoModelForCausalLM.from_pretrained(model_id,\n  File \"/opt/conda/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py\", line 523, in from_pretrained\n    config, kwargs = AutoConfig.from_pretrained(\n  File \"/opt/conda/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py\", line 958, in from_pretrained\n    return config_class.from_dict(config_dict, **unused_kwargs)\n  File \"/opt/conda/lib/python3.10/site-packages/transformers/configuration_utils.py\", line 768, in from_dict\n    config = cls(**config_dict)\n  File \"/opt/conda/lib/python3.10/site-packages/transformers/models/llama/configuration_llama.py\", line 161, in __init__\n    self._rope_scaling_validation()\n  File \"/opt/conda/lib/python3.10/site-packages/transformers/models/llam"}]]
+    
+    
+    content_copy
+It is error if you don't upgrade tarnsformers. I was use below code to
+upgrade:
+    
+    
+    import subprocess
+    subprocess.run(f'pip install --no-index --find-links "/kaggle_simulations/agent/lib" transformers', shell=True, check=True)
+    import transformers
+    from importlib import reload
+    transformers = reload(transformers)
+    print('new trans')
+    print(transformers.__version__) # 4.41.2
+    
+    
+    content_copy
+but transformers stuck in 4.41.2. Anyone can help?
+
+
+## 4 Comments
+
+
+### [davide](/davidemariani)
+Anyone managed to find a solution to this? I am having the same issue.
+Unfortunately what [@cdeotte](https://www.kaggle.com/cdeotte) is suggesting
+doesn't work for me at the moment… (great notebook nevertheless by the way!)
+
+
+### [TuMinhDang](/darkswordmg)
+Hi [@cdeotte](https://www.kaggle.com/cdeotte) ,  
+I was install new transformers version(it show 4.43.2) on submit environment,
+but if we try to load llama3.1 we will recieve error, seem it have 2
+transformers version on env and I can't handle it.
+
+
+### [Chris Deotte](/cdeotte)
+We cannot install during submit. We must install during commit and save the
+installation files into our tarball. Then we submit our tarball.
+
+
+### [TuMinhDang](/darkswordmg)
+I was install it and zip to tar file, after install it from main.py file when
+submit, but I get problem as above. Are you try submit with llama 3.1? If not,
+you can try and see agent log when submit.
+
+
+### [kumar sauryan](/kumarsauryan)
+…submit with llama 3.1? If not, you can try and see agent log when submit.
+
+
+### [Chris Deotte](/cdeotte)
+I think you can use my starter notebook
+[here](https://www.kaggle.com/code/cdeotte/starter-code-for-llama-8b-llm-
+lb-0-750). In code cell #2, add `pip install -U transformers`.

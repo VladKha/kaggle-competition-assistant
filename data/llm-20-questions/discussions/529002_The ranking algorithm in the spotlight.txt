@@ -1,0 +1,46 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 14 days ago
+
+
+### The ranking algorithm in the spotlight
+I have no doubt the ranking algorithm is fair. It favors nobody. But so is
+lottery and fairness is not the only thing that matters in evaluation. What is
+equally important is **the ability to find the truly best performers** , i.e.
+the effectiveness of the ranking algorithm. While casual players may favor a
+lottery, hard working players come here for excellence and I believe every
+competition should support the strive for excellence.
+And here are my doubts whether the ranking algorithm in this competition is up
+to the job.
+  1. First of all, we don't know the details of the algorithm, so it's difficult to make definitive statements, it would be a big win for transparency if the organizers could publish the algorithm. I am sure many people had called for this before, and I was one of them. But of course I understand there may be other factors at play and it's not up to us.
+  2. So in terms of doubts: more than 97% of games end up in ties, making it very inefficient and as a consequence we are going to have much less meaningful evaluation than in previous competitions. Here, efficiency affects effectiveness. I estimate a single agent has only about 15 resolved matches (i.e. non-tied) before its mobility is stalled. And let's not forget that a single resolved match has plenty of randomness in it, from the keyword to selecting the partner and the other team. If we take the previous LuxAI season 2 competition for example, a single game was much more deterministic and thus the algorithm was more efficient leading to better effectiveness and convergence.
+  3. Given the characteristics of the ranking with respect to the pairing, and the so called "pit of non-wisdom", which we already have seen during development, it seems that just very few initial outcomes were decisive for the fate of a solution.
+  4. The true skill distribution in this game is weird, and the way players are selected to the games can also have weird implications. And altogether these might not meet the algorithm's theoretical assumptions. And if they don't, then it's broken.
+  5. There are statistical and reasonable indications that the algorithm doesn't work effectively. I can demonstrate if necessary.
+  6. Since it's unlikely our hosts can disclose any details of the algorithm, I would like to ask to perform extra testing, at least. This is what I think should work:
+> There's a cheap way to check whether the algorithm is doing well -- clone
+> the leaderboard, take the best agent and reset its sigma and set its score
+> to the worst score available, and evaluate only games involving that agent,
+> see how long it takes for it to get to the top (or top N), or if it gets
+> there at all. Possibly repeat a few times.
+>
+> An effective ranking algorithm would take it to the top. If the agent cannot
+> make it to the top within default sigma settings it would indicate the
+> current algorithm is not doing well and/or it was not suitable for this game
+> format, or that it needs different settings, sigma decay in particular.
+Please let me know if I'm wrong before I dare calling our hosts for attention.
+
+
+## 2 Comments
+
+
+### [loh-maa](/lohmaa)
+Hello [@bovard](https://www.kaggle.com/bovard), I did more analysis and I
+think I've found the main reason behind the poor performance of the ranking
+algorithm. Please take a look at this [short
+report](https://www.kaggle.com/competitions/llm-20-questions/discussion/529474).
+
+
+### [loh-maa](/lohmaa)
+Hello [@bovard](https://www.kaggle.com/bovard), I know it's going to be a busy
+day, but please consider this issue, too. The ranking algorithm is not working
+properly and there is some evidence for this (scattered in other threads.)
+Your feedback will be appreciated.

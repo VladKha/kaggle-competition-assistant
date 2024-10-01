@@ -1,0 +1,15 @@
+[yamitomo](/yamitomo) · 143rd in this Competition · Posted 2 months ago
+
+
+### What do you think about Gemma 2b-it?
+Even when I tell the model that you are a "questioner," it mistakes me for an
+"questioner" and asks questions that can't be answered with a yes/no, so I
+feel like its performance is low.
+What do you think?
+
+
+## 1 Comment
+
+
+### [CchristoC](/cchristoc)
+You should just use the Gemma 7b one or Llama 3 8B

@@ -1,0 +1,27 @@
+[AYUSH KHAIRE](/ayushkhaire) · 860th in this Competition · Posted a month ago
+
+
+### please explain me the matric .
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16503833%2Fe008845fa8afa69b851d525a0a280683%2FScreenshot%20from%202024-08-09%2022-20-34.png?generation=1723222263075038&alt=media)
+Is this true in this case that lesser score is better submission ? Why so ?
+this should in % , why in 0.x like ?
+
+
+## 2 Comments
+
+
+### [jdaniel123](/jdaniel123)
+**Why a lower score is a better submission?**
+If your fourecasts Ft are closer to the actual values At, the difference |At
+-Ft| will be smaller. Consequently, the relative error |At - Ft|/At will also
+be smaller. When yo average these smaller errors, the overall MAPE value will
+be lower, indicating more accurate predictions.
+**Why in 0.x like?**
+This is just a matter of how the sistem displays the score. In this case it is
+not multiplied by 100.
+
+
+### [AYUSH KHAIRE](/ayushkhaire)
+[@jdaniel123](https://www.kaggle.com/jdaniel123) Thanks a lot for explination
+. i got it now .

@@ -1,0 +1,19 @@
+[qubit81](/simeetnayan) · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Deep Learning based Approaches
+I am exploring on how we can solve this problem using some modified/novel deep
+learning architecture or some novel training paradigm.  
+Has anyone tried/found any solution using meta learning based approaches?  
+Do you think DL can handle these type of few shot pattern recognition and
+generation?  
+Any list of ideas on approaching this problem via a novel NN architecture?
+comment
+
+
+## 1 Comment

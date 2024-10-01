@@ -1,0 +1,197 @@
+[Chris Deotte](/cdeotte) · 311th in this Competition · Posted a month ago
+
+
+### New Models (7B-14B) Released!
+There have been many new models released in the past 1-2 months. Have people
+tried these new models? How is their performance?
+  * Gemma2-9B-IT [here](https://huggingface.co/google/gemma-2-9b-it)
+  * (Nvidia) Mistral-Nemo-Instruct-2407 (12B) [here](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
+  * (Nvidia) Minitron-8B-base [here](https://huggingface.co/nvidia/Minitron-8B-Base)
+  * Apple-DCLM-7B [here](https://huggingface.co/apple/DCLM-7B)
+  * Llama-3.1-8B-Instruct [here](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)
+  * Qwen2-7B-Instruct [here](https://huggingface.co/Qwen/Qwen2-7B-Instruct)
+  * Phi-3-Mini-4k-Instruct (4B) [here](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
+  * Phi-3-Medium-4k-Instruct (14B) [here](https://huggingface.co/microsoft/Phi-3-medium-4k-instruct)
+
+
+## 14 Comments
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+gemma 2 - loves to answer in markdown, gives some generic answers, great at
+following instructions, seems like a good contended for this comp if it can
+get its things category vocab a bit higher.  
+mistral variants (nemo int and minitron) - difficult to constraint and follow
+instructions.  
+llama 3.1 - get ROPE error in kaggle env  
+Qwen2 7b - great at following instructions but fails to get specific on
+keyword answers  
+Phi3 mini - all around good at the three roles, limited vocabulary in the
+things category  
+Phi3 medium - interestingly worse than phi3 mini? I had a very difficult time
+keeping this model from getting philisophical as questioner and guesser,
+despite multiple attempts. Implemented as AWQ, perhaps quantization affects
+it's instruction training?
+I keep going back to community fine tunings of LLaMa 3… getting the best
+results there.  
+MaziyarPanahi/Llama-3-8B-Instruct-v0.10  
+mlabonne/Daredevil-8B  
+openchat/openchat-3.6-8b-20240522
+
+
+### [Chris Deotte](/cdeotte)
+Thank you for the comprehensive summary. Great experiments.
+
+
+### [OminousDude](/max1mum)
+I have tried most of the above models and can give a more accurate description
+of which models to use and why.
+Gemma 2: This will give errors unless huggingface is upgraded (I think that
+the kaggle env. still uses old version where "Gemma2ForCasualLM" is not
+supported). Furthermore, this is a very good model with the current highest
+scores in the LLM Leaderboard for its param count. However, as this model just
+came out it has poor finetuning. What I mean by this is that most models (for
+example llama 3) have many finetuned variants (Smaug and others) which each
+help in some ways and are worse in others, to me the perfect model is not
+Gemma 2 since it does not have these yet. I think that since Gemma 2 is not
+meant for LLM 20Q some models that are finetuned on similar tasks could
+outrank it.
+Mistral + Variants: Like Mathew said above these are difficult to instruct and
+anyone with a sophisticated prompt is out of luck. I do however think that
+Nemo can be different that the others because it has the current best
+tokenizer (out of the smaller models), Tekken, as explained
+[here](https://mistral.ai/news/mistral-nemo/)
+Llama 3.1: Very, very promising but has an error when loading if the loading
+error is fixed we may see only llama 3.1 in the top places at the end.
+However, only time will tell and if someone can get this model to work this
+competition could be ruled by Llama 3.1
+Qwen2: I disagree with Mathew on this one and the statistics favor me too. I
+do not beleive this model is great at following robust directions from my
+testing and from the [LLM Leaderboard](https://huggingface.co/spaces/open-llm-
+leaderboard/open_llm_leaderboard). On the IFEval score (this explains how well
+it is at following instructions) it scores a 31.49 (its instruct variant
+scores a 56.79); however, compared to Llama 3 it is outmatched by quite a bit
+because Llama 3 gets 74.08 (this is the instruct score). Furthermore, Llama
+3.1 gets 77.40 which is more than 20 points ahead. However, Qwen is a good
+answerer and makes good questions (however it is bad at instruction following)
+Phi 3 mini & medium: Mini performs better but it was trained on much less data
+so it doesn't know many objects/things. Medium is likely the bot that gave
+[these](https://www.kaggle.com/competitions/llm-20-questions/discussion/519297)
+flat earth questions, because like Matt said it sometimes asks questions when
+it is questioner.
+I hope this helps you understand the reasons in which Matt made the above
+statements.
+PS: The best strategy to use is obviously alphabetical bisection because it
+has such a high score on the public leaderboard.
+
+
+### [G R Shanker Sai](/grshankersai)
+Hello [@matthewsfarmer](https://www.kaggle.com/matthewsfarmer) ,  
+Thank you for you insight on this, just wanted to understand, that by
+"community fine tunings of LLaMa 3", are you referring to the different
+flavours of llama 3 present in hugging face, or you are fine tuning it with
+your own data?
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Yes, on huggingface. I listed a few at the bottom of my comment. I've also
+fine tuned a model but the HF ones are too good!
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+RoPE error solved:
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/523619>
+
+
+### [raconion](/raconion)
+Thank you for your share! I just finish LMSYS comp and was hovering over to
+see some discussions for LLM 20 Questions. I feel like this comp has much
+better dicussion atmosphere lol Its a MAYHEM in LMSYS rn
+
+
+### [francesco fiamingo](/francescofiamingo)
+wow! thanks , few of them i explored (mistral,llama,qwen) but some other even
+not heard (!) tks a lot! ps which is the best for our game? in your opinion?
+
+
+### [Muhammad Ehsan](/muhammadehsan000)
+(Written by **ChatGPT-4o**)
+Below a bit more detail on each:
+  * **Gemma2-9B-IT** :   
+This model has 9 billion parameters and is designed for detailed comprehension
+and complex tasks. It's useful for applications that require a deep
+understanding of context and nuance.
+  * **Mistral-Nemo-Instruct-2407** :   
+With 12 billion parameters, this model is optimized for instructional tasks,
+meaning it's particularly good at following and executing specific
+instructions given to it.
+  * **Minitron-8B-base** :   
+An 8 billion parameter model that serves as a general-purpose base model. It's
+versatile and can be used for a wide range of tasks, though it might not have
+specialized capabilities compared to others.
+  * **Apple-DCLM-7B** :   
+This model, developed by Apple, has 7 billion parameters. It's aimed at
+various applications and might include unique features or optimizations
+specific to Apple's ecosystem.
+  * **Llama-3.1-8B-Instruct** :   
+This version of Llama, with 8 billion parameters, is tailored for tasks that
+involve following instructions or guidelines. It’s built to better understand
+and act on specific commands.
+  * **Qwen2-7B-Instruct** :   
+Another instruction-focused model with 7 billion parameters. It’s designed to
+interpret and respond to detailed instructions effectively.
+  * **Phi-3-Mini-4k-Instruct** :   
+This smaller model has 4 billion parameters and is optimized for following
+instructions, suitable for tasks that don’t require extensive processing power
+but need good command-following abilities.
+  * **Phi-3-Medium-4k-Instruct** :   
+A medium-sized model with 14 billion parameters, this one is also geared
+towards instruction-following tasks, offering more processing power and
+complexity compared to the smaller versions.
+
+
+### [OminousDude](/max1mum)
+Which model did you use to write this response? Was it llama 3? Looks AI
+generated to me…
+
+
+### [fufu2022](/fufu2022)
+Thank you! Gemma2-9B-IT and Llama-3.1-8B are the best for me.
+
+
+### [torino](/pnmanh2123)
+Hi [@fufu2022](https://www.kaggle.com/fufu2022) ,  
+How do you load llama3.1 on the submit environment? f it is not a secret, can
+you share it?
+
+
+### [OminousDude](/max1mum)
+I don't think he does not sure if anyone has succeeded with it yet. I think he
+just thinks it will work well.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I developed a [solution today.
+](https://www.kaggle.com/competitions/llm-20-questions/discussion/523619)
+
+
+### [Aadit Shukla](/aaditshukla)
+I haven't had the chance to try these new models yet, but I'm really curious
+about their performance. From what I've heard, they seem to offer some
+impressive capabilities. Has anyone here had any experience with them? I'd
+love to hear your thoughts!  
+thank you for update [@cdeotte](https://www.kaggle.com/cdeotte) .
+
+
+### [C R Suthikshn Kumar](/crsuthikshnkumar)
+I tried to use gemma2_7b_en in my notebook by  
+gemma_llm = keras_nlp.models.GemmaCausalLM.from_preset("gemma_7b_en")  
+However, I am getting the following errors:  
+ValueError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate
+754975104 bytes.
+
+
+### [Chris Deotte](/cdeotte)
+You need to load it quantized as 4bit or 8bit. If we load it as fp16 or fp32
+it will be too large for GPU VRAM. In this competition, our submissions are
+run using 1xT4 (i.e. not 2x T4) which has 16GB VRAM.

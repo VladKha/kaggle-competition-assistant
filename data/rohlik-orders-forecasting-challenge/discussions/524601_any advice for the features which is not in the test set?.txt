@@ -1,0 +1,53 @@
+[Fan Bao0819](/fanbao0819) · 268th in this Competition · Posted a month ago
+
+
+### any advice for the features which is not in the test set?
+there are some features in the training set, and not in the test set. like
+shut down ,percipitation .etc. I just drop these features for now, is there a
+way we can use these features to make a prediction
+
+
+## 2 Comments
+
+
+### [tomtuamnuq](/tomkrger)
+Hi [@fanbao0819](https://www.kaggle.com/fanbao0819),
+I looked into the features you mentioned, specifically those related to
+shutdowns and limitations (i.e., `shutdown`, `mini_shutdown`, `blackout`,
+`frankfurt_shutdown`, `warehouse_limited`). After examining how often these
+events occur, I found that they are quite rare, and the order volumes on these
+days appear to be relatively normal. Below are the counts of such days in the
+training set by warehouse:
+  * Brno_1: 3 days
+  * Budapest_1: 1 day
+  * Frankfurt_1: 4 days
+  * Munich_1: 1 day
+  * Prague_1: 2 days
+  * Prague_2: 2 days
+  * Prague_3: 2 days
+Regarding the `mov_change` column, it primarily tags the date range from
+October 2022 to July 2023 across all warehouses. For Budapest, there is an
+additional variation within this range (with a value of 0.7). However, the
+significance of this feature is not entirely clear to me. You can find a more
+detailed visualization in my
+[Notebook](https://www.kaggle.com/code/tomkrger/rohlik-forecasting-regression-
+feature-study#Orders-and-Features-by-warehouse).
+As for user activity features, I attempted to predict them following an in-
+depth analysis of data preprocessing techniques, similar to what I did for
+orders in my [Notebook](https://www.kaggle.com/code/tomkrger/rohlik-
+forecasting-regression-feature-study#Hypothesis-Testing). While the prediction
+for `user_activity_1` was reasonable, I faced significant challenges in
+predicting `user_activity_2`. Using these predictions to forecast orders
+proved problematic. Due to the strong correlation between orders and user
+activity (especially `user_activity_2`), these features have high importance
+in the models. However, the prediction errors for user activity in the test
+set are too substantial, leading to poor performance in the final orders
+prediction.
+I hope this helps clarify how these features might be used and the challenges
+associated with them.
+
+
+### [Arnold Kakas](/arnoldkakas)
+you can use weekly/monthly averages, but I would probably just leave them out
+because you would need data for longer periods from external source which is
+not allowed in this competition.

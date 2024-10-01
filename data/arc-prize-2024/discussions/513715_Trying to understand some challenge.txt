@@ -1,0 +1,84 @@
+[Jo](/jbrans) · 785th in this Competition · Posted 3 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Trying to understand some challenge
+I'm trying to understand some of the challenges but I can't, for example for
+the id '662c240a'. Does anyone understand the logic ?
+Maybe the AI is better than me
+comment
+
+
+## 3 Comments
+
+
+### [HashPanda](/hashpanda)
+arrow_drop_up2
+  * format_quote
+  * link
+I found 2 solutions:
+  1. Symmetry: In every triplet, 2 are symmetrical and the assymetrical is the answer.
+  2. Colour priority: Brown always dominates over other colours.
+I found the colour priority one the first, most obvious, but I think the
+symmetry one is the intention. Note that both of these yield the correct
+solution.
+
+
+### [waechter](/waechter)
+arrow_drop_up2
+  * format_quote
+  * link
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F9328269%2F6f43f1e22a430700bf8f94ca4c515c7f%2Ftask_662c240a.svg?generation=1718964989442771&alt=media)
+I agree this one is difficult, took me few minutes but I think I understood:
+  1. We see from the examples that 3x9 input grid -> output a 3x3 grid ([:,0:3], [:,3:6] or [:,6:9])
+  2. To know which of the three it is, I think you have to look at the colors : 
+     * Ex1 : Yellow&Green > Red,Blue,LightBlue, (…other colors in input example1)
+     * Ex2: Green&Purple > …other colors in input example2)
+     * …
+     * Ex4: Yellow&Blue > Green, … other colors in input4 
+  3. Conclusion: What is the color from test input with highest priority ? Yellow ( from ex1& ex2 ) So we output the 3x3 grid with Yellow 
+Hope this makes sense, it wasn't easy for me to write
+
+
+### [HashPanda](/hashpanda)
+arrow_drop_up7
+  * format_quote
+  * link
+Also my initial idea and it gives the correct solution, but I think they
+intended for a symmetry-based solution. Note that in every triplet, there are
+2 symmetrical and 1 assymetrical grids. The assymetrical one is always the
+solution.
+I do agree this one is relatively difficult. It took me longer than any of the
+others I've tried so far, although I should add I've only done a subset of
+about 20-30 so far.
+
+
+### [waechter](/waechter)
+arrow_drop_up1
+  * format_quote
+  * link
+I think you right! I didn't see the symmetrical diagonal, now that you said
+it, I think it's a better solution
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+This is great! It's a total mystery! Now you know what the average "AI" is up
+against. And so we study and study and study (alone, or in groups) and
+eventually we figure it out, and it becomes WAY easier to code! What's missing
+(to honest AI researchers) is… Shouldn't the AI have figured it out on its
+own? To which I respond, Shouldn't the humans have done so? And so we see more
+of the true nature of intelligence. It is a social experience, whether you're
+out there teaching your son how to catch fly balls, or discussing among a
+bunch of post-docs what colored object is "correct". (hint: you get three
+tries!) Never felt so much like a monkey at the base of the monolith!  
+PS: Absolutely correct, [@hashpanda](https://www.kaggle.com/hashpanda) ! Roger
+the symmetry! (you said it, but it sailed right past me!)

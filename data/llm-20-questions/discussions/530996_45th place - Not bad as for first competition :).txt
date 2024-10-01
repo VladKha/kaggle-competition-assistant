@@ -1,0 +1,83 @@
+[VolodymyrBilyachat](/vovikdrg) · 45th in this Competition · Posted 3 days ago
+
+
+### 45th place - Not bad as for first competition :)
+Here is my solution for this LLM problem  
+<https://www.kaggle.com/code/vovikdrg/45th-pure-llm-20-questions>
+
+
+## 4 Comments
+
+
+### [Andrew Tratz](/jademonk)
+Congratulations! I think your leaderboard position underestimates the quality
+of your submission. Great work
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Its fair, since I should've spent a bit more time :( to play with ideas I
+added to latest notebook. And thanks for sharing your solution :)
+
+
+### [Sahitya Setu](/sahityasetu)
+Congratulations !good start !
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+In self play achieve not bad result. You can run notebook and play with it :)
+# | Keyword | Is Success | Total steps | Log  
+---|---|---|---|---  
+1 | alligator clip | False | 20 |   
+2 | armadillo | False | 20 |   
+3 | barracks | False | 20 |   
+4 | beech | True | 16 |   
+5 | boardwalk | False | 20 |   
+6 | bobcat | True | 18 |   
+7 | bubble | False | 20 |   
+8 | bucket | True | 20 |   
+9 | bunker | False | 20 |   
+10 | camera | False | 20 |   
+11 | ceiling fan | True | 15 |   
+12 | celery | True | 14 |   
+13 | court file | False | 20 |   
+14 | cow | True | 5 |   
+15 | cruiser bike | False | 20 |   
+16 | cupping | False | 20 |   
+17 | door handle | False | 20 |   
+18 | emergency siren | False | 20 |   
+19 | eyelash | False | 20 |   
+20 | fabric glue | False | 20 |   
+21 | fawn | False | 20 |   
+22 | garage | False | 20 |   
+23 | garlic | True | 11 |   
+24 | glacier | True | 9 |   
+25 | golf | False | 20 |   
+26 | guinea pig | False | 20 |   
+27 | hairpin | False | 20 |   
+28 | jug | False | 20 |   
+29 | kart | True | 16 |   
+30 | lilypad | False | 20 |   
+31 | lobster | False | 20 |   
+32 | meringue | False | 20 |   
+33 | neon | False | 20 |   
+34 | orchid | True | 13 |   
+35 | peach | True | 10 |   
+36 | plate | False | 20 |   
+37 | plier | False | 20 |   
+38 | poster | True | 15 |   
+39 | pufferfish | False | 20 |   
+40 | railway | False | 20 |   
+41 | rat | True | 16 |   
+42 | sea | False | 20 |   
+43 | spanish moss | False | 20 |   
+44 | stair | False | 20 |   
+45 | steel | False | 20 |   
+46 | styrofoam | False | 20 |   
+47 | terrace | False | 20 |   
+48 | trout | True | 9 |   
+49 | underwire | False | 20 |   
+50 | wallet | False | 20 |   
+51 | hoodie | False | 20 |   
+52 | microphone | False | 20 |   
+53 | quilt | False | 20 |   
+Success=14, Total=53, Success rate=0.2641509433962264 |  |  |  | 

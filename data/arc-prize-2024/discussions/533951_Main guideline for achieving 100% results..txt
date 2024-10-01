@@ -1,0 +1,57 @@
+[Youssef Sanhaji](/sanhaji) · Posted 16 days ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Main guideline for achieving 100% results.
+I just participated in this competition, and so far, I've come to the
+following conclusion:  
+Does a human being need to see and understand the training or evaluation
+examples to solve, for instance, the puzzle with ID "007bbfb7"?  
+The answer is obviously no. A human can solve any puzzle simply by visualizing
+3 to 5 examples.
+Conclusion: the solution to create a model capable of predicting the output
+puzzle is independent of whether or not the training dataset is visualized.
+Therefore:
+  * The model to be predicted should not rely on the training dataset.
+  * The model must be able to predict the dimensions of the output puzzle.
+  * The model must be able to predict the shape of the output.
+These three points are key to definitively solving the problem.
+Soon, I will share with you an "out of the box" approach, and I'd love to hear
+your feedback.
+comment
+
+
+## 2 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up4
+  * format_quote
+  * link
+While it is true that most of us solved 007bbfb7 without the benefit of either
+the training or the evaluation, we did have our entire lives as human beings
+to sort of make up for that lack. Some of us really got into that puzzle kind
+of thing back when we were in high school (xxx years ago) and had that many
+years for our xxtrillion brain cells to bang those ideas around. If you are
+training a model from zero, the best you could hope for would be 100% of eval
+and training and 100% of 2020's eval and training, etecetcetc… Maybe if you
+had an LLM that trained on only puzzle-solving sites, then yeah, ok skip the
+eval and training, but NOT REALLY. Even with every puzzle site under your belt
+(as an LLM) You would still do better - MUCH BETTER - banging on the 2024 800
+sets. Definitely looking forward to your upcoming out-of-the-box approach!  
+Also, the three points that you listed are indeed important, but add another
+18,000 points to that and you're getting warm.
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up0
+  * format_quote
+  * link
+Good point. It might be possible to develop an approach which performs well
+without training on the provided data. However, the provided data can still be
+used in this case to validate your approach, hence its usefulness.

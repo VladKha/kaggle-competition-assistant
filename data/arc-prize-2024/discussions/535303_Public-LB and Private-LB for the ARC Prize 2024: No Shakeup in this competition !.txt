@@ -1,0 +1,67 @@
+[C R Suthikshn Kumar](/crsuthikshnkumar) · 26th in this Competition · Posted 9
+days ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Public-LB and Private-LB for the ARC Prize 2024: No Shakeup in this
+competition !
+Reference to ARC Prize 2024 competition:  
+<https://www.kaggle.com/competitions/arc-prize-2024/>
+I observe the leaderboard is calculated with all of the test data.  
+( i.e., there is no separate Private-LB). Unlike, other  
+ML Competitions on Kaggle, I observe the final results will be same as Public-
+LB.  
+I suppose there will be no shakeup in this competition !!
+[Artificial
+Intelligence](/discussions?tags=12101-Artificial+Intelligence)[Machine
+Learning
+Ethics](/discussions?tags=16643-Machine+Learning+Ethics)[Intermediate](/discussions?tags=13103-Intermediate)[Beginner](/discussions?tags=13102-Beginner)[Advanced](/discussions?tags=13104-Advanced)
+comment
+
+
+## 2 Comments
+
+
+### [Angelika Smirnova](/angelikasmirnova)
+arrow_drop_up2
+  * format_quote
+  * link
+Are you taking part in the ARC Prize 2024?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+If you look at his name, you will see that he is 26th in the competition. That
+will allow you to quickly find him on the leaderboard.  
+My personal dream is to make it to 541st! :-)
+
+
+### [C R Suthikshn Kumar](/crsuthikshnkumar)
+arrow_drop_up1
+  * format_quote
+  * link
+Compared to other competitions, ARC Prize is lot more hard work.  
+But may be AI may come to our rescue!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+Not if it's smart, it won't. - pause for laughter - I appreciate your innocent
+optimism, [@crsuthikshnkumar](https://www.kaggle.com/crsuthikshnkumar) ! ARC
+Prize is an immensely heavy lift, code wise, and a slipped-disk-waiting-to-
+happen for LLMs. - You know I get $1 for every downvote - Kudos to @ - never
+mind - there _can't_ be that many different people with the given name
+cholleti - Francois for devising the test - and staying with it all these
+years. ARC is one of the most brilliant things I have seen in my life. I had
+other stuff to say, but I can't see the keyboard for the tears.  
+Needles to say, I feel a sense of relief in your "No Shakeup" headline, even
+if you _did_ just divide 92 by 2.

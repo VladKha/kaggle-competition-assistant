@@ -1,0 +1,85 @@
+[David](/davidxueml) · Posted 3 months ago
+
+
+### With keywords possible to be hardcoded, does the current leaderboard
+matter for final prize contending eval?
+Title. Since after the final submission deadline, keywords get swapped. I
+imagine people who are relying hard memorized keywords would perform a lot
+worse. Would the current leaderboard have an effect, if at all, on the final
+prize contending evaluation? If not then what's the point of the ranking and
+scoring system?
+But if the current leaderboard and scoring does affect final prize contending
+then I would argue this isn't entirely fair?
+As stated in another post, the current system can be EASILY gamed by making
+the LLM hard memoize which keywords to use and what questions to ask (you may
+even use a non-LLM and achieve better results since it's just a rule based
+filtering problem). All they have to do is change the submission every once
+awhile when the keywords list change. And before the final submission
+deadline, use a different more generalized submission
+
+
+## 5 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Current LB does not affect the final prize winners. The final prize winners
+are solely determined by the next private LB.
+The purpose of the current public LB is to allow us to debug our code and get
+an approximate estimate of performance.
+
+
+### [David](/davidxueml)
+Wait sorry but I can't find a place that says that? Just trying to be safe
+because here:  
+`Final Evaluation At the submission deadline on August 13, 2024, submissions
+will be locked. From August 13, 2024 to August 27th, 2024 we will continue to
+run episodes against a new set of unpublished, secret words`  
+The word "continue" made me think it continues playing off of the current
+leaderboard status before freezing
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+Yes, the current leaderboard will be the seed of your agent going into the
+final evaluation period. We will ensure that agents receive enough games for
+the leaderboard to stabilize under the new set of words, so even if your agent
+is severly under ranked it should not be an issue.
+
+
+### [Gavin Cao](/gavinxgcao)
+but there is a problem. since agent are mostly paired with other agent at
+about same score level, top agents in current leaderboard have good chance
+paired with smart agent. while a new agent most probably paired with agents
+near 600 score and most of them could not answer question or reasoning
+effectively. and I believe more idiot agent will be submitted near deadline.
+so in final competition, it's very hard for new outstanding agent to get high
+score under current rules.
+
+
+### [OminousDude](/max1mum)
+Yes, for example, if you take this case to the extreme agent alpha encourages
+others to use their code to search keywords in alphabetical, lexicographical,
+etc order. This will fail but will also bring down other models.
+
+
+### [Azim Sonawalla](/asonawalla)
+Is this typical for a kaggle competition? i.e. is the majority of the wall
+clock for dev and debug, discussion, etc?
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+This is typical for simulation style competitions - where the leaderboard is
+ever changing as participants are scored based on how well they fare against
+one another, unlike a more traditional supervised machine learning competition
+in which participants are scored based on how well they fare against the
+ground truth
+
+
+### [i_am_nothing](/eurethia233)
+Will the agents still be able to access to the list of keyword when they are
+running in the final submission?
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Nope. this is why you should not rely on list of the words

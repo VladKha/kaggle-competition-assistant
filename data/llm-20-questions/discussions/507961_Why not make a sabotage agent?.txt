@@ -1,0 +1,22 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+
+### Why not make a sabotage agent?
+In this competition, the pair of Questinior and Answerer get better scores if
+they collaborate and don't lie. However what if someone made a purposefully
+deceiving agent for making other agents's scores worse? Is this illegal or am
+I missing something? Thank you for considering my question!
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+A Questioner is paired with an Answerer that has similar LB score. A sabotage
+agent would eventually have a bad low LB score. So a sabotage agent eventually
+will only get paired with teams on the bottom of the LB. Therefore a sabotage
+agent should not affect the important top of the LB.
+
+
+### [OminousDude](/max1mum)
+Ohh, Thank you. I'm not sure how I didn't think of that!

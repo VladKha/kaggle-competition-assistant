@@ -1,0 +1,45 @@
+[Rafael Frade](/rafaelfrade) · Posted 2 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Can we use data augmentation?
+Hi everyone, sorry for the basic question, but I am new to kaggle. I just
+wanted to know if it is ok for this competition if we train the models with
+artifitial tests cases that we create?
+Thanks!!!
+comment
+
+
+## 3 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * format_quote
+  * link
+Yep, you can! You can use any model you'd like for the official competition as
+long as it doesn't require internet.  
+And of course respect all legal requirements and licenses for the model you
+choose (a non-factor if you do your own)
+
+
+### [Rafael Frade](/rafaelfrade)
+arrow_drop_up0
+  * format_quote
+  * link
+Great! Thanks!
+
+
+### [Rafael Frade](/rafaelfrade)
+arrow_drop_up0
+  * format_quote
+  * link
+sorry, follow up question. Let's say I create 100k test cases and I want to
+use them to train or fine-tune a model. Does the time for creation and fine-
+tuning count for the 12h limit, or I can train them beforehand and this time
+limit just apply for inference?

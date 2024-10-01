@@ -1,0 +1,50 @@
+[ISAKA Tsuyoshi](/isakatsuyoshi) · 9th in this Competition · Posted 2 months
+
+### Submission Failed: Previously Successful File Fails Sporadically
+My previously successful submission has now failed. I am unable to check the
+error logs(404).
+Only two agents are displayed.
+I submitted the same file five times, and it failed only once.
+Does anyone have any clues or suggestions?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F84affc8fa8863e8092f684c6ecb1b306%2FSubmission%20Failed%20Previously%20Successful%20File%20Fails%20Sporadically.png?generation=1721128100334906&alt=media)
+
+
+## 6 Comments
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I'm having issues now on code I didn't have an issue with in past… This is
+very strange. No errors in the output. But the game replay shows "none" for my
+answerer agent. Unless I am missing something, this is not possible. I use a
+try-conditional answerer with a fall-back answer if there is an error and if
+there is an error, it is printed to stderr. There is no error messages and the
+output is none… I am at a loss.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13476622%2F63923768b89cf9011468c11e6c35a0e6%2Fimage.png?generation=1723066142203599&alt=media)
+
+
+### [OminousDude](/max1mum)
+Same weird error for me. Not sure if this is because of the competition or
+not, but if this doesn't fix quickly the end of this competition could be
+destroyed.
+
+
+### [loh-maa](/lohmaa)
+I think same issue here, hard to tell the cause, and what else to do than just
+try again..
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+I agree, it seems like a random system error that occurred. It's frustrating
+not being able to see the logs.
+
+
+### [Andrew Tratz](/jademonk)
+Having a similar issue - failing with 404 error when clicking on logs. Is this
+still happening frequently for you?
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+Thank you for your comment! It's the same phenomenon. Although not frequent,
+I've experienced it twice.

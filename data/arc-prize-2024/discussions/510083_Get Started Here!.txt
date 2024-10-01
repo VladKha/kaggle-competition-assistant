@@ -1,0 +1,81 @@
+[Addison Howard](/addisonhoward) · Posted 4 months ago
+· Kaggle Staff
+arrow_drop_up29
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Get Started Here!
+**New to machine learning and data science?** No question is too basic or too
+simple. Feel free to start your own thread, or use this thread as a place to
+post any first-timer clarifying questions for the Kaggle community to help you
+with!
+**New to Kaggle?** Take a look at a few videos to learn a bit more about [site
+etiquette](https://www.youtube.com/watch?v=aIus8si_Et0), [Kaggle
+lingo](https://www.youtube.com/watch?v=sEJHyuWKd-s), and [how to enter a
+competition using Kaggle
+Notebooks](https://www.youtube.com/watch?&v=GJBOMWpLpTQ). Publish and share
+your [models on Kaggle Models](https://www.kaggle.com/docs/models#publishing-
+a-model)!
+**Looking for a team?** Express your interest in joining a team through our
+[Team Up](https://www.kaggle.com/discussions/product-feedback/341195) feature
+.
+**Remember** : Kaggle is for everyone. Whether you're teaming up or sharing
+tips in the competition forum, we expect everyone to follow our Kaggle
+community guidelines.
+comment
+
+
+## 7 Comments
+
+
+### [Vladimir Iokar](/vladimiriokar)
+arrow_drop_up1
+  * format_quote
+  * link
+This is very useful information
+
+
+### [Muhammad Ehsan](/muhammadehsan000)
+arrow_drop_up1
+  * format_quote
+  * link
+Hey [@addisonhoward](https://www.kaggle.com/addisonhoward),
+Thanks for the excellent guide for newcomers! It’s great to see such a
+supportive environment for those just starting out in machine learning and
+data science. The resources and tips you’ve shared are really helpful for
+understanding how to navigate Kaggle and get involved in competitions.
+For anyone new to Kaggle, I highly recommend checking out the videos and
+threads mentioned here—they provide a solid foundation for both the technical
+aspects and the community engagement. Don’t hesitate to start discussions or
+reach out for help; the community is here to support each other.
+Looking forward to seeing everyone’s contributions and learning from this
+vibrant community!
+
+
+### [Rocky](/rocky19)
+arrow_drop_up0
+  * format_quote
+  * link
+Hi. Although I am familiar with the Kaggle AI/ML competitions, and
+submissions, I am relatively new to AI development capable of solving problems
+previously unseen. Do you suggest any particular resources and algorithms for
+this kind of AI development?
+
+
+### [Twishmay Shankar](/glazeshadow)
+arrow_drop_up0
+  * format_quote
+  * link
+What are some good resources to start learning the techniques that work well
+with ARC problems?
+
+
+### [Kamil Horvat](/khorvat)
+arrow_drop_up2
+  * format_quote
+  * link
+You can start at <https://arcprize.org/guide>

@@ -1,0 +1,165 @@
+[TuMinhDang](/darkswordmg) · 2nd in this Competition · Posted 20 days ago
+
+
+### 2nd place solution - single LGBM Model
+Thanks to [@mkecera](https://www.kaggle.com/mkecera) for hosting this
+interesting ML contest. I learned a lot and had a great time with it. Also,
+thanks to [@techniquetwice](https://www.kaggle.com/techniquetwice) for
+competing with me.
+Before approaching the methods I implemented, I need to note a few points:
+  * First, our 1st score results on the public leaderboard did not work well on the private leaderboard, my model overfitted with the public lb.
+  * Our method presented here is the best version before we changed the parameters that caused overfitting.
+  * We optimized the hyperparameters through optuna methods.
+  * We trained on a portion of the provided data and used the rest for evaluation.  
+My best private score was 0.0366, public score was 0.0292. However, the 1st
+code with a public score of 0.0258 had a private score of 0.0445. Now I submit
+the best version of the exam with a private score of 0.0366.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6042538%2F38eabcbb6351785da1ee846ec35a313f%2FScreenshot%202024-08-25%20215211.png?generation=1724597739548039&alt=media)
+You can find it
+[here](https://www.kaggle.com/code/darkswordmg/rohlik-2024-2st-place-solution-
+single-lgbm).
+
+### What works for me:
+  * Add some holidays that are not in the calendar file.
+  * Some holidays will use different weights instead of 1 for all holidays (I choose 1.3).
+  * Use a single LGBM.
+  * Training model with log features (key to avoid shakeup).
+  * Use MAE as a loss function instead of MAPE (key to avoid shakeup).
+  * Use optuna for hyperparameter finetuning.
+
+### Some experiences of my team:
+  * Not all holidays are equally important.
+  * MAPE gives a better CV, but MAE is more stable.
+  * Still do not evaluate the importance of all the holidays.
+#### References, discussions I read before deciding to use MAE instead of MAPE
+for the loss function:
+  * [Best way to optimize MAPE](https://stats.stackexchange.com/questions/213897/best-way-to-optimize-mape)
+  * [How to optimize MAPE in regression algorithms](https://stats.stackexchange.com/questions/417588/how-to-optimize-mape-in-regression-algorithms)
+  * [What are the shortcomings of the Mean Absolute Percentage Error (MAPE)?](https://stats.stackexchange.com/questions/299712/what-are-the-shortcomings-of-the-mean-absolute-percentage-error-mape?noredirect=1&lq=1)
+  * [Why does minimizing the MAE lead to forecasting the median and not the mean?](https://stats.stackexchange.com/questions/355538/why-does-minimizing-the-mae-lead-to-forecasting-the-median-and-not-the-mean)
+I hope you guys have a great time, too. If you find anything wrong with my
+thinking, feel free to comment.
+
+
+## 9 Comments
+
+
+### [Alpay Abbaszade](/alpayabbaszade)
+Thank you for sharing. And congratulations on your ranking. I have a few
+questions about your solution.
+  1. What is your parameter search method with Optuna for your model? Because you're using a single model. How did you select the test set for Optuna, and did you use cross-validation?
+  2. If you used it, what was your CV strategy?
+
+
+### [techniquetwice](/techniquetwice)
+Hi [@alpayabbaszade](https://www.kaggle.com/alpayabbaszade) ,  
+I use TimeSeriesSplit for finetuning optuna, for detail:
+  * Stage 1: use data from 2020 to 02/2022 to predict month 3,4,5/2022
+  * Stage 2: use data from 2020 to 02/2023 to predict month 3,4,5/2023
+  * Stage 3: use all train data to predict test data, concat it to train data and re-predict test data
+  * I don't predict month 3,4,5 of 2021 because data in 2020 not enough.
+  * Loss function is MAE, optimize minimum for MAPE.  
+𝑠𝑐𝑜𝑟𝑒=𝑀𝐴𝑃𝐸(𝑠𝑡𝑎𝑔𝑒1)+𝑀𝐴𝑃𝐸(𝑠𝑡𝑎𝑔𝑒2)+𝑀𝐴𝑃𝐸(𝑠𝑡𝑎𝑔𝑒3)3score=MAPE(stage1)+MAPE(stage2)+MAPE(stage3)3
+KFold works pretty well for me too, I guess the time correlation between days
+is not very strong(except holidays) so we can consider this as discrete data.
+I will update optuna code when my server got fix.
+
+
+### [Alpay Abbaszade](/alpayabbaszade)
+Hi [@techniquetwice](https://www.kaggle.com/techniquetwice). Thank you so much
+for the detailed explanation!
+
+
+### [Khánh Trần](/neetnetnet)
+Congratulations, but I'm a bit confused about stage 3. When you use all the
+test data combined with the train data, wouldn't that cause data leakage?
+Could you explain this in more detail?
+
+
+### [techniquetwice](/techniquetwice)
+Hi [@neetnetnet](https://www.kaggle.com/neetnetnet) ,
+Thank for your question. That's not data leakage. While this may seem like
+it's a data leak, the model is actually based on past data and its own
+predictions. The model has no exposure to future ground truths (ground truth
+of lb test data - we don't have it here) during training.
+I'm trying to make the model better adapted to the simulated distribution of
+the lb test data (the model's predictions will be a distribution that closely
+resembles the actual distribution) by combine predicted data to train data.
+An example of data leakage is GroupKFold, where the model gets access to
+future ground truths when we randomly split and shuffle the data. But it works
+quite well in this case, as I explained in the comment above.
+Feel free if you have any question.
+
+
+### [Khánh Trần](/neetnetnet)
+Thanks for the explaination!!
+
+
+### [JonasGoe](/jonasgoe)
+Really a nice solution! Congrats on the 2nd place!
+I really like how you dealt with the logarithm + MAE (and thanks for sharing
+the references/sources).
+  * We tried using the logarithm only, but that was not successfull in our case.  
+-> Seems like MAE is really important here. How did it work in your case with only the logarithm?
+
+
+### [TuMinhDang](/darkswordmg)
+Congrats your team on the 3rd place!  
+the MAE would measure the average absolute difference in the log-transformed
+space. This approach is often used when the data is skewed or spans several
+orders of magnitude, as it helps stabilize the variance and make the model
+less sensitive to outliers
+
+
+### [Tanishk Patil](/tanishkpatil)
+Congratulation on winning the Challenge! I have a question.  
+Can you explain how did you handle the calendar.csv? and what method do you
+use to fill holidays?
+
+
+### [techniquetwice](/techniquetwice)
+Hello [@tanishkpatil](https://www.kaggle.com/tanishkpatil)
+
+### Below is main idea when I fill holiday:
+  * In data train, test have column "holiday" with values is 0 and 1
+  * "fill_calendar2df" will get holiday from calendar.csv(df_cld) to fill for dataframe
+  * With each holiday, we mark both before and after the holiday as 1 (treat it as a holiday).
+  * With 2 special holiday('Labour Day' and 'Easter Monday'), we mark 2 days before and one day after the holiday as 1(Only 2 days before the holiday is weighted at 1.3 instead of 1, I hypothesize that users order more to prepare for the holiday.)
+
+### Example:
+#### Input - holiday Easter Monday:
+warehouse | date | holiday | holiday_name  
+---|---|---|---  
+A | 2024-03-28 | 0 | Not  
+A | 2024-03-29 | 0 | Not  
+A | 2024-03-30 | 0 | Not  
+A | 2024-03-31 | 0 | Not  
+A | 2024-04-01 | 1 | Easter Monday  
+A | 2024-04-02 | 0 | Not  
+A | 2024-04-03 | 0 | Not  
+  
+#### Output - 2 days before and 1 day after:
+warehouse | date | holiday | holiday_name  
+---|---|---|---  
+A | 2024-03-28 | 0 | Not  
+A | 2024-03-29 | 0 | Not  
+A | 2024-03-30 | 1.3 | Easter Monday  
+A | 2024-03-31 | 1 | Easter Monday  
+A | 2024-04-01 | 1 | Easter Monday  
+A | 2024-04-02 | 1 | Not  
+A | 2024-04-03 | 0 | Not  
+  
+#### I not fill holiday name for day after holiday
+
+
+### [Ogwal Odyek](/ogwalakello)
+Congrats to you and you teammate.
+
+
+### [KALPESH BHOIR](/kalpeshbhoir)
+Thank you for sharing your solution. Congrats on the 2nd place! 🎉
+
+
+### [Ern711](/ern711)
+Congrats and thanks for sharing!

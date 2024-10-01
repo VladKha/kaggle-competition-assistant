@@ -1,0 +1,20 @@
+[Samvel Kocharyan](/samvelkoch) · 322nd in this Competition · Posted 3 months
+
+### Dates to keep eyes on (hypothesis)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F10356799%2Fa092e27d30198c4b6364ad005f1291f8%2FScreenshot%202024-06-15%20at%2013.09.49.png?generation=1718449808670803&alt=media)
+As a hypothesis - to focus on the following dates predictions. I came to it
+after visual and variances min/max analysis in Excel. Test dataset is quite
+small, data in train is leaky and in theory there is a possibility approach
+very close to 0 by MAPE quite fast. Will see…
+
+
+## 2 Comments
+
+
+### [Yan Teixeira](/yantxx)
+[@samvelkoch](https://www.kaggle.com/samvelkoch) any news here?
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Yes. Fixing predictions near these dates tends to change score on LB.

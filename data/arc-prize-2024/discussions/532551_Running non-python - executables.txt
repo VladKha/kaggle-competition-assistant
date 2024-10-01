@@ -1,0 +1,36 @@
+[fuzzthink](/fuzzthink) · 618th in this Competition · Posted 23 days ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Running non-python / executables
+I have questions regarding running non-python/executables.
+In the top 2020 solution, the executable is created by compiling the c++ code
+with `g++`.
+Can I just pre-compile it or is compilation/build needed due to container
+checking if executable is created in the container?
+Most non-c/c++ codes requires its own build command other than `g++` or `gcc`.
+Is installing the build tool allowed if pre-building the executable is not
+allowed?
+comment
+
+
+## 1 Comment
+
+
+### [Ivan Martin Valle](/ivanmartinvalle)
+arrow_drop_up0
+  * format_quote
+  * link
+I never found anything in the rules against non-Python, so I assumed "do
+whatever you want". I added Node binaries and TypeScript as a dataset or
+whatever, and was surprisingly able to execute from Python. It allowed me to
+move much faster. I don't think this would be against the spirit of the
+competition either: an LLM solution will most likely be a black box solution,
+as least here we have readable code.
+I eventually moved to Python though since pretty committed to the deep
+learning approach for now.

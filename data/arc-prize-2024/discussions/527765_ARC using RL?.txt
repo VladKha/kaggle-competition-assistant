@@ -1,0 +1,99 @@
+[Linda MacPhee-Cobb](/wrinkledtime) · Posted 2 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ARC using RL?
+So far I keep hitting walls and decided to try RL on the dataset. I found a
+couple papers with code in case anyone else is trying RL
+<https://github.com/zkcys001/distracting_feature>
+<https://github.com/ConfeitoHS/arcle>
+comment
+
+
+## 3 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up2
+  * format_quote
+  * link
+I have collected some data of how humans solve ARC tasks. Around 6200
+recordings so far.  
+<https://github.com/neoneye/ARC-Interactive-History-Dataset>
+Here are a few handpicked interactions that I have put into a video.  
+<https://www.youtube.com/watch?v=NivPmxUfeHY>
+The editor that does the interaction recording, can be tried here:  
+[https://neoneye.github.io/arc/edit.html?dataset=ARC&task=140c817e](https://neoneye.github.io/arc/edit.html?dataset=ARC&task=140c817e)
+
+
+### [Federico Peccia](/fpeccia)
+arrow_drop_up0
+  * format_quote
+  * link
+I tried RL but havent found a way of making it work. My idea was to treat the
+problem as a coloring problem: each action would be a tuple (x,y,color), the
+state would be a 30x30 blank matrix, and the agent should color the matrix
+until finding the expected output. But I was not able to train the agent yet.
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up0
+  * format_quote
+  * link
+I haven't made any progress yet either. I'm separating colors, cropping to get
+shapes and trying to manipulate the shapes. I think shapes need to be pulled
+out instead of each block to reduce the feature space, but that turned into a
+more challenging problem than I anticipated.
+
+
+### [Federico Peccia](/fpeccia)
+arrow_drop_up0
+  * format_quote
+  * link
+Indeed, I also thought about using shapes… but then I imagined my solution
+would be more general. I have tried just predicting the output image size.
+This means, taking only one example of one task, modifying the output just to
+be plain black, and trying to train an agent to just color the 30x30 matrix to
+find that black patch (if the actual expected output is 10x10 for example, I
+would expect the agent to color a patch of 10x10 pixels, starting from the
+top-left corner of the 30x30 matrix).
+Sadly, I failed miserably. And if the agent is not able to learn this
+extremely simple task, then I don't think I will be able to train one that
+actually solves some task.
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up2
+  * format_quote
+  * link
+Someone posted code to guess output sizes and added some ratios as features.
+These models fail on some very simple samples, such as various input sizes and
+a consistent output size, or output size based on shapes
+That's what led me to trying to reduce the features using just shapes. Shapes
+quickly turns into its own rat's nest. Should you split by color or by
+neighbors, if by neighbors should diagonals be attached or not? Can it be
+consistent or should the rules be different for different samples? I still
+think there might be some promising stuff in that direction. I think if shapes
+could be easily pulled out and transitions used as actions, an RL might do
+very well
+I found a few libraries to pull shapes out of images, (skimage has some
+interesting tools) but none of them consistently id'd the shapes. Someone
+posted some code or a comment about splitting by color and then cropping. I
+haven't tried it yet it's probably better than any of the libraries I tried.
+I tried dividing all the colors by 10 so they went from 0-1.0 (covert to
+greyscale) and put it in a convolutional network. That totally failed, but it
+still might be a fast way to simplify the data for a different model
+What I haven't tried yet:  
+Using a linear sequence model that predicts the next word or letter. I might
+still play with the linear versions and see what happens (flatten the matrix
+and treat the colors like letters) Then try to convert it to a 2d version if
+the results look promising.
+I also considered rewriting the DEAP library to work with transitions (slide,
+flip, rotate… ) but I haven't found the motivation yet. I've had some good
+success using DEAP on math orientated problems that have a very small data
+sample. It seems like it'd be a good fit.

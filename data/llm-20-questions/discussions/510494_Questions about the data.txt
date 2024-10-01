@@ -1,0 +1,38 @@
+[sakura](/isalreadytoken) · 577th in this Competition · Posted 3 months ago
+
+
+### Questions about the data
+Hi, I've noticed that `keywords.py` gives a list of keywords. I'm wondering
+that whether there will be private keywords in the online evaluation? Will the
+categories and keywords all come from the given `keywords.py` through the
+whole competition?
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Hi. No, the private LB will have different keywords. Furthermore, we will not
+have access to the private keyword list. So our final solution should not use
+the `keywords.py` file.
+Also the current public LB list will change very soon, explained
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/509035)
+
+
+### [sakura](/isalreadytoken)
+Thank you! I didn't see [this
+pose](https://www.kaggle.com/competitions/llm-20-questions/discussion/509035)
+before. According to my understanding, the categories will be stable, but the
+keywords will change across the whole competition, and a private word set will
+be used in the final period. Is that correct?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+yes, categories will be person, place or thing
+
+
+### [Muhammad](/hark99)
+Then why are the questions asked about the country? As in the starter
+notebook, the few_shot_examples variable contains questions about the country.
+Is the country considered as the fourth category?

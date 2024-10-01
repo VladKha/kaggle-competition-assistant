@@ -1,0 +1,48 @@
+[Yuang Wu](/yuangwu) · 78th in this Competition · Posted 25 days ago
+
+### Has anyone successfully deployed llama3.1-70B or 405B in kaggle notebook
+I tried and found that cuda is out of memory, sad.  
+Has anyone done this? Or is there any other recommended server?  
+Thanks a lot.
+
+
+## 4 Comments
+
+
+### [Krens](/jickymen)
+Deotte demonstrated how to use a Kaggle notebook to infer with a 34B LLM [in
+another competition. ](https://www.kaggle.com/code/cdeotte/infer-34b-with-
+vllm)  
+However, if you only need to generate data with a 70B model, I suggest renting
+a server.
+
+
+### [Yuang Wu](/yuangwu)
+Thanks Krens!
+
+
+### [JK-Piece](/jeannkouagou)
+I don't think you can use 405B on Kaggle even with 4bit quantization. The
+easiest solution is to use the 8B version with 8 bit quantization
+
+
+### [Yuang Wu](/yuangwu)
+Thanks, but my purpose for 70B/405B is to generate data… Seems like no
+solution
+
+
+### [JK-Piece](/jeannkouagou)
+You could do that on Colab if you have the Pro subscription
+
+
+### [Yuang Wu](/yuangwu)
+OK, I will have a try.
+
+
+### [Nicholas Broad](/nbroad)
+You should use an API like fireworks or together. Much easier and ultimately,
+it will be cheaper and faster
+
+
+### [Nicholas Broad](/nbroad)
+Minimum requirements for 405B in fp8 is 8 H100s

@@ -1,0 +1,36 @@
+[Kuldeep Rathore](/kuldeeprathoree) · 431st in this Competition · Posted 3
+
+### Chris crossed 900 Mark 🤯
+Seems like he is playing with the bots himself 😂. Always a fan of his thought
+process. Waiting for him to drop us some hints on the technique he is using.
+[@cdeotte](https://www.kaggle.com/cdeotte) the stage is yours 😁
+
+
+## 3 Comments
+
+
+### [OminousDude](/max1mum)
+Also one more thing his "highly secret" technique is an almost hardcoded LLM
+mix of which most of the top places use. He starts off by finding if the
+keyword is country, city, or landmark, then finds the location of the keyword
+(Europe, Asia, Americas) and then asks for the first letter of keywkeyword.
+For example, my strategy tarts just like his but instead of first letter
+searching I hand it to my model to fully decide what to question next.  
+No hate to Chris but I highly doubt this is because of some crazy new model or
+agent change.  
+This competition also recently changed the metric and it adds about 130
+instead of about 60 prevously.
+
+
+### [OminousDude](/max1mum)
+Don't mean to be a party pooper but this doesn't mean much if an agent gets 2
+or 3 lucky games in a row it will cement itself at the top for a long time. I
+am not saying he didn't invent a new strategy but from the agent logs his
+strategy s the exact same. Of course, he could have made his answerer better
+or something but the games that his score increased in was him as a
+questioner. So this does not mean much from what I see his strategy s the same
+he just got lucky.
+
+
+### [Malavika Bhat](/malavikabhat)
+what does that even mean

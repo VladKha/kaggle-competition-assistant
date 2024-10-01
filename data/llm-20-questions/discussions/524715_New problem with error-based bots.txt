@@ -1,0 +1,41 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 25 days ago
+
+### New problem with error-based bots
+My first game on a newly submitted bot went like this:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F88eb75b4eb408e12bf80047e4171af38%2FScreenshot%20from%202024-08-07%2018-06-15.png?generation=1723068588461234&alt=media)
+I think this is a problem for most bots (my bot didn't return anything else
+other than no and yes so it didn't error out) and should be punished in some
+way. I am not sure about the way to punish something like this; however, this
+could become more popular for the private LB.
+
+
+## 5 Comments
+
+
+### [Nicholas Broad](/nbroad)
+I don't think they will do very well, so these types of submissions will work
+their way to the bottom of the elo.  
+as long as you check for yes/no as the answerer, you should be fine.
+
+
+### [monkeyHyx](/monkeyhyx)
+I think they are doing this to enhance the correctness of the answerer bot.
+
+
+### [Andrew Tratz](/jademonk)
+This is kind of interesting. Normally bots should be incentivized to
+cooperate, but if a bot errors out its partner earns points. Not sure this is
+a good game design, but it's the way it is. Since most, if not all, of the
+public notebooks check for yes/no complying answers already I doubt this
+strategy would yield very much.
+
+
+### [Taizhuo Tang](/tztang)
+I never thought about including a dedicated saboteur bot as one of the
+submissions. Is there some sort of handshake so that the bot doesn't fail when
+playing against itself?
+
+
+### [OminousDude](/max1mum)
+If the answerer gets letter based questions incorrect then it will turn nasty.

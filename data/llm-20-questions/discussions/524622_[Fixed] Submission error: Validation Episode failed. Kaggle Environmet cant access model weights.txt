@@ -1,0 +1,85 @@
+[Ahmet Ekiz](/ahmetekiz) · 231st in this Competition · Posted 25 days ago
+
+### [Fixed] Submission error: Validation Episode failed. Kaggle Environmet
+cant access model weights
+I get an error when I submit the notebook, I think it says that the Kaggle
+environment cannot access the model weights. Thanks for help.
+Also my path configurations:
+    
+    
+    import os
+    KAGGLE_AGENT_PATH = "/kaggle_simulations/agent/"
+    VERBOSE = False
+    if not os.path.exists(KAGGLE_AGENT_PATH + "weights"):
+        KAGGLE_AGENT_PATH = "/tmp/submission/"
+        VERBOSE = True
+    
+    print(f"KAGGLE_AGENT_PATH: {KAGGLE_AGENT_PATH}")
+    
+    
+    content_copy
+The error:
+    
+    
+    [
+        [
+            {
+                "duration": 0.025864,
+                "stdout": "",
+                "stderr": "Traceback (most recent call last):\n  
+                File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 50, in get_last_callable\n    exec(code_object, env)\n  
+                File \"/kaggle_simulations/agent/main.py\", line 288, in <module>\n    agent = LLM(KAGGLE_AGENT_PATH=KAGGLE_AGENT_PATH, debug=True)\n  
+                File \"/kaggle_simulations/agent/main.py\", line 31, in __init__\n    self.model = AutoModelForCausalLM.from_pretrained(\n  
+                File \"/opt/conda/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py\", line 524, in from_pretrained\n    config, kwargs = AutoConfig.from_pretrained(\n  
+                File \"/opt/conda/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py\", line 989, in from_pretrained\n    return config_class.from_dict(config_dict, **unused_kwargs)\n  
+                File \"/opt/conda/lib/python3.10/site-packages/transformers/configuration_utils.py\", line 772, in from_dict\n    config = cls(**config_dict)\n  
+                File \"/opt/conda/lib/python3.10/site-packages/transformers/models/llama/configuration_llama.py\", lin"
+            }
+        ]
+    ]
+    
+    
+    content_copy
+
+
+## 1 Comment
+
+
+### [Ahmet Ekiz](/ahmetekiz)
+I was upgrading the Transformers that cause the problem and another error give
+me `rope_scaling` error.
+To fix these:
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/523619>
+    
+    
+    import json
+    with open("YOUR_LOCAL_MODEL_PATH/config.json", "r") as file:
+        config = json.load(file)
+    config["rope_scaling"] = {"factor":8.0,"type":"dynamic"}
+    with open("YOUR_LOCAL_MODEL_PATH/config.json", "w") as file:
+        json.dump(config, file)
+    
+    
+    content_copy
+* * *
+<https://www.kaggle.com/code/blackbun/llm-20q-baseline-llama3-phi3-qwen2-hf>
+    
+    
+    from huggingface_hub import snapshot_download
+    from pathlib import Path
+    import shutil
+    
+    g_model_path = Path("/tmp/model")
+    if g_model_path.exists():
+        shutil.rmtree(g_model_path)
+    g_model_path.mkdir(parents=True)
+    
+    snapshot_download(
+        repo_id=repo_id,
+        ignore_patterns="original*",
+        local_dir=g_model_path,
+        token=globals().get("HF_TOKEN", None)
+    )
+    
+    
+    content_copy

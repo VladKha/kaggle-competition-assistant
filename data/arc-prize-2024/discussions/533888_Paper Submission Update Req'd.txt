@@ -1,0 +1,77 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 17 days ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Paper Submission Update Req'd
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F21233106%2Fb6148720739850da35f620bcb385d577%2FScreenshot%20from%202024-09-13%2009-40-44.png?generation=1726234926999236&alt=media)
+comment
+
+
+## 3 Comments
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+arrow_drop_up0
+  * format_quote
+  * link
+Additionally, looks like there were two submission forms out there for papers!
+I'll ensure they both point to the same form now. If you already made a
+submission on either form, no need to re-submit.
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+arrow_drop_up0
+  * format_quote
+  * link
+Whoops! This is my fault. I had created the submission form off of a template
+using a previous form and failed to update the confirmation response. It
+should be updated now!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Rock and roll! But while I have you here… The term "submission" is used
+ambiguously, throughout. Even on the Overview page for the contest, at the
+bottom, when describing the paper submission judgement criteria, under
+"Accuracy" (for starters)  
+`How accurate is the submission based on its performance on the leaderboard?
+(Note: you will be asked to provide your submission ID to match your notebook
+to your submission)`  
+I understand that there is a "paper submission" and a "notebook submission"…
+If you don't share my sense of confusion about the generic use of the term
+"submission" please let me know and I will explain myself better. Meanwhile,
+even the form to submit (I am assuming, the "paper submission") asks for the
+link to the submission, etc…
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+arrow_drop_up0
+  * format_quote
+  * link
+Sure thing! It could certainly feel confusing - in this particular instance
+the host is intentionally looking to draw a connection between your paper and
+how well your notebook submission performs (e.g. a paper shouldn't simply
+discuss theory but have a poor performing model). So while you can just submit
+a notebook to appear on the leaderboard (without a paper), If you submit a
+paper you'll need to include the submission you're referring to.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+What you mean is if, like Youssef Sanhaji's recent discussion, if you preach
+100% in your paper submission, your notebook submission needs do do very, very
+well (not… like… 26%) Your paper needs to reflect what your notebook actually
+achieves.

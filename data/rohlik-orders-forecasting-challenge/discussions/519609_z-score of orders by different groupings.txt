@@ -1,0 +1,15 @@
+[Boyd Johnson](/boydjohnson) · 634th in this Competition · Posted 2 months ago
+
+
+### z-score of orders by different groupings
+![orders z-score by different
+groupings](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F52115%2F42c3a4ea813e5b7820d7d7194c092da4%2Forders_zscore.png?generation=1720745111722610&alt=media)
+So the groupings from top to bottom is by warehouse, by warehouse, year, …. ,
+by warehouse, year, month, weekday.
+I was surprised how relatively stable the z-score is when grouped by
+warehouse, year, month, weekday.
+
+
+## 0 Comments

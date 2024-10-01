@@ -1,0 +1,37 @@
+[kyotoman](/tatsuokoshida) · 155th in this Competition · Posted 18 days ago
+
+### Will late submissions be possible?
+I would very much like to review this competition and would like to make a
+LATE SUBMISSION.  
+However, when I tried to do a submission now, it was not possible, as shown in
+the attached image. It may be that the scoring is running out of computing
+resources, but will I be able to do submissions again later on?
+
+
+## 4 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Unfortunately late submissions will not be possible. We'll shut down the
+cluster of machines we've used to run this competition after the final scoring
+is complete. Keep an eye out and we may have another LLM competition in the
+future though!
+
+
+### [Chris Deotte](/cdeotte)
+My guess is no because that would require Kaggle to continually run
+simulations which would deplete their compute resources. If we look at old
+simulation competitions like "Rock Paper Scissors"
+[here](https://www.kaggle.com/competitions/rock-paper-scissors), they did not
+allow late submissions.
+
+
+### [Mahmoud Elshahed](/letemoin)
+I Don't think agents or late submission, may be open until they finalize the
+leaderboard and complete evaluation period at end of August.
+
+
+### [Krupal Patel](/krupalpatel07)
+yes, it will possible.

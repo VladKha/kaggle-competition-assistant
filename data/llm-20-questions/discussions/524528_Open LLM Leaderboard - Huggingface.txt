@@ -1,0 +1,18 @@
+[Ali Abdin](/aliabdin1) · Posted a month ago
+
+### Open LLM Leaderboard - Huggingface
+**Description**  
+In this space you can see the best open source models based on different
+benchmarks. On the right there is also a filter to select the model parameter
+range e.g. 7-14B models only. Its a nice way to always check and try state of
+the art open source models.
+**Image**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4645853%2Fff2a5810008a5161595893c2c567e067%2FUnbenannt.PNG?generation=1722973387773695&alt=media)
+**Link**  
+<https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard>
+**Benchmark explanation**  
+<https://huggingface.co/docs/leaderboards/open_llm_leaderboard/about>
+
+
+## 0 Comments

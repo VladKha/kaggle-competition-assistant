@@ -1,0 +1,26 @@
+[Arseni Ivanov](/arseniivanov) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Why is there a separation for the "solutions" file for training?
+Why is there a separation into challenges and solutions for the train set? Am
+i missing something, or shouldn't the solutions simply be an "output" field in
+the challenges json?
+Or is there some thought behind this?
+comment
+
+
+## 1 Comment
+
+
+### [Hendrik Nowak](/hnowak)
+arrow_drop_up2
+  * format_quote
+  * link
+This way, the challenges from the training and evaluation datasets have the
+same format as the test file.

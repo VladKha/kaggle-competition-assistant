@@ -1,0 +1,33 @@
+[Thomas Meißner](/thomasmeiner) · 662nd in this Competition · Posted 2 months
+
+### What about uncertainty quantification?
+Hi,
+I am wondering if an eval metric around uncertainty quantification (like CRPS)
+would have had more business value?
+Especially in demand forecasting uncertainty quantification could help a lot
+to to reduce the risk of following the recommendation of a model that is
+unreliable. And even if it is unreliable, you have much more transparency.
+What do you think?
+
+
+## 4 Comments
+
+
+### [burblingbrooks](/burblingbrooks)
+Uncertainty metrics ought to always be included.
+
+
+### [Adam Logman](/adamlogman)
+Such a good Idea,but we will face many problems because of our tiny dataset
+and we will not be sure if the outcome of the metric is exact the same . but
+we have to try it.
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Absolutely makes sense Thomas! 100% right
+
+
+### [Yan Teixeira](/yantxx)
+Makes sense! Often in real projects, decision-makers want to know about
+uncertainty. [@mkecera](https://www.kaggle.com/mkecera) , was this something
+that was considered?

@@ -1,0 +1,30 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Inequality
+I just played 834ec97d. I submitted, and got it wrong. Tiny detail, Fixed.
+Submit. Confetti.  
+If I were an AGI, I would have to submit 2 answers, click the submit button,
+and get no feedback at all. Someone else (what's a "programmer"?) would get
+the feedback as a "total correct" single value. In the mail. 650 years later.  
+Just for laughs, I made an erroneous color addition, submitted 20 times,
+eliminated the error, submit, confetti. This is not so subtle. If you made the
+human play like the AGI ("you'll get a total score after 100 submissions")
+interest would plummet. Also, aside from the obvious (noted) potential to game
+the system, the immediate feedback is vital to what is being built in a human
+system. There is a real process: view, construct rules, create based on rules,
+feedback. And without the final step, it's really not a very good game for
+humans. For a reason.  
+I know that managing this complaint will do little to forward the progress of
+ML, but it could really turbo charge the progress of AGI (the concern, I
+believe, that was its original inspiration).
+comment
+
+
+## 0 Comments

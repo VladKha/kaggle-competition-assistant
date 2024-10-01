@@ -1,0 +1,52 @@
+[Gopalakrishnan Kumar](/gopalakrishnankumar) · 989th in this Competition ·
+arrow_drop_up-11
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### NeurIPS - Ariel Data Challenge 2024
+import pandas as pd  
+import pandas as pd  
+df1 = pd.read_csv("/kaggle/input/ariel-data-
+challenge-2024/sample_submission.csv")  
+df1.to_csv("submission.csv", index=False)
+[Lawsikho_Testimonial.pdf](https://storage.googleapis.com/kaggle-forum-
+message-attachments/2973946/21116/Lawsikho_Testimonial.pdf)
+comment
+
+
+## 4 Comments
+
+
+### [Philippe Ancel](/philippeancel)
+arrow_drop_up1
+  * format_quote
+  * link
+Why people are dismiss?
+
+
+### [steubk](/steubk)
+arrow_drop_up0
+  * format_quote
+  * link
+千里の道も一歩から:
+<https://en.wikipedia.org/wiki/A_journey_of_a_thousand_miles_begins_with_a_single_step>
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+"The phrase is also translated as "A journey of a thousand miles begins from
+under the feet"[3] and "A thousand mile journey begins where one stands"[4]"
+Perhaps it begins from under…standing.
+
+
+### [Gopalakrishnan Kumar](/gopalakrishnankumar)
+arrow_drop_up-1
+  * format_quote
+  * link
+<https://blog.ipleaders.in/how-data-science-can-help-in-fraud-detection-an-
+overview/>

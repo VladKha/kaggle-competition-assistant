@@ -1,0 +1,130 @@
+[Andrew Tratz](/jademonk) · 2nd in this Competition · Posted 7 days ago
+
+
+### Alpha performance metric analysis
+I've done some filtering of [@lohmaa](https://www.kaggle.com/lohmaa)'s dataset
+to create some new metrics for assessing the performance of different alpha-
+agents.
+The following filters are applied:
+  * Only submissions which aren't locked to the public keyword list (manually determined)
+  * Only episodes where the answerer is reliable (i.e. they actually can do alphabetical order with 100% accuracy)
+  * Only episodes where the secret keyword is _not_ a duplicate of a public keyword
+  * Both "handshake" and "forced" agents are included
+  * Only agents playing at least 5 valid alpha matches per this criteria were included in the final analysis 
+New metrics created:  
+"Keyword Find Rate" - Proportion of non-truncated episodes where the agent
+finds the correct keyword in 20 questions or less  
+"Average Reward" - Average reward for games actually won
+I think these two metrics will be the most reliable indicators of which agents
+would win head-to-head matches most frequently. I've aggregated by the Team
+Name rather than submission, since the data is already sparse and I'm assuming
+the metrics will be similar for both submissions by each team.
+Full analysis and notebook at: <https://www.kaggle.com/code/jademonk/real-
+alpha-performance-metrics>
+**Updated** to include full competition data
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3105171%2F6c1fab4443a13ebfdf3a9e5b62c0200c%2F__results___19_0%20\(1\)%20copy.png?generation=1725027641063042&alt=media)
+
+
+## 13 Comments
+
+
+### [Jonathan Chan](/jonathanchan)
+[@jademonk](https://www.kaggle.com/jademonk) : Congrats on your prize winning
+position and your first gold medal, and it's an important solo gold. You have
+made much contribution to this competition by posting your insightful
+discussions and analyses, such as this post.
+P.s. I find it odd what you did between Version 7 & 8 of your notebook though.
+I won't elaborate here, and this is my final post for this competition.
+
+
+### [Andrew Tratz](/jademonk)
+Thank you for your kind words. Congratulations on your silver medal! I
+manually filtered out the agent in version 8 which had only played one episode
+meeting my validity criteria, as an outlier. I'll note this in my analysis
+description.
+
+
+### [Andrew Tratz](/jademonk)
+I've added current medal status information (as of 24 hours from competition
+end) to the chart. The metrics do a reasonably good job of differentiating
+gold versus silver outcomes, with one clear outlier.
+
+
+### [Chris Deotte](/cdeotte)
+Nice update. It appears that your metrics of Recall and Speed do indeed
+determine the best bots.
+
+
+### [Chris Deotte](/cdeotte)
+Looks like Benjamin Kovacs had bad luck on the LB. A week ago he was 1st place
+with a nice lead, then after one of the reset storms he fell out of Gold zone
+and got stuck with a low sigma (around rank 15) and hasn't changed significant
+rank anymore.
+
+
+### [Raki](/raki21)
+Great work!
+I would expand on the assessment of relative performance. The total keyword
+find rate (coverage) is important, but it's as important to find the keyword
+quickly enough in a direct comparison. Imagine agent A has a coverage of 80%
+with 128.000 words and agent B 70% with 8.000 words, (every percentage of
+coverage gets much more expensive in terms of keyword dictionary size).
+In 1/10 games agent A gets a free win, but in 7/10 games agent B is much more
+likely to guess the correct keyword quicker. An exhaustive search for agent A
+is 16 rounds while an exhaustive search for agent B is only 12 rounds
+(~log2(x) - 1)
+You can alleviate this with an ordering of expected keyword likelihood (my
+team and probably some others will expand on this in write-ups).
+
+
+### [Andrew Tratz](/jademonk)
+The y-axis, Average Reward, attempts to answer exactly this question. High
+average reward implies a quicker, more efficient search.
+This metric is just the average reward for each team. It might also be
+interesting to look at the distribution of rewards by agent, although these
+would also be dependent on keyword difficulty.
+Some agents, including mine, don't rely on a fixed dictionary size, using LLM
+to extend keyword set dynamically.
+My agent uses single word frequency as an assumed keyword likelihood, for
+single-word keywords only. I'm sure others have more sophisticated approaches.
+Look forward to reading your write-up.
+
+
+### [Chris Deotte](/cdeotte)
+This is a great analysis. These are great metrics to determine which bots are
+best.
+How do you handle the following case? Kaggler A teams with B. And Kaggler C
+teams with D. Imagine that Team_A_B finds the keyword in round 10, what stats
+do we give to teams C and D? For example, do we say that teams C and D `did
+not find the keyword`? If so then having a low `Average Reward` will bias our
+`Keyword Find Rate` to be lower than it is.
+
+
+### [Kha Vo](/khahuras)
+yes, it is also my question. But I didn't ask because I think just a imperfect
+implementation is fine to show roughly how each alpha bot performs wrt
+coverage vs speed.
+
+
+### [Andrew Tratz](/jademonk)
+To avoid this problem, I do not include this episode for teams C and D when
+calculating Keyword Find Rate or Average Reward and use it for Teams A and B
+only. Ignoring this for C and D results in a little bit of information loss. I
+don't think ignoring this biases the Keyword Find Rate but should slightly
+bias the Average Reward calculation. Let me know if you see a better solution.
+
+
+### [Sheema Zain](/sheemazain)
+Brilliant work..
+
+
+### [e-toppo](/masatomatsui)
+Good Job! If there are as many two-word keywords as in the Public LB, the
+Keyword Find Rate will significantly decrease. How did this happen?
+
+
+### [Andrew Tratz](/jademonk)
+I agree - if there were as many two-word keywords as the public LB there
+should be a bigger separation among teams. More episodes would help too. I
+think my bots have had bad luck with the keyword draws so far.

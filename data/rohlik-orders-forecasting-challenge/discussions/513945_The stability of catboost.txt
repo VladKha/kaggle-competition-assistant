@@ -1,0 +1,28 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 3 months ago
+
+
+### The stability of catboost
+I believe there are people here who have competed in the HomeCredit
+competition. The HomeCredit competition calculates the loss of model
+stability.
+In the HomeCredit competition, I found something interesting: the offline CV
+of the lgb model is good, but it is average when submitted, while the offline
+CV of catboost is not good, but it is better when submitted than the lgb
+model. I think this is because of the stability of catboost.
+So what about this competition?
+
+
+## 2 Comments
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+Each competition is different and a model should be analyzed apropos to the
+data and the CV score in the competition. Catboost usually performs well in
+compliment with other boosted trees but it cannot be generalized, especially
+with such small and noisy datasets
+[@yunsuxiaozi](https://www.kaggle.com/yunsuxiaozi)
+
+
+### [Abhijit89Kumar](/abhijit89kumar)
+If you set `extra_trees=True` for LGB then i think its similar to CAT in this
+behaviour…

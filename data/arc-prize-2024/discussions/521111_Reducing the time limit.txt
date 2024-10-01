@@ -1,0 +1,46 @@
+[Javier Vizoso](/javizoso8) · Posted 2 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Reducing the time limit
+This will probably be an unpopular opinion, but I would like to suggest that
+future ARC competitions reduce the time limit of 12 hours runtime for solving
+the puzzles. This incentivizes brute-force search approaches, which I don't
+think are in the spirit of AGI. Having gone through all the tasks, I spent on
+average 5-10s to solve each puzzle, with a max of 30s or so on some of the
+more challenging ones - mentally of course.
+I know this challenge is just a stepping stone on the road to AGI, but I would
+find it discouraging if the ultimate winning approach takes ~7m per task for
+something a human can do much faster. I would welcome a much reduced time
+limit as the approach I'm working towards takes <1s per task. That being said
+I'm aiming to submit next year if time permits, so take my opinion for what it
+is.
+comment
+
+
+## 2 Comments
+
+
+### [Shreyansh Murathia](/shreyanshmurathia)
+arrow_drop_up3
+  * format_quote
+  * link
+Reducing time limit will hinder the progress even further. Winning submissions
+will most probably make use of large models and might also need multiple
+specialized models. Kaggle GPUs are great but still running big models will
+definitely need more time to execute.
+
+
+### [Kamil Horvat](/khorvat)
+arrow_drop_up4
+  * format_quote
+  * link
+No amount of brute force can help, if you are not searching correct space
+state or if space state is too large to be exhaustively searched. Therefore
+there is no reason to reduce time limit, at least as long as solutions are
+well below target score of 85%.

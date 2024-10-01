@@ -1,0 +1,10 @@
+[Muks](/mukatai) · 283rd in this Competition · Posted 18 days ago
+
+### The Relationship between the Public LB and the Private LB
+As the private leaderboard is calculated with approximately 70% of the test
+data, I believe that the ranking immediately after the public LB deadline is
+based on approximately 30% of the test data. In that case, what do you think
+the correlation between the public LB and the private LB will be?
+
+
+## 0 Comments

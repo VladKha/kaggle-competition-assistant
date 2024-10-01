@@ -1,0 +1,61 @@
+[yokoshu25](/shusei) · 668th in this Competition · Posted a month ago
+
+
+### Comparison of Random Forest, XGBoost, and ARIMA (Time Series)
+I created three models for prediction, and here is what I found:
+I built three models for the training data and calculated the MAPE for each
+warehouse!
+I was thinking about trying dynamic model selection because I see some trends
+in some warehouses but not in others. However, it turns out that the random
+forest predicts the best among the three models for every warehouse! (I used
+different libraries, but I tried my best to set up exactly the same
+configuration for each model.)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5786258%2Fbe994dbd574a71e922199d43cd8100ba%2Fmetrics_for_each_model.png?generation=1723893725463536&alt=media)
+I've got to find a better way to predict!
+
+
+## 2 Comments
+
+
+### [Omkar Salunke](/omkarmb)
+I tried smoothening the data by moving average still for Munich I am unable to
+get good accuracy
+
+
+### [yokoshu25](/shusei)
+Yeah, I agree. Since the Munich warehouse is newer compared to other
+warehouses and it has a dramatic trend, it’s one of the hardest to predict.
+There are a lot of sharp peaks, and it's following a similar path to Prague 2
+and 3. The test period may be similar to those two warehouses!  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5786258%2Fb3f06ad424805f52a5407016f556eb63%2FLinePlotOfWarehouse.png?generation=1724041992272892&alt=media)
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+Totally agreed!  
+Small dataset + newer warehouse in Munich make it difficult to predict.  
+I think we have a high chance of shakeup here, so trusting the CV score is
+important [@shusei](https://www.kaggle.com/shusei)
+
+
+### [LH](/leonhardhochfilzer)
+I agree that the potential for a shake-up is quite big, however I also have a
+hard time purely trusting my CV because being able to forecast Munich
+especially on the dataset well might not necessarily be a good indicator of
+performance in the hidden set. (Also I am clearly biased and would hope that
+the shake-up is not too bad haha).
+
+
+### [yokoshu25](/shusei)
+[@ravi20076](https://www.kaggle.com/ravi20076)  
+Thank you for your comment! Yes, the potential shakeup makes the prediction
+hard.  
+I’ll trust the CV score! Thanks for the advice!
+
+
+### [yokoshu25](/shusei)
+[@leonhardhochfilzer](https://www.kaggle.com/leonhardhochfilzer)  
+Yeah, predicting a shake-up is pretty hard. We can go onto the company's site,
+check their balance sheet, and see how much they've invested compared to other
+warehouses, and then make a guess. But I think that violates the rules haha.

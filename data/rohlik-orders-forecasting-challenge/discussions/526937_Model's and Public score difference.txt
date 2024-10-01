@@ -1,0 +1,37 @@
+[Mohammad Yousif Jamali](/mohammadyousifjamali) · 940th in this Competition ·
+
+### Model's and Public score difference
+Stuck with a problem that my model's mean absolute percentage error is closed
+to 0.05 something that metric is requirement of this competition, but on
+leaderboard my public score is 0.4732, So I am little bit confused why there
+is huge difference between these two scores and how to resolve it .
+[Advanced](/discussions?tags=13104-Advanced)[Beginner](/discussions?tags=13102-Beginner)[Intermediate](/discussions?tags=13103-Intermediate)
+
+
+## 5 Comments
+
+
+### [Vishwas Chhimpa](/vishwas27)
+Check for model complexity. It tends to overfit .
+
+
+### [Mohammad Yousif Jamali](/mohammadyousifjamali)
+Can you guys please check out my notebook? here is the link
+<https://www.kaggle.com/code/mohammadyousifjamali/rohlik-orders-forecasting-
+challenge>
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+This is bound to happen. This data is very small and such issues may arise due
+to even a slight overfitting risk
+[@mohammadyousifjamali](https://www.kaggle.com/mohammadyousifjamali)
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+Cross validation inevitably leads to data leakage, but it shouldn't be that
+bad either.
+
+
+### [KALPESH BHOIR](/kalpeshbhoir)
+Recheck your metric calculation and overall implementation,also check for
+overfitting.

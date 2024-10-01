@@ -1,0 +1,35 @@
+[Luca Bottero](/lucabottero) · 771st in this Competition · Posted 3 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What kind of "interactions" do objects have?
+This question is strictly related to my other question about what objects are
+present in the images: [see this
+discussion](https://www.kaggle.com/competitions/arc-
+prize-2024/discussion/518585)
+Now my question is: what are the most commonly seen interactions between the
+objects?  
+I think that we can distinguish at least 2 kinds of interactions: static and
+dynamical.  
+Static interaction is best seen as a property of a single image.  
+Just to name a few:
+  * Touching: having at least one adjacent edge or corner
+  * Enclosing: obj A is enclosed in obj B
+Dynamical interactions usually require seeing an input-output pair to
+understand it.  
+For example:
+  * Superposition: requires the understanding of object persistence
+  * Bouncing: best seen with "particle trajectories", for example a line "bouncing" from a solid block
+  * "Support": in the presence of falling or similar behavior some objects do not move and "resist" the motion of other objects
+Do you think there are other kind of interactions? What categorization do you
+suggest? Do you think there exists a set of interactions that is both small
+and expressive enough to generalize what is seen in ARC?
+comment
+
+
+## 0 Comments

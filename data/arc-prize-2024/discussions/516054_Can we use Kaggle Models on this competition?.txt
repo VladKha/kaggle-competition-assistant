@@ -1,0 +1,39 @@
+[emoji_people](/anshguptacs)
+[Ansh Gupta](/anshguptacs) · 870th in this Competition · Posted 3 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Can we use Kaggle Models on this competition?
+Are we allowed to use Kaggle models like Gemma 2, Gemma on this competition?  
+Link for these models: [https://www.kaggle.com/models?lang=16895&fine-
+tunable=true&orderby=hotness](https://www.kaggle.com/models?lang=16895&fine-
+tunable=true&orderby=hotness)
+I know we are not allowed to use internet for submissions, but was wondering
+if we could use Kaggle models.
+comment
+
+
+## 2 Comments
+[emoji_people](/iamtanmayshukla)
+
+
+### [iam@Tanmay Shukla](/iamtanmayshukla)
+arrow_drop_up10
+  * format_quote
+  * link
+Sure you can
+
+
+### [chris](/chris62)
+arrow_drop_up4
+  * format_quote
+  * link
+Yep! You can either use kaggle models or other open source models, including
+your own models, that you upload as a dataset. They do have to follow the open
+source limitations in the rules (so check there for details), but yes, outside
+models are allowed.

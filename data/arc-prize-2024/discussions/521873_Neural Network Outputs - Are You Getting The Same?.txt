@@ -1,0 +1,226 @@
+[darkmabler](/markrdabler) · 968th in this Competition · Posted 2 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Neural Network Outputs - Are You Getting The Same?
+Hi there! I was just wondering if you guys have tried a neural network
+approach and are getting similar outputs for the test pairs. Some examples are
+attached.
+I'm wondering if I'm going down a rabbit hole I won't find the answer to or if
+I'm on to something.
+Edit: for clarity, the left is my models inference on a test input where the
+right side is the correct answer.
+Edit 2: attached image of what the model/system is learning on a test case
+[arc 3 examples.PNG](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2932976/20961/arc 3
+examples.PNG)[output_is_this_doing_something.png](https://storage.googleapis.com/kaggle-
+forum-message-attachments/2932976/21006/output_is_this_doing_something.png)
+comment
+
+
+## 11 Comments
+
+
+### [Lyrra](/luanala)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for sharing! May I ask about the training data size for each NN (per
+task)? Since there are only 3-5 examples provided for each new task, how did
+you create enough data for the training to converge?
+
+
+### [Minseo14](/minseo14)
+arrow_drop_up0
+  * format_quote
+  * link
+Hey! I'm also trying a neural network approach, and learning from it. Most
+people are trying the LLM approach though.🤣
+[Here's my code trying to solve the same
+task!](https://www.kaggle.com/code/minseo14/arc-task-00d62c1b-with-cnn)
+I realized some limitations with basic CNN. So I'm trying another way now.
+Would you like to share your code?
+[Repo I'm currently working on](https://github.com/star14ms/ARC-with-Neural-
+Network/)
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+Messaged you on Discord!
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up0
+  * format_quote
+  * link
+Not sure what you are showing. That middle one 045e512c actually looks
+interesting. Was that problem included in a training set? If so, not
+surprising, but if it was not included, I would say that it is pretty
+interesting that it attempted to make a repeating pattern.
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+All those were set up as “tests” so not in how I divided up the training sets.
+Yeah all the tests usually show like…80% of the way towards getting the right
+answer or it at least makes sense what the inference is going after.
+
+
+### [WOOSUNG YOON](/woosungyoon)
+arrow_drop_up0
+  * format_quote
+  * link
+In a situation where there is almost no training data with a consistent
+distribution, the correct method to augment the data effectively is to
+understand the patterns within the data. Recognizing these patterns
+essentially means that one is able to directly solve the problem.
+Firstly, we must utilize the patterns designed in the previous ARC2020. I
+believe it is crucial to understand how these patterns were designed and if
+there are any improvements that can be made.
+This is similar to creating axioms in mathematics or the standard model in
+physics.
+Afterward, it is important to identify the type of problems that can be solved
+with 100% accuracy using machine learning. If we can separate these fully
+solvable problems from the existing issues, we can enhance our scores through
+an ensemble of the previous solutions. 😀
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+> Firstly, we must utilize the patterns designed in the previous ARC2020. I
+> believe it is crucial to understand how these patterns were designed…
+It may, indeed be crucial to extending the previous work from ARC2020, but it
+is unnecessary for both solving ARC2024 and recognizing (and utilizing) the
+patterns in this new set. I can state this as a fact, because the first 100 or
+so that I worked through (solved) included no prior details from ARC2020. So,
+as an extension of an engineering project, maybe. Not so much in managing this
+new situation.
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+I’ve just been looking at this dataset and trying to create a system that
+learns patterns from each example and apply it to the test input. Really
+trying to not manually create rules I guess.
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up0
+  * format_quote
+  * link
+I did try some simple NN. I don't think there's enough similar data for it to
+work. NN rely on finding statistical patterns and I think the examples are too
+different from each other for a NN to work. I tried training one NN per
+example. It might work, but I'm going to be pursuing other ideas
+Imho I think the trick here is to find a way to code the sample inputs and
+outputs to reduce the dimensions of the data. Then it might be possible to get
+a NN to work
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up2
+  * format_quote
+  * link
+Yeah I’m basically working on a system that creates a NN per task, not one
+that derives patterns from all tasks if that makes sense.
+
+
+### [Alexander Naumenko](/alexencon)
+arrow_drop_up1
+  * format_quote
+  * link
+NN or any standard ML technique will not work as Chollet mentioned in his
+interviews. But I do not want to discourage you. Good luck! I am looking
+forward to being surprised by your success.
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+I've been starting to watch a few of those interviews. Any you recommend where
+he goes into detail about why standard ML techniques won't work?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Let's not get confused. [@markrdabler](https://www.kaggle.com/markrdabler),
+your "one NN per" angle is right on. Almost everyone else is talking about
+dropping the lot into a big NN in some way. Stay with your idea. I had a
+similar notion starting this contest, but I'm not a robust enough ML coder. I
+could not make it work, but I think I get your direction. I would even go a
+little further and work with "parts", the so-called "objects" If you could
+somehow train a NN (in what sense, I'm not sure) on a "part" then you stand a
+better chance with novel tasks. Good luck. Over my head technically, but I
+think I grok your storm. "Standard ML Techniques" basically toss all 800 tasks
+in and let the gradient sort it out.
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+Ahh! Yes, I see how standard ML for the entire corpus at once is not going to
+work in of itself. Thanks for the encouragement! I like your idea of "parts".
+I'm actually treating this as a masked language model task and then have a
+reversible encoder / decoder to try and learn the transformations. Then once
+the transformations are learned (per set), I apply it to the test input to get
+my inference. It seems to get the general idea for each, just not exact (yet).
+
+
+### [dong121389](/dong121389)
+arrow_drop_up0
+  * format_quote
+  * link
+I admire your work too, and I am also using NN method. I use graph to encode,
+but I am not familiar with the decoder method, can I ask you which decoder
+model do you use?
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up1
+  * format_quote
+  * link
+Nice and ty! I was trying to use graphs to encode too at one point. I might
+actually turn back to that, idk. I was really trying to investigate different
+ways to embed/represent the pixels in the 2d grid.
+I asked claude to summarize what the transformer part is doing that I've come
+up with so far:
+The ARCTransformer class you've shown is not a full encoder-decoder
+transformer in the traditional sense. Instead, it's a simplified transformer-
+like architecture that processes 2D grid inputs. Let's break it down:
+It's not split into separate encoder and decoder parts.  
+It uses a single self-attention mechanism rather than encoder-decoder
+attention.  
+It maintains the 2D structure of the input throughout the process.
+Here's a brief overview of its components:
+Input Embedding: Converts the input grid into a continuous representation.  
+Positional Encoding: Implicitly handled by the 2D structure and padding.  
+Self-Attention: Allows each position to attend to all other positions.  
+Feed-Forward Network: Applies position-wise fully connected layers.  
+Layer Normalization: Applied after attention and feed-forward steps.  
+Output Layer: Converts the final representations back to class probabilities.
+While it incorporates key ideas from transformers (like self-attention and
+feed-forward networks), it's more accurately described as a transformer-
+inspired model for grid processing rather than a full encoder-decoder
+transformer.
+* * *
+That is what I'm doing right. Before I was using GNN's and had an explicit
+decoder part. Was just doing it in PyTorch, a simple one. Not sure if I should
+try to combine all these ideas into one thing now that I'm writing this out.
+Hide repliesarrow_drop_up

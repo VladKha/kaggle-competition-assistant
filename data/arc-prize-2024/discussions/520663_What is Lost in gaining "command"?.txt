@@ -1,0 +1,33 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 2 months ago
+arrow_drop_up1
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What is Lost in gaining "command"?
+We know we can program. We can command a program, tell it what we want it to
+do, and debug it if that somehow fails. We've been doing it for the better
+part of a century. A program is a tool. We also know what we want (give or
+take) with AI. We talk to the AI like we talk to a coworker. It hears us, and
+whips up a response because it can. But why?  
+I'm going forward with an ARC puzzle variant that is more "equal" - treats the
+program like a human, with feedback and multiple attempts.  
+Because I can. It's not too difficult. My reasoning is that the puzzle,
+itself, including binary feedback, is a learning process.  
+I know that to begin with, the puzzles would be best if they were easiest.
+Instead of cramming a handful of different abstractions into the puzzle, I
+strive for a painfully simple one. For example, working only with a 3x3 grid,
+I put a blue color in an arbitrary matrix location. The output is a similar
+3x3 with a red color in the same location. The test is another 3x3, with a
+blue color in a new location. This should be boring for a human. But it should
+be pretty easy for a program. But am I writing a program? Why would I? And if
+I create a thing that looks like a program, but somehow thinks like a human,
+why would it give me what I want? Why would it output a 3x3 with a red color
+in the new location? "Because I commanded it" fails as an answer, for me.
+That's just programming.
+comment
+
+
+## 0 Comments

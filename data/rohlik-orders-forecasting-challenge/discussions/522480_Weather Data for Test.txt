@@ -1,0 +1,51 @@
+[mexwell](/mexwell) · 376th in this Competition · Posted 2 months ago
+
+
+### Weather Data for Test
+I made the small effort and created a data set with the necessary weather data
+for the locations Brno, Prague, Munich, Frankfurt and Budapest.
+You are welcome to use this data for your analyses. I look forward to seeing
+whether these features make an important contribution to the performance of
+the models.
+**To avoid being disqualified, please do not use the data until the
+competition has officially ended or do not make any submissions with it.
+According to the officials, external data is not allowed.**
+You can get the data [here](https://www.kaggle.com/datasets/mexwell/rohlik-
+order-forecast-weather-data-for-test).
+Happy coding!
+
+
+## 3 Comments
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+Thanks for picking that by hand, that must be cumbersome!  
+I just ask myself if this does not fall into the restriction to use external
+data, as [open-meteo](https://open-meteo.com/) is used and also handle the
+missing weather data in the **test** set.
+I just recall the 2 answers based on the competition rules made by the
+competition host [@mkecera](https://www.kaggle.com/mkecera) in a [very early
+post](https://www.kaggle.com/competitions/rohlik-orders-forecasting-
+challenge/discussion/511341#2864839).
+* * *
+I personally avoid to use any external data at all, to prevent being
+disqualified for using leaky data. It's just my personal perspective - happy
+for any thoughts to get that aligned!
+
+
+### [mexwell](/mexwell)
+Thank you so much for your hint. I didnt read the full guidelines for that
+competition.  
+So the safest option is to use only the data when you are not planing to make
+ansubmission for that. I wil probably add some disclaimer to the dataset.
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+You are welcome! Yes I trust that it will be a clear cut without exceptions to
+use only the competition data. Most fair in my opinion. After the competition
+or as you said for those who not plan to submit, your dataset is for sure
+useful.
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+Thank you for your efforts.

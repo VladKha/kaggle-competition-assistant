@@ -1,0 +1,36 @@
+[Gamil](/gamill) · Posted 3 months ago
+arrow_drop_up1
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### A Reverse Engineering Approach (Think Self-Play)
+I have a tentative idea to approach the ARC (Abstraction and Reasoning
+Challenge) by exploring a reverse engineering method. My thought is to first
+identify a comprehensive set of primitive DSLs (domain-specific languages),
+similar to what Michael Hodel did (<https://github.com/michaelhodel/arc-dsl)>,
+but more expressive (think Turing-complete primitive operations for such a
+task) that can transform any 2D grid into any other 2D grid. These primitives
+should be sufficiently expressive to cover all possible mappings in ARC.
+With this set of primitives, we could randomly sample them to construct
+sequences of transformations, or programs. By applying these programs to a few
+random grid examples and storing the results, we can begin to build a dataset.
+Over time, by repeating this process, we can create a substantial dataset
+containing the programs and their input-output mappings. This dataset might
+then be used to train a model to predict the program based on given input-
+output mappings.
+During training, it might be beneficial to start with simpler programs and
+gradually increase the complexity.
+comment
+
+
+## 1 Comment
+
+
+### [Michael Hodel](/michaelhodel)
+arrow_drop_up1
+  * format_quote
+  * link
+What makes you think my DSL isn't Turing-complete?

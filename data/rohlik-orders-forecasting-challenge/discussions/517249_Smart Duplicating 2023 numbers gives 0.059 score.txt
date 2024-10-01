@@ -1,0 +1,20 @@
+[Anmol Garg](/anmolgarg1998) · 664th in this Competition · Posted 2 months ago
+
+
+### Smart Duplicating 2023 numbers gives 0.059 score
+In the notebook [https://www.kaggle.com/code/anmolgarg1998/rohlik-order-
+analysis](url) ,  
+-> I just joined test date orders with train orders of same Day of Year of 2023. Joining occurs in a way that Day of week is similar and also Black Friday is joined with Black Friday.  
+-> After duplicating 2023 orders, I accounted yearly increase in orders by calculating delta for each warehouse respectively 
+This mere Data trick is giving 0.059 score .  
+Reasoning :: We can't use any data that can predict day variation in daily
+orders like weather or even past day orders etc. We are left with only
+weekends,holiday which will be mostly similar yearly. Only variation in both
+years is of any holiday that occurs on X day of week in year 2023 but on Y day
+for 2024 but even Tree based model won't capture that variance because we
+don't have any train data to capture that.
+Making this notebook public as it gives more clarity of Test data and one can
+also incorporate some techniques while training models of their own.
+
+
+## 0 Comments

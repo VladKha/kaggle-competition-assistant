@@ -1,0 +1,95 @@
+[Guillermo Barbadillo](/ironbar) · 5th in this Competition · Posted 3 months
+arrow_drop_up8
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Guessing how active inference (test time fine-tuning) is done
+Today I have been watching [MindsAI's team
+interview](https://youtu.be/jSAT_RuJ_Cg?si=-s_XpeeDA2BQYlVy)
+> They say that if you fine-tune an LLM on the [re-
+> arc](https://github.com/michaelhodel/re-arc) dataset you will get like 1% on
+> the test set. But if you apply test time fine-tuning on augmented test
+> samples the accuracy increases to 23%.
+My biggest question is: **How can you augment the test samples without
+guessing the transformation?**
+
+### Flips and rotations
+I guess that you could apply flips and/or rotations to some of the problems
+and the transformation won't be affected. This will require some model or
+heuristic that given the input/output pairs predicts whether we can apply
+horizontal flip, vertical flip or rotations.
+
+### Use `n-1` samples as input
+If a task has 4 input-output samples, it might be possible to fine-tune the
+model to predict one of the pairs given the other three. Again, this won't
+always work because you need redundancy in the definition of the task. I
+believe redundancy in the private test set will be small, because that makes
+the tasks easier.
+
+### Color changes
+Frequently, it could be possible to do color changes without changing the
+meaning of the task. But this needs also some model or heuristic because some
+color changes will totally change the definition of the task.
+
+### Summary
+I believe it is possible to augment the tasks at test time without fully
+understanding the task, but some level of understanding is needed to decide
+which test time augmentations won't change the definition of the task.
+Can you think of other test time augmentations?  
+Let's guess what active inference is together!
+comment
+
+
+## 2 Comments
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up1
+  * format_quote
+  * link
+I believe that Test Time Augmentation for say a task with 3 train samples
+works like this:
+Flip(lr, ud) both input and output, gives 3 + 3x2 = 9  
+Rotate(90, 180, 270) both input and output, gives 9 + 9x3 = 36  
+…
+So, initial 3 train samples now becomes 36 samples that can be used to create
+an average prediction.
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up6
+  * format_quote
+  * link
+Sure, that will work for many samples. But there are some problems, f.e. on
+tasks that use the notion of gravity you could only apply horizontal flips
+without changing the meaning of the task.
+<https://arcprize.org/play?task=1e0a9b12>
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F264656%2F3a905d453860dca265804b469161b425%2FSelection_312.png?generation=1719468015233087&alt=media)
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+In one sense, sure. It changes the terrestrial human notion that gravity is
+"down" (where the Earth is). But the things that we are training were neither
+Earth-borne, nor Human - they are a non-species born in cyberspace, which has
+no gravity. So keeping things "properly" oriented is probably less of a
+priority. If a neural net can adapt to anything, it can adapt to the notion
+that it is not a human.  
+The more important consideration is: what are you training for? If you are
+training to recognize "the gravity puzzle", then you might do well to generate
+1,000 or 1,000,000 such puzzles that all adhere to the gravity puzzle rules,
+albeit with different colors and different sizes and different… Training to
+recognize that (when you see it) would be time well spent. Assuming that
+question will be on the test.  
+I have not yet looked at even 1/4 of the training corpus, but I have not see
+even one repeated concept. That is an amazing accomplishment!!! (not enough
+exclamation marks). But it is a certain death knell for any model training to
+see what it has already seen. Francois knows this: he _made_ Keras! He knows
+how to walk through the random forest and leave no footprints.

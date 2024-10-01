@@ -1,0 +1,49 @@
+[Omar Isbaitan](/omarisbaitan) · 998th in this Competition · Posted 3 months
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Subject: Using (GNNs) to solve (ARC-AGI)
+Subject: Using (GNNs) to solve (ARC-AGI)  
+Using Graph Neural Networks (GNNs) for tasks related to the Abstraction and
+Reasoning Corpus (ARC).  
+This can be a new approach to solve this problem based on:
+  1. ability to generalize.
+  2. ability to learn new skills.  
+With Key Characteristics of ARC:
+  3. Few-Shot Learning: Tasks are provided with only a few examples.
+  4. Abstraction: Solutions require understanding high-level patterns and transformations.
+  5. Generalization: The ability to apply learned rules to new, unseen tasks.  
+Potential Advantages of GNNs:
+  6. Relational Reasoning
+  7. Flexibility
+  8. Scalability
+  9. No need for LLM and learning.  
+Step zero (Level 0): Represent Grids.  
+o Nodes: Represent grids such as size, colors, and positions.  
+o Edges: Represent grids relationships between grids.  
+Step One (Level 1) : Grid to graph (Nodes and edges)  
+Applying GNNs to ARC datasets: to learn general knowledge by building simple
+NN and train it (fine tuning) the simple GNN to work core knowledge.  
+Step Two (Level 2): elements to graph ()  
+o Nodes: Represent key elements such as shapes, colors, or positions.  
+o Edges: Represent relationships or transformations between these elements.
+comment
+
+
+## 1 Comment
+
+
+### [Thangtm](/theaiboy)
+arrow_drop_up1
+  * format_quote
+  * link
+i have considered this approach but it seem difficult to create graph NN from
+a matrix e.g you don't know what exactly the node is, how is edge attribute
+can be represented in GNN, if it can, can it be differentiable. I think this
+approach is potential but it have some limitation need to be come over after
+implement it. Hope that we can discuss more about it in this post

@@ -1,0 +1,63 @@
+[Chris Deotte](/cdeotte) · 311th in this Competition · Posted 18 days ago
+
+
+### How To View Both Your Private LB Submission Scores
+Hi everyone. The submission button is hidden, but we can view our two selected
+final submissions and their private LB scores and their game history using the
+URL directly:
+<https://www.kaggle.com/competitions/llm-20-questions/submissions>
+
+
+## 7 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Reminder, if you want to see the progress of **both** your Private LB
+submissions, use the link in this discussion post.
+
+
+### [Chris Deotte](/cdeotte)
+It looks like the private LB has begun running episodes. The scores are
+changing and we can view the episodes by clicking the link in this discussion
+and viewing our submissions. Good luck everyone!
+
+
+### [Kha Vo](/khahuras)
+They will restart the LB once again due to wrong keyword list, per Bovard
+(Kaggle).
+
+
+### [Feida Wei](/feidawei)
+Where was it mentioned, I cant find the reply or announcement.
+
+
+### [Chris Deotte](/cdeotte)
+Yes, they added "Update" to the discussion of pinned notice
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/527853)
+
+
+### [raconion](/raconion)
+see pinned notice
+
+
+### [Feida Wei](/feidawei)
+Thank you, I think this confirms the concerns that some people had.  
+Which submissions will be used for the private LB even though it makes sense
+that the two latest submissions would be used.
+
+
+### [KKY](/evilpsycho42)
+Kaggler can always find a way!
+
+
+### [Bhanu Prakash M](/bhanupm)
+Wow, this was what I did to take the screenshot yesterday and posted it
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/527853#2958429),
+after the time was up.
+I didn't share it yesterday because I assumed it was a "hacky" way and thought
+the devs would make a better way to view it haha.
+
+
+### [Chris Deotte](/cdeotte)
+You can use the URL in this discussion post to see the final result of
+**both** of your private LB submissions! Good job everyone!

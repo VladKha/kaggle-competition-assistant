@@ -1,0 +1,36 @@
+[ZXY](/xiangyizhang) · 722nd in this Competition · Posted a month ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Will the Strawberry crack this competition?
+sources report the OpenAI's Strawberry will be able to solve complex puzzles
+comment
+
+
+## 2 Comments
+
+
+### [steubk](/steubk)
+arrow_drop_up3
+  * format_quote
+  * link
+It is hard to believe that next token prediction _alone_ can effectively solve
+the reasoning problems that exist in ARC.
+IMHO I agree with what Subbarao Kambhampati said in [Can Large Language Models
+Reason and Plan?](https://arxiv.org/pdf/2403.04121v2):
+"What LLM do armed with web-scale training, is a form of universal approximate
+retrieval, which, as I have argued, can sometimes be mistaken for reasoning
+capabilities."
+
+
+### [OminousDude](/max1mum)
+arrow_drop_up1
+  * format_quote
+  * link
+I would also advise looking at AlphaProof it is also a strategy that could
+help for this competition!

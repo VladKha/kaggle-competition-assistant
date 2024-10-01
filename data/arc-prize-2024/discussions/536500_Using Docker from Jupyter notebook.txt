@@ -1,0 +1,39 @@
+[inet](/dipplec) · Posted 2 days ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Using Docker from Jupyter notebook
+Hi
+I have a partial solution to ARC-AGI.
+I need to use a docker image to run my code in (it's written in Rust). Does
+anyone know how to run a docker image (I have one locally with Rust
+installed)? How does one install then communicate between Jupyter and the
+docker container to compile and run binary code having copied appropriate
+training files across. Then pull back results for submission?
+Docker command does not seem to be available from Jupyter notebook.
+Help would be very much appreciated.
+Chris
+comment
+
+
+## 1 Comment
+
+
+### [inet](/dipplec)
+arrow_drop_up0
+  * format_quote
+  * link
+Okay, there is a solution. Docker is only for emulating the Kaggle
+environment. However, it can be used to create a shared object version of the
+code (a simple binary executable is not allowed). The shared object can be
+called from python with cffi. So, create a shared object, upload it, link to
+it with cffi and it will work. Clunky! In case anyone else is not a fan of
+Python and prefers a full fat language. Note, currently about 10% of the cases
+work with the evaluation data set, the Rust code takes about 2 seconds to run
+and generate the results. At worst, this will scale linearly with additional
+cases (currently adding 2 or 3 a day).

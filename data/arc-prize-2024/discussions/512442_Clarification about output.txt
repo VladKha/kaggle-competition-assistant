@@ -1,0 +1,25 @@
+[bastao](/fbiobastos) · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Clarification about output
+Do we need to predict the output shape?
+comment
+
+
+## 1 Comment
+
+
+### [chris](/chris62)
+arrow_drop_up0
+  * format_quote
+  * link
+Yes, from the instructions:
+> "Constructing the output grid" involves picking the height and width of the
+> output grid …
+So you need to figure out how large the output should be.

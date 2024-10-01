@@ -1,0 +1,27 @@
+[hoon0303](/hoon0303) · 47th in this Competition · Posted 20 days ago
+
+### Question About Notebook Sharing During a Competition
+Hello Kagglers,
+I’m trying to share my notebook with others by setting it to "Public," but the
+option is disabled, leaving the notebook in "Private" mode.
+I have a few questions regarding this:
+I’m curious about why it’s not possible to set the notebook to "Public" while
+the competition is ongoing. Is this due to competition rules, or is there
+another reason for this restriction?
+After the competition ends, will I be able to set the notebook to "Public"? If
+so, are there any specific considerations or precautions I should be aware of
+when doing this? For example, how will the notebook appear to other users once
+it’s made public?
+
+
+## 2 Comments
+
+
+### [Optimistix](/optimistix)
+It's only towards the very end (typically the last two days) that sharing is
+disabled, as explained [here](https://www.kaggle.com/spoiler-alert).
+
+
+### [JK-Piece](/jeannkouagou)
+Sharing notebooks is not permitted in the last week of a competition,
+typically the last 7 days. Usually a banner is displayed to indicate this

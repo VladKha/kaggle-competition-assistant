@@ -1,0 +1,217 @@
+[Max Strome](/mstrome) · 253rd in this Competition · Posted 2 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Abstract Transformation Vector
+I am currently running through the following idea and I would love some
+thoughts. The idea is there is an embedding space for each problem where you
+can add the same vector to each embedded input to get the embedded output.
+Reversing the embedding can either be done if train originally as an
+autoencoder, or do gradient ascent on input to get the desired embedding. The
+main thought here is we are only putting one strong prior, that the abstract
+transformation is the exact same vector in this space, and thus the problem
+becomes creating this embedding space and learning that transformation vector.
+One way I think of this is that learning the transformation vector is similar
+to writing a program in code, however vectors could be considered the program
+of a neural network. I like this because it gets at the idea that the
+intelligence is the model itself and the output is simply an unintelligent
+artifact of that model. Would love thoughts and to hear if anyone is
+interested in exploring this / joining up with me on this competition?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2603737%2Fd2bd78e857febeec2472c4cfeb140326%2FIMG_6230526A2244-1.jpeg?generation=1721181019209405&alt=media)
+comment
+
+
+## 14 Comments
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up1
+  * format_quote
+  * link
+I have a very similar overall idea. Here are some of my results. Are you
+getting similar?
+[arc 3 examples.PNG](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2945236/21012/arc 3 examples.PNG)
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+FYI - left is what I get, and right is the true answer
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up3
+  * format_quote
+  * link
+Tried that, autoencoder seems like an obvious solution. It won't work. I even
+tried over building the network, adding data and it still failed, even if only
+trained on one problem. So that's a no go. ) at least until someone finds a
+better way to encode the data for the network)
+I'm finding it fascinating in all the ways things I've tried fail.
+For example, grab a random problem, add data by flipping, rotating…, try to
+predict input, output shapes and colors. Seems like a simple starting place
+but…
+n_samples = 3
+rows in: 6, 8, 10  
+rows out: 6, 8, 10
+test rows in 12  
+actual output 12  
+predicted output 10
+It hasn't seen 12 before and trees and nn both fail to learn input == output (
+at least the ones I've tried so far)
+or  
+colors in = 0,8 output 0,3,8  
+colors in = 0,1 output 0,1,3  
+colors in = 0,2 output = 0,2,3  
+test in = 0,7 predicted = 0,3
+It fails to see input colors == output colors plus 3
+It's possible adding a ratio of in/out rows and cols would help, but how's
+that going to work on colors? a flag for matching/not matching/extra/removed?
+Anyway, it's fascinating and fun project.
+
+
+### [Thangtm](/theaiboy)
+arrow_drop_up1
+  * format_quote
+  * link
+I think your idea is clever but it exactly works like an Auto Encoder. Am i
+right?
+[emoji_people](/vasileioscharatsidis)
+
+
+### [Vasilis](/vasileioscharatsidis)
+arrow_drop_up1
+  * format_quote
+  * link
+i try to do something similar using transformers, attention cross attention
+between inputs and outputs but so far it does not work.
+
+
+### [Peter J Thompson](/peterjthompson)
+arrow_drop_up2
+  * format_quote
+  * link
+I had a similar idea and couldn't get it to work. I think the basic problem is
+that the embedding space would have to be really, really weird.
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up2
+  * format_quote
+  * link
+I believe there is some key component missing: `search`
+Sometimes you see immediately the solution to a problem, in those cases
+(probably the easier ones) your method will work fine.
+But other times you have draw hypothesys, try them, draw new hypothesys… You
+have to search for the transformation, and this is an iterative process.
+
+
+### [Max Strome](/mstrome)
+arrow_drop_up0
+  * format_quote
+  * link
+Could you say doing gradient descent on a learned vector (or could even be its
+own learned network), you are searching through a bunch of hypothesis, with
+gradient descent guiding the search
+
+
+### [wkdrbwnd1](/wkdrbwnd1)
+arrow_drop_up0
+  * format_quote
+  * link
+Can I view a backer that adds equally to the whole as a process of finding a
+static covariates?
+
+
+### [dong121389](/dong121389)
+arrow_drop_up0
+  * format_quote
+  * link
+I am doing so using gnn, and I just meet some obstacles, such as how do you
+decode from the embedding space to get the output? and how do you set the loss
+function?
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+I actually found Claude 3.5 to write good starting code for that. I'd
+encourage you to work with it asking those questions honestly. It isn't very
+good at keeping matrix dimensions right throughout the model / pipeline but it
+is a good start imo.
+
+
+### [wkdrbwnd1](/wkdrbwnd1)
+arrow_drop_up0
+  * format_quote
+  * link
+Why is converting all values in a consistent way specific to the ARC problem?
+
+
+### [Max Strome](/mstrome)
+arrow_drop_up1
+  * format_quote
+  * link
+Not specific to ARC, but we do know that the underlying transformation for a
+given task is the same across any possible input, so it defines some input ->
+output mapping. The idea is that there is some latent space where that
+transformation can be represented as a vector / learned program for a specific
+transformation (and done at test time). You could argue this generalized to
+much more in machine learning, for example I could say that mapping a few
+input variables to the price of a house using an MLP or linear regression is
+the same program. The uniqueness here is that every transformation defines a
+completely different mapping, so by creating some rich embedding space and not
+completely learning the full mapping puts some sort of representation prior,
+and the idea of just adding a vector that is the same for each input and
+represents the transformation is supposed to help prevent overfitting. I may
+be going in circles here, because I see your point as valid that we are always
+just learning a mapping of a some input to some output in supervised ML (in
+ARC we call it a transformation), and in the housing example maybe the
+transformation is dependent on the location, or we could incorporate the
+location in to the transformation and just have one model, the same is true
+with ARC, the transformation is dependent on the input / output examples we
+were given for that task, but we could also just incorporate the idea of all
+transformations in to the model.
+
+
+### [Max Strome](/mstrome)
+arrow_drop_up0
+  * format_quote
+  * link
+Let's say the problem is we are have (+, -), and we are given inputs as (a, b,
+c) and output d all integers. We know the format is a +/- b +/- c, and our
+algorithm is trying to learn the (+/-, +/-) given a few examples. We cannot
+just train on mapping one input to one output, because each input / output
+could have different (+/-, +/-) and we would learn nothing. If we attach a
+task name, then we can begin to learn for each task, but still no way to
+generalize to new tasks. Thus, we know we can't just use the same algorithm
+for each of these transformations, unless that algorithm tasks in all example
+input / output pairs within its input and extrapolates. But if we use an
+algorithm to learn general things about the structure and other things of an
+ARC input -> output, then at test time we can try to learn this mapping using
+the same base algorithm, but a learned vector transformation off of all the
+input examples, and hope it generalizes to this new transformation
+
+
+### [wkdrbwnd1](/wkdrbwnd1)
+arrow_drop_up0
+  * format_quote
+  * link
+I got it, Thanks!
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+Have you tried doing one model / set of models per example? That is what I'm
+trying.

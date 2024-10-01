@@ -1,0 +1,14 @@
+[Yan Teixeira](/yantxx) · 19th in this Competition · Posted 3 months ago
+
+
+### School Holidays
+In the train dataset, only Frankfurt and Munich have school holidays, and only
+for the year 2023.
+Example below:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13062964%2F359ac492ff113c01155b640034890d6b%2Ftime%20series.png?generation=1718064375404330&alt=media)
+  * **Red** : School Holidays period
+  * **Blue** : Winter School Holidays period
+
+
+## 0 Comments

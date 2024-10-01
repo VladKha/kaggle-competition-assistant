@@ -1,0 +1,72 @@
+[francesco fiamingo](/francescofiamingo) · 415th in this Competition · Posted
+a month ago
+
+
+### how to cancel an agent?
+dear friends,  
+i m tring varius agents with varius setting…. but sometimes i have good agent
+that i want to keep and bad agent that i want to substitute….but seems not
+possibile becosue the substituaiotn (max 3 in same time and max 5 per day) is
+releted "when" the agent is submitted, do you knwo how to cancel a speficig
+agent keeping "alive" one that was submitted erlier? thanks a lot a win the
+best!
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+We cannot pick the 3 active agents. They are selected automatically as the
+most recent 3 submitted. (So to replace our current agents we need to submit
+new more recent agents).
+
+
+### [francesco fiamingo](/francescofiamingo)
+Thanks, but i dont understand the logic, at least in testing phase
+
+
+### [Chris Deotte](/cdeotte)
+I don't understand the logic either.
+Perhaps Kaggle doesn't want us to be able to turn bots on and off. For
+example, when our bot achieves a high score, we can then disable our bot to
+prevent the score from decreasing. Then in the last 1 hour of the competition
+we can enable the bot and get 1st place public LB.
+I think our final position in public LB is our seed going into private LB, so
+maybe what I say above could be an advantage. There are probably other ways to
+exploit the LB by turning bots on and off whenever we like.
+
+
+### [gguillard](/gguillard)
+I guess the logic is that it was easier and quicker to implement this way.
+
+
+### [gguillard](/gguillard)
+> I think our final position in public LB is our seed going into private LB,
+> so maybe what I say above could be an advantage. There are probably other
+> ways to exploit the LB by turning bots on and off whenever we like.
+That would be **deeply unfair** , since the scoring system (which is [already
+a
+lottery](https://www.kaggle.com/competitions/llm-20-questions/discussion/521385))
+relies on the number of games played to assert its confidence on the scores.
+
+
+### [francesco fiamingo](/francescofiamingo)
+Overall , not having the algorithm how the score is build (agree there is a
+lottery feeling - beeing not possibile to test outside with scoring) , i would
+love to try multiple options (different LMM, or different promts, or different
+setting) but this model of submission prevent this …and delute the most
+intersting part of this exercise which is the learning process…… maybe only
+way us to aggregate in team and share experiences…
+
+
+### [francesco fiamingo](/francescofiamingo)
+Ps becouse of that i was 115 now a sad 445…..
+
+
+### [Chris Deotte](/cdeotte)
+Kaggle admin says
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/512358#2872495)
+> Yes, the current leaderboard will be the seed of your agent going into the
+> final evaluation period. We will ensure that agents receive enough games for
+> the leaderboard to stabilize under the new set of words, so even if your
+> agent is severly under ranked it should not be an issue.

@@ -1,0 +1,27 @@
+[Zian](/weiguangguan) · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### How was the ARC data generated?
+Does anyone know how François Chollet created the data? By hand or by code? If
+he wrote a code to generate tasks, then is the code available to public?
+comment
+
+
+## 1 Comment
+
+
+### [Péter Németh](/hunnemethpeter)
+arrow_drop_up2
+  * format_quote
+  * link
+It was created by hand, that's why contained some mistakes originally. But
+actually there is a task generator here: <https://github.com/michaelhodel/re-
+arc>
+It was linked through the official page: <https://arcprize.org/guide> ->
+COMMUNITY -> Repositories

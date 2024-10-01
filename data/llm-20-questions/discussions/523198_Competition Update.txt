@@ -1,0 +1,481 @@
+[Bovard Doerschuk-Tiberi](/bovard) · Posted a month ago
+· Kaggle Staff
+
+
+### Competition Update
+Hey all,
+Here is an update on what to expect from the final weeks of the competition.
+  * Active agents reduced from 3 to 2 (starting this week, which will increase the game rate)
+  * Question character length limit reduced from 2000 to 750 (the extra character limit was unused other than for “binary search” type questions)
+  * Remove “Locations” from the keyword set. (starting this week, the “locations” problem space it too small)
+When the competition closes:
+  * The unseen secret “things” keyword list will be swapped in
+  * The leaderboard will be reset
+  * The post-evaluation period will start at 2 weeks, but will likely be extended.
+Thank you all for participating! This competition is the first of its kind and
+we appreciate your patience while we learned along the way. We’ll take what we
+learned in this competition to make future competitions even better!
+Happy Kaggling!
+Bovard
+EDIT:  
+On the secret "things" keyword list
+  * it is taken from roughly same keyword list as the current list. 
+  * it will not re-use any of the current words in the keyword list
+  * it will _not_ be accessible in keywords.py
+
+
+## 50 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Hi [@addisonhoward](https://www.kaggle.com/addisonhoward)
+[@mylesoneill](https://www.kaggle.com/mylesoneill)
+[@bovard](https://www.kaggle.com/bovard) . In Kaggle's post above, Kaggle says
+that the `[Private LB] will not re-use any of the current words in the [Public
+LB] keyword list`. Here is a screenshot quote from above:  
+![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Aug-2024/not-
+use.png)  
+Kaggle also says this in a comment below
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/523198\)#2954374).
+Here is a screenshot quote:  
+![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Aug-2024/not-
+use2.png)  
+Kagglers have analyzed the Private LB keyword list and determined that `7.7%
+of the [Private LB] keywords are re-use of the current [Public LB] words`. Ten
+Kagglers have pointed this out in the discussion
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/527853)
+and those posts have received 200+ upvotes. Kaggle has still not responded, so
+I'm bringing this issue to your attention. It would be great if you responded!
+Analysis is published
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/529115).
+Is this the intended behavior of the Private LB or is there something wrong?
+
+
+### [dynamic24](/dynamic24)
+Will either the singlular or plural form of a word be accepted?
+
+
+### [techniquetwice](/techniquetwice)
+Hi [@bovard](https://www.kaggle.com/bovard) ,  
+Will each agents get to play the same number of times?
+
+
+### [KKY](/evilpsycho42)
+Can we ensure that the new set of keywords does not include any existing
+keywords?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+> it will not re-use any of the current words in the keyword list
+
+
+### [NIWATORI](/niwatori)
+Hi [@bovard](https://www.kaggle.com/bovard), Does "the current words in the
+keyword list" mean the keywords used in the current evaluation, i.e., the
+combination of the keywords from
+[keywords.py](https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/keywords.py)
+and the hidden keywords, which can be found in the ongoing replays?
+Also, does it mean an exact match, or does it also include matches based on
+alt in the keywords.py and [compare](https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L304)?
+For example, we find `{"keyword": "Air Conditioner", "alts": ["Air
+Conditioning"]}` in the keywords.py, so not only "Air Conditioner", but also
+"airconditioner", "airconditioning", "Air conditioner", and so on will not be
+included as well in the final keyword list and their alt? More formally, a
+keyword `k` which satisfies `compare_words(k, k0)` with any `k0` in the
+current keyword list will not be included?
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Hello! I still see in today's simulations locations keyword, namely Norway.
+Are you going to exclude locations or not?
+Thank you for your clarification!
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+They will be removed shortly, thanks!
+
+
+### [Neuron Engineer](/ratthachat)
+As of today, August 9, I still face the keyword 'Australia' , am I missing
+something [@bovard](https://www.kaggle.com/bovard) ?
+<https://www.kaggle.com/competitions/llm-20-questions/submissions?dialog=episodes-
+episode-55669669>
+
+
+### [Sadhaklal](/sambitmukherjee)
+Factually incorrect answers by bad agents are derailing high quality agents.
+After optimising my prompts, I’m able to get 54% success rate with GPT-4o (in
+self-play mode) and 21% success rate with Llama 3.1 (in self-play mode). After
+fine-tuning Llama 3.1, I’m able to get 49% success rate (in self-play mode) ->
+on unseen keywords ("places" + "things" combined).
+I think my agent is pretty good. But it depends on the answers being factually
+correct. Factually incorrect answers are derailing the agent completely.
+I think it would have been better if Kaggle replaced the cooperative structure
+of this competition with a fixed answerer LLM that gave factually correct
+answers (at least most of the time). This would make the competition be about
+(1) asking good questions & (2) making good guesses, not about navigating a
+highly noisy environment.
+
+
+### [loh-maa](/lohmaa)
+Hi [@sambitmukherjee](https://www.kaggle.com/sambitmukherjee) unreliable
+answers are part of the game and I'm sure many people account for that in
+their solutions. It's hard to imagine anyone responsible could seriously
+consider changing the game to fit the characteristic of your solution.. ,)
+
+
+### [Sadhaklal](/sambitmukherjee)
+I'm sceptical that many people are "accounting for unreliable answers".
+I'm willing to bet that in the vast majority of cases, an LLM won't get the
+guess correct if the "yes" / "no" answers it receives are factually incorrect.
+I believe the end objective of this competition is to teach an LLM to play 20
+questions. It's not to teach an LLM how to navigate a highly noisy
+environment.
+
+
+### [loh-maa](/lohmaa)
+OK, actually I don't know how many but I bet more than a few… surely we can
+also bet the guess rate won't be high, and I don't know what's the end
+objective, actually I don't think it matters, what matter is to get a good
+performance in the game as it is, not to change the game mid-air… I don't know
+if you noticed, but there were dozens of proposals to change the game for
+various reasons (including my own suggestions long time ago.) I can't imagine
+the mess had they been implemented… ,)
+
+
+### [Sadhaklal](/sambitmukherjee)
+I don’t actually expect the competition to be changed this late. Hence, please
+don’t treat my original comment as a lobbying effort.
+I’m just voicing my concern & frustration about the noisy environment.
+
+
+### [Kha Vo](/khahuras)
+Bad answerers are interacting with everybody, not just your bot. It’s part of
+the game and it’s fair to everyone.
+
+
+### [Sadhaklal](/sambitmukherjee)
+Yeah but it’s ruining the fun of the competition. Imagine showing these game
+replays to non machine learning folks. The games look ridiculous.
+As far as fairness is concerned, I don’t have a problem with bad answerers, as
+long as a sufficiently large number of games are played in the private
+keywords phase of the competition.
+
+
+### [Mahmoud Elshahed](/letemoin)
+in fact Providing a fixed answer agent by contest "in future development or
+releases" is pretty smart idea. it will give all the same equal opportunity.
+
+
+### [Ariocx](/ariocx)
+So keywords can only be “things”？
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+yes, that is correct
+
+
+### [Gavin Cao](/gavinxgcao)
+Then will obs.category be all "things" or empty or have new subcategories
+within things?
+
+
+### [BORAHMLEE](/borahmlee)
+Hi, Do you use purely secret keywords in your final evaluation? Or do you
+combine them with current keywords to make the evaluation?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Purely secret keywords
+
+
+### [BORAHMLEE](/borahmlee)
+> Purely secret keywords
+Thanks for your comment!
+
+
+### [Marcel0.](/marceloluizgonalves)
+> Hey all,
+>
+> Here is an update on what to expect from the final weeks of the competition.
+>
+>   * Active agents reduced from 3 to 2 (starting this week, which will
+> increase the game rate)
+>   * Question character length limit reduced from 2000 to 750 (the extra
+> character limit was unused other than for “binary search” type questions)
+>   * Remove “Locations” from the keyword set. (starting this week, the
+> “locations” problem space it too small)
+>
+I noticed that the number of active agents is already 2, but I still see
+locations appearing in the keywords. Will they still be removed or is it a
+mistake in the removal?
+
+
+### [torino](/pnmanh2123)
+Hi [@marceloluizgonalves](https://www.kaggle.com/marceloluizgonalves) ,  
+`Remove “Locations” from the keyword set. (starting this week, the “locations”
+problem space it too small)`  
+`starting this week` means it will be removed from the start of the final 14
+days, not the current lb.
+
+
+### [Marcel0.](/marceloluizgonalves)
+If that were the case, the number of agents should not have been already
+reduced.
+
+
+### [Fayez Siddiqui](/fayezsiddiqui)
+I agree with
+[@marceloluizgonalves](https://www.kaggle.com/marceloluizgonalves) here i also
+launched an agent with specific instructions to not guess place 😭😂
+
+
+### [torino](/pnmanh2123)
+[@bovard](https://www.kaggle.com/bovard), is a problem will be solved in the
+final lb?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+locations have been removed
+
+
+### [Nicholas Broad](/nbroad)
+Is [this
+comment](https://www.kaggle.com/competitions/llm-20-questions/discussion/512358#2872495)
+no longer relevant?
+> Yes, the current leaderboard will be the seed of your agent going into the
+> final evaluation period. We will ensure that agents receive enough games for
+> the leaderboard to stabilize under the new set of words, so even if your
+> agent is severly under ranked it should not be an issue.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Yes, that will no longer be the case.
+
+
+### [torino](/pnmanh2123)
+[@Hi](https://www.kaggle.com/Hi) [@bovard](https://www.kaggle.com/bovard) ,  
+`Remove “Locations” from the keyword set. (starting this week, the “locations”
+problem space it too small)`
+That means in private keywords, the keywords will not have `locations(place,
+landmark, mountain, river...)` and only `thing` keywords, right?  
+Then agents reduced from 3 -> 2, is it keep 2 newest agents or 2 highest score
+agents?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+Yes, keep only the "things" keywords.
+It will be the 2 newest agents
+
+
+### [Andrew Tratz](/jademonk)
+A suggestion, for this or for other simulations in the future: allow
+participants to permanently inactivate specific bots, reducing their bot quota
+usage. This way, there's no need to inactivate high-scoring bots in order to
+continue experimenting, and if they are permanently disabled then there's no
+risk of anyone sandbagging by temporarily disabling and later re-enabling a
+strong bot. I think this would create a more robust competition with few
+downsides.
+
+
+### [Fayez Siddiqui](/fayezsiddiqui)
+Great suggestion, I also think having the freedom of Agent selection would be
+great.
+
+
+### [OminousDude](/max1mum)
+Not a good idea as people could just enable a high-scoring old agent
+
+
+### [Fayez Siddiqui](/fayezsiddiqui)
+how about letting you enable and disable agents only from your daily
+submissions only recent 5 [@max1mum](https://www.kaggle.com/max1mum)
+
+
+### [OminousDude](/max1mum)
+This would fix the previous issue but why would this be useful and it would be
+hard for the kaggle devs to implement this.
+
+
+### [Fayez Siddiqui](/fayezsiddiqui)
+I think most of the people stop to experiment after getting a good score as
+most of the leaderboard top scorers haven't updated their Agents for a long
+time. But with such changes the competition might become more engaging. Also
+you can always resubmit your high scoring old agent again by going to that
+notebooks outputs and submitting the files. I have tried so I am pretty sure
+
+
+### [gguillard](/gguillard)
+I don't get what's wrong about re-enabling your best submission, just like in
+other competitions, what point am I missing ?
+
+
+### [Bhanu Prakash M](/bhanupm)
+Are all the items in the things category physical objects?  
+Can I rule out the possibility of there being virtual or abstract things?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+The current list of words is roughly representative of the final list.
+
+
+### [Tran Anh Quan](/trananhquan)
+So in the final leaderboard are there only “Things” keywords used for
+evaluation? Will there be no “Person” or “Place” keywords at all?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+yes, only "things"
+
+
+### [hayate_taf](/hayatetaf)
+One of the two agents we had running a few days ago was disabled with the end
+of the competition.  
+I was under the understanding that there were two models that could be
+submitted, am I wrong?  
+If correct, I would like to have the agent I was running reinstated.
+
+
+### [Jacky285](/jacky285)
+For the final evaluation, the number of agents are still 3 right?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+no, only 2
+
+
+### [Jacky285](/jacky285)
+May I ask how many categories will the keyword set contain? And will the all
+the keywords be available to the agent when playing?
+
+
+### [Songling](/wolfmedal)
+[@bovard](https://www.kaggle.com/bovard) I have a question. I just saw the
+final evaluation and update of the competition. The number of cancelled agents
+is reduced to 2. So will there be 2 active agents entering the evaluation or
+3?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+2 active agents during the evaluation
+
+
+### [skhan kim](/skhankim)
+Hi [@bovard](https://www.kaggle.com/bovard),  
+Are the new secret keywords(final list) semantically similar to the current
+keywords?  
+I'm confused about the meaning of 'The current list of words is roughly
+representative of the final list.'🤔
+
+
+### [Fayez Siddiqui](/fayezsiddiqui)
+I think they are broadly from the same categories is what he wants to say
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+why are there too many nans
+
+
+### [Fayez Siddiqui](/fayezsiddiqui)
+I am confused too but i think its due to some error on the agents end
+
+
+### [francesco fiamingo](/francescofiamingo)
+Thanks a lot! I think we are building the best community in the world, amazed
+to be part of it, one technical question , i need to decide to merge with
+other teams, if i will do, how many agents the team can use? 2 per component
+of the team or two for whole team?
+
+
+### [torino](/pnmanh2123)
+I guess we will have only have 2 agents for whole team.
+
+
+### [francesco fiamingo](/francescofiamingo)
+Wow…but this means that is better not to merge….
+
+
+### [torino](/pnmanh2123)
+As author said  
+`Active agents reduced from 3 to 2 (starting this week, which will increase
+the game rate)`  
+assume if we have 10 agents for team 5 members, maybe game rate will divide
+from 2 agents to 10 agents, It also means less opportunity for each agent.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+Only 2 agents per team. Once you merge together two teams they only count as a
+single team so they would only have 2 active agents
+
+
+### [FullEmpty](/gowillgo)
+Thank you for your update. I've walked through discussions, but this doesn't
+seem to be discussed.
+> Questions are limited to ~~2000~~ 750 characters  
+>  Guesses are limited to 100 characters
+Is the limit applied per round or for total questions throughout the rounds?
+> Agents are given 60 seconds per round to answer  
+>  Agents have an additional 300 overage seconds to use throughout the game
+I think this means each of the questioning/guessing agent and the answering
+agent has 60 seconds. But when does the 60 seconds for the
+questioning/guessing agent start — at the point when the round begins, when
+the agent asks a question, or right after the answering agent responds for
+guessing?
+
+
+### [FullEmpty](/gowillgo)
+Can anyone help???
+
+
+### [torino](/pnmanh2123)
+Hi [@gowillgo](https://www.kaggle.com/gowillgo) ,
+    
+    
+    Questions are limited to 2000 750 characters
+    Guesses are limited to 100 characters
+    
+    
+    content_copy
+it apply for each question, and each guess, not cumulative across entire game.
+then game work as below:
+**60s first - agent 1(ask/guess)**
+  * load model(only in step 1, ~40s for model 8b 8bit)
+  * return first question
+  * if > 60s, subtract to budget 300s  
+-> agent 1 stop  
+**immediately count 60s of agent 2(answer)**
+  * load model(~40s)
+  * answer question or anything you want
+  * if > 60s, subtract to budget 300s  
+-> agent 2 stop  
+**immediately count 60s of agent 1(ask/guess)**
+  * return guess(model was load in step 1)  
+…
+
+
+### [FullEmpty](/gowillgo)
+[@pnmanh2123](https://www.kaggle.com/pnmanh2123) That's so crisp clear to
+understand - many thanks!!!
+
+
+### [torino](/pnmanh2123)
+You are welcome!

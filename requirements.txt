@@ -1,0 +1,55 @@
+# env variables
+python-dotenv==1.0.1
+
+# api access to kaggle data
+kaggle==1.6.17
+
+# html scraping & parsing
+selenium==4.24.0
+# llama-index==0.11.1
+# llama-parse==0.5.0
+html2text==2024.2.26
+pandas==2.2.2
+
+# progress bar
+tqdm==4.66.5
+
+tenacity==8.5.0
+tabulate==0.9.0
+
+# core RAG
+# chunking for RAG
+langchain==0.2.15
+langchain-text-splitters==0.2.2
+langchain-community==0.2.15
+
+# indexing / search for RAG
+scikit-learn==1.5.1
+opensearch-py==2.7.1
+
+# dependencies for embeddings for indexing / search
+torch==2.4.0
+sentence-transformers==3.0.1
+transformers>=4.45
+
+# LLM
+google-generativeai==0.7.2
+
+# PostgreSQL for monitoring & feedback
+psycopg2-binary==2.9.9
+
+# saving assistants for streamlit UI
+joblib==1.4.2
+
+# UI
+streamlit==1.38.0
+streamlit-extras==0.4.7
+streamlit-free-text-select==0.2.0
+
+# weights & biases monitoring
+weave>=0.51
+
+# audio (streamlit UI, text to speech, speech to text)
+streamlit-audiorecorder==0.0.5
+pydub==0.25.1
+faster-whisper==1.0.3

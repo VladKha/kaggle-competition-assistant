@@ -1,0 +1,31 @@
+[Sinan Calisir](/snnclsr) · Posted 3 months ago
+
+
+### Why this competition does not reward medals?
+Hi,
+I was surprised to see why this competition does not award medals. Seems like
+a fun challenge :(
+
+
+## 2 Comments
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+This is a community competition, it does not award medals
+[@snnclsr](https://www.kaggle.com/snnclsr)
+
+
+### [Sinan Calisir](/snnclsr)
+Yes, thank you. Maybe I need to rephrase, why not a regular competition
+instead of a community one. That's what I was wondering.
+
+
+### [MichalKecera](/mkecera)
+Hi [@snnclsr](https://www.kaggle.com/snnclsr), this was an agreement with
+Kaggle based on the size of the competition.
+
+
+### [Sinan Calisir](/snnclsr)
+I see, thank you for sharing the background. Time-series competitions are
+always nice and can attract a lot of attention. That's why I was curious
+(community ones tend to be less).

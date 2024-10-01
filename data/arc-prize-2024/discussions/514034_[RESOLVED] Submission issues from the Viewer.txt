@@ -1,0 +1,67 @@
+[inversion](/inversion) · 832nd in this Competition · Posted 3 months ago
+· Kaggle Staff
+arrow_drop_up22
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### [RESOLVED] Submission issues from the Viewer
+**UPDATE:** Submissions are now working from the Notebook Viewer.
+We're aware of the [reports](https://www.kaggle.com/competitions/arc-
+prize-2024/discussion/512256) of users unable to submit from the Viewer, and
+are still working on a fix. In the meantime, you'll have to make submissions
+while in the notebook Editor (in the right-hand column options).
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F59561%2F22eab88b6b23ad46c0ce715f5104a97a%2F2024-06-22_09-29-04.png?generation=1719066926837965&alt=media)
+comment
+
+
+## 4 Comments
+
+
+### [MnauMnau](/mnaumnau)
+arrow_drop_up0
+  * format_quote
+  * link
+My commit is succesfull but scoring with this method is failing
+
+
+### [soumia0003](/soumia0003)
+arrow_drop_up0
+  * format_quote
+  * link
+is the score computed automaticlly?
+
+
+### [inversion](/inversion)
+Kaggle Staff
+arrow_drop_up0
+  * format_quote
+  * link
+When you submit, your code is run against a hidden evaluation set, and your
+score is calculated automatically from those results.
+
+
+### [PrashantSinghG](/prashantsinghg)
+arrow_drop_up0
+  * format_quote
+  * link
+how much time it take to reflect score in leaderboard
+
+
+### [inversion](/inversion)
+Kaggle Staff
+arrow_drop_up1
+  * format_quote
+  * link
+However long it takes your notebook to run against the hidden test set, and
+then a couple of minutes for the actual scoring.
+
+
+### [thkcct](/zhangshuo2)
+arrow_drop_up0
+  * reply
+This sharing is great, thank you

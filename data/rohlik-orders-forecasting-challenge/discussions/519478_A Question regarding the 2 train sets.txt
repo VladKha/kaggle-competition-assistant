@@ -1,0 +1,42 @@
+[Marc Sahakian](/vanmarcos) · Posted 2 months ago
+
+
+### A Question regarding the 2 train sets
+This might be a stupid question but what is exactly the difference between the
+2 datasets, are there the same dates but the calendar one gives more info on
+the holidays or do i have to merge the 2?
+
+
+## 5 Comments
+
+
+### [Akindu Himan](/akinduhiman)
+The `train_calendar` file contains holiday information for various warehouses.
+Some of these warehouses may not appear in the `train` dataset due to having
+zero orders on those particular days. There are two categories of holidays to
+consider: those on days when orders are recorded and those on days with no
+orders.
+I have combined these two datasets into a unified dataset, which you can
+review in my [notebook](https://www.kaggle.com/code/akinduhiman/data-
+visualization-in-cleaned-and-ensembled-data).
+
+
+### [Yan Teixeira](/yantxx)
+[@vanmarcos](https://www.kaggle.com/vanmarcos) The calendar dataset is
+literally a calendar with all the dates across the historical dataset. The
+dates that are not in the training dataset are found in the calendar. [See the
+introduction part of my notebook](https://www.kaggle.com/code/yantxx/rohlik-
+forecasting-statistical-learning).
+
+
+### [Marc Sahakian](/vanmarcos)
+Hello Yan, i see thank you for providing the notebook.
+
+
+### [Adam Logman](/adamlogman)
+I think the best solution ,that you have to make an intersection between them
+or make Rolling technique and and add new features to the test set
+
+
+### [Marc Sahakian](/vanmarcos)
+Hello Adam, okay i will look into it, thank you.

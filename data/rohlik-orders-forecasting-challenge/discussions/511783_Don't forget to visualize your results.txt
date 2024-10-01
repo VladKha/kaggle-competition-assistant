@@ -1,0 +1,114 @@
+[Thomas Meißner](/thomasmeiner) · 662nd in this Competition · Posted 3 months
+
+### Don't forget to visualize your results
+Even though the scores look very low and tempting, the predictions might still
+be bad. Here is a function to display your results:
+    
+    
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    
+    def display_predictions(train_df: pd.DataFrame, submission_df: pd.DataFrame) -> None:
+        """
+        Plot full timeline including predictions.
+    
+        :param train_df: Train data
+        :param submission_df: DataFrame containing the predictions. Must also include warehouse names.
+        :returns: Just creates plots. Nothing will be returned.
+        """
+        submission_df = submission_df.rename(columns={"id": "warehouse"})
+        submission_df['date'] = submission_df['warehouse'].str.split('_').str[2]
+        submission_df['warehouse'] = submission_df['warehouse'].str.split('_').str[:2].str.join('_')
+    
+        submission_df['date'] = pd.to_datetime(submission_df['date'], errors='coerce')
+        train_df['date'] = pd.to_datetime(train_df['date'], errors='coerce')
+    
+        for wh in submission_df["warehouse"].unique():
+            wh_train = train_df[train_df["warehouse"] == wh][["warehouse", "orders", "date"]].set_index("date")
+            wh_submission = submission_df[submission_df["warehouse"] == wh][["warehouse", "orders", "date"]].set_index("date")
+            print(f"Show train data for warehouse {wh_train}....")
+            print(f"Show results for warehouse {wh_submission}....")
+    
+            plt.figure(figsize=(10, 6))
+            plt.plot(wh_train.index, wh_train['orders'], label='Train Data', color='blue')
+            plt.plot(wh_submission.index, wh_submission['orders'], label='Predictions', color='red')
+    
+            plt.title(f"Orders for warehouse {wh}")
+            plt.xlabel("Date")
+            plt.ylabel("Orders")
+            plt.legend()
+            plt.xticks(rotation=90)
+            plt.show()
+    
+    
+    content_copy
+Example output:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5772729%2F0e7f3c7c8a91d8b56ff1be9d4d122b0b%2FBildschirmfoto%20vom%202024-06-12%2007-32-06.png?generation=1718170341948784&alt=media)
+
+
+## 4 Comments
+
+
+### [tanaka](/tanakasandesuka)
+Nice idea!
+it would be helpful to deepen understanding the results. I'll try it out using
+Plotly.
+
+
+### [Thomas Meißner](/thomasmeiner)
+Sure plotly is a great choice as well. It will need lees lines of code as
+well.
+
+
+### [Yan Teixeira](/yantxx)
+Great tip! I've been using a 'start_date' parameter to better see the results.
+example:
+`start_date = pd.to_datetime('2023-06-01')`
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13062964%2F066905da4e2046c9b81fc389e611c37c%2Fprague_results.png?generation=1718184918235701&alt=media)
+
+
+### [Thomas Meißner](/thomasmeiner)
+So like that?
+import pandas as pd  
+import matplotlib.pyplot as plt
+    
+    
+    def display_predictions(train_df: pd.DataFrame, submission_df: pd.DataFrame, start_date) -> None:
+        """
+        Plot full timeline including predictions.
+    
+        :param train_df: Train data
+        :param submission_df: DataFrame containing the predictions. Must also include warehouse names.
+        :returns: Just creates plots. Nothing will be returned.
+        """
+        submission_df = submission_df.rename(columns={"id": "warehouse"})
+        submission_df['date'] = submission_df['warehouse'].str.split('_').str[2]
+        submission_df['warehouse'] = submission_df['warehouse'].str.split('_').str[:2].str.join('_')
+    
+        submission_df['date'] = pd.to_datetime(submission_df['date'], errors='coerce')
+        train_df['date'] = pd.to_datetime(train_df['date'], errors='coerce')
+    
+        for wh in submission_df["warehouse"].unique():
+            wh_train = train_df[train_df["warehouse"] == wh][["warehouse", "orders", "date"]].set_index("date")
+            wh_submission = submission_df[submission_df["warehouse"] == wh][["warehouse", "orders", "date"]].set_index("date")
+    
+            wh_train = wh_train.loc[wh_train.index >= start_date]
+            wh_submission = wh_submission.loc[wh_submission.index >= start_date]
+            print(f"Show train data for warehouse {wh_train}....")
+            print(f"Show results for warehouse {wh_submission}....")
+    
+            plt.figure(figsize=(10, 6))
+            plt.plot(wh_train.index, wh_train['orders'], label='Train Data', color='blue')
+            plt.plot(wh_submission.index, wh_submission['orders'], label='Predictions', color='red')
+    
+            plt.title(f"Orders for warehouse {wh}")
+            plt.xlabel("Date")
+            plt.ylabel("Orders")
+            plt.legend()
+            plt.xticks(rotation=90)
+            plt.show()
+    
+    
+    content_copy

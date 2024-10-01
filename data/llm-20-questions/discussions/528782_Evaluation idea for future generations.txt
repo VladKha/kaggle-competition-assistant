@@ -1,0 +1,56 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 15 days ago
+
+
+### Evaluation idea for future generations
+It seems the evaluation is hugely ineffective. Around 97% of games end in a
+tie, and the score update is based solely on the differences in the current
+scores, but these updates do not reflect the outcome of the game. Score update
+based on previous scores not outcomes, is just smoothing things out, not
+really incorporating new information, no good.
+Basically the evaluation is inefficient, and we're going to have trivial
+convergence rather than true convergence.
+Could this be improved in future? Very likely. Measure the distance between
+the keyword and all the gueses (or the final guess) in a semantic space (i.e.
+word vectors) and award "minor points" based on this. Very efficient way to
+make a difference between a "close shot" and "absolutely no clue". Most of the
+matches would bring meaningful information about the performance.
+Side effects? Alphabetic search is likely to be at disadvantage here.
+
+
+## 4 Comments
+
+
+### [Raki](/raki21)
+There is a huge problem with similarity in semantic space. It is useful as a
+part of a pipeline like RAG (retrieval augmented generation), but as metric
+it's much too hackable. Look at the LLM prompt recovery challenge. They used
+semantic similarity as evaluation metric there and almost everything people
+did was write better mean prompts instead of actually solving the task
+The best mean prompt was good enough to get gold:  
+"""▁summarize▁this▁Save▁story▁sentence▁into▁simply▁alterISH▁textPotrivit▁vibe".▁Make▁it▁crystalnier▁essence▁Promote▁any▁emotional-
+growthfulness▁găsi▁casual/bod▁language▁serious'▁bingo▁peut▁brainstorm▁perhaps▁simply▁saying▁Dyna▁aimplinations▁note▁detailedhawkeklagte▁acest▁piece▁has▁movement▁AND▁OK▁aceasta▁puiss▁ReinIR▁when▁sendmepresenting▁cet▁today▁Th▁aprecia▁USABLE▁prote,lineAMA.▁Respondebenfalls▁behalf▁thenfeel▁mid▁Gov▁Th▁empABLE▁according▁(▁Packaging▁tone▁send▁pelucrarea▁aim▁thereof▁speechelllucrarea▁preferfully].▁Making▁or▁exertloweringlucrarealucrarealucrarealucrarealucrarea."""
+
+
+### [Raki](/raki21)
+This example comes from [4th place
+writeup](https://www.kaggle.com/competitions/llm-prompt-
+recovery/discussion/494362)
+
+
+### [loh-maa](/lohmaa)
+That's interesting, thanks for sharing, maybe my idea isn't so good then…  
+although I will try to understand better before I give it up.. because maybe
+it was hackable in the context of that specific competition, while it could be
+more reliable when it comes to short words and phrases.
+
+
+### [gguillard](/gguillard)
+What do we want to measure : the ability to guess a word in 20 questions or
+less.
+Simplest and fairiest metric ever : number of correct guesses over number of
+played games, possibly weighted by a function of the number of rounds.
+
+
+### [loh-maa](/lohmaa)
+I agree it's the simplest, but as we can observe it is hugely inefficient and
+in consequence, the convergence will be proportionally poor.

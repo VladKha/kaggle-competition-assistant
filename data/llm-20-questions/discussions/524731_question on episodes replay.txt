@@ -1,0 +1,21 @@
+[Quickpanda](/quickpanda) · 511th in this Competition · Posted 25 days ago
+
+### question on episodes replay
+I recently checked my episodes replay, and I notice that there is one
+simulation that my bot with -244 scores. Also I notice that there is Err on
+the title.
+Does someone has the simliar experience, or how I could find the error reason.
+I checked the agent log but could not find anything.
+Thanks,
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F127420%2Fe9609f7c7a47a0071eb5a46839fd1d7d%2FCleanShot%202024-08-07%20at%2018.35.592x.png?generation=1723081194659945&alt=media)
+
+
+## 1 Comment
+
+
+### [C R Suthikshn Kumar](/crsuthikshnkumar)
+you click on the play and browse through the questions and
+answers.![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F10147343%2Fe2b47ec3b5d06bf173f56fba9927345c%2Fepisodeplay.jpg?generation=1723132721516870&alt=media)

@@ -1,0 +1,178 @@
+[Chris Deotte](/cdeotte) · 311th in this Competition · Posted 2 days ago
+
+
+### Animation of Gold Medal Winners
+# Top 11 Gold Teams
+This is an animation of LB scores distribution of all teams during Kaggle's
+LLM 20 Question Competition's 2 week evaluation period with the final 11 Gold
+Medal winners highlighted. There were 835 teams and 3 types of solutions:
+`Full Agent Alpha`, `Half Agent Alpha`, and `Pure LLM` (i.e. no Agent Alpha).
+The `Full Agent Alphas` took all the Gold medal positions!
+![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Aug-2024/animation4.gif)
+The evaluation period was 2 weeks. During this time, every team played many
+episodes against other teams. After each episode, a team's LB Score was
+updated and a team's Sigma was decreased. (A win or loss lowered sigma while a
+tie did not affect sigma). Teams with the highest Sigma played about 24 games
+per day while teams with the lowest Sigma played about 1 game a day. The
+Sigmas created a confidence interval. Each team's true LB score was considered
+to be `True Score = LB Score plus/minus 2 times Sigma with 95% confidence`).
+# UPDATE 1: Kaggle Notebook Published
+I share the code to make this animation
+[here](https://www.kaggle.com/cdeotte/make-animation-of-winning-teams)
+(without sigma side right plots). Each frame of the animation is a plot from
+`matplotlib`. We save each plot to disk as an image file. Then we read them
+into a Python list and use `PIL` to create the GIF animation.
+# UPDATE 2: Observation with Sigma Added
+I added sigma over time to the animation. We can now see how the "sigma reset"
+(described
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/529606))
+on August 21st affected the Private LB. When we watch the animation above, we
+see how the `Full Agent Alphas` (top11 teams' scatter plots) stop moving
+around August 21st because their sigmas have become low after their initial
+gameplay.
+At this point, the `Full Agent Alpha` LB scores histogram is one bump. Their
+initial LB climb was the result of playing with all 835 Agents as partners
+(because everyone started at score 600). Agent Alphas got paired with both
+good and bad partners.
+Then there is a "sigma reset" (sigma reset to 200) and the good `Full Agent
+Alphas` (top11 teams) start playing many games again. This time they partner
+with other Agent Alphas (who share the same LB score) and jump upward a second
+time and split the `Full Agent Alpha` LB scores histogram into two bumps. The
+`Full Agent Alphas` in the right bump (top11 teams) occupy all the gold
+positions and leave a gap between their LB scores and the rest of the
+competition participants!
+(The Agent Alphas in the left bump are most likely teams that forked Agent
+Alpha notebook without changing the keyword list which contains only Public LB
+keywords. Because also on August 21st, the Public LB keywords were removed
+from Private LB (described
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/529606))
+so these Agent Alphas began losing matches.)
+# Top 50 Gold and Silver Teams
+Below lists the top50 teams and indicates which are `Full Agent Alpha`, `Half
+Agent Alpha`, and `Pure LLM`. The top11 gold teams are all `Full Agent Alpha`
+displayed in the animation above.
+Rank | Name | Init AgentAlpha | Accept AgentAlpha | Score | Sigma  
+---|---|---|---|---|---  
+1 | c-number | True | True | 1259 | 45  
+2 | Tricksy Hobbitses | True | True | 1232 | 45  
+3 | agent alpha | True | True | 1229 | 45  
+4 | Oxford Kaggle Club | True | True | 1169 | 45  
+5 | yukky_maru | Ture | True | 1159 | 45  
+6 | Rist bot | True | True | 1158 | 45  
+7 | Ilmari Vahteristo | True | True | 1153 | 45  
+8 | Jaja | True | True | 1144 | 45  
+9 | ISAKA Tsuyoshi | True | True | 1144 | 45  
+10 | Full Power Agent | True | True | 1140 | 45  
+11 | majimekun | True | True | 1140 | 45  
+12 | kambehmw | True | True | 1110 | 45  
+13 | Praying Agent 🧎🙏🏻 | True | True | 1100 | 45  
+14 | zzzz | True | True | 1085 | 45  
+15 | Benjamin Kovacs | True | True | 1045 | 45  
+16 | Junhua Yang | True | True | 1039 | 45  
+17 | YOLO | False | True | 1036 | 45  
+18 | Dmitry Leontyev | True | True | 1028 | 45  
+19 | Nagata | False | True | 1006 | 45  
+20 | KKY | True | True | 1006 | 45  
+21 | Joonas Maanonen | False | False | 1005 | 45  
+22 | Alpha agents are bullying me | False | True | 1005 | 45  
+23 | Neuron Engineer | False | True | 999 | 45  
+24 | LinChenyu | False | True | 987 | 45  
+25 | Pascal Pfeiffer | False | False | 980 | 45  
+26 | Azat Akhtyamov | False | True | 969 | 47  
+27 | sqrt4kaido | False | False | 957 | 48  
+28 | Vibhatsu | False | True | 952 | 45  
+29 | kek | False | True | 951 | 46  
+30 | Kazuo Watanabe | False | True | 949 | 45  
+31 | Jed | False | True | 947 | 46  
+32 | dynamic24 | False | True | 944 | 45  
+33 | 2️⃣0️⃣❓ 🤔 | False | True | 942 | 46  
+34 | tamura | False | False | 940 | 52  
+35 | Alex Glinsky | False | False | 936 | 48  
+36 | mhericks | False | False | 932 | 48  
+37 | Van Mason | False | True | 931 | 45  
+38 | Melinda | False | False | 929 | 48  
+39 | IC2 | False | True | 928 | 47  
+40 | ravi tanwar | False | True | 928 | 54  
+41 | Thomas | False | True | 928 | 53  
+42 | downheart | False | True | 923 | 45  
+43 | Kasahara | False | False | 919 | 45  
+44 | kaoutar | False | True | 919 | 53  
+45 | -SANTACLAWS- | False | False | 917 | 52  
+46 | Dawid Motyka | False | False | 914 | 52  
+47 | Data Dazzlers | False | True | 911 | 45  
+48 | techniquetwice | True | True | 910 | 45  
+49 | BK | False | False | 910 | 51  
+50 | Ioannis M | False | False | 909 | 52  
+  
+
+## 11 Comments
+
+
+### [Chris Deotte](/cdeotte)
+I believe we can see how the "sigma reset" (described
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/529606))
+on August 21st affected the Private LB. When we watch the animation above, we
+see how the `Full Agent Alphas` (top11 teams' scatter plots) stop moving
+around August 21st (because their sigmas have become low after their initial
+gameplay).
+At this point, the `Full Agent Alpha` histogram is one bump. Their initial LB
+climb was the result of playing with all 835 Agents as partners (because
+everyone started at score 600). They get paired with both good and bad
+partners.
+Then there is a "sigma reset" and the good `Full Agent Alphas` (top11 teams)
+start playing many games again. This time they partner with other Agent Alphas
+and jump upward a second time and split the `Full Agent Alpha` histogram into
+two bumps. The `Full Agent Alphas` in the right bump (top11 teams) occupy all
+the gold positions and leave a gap between their LB scores and the rest of the
+competition participants!
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Yeah, that’s a solid point. In the beginning, Agent Alphas often play with
+random people, so there’s only a small chance of encountering another Alpha
+and penalizing heavily for being not able to play with the others. The Sigma
+restart gave them a second chance to compete.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Amazing. Could you please post code you used to generate ? I would love to
+learn it :)
+
+
+### [Chris Deotte](/cdeotte)
+Congratuations winning Silver! Thanks for sharing your solution code. I share
+animation code [here](https://www.kaggle.com/cdeotte/make-animation-of-
+winning-teams)
+
+
+### [raconion](/raconion)
+Great animation! Always enjoy reading your posts & comments People like you
+make Kaggle a better place 👍
+
+
+### [C R Suthikshn Kumar](/crsuthikshnkumar)
+Thanks for sharing nice animation. This makes the competition very interesting
+indeed.
+
+
+### [Tanishk Patil](/tanishkpatil)
+Good Work!
+
+
+### [KKY](/evilpsycho42)
+well done, Director Chris! 😄
+
+
+### [Maiernator](/maiernator)
+Cool animation, would also be nice for model/data drift.
+
+
+### [JK-Piece](/jeannkouagou)
+Great analysis!
+
+
+### [Chris Deotte](/cdeotte)
+UPDATE: I added the sigma of each of the top11 gold medal winners to the
+animation. The sigma bars from top to bottom correspond to the scatter plot
+dots from top to bottom. On August 21st, we can observe the "sigma reset" when
+all bots had their sigmas reset to 200 by Kaggle.

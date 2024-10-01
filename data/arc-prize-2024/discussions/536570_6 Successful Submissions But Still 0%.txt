@@ -1,0 +1,64 @@
+[JK-Piece](/jeannkouagou) · 1060th in this Competition · Posted 2 days ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### 6 Successful Submissions But Still 0%
+  * I am starting to get frustrated with ARC
+  * Spent days developing the ultimate architecture combining CNNs and RNNs
+  * Training works well
+  * I used active inference to train on examples available for each hidden test task before the actual prediction
+  * Training on examples also works well, but then when I submit it shows 0%
+Each grid in my submission is a Python list. Do you think I am submitting in a
+wrong format or is the evaluation metric just not respecting my efforts?
+comment
+
+
+## 5 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up1
+  * format_quote
+  * link
+Here are a few ARC like datasets, maybe there are some puzzles your model has
+never seen before.  
+<https://github.com/neoneye/arc-dataset-collection>
+The datasets can be inspected here:  
+<https://neoneye.github.io/arc/?dataset=ARC>
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for the links
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up0
+  * format_quote
+  * link
+What is your validation accuracy?
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up0
+  * format_quote
+  * link
+Roughly 1% on the given validation set
+
+
+### [Ivan Martin Valle](/ivanmartinvalle)
+arrow_drop_up0
+  * format_quote
+  * link
+If you submit in the wrong format, you will get an error message about the
+format being incorrect (although no specifics). I do wish there were a public
+"free" answer to alleviate formatting suspicions.
+Are you pre-training the model on the public training set, and then evaluating
+with the public training set? What happens when you run your model against he
+public evaluation set without ever training on it?

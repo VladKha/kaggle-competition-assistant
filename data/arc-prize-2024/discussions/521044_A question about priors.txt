@@ -1,0 +1,72 @@
+[KirkDCO](/kirkdco) · Posted 2 months ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### A question about priors
+In "On the Measure of Intelligence", Chollet describes the priors assumed by
+ARC, specifically:
+  * Objectness (object cohesion, object persistence)
+  * Goal directedness
+  * Numbers and counting
+  * Basic geometry and topology (lines, rectangular shapes, symmetries, shape upscaling/downscaling, containing/being contained, drawing lines, connecting points, orthogonal projections, copying
+It is also stated, "ARC seeks to control for its own assumptions by explicitly
+listing the priors it assumes, and by avoiding reliance on any information
+that isn't part of these priors…"
+This is probably a very silly question, but does this then mean that the
+challenge is really search in program synthesis?
+My interpretation is that given these priors, any puzzle can be solved using
+these prior or compositions of them. No new "prior" (meta-prior? secondary
+prior? derived prior?) will be needed. Or am I being too literal?
+comment
+
+
+## 2 Comments
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up2
+  * format_quote
+  * link
+You are fuzzily correct. The problem is that even though Chollet says
+…"explicitly listing the priors it assumes…" they are not precise definitions.
+Translating "…this core knowledge system captures notions of…" into
+mathematical formulas seems to be the crux of the problem. And so, all of the
+publicly described methods for solving ARC are effectively searches for
+programs in a DSL. Some people have suggested using NNs to guide the search.
+Generally people assume that you want the shortest program. The design of the
+DSL is critically important here. For example, I can write a problem that
+solves all the examples as:
+    
+    
+    if image == example_input[0] then answer=example_output[0]
+    else if image == example_input[1] then answer=example_output[1]
+    else if image == example_input[2] then answer=example_output[2]
+    
+    
+    content_copy
+But does terribly when it encounters the test_input. I need my search
+algorithm to realize that this is a "bad" program.
+You would like a (possible) output program to be more like
+    
+    
+    if .... move each object vertically by object.height
+    
+    
+    content_copy
+This is where objectness priors come in.
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up2
+  * format_quote
+  * link
+Ah, interesting.
+"Precisely defined" brings it home for me. I had obviously considered the
+noted priors as more than just notions and concepts. Then it's really a
+combination of finding the right set of atomic functions plus the right
+heuristic to navigate the search space.

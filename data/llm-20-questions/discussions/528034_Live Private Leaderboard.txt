@@ -1,0 +1,17 @@
+[Vitaly Kudelya](/vitalykudelya) · 199th in this Competition · Posted 18 days
+
+### Live Private Leaderboard
+Is it planned to publish intermediate private leaderboard state?
+
+
+## 2 Comments
+
+
+### [dynamic24](/dynamic24)
+They're still working on setting up the test phase. You should be able to see
+all of the games once the test phase starts:
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/527853>
+
+
+### [loh-maa](/lohmaa)
+On the way! ,)

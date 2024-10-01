@@ -1,0 +1,45 @@
+[Quickpanda](/quickpanda) · 511th in this Competition · Posted 25 days ago
+
+
+### is the keywords.py in current dataset used in public leadboard?
+I notice that in the data tab
+(<https://www.kaggle.com/competitions/llm-20-questions/data>) keywords.py
+still contain the following three category
+country  
+city  
+landmark
+But based on
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/523198> the
+current keywords should only contain "the things"
+Could you please let me know if the current public leadboard keywords is the
+same as the one in data tab? or is there any way to have the current public
+leadboard keyword?
+P.S. I know for the final eval, the keywords is not accessiable. I just would
+like to have a look at the current public keywords, if possible.
+Thanks!
+
+
+## 4 Comments
+
+
+### [waechter](/waechter)
+The current public leadboard keywords is not the same as the one in data tab.
+To see the current keywords list you can use
+<https://www.kaggle.com/code/waechter/llm-20-questions-games-
+dataset/output?select=keywords.csv>
+
+
+### [Quickpanda](/quickpanda)
+cool, thanks!
+
+
+### [JavaZero](/jimmyisme1)
+So the public lb is now pointless? (Because someone might provide keywords to
+LLM to get a higher score?)
+
+
+### [filtered](/huanligong)
+You can check this: <https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/keywords.py>  
+But it's strange that there are some current public leadboard keywords that
+aren't in here, which probably is a bug

@@ -1,0 +1,33 @@
+[Shreyansh Murathia](/shreyanshmurathia) · 979th in this Competition · Posted
+3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Regarding models
+Dear organizer, is it necessary to use AI based models? Can we use simple
+python based algorithms instead and win the prize?
+comment
+
+
+## 2 Comments
+
+
+### [Aryan Garg](/aryangarg01)
+arrow_drop_up1
+  * format_quote
+  * link
+Usually, you would end up in a combinatorial explosion but sure why not?
+Anything that works at the human-level would be disruptive! Good luck 😊
+
+
+### [Nick Sarris](/misfyre)
+arrow_drop_up0
+  * format_quote
+  * link
+It's not necessary at all, the point of this competition is to explore
+alternative methods to AGI besides LLMs. I imagine you should be able to
+approach the problem however you want.

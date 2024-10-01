@@ -1,0 +1,32 @@
+[G R Shanker Sai](/grshankersai) · 128th in this Competition · Posted 3 months
+
+### Not able to submit
+Hi ,  
+I am new to kaggle, I am unable to submit my code, when i run this command
+nothing happens,  
+can someone help me on this?  
+thanks
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5718755%2F5650ae19bd8cee1fb89b155de428a102%2FScreenshot%20from%202024-06-12%2016-56-57.png?generation=1718191704822251&alt=media)
+
+
+## 2 Comments
+
+
+### [loh-maa](/lohmaa)
+You need to add "LLM 20 Questions" competition to your notebook (via the pane
+on the right "add input") and a new option will appear to submit your
+compressed solution, but before make sure everything works and you have added
+all dependencies. Check out the starter notebook.
+
+
+### [G R Shanker Sai](/grshankersai)
+Hi ,  
+Thank you for your response,  
+Just was curious if there is a road map on how i can tackle the problem, any
+strategy which i can research on and try to follow? As I am new to this field,
+I am a bit confused.
+> You need to add "LLM 20 Questions" competition to your notebook (via the
+> pane on the right "add input") and a new option will appear to submit your
+> compressed solution, but before make sure everything works and you have
+> added all dependencies. Check out the starter notebook.

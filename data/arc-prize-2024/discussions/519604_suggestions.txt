@@ -1,0 +1,82 @@
+[andy jennings](/ajenningsfrankston) · Posted 3 months ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### suggestions
+As in most things, the easy problems are easy, and the hard one’s very hard.
+I’m confident the graph approach will get 20-30% of cases. But I think the
+remaining problems fail because the DSL is not comprehensive enough. DSL has
+to be able to describe any mapping. I am exploring program synthesis based on
+the paper Crossbeam: learning to search. [why share ideas? We all benefit.
+OpenAI(sic) has slowed progress towards AGI by 5 years plus by being
+secretive]
+comment
+
+
+## 3 Comments
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up4
+  * format_quote
+  * link
+<https://github.com/google-research/crossbeam>
+CrossBeam: Learning to Search in Bottom-Up Program Synthesis. To tame the
+search space blowup, we propose training a neural model to learn a hands-on
+search policy for bottom-up synthesis, instead of relying on a combinatorial
+search algorithm. Our approach, called CrossBeam, uses the neural model to
+choose how to combine previously-explored programs into new programs, taking
+into account the search history and partial program executions. Motivated by
+work in structured prediction on learning to search, CrossBeam is trained on-
+policy using data extracted from its own bottom-up searches on training tasks.
+We observe that CrossBeam learns to search efficiently, exploring much smaller
+portions of the program space compared to the state-of-the-art.
+
+
+### [Shaurya Madukuri](/shauryamadukuri)
+arrow_drop_up0
+  * format_quote
+  * link
+where you feel current DSL lacks behind and not capable enough?
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up0
+  * format_quote
+  * link
+I am still investigating. It is very hard to imagine all the possible
+mappings, and this is a suspicion. Using the exhaustive search methods of
+ARC2020 (<https://github.com/top-quarks/ARC-solution>) we can establish
+whether the DSL is missing some mappings, or whether it just takes too long to
+find the program.
+
+
+### [Michael Hodel](/michaelhodel)
+arrow_drop_up2
+  * format_quote
+  * link
+no. <https://en.wikipedia.org/wiki/Halting_problem>
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+There's a great scene in the movie "Hidden Figures," something like we've
+probably all experienced. They're trying to determine the math for breaking
+out of orbit for spashdown (I think) and they work for hours… days… At one
+point someone (Jim Parsons?) says, "Maybe this is just new math that no one
+has discovered." To which Taraji P Henson's character, says, "No… Maybe it's
+just very old math… Maybe it's Euler's Totient."  
+It's a classic illustration of "searching" and "failing to come up with
+something quickly." Everyone in that room knew about Euler's Totient. So the
+"program" was available to all of them. They were all trying to figure it out,
+so they all were doing some kind of applied search algorithm… I just don't
+think (and yeah, it's contrary to what everyone else thinks, today) that any
+kind of "search" algorithm will eventually be used in AI. I think it will be
+something more organic than search.

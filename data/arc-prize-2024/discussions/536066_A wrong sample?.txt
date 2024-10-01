@@ -1,0 +1,98 @@
+[CPMP](/cpmpml) · Posted 4 days ago
+arrow_drop_up18
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### A wrong sample?
+Maybe this was discussed already, let me know if that's the case.
+I believe that train input and output are swapped in the second pair of
+d2acf2cb, see below. What do you think?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F75976%2Fc8b971791477fb35130b2a92da5c13d4%2Fimage.png?generation=1727292479766692&alt=media)
+comment
+
+
+## 7 Comments
+
+
+### [Rahul Bhatiasta](/rahulbhatiasta)
+arrow_drop_up1
+  * format_quote
+  * link
+Can you find what in need to look like?
+
+
+### [Pavel Orlov](/sapr3s)
+arrow_drop_up2
+  * format_quote
+  * link
+A common mistake. Previously, they found a few and fixed them.
+([1](https://www.kaggle.com/competitions/arc-prize-2024/discussion/512962),
+[2](https://www.kaggle.com/competitions/arc-prize-2024/discussion/513114))
+This one must have been overlooked.
+
+
+### [CPMP](/cpmpml)
+arrow_drop_up0
+  * format_quote
+  * link
+Who is "they" and where are the previous fixes?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+"They" are probably the 23 contributors to <https://github.com/fchollet/ARC-
+AGI> , which is where you can find all previous fixes. MMMV.
+
+
+### [Pavel Orlov](/sapr3s)
+arrow_drop_up0
+  * format_quote
+  * link
+It was partially answered above, but I meant the organizers of the competition
+(in point 2), one of whom is François Chollet -
+[@fchollet](https://www.kaggle.com/fchollet) .
+> We have recently updated the "training" data and "evaluation" files used in
+> the competition with minor fixes for evaluations tasks 20818e16, 9def23fe,
+> 05a7bcf2, 310f3251, 4852f2fa, 79fb03f4, c35c1b4c, e6de6e8f, as well as
+> training tasks b230c067 and 9edfc990
+
+
+### [Man of the year](/manwithaflower)
+arrow_drop_up5
+  * format_quote
+  * link
+My personal assumption is that it's a symmetric transformation and it goes
+both ways.
+
+
+### [Markus.JM](/maiernator)
+arrow_drop_up4
+  * format_quote
+  * link
+Then why only one example, seems odd. But you are right totally possible.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Also… usually the "odd man out" is the third, and the test (which would
+parallel the misfit) is the fourth. This task would break with that. That is
+one stylish avatar, btw. :-)
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up4
+  * format_quote
+  * link
+Hi, [@fchollet](https://www.kaggle.com/fchollet)
+[@gregkamradt](https://www.kaggle.com/gregkamradt) is this intentional or an
+error?  
+<https://arcprize.org/play?task=d2acf2cb>

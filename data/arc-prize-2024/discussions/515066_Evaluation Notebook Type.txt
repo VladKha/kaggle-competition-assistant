@@ -1,0 +1,24 @@
+[Jacob Hansen](/jacobhansenwithml) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Evaluation Notebook Type
+Can we pay for better GPUs during evaluation? E.g. A6000 or A100? If so, how?
+comment
+
+
+## 1 Comment
+
+
+### [chris](/chris62)
+arrow_drop_up0
+  * format_quote
+  * link
+Not during evaluation, no; everyone has access to the same GPU pool.
+You can do all the training you want on your own though! Then just upload your
+models for evaluation time as a dataset.

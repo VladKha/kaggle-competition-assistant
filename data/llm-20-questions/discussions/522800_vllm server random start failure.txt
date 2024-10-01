@@ -1,0 +1,29 @@
+[padeof](/jiangm) · 170th in this Competition · Posted a month ago
+
+### vllm server random start failure
+Anyone be able to run vllm directly by using the LLM class?  
+Tried to fix this
+"/kaggle_simulations/agent/srvlib/vllm/_C.cpython-310-x86_64-linux-gnu.so:
+undefined symbol" error for a week but no luck…  
+Running vllm as a server suffers from random start failures also.  
+Debugging a notebook submission is so hard 🤣
+
+
+## 3 Comments
+
+
+### [padeof](/jiangm)
+still suffer from this issue in private lb😂 and boost some random lucky guys
+around lb 850.
+
+
+### [Chris Deotte](/cdeotte)
+Here is a code example using vLLM on Kaggle. Even though vLLM is installed, we
+need to pip upgrade and change some files to make it work on Kaggle.
+<https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm>
+
+
+### [padeof](/jiangm)
+Thank you! I have read your post. However, this method does not work at
+submission time. Looks like the torch module is loaded before any change made
+to sys path in agent script. Thus the binary of vllm and torch do not match

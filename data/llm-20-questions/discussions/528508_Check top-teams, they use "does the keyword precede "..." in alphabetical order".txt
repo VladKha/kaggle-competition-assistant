@@ -1,0 +1,75 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 16 days ago
+
+
+### Check top-teams, they use "does the keyword precede "..." in alphabetical
+order"
+  * As I already pointed out in the Update keywords discussion, questions like "does the keyword precede… in alphabetical order" are way too effective. I believe agents that ask such questions will win the competition. Such questions almost always lead to the secret keyword, check out top teams!
+
+
+## 9 Comments
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+This is best strategy.(Binary search)
+
+
+### [JK-Piece](/jeannkouagou)
+It really is. I regret I didn't merge it to my own approach
+
+
+### [JK-Piece](/jeannkouagou)
+Even few-shot examples with such questions to the LLM would do it.
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+I ended up not competing but does that mean I was right from the beginning?
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/503429>
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1577135%2Fb850b960618e20e2e5eb179938fc4822%2Fmaxresdefault.jpg?generation=1724214906825941&alt=media)
+
+
+### [loh-maa](/lohmaa)
+[@suicaokhoailang](https://www.kaggle.com/suicaokhoailang) If I may add, yup,
+that's almost the winning basis, what is missing is just a simple method for
+bisection, e.g. the alphabetical order.. actually I saw your post some time
+after I came up with this idea..
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+Literally me ![](https://www.googleapis.com/download/storage/v1/b/kaggle-
+forum-message-
+attachments/o/inbox%2F1577135%2F5caaa398aad91d73dc99c2d9aaf535ee%2F1000005137.jpg?generation=1724227817810152&alt=media)
+
+
+### [Aravind S](/aravind36)
+Alphabet bisection (agent alpha) is proving to be a highly effective strategy.
+Combining it with an LLM as a hybrid has higher chances of winning games. Both
+of our finetuned-LLM agents lost against Agent alpha, with those agents giving
+good search guesses.
+
+
+### [JK-Piece](/jeannkouagou)
+It is crazy, insanely effective
+
+
+### [Dawid Motyka](/dawidmt)
+There's a longer discussion about it here
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/527853#2960293>
+
+
+### [loh-maa](/lohmaa)
+> It would be great if Kaggle could require that everyone add a comment when
+> trying to downvote a post. It seems that some people have fun in pressing
+> the downvote button.
+[@jeannkouagou](https://www.kaggle.com/jeannkouagou) I also can't explain why
+does it work that way, that only "novice" voters are invisible. It's also
+difficult to explain why novice accounts would engage in downvoting in the
+first place, sometimes even with a great dedication, almost as if those were
+double accounts of some really engaged players trying to depreciate others.
+Certainly these are only my speculations. If you'd like to press on this
+matter, I think the right place is the general forum, although it's not easy
+to receive proper attention there.
+
+
+### [JK-Piece](/jeannkouagou)
+Thanks for your reply

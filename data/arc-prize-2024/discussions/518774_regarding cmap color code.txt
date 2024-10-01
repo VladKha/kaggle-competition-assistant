@@ -1,0 +1,41 @@
+[love automn](/loveautomn) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### regarding cmap color code
+Does anyone know what the code below comes from? (i.e. #0074D9, #FF4136)
+CMAP = colors.ListedColormap(  
+['#000000', '#0074D9','#FF4136','#2ECC40','#FFDC00',  
+'#AAAAAA', '#F012BE', '#FF851B', '#7FDBFF', '#870C25'])
+comment
+
+
+## 2 Comments
+
+
+### [Lyrialtus](/lyrialtus)
+arrow_drop_up1
+  * format_quote
+  * link
+The colors come from [apps/css/common.css](https://github.com/fchollet/ARC-
+AGI/blob/master/apps/css/common.css) of the ARC-AGI repository (from the
+[initial commit](https://github.com/fchollet/ARC-
+AGI/commit/0cad7868a53e7a64d667ba828a71c01064414bab#diff-c38718ef20d0c160e8aa0f336689f99daa82283f7e91b1580e34c45b187dfb18)
+back in 2019-11-05). I assume that François Chollet just adopted the
+[clrs.cc](https://clrs.cc/) palette. The codes and color names match pretty
+well, with two exceptions: #7FDBFF is called teal instead of aqua, and #870C25
+(brown) comes from somewhere else.
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up0
+  * format_quote
+  * link
+The approximate colors are:  
+black, blue, red, green, yellow,  
+grey, pink, orange, cyan, brown

@@ -1,0 +1,42 @@
+[monoxgas](/nicklanders) · 360th in this Competition · Posted 3 months ago
+
+
+### Bug: Answerer is not provided the keyword in the first round
+This should be confirmed by the authors, but I'm fairly confident the answerer
+agent is not being passed the keyword in it's observation the first time it's
+used.
+You can somewhat guess this by inspecting the replay logs, which show the
+answerer agents being active with empty keyword/category values on step 2.
+Also, agents frequently seem to "hallucinate" easy questions at the first
+round. This issue would be covered up by the fact that the fstring in the
+starter notebook simply accesses the obs.keyword prop blindly, which is an
+empty string.
+I also added test code to our submission to raise an error if this situation
+ever occurs, and it does trigger the exception during validation:
+    
+    
+    def answer(base: rg.PendingChat, observation: Observation) -> t.Literal["yes", "no"]:
+        if not observation.keyword:
+            print("Keyword wasn't provided to answerer", file=sys.stderr)
+            raise Exception("Keyword wasn't provided to answerer")
+    
+    
+    content_copy
+**Exception Thrown**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F11286265%2Fb2ed39a45f00e19890b0ec39a9af004e%2Fimage%20\(5\).png?generation=1716340473607412&alt=media)
+**Answerer is passed the first question:**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F11286265%2F4a37587312b00d27966d2e9aeb668e34%2FScreenshot%202024-05-21%20190834.png?generation=1716340180474701&alt=media)
+**It selected 'yes' without a keyword available**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F11286265%2F45edacf7c85e3b5c25d7b8f175b6f60c%2FScreenshot%202024-05-21%20190959.png?generation=1716340340787134&alt=media)
+
+
+## 1 Comment
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+I'll take a look at this, thanks for reporting!

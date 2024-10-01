@@ -1,0 +1,71 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 2 months ago
+
+
+### Can we reset the entire leaderboard?
+Currently, the leaderboard is clogged up by old (and great) location-only
+models that will slowly move down. However, this will also affect other models
+that have adjusted to the changes. As of right now, it is much harder to
+compare scores because of all of the half-keyword models. Is it possible to
+return scores to 600 or is this not possible to achieve for the competition
+hosts? [@bovard](https://www.kaggle.com/bovard)
+
+
+## 6 Comments
+
+
+### [loh-maa](/lohmaa)
+The current LB is not very meaningful, but in my opinion resetting would not
+make it better, or fix anything.
+I believe our hosts are watching closely and will adjust the ranking algorithm
+to ensure convergence in the final stage, which doesn't seem to be very robust
+at the moment. One particular issue appears to be a "pit of dumbness" down
+there around 600 and below (no offense to any cute agents always saying
+"yes"), and it's difficult to get out of there even if your agent is
+relatively smart (e.g. it can play reasonably against itself.)
+Let's understand the reluctance of the hosts to react, regarding any issue.
+Any intervention or unexpected change works against reliability and trust, and
+is potentially disrespectful to someone's effort already made, so the
+justification must be rock solid.
+
+
+### [RS Turley](/rturley)
+I agree with you: the "pit of dumbness" is a big challenge. It is relatively
+difficult to win games when you are paired with a partner in the 600-range.
+The solution to that may fall on us, as a community of competitors, to get
+more intelligent bots in the competition!
+That said, I really appreciate that a new submission gets a dozen or more
+matches during their first day, so there is a reasonable chance to escape that
+pit of dumbness with just one win.
+
+
+### [OminousDude](/max1mum)
+I have been stuck in this "pit" for my last 7 submissions. I doubt my model is
+the problem since it works very well against itself in validation but I hate
+the only yes/no bots.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Thanks for bringing this up! To address this we are adding some "random"
+episodes where agents will be matched with anyone from the leaderboard.
+Initially this should be about 10% of the total games, and we will adjust as
+needed. This should allow agents an opportunity to play with higher rated
+opponents enough to break the deadlock.
+EDIT: looks like there is a bug with this functionality. It is currently
+disabled until we can get that fixed.
+
+
+### [DJ Sterling](/dster)
+Kaggle Staff
+This change should be rolled out now.
+
+
+### [Melinda](/melindaweathers)
+Nice! Previously my three very similar agents had vastly different scores
+(different by 200 points), but over the last few days they have converged to
+nearly the same score, so this change seems to be making a difference!
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I second this request.

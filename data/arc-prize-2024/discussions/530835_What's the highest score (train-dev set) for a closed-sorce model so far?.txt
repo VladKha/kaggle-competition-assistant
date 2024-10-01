@@ -1,0 +1,35 @@
+[KKY](/evilpsycho42) · Posted a month ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What's the highest score (train/dev set) for a closed-sorce model so far?
+Hi champions, I wonder what the highest score (train/dev set) for a closed-
+sorce model is so far.
+comment
+
+
+## 2 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up2
+  * format_quote
+  * link
+<https://arcprize.org/leaderboard>
+The `ARC-AGI 2024 HIGH SCORES` are all running offline. The best is solving 46
+of the 100 hidden tasks. These are closed source.
+The `ARC-AGI-PUB 2024 HIGH SCORES` are allowed to access the internet. The
+`Ryan Greenblatt` entry is open source and invokes OpenAI, which is closed
+source.
+
+
+### [KKY](/evilpsycho42)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for the details!

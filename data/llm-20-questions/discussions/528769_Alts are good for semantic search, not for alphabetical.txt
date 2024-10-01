@@ -1,0 +1,60 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 15 days ago
+
+
+### Alts are good for semantic search, not for alphabetical
+I was expecting the unexpected and that's why one of my agents is not alpha.
+But what could go wrong for alpha?
+Communication channel distortion? Even an extra space in front, a single
+letter swap could break alpha search completely. Although this would involve
+changing the evaluation code on purpose, which would be highly controversial.
+Another thing that I thought might be applied would be alts. More alts,
+especially alts with different spelling, starting with a different letter
+would give LLMs advantage. In natural settings, when someone guesses "computer
+screen" it counts just as "monitor". Actually ChatGPT gives many more:
+    
+    
+    Here are some synonyms and alternative terms for "computer screen":
+    
+    Monitor
+    Display
+    Visual display unit (VDU)
+    Screen
+    LCD (Liquid Crystal Display)
+    LED (Light Emitting Diode) display
+    Computer display
+    Display screen
+    Computer monitor
+    Visual monitor
+    
+    
+    content_copy
+Maybe not all are on spot, but putting them to alts would give a huge boost to
+semantic search, while alpha would be forced to search for just the main
+keyword.
+I have a specific example of this from my agent, which didn't play alpha in
+this episode (even though this particular question is about the first letter
+it was mainly a semantic search):
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F5affa16909b7a7224df15108cc304115%2FScreenshot_2024-08-17_13-43-15.png?generation=1723878127028762&alt=media)
+So I think it's a missed opportunity that alts were not used to boost semantic
+search, after all I doubt anybody wanted to see such a domination.
+
+
+## 2 Comments
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+I had quite similar when word was dvd collection and my bot was hummering
+around cd collection 😅
+
+
+### [Bhanu Prakash M](/bhanupm)
+Welp for one thing I'd say alts are not reliable/thorough enough, because we
+could approach the same semantic search from multiple angles and can only hope
+there would be an alt to catch what the guesser is trying to guess.
+For example look at the instance shown
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/528200)
+.  
+Finally I'd like to add that although alts favor semantic search, it still is
+not reliable enough compared to the binary search (given you have the keyword
+beforehand). But still, you bring up a good point.

@@ -1,0 +1,35 @@
+[Etienne Kaiser (郑翊天）](/etiennekaiser) · 419th in this Competition · Posted 2
+
+### Understanding train and test calendar files
+Good evening,
+I joined the competition today, and while looking at the data, I wonder what
+the purpose of the `test_calendar` file is. If you deduct the rows that are
+exactly the same as those in the `test` file, then I don't see its value
+except for knowing when a holiday occurred additionally.
+This leads me to my second question, which is even more important to me. As
+there are only 33 rows out of 13K rows marked with the value `1` in the
+`warehouse_limited` column of the `train_calendar` dataset, what does the
+additional data mean? Also, if you deduct the rows that are the same between
+`train` and `train_calendar`, you are left with almost all `warehouse_limited`
+values as `0`. Does it mean that the additional data is really either special
+events or Sundays that lead to order values being `NaN` because there were no
+`orders`? Or was it just not recorded?
+My current understanding is, that all values additionally from the
+`train_calendar` file distinct to `train`, is data that indicates a
+"shutdown".
+If someone can let me know how to nterpret this data, that would be awesome!
+:)
+
+
+## 1 Comment
+
+
+### [Akindu Himan](/akinduhiman)
+The `train_calendar` file includes holiday information for certain warehouses,
+some of which are not present in the `train` file due to zero orders on those
+days. There are two types of holidays: those where orders are present and
+those where orders are not.  
+This is what I understood.
+I have merged these two datasets into a single dataset. You can view it in my
+[notebook](https://www.kaggle.com/code/akinduhiman/data-visualization-in-
+cleaned-and-ensembled-data)

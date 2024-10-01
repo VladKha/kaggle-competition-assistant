@@ -1,0 +1,25 @@
+[Joost Dekker](/joostdekker) · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Can i pre-train outside of the submission
+This is my first ever kaggle competition, mostly participating just to try it
+out. I am wondering what the exact rules are for submissions, I see that the
+run time is limited to 12 hours. Does this include training? In other words
+would I be allowed to train and save the weights in an input file?
+comment
+
+
+## 1 Comment
+
+
+### [bert vdb](/brtvandenbroeck)
+arrow_drop_up0
+  * format_quote
+  * link
+You are allowed to use pretrained models. The 12h limit is just for creating a
+submission.

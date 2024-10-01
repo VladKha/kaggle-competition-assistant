@@ -1,0 +1,68 @@
+[Martin Kolar](/pi2caefeithoh0ciephe) · 544th in this Competition · Posted 18
+days ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Submission time notebook error with GPU
+Hi, I'm new here, and any help would be greatly appreciated.
+I'm using llama 3.1 8b-instruct as a baseline on the ARC challenge. My setup
+is:
+  * notebook with dual T4 GPUs
+  * llama 3.1 8b instruct [from the model file](https://www.kaggle.com/models/metaresearch/llama-3.1)
+  * simple reading, prompting, and writing to submission.json
+The code runs fine when I'm testing and committing, the submission.json file
+is produced. But when I "Submit Prediction", after a few minutes I get:  
+**Notebook Threw Exception**
+The code is essentially just:
+    
+    
+    model_id = "/kaggle/input/llama-3.1/transformers/8b-instruct/2"
+    
+    pipeline = transformers.pipeline(
+        "text-generation",
+        model=model_id,
+        model_kwargs={"torch_dtype": torch.bfloat16},
+        device_map="auto",
+    )
+    
+    test_challenges_path = '../input/arc-prize-2024/arc-agi_test_challenges.json'
+    with open(test_challenges_path) as fp:
+        test_challenges = json.load(fp)
+    
+    for key, task in tqdm.tqdm(test_challenges.items()):        
+        try:
+            messages = [ #these are different in my code, so that the output is a python list of lists
+                {"role": "system", "content": "you are ARC solver"},
+                {"role": "user", "content": f"solve ARC problem {task}"},
+            ]
+    
+            outputs = pipeline(messages, max_new_tokens=256)
+            prediction1 = eval(outputs[0]["generated_text"][-1]) #this produces a list of lists
+        except:
+            prediction1 = []
+    
+        submission[key] = [{'attempt_1': prediction1, 'attempt_2': prediction1}]
+    
+    with open('submission.json', 'w') as fp:
+        json.dump(submission, fp)
+    
+    
+    content_copy
+Any help on how to debug or resolve this would be much appreciated.
+For example, do you know what GPU the Submission is running on?
+comment
+
+
+## 1 Comment
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+arrow_drop_up0
+  * format_quote
+  * link
+Did you solve this problem?

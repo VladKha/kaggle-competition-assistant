@@ -1,0 +1,53 @@
+[Quickpanda](/quickpanda) · 545th in this Competition · Posted a month ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Is there any llm cutoff date for this competition?
+Do we have any llm that can not be used in this competition?  
+For AIMO, they setup the cut off date for the llm that we can use. do we have
+the limit on this competition?
+comment
+
+
+## 3 Comments
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up1
+  * format_quote
+  * link
+No, there is not. Use any model you want.
+
+
+### [ShawnZ](/autollm)
+arrow_drop_up0
+  * format_quote
+  * link
+No, and I don't think cutoff date make any sense for a task abstract enough
+like ARC as long as the private test set is not leaked.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Do you think that the AIMO LLM cutoff date relates to the amount of internet
+data relating to the IMO or even the AIMO, itself? It feels like there is some
+risk of ARC "answers" flooding the internet, as well. I know that there is a
+principle, here, but one has to consider… If the chatter level of things like
+"here are some PRIORS to WIN ARC-AGI." becomes abundant enough, LLMs will have
+their "Cliffs Notes" for ARC, as well. Perhaps a cutoff date might be
+appropriate. I just watched the South Park Episode "Deep Learning" (probably
+from 2019, knowing those guys). I swear the kid who enters the boys' room
+while they are making their secret homework-cheating plans reminds me of
+Lecun. Of course that's insulting, because all of those characters are so
+grotesquely drawn… But I felt a sort of "insider pride" in imagining why they
+spent so long on that part of one scene. I mean, it's a minute of silence
+while the kid goes to the bathroom, washes his hands, throws the paper towel
+away, and then stares right into the camera for like 2 or 3 seconds before
+leaving. Besides, it's middle school and this kid had a 5-o'clock shadow!

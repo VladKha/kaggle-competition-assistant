@@ -1,0 +1,45 @@
+[bobdobbob](/bobdobbob) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What is the highest scoring code which is public and uses a DSL with some
+kind of search with it?
+What is the highest scoring code which is public and uses a DSL with some kind
+of search with it?
+comment
+
+
+## 3 Comments
+
+
+### [Andrew](/andrewrrose)
+arrow_drop_up1
+  * format_quote
+  * link
+Simply go to the [Code tab](https://www.kaggle.com/competitions/arc-
+prize-2024/code) and [sort by Public
+Score](https://www.kaggle.com/competitions/arc-
+prize-2024/code?competitionId=67357&sortBy=scoreDescending&excludeNonAccessedDatasources=true).
+Currently, all the top ones are DSL-based.
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up0
+  * format_quote
+  * link
+You might want to read the 1st place solution from the 2020 competition, you
+can also find the C++ program if you look around.
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up0
+  * format_quote
+  * link
+I believe it is this one:  
+<https://www.kaggle.com/code/mehrankazeminia/3-arc24-developed-2020-winning-
+solutions>

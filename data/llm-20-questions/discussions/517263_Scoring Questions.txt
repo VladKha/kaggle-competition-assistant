@@ -1,0 +1,46 @@
+[CchristoC](/cchristoc) · 184th in this Competition · Posted 2 months ago
+
+### Scoring Questions
+How does this Err, 1st, 3rd things in the [] besides the name in the scoring
+results work?  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6417321%2F4211b593a11c82f75a3b4a57b38761d0%2F1000117949.jpg?generation=1720196929895401&alt=media)  
+On one of my agents, Err gives -184 and -95
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6417321%2F9ed75df36953c14f66d6ee178d0310fc%2F1000118020.jpg?generation=1720200558034700&alt=media)  
+This one [3rd] can give -118, then another [Err] gives -118
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6417321%2F18b823eee1072486742d3655e5fb01df%2F1000118005.jpg?generation=1720196939960533&alt=media)  
+While in this match it can give just -5
+And what do they mean?
+Agent log for the Err one:  
+`[[{"duration": 44.487901, "stdout": "", "stderr": "\rLoading checkpoint shards: 0%| | 0/4 [00:00<?, ?it/s]\rLoading checkpoint shards: 25%|##5 | 1/4 [00:01<00:05, 1.72s/it]\rLoading checkpoint shards: 50%|##### | 2/4 [00:03<00:03, 1.69s/it]\rLoading checkpoint shards: 75%|#######5 | 3/4 [00:09<00:03, 3.58s/it]\rLoading checkpoint shards: 100%|##########| 4/4 [00:09<00:00, 2.33s/it]\n"}], [{"duration": 13.157402, "stdout": "", "stderr": ""}], [{"duration": 16.281109, "stdout": "", "stderr": ""}], [{"duration": 12.956681, "stdout": "", "stderr": ""}], [{"duration": 16.44063, "stdout": "", "stderr": ""}], [{"duration": 13.028765, "stdout": "", "stderr": ""}], [{"duration": 16.632452, "stdout": "", "stderr": ""}], [{"duration": 13.089482, "stdout": "", "stderr": ""}], [{"duration": 17.155518, "stdout": "", "stderr": ""}], [{"duration": 13.45727, "stdout": "", "stderr": ""}], [{"duration": 17.283259, "stdout": "", "stderr": ""}], [{"duration": 13.368639, "stdout": "", "stderr": ""}], [{"duration": 17.24138, "stdout": "", "stderr": ""}], [{"duration": 13.452842, "stdout": "", "stderr": ""}], [{"duration": 17.626067, "stdout": "", "stderr": ""}], [{"duration": 13.794647, "stdout": "", "stderr": ""}], [{"duration": 17.637258, "stdout": "", "stderr": ""}], [{"duration": 13.83658, "stdout": "", "stderr": ""}], [{"duration": 17.712688, "stdout": "", "stderr": ""}], [{"duration": 13.759209, "stdout": "", "stderr": ""}], [{"duration": 18.127925, "stdout": "", "stderr": ""}], [{"duration": 13.800963, "stdout": "", "stderr": ""}], [{"duration": 18.1417, "stdout": "", "stderr": ""}], [{"duration": 14.120216, "stdout": "", "stderr": ""}], [{"duration": 18.17651, "stdout": "", "stderr": ""}], [{"duration": 14.179938, "stdout": "", "stderr": ""}], [{"duration": 18.513849, "stdout": "", "stderr": ""}], [{"duration": 14.198519, "stdout": "", "stderr": ""}], [{"duration": 18.581085, "stdout": "", "stderr": ""}], [{"duration": 14.242732, "stdout": "", "stderr": ""}], [{"duration": 18.963667, "stdout": "", "stderr": ""}], [{"duration": 14.60338, "stdout": "", "stderr": ""}], [{"duration": 19.000409, "stdout": "", "stderr": ""}], [{"duration": 14.624762, "stdout": "", "stderr": ""}], [{"duration": 19.019398, "stdout": "", "stderr": ""}], [{"duration": 14.982776, "stdout": "", "stderr": ""}], [{"duration": 19.442042, "stdout": "", "stderr": ""}], [{"duration": 15.000276, "stdout": "", "stderr": ""}], [{"duration": 9.141473, "stdout": "", "stderr": "Traceback (most recent call last):\n File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 159, in act\n action = self.agent(*args)\n File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 130, in callable_agent\n agent(*args) \\\n File \"/kaggle_simulations/agent/main.py\", line 193, in agent\n response = robot.on(mode = \"asking\", obs = obs)\n File \"/kaggle_simulations/agent/main.py\", line 47, in on\n output = self.asker(obs)\n File \"/kaggle_simulations/agent/main.py\", line 141, in asker\n output = generate_answer(chat_template)\n File \"/kaggle_simulations/agent/main.py\", line 28, in generate_answer\n out_ids = model.generate(**inp_ids,max_new_tokens=15).squeeze()\n File \"/opt/conda/lib/python3.10/site-packages/torch/utils/_contextlib.py\", line 115, in decorate_context\n return func(*args, **kwargs)\n File \"/opt/conda/lib/python3.10/site-packages/transformers/generation/utils.py\", line 1758, in generate\n result = self._sample(\n File \"/opt/"}]]`
+
+
+## 4 Comments
+
+
+### [Araik Tamazian](/atamazian)
+"Err" means that your code threw an exception during the game.
+
+
+### [Krens](/jickymen)
+I also encountered the same Err, have you solved it?
+
+
+### [CchristoC](/cchristoc)
+Check your agent logs, if its not timeout, and the agent gets an Err midgame
+(can do some successful turns beforehand) then its probably an out of memory
+issue. (If your teammate's agent give lengthy prompts then its probably true,
+either shorten your own prompt or truncate their prompt if too long, or other
+solutions like using smaller models)
+
+
+### [Krens](/jickymen)
+Thank you, I think it should be an out of memory issue. Because my Err agent
+is always the answerer, and I added historical information to the prompts,
+which are too long.
+
+
+### [CchristoC](/cchristoc)
+Turns out 3rd means the losing group

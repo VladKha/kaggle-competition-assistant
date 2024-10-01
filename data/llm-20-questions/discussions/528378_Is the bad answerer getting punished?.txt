@@ -1,0 +1,73 @@
+[Puneet Khandelwal3476](/puneetkhandelwal3476) · 404th in this Competition ·
+
+### Is the bad answerer getting punished?
+I've observed that many answerers provide incorrect answers to simple
+questions about the keyword. This leads to the opposing team's asker/guesser
+being unable to guess the keyword correctly. Unfortunately, this behavior is
+incentivized since the opponent team is prevented from winning, and the team
+with the poor answerer doesn't receive a negative score. I would request the
+organizers that whenever a guesser successfully guesses the correct word, the
+answerer paired with the guesser should receive a positive score instead of
+the current negative score. This change would encourage teams to focus on
+improving their answerers, in addition to their askers and guessers.
+
+
+## 3 Comments
+
+
+### [Raki](/raki21)
+I'm not sure I understand you right. Can you explain how it would be in the
+incentive of the answerer to not always do their best? If they answer badly,
+most times they won't lose points because the guess rate is so low, but in the
+end they will still lose some games and would basically never win games, so
+there's still a clear advantage in answering as well as possible.
+
+
+### [Puneet Khandelwal3476](/puneetkhandelwal3476)
+Hi [@raki21](https://www.kaggle.com/raki21),  
+For example, consider two teams playing the game, Team A and Team B. Team A
+has a bad answerer, while Team B has a good answerer. Both teams have equally
+good askers and guessers. In this scenario, Team A is less likely to lose
+because their bad answerer makes it difficult for Team B to guess the correct
+word. Conversely, Team B's good answerer makes it more likely that Team A's
+asker/guesser will guess the correct keyword. As a result, the team with a
+good answerer (Team B) is more likely to lose and receive a negative score,
+while the team with a bad answerer (Team A) will get a positive score.  
+Thus, submitting a good guesser/asker and a bad answerer is less likely to
+result in a negative score in any round, leading to a tie or a win. I am
+unsure how having a good answerer provides an advantage. Please correct me if
+I am wrong because if I am correct then decreasing the score of good answerer
+does not make sense.
+
+
+### [Raki](/raki21)
+But the matches aren't between team x answerer and y asker vs y answerer and x
+asker. It's completely randomized like team x + y vs team a + b. So your
+answerer and asker can basically be treated as completely independent and your
+agent score will be your average answerer and asker/guesser score
+
+
+### [Puneet Khandelwal3476](/puneetkhandelwal3476)
+I understand that in each round, there are four agents: x, y, a, and b. Two
+will randomly become answerers, and two will become askers. Each asker will be
+paired with an answerer to make a team. However, I am struggling to see how a
+bad answerer is penalized in this setup. It seems that having a bad answerer
+will not cause your team to lose if you are the answerer. The only time your
+team can lose is if the other agent on your team is the answerer and they are
+good. Therefore, if someone submits a bad answerer, how are they being
+punished in this system?
+
+
+### [torino](/pnmanh2123)
+Assume we do that. How do you evaluate good/bad answerer? Then how will you
+ensure all eval are fair with 100% acc? Also, changing any rules at this point
+would raise many ethical questions.
+
+
+### [Puneet Khandelwal3476](/puneetkhandelwal3476)
+We can increase the score of the answerer when the opponent's guesser is able
+to guess the keyword correctly. As the guesser can only be correct if the
+answerer has all/most questions correctly. However, in the competition, the
+answerer is given a negative score when the opponent's guesser is able to
+guess the keyword, which makes less sense. However, I agree that changing the
+rules at this point won't be fair.

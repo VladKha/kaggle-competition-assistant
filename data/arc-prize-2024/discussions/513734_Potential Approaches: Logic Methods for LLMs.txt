@@ -1,0 +1,24 @@
+[wwiji](/deepsadness) · 208th in this Competition · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Potential Approaches: Logic Methods for LLMs
+Can the Approach of LLMs + X (Reinforcement Learning, Optimization, Prompting
+Methods for LLMs) Be Effective?
+comment
+
+
+## 2 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * format_quote
+  * link
+We also encourage you to go head over to #approaches in the discord and see
+what others think!
+https://discord .gg/9b77dPAmcA

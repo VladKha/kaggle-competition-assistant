@@ -1,0 +1,43 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 24 days ago
+
+### Suggestions for future LLM 20 Questions competitions
+Dear Hosts and Kaggle, thanks for this interesting competition. It has been
+observed that some agents ask **wrong questions** or provide **wrong answers**
+, see for example this post:
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/519297>.
+Example wrong questions are: "Are seeds a part of fruits? Can butterflies
+fly?", and example wrong answers are: "What is the answer? What is your next
+question?". These mostly result in failures independently of the skills of
+teammate agents. Consequently, in the future, it might help to
+  * integrate components that can measure the quality of answers provided or questions asked by agents, e.g., decrease the scores of agents whenever they "ask out of context" (out of game) questions or provide answers that can never be part of the game (e.g., "what is your next question?"),
+  * decrease the frequency at which such agents play, e.g., once per week,
+  * temporarily disable submissions for users submitting such agents, e.g., cannot submit within the next 3 days.
+This will give the opportunity to best-performing agents to play against each
+other, and help push the boundaries of 20 Questions games
+# Kaggle #Host #LLM 20 Questions
+
+
+## 3 Comments
+
+
+### [loh-maa](/lohmaa)
+> For those who downgraded this post, please comment on what you do not like
+> and maybe suggest something else.
+Hi, although I haven't voted, I can say why I agree with downvoters. "Wrong"
+questions or "wrong" guesses are already accounted by the reward. That's all
+that is necessary to encourage efficient play. No special components trying to
+detect unusual responses are necessary, no police officers banning solutions
+for a week or disabling your account for misbehavior. I was very sorry to read
+such suggestions. No doubt I would stay far away if such a competition was
+ever going to take place.
+
+
+### [JK-Piece](/jeannkouagou)
+Hi, thanks for your reply. By the way, I haven't suggested "banning people
+from the competition", but giving them time (3 days was an estimate, it could
+be less too) to build better solutions
+
+
+### [JK-Piece](/jeannkouagou)
+For those who downgraded this post, please comment on what you do not like and
+maybe suggest something else.

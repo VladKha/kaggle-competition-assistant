@@ -1,0 +1,57 @@
+[BOOBA](/youneseloiarm) · 210th in this Competition · Posted 3 months ago
+
+
+### Leaking Public Leaderboard to Leaking Private Leaderboard
+Whenever I join a Kaggle competition, I constantly grapple with the dilemma of
+choosing between a model that overfits the Public Leaderboard or one that
+generalizes well but does not score as high on the Public Leaderboard. I've
+observed that in many Kaggle competitions, the winners often have models that
+overfit the Public Leaderboard, which doesn't make sense, especially in time-
+series forecasting problems.
+In this competition, I hope there will be no leakage between the Public
+Leaderboard and the Private Leaderboard. I suggest that the organizers use a
+sample size of the training set on the Public Leaderboard to penalize any
+attempts at exploiting this leakage. This approach would encourage
+participants to focus on building models that generalize well, rather than
+merely performing well on the Public Leaderboard.
+I apologize if this topic is not of interest to you.
+
+
+## 3 Comments
+
+
+### [Adam Logman](/adamlogman)
+good point so , that is why I think you have to focus on your cv because in
+any forecasting challenge , simple models are always win.
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+[@youneseloiarm](https://www.kaggle.com/youneseloiarm) the data is so small
+that margin for error is also very small. Perhaps a complex approach may not
+work here as well.
+
+
+### [BOOBA](/youneseloiarm)
+I tested all Public Notebook models that have on Public Leaderboard MAPE<
+0.045 on an unseen dataset spanning the last three months. I found that all of
+them were overfitted. Their real score for the last three months showed a MAPE
+greater than 0.17. This indicates that it wouldn't make sense for any of these
+models to score highly on the Private Leaderboard. A high score in this case
+would not reflect the model's quality, but rather the leakage between the
+Public and Private Leaderboards.
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+The split between the public and private leaderboard will determine this as
+well. I am yet to start here but have the below inferences from my preliminary
+work-
+  1. The public leaderboard has entries from all locations
+  2. The public leaderboard is **not the first 30%** of the dates in the test set
+  3. The public leaderboard is **not the last 30%** of the dates in the test set
+Hence, I am sure the public and private leaderboards are split
+unconventionally. I infer from the experiment that I cannot trust the
+leaderboard at all.
+As the data is very small and we have very limited features as well, we have
+to rely on a small and simple approach and a lot of luck. I am sure many
+models will overfit and fall off the perch
+[@youneseloiarm](https://www.kaggle.com/youneseloiarm)

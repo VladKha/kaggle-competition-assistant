@@ -1,0 +1,38 @@
+[Ali](/asalhi) · 21st in this Competition · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Can’t generate same score in rerun
+I’ve noticed recently that my score ( of re-runs) is scoring lower (much
+lower)  
+For example my 26.5 score notebook is now scoring 20 ( rerun).
+Anyone with same problem? I don’t see a reason for random or unstable output
+in my code.
+comment
+
+
+## 2 Comments
+
+
+### [fchollet](/fchollet)
+arrow_drop_up1
+  * format_quote
+  * link
+The only thing that changed were the task IDs (which contain no information
+wrt the task whatsoever). Make sure that your script does not depend on task
+IDs.
+
+
+### [Ali](/asalhi)
+arrow_drop_up0
+  * format_quote
+  * link
+Hmm I don’t think that the IDs will cause a problem.
+The validation subs are the same for the original and the re-run.
+I will debug and see.
+Thanks 🙏

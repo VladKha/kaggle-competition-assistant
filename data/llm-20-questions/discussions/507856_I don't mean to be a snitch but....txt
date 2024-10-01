@@ -1,0 +1,22 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+
+### I don't mean to be a snitch but...
+I was looking through the leaderboard and there are 2 of these accounts. Isn't
+this against kaggle
+rules?![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F8531166%2F29d6c17011378515ffd5996ea66c23fe%2FScreenshot%20from%202024-05-27%2010-26-53.png?generation=1716820041001409&alt=media)
+
+
+## 2 Comments
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+Kaggle will take care of cases that violate compliance rules at the end of the
+competition. The final leaderboard will be sanitized and then prizes will be
+distributed [@max1mum](https://www.kaggle.com/max1mum)
+
+
+### [OminousDude](/max1mum)
+Thank you!

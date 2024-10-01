@@ -1,0 +1,170 @@
+[Ravi Ramakrishnan](/ravi20076) · 87th in this Competition · Posted 4 months
+arrow_drop_up96
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Kaggle references for onboarding
+Hello all,
+Wishing you the best for the current episode of the ARC challenge. Please find
+a few references from across Kaggle for your perusal-
+
+### Kernels
+  1. <https://www.kaggle.com/code/arsenynerinovsky/cellular-automata-as-a-language-for-reasoning>
+  2. <https://www.kaggle.com/code/boliu0/visualizing-all-task-pairs-with-gridlines>
+  3. <https://www.kaggle.com/code/tarunpaparaju/arc-competition-eda-pytorch-cnn>
+  4. <https://www.kaggle.com/code/zenol42/dsl-and-genetic-algorithm-applied-to-arc>
+  5. <https://www.kaggle.com/code/nagiss/manual-coding-for-the-first-10-tasks>
+  6. <https://www.kaggle.com/code/teddykoker/training-cellular-automata-part-ii-learning-tasks>
+  7. <https://www.kaggle.com/code/meaninglesslives/using-decision-trees-for-arc>
+  8. <https://www.kaggle.com/code/davidbnn92/task-tagging>
+  9. <https://www.kaggle.com/code/yakuben/basic-cnn-approach>
+
+### High scoring approaches from the previous ARC competition
+  1. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154597> \-- rank1
+  2. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154391> \-- rank2
+  3. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154409> \-- rank3
+  4. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154377> \-- rank5
+  5. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154323> \-- rank6
+  6. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154300> \-- rank8
+  7. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154319> \-- rank9
+  8. <https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge/discussion/154294> \-- rank10
+I shall add more contents to the list shortly.
+Wishing you all the best for the challenge and happy learning!
+[Artificial Intelligence](/discussions?tags=12101-Artificial+Intelligence)
+comment
+
+
+## 20 Comments
+
+
+### [Ms. Nancy Al Aswad](/nancyalaswad90)
+arrow_drop_up1
+  * format_quote
+  * link
+[@ravi20076](https://www.kaggle.com/ravi20076) useful and informative
+
+
+### [aimind](/aimind)
+arrow_drop_up1
+  * format_quote
+  * link
+The most promising way：​Relational decomposition for program synthesis
+arxiv.2408.12212
+
+
+### [Robert J. Regalado](/rojre1979)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you so much for sharing; it’s been incredibly helpful and has made a
+significant difference. I really appreciate your support!
+
+
+### [Vineet Kukreti](/vineetkukreti)
+arrow_drop_up1
+  * format_quote
+  * link
+wooow asm , this helped me .. , this was searching for a lot
+
+
+### [Ryan Mutiga](/ryanmutiga)
+arrow_drop_up2
+  * format_quote
+  * link
+Thank you so much for this it is very helpful as a baseline to build off of.
+
+
+### [neoneye](/neoneye)
+arrow_drop_up12
+  * format_quote
+  * link
+<https://github.com/neoneye/arc-notes/tree/main/awesome>
+
+
+### [Sammartino Daniel](/sammartinodaniel)
+arrow_drop_up3
+  * format_quote
+  * link
+I love Kaggle😍
+
+
+### [SuM](/cuboorandell)
+arrow_drop_up2
+  * format_quote
+  * link
+Very detail instruction, thank you for sharing, it is very useful for
+beginers😃
+
+
+### [Achraf Ait Hammou](/achrafaithammou)
+arrow_drop_up2
+  * format_quote
+  * link
+[@ravi20076](https://www.kaggle.com/ravi20076) Thank you for the introduction.
+As a beginner to Kaggle it is a useful list of references.
+
+
+### [Muhammed Tausif](/muhammedtausif)
+arrow_drop_up2
+  * format_quote
+  * link
+[@ravi20076](https://www.kaggle.com/ravi20076) very useful and informative,
+incredible effort.
+
+
+### [Jinho](/blackbun)
+arrow_drop_up1
+  * reply
+Thank you so much for sharing!
+
+
+### [Pranav Belhekar](/pranavbelhekar)
+arrow_drop_up2
+  * reply
+Thanks for sharing!
+
+
+### [Linh Phạm Gia](/linhphmgia)
+arrow_drop_up2
+  * reply
+Thank you for sharing
+
+
+### [Shwetha R_07](/shwethar07)
+arrow_drop_up3
+  * reply
+Thank you for sharing
+
+
+### [Metin Meki Abullrahman](/metinmekiabullrahman)
+arrow_drop_up3
+  * reply
+Thank You for sharing
+
+
+### [Chitranjan Singh](/chitranjansingh)
+arrow_drop_up2
+  * reply
+this is a great help , thanks a lot!
+
+
+### [Angela](/usamimeri)
+arrow_drop_up2
+  * reply
+That's helpful, thank you.
+
+
+### [every5374987](/every5374987)
+arrow_drop_up2
+  * reply
+Thank you kaggle😘
+
+
+### [Mubashir Ahmed Siddiqui](/mubashirsidiki)
+arrow_drop_up2
+  * reply
+thank you for sharing [@ravi20076](https://www.kaggle.com/ravi20076)

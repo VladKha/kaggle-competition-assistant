@@ -1,0 +1,26 @@
+[Daniel Mittelman](/danielmittelman) · 555th in this Competition · Posted 24
+days ago
+
+### What is obs and cfg
+I get that it's the observation and configuration but where can we see what
+attributes they actually have?
+
+
+## 2 Comments
+
+
+### [Neuron Engineer](/ratthachat)
+You can try offline game e.g. see the end of this notebook  
+<https://www.kaggle.com/code/kasafumi/llm20q-qwen2-7b-it>
+Then, you can print to see what's inside the Observation class
+
+
+### [Ilmari Vahteristo](/ilmarivahteristo)
+That's a good question tbh, I think the specifications aren't great and a lot
+is just left for the user to find/ask on their own.  
+I've used this template (from <https://www.kaggle.com/code/khahuras/offline-
+policy-questioner-agent):>  
+`class Observation(BaseModel): step: int role: t.Literal["guesser",
+"answerer"] turnType: t.Literal["ask", "answer", "guess"] keyword: str
+category: str questions: list[str] answers: list[str] guesses: list[str]
+remainingOverageTime: float`

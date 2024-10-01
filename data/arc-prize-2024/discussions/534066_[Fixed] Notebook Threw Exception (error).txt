@@ -1,0 +1,87 @@
+[touch me, midas](/fulgrimthe) · 18th in this Competition · Posted 16 days ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+
+### [Fixed] Notebook Threw Exception (error)
+"Your notebook hit an unhandled error while rerunning your code. Note that the
+hidden dataset can be larger/smaller/different than the public dataset See
+more debugging tips"
+I get this message everytime when i trying to submit my notebook code. My
+notebook successfully ran, but but after the scoring, an error is issued.  
+Any help on how to debug or resolve this would be much appreciated.  
+What should I do to make the code work correctly?
+[submission.json](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2988999/21187/submission.json)
+comment
+
+
+## 2 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+The submission.json is basically the json file for the public test sets.  
+TIL:  
+Probably what happens behind the scenes is that they first run your code
+against the public dataset. This is probably one of the things that you do to
+prepare - run against public 'test.json'. They probably run your code against
+the public dataset for two reasons - it will undoubtedly be faster than
+running against the hidden dataset, and it will be a much quicker turn-around
+to catch things like syntax errors in your code. If your code runs through the
+public dataset w/o failing, then it is run against the hidden dataset. This is
+what is meant by "scoring". The two actually start at the same time. That is
+why you see **two** "Active Events." Scoring takes longer (often a LOT longer)
+because the problems are harder AND your code has really never seen them
+before. So your code needs to work harder and longer to finish.
+Note that 'hidden dataset' and 'public dataset' feature heavily in your error
+message.
+This means your code ran ("Successful"), meaning it functioned without syntax
+errors. But the "scoring" part failed. Remember, that is your same code,
+probably running on a separate VM against the hidden dataset. You will find
+that getting meaningful information about why it failed is difficult. Perhaps
+you should look at "more debugging tips." I never have, but I think I will
+start. The reason that debugging is difficult is to prevent information leaks
+that would lead to (what they refer to in the biz as) **_side channel
+attacks_** on the hidden dataset. It's worth a million dollars (give or take)
+so they really do need to be cautious about such vermin.
+
+
+### [touch me, midas](/fulgrimthe)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for the answer, but there is no hidden test dataset in the competition,
+all test dataset is available, so your answer will not help me much~
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F21233106%2F4e4d02020d0f3f2534c7b41eb2659d53%2FScreenshot%20from%202024-09-15%2012-41-43.png?generation=1726418850653822&alt=media)  
+Nome Sayn?
+
+
+### [touch me, midas](/fulgrimthe)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you, everything worked out for me, I just got the result, I'm sitting
+happy  
+(I've been struggling with this error for 2 weeks …)
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Well done, then! Always a great feeling to beat a persistent bug!

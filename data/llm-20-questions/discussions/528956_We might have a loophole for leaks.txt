@@ -1,0 +1,102 @@
+[raconion](/raconion) · 10th in this Competition · Posted 14 days ago
+
+
+### We might have a loophole for leaks
+As discussed in previous posts, the internet will be off during private test
+phase. While this might give people an impression of impeccable data security,
+there are actually ways to circumvent if the host did not set up the
+environment very carefully. Here are my thoughts, please feel free to correct
+me in the comments because I am not 100% sure.
+# What is it?
+Since we submit files (agent weights, env packages, potential keyword list
+etc) to Kaggle environment and then these agents will be run by the host. If
+these python executables have **write** access to somewhere in the file
+system, then these agents could save the correctly guessed keywords (from
+answerer & asker) somewhere. Since the runtime of this competition is long,
+keywords reappearance is not impossible (**assuming hosts just do a random
+sampling**). This offline keyword saving strategy will give people who use it
+unfair advantage.
+# Assumptions for the leaks to be possible
+Since I just came up with this idea, I don't have means to verify two
+assumptions above:
+  1. agent executables have write access to somewhere of the file system
+  2. Host did not use deduplication strategies to avoid the reuse of keywords
+However, if this is possible then we may very well assumed that someone
+already knew it and have used it. Thus a thorough check will be necessary.
+# How can we catch this behavior?
+  1. Scan through python files for code snippets related to write (not 100% reliable)
+  2. Check if some agent executables have unexpected write behaviors: writing to places in the disk not to stdout or stderr
+
+
+## 6 Comments
+
+
+### [torino](/pnmanh2123)
+In all the non-internet competitions I have seen so far, the user has full
+write and read access to the system, but I am unsure if the system is reset
+after each round. To visualize:
+Bot A is stored in folder A on disk in the cluster. I do not know how Kaggle
+makes bots compete with each other, and the following is just hypothetical.
+
+### Game 1
+  * bot A plays against itself via notebook during the first round.  
+-> game_output = env.run(agents=[agentA, agentA, agentA, agentA])  
+-> violation: bot A saves keyword to folderA/hack.txt
+  * Then the notebook is restarted. We see through the agent log that the model loading time in the first match is quite long, from match 2 the model is reloaded quite quickly, proving that the notebook is restarted
+
+### Game 2
+  * model loading ~ 3-5s proves that bot A's notebook is still maintained
+  * bot A tries to access folder A/hack.txt if it is available.
+
+### Conclusion:
+If the bot has write access(I think it will have) and folder A is not frozen
+(it does not return to the original state every time the notebook is
+restarted), the violation can occur completely.  
+Sorry for my bad English.
+
+
+### [Andrew Tratz](/jademonk)
+This occurred to me as well. Thought about testing whether filesystem state is
+preserved across runs or not but never got around to it. However I think it
+would be a rule violation to use prior state as input, since this should be
+considered ingress of data external to the submission and environment.
+
+
+### [torino](/pnmanh2123)
+That is clear violation, but as Raki say the advantage is small compared to
+the trade off of finding the cheater. I'm still waiting for the host to give
+an answer about the duplicate keywords and game restart before dealing with
+anything else.
+
+
+### [Raki](/raki21)
+I think the point you make is valid, but since the competition runs so few
+rounds it would matter only to a very small degree. I'm pretty sure there are
+1000+ keywords and our agents only ran ~25 rounds so far. I know some teams
+have run 40 but even then, till competition end noone is probably even seeing
+10% of keywords. The average advantage in this case would maybe be a 5%
+keyword hit. If normally you would have 50% of keywords known the advantage
+would be 2.5%. Because you are asker only 50% of the games the actual
+advantage would be 1.25%. I think the tradeoff wouldn't be worth it for a
+potential cheater (though many might have expected there to be more rounds
+played in the test phase, so I'm not that sure).
+
+
+### [raconion](/raconion)
+You are right that the degree of damage should be small but I don't know how
+their organize their files if multiple agents can write/read same files then
+we might have a bigger issue lol
+Anyways, it will be good if organizers can shed some light on this topic as
+well as other important topics people raised in the past couple days.
+
+
+### [loh-maa](/lohmaa)
+Submissions were supposed to have no possibility to save data and reuse it
+between games. I don't know if that's actually guaranteed, but that's what our
+hosts had announced.
+
+
+### [raconion](/raconion)
+You are right about not letting agent executables to save data but at this
+point I just cannot persuade myself to believe that everything is being taken
+care of that well…

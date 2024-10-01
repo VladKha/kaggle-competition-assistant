@@ -1,0 +1,237 @@
+[moth](/alejopaullier) · Posted 4 months ago
+arrow_drop_up79
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### How to tackle this competition
+
+### Introduction
+In this competition your challenge is to find the underlying pattern between
+**very few** examples of input colored grids to predict an output colored
+grid.
+You are encouraged to play the game [here](https://arcprize.org/) and there is
+a very good Youtube video explaining the competition
+[here](https://www.youtube.com/watch?v=LLxiPrIxdqs)
+
+### How to tackle this competition
+One way to tackle this competition is to define many axiomatic/basic
+transformations which, applied in the correct sequence, can transform the
+input into the output.
+For example, let's call all the possible universe of this
+transformations/functions
+ℤ=𝑧1,𝑧2,…,𝑧𝑛Z=z1,z2,…,zn
+These transformations, for example, can be: resize, reshape, convolution,
+mask, rotate, translate, sum, subtract, etc.
+And a model **M** that know how to apply the right sequence of
+transformations.
+Then the problem can be broke down into training a model to learn how to find
+the best set of transformations that can turn the input into the output. A
+viable alternative is just to find it by brute force:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3197853%2Fd347fd8d4f7cd8a89e37e240a95341ef%2FScreenshot%202024-06-12%20at%2009.45.41.png?generation=1718196448871381&alt=media)
+
+### Example
+Let's see this with an example! The following is puzzle id `0692e18c`, you can
+play it in the link [here](https://arcprize.org/play):
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3197853%2F54e2daa32c3d5c766d5a8fada8d7af27%2FScreenshot%202024-06-12%20at%2009.51.18.png?generation=1718197109474725&alt=media)
+Did you find the pattern? If you think of colors as numbers and black as 0 you
+can break it up into some basic transformations **z** :
+  1. **z1:** Resize the input grid from 3x3 to 9x9 **(resize)**
+  2. **z2:** Subtract a kernel which is equal to the input shape, similar to convolutions **(convolution)**
+  3. **z3:** Ignore all positions which are not in the mask of step 1 **(mask)**
+That's it! So in this example, we found some **basic transformations Z** that
+applied in the right order lead input **I** to output **O**.
+Where is model **M** here? Well, model M could either be:
+  1. A machine learning model that given some metadata from input I can predict the best sequence of transformations.
+  2. Apply brute force to find a sequence of transformations that satisfy all the input examples.
+Solution:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3197853%2Fda945698b036e2953a30d9529f1caeaa%2FScreenshot%202024-06-12%20at%2010.04.19.png?generation=1718197535874008&alt=media)
+This is one basic way to tackle the problem, I bet there are many more and I
+am eager to know how this competition unfolds!
+comment
+
+
+## 13 Comments
+
+
+### [Serhii Hrynko](/elvenmonk)
+arrow_drop_up6
+  * format_quote
+  * link
+Honestly, it is a little ambitious to call current ARC database a solid way to
+measure general intelligence. I would say it heavily exploits human ability to
+identify and categorize visual features. Feature recognition, classification
+and prioritization constitutes about 90% of solution process. Actual reasoning
+side of it is, I would say, represented at only remaining 10%.
+Now, if we agree, that feature extraction does not necessarily require any
+intelligence and can be efficiently done with traditional programming, I can
+see how pretty good results can be achieved in these tasks even before any
+real general intelligence technique came into existance.
+E.g. in provided example, as soon as your algorithm/model is able to "see"
+that output contains larger version of input, where every pixel is replaced by
+inverted version of same input.. As soon as this observable knowledge is
+transformed into text, there isn't much else here to convert any new input
+into correct output.  
+Given with such text formulation of the task, for a lot of the tasks, there
+exists pretty simple program that transforms any given input into correct
+output. Even current LLMs would be capable of writing such a program from an
+input propmt.
+We can continue as much as we want to call process of transformation from
+visual input to a text description of that input a "tought process" or
+"general intelligence" or whatever else. Reality is that there is nothing
+magical or unsolvable in being able to analyze pictures and carefully write
+down information that is already there.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up-1
+  * format_quote
+  * link
+ARC-AGI is an amazing leap forward (just like the Turing Test was, back when…
+Oh yeah! Back before anyone could afford to _own_ a computer!). It has its
+shortcomings, but what great thing doesn't?! I will say this: if Alan Turing
+was around today to see the state of the art in Natural Language Processing,
+he would probably offer a pretty scathing critique. I'd flip a coin as to the
+"intelligence" of the program that Aces this ARC-AGI competition. But the goal
+is worthy and the test has held its own (in the age where EVERYONE can afford
+a supercomputer. I just saw a laptop with a graphics card with 104 tensor
+cores for $899). And a laptop with 64 tensor cores for $479! That's less than
+$8 per tensor core, with a laptop thrown in!
+
+
+### [Kamil Horvat](/khorvat)
+arrow_drop_up4
+  * format_quote
+  * link
+I've got a gut's feeling that current LLMs are not very well suited to tackle
+with this kind of tasks.
+
+
+### [Serhii Hrynko](/elvenmonk)
+arrow_drop_up1
+  * format_quote
+  * link
+A lot can be done in pure algorithmic way or with minimal/occasional ML usage
+(such as CNN for feature detection)
+I think, it is crucial not to brute-force any possible combinations of
+transformations, but instead collect as much relevant information as possible
+from comparing output of the train samples to the input (programmatically of
+course) in order to limit number of combinations that your algorithm will try.
+Simplest would be to consider grid sizes.  
+If you can not guess solution size from training input and output grid sizes
+alone, there is a good chance some feature cropping, counting or assembling is
+going on.
+Then you can:
+  * try to predict solution background and foreground colors
+  * determine if input or output has any split lines or grid structure (solid color lines going through the entire grid in both horizontal and vertical direction often at the same intervals and of the same thickness)
+Further, you can try to detect any individual features - paying special
+attention to ones present in both input and output, especially kinds that are
+found consistently across all training samples.  
+Examples are:
+  * solid color features - shapes/figures, either of specific size or not having same color around them either in the input grid or output grid
+  * rectangular features - either just 4 corners or corners with 2 opposite sides or all 4 sides
+Of course, some "hard" puzzles contain some unique abstract reasoning (and not
+just combination of common transformations applied on features that can be
+reasonably guessed by comparing input to output), but those are very few.
+
+
+### [Ern711](/ern711)
+arrow_drop_up5
+  * format_quote
+  * link
+Nice summary.
+This is just my wild speculation (without having any extensive knowledge) so
+take it with a grain of salt…
+I don't think this problem will be solved (in the sense of correctly answering
+the majority of problems) in this competition.
+Sure, one could use algorithmic brute force approaches, but they are probably
+not feasible (to solve the majority of problems) due to the vast number of
+possible problem constructions.
+Similarly, treating it as an image recognition problem will probably fail as
+well.
+If one could combine LLMs with other modules (i.e., some hybrid approach), I
+think this might perform better, but I don't think this will be achieved here
+on Kaggle.
+And lastly, another wild speculation: Perhaps sometime in the future, one
+could try having a huge network learn the brain activity patterns that occur
+in humans during abstract reasoning, and then use that as well. But there are
+probably significant challenges with this approach too.
+Nonetheless, interesting comeptition.
+
+
+### [Matt S.](/msthil)
+arrow_drop_up3
+  * format_quote
+  * link
+Nice mini-summary. The example you gave is a perfect instance of one that
+seems so simple, yet when you broke it down, easy to see how an ML algorithm
+would have a hard time learning a pattern like that.
+Hopefully, we'll get some wild ideas out of this competition.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * format_quote
+  * link
+Thanks for sharing the extra information and linking out to more resources
+
+
+### [SuM](/cuboorandell)
+arrow_drop_up-1
+  * format_quote
+  * link
+Very useful introduction for this competiton, it gives vital advice for
+handling the task, thank you for sharing😃
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+relation representation is important， The most promising way：​Relational
+decomposition for program synthesis arxiv.2408.12212；
+
+
+### [kheder yazgi](/khederyazgi)
+arrow_drop_up0
+  * format_quote
+  * link
+Hello [@moth](https://www.kaggle.com/moth),
+I found what you wrote very interesting and it simplifies the way we can
+understand the problem. I was wondering, according to your description, if the
+input is mapped to the output after applying a sequence of transformations. Do
+you think the order of transformations is important? Because, at first glance,
+it seems that whenever there is a resizing, we can apply it first.
+Thanks!
+
+
+### [Akila AnandKumar](/akilaanandkumar)
+arrow_drop_up0
+  * format_quote
+  * link
+Really good explanation. Got a good perspective of the competition. Thanks.
+
+
+### [Serhii Hrynko](/elvenmonk)
+arrow_drop_up0
+  * format_quote
+  * link
+Until some currently not existing ML architecture is found that is capable of
+solving these or similar AGI tasks, I believe ensambles of specialized solvers
+will continue to prevail in this kind of competitions.
+Main point, each solver does not have to be able to solve any task, instead,
+focus on solving very specific problems and add more solvers as you go.
+
+
+### [Sardor Abdirayimov](/sardorabdirayimov)
+arrow_drop_up0
+  * format_quote
+  * link
+Good abstraction of transformation,
+[@alejopaullier](https://www.kaggle.com/alejopaullier)!

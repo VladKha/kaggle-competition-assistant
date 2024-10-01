@@ -1,0 +1,326 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 17 days ago
+
+
+### The ranking algorithm, explanations welcome
+I don't know how the algorithm works exactly, but something looks weird here.
+This is a record of episode `55731652`, one of the early games, but definitely
+after the restart. I'm pasting a screenshot because code formatting is weird:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Ffd10e031d57ae56a4980eb3b939f5762%2FScreenshot_2024-08-15_22-51-29.png?generation=1723737250301186&alt=media)
+Data comes from meta-kaggle `EpisodeAgents.csv`. Is anyone able to explain the
+discrepancy in the UpdatedConfidence? I can see other records which similarly
+are difficult to explain. Here is the [replay of the
+episode](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55731652).
+
+
+## 20 Comments
+
+
+### [loh-maa](/lohmaa)
+This is what I suspected, but the magnitude is crazy. How many games do you
+think some players played on Aug 19? Like I was saying, it depends on how many
+resolved games they have, and the less they have, the more they play because
+the algorithm wants to rank them. Basically most of the resources go into
+those games. The most played agent on Aug 19 was submission 38447501, 162
+games in 24 hours. Unless there's a bug in my analysis, but I can't find it.
+++ And it finally got resolved by the end of the day, reward 15 as an
+answerer, congrats!
+++ What is also striking is how imbalanced the selection is, some players play
+waaay more often than the mean of their group.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Fc682544d606ac6f206fc6f3c9dc86bd8%2Fgames_resolved_vs_played-b.png?generation=1724164655301763&alt=media)
+
+
+### [Andrew Tratz](/jademonk)
+That's crazy!
+
+
+### [namnguyen](/manh152924)
+In top 20, each agent only have ~2,3 games each day, it's 3-4 games for
+top20-40.
+
+
+### [loh-maa](/lohmaa)
+And it's the middle where most action is!.. xD
+
+
+### [loh-maa](/lohmaa)
+So it seems the algorithm is working in a similar way as during the
+development, when we observed the "sticky top". Many people were pointing this
+out, and I was even dismissing their concerns because I was convinced, that
+this was just a temporary measure to give more resources to the new solutions
+for better testing, it wouldn't make sense otherwise, but here we are. Maybe
+those development settings were chosen by mistake for the final? Or maybe it
+was difficult to modify the algorithm appropriately? I don't know.
+
+
+### [torino](/pnmanh2123)
+In private lb, the algorithm has greatly increased the number of matches for
+the stuck agents. But without early wins, the number of better bots you can
+match with becomes smaller and smaller as the winning bots converge upwards.
+With insufficient match range, so hard to 600 score bot can match with 1000 or
+800 agent, it will get stuck forever.
+
+
+### [loh-maa](/lohmaa)
+One more clue indicating the ranking algorithm is doing a poor job. The score
+correlation between two submissions of a single player. Presumably it should
+be high, because players usually submit similar solutions up to their
+abilities, but it is weak for all players: `0.25` and even negative for
+players whose 1 solution has a score over 800: `-0.335` (perhaps this one may
+contain some bias though).
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F59be669608723d23f542fa7a0fd38a56%2Fscore_correlation.png?generation=1723994130565547&alt=media)
+
+
+### [loh-maa](/lohmaa)
+Since it pertains to the ranking algorithm, I'm posting here.. so it seems
+vast majority of agents still have a high sigma, because they resolved just 0,
+1 or 2 games (including loss and bonus from error). We can see clusters
+reflecting that.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F2ce5930f2508ab8c436a634d29b94ac3%2Fscore_vs_confidence.png?generation=1724156558379257&alt=media)
+
+
+### [Kha Vo](/khahuras)
+This means the LB will shake up until the last minute. The rank depends on how
+many consecutive wins a bot can achieve as early as possible
+
+
+### [loh-maa](/lohmaa)
+That's apparently not related to the ranking algorithm, **but actually it
+is**. Take a look at the game below. The second team questioner asks only 1
+question throughout the game: "Does it look like a cow?" and it has just 1
+guess: "penguin". Now, my question is, how on Earth this solution still had a
+score 662? I know, I know, maybe a good answerer? Believe it or not, but he
+actually always says "no". And actually, yes, he managed to win one game as an
+answerer, just by always saying "no". This is the ultimate illustration of how
+ineffective the ranking algorithm is so far. We would need hundreds of
+resolved games per agent to sort it out.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F14ba4462b4a724738465b7d7221d380d%2FScreenshot_2024-08-19_13-24-36.png?generation=1724048882763716&alt=media)  
+episode 55777791
+
+
+### [Mahmoud Elshahed](/letemoin)
+> also the logic of tie, we deduct points from highest to lowest or so is not
+> logical, despite it has a logic on action, but i review some episode my
+> guesses are nearby from correct get first word correct but the second is
+> different 'something like street lamp' or so,  
+>  and the team opposing, **has one repeated question and same guess** , they
+> got points :(
+This is part of my comment on another topic by chris  
+same question, same guess, like freezed or jammed agent, and got points.
+
+
+### [Mahmoud Elshahed](/letemoin)
+regarding points, can anyone figured out how it calculated,  
+some episode get 86 points from guessing correct in round 4, while 130 points
+given for guessing right in round 18?
+
+
+### [gguillard](/gguillard)
+You may get some insights from my [TrueSkill simulator
+notebook](https://www.kaggle.com/code/gguillard/llm-20-questions-trueskill-
+simulator) (although I got sigma wrong, we now know it's not 300 but 200, so
+the other parameters are also wrong… but the behaviour is the same).
+
+
+### [loh-maa](/lohmaa)
+I still can't figure out all the details, but apparently the confidence is
+significantly updated only in a non-tied games and it looks like it's
+decreasing linearly:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F64490c0d96686b65e1cab7873fc9e582%2Fupdated_confidence_nosuberr.png?generation=1723811960738991&alt=media)
+This is excluding any submissions that ever errored. So it seems, the
+frequency of play is not as important as I thought, it's just agents have an
+approximate number of matches they can lose or win before their "mobility"
+gets stalled. It's difficult to explain those irregularities, though,
+sometimes it seems the confidence is updated after the first non-tie match,
+sometimes not.
+
+
+### [gguillard](/gguillard)
+> the confidence is significantly updated only in a non-tied games
+Yes, that's because the "draw probability" is a parameter of the TrueSkill
+scoring system, and it's fairly high (see the simulator notebook).
+
+
+### [Kha Vo](/khahuras)
+`We also reduce the σ terms relative to the amount of information gained by
+the result`
+Maybe the 4th bot played its first game and won and still has confidence 200.
+It's like if you win in a streak you are rewarded more. After a draw or lose
+the confidence will decrease? Idk
+
+
+### [loh-maa](/lohmaa)
+[@gguillard](https://www.kaggle.com/gguillard) you've been examining these
+algorithms, would you be able to shed a light?
+
+
+### [gguillard](/gguillard)
+I wasn't aware of these data, thanks. So the sigma is 200, I will update my
+notebook accordingly and make a few tests later today.
+Concerning your question, I believe it's just that the 3 other players already
+played a match which ended in a draw, while it's the first match for the 4th
+player. If you look at the first match of (almost) any bot after the reset,
+where everyone is at 600, it often ends as a draw with all players having 600
+(+0), so the mu doesn't change (still 600), however since there was a game the
+sigma is slightly decreased.
+It's strange indeed that the 4th player sigma doesn't change after the win,
+though.
+I'll try to update the notebook to match these exact parameters tonight.
+
+
+### [loh-maa](/lohmaa)
+Wow, that's the spirit! The Confidence indeed seems to stay at 200 after the
+first game, then it goes down by just 0.04 after the second (non-tie) game,
+and then by 15 after the third. We're going to have more data after the next
+meta-kaggle update.
+
+
+### [loh-maa](/lohmaa)
+[@gguilard](https://www.kaggle.com/gguilard) you can use this one to get the
+right episodes, otherwise it's a huge file:
+    
+    
+    # Get the new episodes from this competition from meta kaggle dataset
+    meta_path = Path("/kaggle/input/meta-kaggle")
+    df_episodes = pd.read_csv(meta_path/"Episodes.csv", index_col="Id")
+    
+    # We don't know where we've got the competitionId from, but so far its valid
+    df_episodes = df_episodes.loc[df_episodes.CompetitionId==61247]
+    
+    # Filter out validation games
+    # Type 4 are validation games (1 team, same agent both side)
+    # Type 1 2teams, 4agents, we keep only thoses
+    df_episodes = df_episodes[df_episodes.Type==1]
+    
+    # Keep only the evaluation stage (games that started after 15 Aug)
+    df_episodes = df_episodes[pd.to_datetime(df_episodes['CreateTime']) > pd.to_datetime('2024-08-15')]
+    
+    
+    content_copy
+
+
+### [gguillard](/gguillard)
+Actually I'm not sure I will have time to dig it up since I'll be on leave
+after tomorrow evening and I've quite a number of things to deal with before.
+Anyway, I just had a quick look and at first sight it looks like although the
+UpdatedConfidence at 200 is not updated, it is actually set as the
+InitialConfidence slightly below 200 for the second game. But I didn't use the
+whole data so I may be missing the chaining link, I'll try to check it with
+more data if I find some time tomorrow (the files are too big for Kaggle
+notebooks' memory, I'll have to play with grep).
+
+
+### [loh-maa](/lohmaa)
+A few people raised this issue before, that the questioner-answerer pairings
+are random, while should be more balanced. The counter-argument, as usual, is
+that this should level out in the long run, but for some bots which don't play
+much, the run will not be so long. Moreover, because we have 1412 agents in
+play, for some of them the pairings will be heavily unbalanced just by luck or
+bad luck. Here's a short view of a table showing how it looks for the most
+imbalanced submissions. I used H and T, as if for coin tosses, but it stands
+for questioner-answerer. The numbers 0, 1, 2, 3 stand for the raw index-
+position in data, which translates to either questioner (H) or answerer (T),
+next total and the proportion, chi^2 value and its p-value. For 66 agents the
+p-value is below 0.05 and for 15 it's below 0.01.
+    
+    
+    Index          0   1   2   3   H   T   N        pH        pT      chi2  chi2pval
+    SubmissionId                                                                    
+    39387945       7  23   6  11  13  34  47  0.276596  0.723404  9.382979  0.002190
+    39529611       5   9   2   9   7  18  25  0.280000  0.720000  4.840000  0.027807
+    39505413       5   9   3  11   8  20  28  0.285714  0.714286  5.142857  0.023342
+    39446796       6  13   6  16  12  29  41  0.292683  0.707317  7.048780  0.007932
+    39386990       8  22  11  18  19  40  59  0.322034  0.677966  7.474576  0.006258
+    ...           ..  ..  ..  ..  ..  ..  ..       ...       ...       ...       ...
+    39531774      11   6   9   3  20   9  29  0.689655  0.310345  4.172414  0.041087
+    39524260      12   6   9   3  21   9  30  0.700000  0.300000  4.800000  0.028460
+    39521335       8   2  13   6  21   8  29  0.724138  0.275862  5.827586  0.015777
+    39248176      10   6   9   1  19   7  26  0.730769  0.269231  5.538462  0.018603
+    39025699       8   4   8   1  16   5  21  0.761905  0.238095  5.761905  0.016377
+    
+    
+    content_copy
+
+
+### [loh-maa](/lohmaa)
+Apologies for such an investigation, but I've found a very interesting clue.
+Two apparently similar if not identical submissions of one of the top players
+are doing so differently:
+    
+    
+    #            EpisodeId  Index  Reward  State  SubmissionId  InitialConfid  IniScore  UpdatedConfid  UpdScore
+    # Id
+    # 127176814   55731601      3    -1.0      2      39525020         200.00    600.00         200.00    600.00
+    # 127180729   55732902      2    -1.0      2      39525020         199.93    600.00         199.90    600.00
+    # 127180752   55732903      1    -1.0      2      39525020         199.96    600.00         199.93    600.00
+    # 127184841   55734337      0     0.0      2      39525020         199.90    600.00         184.90    462.99
+    # 127185116   55734432      3    -1.0      2      39525020         184.90    462.99         184.70    467.69
+    # 127197128   55738550      3    -1.0      2      39525020         184.70    467.69         184.57    470.17
+    # 127197513   55738683      0    -1.0      2      39525020         184.57    470.17         184.53    469.72
+    # 127199425   55739333      0    -1.0      2      39525020         184.53    469.72         184.34    474.26
+    # 127206735   55741771      2    -1.0      2      39525020         184.34    474.26         183.98    480.39
+    # 127209603   55742733      0    -1.0      2      39525020         183.98    480.39         183.82    484.52
+    # 127218539   55745726      0    -1.0      2      39525020         183.82    484.52         183.67    488.55
+    # 127219291   55745977      0    -1.0      2      39525020         183.67    488.55         183.52    492.62
+    # 127222066   55746905      1    -1.0      2      39525020         183.52    492.62         183.37    496.73
+    # 127223097   55747251      0    -1.0      2      39525020         183.37    496.73         183.24    500.41
+    # 127224894   55747850      3    -1.0      2      39525020         183.24    500.41         183.13    503.83
+    # 127229391   55749358      0    -1.0      2      39525020         183.13    503.83         182.85    509.23
+    # 127233287   55750657      3    -1.0      2      39525020         182.85    509.23         182.80    510.04
+    # 127233360   55750684      1    -1.0      2      39525020         182.80    510.04         182.70    513.33
+    # 127241399   55753365      2    -1.0      2      39525020         182.70    513.33         182.51    517.56
+    # 127241435   55753373      3    -1.0      2      39525020         182.51    517.56         182.42    520.63
+    
+    #            EpisodeId  Index  Reward  State  SubmissionId  InitialConfid  IniScore  UpdatedConfid  UpdScore
+    # Id
+    # 127179322   55732451      0    -1.0      2      39525255         200.00    600.00         200.00    600.00
+    # 127179655   55732558      3    -1.0      2      39525255         200.00    600.00         199.96    600.00
+    # 127181149   55733039      3    -1.0      2      39525255         199.96    600.00         199.93    600.00
+    # 127185251   55734475      2    -1.0      2      39525255         186.59    668.30         186.53    665.90
+    # 127185492   55734564      3     1.0      2      39525255         199.93    600.00         186.59    668.30
+    # 127196328   55738272      3    -1.0      2      39525255         186.53    665.90         186.48    663.60
+    # 127196944   55738488      2    -1.0      2      39525255         186.44    661.41         186.40    659.28
+    # 127196987   55738489      2    -1.0      2      39525255         186.48    663.60         186.44    661.41
+    # 127198387   55738982      2     8.0      2      39525255         186.40    659.28         171.40    749.70
+    # 127202816   55740469      1    -1.0      2      39525255         171.40    749.70         171.20    745.13
+    # 127204346   55740979      1    -1.0      2      39525255         171.20    745.13         171.00    740.67
+    # 127211977   55743523      2     8.0      2      39525255         171.00    740.67         156.00    850.01
+    # 127220209   55746290      1     6.0      2      39525255         156.00    850.01         142.48    917.23
+    # 127242621   55753772      2     8.0      2      39525255         142.48    917.23         131.40    974.56
+    
+    
+    content_copy
+[@ilmarivahteristo](https://www.kaggle.com/ilmarivahteristo) can I ask you for
+a comment, please? Do you think there's some significant difference in your
+submissions that would explain the difference?
+
+
+### [Kha Vo](/khahuras)
+When you lose the 1st game you’re screwed
+
+
+### [loh-maa](/lohmaa)
+That's my conviction as well, and 2 early wins set you up quite well. I didn't
+mention, both of Ilmari's agents use alpha and they ask similar questions. It
+seems one was lucky the other not.
+
+
+### [Mahmoud Elshahed](/letemoin)
+the simplest and fairest,  
+reset, run all games without any update in score, but retrieve results and
+append it separated, and each game for all contester has same word `1st is x
+for all, 2nd is y for all...... etc`, and make like 300 game or so, and half
+of them is Asker,
+**i don't have a ratio, but i feel like less asker role in games, and when it
+happens keyword is 2 words :( **
+i have a second agent screwed really at first 2 games or so, gone to 400, it
+is very bad, but actually it drain points from any other users, even all has
+no answer, which is not fair, it is like fighting to get the agent up, agent
+didn't win any game, but got from 3-6 points each game just by draw and reach
+now 502.

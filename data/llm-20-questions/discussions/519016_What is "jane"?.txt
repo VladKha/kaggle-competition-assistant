@@ -1,0 +1,43 @@
+[Naive Experimentalist](/kowjan1) · 422nd in this Competition · Posted 2
+
+### What is "jane"?
+As a non-native language speaker, Jane has always been just a name of a
+person. Checked out in GPT, and it also thinks "Jane" is just a name.
+Understanding that as of now, in the set of secret keywords being used in
+episodes there are 500 location (from keywords.py), 500 things (from
+keywords.py), and 1000 new things (the hidden set), I have a real problem to
+understand where the keyword "Jane" came from.
+Can someone help?
+BTW. My bot trained for persons also was magically able to guess this name 🔥🔥🔥
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2756828%2F0ff0f32956add897238779404a88980d%2Fjane.jpg?generation=1720521864546480&alt=media)
+
+
+## 5 Comments
+
+
+### [kaoutar](/wouldyoujustfocus)
+[@kowjan1](https://www.kaggle.com/kowjan1) does the keywords.py file contain
+things?? mine contains only locations, i am looking at the wrong file?
+
+
+### [Naive Experimentalist](/kowjan1)
+Look at GitHub Kaggle environments. There you will find keywords with places
+and things
+
+
+### [genesogenesis](/igorjovanovic)
+Hello,
+Slang. For a girl or woman.
+Best,
+
+
+### [Krens](/jickymen)
+This does confuse me. According to the [previous
+statement](https://www.kaggle.com/competitions/llm-20-questions/discussion/512955#2884981),
+`people`category has been deleted, maybe given name has been classified as
+`thing`?
+
+
+### [OminousDude](/max1mum)
+Might be a typo or something for example "jane" is close to "jade"

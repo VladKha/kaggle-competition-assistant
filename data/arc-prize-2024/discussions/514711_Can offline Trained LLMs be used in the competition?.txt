@@ -1,0 +1,35 @@
+[Fangxu Yu](/fangxuyu) · 903rd in this Competition · Posted 3 months ago
+arrow_drop_up-1
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Can offline Trained LLMs be used in the competition?
+I would like to know if training LLMs with P100 GPUs provided is slow, can we
+train the LLMs on personal GPU server and upload, if this vialoates the rule
+"not access to the Internet"? E.g. We just use inference with LLMs on the
+kaggle notebook
+comment
+
+
+## 2 Comments
+
+
+### [nosound](/zaharch)
+arrow_drop_up1
+  * format_quote
+  * link
+Yes, it is allowed. There is no access to the internet, but public datasets
+are allowed, one can transfer pre-trained model weights through it, and it is
+explicitly stated in the description. If you worry about sharing the weights
+to not let your competitors learn your approach, you can just do it during the
+last days of the competition, not leaving time to meaningfully react.
+
+
+### [Aryan Garg](/aryangarg01)
+arrow_drop_up1
+  * format_quote
+  * link
+Classic last day Kaggle Blitzkrieg!

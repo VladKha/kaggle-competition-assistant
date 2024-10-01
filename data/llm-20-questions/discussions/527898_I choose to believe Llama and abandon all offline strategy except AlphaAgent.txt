@@ -1,0 +1,19 @@
+[KKY](/evilpsycho42) · 20th in this Competition · Posted 18 days ago
+
+
+### I choose to believe Llama and abandon all offline strategy except
+AlphaAgent
+Last week, I spend 90% of time building the offline strategy:
+  1. build optimal offline questions on the semantic space with some powerful models (like deepseek, gpt-4o, e.t.) and use online, proposed by [@khahuras](https://www.kaggle.com/khahuras)
+  2. On alphabetic space, expand the keyword list based on LLM and construct some questions about the existence of letter combination based on information gain.
+But at last, I almost drop them all, except the expanded keword list, I
+integrate AgentAlpha with that keyword list into CoT methods.
+  * CoT in the ask/answer step
+  * Simple method at guess step because it may exceed the time limit
+  * HF inference function, I tried vLLM but found it may decrease the performance … (Maybe I used it with something wrong 0.0)
+The assumption I based is: Although the range of keywords is known, the data
+distribution is not neccessarily consistent, and I bet on this.
+Wish me and all luck.
+
+
+## 0 Comments

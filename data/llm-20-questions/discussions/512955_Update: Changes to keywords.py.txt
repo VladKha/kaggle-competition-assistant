@@ -1,0 +1,78 @@
+[Bovard Doerschuk-Tiberi](/bovard) · Posted 2 months ago
+· Kaggle Staff
+
+
+### Update: Changes to keywords.py
+keywords.py is now updated in kaggle-environments 1.14.14 which is rolling out
+now.
+For this change we now have two categories: `places` and `things`. The
+`people` category we discussed has been dropped.
+We continue to monitor the health of this competition and will take action to
+ensure robust competition.
+
+
+## 9 Comments
+
+
+### [RS Turley](/rturley)
+Thanks for the update. Is the `people` category dropped from this update only,
+or is the category also dropped from the full competition, including the
+unpublished keywords that will be used after August 13th?
+
+
+### [Kha Vo](/khahuras)
+That is my question as well
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+`people` category is dropped from the full competition.
+
+
+### [tiod0611](/tiod0611)
+Hello,
+After reading this discussion, I have a question. The contents of the
+keywords.py file available in the Data tab of this competition differ from the
+updated keywords.py file available on Kaggle's
+GitHub(<https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/keywords.py)>.
+When I print(kaggle_environments.envs.llm_20_questions.keywords.KEYWORDS_JSON)
+in my notebook, it matches the file in the Data tab.
+So, where is the update to the keywords.py file that you mentioned being
+applied?
+
+
+### [Daniel Andres Miranda](/danielandresmiranda)
+Thank you very much, it's so useful to me
+
+
+### [loh-maa](/lohmaa)
+It seems the updated set of keywords is way more difficult than the previous
+one. We're going to see even lower success rate. I recently updated my agents,
+44 games in total and not a single guess on any side. I don't mean to complain
+or suggest any changes, just a few remarks:
+  1. Contrary to some earlier hints, there are abstract/conceptual terms -- "analogy", "interstate", "hearing aid", "vegetation". These are not specific objects and I think more difficult to find out.
+  2. There are keywords which have many synonyms, but alts are not provided, so even if an agent comes close to the concept of "ointment", it could still need many turns to find the right word among words that are difficult to tell apart: lotion, cream, balsam, balm, gel, oil.
+  3. There are keywords that are so specific/rare that I don't think we could expect them to be ever solved if they were not listed, e.g. "pot holder", "sippy cup", "elliptical trainers", "graphic novel". Some of them a normal person would have never used or heard of. Can small LLMs handle them? I bet not in 20 questions, but who knows..
+So the challenge is serious. Perhaps some players would like to make a real
+effort, however it's a little bit discouraging to hear that the rules and/or
+types of keywords could change again, possibly rendering the effort a waste of
+time.
+
+
+### [Kha Vo](/khahuras)
+Exactly my concern. I think the Kaggle team need to manually look into the
+keywords and exclude those strange 2-word words. “Bike path” is a composition
+word and can’t be predicted by an LLM in 20 questions. Even human, how can a
+human expect to predict the word “elliptical trainers’?
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Hello! Thanks for conducting the competition!
+I would like to clarify whether will the questioner llm have an access to the
+FINAL keywords during the runtime or not? Can we do some calculations to find
+optimal question in runtime relying on the keywords.py file? Or will the final
+dictionary be complitely unavailable in runtime during the final evaluation?
+Sorry, if you already answered it, but I found the different opinions in the
+discussion thread

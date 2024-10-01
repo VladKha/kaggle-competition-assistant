@@ -1,0 +1,55 @@
+[Samvel Kocharyan](/samvelkoch) · 322nd in this Competition · Posted 3 months
+
+### Additional data allowance
+Hey [@mkecera](https://www.kaggle.com/mkecera) is it allowed to use additional
+side data in your competition?
+
+
+## 5 Comments
+
+
+### [Sheikh Muhammad Abdullah](/abdmental01)
+Read Rules
+    
+    
+    EXTERNAL DATA
+    
+    Unless otherwise expressly stated on the Competition Website, Participants must not use data other than the Data to develop and test their models and Submissions. Competition Sponsor reserves the right in its sole discretion to disqualify any Participant who Competition Sponsor discovers has undertaken or attempted to undertake the use of data other than the Data, or who uses the Data other than as permitted according to the Competition Website and in these Competition Rules, in the course of the Competition.
+    
+    
+    content_copy
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Thanks for clarification [@abdmental01](https://www.kaggle.com/abdmental01) .
+Missed that paragraph.
+[@mkecera](https://www.kaggle.com/mkecera) in theory by external data we can
+add more insights to your business case but no problem if external data is not
+allowed. I guess you know what Rohlik needs to figure out here at Kaggle.
+
+
+### [MichalKecera](/mkecera)
+Thanks [@abdmental01](https://www.kaggle.com/abdmental01). Yes, we advise
+against using any external data. More context below.
+
+
+### [MichalKecera](/mkecera)
+Hi [@samvelkoch](https://www.kaggle.com/samvelkoch),
+Good question. Depends on the data. General rule of thumb is that if the data
+is not leaky then it's ok to use it for training. I would be extra careful to
+use something for generating the solution though.
+Example: we provided weather data in training but did not for testing as that
+would be leaky - we don't know the weather going forward.  
+Another example: Hypothetically, let's say you find some data for population
+density development in the cities. For training it's ok, but not for
+generating the solution as that development is not known at the time of
+prediction.
+Sticking to the data provided is the safest bet. It is very difficult to find
+non-leaky data that is something else than calendar events. We will be
+checking the winning solutions as we wan't to make sure that those would be
+applicable in practice and not a modelling exercise that we can't replicate in
+real world.
+
+
+### [Mohammed Mustafa](/mohammedmustafa648)
+No, it's not allowed. Read competition rules

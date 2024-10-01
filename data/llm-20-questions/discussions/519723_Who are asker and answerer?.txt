@@ -1,0 +1,51 @@
+[torino](/pnmanh2123) · 52nd in this Competition · Posted 2 months ago
+
+
+### Who are asker and answerer?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F15873032%2Ff7a52a5f89c8dc20ff7c989ae548eaa2%2FScreenshot_20240712_202811.png?generation=1720790984652470&alt=media)
+I was confused as I didn't know who was asking and who was answering. Is
+torino(me) and no apple answering? Can anyone explain?
+
+
+## 3 Comments
+
+
+### [Chris Deotte](/cdeotte)
+There are two roles `questioner` and `answerer`. The top name is `questioner`
+and the bottom name is `answerer`. The `questioner` both asks questions and
+makes guesses. The `answerer` only responds yes or no. Below is an example:
+    
+    
+    Round 1
+    Questioner: Is it a country?
+    Answerer: yes
+    Questioner: France?
+    
+    Round 2
+    Questioner: Is the country in Europe?
+    Answerer: no
+    Questioner: China?
+    
+    
+    content_copy
+Notice how the `questioner` says two things each round and the `answerer` says
+one thing each round.
+
+
+### [OminousDude](/max1mum)
+Questioner is top asker is bottom! Hope this helps you!
+
+
+### [torino](/pnmanh2123)
+hi [@max1mum](https://www.kaggle.com/max1mum),  
+that mean kothiwsk28 was ask `Is it the place?`, right?
+
+
+### [OminousDude](/max1mum)
+Yes, the game environment visuals are a bit confusing, but yes in this case
+kothiwsk28 was the questioner.
+
+
+### [torino](/pnmanh2123)
+[@max1mum](https://www.kaggle.com/max1mum) thanks.

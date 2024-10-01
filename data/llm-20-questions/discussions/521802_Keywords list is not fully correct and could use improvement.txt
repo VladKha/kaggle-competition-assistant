@@ -1,0 +1,35 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted a month ago
+
+
+### Keywords list is not fully correct and could use improvement
+I have seen discussions of errors in keyword list and have seen instances of
+this in replays myself. I (along with many other people) believe that the
+keywords should be fixed and updated. Currently, I believe the most important
+and frustrating thing in the keywords is when a keyword does not have enough
+alternatives. Just now I had a game (with myself as it was validation) where
+the keyword was guessed 3 times in one game but failed as it was slightly
+different.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F133a0c35b047769e30d6e4238ef13f00%2FScreenshot%20from%202024-07-22%2022-10-39.png?generation=1721700937499232&alt=media)  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F06924b2f1fdb5fd207a72966de3dac35%2FScreenshot%20from%202024-07-22%2022-14-45.png?generation=1721700953098485&alt=media)
+[@bovard](https://www.kaggle.com/bovard) can we get any comment on this? Will
+this be resolved in the private LB?
+
+
+## 2 Comments
+
+
+### [Bhanu Prakash M](/bhanupm)
+I had a case where my Agent guessed "Vaccum" but the keyword was "Vaccum
+Cleaner".
+Question: Is the thing used for cleaning?  
+Answer: yes  
+Guess: Vaccum
+
+
+### [loh-maa](/lohmaa)
+But "toaster" is not the same as "toaster oven"… besides, there are "toaster
+grills", "pop-up toasters", "convection toasters", "convection toaster ovens",
+"air-fryer toaster ovens" and who knows what else… I have little idea how
+they're diffent, but I'm sure your LLM can handle that… :P ;)

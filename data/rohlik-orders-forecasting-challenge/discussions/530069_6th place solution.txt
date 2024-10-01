@@ -1,0 +1,53 @@
+[Vincent Schuler](/vincentschuler) · 6th in this Competition · Posted 21 days
+
+### 6th place solution
+Hello,
+Thanks to the organizers for this interesting competition. Since I have
+receive some demands concerning my solution, I'm going to share some insights
+about it.
+My best private solution scored 0.362 (2nd place) but only 0.415 on the public
+LB, so I did not select it.  
+**Here is a similar but more stable solution that scores 0.361 (public) and
+0.379 (private)** :
+[Notebook__0.361_Public__0.379_Private](https://www.kaggle.com/code/vincentschuler/rohlik-2024-public-0-361-private-0-379)
+However, I must warn you : even though the scores are good, the CV strategy
+seemed leaky to me and one should generally prefer a good reliable and
+traditionnal time-split. I took this CV strategy idea in this [great public
+notebook](https://www.kaggle.com/code/abdmental01/rohlik-starter-v1) and used
+it only because it worked, but without much conviction.
+With a good CV strategy, I achieved 0.352 (public) and 0.397 (private 6th
+place), but I had no time or motivation to improve it since the LB seemed too
+unstable to me. If I had to start over, I would only focus on this one.
+_Finally, the keys to achieve good scores were :_
+  * Feature engineering (as always). An important feature was the number of days before and after the next holidays.
+  * Delete strange data during the training phase (20th to 31th december; Munich before 2021-10-01 and Frankfurt before 2022-07-01).
+  * Use 4 LightGBM to make the results more stable.
+  * Postprocess the predictions to manually correct them in the Easter holidays.
+_What did not work :_
+  * Use lag features (for instance, mean orders over past months/weeks). It decreased significantly the results with the dubious CV strategy, and had almost no effect with the good one.
+  * Manually correct the time-series of Munich and Frankfurt to make them more stationnary.
+  * Use different models for ensemble (LightGBM, Catboost and XGBoost).
+  * One model per warehouse.
+  * One model per country.
+PS : excuse me if you find some french comments in my notebook, I tried to
+translate them but some may have remained 😉
+
+
+## 5 Comments
+
+
+### [Lao liu](/guzefeng)
+Congratulation , Finally First Solution.well done
+
+
+### [Stas Kolchin](/mordechaichick)
+Congrats man! You gave me a good idea of ​​the feature engineering by regions
+and it's sort of weird that ensemble models don't work
+
+
+### [Sheikh Muhammad Abdullah](/abdmental01)
+Congratulation , Finally First Solution.
+
+
+### [Ern711](/ern711)
+Super interesting, thanks for sharing!

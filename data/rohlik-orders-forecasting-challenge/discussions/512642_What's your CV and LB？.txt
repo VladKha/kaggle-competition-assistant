@@ -1,0 +1,149 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 3 months ago
+
+
+### What's your CV and LB？
+I want to see if CV and LB are consistent?
+I am currently using groupkfold, with a CV of approximately 0.04 (due to data
+leakage) and LB of 0.0444 (fine tuned here).
+What about you?
+
+
+## 16 Comments
+
+
+### [Ern711](/ern711)
+Nope, they are not consistent in my case. I'm using a time based splitting
+strategy and made model I was quite happy with (better on almost every single
+split in training data). However, the public lb was actually worse.
+If I cannot get a version good on both I will submit two different versions,
+one good on local data, another good on public lb. I guess the argument for
+going with a model good on local data is that the dataset is much larger
+there, whilst the argument for public lb could be that its newer data and
+therefore more relevant. Think my priority will be local data though.
+
+
+### [Gunes Evitan](/gunesevitan)
+I don't think it makes sense to compare your score with others since it can
+change between 0.3 to 0.8 based on the selected period.
+
+
+### [Štěpán Műller](/tpnmller)
+CV 0.0513 LB 0.0351, custom rolling window cross validation for 6 * 60 = 360
+days.
+
+
+### [Adam Logman](/adamlogman)
+I am 0.038 and LB 0.049 but I trsut my cv
+
+
+### [Stas Kolchin](/mordechaichick)
+Actually, it is very strange in my case: CV is 0.0313 and LB is 0.0517. And I
+haven't used any hyperparameters for scaling, maybe this is a problem
+
+
+### [Samvel Kocharyan](/samvelkoch)
+It is not strange Stas. Just 147 rows in public. Don't use public leaderboard
+score in this competition to evaluate your model performance. Strong local
+validation in a key.
+
+
+### [Stas Kolchin](/mordechaichick)
+thanks for the inspiration man!
+
+
+### [Stas Kolchin](/mordechaichick)
+Hi there. By data leakage do you mean data that is not provided in the test
+set, such as mov_change, user_activity_1, user_activity_2, etc?
+
+
+### [mouadenna](/mouadenna)
+[@mordechaichick](https://www.kaggle.com/mordechaichick) When he said avoiding
+data leakage, he means not introducing future data into the training process.
+At each training step, the model should be trained on past data and evaluated
+on future data.  
+check this dicussion post [here](https://www.kaggle.com/competitions/rohlik-
+orders-forecasting-challenge/discussion/513106)
+
+
+### [Stas Kolchin](/mordechaichick)
+I don't think that's what he meant, obviously we have past and future data,
+that's our training and testing data. Check this out:
+<https://www.kaggle.com/code/alexisbcook/data-leakage>
+
+
+### [Samvel Kocharyan](/samvelkoch)
+By data leakage in this competition I meant ' possibility to create data
+leakage' and trick the score. We predict future but actually this future
+already happened in past in real life. There is no problem to find for example
+weather, school holidays, model user_activities on the dates which are in the
+test.
+
+
+### [mouadenna](/mouadenna)
+You cannot use external data in this competition though
+
+
+### [techniquetwice](/techniquetwice)
+my cv ~0.039 and lb is 0.0419(my current lb is 0.0417 but I loss way how to
+make it). I was read you public base line and see you scale predict by
+"fine_tune_params", that's really some good ideas. Not sure but I recommend
+you can scale Budapest_1 down, I noticed its trend is not really going up.
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+Thank your suggestion.
+
+
+### [Štěpán Műller](/tpnmller)
+Those `fine_tune_params`
+[@techniquetwice](https://www.kaggle.com/techniquetwice) is referring to from
+this [notebook ](https://www.kaggle.com/code/yunsuxiaozi/rohlik-orders-
+baseline/notebook) (penultimate cell),
+    
+    
+    fine_tune_params={'Brno_1':1.015,
+    'Budapest_1':1.01,
+    'Frankfurt_1':1.005,
+    'Munich_1':1.02,
+    'Prague_1':1.015,
+    'Prague_2':1.01,
+    'Prague_3':1.01
+    }
+    
+    
+    content_copy
+i.e. hand-made constants to scale the predictions, probably count as "hand
+labeling or human prediction of the validation dataset" and are against the
+rules, aren't they? [@mkecera](https://www.kaggle.com/mkecera)
+
+
+### [Yan Teixeira](/yantxx)
+[@tpnmller](https://www.kaggle.com/tpnmller) Probably not against the rules,
+but this is definitely something that you will only find on Kaggle. In real
+life, this 'practice' should never be used.
+
+
+### [Yan Teixeira](/yantxx)
+CV 0.04675 - LB 0.0455 with custom cv strategy.
+I'm seeing good correlation so far
+
+
+### [mouadenna](/mouadenna)
+which splittig strategy r u using?
+
+
+### [Yan Teixeira](/yantxx)
+I'm writing a complete EDA & Modeling notebook. I hope to publish it in the
+next few days so you all can see it.
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Still there is no good CV in my case. Up to double differences in local / lb.
+Keep going to test most obvious and freakiest ideas to catch a direction.
+
+
+### [Sheikh Muhammad Abdullah](/abdmental01)
+Cv : 0.039 ---> LB : 0.044
+Param are Finne Tunned but i am Facing a big Difference Bw Offline and LB
+Score.. But Now i am Waiting For Last 2 Week Then , i will Join It Again and
+Improve more..

@@ -1,0 +1,149 @@
+[c-number](/cnumber) · 1st in this Competition · Posted a month ago
+
+
+### A proposal for a more reliable LB
+Many participants have pointed out that there's too much of a luck factor in
+the current LB because wins and losses are heavily dependent on teammates'
+abilities.  
+While ratings might converge given an infinite number of games, realistically,
+we're dealing with a finite number. Looking at [my
+submissions](https://www.kaggle.com/competitions/llm-20-questions/discussion/520928#2942026),
+it's unlikely to converge at all in two weeks, at least with the current
+number of matches.  
+Additionally, for players with similar abilities, the final result will be
+heavily influenced by luck (e.g., getting paired with a high- or low-ranked
+player) in the final few games.  
+To overcome this problem or at least reduce the dependence on luck, I propose
+introducing the following two types of games:
+**2 Guessers, 1 Answerer** : Three players are in a game, with two guessers
+paired with the same answerer. The outcome will depend solely on the guessers'
+abilities. Only the guessers' ratings will be updated.  
+**2 Answerers, 1 Guesser** : Three players are in a game, with two answerers
+paired with the same guesser. The outcome will depend solely on the answerers'
+abilities. Only the answerers' ratings will be updated.
+In both game types, ratings can be updated using the normal Elo rating system.  
+This approach not only reduces the luck factor but also addresses the "pit of
+dumbness" problem by allowing lower-ranked players to be paired with higher-
+ranked players more frequently (with no risk of losing rates for the high-
+ranked players).  
+I understand that changing the ranking system at this stage is technically
+challenging and may be unfavorable for some participants who rely on luck.
+However, I believe this change would benefit many others and make the
+competition's leaderboard more stable and reliable.  
+I hope the Kaggle staff will consider this proposal.  
+[@bovard](https://www.kaggle.com/bovard)
+
+
+## 8 Comments
+
+
+### [Kha Vo](/khahuras)
+Your ideas are great indeed!  
+However, I prefer no other competition rule change. It's nearly the end and
+many of us don't want to deal with some major disruption via this critical
+time, including moving the submission deadline. (but extending post final
+evaluation period is a good idea)
+
+
+### [gguillard](/gguillard)
+The simplest solution regarding teams pairing would be to pair all guessers
+against the same official answerer bot.
+Although it was very fun to randomly pair teams, it's now clear that it only
+leads to a large scoring injustice because of dummy bots.
+On the other hand, the answerer bot is straightforward to implement, and
+there's no challenge here. We could even develop an open source official
+answerer in a collaborative way.
+Finally, if the hosts still want to assess that each team has a valid answerer
+bot, it is also straightforward to test, as a single game with yes/no
+questions is needed.
+
+
+### [loh-maa](/lohmaa)
+This would be a different game rather than a solution. All the effort would
+focus on the single answering reference bot. Less fun I think.
+
+
+### [gguillard](/gguillard)
+> All the effort would focus on the single answering reference bot.
+What do you mean ? AFAIK there is only a single right answer to each question
+between yes or no, no strategy to counter a yesbot or a nobot besides throwing
+random guesses, and no strategy to recover from several wrong answers…
+
+
+### [loh-maa](/lohmaa)
+Then what's the single right answer to the question "Is bar counter a
+place?".. For most questions, perhaps there is an obvious answer, indeed, but
+for many critical questions the answer depends on built-in assumptions and
+interpretation, or just a preference, and of course on the answering prompt…
+so I think this is what the effort would be all about. Not to mention trying
+to exploit any particular characteristics of that particular bot, which could
+result in a really weird contest.
+
+
+### [gguillard](/gguillard)
+I still don't get it, sorry. Whatever the "right" answer, whether your bot
+faces an answerer which responds yes or one which responds no is pure chance…
+We want the competition to be fun, but when it comes to ranking we want it to
+be fair and deterministic, right ?
+
+
+### [gguillard](/gguillard)
+Regarding exploiting characteristics of the answerer bot, that's a non
+existing issue if the bot is made by the hosts and only rolled for the private
+board, and it's mitigated if the bot is developed collaboratively by the
+community.
+Besides, I don't think it would be much weirder than, say, using non-LLM bots
+in an LLM contest… 😁  
+(No offense, you were handing me the stick ! 😜)
+
+
+### [loh-maa](/lohmaa)
+It's alright, it's not easy to offend me. I'm also lost regarding the "single
+right answer". I don't think there is or can be, that's all. Anyway, if the
+bot is rolled out only for the private board, then we're going back to lottery
+zone. If it's "developed collaboratively by the community" then I guess it
+would require something more than just a competition, a summer workshop
+perhaps.. ,)
+
+
+### [gguillard](/gguillard)
+We have a different definition of lottery. If the bot is the same for everyone
+and behaves in a deterministic way, for me it's not a lottery. Sure, some bots
+may be more comfortable than others with it, or the other way round, but it is
+nothing similar to being attributed a random bot. It's a bit like a runner
+having to deal with the wind, vs being attributed a different running
+distance.
+
+
+### [loh-maa](/lohmaa)
+In my opinion, if I may, we may assume the current ranking algorithm is
+temporarily modified and in the final stage it's going to keep evaluating all
+agents regardless of their score, so this will largely improve the
+convergence. I think the suggestions are very interesting, but it is already
+late, indeed. Stability is important, too. Personally I definitely would not
+appreciate such last minute changes in any competition, even if they were
+considered good ideas.
+
+
+### [Chris Deotte](/cdeotte)
+This is a great suggestion. It removes a lot of randomness and allows using a
+very smart bot for the 1xType which will help find a winner among the 2xType
+bots.
+Question, after a game ends with a win or loss for the 2xType bots, do we only
+update the 2xType bots' score or does the 1xType bot score change too?
+
+
+### [loh-maa](/lohmaa)
+[@cdeotte](https://www.kaggle.com/cdeotte) Not to speak for the author, but
+we've already checked this idea, it doesn't improve the convergence in our
+context, and actually worsens, I think because in 1 episode we have 2 agents
+scored instead of 4, so it's a bit less efficient. It was a good idea though.
+I would share the simulator code if you'd like to experiment a bit.
+
+
+### [c-number](/cnumber)
+As [@lohmaa](https://www.kaggle.com/lohmaa) mentioned, the idea didn't have a
+positive impact when starting from a situation where all the agents had the
+same score. However, maybe it could work now because the "strong" agents at
+the top of the LB can be used as the 1xType bot to help sort out the 2xType
+bots.

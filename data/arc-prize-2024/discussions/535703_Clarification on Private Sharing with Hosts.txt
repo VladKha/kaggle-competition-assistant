@@ -1,0 +1,54 @@
+[Addison Howard](/addisonhoward) · Posted 7 days ago
+· Kaggle Staff
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Clarification on Private Sharing with Hosts
+Hey all,
+We've had questions come up from participants on whether or not sharing your
+notebooks/code with the competition organizers mid-competition is legitimate
+and within the rules. [Greg](https://www.kaggle.com/gregkamradt) has been
+asking many of you individually about your approach thus far to better
+understand the techniques producing the top solutions. Sharing is optional but
+if it's with the host team (please confirm it's them first) it's allowed and
+does not violate the competition's private sharing rules.
+Hope that helps clarify!
+Kaggle Team
+comment
+
+
+## 3 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Still, you can voluntarily 'publish' whatever you like, correct? Regardless of
+how many/few points you attain? So I could make public my entire process,
+code, notes, and having done so voluntarily, and in public (Discussion, Code),
+it would not be considered 'private sharing', right?
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+Yep exactly, you can share publicly no problem
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+arrow_drop_up0
+  * format_quote
+  * link
+Correct! The only limitation we typically require on public sharing is that
+notebooks not be shared publicly close to the competition deadline, in order
+to reduce any 'copy-and-paste-for-gold' opportunities. We re-open publication
+after the deadline as well. We highly encourage and support knowledge sharing
+at all other times!

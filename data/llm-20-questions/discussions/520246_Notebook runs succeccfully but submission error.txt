@@ -1,0 +1,22 @@
+[Yangtze Hao](/yangtzehao) · 304th in this Competition · Posted 2 months ago
+
+
+### Notebook runs succeccfully but submission error
+![notebook test](https://www.googleapis.com/download/storage/v1/b/kaggle-
+forum-message-
+attachments/o/inbox%2F11980959%2Fc21f68309fea2c75125bcaf4c3e2a722%2FQQ20240715090907.png?generation=1721033064711769&alt=media)
+I have tested the agent in the notebook with the internet off and no error
+occurred. But the submission keep showing [validation eposide error].  
+![agent 0 log](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F11980959%2F99457c25b74caf5b78bc2a47fbe2fcdf%2FQQ20240715164632.png?generation=1721033247869986&alt=media)  
+The agent 0 log shows that the error occurred after a few successful rounds
+To make it clearer, I print the last error output in the log json. It seems
+that there's something wrong with .generate method of my llm model. But i
+didn't have any problems running the agent in the notebook. Can anyone help me  
+![error print](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F11980959%2F07692371c3db56d71a4c8c4f81aa20fd%2F.png?generation=1721033737215949&alt=media)
+
+
+## 0 Comments

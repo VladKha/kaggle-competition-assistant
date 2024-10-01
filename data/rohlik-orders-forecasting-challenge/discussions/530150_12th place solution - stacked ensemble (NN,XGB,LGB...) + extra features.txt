@@ -1,0 +1,21 @@
+[Eran Aharonovich](/eranah) · 12th in this Competition · Posted 21 days ago
+
+
+### 12th place solution - stacked ensemble (NN,XGB,LGB...) + extra features
+Thank you for organizing such a fun and engaging competition. I thoroughly
+enjoyed participating.
+For my approach, I used a stacked ensemble model that included a variety of
+models such as XGB, LightGBM, CatBoost and NN. Besides the features discussed
+in the forums and public kernels, I also included:
+  * Days from the start and until the end of school holidays
+  * Days since the last holiday and until the next holiday
+  * The day before and after holidays, school holidays, shop closures, and non-public holidays (where the holiday name is specified but the holiday column = 0)
+  * The number of holidays in the previous and upcoming week
+  * For the first layer, I used multiple models including XGB, LGB, CatBoost, and NN. For the second layer: CatBoost, XGB, and LightGBM.
+
+
+## 1 Comment
+
+
+### [Ern711](/ern711)
+Congrats!

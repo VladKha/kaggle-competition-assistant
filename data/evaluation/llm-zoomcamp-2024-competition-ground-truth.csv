@@ -1,0 +1,49 @@
+doc_id,question,answer
+0,What is the name of the Kaggle competition?,LLM Zoomcamp 2024 Competition
+1,What type of problems are participants asked to solve in the LLM Zoomcamp 2024 Competition?,High school mathematical problems
+2,What is the main objective of the competition?,Participants need to solve high school mathematics problems with LLMs.
+2,Where do the mathematics problems originate from?,"The problems originate from the Unified State Exam (ЕГЭ), a high school mathematics exam in Russia."
+2,How were the problems translated?,Each problem was translated to English using GPT-4.
+2,Is solving the problems by hand allowed?,Solving the problems by hand is not permitted.
+3,What languages are the mathematical problems presented in?,English and Russian
+3,What is the main objective of the competition?,To predict the correct answer for each problem in the test set
+4,How is accuracy calculated in this competition?,Accuracy is defined as the proportion of correct predictions out of the total number of problems in the test set.
+5,What are the required column names in the submission file?,The required column names in the submission file are `problem_id` and `answer`.
+6,What is the primary evaluation metric for this competition?,Accuracy
+7,What is the expected format of the submission file?,The submission file should have two columns: problem_id and answer.
+7,What are some examples of problem IDs and their corresponding answers?,"Examples include 11919 with answer 11, 8513 with answer 12, and 7887 with answer 44."
+7,What is the importance of validating the submission file before uploading?,Validating the file format and contents helps avoid errors during upload.
+7,What is the recommended action to take before submitting the file?,Make sure to validate the submission file format and contents.
+8,What is the name of the competition?,LLM Zoomcamp 2024 Competition
+9,Who is the competition host?,ololo
+10,Does the competition award Points or Medals for Kudos?,"No, it does not award Points or Medals."
+11,How many teams participated in the competition?,59 Teams
+12,What types of files are included in the dataset?,"The dataset includes several CSV files that provide training, testing, and auxiliary data."
+13,What is the name of the column containing the correct answer to the math problems in the training data?,answer
+14,What is the purpose of the 'rus_train.csv' file?,"It contains training data with Russian math problems, their answers, and hints."
+14,What information is included in the 'hint' column?,A hint or additional information to help solve the problem.
+15,What is the purpose of the `train_unchecked.csv` file?,"It contains additional training data in English, with problem statements and their respective answers. These problems are unchecked and may contain errors."
+16,What is the purpose of `rus_train_unchecked.csv`?,"Contains additional training data in Russian, with problem statements and their respective answers. These problems are unchecked and may contain errors."
+17,What is the unique identifier for each problem in the test data?,problem_id
+18,What is the language of the mathematical problem statements in the `rus_test.csv` file?,Russian
+19,What is the name of the column that contains the predicted answer in the sample submission file?,answer
+19,What is the initial value for the 'answer' column in the sample submission file?,No answer
+20,How many files are provided in the dataset?,7
+21,What is the size of the dataset?,361.64 kB
+22,What is the file format of the data?,csv
+23,What governs the use of the data in this competition?,Competition Rules
+24,What is the name of the file that contains the training data in Russian?,rus_train.csv
+24,What is the size of the `rus_test.csv` file?,361.64 kB
+25,How many columns are present in the dataset?,19
+26,Who won the Kaggle competition?,CHINONSO ODIAKA
+27,What was the score of the team 'vladkha' in the competition?,0.96250
+28,"What was the score of DiegoEscGom's submission on July 3, 2024?",0.93750
+29,What is the score of ArturG's submission?,0.93750
+30,"What was the score of SudhanshuSharma's submission on September 12th, 2024?",0.93750
+87,"What are some suggested ways to utilize large language models (LLMs) effectively for this competition, besides using together.ai?","Experimenting with various system prompts, such as instructing the LLM to act as a math expert and provide only the result without intermediate steps, is recommended. Additionally, incorporating instructions to remove units or extraneous information within the system prompt is advised."
+88,Has anyone else encountered inconsistencies between the provided answers and the expected format based on the question descriptions within the training dataset?,"I've sampled a few random examples from the training set and already encountered errors in the answers. Has anyone else noticed similar issues? I hope the test set is validated more thoroughly to ensure accurate evaluation.
+for example, question id 9294 : the question asks: Which routes should the traveler choose to visit all four museums while spending the least amount of money on tickets?
+In the answer, indicate any one set of route numbers without spaces, commas, or other additional symbols.  
+but the answer is actually the total cost, rather than the path."
+89,What accuracy did the Claude Sonnet 3.5 model achieve on the shared test dataset without any prompt engineering?,The Claude Sonnet 3.5 model achieved 85% accuracy on the shared test dataset with zero-shot prompting.
+90,How impactful can prompt engineering be in this competition according to participants' experiences?,"Significant improvements in scores have been observed by participants solely by modifying the prompt's wording, even when keeping the code constant."

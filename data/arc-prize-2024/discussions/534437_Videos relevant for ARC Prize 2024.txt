@@ -1,0 +1,59 @@
+[C R Suthikshn Kumar](/crsuthikshnkumar) · 26th in this Competition · Posted
+14 days ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Videos relevant for ARC Prize 2024
+Refer to ARC prize 2024 Competition:  
+<https://www.kaggle.com/competitions/arc-prize-2024/>
+I found a number of videos ( freely available online) useful for participation
+in this competition. I am sharing the links here:
+  1. Francois Chollet recommends this method to solve ARC-AGI:  
+( <3 min video) <https://www.youtube.com/watch?v=VqMcfdzqedE>
+  2. Francois Chollet - LLMs won’t lead to AGI - $1,000,000 Prize to find true solution  
+( 1 hr, 40 min Video) <https://www.youtube.com/watch?v=UakqL6Pj9xo>
+  3. If an LLM solves this then we'll probably have AGI – Francois Chollet  
+( 5 min video) <https://www.youtube.com/watch?v=wZ0ToxtXz5g>
+  4. Chollet's ARC Challenge + Current Winners  
+( 2 hr, 15 mins video) <https://www.youtube.com/watch?v=jSAT_RuJ_Cg>
+  5. Explore ARC-AGI Data + Play  
+( 11 mins video) <https://www.youtube.com/watch?v=LLxiPrIxdqs>
+Participants in this competition can view these videos and share their
+findings and comments here.
+[Artificial
+Intelligence](/discussions?tags=12101-Artificial+Intelligence)[Research](/discussions?tags=1219-Research)[Intermediate](/discussions?tags=13103-Intermediate)[Advanced](/discussions?tags=13104-Advanced)[Beginner](/discussions?tags=13102-Beginner)
+comment
+
+
+## 2 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up1
+  * format_quote
+  * link
+Video list:  
+<https://github.com/neoneye/arc-
+notes/blob/main/videos%20about%20arc/readme.md>
+Wish list:  
+An intro video to ARC-AGI for regular people. Why these puzzles? How do you
+solve a puzzle?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+I happen to be married to a wonderful regular person, with a relatively high
+IQ who laughs at all of my jokes, and I have gently nudged her toward trying
+ARC. She's not a tech geek, like me, but "She can geek. She geeks. She'll
+geek." Only she has so many "well, WHY?" style responses that I've never had
+that Christmas morning moment of walking away while she gets hooked. It's like
+she doesn't even like the smell. And I know that there are plenty of folks
+with even shorter attention spans and less tolerance for figuring things out.
+In short, regular people just might not _like_ the corpus. MMMV.

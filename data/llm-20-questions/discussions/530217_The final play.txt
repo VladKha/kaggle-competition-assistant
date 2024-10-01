@@ -1,0 +1,130 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 7 days ago
+
+
+### The final play
+The fundamental question is: do we want best solutions to win?
+I definitely do, even though I don't know if my solution is one of the best or
+not. But I cannot be afraid to check, coz
+    
+    
+    If I don't want to play, I don't deserve to win.
+    
+    
+    content_copy
+The competition has already had so much random element, that I don't think we
+need more luck or bad luck. I presume most players would agree, because Kaggle
+is all about talent and hard work, not about lottery tickets.
+So how is the current situation regarding this?
+The ranking algorithm was troubled from the start, and you can read why in
+other threads. The sigma reset helped many agents to get out of the pit,
+although some were unlucky again, and I'm sorry that it didn't work for all
+trapped agents. Well, just to clarify, the sigma reset was a decision of our
+conductor-in-chief, and I don't recall suggesting this specific fix
+explicitly, my own suggestions were bit different.. but that's history.
+Anyway, right after the reset we've seen a tornado of gameplay, particularly
+in the upper parts of the ranking, which was quite stagnant before the reset.
+And that's because the algorithm started to play all agents at a similar rate.
+Where are we now? The sigma of agents which resolved multiple games since
+then, has gone down. And it seems the algorithm is again busy evaluating the
+high-sigma agents. Even the medium-sigma agents are not evaluated much,
+because well, for the algorithm high-sigma has a clear preference.
+Some players believe that the problem lies with low sigma, but I strongly
+disagree. Decreasing sigma is the basic principle of the algorithm when it is
+nearing its final phase and **by the end of the evaluation, sigma is supposed
+to be low for all agents**. And let's not forget, even with low sigma, agents
+can move up and down the ranks given they tend to win or lose their matches,
+**provided** there's enough of gameplay for them.
+At this point we have a major departure between how the algorithm should work
+in principle and how it's working now. And it comes down to the
+slow/unbalanced rate of gameplay caused by the no-skill agents. In principle
+the algorithm should be evaluating agents more or less at the similar rate of
+gameplay, but in our case, due to the very high rate of ties, the algorithm is
+consumed with hard-to-resolve agents in the midst of the ranking which just
+keep drawing their matches.
+The second issue is the presence of agents shooting up (and perhaps
+overshooting which is OK in the early or mid phase), but still not playing
+frequently enough to settle their scores, so the ranking algorithm may end up
+with highly scored agents with high uncertainty (i.e. sigma) about their score
+-- and this is definitely not what we should expect or appreciate, it's just
+pure luck or bad luck before the final whistle.
+Therefore my best suggestion for the final days of the competition is: **to
+reduce the strong preference for high sigma in the match-making code, so that
+agents with low and moderate sigma get more gameplay than now.** It doesn't
+have to be all uniform, just adjusted. It would be great if agents with low
+sigma could play about 10 times a day, which I think is perfectly within the
+resources limits, if only we agree to take away some gameplay from high-sigma.
+What is your take on this?
+
+
+## 7 Comments
+
+
+### [Chris Deotte](/cdeotte)
+I was thinking about this. I think the central issue is ties. In other sports,
+a tie is rare and is the result of strong play from both teams. Therefore in
+other sports ties don't affect sigma nor score.
+However I think in this competition, ties should be handled differently. In
+Kaggle's LLM 20 Questions, a tie is basically a loss for both teams. It is the
+result of weak play where both teams failed to guess the word. (The only real
+tie in LLM 20 Questions is if both teams guess the keyword in the same round
+before the end).
+If ties decreased sigma (and decreased score a little too), then that would
+solve most of the current game play rate issues i think. In other words if
+every game decreased sigma equally (because every game gives us information),
+then all teams would play the same number of games.
+
+
+### [gguillard](/gguillard)
+A straightforward solution would have been to disable dummy bots according to
+simple rules. Set keyword = "Canada", ask "Is it a country" and "Is it in
+Africa", if the answers are not "yes" and "no" then the bot should not pass
+qualifications. Same if as a guesser the bot keeps asking the same single
+question. That wouldn't solve everything, but it'd sure help.
+
+
+### [JK-Piece](/jeannkouagou)
+I read somewhere that agents that ask bad questions or provide incorrect
+answers to very easy questions were penalized. The person said that the
+quality of questions and answers was encoded into the evaluation metric. But I
+don't think this is the case.
+
+
+### [gguillard](/gguillard)
+I'd be very surprised, but even if it was the case, only penalizing them
+wouldn't help the unfortunate paired bot.
+
+
+### [loh-maa](/lohmaa)
+More adequate handling of ties could fix a lot in the case of our game format.
+I tried to see if this could be tested, but unfortunately in `openskill` it
+doesn't look like it's easy to control the update itself -- it's embedded in
+the formulas with no explicit parameter control, at least I didn't see it at
+first glance.
+Anyway, if I understand correctly, this idea, and the idea of gguillard are
+not for this evaluation at this stage.
+
+
+### [Andrew Tratz](/jademonk)
+Agree, although it may be a bit late to make adjustments now. I'd go so far as
+to suggest match frequency could be uniform. Overshooting would also decrease
+since agents which overshoot would be more likely to play games against high
+rank agents, which would cause them to more quickly correct.
+Or just set everyone's sigma to 45 and extend the evaluation period.
+
+
+### [Mahmoud Elshahed](/letemoin)
+i was thinking about something different, in last 3 days, just pair each
+**agent with itself (two roles)** , this will eliminate some luck and random
+in pairing, but i think it will boost alpha agent too much, but this may be
+interesting.
+Despite my agent blown and start recently repeat suggestion in many rounds
+wrongly, but many plays show that wrong answers to questions limit its
+capabilities in right guess.
+
+
+### [Raki](/raki21)
+I think what would have been great is to do maybe 100 rounds of play with
+agent answerer and asker from the same submission first. If there is no single
+correct guess, then the pipeline is probably too bad and could be put into a
+seperate low/no skill group. That would prevent the worst of the elo pit
+problem.

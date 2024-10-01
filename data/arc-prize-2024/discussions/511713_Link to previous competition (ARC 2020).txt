@@ -1,0 +1,69 @@
+[steubk](/steubk) · 450th in this Competition · Posted 4 months ago
+arrow_drop_up15
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Link to previous competition (ARC 2020)
+**<https://www.kaggle.com/c/abstraction-and-reasoning-challenge>**
+Here you can find write up for 1st place solution by
+[@icecuber](https://www.kaggle.com/icecuber):
+<https://www.kaggle.com/competitions/abstraction-and-reasoning-
+challenge/discussion/154597>
+The code for the 1st place solution of the 2020 contest is available as one of
+the template for this competition
+<https://www.kaggle.com/code/hansuelijud/template-arc2020-1st-place-solution-
+by-icecuber>
+
+### Let's see where we can get to together !
+comment
+
+
+## 6 Comments
+
+
+### [Serhii Hrynko](/elvenmonk)
+arrow_drop_up1
+  * format_quote
+  * link
+Train tasks seems to be the same. I wonder if "unseen" test tasks for this
+competition are actually seen in ARC 2020.
+
+
+### [steubk](/steubk)
+arrow_drop_up0
+  * format_quote
+  * link
+Of course no! You could read more here
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/510823#2867201>
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you! For more resources we list a bunch at
+<https://arcprize.org/guide>
+
+
+### [Mahmoud Abdulhamid](/triblex)
+arrow_drop_up0
+  * format_quote
+  * link
+what is the different between 2020 and 2024
+
+
+### [微信：lianghuajiaoyi123456](/tenghewang)
+arrow_drop_up0
+  * format_quote
+  * link
+能详细解答这个问题吗
+
+
+### [Aratak](/siddhanttyagi2807)
+arrow_drop_up0
+  * reply
+Thanks for the resource

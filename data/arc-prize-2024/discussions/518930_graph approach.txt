@@ -1,0 +1,345 @@
+[andy jennings](/ajenningsfrankston) · Posted 3 months ago
+arrow_drop_up23
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### graph approach
+This seems to be the highest scoring paper+code on the old competition:
+<https://arxiv.org/abs/2210.09880> I will try it on this competition data.
+comment
+
+
+## 24 Comments
+
+
+### [rxe](/albartrose)
+arrow_drop_up5
+  * format_quote
+  * link
+I reworked the ARGA project quite a bit, and been working towards a MCTS
+version.  
+It is a massive WIP, but you can peek here:
+<https://github.com/richemslie/McARGA>  
+I am open to any form of collaboration.
+
+
+### [aimind](/aimind)
+arrow_drop_up1
+  * format_quote
+  * link
+<https://github.com/you68681/GPAR> Generalized Planning for the Abstraction
+and Reasoning Corpus <https://arxiv.org/abs/2401.07426> update
+<https://github.com/khalil-research/ARGA-AAAI23>
+<https://ar5iv.labs.arxiv.org/html/2210.09880>
+
+
+### [Len Yabloko](/lenyabloko)
+arrow_drop_up4
+  * format_quote
+  * link
+Even though it wasn't the highest scoring approach, it does have a theoretical
+advantage of using the graph representation of the problem, as opposed to a
+solution search strategy. This is importatnt because it serves as an object-
+centric prior. Be it the very week one, since their objects are merely pixel
+sets defined by topological closure. But they do have elementary object
+relations - horizontal and vertical projections. So, at least they introduce
+2D space as a prior. This raises the question of minimal sufficient inductive
+bias. I think the progress demands a stronger object priors, such as inferred
+topological properties of objects relative to each other and 3D space. That
+would allow learning from physical world outside of ARC challenge. In fact,
+most of Core Knowledge priors are not included in any solution, as far as I
+can tell. LLM architecture only provides basic equivariance and nothing like
+complex symmetries that humans use from day 0. Our solution space is limited
+by topological constraints, as opposed to simple algebraic types defined over
+pixel.
+
+
+### [aimind](/aimind)
+arrow_drop_up2
+  * format_quote
+  * link
+ViRel: Unsupervised Visual RelationsDiscovery with Graph-level Analogy 2022
+<https://github.com/snap-stanford/virel>
+<http://snap.stanford.edu/virel/>
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up5
+  * format_quote
+  * link
+Update. I got this approach working on the 2024 dataset. But bad news. The
+success rate is quite low, certainly less than 10% on the training data. There
+is a lurking bug in the graph abstraction and de-abstraction that I could not
+find. Perhaps with a change in approach this might be useful. The code is
+here: <https://github.com/ajenningsfrankston/arc_challenge_arga>
+
+
+### [rxe](/albartrose)
+arrow_drop_up2
+  * format_quote
+  * link
+I managed to get it to run but it took quite a lot of hacking and whacking,
+and I more than likely introduced some bugs.
+Results: On the public test set it scored about 10% and the private test set
+it scored 0%. There are a lot of failures due to this
+<https://github.com/khalil-research/ARGA-AAAI23/issues/3> \- that is there is
+a restriction with the code that input and output grid sizes need to be the
+same.
+I am still going explore this further - maybe my final solution will be based
+off of this. I am still bullish on that it is a good approach to start with an
+initial graph abstraction. I'll post some updates if I find anything new.
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up1
+  * format_quote
+  * link
+I've been padding the data with -1 to address that. But.. that means there's a
+bigger space and so more data or something will be needed to deal with it. 10%
+is promising
+
+
+### [Len Yabloko](/lenyabloko)
+arrow_drop_up0
+  * format_quote
+  * link
+I'd like to understand this approach better after reading the paper. The
+authors seem to have abandoned the effort. It appears that you are open for
+collaboration. May be I can join your team.
+
+
+### [rxe](/albartrose)
+arrow_drop_up1
+  * format_quote
+  * link
+Feel free to fire me an email, it is on my github page.
+Hide repliesarrow_drop_up
+
+
+### [Len Yabloko](/lenyabloko)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you for your contribution. I can run arga.pynb without any changes (it
+breaks out of the main search loop after 30min timeout).
+I will attempt to reduce the search space using the arc_graph symmetries.
+P.S:  
+If anyone interested to discuss this further, feel free to contact me via
+email on my github profile.
+
+
+### [Len Yabloko](/lenyabloko)
+arrow_drop_up0
+  * format_quote
+  * link
+After poking around the code for 2 weeks, I can finaly understand the state at
+wich it was left by the previous owner. After I removed 30 min timeout and
+added some debugging information, I can see why the task #0d3d703e was the one
+left hard-coded in the main.ps. That is because it has a distinction of being
+very simple for human. However, the "brutal force" approach used in ARGA
+results for this simple task in the initial solution tree with about 40,000
+nodes width. So 30 min is not enough to explore even the first level of depth.
+The article does mention how filtering the operations can reduce this search
+space. But the particular technique used to that in code - assumes that every
+simple update rule must apply to every test case. So, for example, if we are
+attempting to change the color of block from the initial color to some other
+color, then every test case must contain the block with that intial color. But
+in the task #0d3d703e all color blocks that must be replaced with another
+color blocks - only appear in that intial color in one of the test cases. In
+other words, each test case requires slightly different rule - that is the
+same only up to specific value of color blocks. Human can easily gues that
+each test case requires the different colors and what these colors are.
+But the ARGA algorithm needs to test each possible color in combinations with
+each possible block and several possible update operations. In addition, ARGA
+uses "abstractions" that treats background color and block shapes differently.
+All combinations of simple rules - like allowing of excluding certain color,
+performaing color updated or rotation or move - are computed using Python
+product() function which produces aforementioned 40,000 possible combonations
+for even a very simple task.
+I can see that the last owner of code was attempting to reduce this huge seahc
+space by requiring every value in the rules apply to every test case. Adding
+that hard-coded 'hack' reduced the space by factor of 10 down to 4,000 nodes
+at first level of the search tree. However, this makes the task #0d3d703e
+unsolvable, in priciple (as well as any other task that fails to meet the
+requirement of rules values applying to all test cases). I think, the 'hack'
+was added at the last minute to tackle that issue. You could call it a
+"huristic" if it was not obviously misguided.
+Otherwise, the ARGA code is still very promissing in that it makes the DSL -
+used for constructing rules of updates - completely configurable. There is no
+hard-code rules or concepts anywhere in the code (except that last minute
+'hack'). So the code can be used in combination with any solutions seach
+starategy. It is also advantageous to use graph representation of grids, as
+you can plot the graphs and see how operations are applied to the intial
+grids. It makes for excellent initial code base for futher development.  
+I did some small code refactoring to remove hard-coded 'huristics'. You can
+use my code from here <https://github.com/lenyabloko/arc_challenge_arga>
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up1
+  * format_quote
+  * link
+This excellent paper explores this issues here in significant detail:
+<https://arxiv.org/html/2402.03507v1> It shows that the graph approach can get
+more in the learning set, but performs quite poorly on the hard problems.
+
+
+### [rxe](/albartrose)
+arrow_drop_up0
+  * format_quote
+  * link
+Excellent paper indeed. Kind of sobering too, and shows how much of a monster
+Icecuber solution was.
+
+
+### [Len Yabloko](/lenyabloko)
+arrow_drop_up1
+  * format_quote
+  * link
+[@ajenningsfrankston](https://www.kaggle.com/ajenningsfrankston) , after
+reading both papers carefully, I am questioning what you call "graph approach"
+and your conclusions about it. To begin with, the second paper does not
+provide the source of comparison data they used beyond the original ARC 2020
+competition score. But more importantly, the use of 'graph' is diffent and
+needs to be clarified: both papers use graph (DAG) to search for a solution,
+but only the first paper uses graph to represent input and output. The second
+paper uses original DreamCoder representation of problem as lists sorting
+function, - that is a direct input/output pixel mapping. In fact, their only
+innovation as far as I can see, - is enhanced DSL and application of LLM (and
+even that is hardly the news anymore). Their code and data is still not
+published after 6 month.
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up0
+  * format_quote
+  * link
+i can only comment on code that I have run myself. That is shown on github in
+my previous comment. Yes, I don't like it when people reference the code and
+don't publish it. It happens a lot.
+
+
+### [dong121389](/dong121389)
+arrow_drop_up2
+  * format_quote
+  * link
+Thank you for sharing! I've learnt a lot from this. I am also working on graph
+direction.  
+However I am a little not favor of the approach that based on grammer and
+fixed search stratedy, I think that is not how human think  
+So I am modeling data into hypergraph, and trying to solve this problem using
+neural network
+
+
+### [Shaurya Madukuri](/shauryamadukuri)
+arrow_drop_up0
+  * format_quote
+  * link
+Wow! the hypergraph idea sounds very cool!, but what the use such a complex
+representation here?
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+需要各种高级抽象，人类抽象的先验需要增加很多
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up3
+  * format_quote
+  * link
+Here's the code for the paper  
+<https://github.com/khalil-research/ARGA-AAAI23>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F383865%2Fc4f74cfb19e90112c4f82af8ebe05daf%2F8001727058910_.pic.jpg?generation=1727059060991270&alt=media)  
+The most promising way：​Relational decomposition for program synthesis
+arxiv.2408.12212 better ARGA
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+HygHD: Hyperdimensional Hypergraph Learning
+<https://past.date-conference.com/proceedings-
+archive/2024/DATA/973_pdf_upload.pdf>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Hypergraph is a more better abstract method.
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Direct conversion from raw data input to graphical representation,  
+There is no need to convert the original data into images and then into
+graphic representations.
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+2d topological models representation ; some same node cluster abstractor nodes
+high-level component
+
+
+### [Aymen Dernani](/aymendernani)
+arrow_drop_up0
+  * format_quote
+  * link
+Good starting point , thanks for sharing
+
+
+### [Luca Bottero](/lucabottero)
+arrow_drop_up0
+  * format_quote
+  * link
+I'm also working in that direction. Do you have any suggestion for the
+creation of the DSL?
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up0
+  * format_quote
+  * link
+the paper describes a simple DSL based on graph grammar. I'm not sure how
+effective it is, but will post how this goes.
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up2
+  * format_quote
+  * link
+update: there is significant difference between the old ARC data format and
+the 2024 competition. I think I have the 2024 data working, but now I'm
+hitting bugs in the code itself.
+
+
+### [TBHallmark](/tbhallmark)
+arrow_drop_up0
+  * reply
+Thank you for sharing!
+
+
+### [Twishmay Shankar](/glazeshadow)
+arrow_drop_up0
+  * reply
+Thanks for sharing!

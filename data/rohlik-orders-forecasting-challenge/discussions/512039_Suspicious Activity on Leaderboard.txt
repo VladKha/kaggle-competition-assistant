@@ -1,0 +1,64 @@
+[Etienne Kaiser (郑翊天）](/etiennekaiser) · 419th in this Competition · Posted 3
+
+### Suspicious Activity on Leaderboard
+I'm pretty sure (with benefit of doubt) that this behavior is not aligned with
+the competition and Kaggle rules for the following reasons:
+  * It could be that one person has two Kaggle accounts.
+  * Or that two people are sharing code without being in a team, which also violates the rules.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F17731290%2F7320b9734d09fa52743dce80d36e6851%2FScreenshot%202024-06-13%20at%2010.23.46.png?generation=1718267116219088&alt=media)
+Especially looking at the submission time which is just 5 minutes apart and
+the exact same score. I think the best is to check the submission files to
+compare the values. Thanks
+
+
+## 6 Comments
+
+
+### [Sheikh Muhammad Abdullah](/abdmental01)
+I think there should be a rule ---> no novices are allowed to join the
+competition. This is not a good approach. Using multiple accounts for one
+submission to block the top leaderboard is unfair.
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+[@abdmental01](https://www.kaggle.com/abdmental01) one may become a
+contributor and then cheat. Being a novice does not imply that one is a
+cheater. Also, we are not 100% sure of this case too, so one is innocent
+unless proved guilty [@abdmental01](https://www.kaggle.com/abdmental01)
+
+
+### [Sheikh Muhammad Abdullah](/abdmental01)
+Your point is also valid, [@ravi20076](https://www.kaggle.com/ravi20076).
+However, both scores are equal in this case. Let’s examine this further.
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+That's very true (referenced to "block the top leaderboard"), recently a lot
+competition using identification which should help, I don't know the
+requirements (governance) to use that. Anyway having multiple accounts which
+give you more submissions per day isn't really helpful here, as this
+competition can be done totally offline. Further I even think to submit just
+twice at the end to not have the curse of choosing a model (no regrets at the
+end when seeing the results, hehe).
+Edit: I think novices are not the problem itself, like
+[@ravi20076](https://www.kaggle.com/ravi20076) says.
+
+
+### [Adam Logman](/adamlogman)
+That is really suspicious I think we have to report it
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+I just wanted to ask, there's no other meaning. Why don't you participate in
+the competition but keep an eye on the latest developments? Are you looking
+for a suitable time to enter?
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+No worries, I want to join, but currently I'm in a dense exam period, which
+wouldn't be the right time to join any competition (yet). I will join in 3
+weeks, but not to leave dead ends, I rather join when it's the appropriate
+time. In my last competition I also joined 1 months after the start, to also
+see how the competition is developing. I like to observe first, then reason
+and decide, rather than rush into it. Thanks for the question :)

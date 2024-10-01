@@ -1,0 +1,44 @@
+[GODDiao](/goddiao) · 188th in this Competition · Posted 3 months ago
+
+### Question about the game mechanism
+Hi, I am wondering about the basic 2v2 mechanism of the game. **Are we
+required to submit 4 agents that have 2 pairs of questioner and answerer
+agents in total? **  
+By the way, **what form of the file do we need to submit?** Is it the format
+like what we see in the LLM_20_questions starter notebook?  
+The next problem is that **we are unclear about how our file will work in the
+Kaggle environments.** It means that after we submit our agents, how can the
+environment organize and use our codes to play the game? Hope I can get the
+explanation asap.
+
+
+## 1 Comment
+
+
+### [RS Turley](/rturley)
+You just need to submit one agent that knows how to handle 3 different roles:
+"ask", "answer" and "guess." For example, in the
+[notebook](https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-
+a-notebook) that I posted to show how to run the environment locally, I made a
+simplistic agent like below:
+    
+    
+    def simple_agent1(obs, cfg):
+        if obs.turnType == "ask": response = "Is it a duck?"
+        elif obs.turnType == "guess": response = "duck"
+        elif obs.turnType == "answer": response = "no"
+        return response
+    
+    
+    content_copy
+When you submit to the competition, you'll want your agent function to be in a
+python file like the "submission/main.py" example in the starter notebook, and
+the notebook shows you can add supporting files and zip them in one
+"submission.tar.gz" file.
+During the competition, you're agent will be one of four different players in
+a 2v2 environment. Your agent will either be assigned to do all the "ask" and
+"guess" turns as it tries to guess the keyword for its team, or your agent
+will know the keyword and do all the "answer" turns as it teammate asks
+questions.
+If you watch a replay or two from the top teams, it should make sense.
+Good luck!

@@ -1,0 +1,26 @@
+[Andreas](/andreasbis) · Posted 4 months ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### How would a winning solution look like?
+Given that this competition focuses on AGI and machine learning models that
+can be inferred without extensive training on data, the traditional approaches
+used in past Kaggle competitions are not be applicable. Does this imply that
+reinforcement learning is the way to go?
+comment
+
+
+## 1 Comment
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up5
+  * format_quote
+  * link
+We put a few recommendations (including Francois's take) on the guide here!
+<https://arcprize.org/guide>

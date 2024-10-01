@@ -1,0 +1,57 @@
+[MarkStudioMEAT](/markstudiomeat) · Posted 2 months ago
+arrow_drop_up-5
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### sharing my architecture so people better than me can give it a shot
+one day of brain farting and a night of sleep and i ended up with a (in my
+opinion) quite simple architecture that still needs work to flesh it out
+nonetheless, it hits me when i am manually complaining the demo task on the
+ARC website and analysing my approach to the problems, i realised that i am
+just making up plans for completing the task before even starting to click my
+solution in to the squares, then not too efficiently "make" my solution step
+by stap.  
+TL;DR  
+this is some squiggle line that is my plan
+[Screenshot 2024-08-12 115443.png](https://storage.googleapis.com/kaggle-
+forum-message-attachments/2956393/21050/Screenshot 2024-08-12 115443.png)
+comment
+
+
+## 4 Comments
+
+
+### [AYUSH KHAIRE](/ayushkhaire)
+arrow_drop_up3
+  * format_quote
+  * link
+[@markstudiomeat](https://www.kaggle.com/markstudiomeat) can you please share
+it in a different way ? Like a tool using boxes snd arrows ( I am a low
+visioner unable to identify handwriting properly) . Anyways I am just curious,
+I am a newbie in ML .
+
+
+### [AYUSH KHAIRE](/ayushkhaire)
+arrow_drop_up0
+  * format_quote
+  * link
+please go to <https://miro.com/app/dashboard/> and make a chart
+[@markstudiomeat](https://www.kaggle.com/markstudiomeat)
+
+
+### [竹影](/zhangjieshuo)
+arrow_drop_up0
+  * format_quote
+  * link
+Perhaps I didn’t fully understand your approach. Based on my understanding, I
+think the part about 'evaluation criteria' in your steps seems somewhat vague?
+
+
+### [Shreyansh Murathia](/shreyanshmurathia)
+arrow_drop_up0
+  * format_quote
+  * link
+Kinda hard to interpret. Please share a flowchart, if possible.

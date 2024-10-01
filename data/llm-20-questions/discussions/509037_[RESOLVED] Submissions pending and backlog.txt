@@ -1,0 +1,23 @@
+[Bovard Doerschuk-Tiberi](/bovard) · Posted 3 months ago
+· Kaggle Staff
+
+
+### [RESOLVED] Submissions pending and backlog
+Our servers went down for a few hours, during which we continued to schedule
+matches (which were subsequently queued). Servers are now back online, but we
+have about 2k matches to play through. I estimate this will take 12-18 hours
+to complete (I'll post once that happens).
+Until we are caught back up:
+  1. submissions will take a long while to process
+  2. you'll see matches queue for a long time
+  3. new submissions will have very few matches
+I'll update here once we have caught up!
+EDIT: This has been resolved and submissions and matches should be processing
+as normal now. Thanks!
+
+
+## 1 Comment
+
+
+### [OminousDude](/max1mum)
+Thank you for fixing the problem!

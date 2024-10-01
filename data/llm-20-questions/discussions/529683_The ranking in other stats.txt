@@ -1,0 +1,657 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 10 days ago
+
+
+### The ranking in other stats
+The final stats. Only top 100 agents for brevity, but including both
+submissions, sorted by the final score as of Aug 29 23:59 GMT. If anybody
+would like to do more analysis, here's the
+[dataset](https://www.kaggle.com/datasets/lohmaa/llm20-evaluation-games-
+collected) with all episodes and scoring.
+    
+    
+    AWR -- average win reward of all the won matches, which says how quick the winning team was to guess
+    ATL -- all time low score, but over the scores after games (i.e. `UpdatedScore`), 
+           so we can see who won literally their 1st game
+    ATH -- all time high score
+    p24 -- no. times played in the last 24 hours (i.e. on the latest full day until midnight)
+    AH -- no. times offered alpha handshake as the guesser
+    HA -- no. times its handshake was accepted
+    FA -- no. times forced alpha questions without the handshake
+    Ot -- no. times without any alpha questions
+    NWhr -- Kha Vo's no. wins as the guesser after its handshake was refused, so using another strategy
+    ha -- no. times accepted a handshake as the answerer
+    hr -- no. times refused the alpha handshake
+    
+    
+    content_copy
+    
+    
+                               name  win  tie  los err  AWR  ATL   ATH  sigma  p24   AH  HA   FA   Ot NWhr  ha  hr
+    SubmissionId                                                                                                  
+    39529992               c-number   49   38   16      7.7  599  1416   45.0   12   57  41    0    0    5  16   0
+    39499327      Tricksy Hobbitses   50   60   20      6.7  600  1261   45.0   18   65  40    0    0    4  22   0
+    39526710            agent alpha   58  100   24      6.6  593  1454   45.0   18   79  43    0    0    3  33   0
+    39530133               c-number   66   43   25   1  6.6  722  1447   45.0   11   67  54    0    0    3  25   0
+    39531774      Oxford Kaggle Clu   54  102   21      7.9  598  1204   45.0   13   97  53    0    0    0  16   0
+    39530583             yukky_maru   64   41   33      5.6  713  1308   45.0   14    0   0   78    0    0  23   0
+    39525234               Rist bot   41   93   19      5.6  598  1195   45.0   13   91  51    0    0    1  17   0
+    39525255      Ilmari Vahteristo   43   57   24   1  7.8  600  1197   45.0   14   67  57    0    0    1  17   0
+    39516720                   Jaja   47   90   25      5.7  599  1178   45.0   19   83  49    0    0    2  28   0
+    39528635         ISAKA Tsuyoshi   43  114   23      7.0  600  1217   45.0   16   83  34    0    0    3  25   0
+    39530557             yukky_maru   67   63   35      6.9  600  1393   45.0   11    0   0   78    0    0  42   0
+    39532087       Full Power Agent   60   57   29      6.3  718  1226   45.0   16    0   0   69    0    0  35   0
+    39526145              majimekun   53   41   32      5.7  600  1244   45.0   18   56  42    0    0    3  33   0
+    39527069              majimekun   47   92   28      5.8  566  1197   45.0   12   89  49    0    0    5  23   0
+    39526333      Oxford Kaggle Clu   42  126   26      5.3  462  1293   45.0   15   93  50    0    0    0  27   0
+    39516288               kambehmw   39  184   13   2  6.4  556  1138    NaN   17    0   0  114    0    0  17   1
+    39531344       Full Power Agent   59   48   30      4.7  599  1149   45.0    9   72  53    0    0    2  25   0
+    39527139         Praying Agent    38   90   18      4.8  600  1131   45.0   10   70  36    0    0    2  11   0
+    39525213               Rist bot   56   65   35      6.6  594  1236   45.0   16   76  54    0    0    0  29   0
+    39528586         Praying Agent    47   77   28      5.0  598  1199    NaN   14   79  44    0    0    0  21   0
+    39528971                   zzzz   36  129   25      5.2  485  1266   45.0   16   99  45    0    0    0  21   0
+    39528678            agent alpha   41   93   25      6.7  599  1155   45.0   12    0   0    0   65    0  27   0
+    39527171                   zzzz   44  100   28      6.2  462  1141   45.0   11   86  54    0    0    5  18   0
+    39529611               kambehmw   41   97   23      5.8  600  1112   45.0   10   75  44    0    0    3  17   0
+    39531923        Benjamin Kovacs   62   53   43      6.4  737  1306   45.0   14   67  56    0    0    0  40   0
+    39523327            Junhua Yang   29  138   18      5.0  637  1070   45.0   14   96  45    0    0    2  15   0
+    39524121                   YOLO   32  124   20      6.8  600  1270    NaN   12    0   0    0   92    0  25   0
+    39530891        Dmitry Leontyev   46   68   29      5.1  600  1287   45.0   11   71  46    0    0    4  21   0
+    39528420         ISAKA Tsuyoshi   52   82   35      6.8  593  1391   45.0   14   77  49    0    0    2  23   0
+    39525020      Ilmari Vahteristo   26  174   15      7.7  462  1010   45.0   11  115  49    0    0    0  11   0
+    39515885                 Nagata   25  154   15      6.6  600  1038   45.0   12    0   0    0  107    0  11   0
+    39531492                    KKY   22  170   12      8.1  481  1036   45.0   10   93  30    0    0    2   8   0
+    39531474        Joonas Maanonen   24  163   12   1  9.1  420  1131   45.0   11    0   0    0  100    0   0   9
+    39526851      Alpha agents are    31  132   30      7.0  599  1194    NaN   13    0   0    0   92    0  28   0
+    39528387        Neuron Engineer   21  165   11      6.1  587  1025   45.0    8    0   0    0   90    0  12   0
+    39521656              LinChenyu   25  165   27      6.5  597  1250   45.0   16    0   0    0  108    0  21   1
+    39499336      Tricksy Hobbitses   27  152   13   1  6.7  600  1027   45.0   15   97  25    0    0    2   7   0
+    39529254        Neuron Engineer   33  139   25      7.3  600  1275   45.0    8    0   0    0   97    0  19   0
+    39527133        Pascal Pfeiffer   24  126   15      7.7  600  1028   45.7   13    0   0    0   89    0   0  12
+    39531868         Azat Akhtyamov   28  139   11      4.9  600  1005   47.8   18    0   0    0   88    0  11   0
+    39521339             sqrt4kaido   19  242    5      8.1  467   973   48.7   17    0   0    0  131    0   0   8
+    39527982               Vibhatsu   26  215   18      8.3  568  1072    NaN   10    0   0    0  137    0  14   0
+    39531713                    kek   17  227    8      7.4  591   975   46.4   11    0   0    0  135    0   5   0
+    39521217         Kazuo Watanabe   22  193   16      6.6  624  1100   45.0   15    0   0    0  120    0  10   0
+    39530535                    Jed   16  222   12      6.8  464  1110   46.8    9    0   0    0  118    0  11   0
+    39521950              dynamic24   38  126   33   1  7.4  600  1263   45.0    9    0   0  101    0    0  34   0
+    39529429                    20    15  205   11      5.7  490   981   46.8   13    0   0    0  119    0   8   0
+    39532043                 tamura   15  220    2      7.9  498   941   52.5   14    0   0    0  126    0   0   5
+    39532005         Azat Akhtyamov   31  142   14      4.0  597  1093   48.9   12   14   3    0   83    0   9   0
+    39531390           Alex Glinsky   21  193   10      6.7  600  1027   48.0   12    0   0    0  103    0   0  12
+    39531565                    KKY   35  150   20      6.3  600  1001   45.0   15  102  47    0    0    6   9   0
+    39523763            Junhua Yang   20  218    4      3.6  588   934    NaN   13  116  29    0    0    1   2   1
+    39143057               mhericks   13  195    9      5.7  427  1004   48.9   12    0   0    0  116    0   0   6
+    39529828              Van Mason   14  218   11   1  7.5  463  1016   45.0   12    0   0    0  117    0  10   0
+    39494089                Melinda   21  155   16      8.8  599  1169   48.4   14    0   0    0  110    0   0  11
+    39523159                    IC2   19  176   14      5.8  599  1080   47.4   15    0   0    0  116    0  11   0
+    39516085            ravi tanwar   12  173    7      7.5  598   973    NaN   15    0   0    0   82    0   6   0
+    38986943                 Thomas   15  236    4   1  7.1  398   941    NaN   17    0   0    0  128    0  10   0
+    39532013              downheart   27  157   26      5.8  600  1259   45.0   14    0   0    0  100    0  23   0
+    39500902               Kasahara   21  169   10   1  7.5  581   966    NaN   14    0   0    0  102    0   0   7
+    39502854                kaoutar   12  220    4      7.8  576   919   53.6   10    0   0    0  106    0   3   1
+    39442501           -SANTACLAWS-   17  179    9      7.8  600  1035   52.4   19    0   0    0  102    0   1  10
+    39521335           Dawid Motyka   13  197    9      6.5  599  1056   52.1   22    0   0    0  116    0   0   7
+    39523716          Data Dazzlers   25  256   23      6.7  590  1120   45.0   14    0   0    0  128    0  19   0
+    39529083         techniquetwice   31  141   24   1  6.0  598  1180   45.0   13   96  52    0    0    3  21   0
+    39530250                     BK   16  149    6      8.2  600   940    NaN   15    0   0    0   98    0   0   4
+    39188996              Ioannis M   14  252    9      6.5  466   991    NaN   14    0   0    0  125    0   0   7
+    39216000                 gwh666   15  207    8      6.5  475   971    NaN   11    0   0    0  113    0   0   5
+    39529631                 torino   24  177   13   1  8.0  597  1096    NaN   10    0   0    0  120    0   8   0
+    39530422        Dmitry Leontyev   21  180    5   1  5.8  655   901    NaN   12  106  19    0    0    8   7   0
+    39530378                 TomFuj   17  238    7      7.5  546   898    NaN   14  124  33    0    0    1   9   0
+    39528500          Agile Gandalf   20  188   13      9.0  600   934   45.0   16    0   0    0  110    0   2  10
+    39526903                Wal8800   23  198   10   2  7.3  600   994   49.7   14    0   0    0  114    0   0   7
+    39459307                   bono   14  157    6   1  7.1  600   980   51.7   13    0   0    0   87    0   0   7
+    39524026             TuMinhDang   19  188   11      8.3  654   915    NaN   15    0   0    0  112    0   4   0
+    39524027             TuMinhDang   14  233    5   1  7.9  598   949   51.8   14    0   0    0  109    0   5   0
+    39461084           kei hasegawa   17  175   12      7.0  598  1024   51.7   18    0   0    0   99    0   0  10
+    39522682             vj4science   14  208    7      7.4  464   974    NaN   17    0   0    0  124    0   0   4
+    39529748                  so_so   16  165   17      9.1  600  1210   45.5   13    0   0    0  102    0   0  17
+    39524632        Prashant Kikani   13  255   10      6.9  464  1010    NaN   18    0   0    0  157    0   0   7
+    39492248             Rinku Sahu   16  196    7      7.9  599   967    NaN   14    0   0    0  110    0   0  10
+    39502122                enddl22   16  223    9      8.4  597  1104    NaN   15    0   0    0  125    0   9   0
+    39530020                 jang42   16  168   10      6.9  600  1191   55.3   15    0   0    0   93    0   0   9
+    39531690         Kirill Yakunin   12  183    8      7.9  549   930    NaN   18    0   0    0   91    0   0   3
+    39528121                  unom3   15  179   15   1  8.3  530  1084   48.2   15    0   0    0   98    0   0  10
+    39530156       Nischay Dhankhar   23  184   21      6.2  596  1216    NaN   14    0   0    0  120    0  16   0
+    39525309                 charmq   15  163   14      7.3  572  1060   47.8   13    0   0    0   89    0   2   0
+    39453368                Bo Peng   12  259    6      7.9  600   922    NaN   19    0   0    0  136    0   0   8
+    39452989            Yousef Rabi   11  201   11      6.9  413   950    NaN   18    0   0    0  120    0   0   7
+    39525713          Manuel Campos   12  281    6      6.7  588   874   54.8   17    0   0    0  147    0   3   1
+    39453366                Bo Peng   14  184   11      7.9  600  1071   50.4   11    0   0    0   88    0   0   3
+    39492195       dron bespilotnik   12  215    8      7.4  437  1006   55.2   14    0   0    0  135    0   0   5
+    39531714               nash_efp   16  172   16      6.6  599  1153   51.9   13    0   0    0  101    0   9   2
+    39310289               qirenzhr   13  244    4      9.4  600   859    NaN   19    0   0    0  125    0   0   5
+    39019658          Gwonhyeockmin   12  247   14      8.5  599  1167   51.7   12    0   0    0  146    0   0  12
+    39520406         Magsen Chebini   14  165   10      7.3  600   974    NaN   10    0   0    0  100    0   1   4
+    39487540        THUNDER THUNDER   10  263    5      8.4  462   863    NaN   13    0   0    0  141    0   4   0
+    39531895               Yuang Wu   17  194    7      7.0  600   969    NaN   11    0   0    0  114    0   0   1
+    39454425          Paul Pawletta   14  188    6      7.5  600   882   52.2   15    0   0    0  113    0   0   3
+    39530304               blackbun   14  219    6      8.3  532   864   55.6   15    0   0    0  115    0   0   6
+    
+    
+    content_copy
+And c-number's suggestion -- win-tie-loss stats split into the
+questioner/guesser and answerer roles.
+    
+    
+                           name  win  tie  los err  tot   AWR               name  win  tie  los err  tot   AWR
+    39529992           c-number   37   15    5       57   7.9           c-number   12   23   11       46   6.9
+    39499327  Tricksy Hobbitses   25   27   13       65   6.0  Tricksy Hobbitses   25   33    7       65   7.5
+    39526710        agent alpha   35   36    8       79   6.4        agent alpha   23   64   16      103   6.8
+    39530133           c-number   42   15   10       67   7.4           c-number   24   28   15   1   68   5.2
+    39531774  Oxford Kaggle Clu   34   57    6       97   7.8  Oxford Kaggle Clu   20   45   15       80   8.2
+    39530583         yukky_maru   42   14   22       78   5.8         yukky_maru   22   27   11       60   5.3
+    39525234           Rist bot   25   52   14       91   6.2           Rist bot   16   41    5       62   4.7
+    39525255  Ilmari Vahteristo   30   29    8       67   8.3  Ilmari Vahteristo   13   28   16   1   58   6.7
+    39516720               Jaja   26   42   15       83   5.5               Jaja   21   48   10       79   5.9
+    39528635     ISAKA Tsuyoshi   22   54    7       83   7.5     ISAKA Tsuyoshi   21   60   16       97   6.5
+    39530557         yukky_maru   31   31   16       78   6.9         yukky_maru   36   32   19       87   7.0
+    39532087   Full Power Agent   35   22   12       69   6.1   Full Power Agent   25   35   17       77   6.7
+    39526145          majimekun   25   15   16       56   4.1          majimekun   28   26   16       70   7.1
+    39527069          majimekun   32   44   13       89   5.0          majimekun   15   48   15       78   7.4
+    39526333  Oxford Kaggle Clu   24   61    8       93   4.2  Oxford Kaggle Clu   18   65   18      101   6.7
+    39516288           kambehmw   28   81    5      114   6.1           kambehmw   11  103    8   2  124   7.2
+    39531344   Full Power Agent   37   20   15       72   4.4   Full Power Agent   22   28   15       65   5.4
+    39527139     Praying Agent    26   35    9       70   3.5     Praying Agent    12   55    9       76   7.8
+    39525213           Rist bot   28   28   20       76   6.1           Rist bot   28   37   15       80   7.1
+    39528586     Praying Agent    26   38   15       79   3.4     Praying Agent    21   39   13       73   7.0
+    39528971               zzzz   22   66   11       99   4.8               zzzz   14   63   14       91   5.9
+    39528678        agent alpha   14   38   13       65   8.7        agent alpha   27   55   12       94   5.6
+    39527171               zzzz   33   40   13       86   5.5               zzzz   11   60   15       86   8.4
+    39529611           kambehmw   26   38   11       75   5.1           kambehmw   15   59   12       86   7.1
+    39531923    Benjamin Kovacs   34   16   17       67   6.3    Benjamin Kovacs   28   37   26       91   6.4
+    39523327        Junhua Yang   20   67    9       96   4.7        Junhua Yang    9   71    9       89   5.7
+    39524121               YOLO    8   71   13       92  10.4               YOLO   24   53    7       84   5.7
+    39530891    Dmitry Leontyev   34   30    7       71   4.8    Dmitry Leontyev   12   38   22       72   6.1
+    39528420     ISAKA Tsuyoshi   32   33   12       77   7.6     ISAKA Tsuyoshi   20   49   23       92   5.6
+    39525020  Ilmari Vahteristo   19   86   10      115   7.5  Ilmari Vahteristo    7   88    5      100   8.3
+    39515885             Nagata   15   83    9      107   7.7             Nagata   10   71    6       87   5.0
+    39531492                KKY   11   75    7       93   7.8                KKY   11   95    5      111   8.4
+    39531474    Joonas Maanonen   16   76    7   1  100   9.8    Joonas Maanonen    8   87    5      100   7.8
+    39526851  Alpha agents are    11   63   18       92   7.6  Alpha agents are    20   69   12      101   6.7
+    39528387    Neuron Engineer    4   78    8       90   6.8    Neuron Engineer   17   87    3      107   6.0
+    39521656          LinChenyu    6   90   12      108   6.8          LinChenyu   19   75   15      109   6.4
+    39499336  Tricksy Hobbitses   15   77    5       97   6.7  Tricksy Hobbitses   12   75    8   1   96   6.8
+    39529254    Neuron Engineer    7   75   15       97   8.6    Neuron Engineer   26   64   10      100   7.0
+    39527133    Pascal Pfeiffer   15   63   11       89   8.7    Pascal Pfeiffer    9   63    4       76   6.0
+    39531868     Azat Akhtyamov   25   58    5       88   4.3     Azat Akhtyamov    3   81    6       90   9.3
+    39521339         sqrt4kaido    9  120    2      131   9.3         sqrt4kaido   10  122    3      135   7.0
+    39527982           Vibhatsu    5  122   10      137  13.4           Vibhatsu   21   93    8      122   7.1
+    39531713                kek   11  120    4      135   8.2                kek    6  107    4      117   5.8
+    39521217     Kazuo Watanabe   11  102    7      120   8.2     Kazuo Watanabe   11   91    9      111   5.0
+    39530535                Jed    1  110    7      118  10.0                Jed   15  112    5      132   6.6
+    39521950          dynamic24    7   77   17      101   8.6          dynamic24   31   49   16   1   97   7.1
+    39529429                20     2  108    9      119   1.5                20    13   97    2      112   6.4
+    39532043             tamura    9  116    1      126   8.1             tamura    6  104    1      111   7.7
+    39532005     Azat Akhtyamov   25   65    7       97   4.1     Azat Akhtyamov    6   77    7       90   3.8
+    39531390       Alex Glinsky    8   87    8      103   4.5       Alex Glinsky   13  106    2      121   8.0
+    39531565                KKY   24   71    7      102   6.3                KKY   11   79   13      103   6.2
+    39523763        Junhua Yang   16   97    3      116   2.7        Junhua Yang    4  121    1      126   7.5
+    39143057           mhericks    7  102    7      116   6.0           mhericks    6   93    2      101   5.3
+    39529828          Van Mason    5  108    4      117   6.0          Van Mason    9  110    7   1  127   8.3
+    39494089            Melinda   15   84   11      110  10.0            Melinda    6   71    5       82   5.8
+    39523159                IC2    4  101   11      116  11.0                IC2   15   75    3       93   4.5
+    39516085        ravi tanwar    2   76    4       82   9.5        ravi tanwar   10   97    3      110   7.1
+    38986943             Thomas   12  115    1      128   6.2             Thomas    3  121    3   1  128  10.7
+    39532013          downheart    3   84   13      100   4.0          downheart   24   73   13      110   6.0
+    39500902           Kasahara   17   82    3      102   7.4           Kasahara    4   87    7   1   99   8.0
+    39502854            kaoutar   11   94    1      106   7.6            kaoutar    1  126    3      130  10.0
+    39442501       -SANTACLAWS-    8   92    2      102   7.1       -SANTACLAWS-    9   87    7      103   8.3
+    39521335       Dawid Motyka    8  106    2      116   7.0       Dawid Motyka    5   91    7      103   5.6
+    39523716      Data Dazzlers    2  114   12      128  10.5      Data Dazzlers   23  142   11      176   6.4
+    39529083     techniquetwice   19   63   14       96   6.2     techniquetwice   12   78   10   1  101   5.6
+    39530250                 BK   11   83    4       98   8.5                 BK    5   66    2       73   7.4
+    39188996          Ioannis M    1  118    6      125   2.0          Ioannis M   13  134    3      150   6.8
+    39216000             gwh666   11  100    2      113   5.9             gwh666    4  107    6      117   8.2
+    39529631             torino   13   98    9      120   8.1             torino   11   79    4   1   95   8.0
+    39530422    Dmitry Leontyev   15   89    1   1  106   5.6    Dmitry Leontyev    6   91    4      101   6.3
+    39530378             TomFuj    9  110    5      124   7.8             TomFuj    8  128    2      138   7.2
+    39528500      Agile Gandalf   14   93    3      110   8.8      Agile Gandalf    6   95   10      111   9.3
+    39526903            Wal8800   16   93    4   1  114   7.6            Wal8800    7  105    6   1  119   6.6
+    39459307               bono   10   75    2       87   7.3               bono    4   82    4   1   91   6.8
+    39524026         TuMinhDang   11   94    7      112   9.0         TuMinhDang    8   94    4      106   7.2
+    39524027         TuMinhDang    9   98    2      109   9.3         TuMinhDang    5  135    3   1  144   5.4
+    39461084       kei hasegawa   11   86    2       99   6.7       kei hasegawa    6   89   10      105   7.5
+    39522682         vj4science    8  113    3      124   7.2         vj4science    6   95    4      105   7.7
+    39529748              so_so    8   85    9      102   8.5              so_so    8   80    8       96   9.6
+    39524632    Prashant Kikani    5  145    7      157  11.4    Prashant Kikani    8  110    3      121   4.1
+    39492248         Rinku Sahu    5  100    5      110   7.2         Rinku Sahu   11   96    2      109   8.2
+    39502122            enddl22    5  118    2      125   8.8            enddl22   11  105    7      123   8.3
+    39530020             jang42   13   78    2       93   7.8             jang42    3   90    8      101   3.0
+    39531690     Kirill Yakunin    5   82    4       91   9.0     Kirill Yakunin    7  101    4      112   7.1
+    39528121              unom3    8   84    6       98   7.1              unom3    7   95    9   1  112   9.7
+    39530156   Nischay Dhankhar    4  104   12      120   4.8   Nischay Dhankhar   19   80    9      108   6.5
+    39525309             charmq    4   80    5       89  11.0             charmq   11   83    9      103   6.0
+    39453368            Bo Peng    5  130    1      136   7.2            Bo Peng    7  129    5      141   8.4
+    39452989        Yousef Rabi    3  108    9      120   3.7        Yousef Rabi    8   93    2      103   8.1
+    39525713      Manuel Campos    3  140    4      147   8.0      Manuel Campos    9  141    2      152   6.2
+    39453366            Bo Peng    2   81    5       88   6.0            Bo Peng   12  103    6      121   8.2
+    39492195   dron bespilotnik    7  122    6      135   9.0   dron bespilotnik    5   93    2      100   5.2
+    39531714           nash_efp    2   88   11      101   7.5           nash_efp   14   84    5      103   6.4
+    39310289           qirenzhr    3  120    2      125  16.0           qirenzhr   10  124    2      136   7.4
+    39019658      Gwonhyeockmin    6  136    4      146   7.5      Gwonhyeockmin    6  111   10      127   9.5
+    39520406     Magsen Chebini   12   84    4      100   8.3     Magsen Chebini    2   81    6       89   1.0
+    39487540    THUNDER THUNDER    7  131    3      141   9.0    THUNDER THUNDER    3  132    2      137   7.0
+    39531895           Yuang Wu   11   99    4      114   7.7           Yuang Wu    6   95    3      104   5.7
+    39454425      Paul Pawletta   13   97    3      113   7.7      Paul Pawletta    1   91    3       95   5.0
+    39530304           blackbun    4  107    4      115   9.2           blackbun   10  112    2      124   7.9
+    
+    
+    content_copy
+
+
+## 30 Comments
+
+
+### [loh-maa](/lohmaa)
+The final update has arrived.
+++ It seems we had a glitch in the system just few hours before the finish.
+I'm surprised nobody has noticed, or at least I can't see anybody noticing. On
+the other hand, perhaps understandably, many people had enough fun and
+personally I'm a bit worn out, too. So what happened is that some episodes
+ended with a resolution, but the score update turned NaN, sigma turned NaN and
+for the final few hours those agents didn't play anymore, which I guess was a
+bit of status quo for them…
+
+
+### [Chris Deotte](/cdeotte)
+I saw this in your Kaggle dataset. I had to remove those rows before computing
+my stats and animations.
+
+
+### [Kha Vo](/khahuras)
+Unbelievable, the top spot has changed even there was time the deficit was
+more than 100 points! C-number is taken down by the pure golden original alpha
+bot. Lady Luck had chosen Agent Alpha and abandoned c-number. In this kind of
+critical top spot determining match, c-number is NOT given the questioning
+duty, leaving his fate to BPM which is a non-alpha agent. On the other hand
+another non-alpha bot is given to Agent Alpha as the answerer, and that is all
+he needs to flip the table. What a drama!
+
+
+### [loh-maa](/lohmaa)
+Unbelievable indeed! c-number seemed too far ahead to be caught, but here we
+are after a lucky streak of wins by its challenger.. can c-number win back its
+well deserved top spot? It could be a matter of just a few games..
+
+
+### [Chris Deotte](/cdeotte)
+Here is the game:
+<https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55875460>  
+where Agent Alpha and C-Number competed head to head and swapped who is 1st
+place and who is 2nd place. Agent Alpha's answerer was `Half Agent Alpha` so
+the question answer proceeded with `Full Agent Alpha` type questions answers.
+C-Number partnership proceeded as `Pure LLM` type questions answers.
+
+
+### [loh-maa](/lohmaa)
+And one more twist, the keyword "hot plate" was not in agent alpha's
+dictionary. "hot plates" was, BUT, when "hot plates" was used as the testword,
+the answerer correctly pointed to the wrong direction! I mean the direction
+was technically correct, but not exactly helpful if the dictionary is
+deliberately cleaned from plural/singular duplicates. That's a weird flaw in
+the algorithm that I haven't noticed before. Once again and luckily for agent
+alpha, the search was finished by LLM extension which was able to guess
+correctly.
+PS. Heartbreaking to see Kha Vo's so unlucky… hang on amigo!
+
+
+### [Kha Vo](/khahuras)
+Thanks for updating daily. I am still observing your updates.
+
+
+### [loh-maa](/lohmaa)
+Only 18 teams have resolved at least 3 matches, here's how they did:
+    
+    
+                                         win  tie  loss
+    guesser           answerer                         
+    Benjamin Kovacs-2 dynamic24            4    0     0
+    KKY-2             Neuron Engineer-2    3    0     0
+    Rist bot          Data Dazzlers        3    0     0
+    c-number-2        Benjamin Kovacs-2    3    0     0
+    c-number-2        Neuron Engineer-2    3    0     0
+    yukky_maru        Full Power Agent     3    0     0
+    Benjamin Kovacs-2 yukky_maru-2         3    0     1
+    Benjamin Kovacs-2 c-number-2           2    0     1
+    Benjamin Kovacs-2 downheart            2    0     1
+    ISAKA Tsuyoshi-2  cv                   2    0     1
+    c-number-2        dynamic24            2    2     1
+    kambehmw-2        YOLO                 2    0     1
+    yukky_maru        Neuron Engineer-2    2    0     1
+    yukky_maru        dynamic24            2    0     1
+    yukky_maru-2      Neuron Engineer-2    2    0     1
+    Full Power Agent  techniquetwice-2     1    0     2
+    techniquetwice-2  Benjamin Kovacs-2    1    0     2
+    yukky_maru        Nischay Dhankhar     1    0     2
+    
+    
+    content_copy
+
+
+### [Kha Vo](/khahuras)
+I dont understand this. Is that 18 “pairs of teams”
+
+
+### [loh-maa](/lohmaa)
+No, they are single teams. The "-2" suffix just to differentiate between two
+submissions of a single player.
+
+
+### [Andrew Tratz](/jademonk)
+Some observations:
+Interesting to see that all but one of the top 20 bots are accepting the alpha
+handshake at this point.
+I think the most predictive stats for the final leaderboard ranking (assuming
+we get something approximating convergence) would be related to keyword
+coverage of alpha search (e.g. perhaps measured as alpha-accepted win rate
+versus non-alpha competitors) and efficiency of alpha search (average reward
+for alpha wins). These, in turn, should influence the winner in alpha vs.
+alpha match-ups.
+With the leaderboard the way it is, alpha versus alpha matches should be
+common at this point. C-number's high AWR hints at a very efficient alpha
+search protocol, although this stat includes the non-alpha matches as well. My
+bots are 0 to 2 in alpha v. alpha against c-number: once with a two-word
+keyword and once due to a faulty answerer. Look forward to some re-matches!
+Some of the pure LLM bots with few wins and many draws have high AWRs, which
+may suggest some lucky early round guesses.
+
+
+### [Kha Vo](/khahuras)
+Alpha vs alpha is inevitable. But focusing on alpha efficiency instead of
+coverage may pay a price for early matches with non-alpha bots, where one can
+take much longer time to reach the top. Then it has less time for alpha match-
+ups
+
+
+### [loh-maa](/lohmaa)
+Stats updated with the questioner/guesser vs answerer split, but still old
+data, next update in a few hours.
+
+
+### [Kha Vo](/khahuras)
+All is just theoretical and not exactly accurate. But let's take a rough
+estimate on how likely an alpha bot with 85% coverage of the private keyword
+list (Bot A) can win against another alpha bot with 95% coverage (bot B). And
+suppose the chance you can pair with an alpha answerer is 70%. (bot A has
+shorter word list leading to much better chance of winning, but how much
+likely to win?)
+Suppose in the last 7 days each of the top bot will play 7 matches each day ,
+resulting in 50 matches in total. Out of those:
+  * 25% of the matches they will act both as answerers. Now it depends on the questioners. I just estimate 50% of these matches will be tied, then each bot will have an equal of 6.25% (global) odds left to win each other.
+  * 25% of the matches they will act both as questioners, then A has 0.25 x 0.7 = 18% global winning odds against B. Vice versa, B has 0.25 x 0.7 x 0.3 = 5% global winning odds against A. In other cases it depends on their non-alpha asking ability. I leave this as draw for now.
+  * 50% of the matches A will act as questioner, B as answerer, or vice versa. This now depends on the corresponding answerer/questioner they are paired with. I give A with a slight preferred 55% winning chance over B of 45% since A has a shorter keyword list. This leaves A with additional 27.5% global odds and B with additional 22.5% global odds.
+In summary, A will have 6.25+18+27.5 = 51.75% win against B and B will have
+6.25+5+22.5 = 33.75% win against A. This leaves 14.5% tied games.
+So, the odds is not so extreme for A vs B match-ups. Given some other
+randomness, it means each team needs some luck factor to land where they want.
+
+
+### [Kha Vo](/khahuras)
+I kindly request: number of times won as being questioner LLM after handshake
+refusal, number of defeats by alpha/non-alpha
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+Why my win/lose ratio so low as agent alpha answer? I believe there is no
+difference between agent alpha as answer, Just bad luck?
+
+
+### [Chris Deotte](/cdeotte)
+There may be different versions of Agent Alpha Answerer (but I'm not sure). I
+was looking at one Kaggler (not you but someone else) and I saw that their
+Agent Alpha Answerer was making mistakes.
+
+
+### [loh-maa](/lohmaa)
+What a drama. #2 and #3 are non-alpha guessers.
+[@linchenyu](https://www.kaggle.com/linchenyu) has an impressive record of
+10:0, although his last 4 wins were only as an answerer. Also
+[@bhanupm](https://www.kaggle.com/bhanupm) is doing much better as an answerer
+recently. Can they hold when paired as guessers? And can I survive this
+ordeal?
+
+
+### [Kha Vo](/khahuras)
+They still have very high sigma
+
+
+### [Chris Deotte](/cdeotte)
+**UPDATED to Aug 29th 23:59 UTC**
+It is exciting to see both Agent Alphas and non-Agent Alphas doing well. In
+the Private LB top 50 (August 29 at 23:59 UTC), there are:
+  * 12 teams that do **not** initiate and do **not** accept Agent Alpha
+  * 20 teams that do **not** initiate but **do** accept Agent Alpha
+  * 18 teams that **do** initiate and **do** accept Agent Alpha
+(Note out of 835 teams, 33 **do** initiate and **do** accept. And 270 do
+**not** initiate and **do** accept. And 496 do **not** initiate and do **not**
+accept. And 36 do **not** initiate and **unknown** accept.)
+Rank | Name | Init AgentAlpha | Accept AgentAlpha | Score | Sigma  
+---|---|---|---|---|---  
+1 | c-number | True | True | 1259 | 45  
+2 | Tricksy Hobbitses | True | True | 1232 | 45  
+3 | agent alpha | True | True | 1229 | 45  
+4 | Oxford Kaggle Club | True | True | 1169 | 45  
+5 | yukky_maru | Ture | True | 1159 | 45  
+6 | Rist bot | True | True | 1158 | 45  
+7 | Ilmari Vahteristo | True | True | 1153 | 45  
+8 | Jaja | True | True | 1144 | 45  
+9 | ISAKA Tsuyoshi | True | True | 1144 | 45  
+10 | Full Power Agent | True | True | 1140 | 45  
+11 | majimekun | True | True | 1140 | 45  
+12 | kambehmw | False | True | 1110 | 45  
+13 | Praying Agent 🧎🙏🏻 | True | True | 1100 | 45  
+14 | zzzz | True | True | 1085 | 45  
+15 | Benjamin Kovacs | True | True | 1045 | 45  
+16 | Junhua Yang | True | True | 1039 | 45  
+17 | YOLO | False | True | 1036 | 45  
+18 | Dmitry Leontyev | True | True | 1028 | 45  
+19 | Nagata | False | True | 1006 | 45  
+20 | KKY | True | True | 1006 | 45  
+21 | Joonas Maanonen | False | False | 1005 | 45  
+22 | Alpha agents are bullying me | False | True | 1005 | 45  
+23 | Neuron Engineer | False | True | 999 | 45  
+24 | LinChenyu | False | True | 987 | 45  
+25 | Pascal Pfeiffer | False | False | 980 | 45  
+26 | Azat Akhtyamov | False | True | 969 | 47  
+27 | sqrt4kaido | False | False | 957 | 48  
+28 | Vibhatsu | False | True | 952 | 45  
+29 | kek | False | True | 951 | 46  
+30 | Kazuo Watanabe | False | True | 949 | 45  
+31 | Jed | False | True | 947 | 46  
+32 | dynamic24 | False | True | 944 | 45  
+33 | 2️⃣0️⃣❓ 🤔 | False | True | 942 | 46  
+34 | tamura | False | False | 940 | 52  
+35 | Alex Glinsky | False | False | 936 | 48  
+36 | mhericks | False | False | 932 | 48  
+37 | Van Mason | False | True | 931 | 45  
+38 | Melinda | False | False | 929 | 48  
+39 | IC2 | False | True | 928 | 47  
+40 | ravi tanwar | False | True | 928 | 54  
+41 | Thomas | False | True | 928 | 53  
+42 | downheart | False | True | 923 | 45  
+43 | Kasahara | False | False | 919 | 45  
+44 | kaoutar | False | True | 919 | 53  
+45 | -SANTACLAWS- | False | False | 917 | 52  
+46 | Dawid Motyka | False | False | 914 | 52  
+47 | Data Dazzlers | False | True | 911 | 45  
+48 | techniquetwice | True | True | 910 | 45  
+49 | BK | False | False | 910 | 51  
+50 | Ioannis M | False | False | 909 | 52  
+  
+
+
+### [Jonathan Chan](/jonathanchan)
+[@cdeotte](https://www.kaggle.com/cdeotte) : My (current top) IC2 agent you
+listed above is not an alpha agent. While it accepts the handshake, it does
+not initiate one. My other agent is an alpha agent but it's rather unlucky,
+kind of like your agents before/after the reset. Glad that one of your agents
+made a big gain playing with agent alpha recently and getting a chance with
+many games now.
+
+
+### [JK-Piece](/jeannkouagou)
+Great analysis! I am not surprised. If you can accept the handshake and can
+answer alphabetical ordering questions properly, then you might be in the gold
+zone. Unfortunately, my agent cannot initiate, and doesn't accept a handshake.
+It was in the top-20 before confidence reset. Now it is lost somewhere on the
+leaderboard as a result of having competed with alpha agents.
+
+
+### [Chris Deotte](/cdeotte)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) Thanks for pointing this
+out. I updated my table and fixed Agent Alpha references. (Previously I was
+using TeamNames to assign booleans instead of looking at the 2 bots for each
+Team)
+
+
+### [Chris Deotte](/cdeotte)
+I updated my table to include up to and including Aug 24th. We now have a new
+pure LLM bot at rank 2! Team so_so does **not** initiate Agent Alpha and does
+**not** accept Agent Alpha!
+
+
+### [Chris Deotte](/cdeotte)
+Here is a histogram of all 1412 submitted bots (August 24 at 5am UTC). It is
+interesting that `Full Agent Alphas`, `Half Agent Alphas`, and `Pure LLMs` all
+have lots of bots around the `LB Score = 600`.
+We then see that half of the `Full Agent Alphas` broke away from everyone else
+and made a bimodal distribution. Next `Half Agent Alphas` and `Pure LLMs` are
+skewed to the right trying to climb LB.  
+![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Aug-2024/hist-
+bot.png)
+
+
+### [Kha Vo](/khahuras)
+[@cdeotte](https://www.kaggle.com/cdeotte) Full Alpha has 2 types: ones that
+dominate with updated keywords and ones that copied public alpha which used
+old public list. That may explain why we have 2 populations for full alphas
+
+
+### [Andrew Tratz](/jademonk)
+Since there are quite a few capable LLM / Half Alpha agents with high sigma,
+it appears that they are able to climb the ranking very quickly (and somewhat
+stochastically), often winning a succession of games as answerer. But once
+their rank increases they are more likely to be compete against alpha+alpha
+pairings and lose games, knocking them back down the ranking.
+Given that quite a few bots probably meet this description (basically all of
+the decent bots stuck in the "pit", including anyone who forked Kha Vo's
+public notebook), I think it's very likely that at least one pure LLM agent
+will finish high in the ranking once the music stops at the end of the
+evaluation period, although still very hard to predict which one it will be. I
+think this reflects more on the nature of the current game dynamics rather
+than the strength or weakness of any one bot.
+
+
+### [Chris Deotte](/cdeotte)
+I updated my table to Aug 26th
+
+
+### [Chris Deotte](/cdeotte)
+I updated my table to Aug 27th. We can see that all the sigmas are around 50
+now.
+
+
+### [Chris Deotte](/cdeotte)
+There are **no** `Pure LLM` in the top 20! Only `Full Agent Alpha` and `Half
+Agent Alpha` in the top 20!
+
+
+### [Andrew Tratz](/jademonk)
+I suggest reclassifying Full Power Agent and yukky_maru as "Init AgentAlpha =
+True". Neither agent uses the "Is it Agent Alpha?" handshake but instead
+launch directly into alpha-style questions.
+
+
+### [Chris Deotte](/cdeotte)
+Interesting. Then basically all gold zone is Full Agent Alphas
+
+
+### [Chris Deotte](/cdeotte)
+Updated with Aug 29th dataset
+
+
+### [Bhanu Prakash M](/bhanupm)
+There is no way that my humble LLM solution can beat your Alpha supremacy.
+
+
+### [loh-maa](/lohmaa)
+Bhanu, please, your LLM is lovely and alpha is a friend.
+
+
+### [Mahmoud Elshahed](/letemoin)
+That is great analysis, actually i have blown in one game "as answerer" and
+kicked out.
+could you please provide also
+  * Ratio of Guesser to total play game, 
+  * and correct % when bot is guesser,   
+as my observation i may have 1 game as guesser vs 4 as answerer or more.
+also i was having 2nd highest AWR, does that we were guessing correct early,
+but low sigma and confidence wasn't getting higher score or what ?
+Thanks Again
+
+
+### [loh-maa](/lohmaa)
+[@letemoin](https://www.kaggle.com/letemoin) thanks for the suggestions, it is
+now covered.. AWR doesn't affect the score, a win counts as a win regardless
+of the reward. It's just it should tell a bit more about how quickly agents
+guess keywords, which is particularly important in alpha-vs-alpha.
+++ 18.5 in 2/2 games as a guesser is really impressive, but I guess it
+involved plenty of luck as well.. ,)
+
+
+### [Kha Vo](/khahuras)
+Sigma is so important. For top bots they hope to have sigma as small as
+possible. Pls update your table frequently. Thanks :)
+
+
+### [Kha Vo](/khahuras)
+For alpha bots, the ratio of wins or ties vs AH may probably tell how much
+their keyword list can cover. Many ties despite given many alpha handshake
+means the list is not exhaustive enough, and vice versa
+
+
+### [Kha Vo](/khahuras)
+Strange that the ratio of HA/AH is not roughly the same for top teams. For
+many it is roughly 1/3. For some it is extreme, like Benjamin Kovacs or
+c-number…
+
+
+### [loh-maa](/lohmaa)
+I think it depends on whether the agent was in the pit or not, as most bots in
+the pit refuse the handshake.
+
+
+### [c-number](/cnumber)
+Thank you for the Interesting stats!  
+Could it be more appealing if perhaps guesser and answerer stats were
+displayed independently?
+
+
+### [loh-maa](/lohmaa)
+It could be!, will try..
+
+
+### [KKY](/evilpsycho42)
+Good job！ C-number is so strong … my agent need more episodes 🏓
+
+
+### [Andrew Tratz](/jademonk)
+Very insightful - thank you. Would be great to get future updates of this
+analysis too!
+Can't wait until my bots get a chance to play 100+ games… if ever.
+
+
+### [loh-maa](/lohmaa)
+Alright! I will update this (overwrite) tomorrow, your agents were temporarily
+lower, so they're not here this time.. but here they are:
+    
+    
+                           name  win  drw  los  avg_win_rew  min_score  max_score  sigma
+    39499327  Tricksy Hobbitses    7   32    5          7.9      600.0      964.9  185.0
+    39499336  Tricksy Hobbitses    5   60    1          8.0      600.0      858.3  184.8
+    
+    
+    content_copy

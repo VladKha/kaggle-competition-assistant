@@ -1,0 +1,143 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 12 days ago
+
+
+### The infamous pit of non-wisdom, why and how
+We've seen it during development and we suspected it's also here during the
+evaluation. When your agent is somewhere down below and just keeps drawing the
+games. It is being paired with agents of similar rating, but they don't look
+alike, most of them look like a bit lost in the game. Repeating guesses,
+asking non-sensical questions, and answering only 'yes' or 'no'. You're
+doomed, and it's basically because:
+  1. The skill of a team is not the sum of the skill of players, but their product. (And this is something I think the original TrueSkill algorithm had in its assumptions, that the skill is a sum.)
+  2. The skill of your neighbors, and your team mates is almost zero.
+I ran a few simple simulations in `openskill`, which is great and very
+friendly, and actually it seems to be the basis of the algorithm we are using
+here in our competition, maybe just with different details.
+Let's consider 2 different skill distributions and 2 different game formats:
+  1. Skill distribution, where agents have a skill increasing steadily from 0.0 to 1.0.
+  2. Skill distribution, where most agents have skill 0.0 and only 100 agents have a skill increasing steadily from 0.0 to 1.0.
+And 2 game formats:  
+a) the skill of a team is the sum of the skills of players, and  
+b) it's not a sum, it's a product.
+Let's also assume a very basic convergence metric: how many top 100 agents in
+terms of skill is going to end up with a top 100 score. In all cases we
+evaluate the system for 100k episodes, so approximately the magnitude we had
+so far in our competition.
+Ladies and gentlemen, here we go.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F633484b8b9db536eab243c923c9ed6ff%2Fconvergence-
+lin-sum.png?generation=1724217320854973&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Fb7a7be85a11cef0471316c352c8e3a54%2Fconvergence-
+lin-product.png?generation=1724217338225206&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F5ae5d477bdc75ef21d6b98e0a4dda67d%2Fconvergence-
+plateau-sum.png?generation=1724217352539613&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Fa5992fcca60bf2ed3535781d50ff9dd6%2Fconvergence-
+plateau-product.png?generation=1724217366120057&alt=media)
+I will try to figure out if there's any simple remedy for this, because it's
+obvious to me we are in the situation 2b.
+
+
+## 9 Comments
+
+
+### [loh-maa](/lohmaa)
+I think I've identified two critical factors:
+  1. The preference for selecting high sigma for matches shall be dropped, this will save the bulk of available resources, and increase the efficiency, in other words -- let every agent play at the same pace.
+  2. Allow self-play as a way to get out of the pit. 0.1 probability helps a little, 0.2 helps a lot. I've have used a "synchronous" self-play, so whenever the primary agent self-plays, its opponent self-plays too.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Ff008e33024341546489b9796c5557236%2Fconvergence-
+xx-1-50-50-nolimit-plateau-product-
+neighbor_wsp_sync.png?generation=1724235210641534&alt=media)
+These measures can be applied by only changing the match-making code, i.e.
+easily, and the ranking wouldn't have to be restarted, only sigma could be
+increased for everybody to give them more time to converge.
+Moreover if we start to prefer low sigma as the partners in the team (i.e.
+agents who are more "resolvable") then it looks even better:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Fff4b49a2aaa8d26597cf0b2653fcc81a%2Fconvergence-
+xx-1-50-50-nolimit-plateau-product-
+neighbor_wsp_sync_sigma.png?generation=1724235308652911&alt=media)
+The formula for answerers selection I've tried is
+`(200-candidate.sigma)*match_quality(primary_player, candidate)`. This is
+calculated for 100 random agents and the max is selected.
+
+
+### [c-number](/cnumber)
+Thank you for the simulation!  
+I also feel that we are stuck in situation similar to 2b.  
+I'm quite curious how much it could be solved using [my proposed
+method](https://www.kaggle.com/competitions/llm-20-questions/discussion/523317),
+it would be wonderful if you could execute some simulations!
+
+
+### [loh-maa](/lohmaa)
+Thanks for the feedback c-number, much appreciated!.. I will take a look at
+your idea..
+
+
+### [loh-maa](/lohmaa)
+[@cnumber](https://www.kaggle.com/cnumber) I don't know why, but the 2
+Guessers vs 1 Answerer format doesn't yield any higher convergence. Actually
+it drops to around 15%. I can't explain it, it's really boggling because your
+idea makes lots of sense. Just like you described -- 2 teams with a single
+shared partner which is not rated after the game. Well, the algorithm doesn't
+care about the roles, i.e. who's the guesser and what is answerer, so both
+your variants look the same to the algorithm, and it doesn't improve the
+situation.
+I have also tried to select the shared/unranked partner with a higher score
+than the primary player, and it improves the situation but only as much as
+back to 30%. If you'd like to verify or try any other ideas, please let me
+know, I will gladly share the code.
+
+
+### [c-number](/cnumber)
+[@lohmaa](https://www.kaggle.com/lohmaa) Hmm, counterintuitive but interesting
+results. I would be happy if you could share your code! I'd like to play
+around with other matching algorithms.
+
+
+### [c-number](/cnumber)
+I've played with your code, and have successfully checked that my method
+indeed is not working.  
+It seems that the 0-skilled agents (or the No-bots) are doing an excellent job
+of confusing the rating algorithm.  
+Decreasing the ratio of 0-skilled agents greatly improves the convergence of
+course, although I don't have any good ideas to introduce that result to the
+current LB.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+It also depends on how the host pair agents.
+
+
+### [loh-maa](/lohmaa)
+That's correct, in my simulations pairing was done in the following way:
+  1. Select an agent with high sigma (just like it seems high sigma has preference in our ranking algorithm.)
+  2. Select its team mates and the other team based on the "quality of the match" (which is basically the probability of a draw, but estimated using the scores alone, not the true skill) using tournament selection with k=10.
+This is just the simplest way that i could think of, and it works for all
+scenarios except 2b. I don't think details would change the picture much, but
+a radical modification perhaps coud, so this is also something I think to try
+out in order to get better convergence in 2b.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+It is frustrating that I was pared with 600 or lower scored agents too many
+times recently.
+
+
+### [loh-maa](/lohmaa)
+I've tried different ranges of match-making, including a totally random one.
+Also not giving any priority to high sigma. It doesn't seem to improve the
+convergence much. So far the only improvement I can see when adding a
+possibility to play with your own agent, although it can't be just 1/N, it has
+to be higher than just by random chance. (In a way it makes sense that your
+own agent is kind of in the middle of your neighborhood.) Anyway, with the
+probability of self-play at 0.2 (synchronous for both teams) the convergence
+rate increases from around 30% to 60%:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F95a770df3b0f73586b14ca1b69ee7f93%2Fconvergence-
+selfplay_p02-plateau-product-
+neighbor_wsp_sync.png?generation=1724223826734555&alt=media)

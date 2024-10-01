@@ -1,0 +1,20 @@
+[Nicholas Broad](/nbroad) · 33rd in this Competition · Posted 21 days ago
+
+
+### Anyone know why this happens?
+See image
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3575309%2F5d2b30810ebe3e8d2281b908955f2ae6%2FScreenshot%20from%202024-08-11%2016-19-10.png?generation=1723418372074808&alt=media)
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+I think it is Kaggle error. There was once 3 days in a row (about a month ago)
+when all games for all participants got this error.
+
+
+### [Araik Tamazian](/atamazian)
+I've also encountered this. Probably, it's an error of Kaggle code which runs
+the simulations.

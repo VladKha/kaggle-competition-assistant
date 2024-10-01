@@ -1,0 +1,92 @@
+[gguillard](/gguillard) · 217th in this Competition · Posted 16 days ago
+
+
+### Code to follow score evolution
+Notebook sharing is disabled at this time of the competition, so here is a
+sample of code to retrieve and filter the kaggle competitions metadata in
+order to be able to follow the score of any submission, before and after the
+reset.
+I'm in a hurry so no time for comments, but the code should be pretty
+straightforward. You will need [the Meta-Kaggle
+dataset](https://www.kaggle.com/datasets/kaggle/meta-kaggle/data).
+    
+    
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    
+    
+    content_copy
+    
+    
+    !grep -E '"61247"|"CompetitionId"' /kaggle/input/meta-kaggle/Episodes.csv > /kaggle/working/episodes.csv
+    
+    
+    content_copy
+    
+    
+    raw_episodes = pd.read_csv("episodes.csv")
+    episodes = raw_episodes[(raw_episodes["CompetitionId"]==61247)&(raw_episodes["Type"]==1)]
+    del raw_episodes
+    with open("episodes_ids", "w") as f:
+        f.write("\n".join(str(u) for u in episodes.Id.unique()))
+    
+    
+    content_copy
+    
+    
+    !grep -f episodes_ids -e "EpisodeId" /kaggle/input/meta-kaggle/EpisodeAgents.csv > episodeAgents.csv
+    
+    
+    content_copy
+    
+    
+    raw_agents = pd.read_csv("episodeAgents.csv")
+    agents = raw_agents[raw_agents["EpisodeId"].isin(episodes["Id"].values)]
+    del raw_agents
+    
+    
+    content_copy
+    
+    
+    allgames = pd.merge(agents, episodes, left_on="EpisodeId", right_on="Id")
+    # approximative cutoffs (excluding false start)
+    oldgames = allgames[pd.to_datetime(allgames["CreateTime"])<pd.Timestamp("08/14/2024 02:00:00")]
+    newgames = allgames[pd.to_datetime(allgames["CreateTime"])>pd.Timestamp("08/15/2024 04:24:26")]
+    del agents
+    del episodes
+    
+    
+    content_copy
+    
+    
+    # replace with your submission id if you wish, the number is on top when you click your game history in the submissions panel
+    df = newgames[newgames["SubmissionId"]==39500605].sort_values(by="CreateTime").reset_index()
+    pscore = plt.plot(df.UpdatedScore, label="score")
+    plt.xlabel("nb games played")
+    plt.ylabel("Score (mu)")
+    plt.gca().twinx()
+    pconf = plt.plot(df.UpdatedConfidence, color="tab:orange", label="confidence")
+    plt.ylabel("Confidence (sigma)")
+    plt.legend(handles=pscore+pconf)
+    
+    
+    content_copy
+![Score evolution](https://www.googleapis.com/download/storage/v1/b/kaggle-
+forum-message-
+attachments/o/inbox%2F2708023%2F0ebfac8d4b04848e0d41b1afbca96d62%2Fscore_llm20q.png?generation=1723848296528559&alt=media)  
+A nice example of a very good agent trapped by a bad game after the reset
+(reset occurs at game #17 on this subset), I'm curious to see if it will
+eventually recover (not my agent, but both my agents suffered similar bad
+luck, although I don't know if they would have been as good as this one
+because I couldn't test them extensively).
+    
+    
+    for u,g in newgames.groupby("SubmissionId"):
+        df = g.sort_values(by="CreateTime").reset_index()
+        plt.plot(df.UpdatedScore)
+    
+    
+    content_copy
+
+
+## 0 Comments

@@ -1,0 +1,172 @@
+[emoji_people](/jazivxt)
+[jazivxt](/jazivxt) · 846th in this Competition · Posted 4 months ago
+arrow_drop_up14
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Unable to Submit [Fixed]
+Receiving the below error when trying to submit submission.json
+Cannot submit  
+Submission files must be archives (.zip, .tar, .gz, .7z) for this Competition.
+[@addisonhoward](https://www.kaggle.com/addisonhoward)
+comment
+
+
+## 20 Comments
+
+
+### [Zoltan](/szabo7zoltan)
+arrow_drop_up6
+  * format_quote
+  * link
+You can submit directly while editing the notebook. When you open the notebook
+for editing there are options on the right panel. For example: Input, Output,
+Save Version… One of the options is "Submit to Competition". This will save
+the notebook and also submit it for scoring. I hope this helps
+[emoji_people](/jazivxt)
+
+
+### [jazivxt](/jazivxt)
+arrow_drop_up0
+  * format_quote
+  * link
+Unfortunately that is not an option, the submit button is grayed out, last
+time in a recent competition it was a configuration issue for a few users, not
+sure what the case is now, no official answer from Kaggle staff
+
+
+### [CTO](/caleboleary)
+arrow_drop_up1
+  * format_quote
+  * link
+Heads up, I had to actually go to edit mode, not even just viewing the
+notebook. Then the option is under the input and output sections in right
+sidebar.
+
+
+### [dragon zhang](/dragonzhang)
+arrow_drop_up0
+  * format_quote
+  * link
+thx for help. Kaggle should clarify it in the competition doc.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+The team is actively working on it here  
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/514034>
+
+
+### [YeonwooSung](/neos960518)
+arrow_drop_up1
+  * format_quote
+  * link
+You cannot submit the submission.json file directly after saving the notebook,
+but you need to submit the notebook in the notebook editor.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+Hey all! Working on getting this fixed - please continue to document here if
+you have problems.
+
+
+### [Michael Pavlukhin](/archelunch)
+arrow_drop_up1
+  * format_quote
+  * link
+Same problem
+
+
+### [Michael Pavlukhin](/archelunch)
+arrow_drop_up2
+  * format_quote
+  * link
+It's very strange rule
+Submission files must be named "submission.json" for this Competition.  
+Submission files must be archives (.zip, .tar, .gz, .7z) for this Competition.
+
+
+### [hone Jec](/honejec)
+arrow_drop_up0
+  * format_quote
+  * link
+This submit problem has sloved? I have this same problem too.
+
+
+### [ABouncyMi](/abouncymi)
+arrow_drop_up0
+  * format_quote
+  * link
+same problem
+
+
+### [Ashley Chow](/ashleychow)
+Kaggle Staff
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for reporting! For the submission issue, please [file a
+ticket](https://www.kaggle.com/contact#/competitions/current/help) with our
+Support team. We will look into this accordingly. Thanks so much!
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+I submitted a ticket!
+
+
+### [Alexander Larko](/alexxanderlarko)
+arrow_drop_up0
+  * format_quote
+  * link
+Same problem
+
+
+### [hoxosh](/cashfeg)
+arrow_drop_up0
+  * format_quote
+  * link
+Same here.  
+Is somebody in Kaggle staffs working on this issue?
+
+
+### [hoxosh](/cashfeg)
+arrow_drop_up0
+  * format_quote
+  * link
+I could submit! thank you.
+
+
+### [Khadija Bar](/khadijabar)
+arrow_drop_up0
+  * format_quote
+  * link
+Me too i can't submit there's an authentification error !!
+
+
+### [HJYHJY](/hjy123456789)
+arrow_drop_up0
+  * format_quote
+  * link
+I'm also experiencing this problem, what to do to fix it
+[emoji_people](/jazivxt)
+
+
+### [jazivxt](/jazivxt)
+arrow_drop_up0
+  * format_quote
+  * link
+Here's a screen print for reference
+[_image_
+https://dotprodx.com/Screenshot202406150648.png](https://dotprodx.com/Screenshot202406150648.png)

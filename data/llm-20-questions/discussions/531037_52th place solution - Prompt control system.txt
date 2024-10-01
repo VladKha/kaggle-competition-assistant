@@ -1,0 +1,35 @@
+[torino](/pnmanh2123) · 52nd in this Competition · Posted 2 days ago
+
+
+### 52th place solution - Prompt control system
+Congratulations to all who completed the competition. Congrats to the winners
+of the competition!
+I public my solution for this competition
+[here)](https://www.kaggle.com/code/pnmanh2123/llm-20-questions-game)
+Special thanks to
+[@wouldyoujustfocus](https://www.kaggle.com/wouldyoujustfocus), my notebook is
+build-up from your notebook and [@cdeotte](https://www.kaggle.com/cdeotte)
+with a great starter notebook, [kaoutar
+notebook](https://www.kaggle.com/code/wouldyoujustfocus/llama3-8b-llm20-questions-
+lb-750) and [Chris Deotte
+notebook](https://www.kaggle.com/code/cdeotte/starter-code-for-llama-8b-llm-
+lb-0-750).
+[@lohmaa](https://www.kaggle.com/lohmaa), your [binary
+search](https://www.kaggle.com/code/lohmaa/llm20-agent-alpha) was changing the
+game, I regret didn't use alpha for my questioner😂
+My strategy of notebook as below(if not met alpha agent):
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F15873032%2F9a41bfc0c968416741b4fd17695d89e7%2FScreenshot_20240830_134953.png?generation=1725000611208834&alt=media)
+I will add more details tonight.
+
+
+## 2 Comments
+
+
+### [kaoutar](/wouldyoujustfocus)
+great job [@pnmanh2123](https://www.kaggle.com/pnmanh2123) congrats for the
+bronze medal :),
+
+
+### [Muslimbek Abdurakhimov](/mrsimple07)
+Amazing job! Congrats bro!

@@ -1,0 +1,64 @@
+[Jasper Butcher](/jasperbutcher) · 4th in this Competition · Posted 2 months
+
+### Things category is clearly much harder than places
+Given that these keywords are equally split. You'd be much better off focusing
+on building a bot that just get's every country or city right.
+How is an LLM going to guess any of these??  
+iv, fire escape ladder, guard tower, kale smoothie, stained glass window (why
+does it have to be stained??), turn signal (an unbelievably specific component
+of a car), soap suds (what are these??), finger food, cooling tower, coffee
+makers (??), stair stepper
+
+
+## 5 Comments
+
+
+### [OminousDude](/max1mum)
+Found the new hardest keyword…  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F8b8fc964d2dca04ca1d82e6e9c4506d3%2FScreenshot%20from%202024-07-07%2015-59-28.png?generation=1720382399395351&alt=media)  
+Why does it have to be stationary? Technically stationary is an adjective and
+20 questions is about objects. For example a "dog"; however, in this
+competition instead of "dog" the keyword would probably be "mainly white but
+slightly brown-spotted furry large and happy jumping chihuahua" 😂  
+[@bovard](https://www.kaggle.com/bovard) are the adjectives before the objects
+added on purpose or is this one an accident? Also, will the private LB
+keywords be like this?
+EDIT: I can't take it anymore  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Fcd22b9a0d28d052981ea7f1c74cdaf2f%2FScreenshot%20from%202024-07-07%2016-23-11.png?generation=1720383843689507&alt=media)
+
+
+### [Van Mason](/vanmason)
+To be fair, ‘Stationary Bike’ is its own thing used to workout indoors the
+difference is pretty significant. ‘Survey Marker’ is pretty ridiculous though.
+
+
+### [OminousDude](/max1mum)
+True, but it is almost as if the kaggle team has a list of adjectives and a
+list of nouns and are randomly just choosing two of them to go together.
+
+
+### [Van Mason](/vanmason)
+My favorite is aquarium salt. How is a human supposed to guess that in 20
+questions let alone a LLM?
+
+
+### [RS Turley](/rturley)
+For hardest "thing" to guess from the current word list, I'd nominate "cypress
+knees." I couldn't believe it when I saw that one pop up.
+
+
+### [OminousDude](/max1mum)
+I got "ice bin" what even is that a cooler??? I am also getting more stupid
+things like "dead leaf" than actually useful objects.
+EDIT: Why are some things in plural?  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Ff36aca2465c005102ac6acb3aa1c0ec7%2FScreenshot%20from%202024-06-29%2023-07-34.png?generation=1719716888821320&alt=media)
+
+
+### [tiod0611](/tiod0611)
+I think so too. It's difficult to win the game when a 'things' keyword comes
+up. As you mentioned, it seems like a better strategy to develop an LLM that
+excels at identifying 'place' keywords. I believe that 'things' keywords are
+more likely to result in a draw anyway.

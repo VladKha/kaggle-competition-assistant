@@ -1,0 +1,187 @@
+[Ali](/asalhi) · 21st in this Competition · Posted 3 months ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Submission CSV Not Found - Very Frequent
+Hi  
+I got a lot of submissions with the following error :
+> Submission CSV Not Found  
+>  Your notebook did not output the expected submission file (typically
+> submission.csv). The rerun of your notebook appears to have completed, but
+> when we looked for your submission file, it wasn't there. See more debugging
+> tips
+The notebook successfully runs and generates submission.json on the demo test
+file.  
+However, scoring fails! This happens frequently
+Sometimes same notebook scores and other times, it gives "Submission CSV Not
+Found" !  
+In one notebook I added "try block" on the code to catch any error and output
+blank results to try to avoid possible errors that may happen with real test
+data. But still same error frequently occurs.
+Any Ideas?
+comment
+
+
+## 11 Comments
+
+
+### [THUNDER THUNDER](/thunderthunder)
+arrow_drop_up4
+  * format_quote
+  * link
+delete other outputfiles and only keep submission.json,this works for me.
+
+
+### [Ali](/asalhi)
+arrow_drop_up0
+  * format_quote
+  * link
+I am running a version with this just now and I will update
+
+
+### [Ali](/asalhi)
+arrow_drop_up1
+  * format_quote
+  * link
+Thats worked.  
+Thanks.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for this response!
+
+
+### [Jack Cole](/jcole75)
+arrow_drop_up0
+  * format_quote
+  * link
+This works for me too! Thanks.
+
+
+### [DAkshSiNgla26](/dakshsingla26)
+arrow_drop_up0
+  * format_quote
+  * link
+great
+Hide repliesarrow_drop_up
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+Solution  
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/513673#2882058>
+
+
+### [Kha Vo](/khahuras)
+arrow_drop_up1
+  * format_quote
+  * link
+Me too! I have been debugging every step and had that error. I checked through
+everything and even tried to generate the dummy sub using try catch like what
+you did, but still got that error!  
+[@addisonhoward](https://www.kaggle.com/addisonhoward)
+[@mylesoneill](https://www.kaggle.com/mylesoneill)
+
+
+### [Ali](/asalhi)
+arrow_drop_up0
+  * format_quote
+  * link
+hmm, I even generated a dummy submission.json from test data before the code
+started and change it in the end, but it still same error :/
+
+
+### [neoneye](/neoneye)
+arrow_drop_up0
+  * format_quote
+  * link
+# My issue has been solved. See the follow up comment by me.
+* * *
+# Screenshot
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F195534%2Fe6b792d4723cb8a4906b18bf2110ff7b%2FScreenshot%202024-08-11%20at%2001.26.04.jpg?generation=1723332405630420&alt=media)
+# I'm having the "Submission Scoring Error"
+Attached is my `"/kaggle/working/submission.json"`.  
+I have manually inspected the file format and it seems like it's ok, but I may
+have overlooked something.  
+I don't have any `attempt_2` items, maybe these are required?!?  
+The output dir only contains the `submission.json` file, there are no other
+output files.
+My code runs for 10 minutes, and uses CPU.
+I have made these changes between my submits.
+  * I have switched to use the latest Python version. Previously Kaggle was pinned to an older Python version.
+  * I changed license of my Dataset from unspecified to MIT.
+  * Changed my Kaggle dependency on my GitHub repo, from a Model to a Dataset.
+Any ideas what else can be tweaked?
+Now I have used my 3 of 3 daily submissions
+[submission.json](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2955344/21045/submission.json)
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up0
+  * format_quote
+  * link
+  1. Add "attempt_2"
+  2. Verify that you are submitting solutions for each test (some tasks have 2 tests)
+
+
+### [neoneye](/neoneye)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you. I finally got Kaggle to accept my submission.json file.
+
+
+## learnings
+All the task_ids in the input challenges json file, must also be present in
+the `submission.json` file. Despite not having a prediction for that task.
+Both `"attempt_1"` and `"attempt_2"` must be present, even though my solve
+doesn't have 2 predictions.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you for these learnings. I'm going to update the documentation with
+these
+
+
+### [wernai](/wernai)
+arrow_drop_up0
+  * format_quote
+  * link
+I am getting this same issue and it's driving me a bit nuts. Can I double
+check that this is how the data should look if there is more than one test
+`{ "007bbfb7": [ { "attempt_1": [ [ 0, 0 ], [ 0, 0 ] ], "attempt_2": [ [ 0, 0
+], [ 0, 0 ] ] }, { "attempt_1": [ [ 0, 0 ], [ 0, 0 ] ], "attempt_2": [ [ 0, 0
+], [ 0, 0 ] ] } ] }`
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+LGTM
+Hide repliesarrow_drop_up
+
+
+### [Jack Cole](/jcole75)
+arrow_drop_up0
+  * format_quote
+  * link
+I had this issue for 5 days and wasted that many submissions trying to resolve
+it. I couldn't get it to work until I created a brand new notebook that uses
+the latest environment. This is not ideal since our solution runs best with
+Pytorch < 2.0.

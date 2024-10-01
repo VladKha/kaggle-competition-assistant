@@ -1,0 +1,88 @@
+[Kha Vo](/khahuras) · 13th in this Competition · Posted 3 months ago
+
+
+### The best score of each team on LB is only the best of the most recent 3
+submissions
+I have a bot with 796 score which should place 2nd. But when I submitted some
+new submissions, those pushed my 796-score bot out of the LB ranking.
+Is this what we should expect? I guess an absolute best score should be
+displayed there on LB.  
+And how are the final bots selected for scoring at the end?
+[@bovard](https://www.kaggle.com/bovard)
+
+
+## 3 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+There were significant problems with keeping all submissions active (compute,
+leaderboard implications) so our current system only keeps the most recent
+three submissions.
+When the submission deadline hits, only your active agents will be considered
+for the final leaderboard
+
+
+### [Kha Vo](/khahuras)
+Thanks for clarifying. However it is still strange if Kaggle doesn’t allow us
+to choose which bots to operate. Day to day experiment and submission can be
+plentiful, and selecting different bot versions can spread a long period of
+time.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Thanks for the feedback!
+Arbitrary switching agents in and out causes a few different vectors to game
+the system so enabling that is unlikely.
+We have considered the ability to mark a submission as "evergreen" so it
+doesn't get disabled (but still counts towards your total). How does that
+sound to you?
+
+
+### [Kha Vo](/khahuras)
+I’ve been heavily involved in 3 past simulation comps on Kaggle, but the
+notion of only limiting to 3 active agents is new to me. It will cause
+problems either way you allow users to choose submissions or not.  
+Auto disabling old bots will leave their unrealistic and unupdated high or low
+score on the LB. As well it restricts the users development progress if
+somebody wants to submit and track many of their bots.
+Allowing users to switch agents means allowing them to “game” the system.
+A smarter way would be automatically disable only bots those have a certain
+amount of games resulting “error”. I believe they are plentiful. Or increasing
+active limit bots from 3 to 5.
+Marking a sub to evergreen can’t be reversed? If it can how is it different
+than freely allowing users to choose subs? If it can’t the. i guess nobody
+dare to use it
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+The deactivated agents no longer show up on the leaderboard.
+What we saw in previous competitions in that a team might submit 100 agents
+that are all roughly the same and would sit as a "filter" on the leaderboard.
+An agent would need to be able to beat that strategy to pass up that point in
+the leaderboard because the propensity to be paired against one of the hundred
+was so high.
+> Marking a sub to evergreen can’t be reversed? If it can how is it different
+> than freely allowing users to choose subs? If it can’t the. i guess nobody
+> dare to use it
+No, you'd be able to go in and chose which agents you want as evergreen. For
+example maybe you keep your highest rated solution and evergreen and let the
+others be disabled.
+However once an agent is deactivated, you can't bring it back.
+
+
+### [mhericks](/mhericks)
+I think that this is due to the fact, that one can only have three active
+agents. Since there is (currently) no way to select which agents are
+evaluated, **only the 3 most recent submissions** keep participating. Also, as
+the score of an agent (in some way) depends on all other agents on the
+leaderboard and the exact scoring mechanism used at the time, it would not be
+correct to take the maximum score of all agents ever submitted if the agent
+corresponding to the maximum is no longer re-evaluated constantly.
+Still, I totally agree that **there should be a way to select which agents to
+participate in the leaderboard games**.

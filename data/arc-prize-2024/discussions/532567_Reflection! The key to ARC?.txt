@@ -1,0 +1,44 @@
+[OminousDude](/max1mum) · 440th in this Competition · Posted 23 days ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Reflection! The key to ARC?
+Many of you may already know this but to those who haven't seen it, today a
+new fine-tuned llama 3.1 came out and it is… immaculate! This model has the
+some of the highest scores even when compared to Claude 3.5, GPT 4o, and
+Gemini 1.5.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F44af6f92dfbed641227319473394dbcb%2FScreenshot%20from%202024-09-06%2020-54-59.png?generation=1725670511270900&alt=media)  
+This model was trained with a fine-tuning strategy called reflection and it is
+trained to automatically correct its answer during the output! For those not
+using LLMs this will not matter much but for the rest of us, this is a
+revolution in ARC. The only problem is that this finetune is based on 70B
+which will not nearly fit in the small space provided in the Kaggle GPUs. For
+this reason, this model will not impact this competition by a crazy amount but
+ARC-AGI in general will experience a major shift of LLM-superiority. The model
+link is [here](https://huggingface.co/mattshumer/Reflection-Llama-3.1-70B)!
+comment
+
+
+## 2 Comments
+
+
+### [Anton Pimenov](/i7p9h9)
+arrow_drop_up2
+  * format_quote
+  * link
+This model seems like a scam, be careful and check info before posting. Their
+official API appears to be an API for Sonnet 3.5  
+<https://www.reddit.com/r/LocalLLaMA/comments/1fc98fu/confirmed_reflection_70bs_official_api_is_sonnet/>
+
+
+### [Xz](/xiaoz259)
+arrow_drop_up0
+  * format_quote
+  * link
+This didn't age very well lol.

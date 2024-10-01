@@ -1,0 +1,62 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 19 days ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Weird Errors...
+I write here to see if anyone else has experienced this.  
+Has anyone submitted a notebook change and had it fail, only to find that
+there was a tiny syntax error?  
+Just a small thing, like a typographical error… Maybe happening multiple
+times?  
+I'm lucky in that it only happened to me twice, to date. The first time, a
+stray "delete" moved two lines onto one line, and that occurred near the top
+of the notebook. I assumed that was my error. The second time, a pair of ones
+(1) found their way into the code, only this was near the bottom, so it ran
+for 3 hours before failing. I really would have thought it was just my own
+carelessness, if not for the weirdness of having the digit 1 appear in two
+different places. How could I have accidentally done something that precise
+(without, say, deleting all the text between them or similar)?  
+It absolutely certainly could be my laptop, whose aging track pad definitely
+does some weird stuff. But the precision of the two 1's sort of rules that
+out, as well. It would be like a person with Tourette's accidentally backing
+into the wrong parking space. It's the wrong "class" of error.
+comment
+
+
+## 3 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up4
+  * format_quote
+  * link
+Move as much code as possible to a repository, so the Kaggle Notebook is
+reduced to as few lines as possible, less than 100 lines.
+automated testing.
+Make it deterministic. When looping over a dictionary, sort the keys
+beforehand. So results can be reproduced.
+I do that in my ARC Prize 2024 project.  
+<https://github.com/neoneye/simon-arc-lab>
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Excellent suggestions! Thank you.  
+CA? A purist. …Respect!
+
+
+### [PC Jimmmy](/pcjimmmy)
+arrow_drop_up0
+  * format_quote
+  * link
+In the Ariel data challenge last week I had a notebook that "lost' last 3
+lines of code in one of the cells when I tried to edit. Was repeatable over a
+couple of days. No idea why but it's the only weirdness on kaggle in many
+years.

@@ -1,0 +1,21 @@
+[AC](/ahsuna123) · 137th in this Competition · Posted a month ago
+
+
+### Can Random Seed ensemble work?
+I read in some of the discussions here, stating how seed 777 is outperforming
+the rest. I tried it with the highest scoring public notebook. The seed 42
+gave a score of 0.434 (0.375 with seed = 777), which brings me to question,
+how about ensembling models on multiple random seeds? My best bet is they
+might turn out to be more stable than submitting a single model.
+
+
+## 2 Comments
+
+
+### [G John Rao](/jaejohn)
+Yeah, it'll surely reduce the variance in the predictions. Ensembling always
+works. Nice ideas, time to test it out. thanks
+
+
+### [AC](/ahsuna123)
+Yep, look forward to testing it! :)

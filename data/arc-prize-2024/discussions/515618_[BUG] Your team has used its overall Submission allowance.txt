@@ -1,0 +1,112 @@
+[Ali](/asalhi) · 21st in this Competition · Posted 3 months ago
+arrow_drop_up7
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### [BUG] Your team has used its overall Submission allowance
+> Your team has used its overall Submission allowance (68 of 38), please try
+> again tomorrow UTC (19 hours from now).
+In this case, I have to wait 15 days to be able to submit 😅
+It's most likely a bug related to changing the limit from 5 to 2.  
+[@inversion](https://www.kaggle.com/inversion)
+[@gregkamradt](https://www.kaggle.com/gregkamradt)
+[@fchollet](https://www.kaggle.com/fchollet)
+comment
+
+
+## 8 Comments
+
+
+### [Jack Cole](/jcole75)
+arrow_drop_up3
+  * format_quote
+  * link
+This is affecting us too.
+
+
+### [fchollet](/fchollet)
+arrow_drop_up1
+  * format_quote
+  * link
+Here's the summary of the problem and our fix.
+Initially, when we made this change, we thought that changing the daily
+submission limit would only apply _forward_ \-- we expected all teams to be
+able to submit 2x/day regardless of how many times they had previously
+submitted.
+However, Kaggle's backend logic checks `total_count <= daily_limit *
+days_elapsed`, which means that a small number of teams that had high
+submissions counts found themselves unable to submit. This was unintended.
+Kaggle is not able to modify this logic for this competition. So what we are
+doing instead is bumping the submission limit to 3x/day, which we consider to
+be a reasonable amount in this context. As a result, all teams except two
+should be able to submit right away. One team (yours) will be able to submit
+in 1-2 days. The other one will take a week. We'll be reaching out directly to
+affected teams with more information.
+
+
+### [Ali](/asalhi)
+arrow_drop_up1
+  * format_quote
+  * link
+Thanks :-)  
+I have a suggestion that might help other yet affected teams.
+[@fchollet](https://www.kaggle.com/fchollet)  
+A lot of us faced errors such as "csv not found" For example, I have 14 subs
+with errors, maybe deleting those (if any) for affected teams can reduce their
+total submitted amount and reduce the waiting time.
+
+
+### [Jack Cole](/jcole75)
+arrow_drop_up0
+  * format_quote
+  * link
+I had something like 25 of those too.
+
+
+### [cm391](/mccocoful)
+arrow_drop_up-1
+  * format_quote
+  * link
+This is a fair way to implement the change - maybe the comms could be better ?
+
+
+### [Tenchi-t](/tenchit)
+arrow_drop_up0
+  * format_quote
+  * link
+It makes sense to do this if you want to give all participants the same
+maximum number of attempts to make the competition fair under the same rules.
+The problem is that the conditions have changed, not that this is unfair.
+
+
+### [Ali](/asalhi)
+arrow_drop_up2
+  * format_quote
+  * link
+It’s a bug, all participants had 5 submissions from the starting of the
+competition and you could have used yours daily. Its not like I had more than
+others.
+I don’t see how it is fair for me to wait two weeks to submit as a penalty for
+me using my allowed daily 5 subs before 🙂
+So it is just a bug in the submission system.
+
+
+### [Ali](/asalhi)
+arrow_drop_up0
+  * format_quote
+  * link
+Any Updates ? [@inversion](https://www.kaggle.com/inversion)
+[@gregkamradt](https://www.kaggle.com/gregkamradt)
+[@fchollet](https://www.kaggle.com/fchollet)
+[@maggiemd](https://www.kaggle.com/maggiemd)
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * format_quote
+  * link
+We have the Kaggle team looking into it now

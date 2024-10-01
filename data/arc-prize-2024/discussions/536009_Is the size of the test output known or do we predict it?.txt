@@ -1,0 +1,46 @@
+[JK-Piece](/jeannkouagou) · 1060th in this Competition · Posted 5 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Is the size of the test output known or do we predict it?
+  * I realized that the test input and output do not always have the same size.
+  * Does this mean we have to predict the size of the test output before filling it with the right values?
+comment
+
+
+## 2 Comments
+
+
+### [gromml](/gromml)
+arrow_drop_up1
+  * format_quote
+  * link
+Yes, we should predict the shape of the test output for each test input
+(before filling this test output with the right values).
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up1
+  * format_quote
+  * link
+Then the competition is way harder than I thought
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+Sort of… A good chunk (the majority) of input matrices equal the outputs in
+size. Still dang hard to figure out, but at least the size part is easy.
+Another chunk of the tasks have size changes that are extremely easy to
+analyze (i.e. every example starts at 3x3 and outputs to 9x9). Only a few of
+the tasks have output sizings (and other details) that are based on "little
+gimmicks", like if the input object is red, the output matrix is a certain
+size; but it's a different size if the input object is blue. Some of these
+gimmicks are downright difficult for humans, so good luck getting - insert LLM
+here - to get it right.

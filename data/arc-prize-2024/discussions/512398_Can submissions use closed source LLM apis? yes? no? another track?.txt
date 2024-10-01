@@ -1,0 +1,38 @@
+[Jianghong](/jianghoy) · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Can submissions use closed source LLM apis? yes? no? another track?
+If I read the rules correctly, the no internet rules imply a prohibition on
+the usage of OpenAI/Anthropic/Gemini , etc etc. That being said, I do want to
+see how far a sota LLM can go by simply prompting the hell out of it. I hope
+it's not just me. So how should I, or any explorer, participate in a way
+that's fair, open and also able to use any closed source LLM of their choice?
+For the record, I tried to dump the problem into GPT4-o , and I'll be honest
+the answer is abysmal, so for those who are not looking into this direction,
+you're likely right. That being said, I'll be equally excited if anyone can
+prompt the hell out of it and dramatically improve the performance (so
+_scaling is indeed all you need_) or not able to prompt the hell out of it (so
+_the better architecture is on the way_).
+I think what I would do, if eventually the answer is no, and I do find some
+meaningful results, is I can just publish my prompting repo with my findings;
+but if there's another track that allows closed source LLM usage if the whole
+code is open sourced, that would be great.
+comment
+
+
+## 1 Comment
+
+
+### [Pavel Orlov](/sapr3s)
+arrow_drop_up0
+  * format_quote
+  * link
+You have the opportunity to check your solution on the main site
+<https://arcprize.org/leaderboard>. You just won’t receive a $1M in this
+competition and that’s all. (Perhaps the organizers will add some kind of
+prize on their website, but so far there is no such prize!)

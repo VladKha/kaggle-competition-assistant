@@ -1,0 +1,103 @@
+[Parashuram Chavan](/parashuramchavan) · 669th in this Competition · Posted 2
+
+### How to use models from huggingface?
+or can i use huggingface models by API
+
+
+## 5 Comments
+
+
+### [Chris Deotte](/cdeotte)
+
+## Commit Code
+During **commit** , download and save the models to folder
+    
+    
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    model = AutoModelForCausalLM.from_pretrained()
+    tokenizer = AutoTokenizer.from_pretrained()
+    model.save_pretrained("/tmp/submission/weights")
+    tokenizer.save_pretrained("/tmp/submission/weights")
+    
+    
+    content_copy
+If you have any pip installs then install into `/tmp/submission/lib`
+    
+    
+    os.system("pip install -U -t /tmp/submission/lib PACKAGE")
+    
+    
+    content_copy
+Then zip up the entire `/tmp/submissions` folder to `submission.tar.gz`. See
+Kaggle starter code for zip commands.
+
+
+## Submit Code
+Then during **submit** inside your `/tmp/submission/main.py` file add the
+following (and all your pip installs and models will work):
+    
+    
+    import os
+    KAGGLE_AGENT_PATH = "/kaggle_simulations/agent/"
+    if not os.path.exists(KAGGLE_AGENT_PATH):
+        KAGGLE_AGENT_PATH = "/tmp/submission/"
+    
+    import sys
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    sys.path.insert(0, f"{KAGGLE_AGENT_PATH}lib")
+    model = AutoModelForCausalLM.from_pretrained(
+        f"{KAGGLE_AGENT_PATH}weights/")
+    tokenizer = AutoTokenizer.from_pretrained(
+        f"{KAGGLE_AGENT_PATH}weights/")
+    
+    
+    content_copy
+
+
+### [Parashuram Chavan](/parashuramchavan)
+ohh thank you sir
+
+
+### [Parashuram Chavan](/parashuramchavan)
+i am struggling with Your notebook tried to allocate more memory than is
+available. It has restarted.
+
+
+### [Chris Deotte](/cdeotte)
+You should load the model in fp16, 8bit, or 4bit. Otherwise most large models
+won't be able to fit in GPU memory. Alternatively, you could also try smaller
+models like 2 billion parameters to get started.
+
+
+### [Parashuram Chavan](/parashuramchavan)
+no i have loaded model from Kaggle environment
+/kaggle/input/mistral/pytorch/7b-instruct-v0.1-hf/1  
+or it is not using much of GPU memory but ram is full that's why I m getting
+that error
+
+
+### [Parashuram Chavan](/parashuramchavan)
+i think the size of model is huge
+
+
+### [Sumo](/sirapoabchaikunsaeng)
+hi, I'm submitting my models like this as well. And it seems like the
+submission only allows up to 20gb tar files this way, while the technical
+specifications [on the Overview
+page](https://www.kaggle.com/competitions/llm-20-questions/overview/20-questions-
+rules) mentioned 100Gb of disk space.
+Or am I supposed to compress everything below 20gb, then use the overage time
+to uncompress + setup, and use the remaining space up to 100gb?
+Thank you
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+It may have just been me but the transformers package rejects the repo id path
+due to more than 1 `/`
+If anyone else is experiencing this issue, try:
+`model.save_pretrained("/tmp/submission/")`  
+`tokenizer.save_pretrained("/tmp/submission/")`  
+`model = AutoModelForCausalLM.from_pretrained(f'{KAGGLE_AGENT_PATH}')`  
+`tokenizer = AutoTokenizer.from_pretrained(f'{KAGGLE_AGENT_PATH}')`
+along with the other code that Chris mentions above. (make sure your
+tmp/submission folder is either 'submission' or 'submissions')

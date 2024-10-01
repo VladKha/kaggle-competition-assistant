@@ -1,0 +1,49 @@
+[kei hasegawa](/keihasegawa0503) · 58th in this Competition · Posted 2 days
+
+### 58th Solution - Simple Rephrase Agent
+Thanks very much to everyone who participated in the competition.  
+Although there were some disappointing points, I would like to thank the
+Kaggle staff for hosting such a great competition.
+
+
+## Reference
+I mainly used the excellent notebook by
+[@rturley](https://www.kaggle.com/rturley),
+[@wouldyoujustfocus](https://www.kaggle.com/wouldyoujustfocus) below as
+inspiration.
+<https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook>  
+<https://www.kaggle.com/code/wouldyoujustfocus/llama3-8b-llm20-questions-
+lb-750>
+
+
+## Code
+<https://www.kaggle.com/code/keihasegawa0503/58th-place-llm20q-agent>
+
+
+## Solution
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16162129%2F965adb92c43410d138f5756de7de29e2%2Fllm_20_questions.png?generation=1725073191104961&alt=media)
+
+### Asker
+  * Fixed questions and initial letter questions
+  * Eliminate two-thirds of the candidates using a weighted random selection based on the frequency of initial letters in the dictionary
+  * LLM temperature=0.99
+
+### Guesser
+  * Shuffle QA history and rephrase, then create a description of keywords
+  * If gemma have violated the fixed questions or have guessed the previous keyword, I tried again.
+  * LLM temperature=0.99
+
+### Answerer
+  * Simply create 10 answers in LLM and vote on 10 answers to decide
+  * For those who took the same strategy as me, I added "the first letter of the keyword is *".
+
+
+## Observations
+  * The agent alpha by @lohmaa is a genius and brilliant solution, and my solution should have been incorporated into the Answerer at least. 
+  * According to [other stats](https://www.kaggle.com/competitions/llm-20-questions/discussion/529683), as a questioner, I had **11 wins and 2 losses** , and as an answerer, I had **6 wins and 10 losses**. 
+  * To be honest, the answerer didn't put much effort into it, so maybe I should have strengthened it more.
+  * The fact that I was able to perform so well with such a simple strategy was due solely to the intelligence of the gemma, and amazing luck.
+
+
+## 0 Comments

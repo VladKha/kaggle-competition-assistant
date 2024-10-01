@@ -1,0 +1,68 @@
+[c-number](/cnumber) · 1st in this Competition · Posted 4 days ago
+
+### A stupid proposal
+As many may have noticed, the leaderboard rankings at the top are constantly
+fluctuating. One might take a short break, only to return and find the
+standings reshuffled.
+Given that all the top contenders in the gold range are using Full Agent
+Alpha, and their performance as answerers is essentially identical when
+competing against each other, perhaps we could consider an alternative ranking
+method.  
+What if we evaluated each participant's skill as a Guesser across all keywords
+instead? This approach might provide a more meaningful ranking system. 🫠
+(This is half a joke so don't take it seriously, I don't expect Kaggle to
+change the ranking system at this stage. Just frusturated at how the ranking
+heavily depends on luck; who you team up when you act as an answerer)
+
+
+## 6 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Andrew ( [@jademonk](https://www.kaggle.com/jademonk) ) has done a good job of
+analyzing Guesser ability
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/530312).
+His post illustrates that there are multiple dimensions to being a good
+Guesser.
+
+
+### [c-number](/cnumber)
+Thanks, I'll have a look
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+(full joke mode) - There should be a showdown of the top 10 where only the
+guesser is active and all questions/answer are masked. The winner will
+solidify the hypothesis that this is indeed a pseudo-lottery.
+
+
+### [loh-maa](/lohmaa)
+Of course it should have been on a steady cooling schedule with sigma
+decreasing slowly and steadily down to a low minimum, lower than it is now,
+and all this with lots of gameplay uniformly from top to bottom… but well,
+there were certain complications, and it seems we're going to have lots of
+luck and bad luck involved until the end.
+
+
+### [loh-maa](/lohmaa)
+It seems my agent is on the right track before the finish.. ,)  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Fbabc79ad49e3697efffa3bf4fbeb6f62%2FScreenshot_2024-08-29_13-15-39.png?generation=1724912212634048&alt=media)
+
+
+### [c-number](/cnumber)
+Yeah, your agent is on the right track for sure  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6624777%2F10d16635b27c0d77dff19a00ba35c506%2FScreenshot%20from%202024-08-29%2019-17-00.png?generation=1724926631524803&alt=media)
+
+
+### [loh-maa](/lohmaa)
+[@cnumber](https://www.kaggle.com/cnumber) looks like it changed tracks, also
+possible!… but my point was the same as yours -- because of the relatively
+high lower bound on sigma, it's just too easy to drop out after a few final
+loses.
+
+
+### [c-number](/cnumber)
+Totally agreed. Even if there are enough games, I believe the LB will not ever
+converge, because of the answerer problem.

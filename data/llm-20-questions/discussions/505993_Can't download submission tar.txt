@@ -1,0 +1,15 @@
+[alekh](/aleksanderhan) · 502nd in this Competition · Posted 3 months ago
+
+### Can't download submission tar
+Nothing happens when I click download on the submission tar file. Smaller
+main.py downloads fine. But nothing happens when I try to download the big
+tarball…
+What gives?
+
+
+## 1 Comment
+
+
+### [alekh](/aleksanderhan)
+Just had to wait. All of the sudden it started, having being downloaded in the
+background without any progress bar.. Bad UX

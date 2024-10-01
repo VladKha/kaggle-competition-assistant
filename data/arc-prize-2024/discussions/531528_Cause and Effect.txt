@@ -1,0 +1,283 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted a month ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Cause and Effect
+That's what's been bothering me! Skimming Chollet's paper (for the 6th or 7th
+time) I read (again) where he said that time was not really a requisite prior…
+Yeah, sort of… Each ARC i/o pair is precisely and exactly an abstraction of
+cause and effect. Every one. Even the one that starts off with a completely
+blank matrix. The entirety of the human condition as described by cause and
+effect (there are actually other descriptions, but I digress), each
+input/output pair represents cause and effect. You see the before state
+(input). You do not have the benefit of knowing the cause (that's the puzzle),
+but you get to see the effect in all its glory (output). Most of the tasks are
+simple enough for humans to construct correctly-sized stories about what
+happened. When there is (obvious? planned?) ambiguity, you get more training.
+When the (internal, human) story can "produce" the desired "effect," you get
+confetti (my fave).
+comment
+
+
+## 8 Comments
+
+
+### [Jason Chris](/jasonchris1988)
+arrow_drop_up1
+  * format_quote
+  * link
+And I'm curious, how did you make the connection between the whole idea of
+"Cause & Effect" and this ARC tasks of input and output pairs?  
+I have been listening to the podcast titled "Machine Learning Street Talk" and
+that's how i heard about Judea Pearl etc….
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+I like MLST… Haven't listened (to much of anyone's podcasts) recently. I was
+looking at Chollet's paper again, and picked up (again) where he stressed that
+"time" was not a major concern (horribly misquoting. sorry) in all of the
+tasks. And thinking about how time _does_ relate to the tasks is an
+overwhelming intoxication. _Something_ about those tasks is very close,
+indeed, to time. But what was I seeing? That was the question I asked myself.
+Cause and Effect leapt from the volume of ideas and immediately stuck to every
+task. That's my closest analog to how I made that connection, prior to being
+introduced to Judea Pearl, who I still have not read. It was a tributary of
+time.
+
+
+### [Jason Chris](/jasonchris1988)
+arrow_drop_up1
+  * format_quote
+  * link
+That's really cool you've made the connection even without reading Judea Pearl
+or likewise and approaching each task from input to output as a series of
+cause and effects….
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+from page 49, where the focus is "goal-directed" priors,
+    
+    
+    "While ARC does not feature the concept of time, many of the input/output grids can be
+    effectively modeled by humans as being the starting and end states of a process that in-
+    volves intentionality (e.g. figure 9). As such, the goal-directedness prior may not be strictly
+    necessary to solve ARC, but it is likely to be useful."
+    
+    
+    content_copy
+So. He almost calls it by name. But I'm not talking about human priors, per
+se. I'm talking about every set of every task of any ARC dataset. Which is
+different, IMO. It's pretty deep, and while it may not be strictly necessary
+to solve ARC, it is likely to be useful!
+
+
+### [Jason Chris](/jasonchris1988)
+arrow_drop_up1
+  * format_quote
+  * link
+Hello James Huddle,
+I've been the reading the book, The book of why, the new science of cause and
+effect by Judea Pearl..  
+I think there are valuable insights based on what you have written…
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Your name is JasonChris1988, which is the only thing to make me go in the
+following direction…  
+"Oh, he must have been born in 1988." I was born in 1962, which is 26 years
+prior. February 26, 1962. Never heard of Judea Pearl, so googling, I read
+"Professor Judea Pearl is a Professor of Computer Science at University of
+California, Los Angeles. He is a leader in Artificial Intelligence (AI). Pearl
+invented Bayesian networks,"… Nice. I thought Bayes invented them because I am
+an idiot. Anyway, Pearl himself is 88, having been born in 1936. It just keeps
+going around.  
+As for "cause and effect," I just noticed it. But Chollet has been working
+these images for half a decade. I wonder if Pearl stayed connected… 88 is
+getting on in years. Frankly, not surprised that someone cutting deep into AI
+(like Pearl) would get very familiar with cause and effect. Thank you for
+mentioning these things. It is a gradual awakening.
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up2
+  * format_quote
+  * link
+Since everything is connected to everything else (DaVinci's quote)
+**Five years ago** (while Chollet was working on these images and far before
+that movie), I posted on Kaggle:  
+[Barbie developer and Judea
+Pearl.](https://www.kaggle.com/datasets/mpwolke/cusersmarildownloadsearningcsv/discussion/115430)
+For the record, I was also born in 1962. This topic is almost a Bacon's law
+(Six Degrees of Kevin Bacon : )
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Nice! I read your piece on Dr. Barbara Mattel, an looking down saw the single
+word, "hotness". Calling Dr. Jung… Loved your description of her internal
+organ tradeoffs. Classic!
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up1
+  * format_quote
+  * link
+I was inspired by some of my co-workers when Avatar movie was launched. My
+"colleague" said that she wanted to be like the Na’vi, due to the Na’vi female
+body shape.  
+I had to explain to her that she would have to opt by her liver,
+spleen/pancreas. Only some of her internal organs, because Na’vi's bodies
+don't have space for ALL the organs that human beings need.
+Very likely, on that time people started to photoshop their social media
+images to achieve an irrealistic aspect they find it's the kind we had to
+pursue.
+That's the problem that civilizations face when they simply stop to think and
+reflect, no matter how we improve all technology available.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+"what a worrrld, what a worrrrld!" - Wicked Witch of the East (while melting)
+
+
+### [Jason Chris](/jasonchris1988)
+arrow_drop_up1
+  * format_quote
+  * link
+Yes, you're right about my birth year and quite good at deducting the cause
+and effect. I'm glad, you have gotten to introduced to Judea Pearl,let's see
+where this cause leads…. 😁
+
+
+### [Jason Chris](/jasonchris1988)
+arrow_drop_up1
+  * format_quote
+  * link
+oh wow! I wished i had seen your post earlier and gotten more of the insights
+and gotten introduced Judea Pearl…😁 Thank you.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+When I was in the 5th grade, I learned (from every one of my classmates, as
+they read their essays) that '62 was a good year for wine. At first, it seemed
+odd that they would use that line. It was the 5th grade. How would they know a
+good year from a bad one? Of course I had to add that to my oral presentation
+as well. Every 11-yr-old who uttered those words KILLED! (It was an easy
+room)… I had to get those easy laughs, so I chatgpt'd my classmates (all born
+in 1962, it turns out!) (yep, I cheated before cheatin' was cool)
+Hide repliesarrow_drop_up
+
+
+### [soltani abdellatif](/soltaniabdellatif)
+arrow_drop_up1
+  * format_quote
+  * link
+Can you link the paper ?
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up2
+  * format_quote
+  * link
+Hi Soltani,
+Is that?
+[On the Measure of Intelligence](https://arxiv.org/pdf/1911.01547)
+Three months ago I tried to summarize it:  
+[ARC: Generalization Difficulty. Computation efficiency. Core Knowledge
+priors.](https://www.kaggle.com/competitions/arc-prize-2024/discussion/511743)
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you, Marilia!  
+The thrust of my post was really not so much a comment on Chollet's (great)
+paper, as it was this: Of all the things that have been said about ARC
+(including Francois' comment on time) I don't think I've seen anyone make the
+"cause - effect" connection. It seems trivial and obvious, now (please forgive
+me if you have made that point already, whoever you are), but the realization
+hit me somewhat bluntly, so I "discussed"!
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up1
+  * format_quote
+  * link
+Hi Huddle,
+Your post is valuable, worthy and the cause/effect is very interesting.  
+Besides, I copy/post so many things that I even remember that I've published
+that. In other words, I didn't made any point about this subject. I simply
+summarized what I read. At least, you reflected and analyzed it.
+And worst, I don't remember the content of that paper. It seems I should read
+it again. Shame on me.
+What I will remember in that competition is that I waited almost four years to
+make those charts and since Kaggle team changed the files I wasn't able to
+display them by myself too.
+I'm just a beginner that doesn't understand most part that I try to publish.
+For the record, it's great to read your topic .
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+So much to say! Thank you for the links, Marilia. I haven't read your summary
+- looking forward to that.  
+My response was to you and Soltani. And it was such a spaghetti-coded melange
+of 'you's, how could anyone parse it? Apologies for that! Have a great day.
+(Thank you for the nice words!)
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+I _did_ read your paper back when you posted, and promptly forgot about it.
+And here's why: It's the "program generation," part, with which most
+intelligent people in "the field" would agree. It put me off in my original
+read of the original 2019 paper, as well. It's not your fault for summarizing,
+or even Francois' fault for originally writing that. I understand it, and,
+yes: AI (the real deal) will be something very much like that… a code
+generating, code running, program. I just find recent references to that
+process to be personally painful, because that is what I was trying to
+accomplish in 1992. Thank you for the summary. Do you prefer to use last
+names, in these exchanges? Thank you, Prata!
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up0
+  * format_quote
+  * link
+Hi James,
+No fault at all. You can use whatever you want (Prata, marília, mpwolke
+commented with the at symbol or not)  
+In 1992, I was still praticing (as a Dental doctor). I'd never expect to learn
+anything in this programming field.
+In fact, as I mentioned above, my only "experience" is on Kaggle where I spend
+many hours trying to make intuitively things that I don't get most part. And
+often, I forget what I copied/posted too.
+Now, we can "measure my programming intelligence" (applying Chollet's title),
+better say my lack of it: )
+Hide repliesarrow_drop_up

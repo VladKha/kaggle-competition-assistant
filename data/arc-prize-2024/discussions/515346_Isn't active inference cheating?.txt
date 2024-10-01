@@ -1,0 +1,45 @@
+[emoji_people](/madarshbb)
+[chinnum97](/madarshbb) · 50th in this Competition · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Isn't active inference cheating?
+Help me understand what active inference actually means.
+So we are essentially fine-tuning the LLM on test data by synthetically
+exploding the test examples with DSL's. First of all, how do we even do this
+on kaggle? Is it possible to change the LLM weights in the middle of the
+inference submission? If we look at the model weights after this active
+inference has been performed, wouldn't that itself cause data leakage
+indirectly?
+comment
+
+
+## 2 Comments
+
+
+### [fchollet](/fchollet)
+arrow_drop_up10
+  * format_quote
+  * link
+Definitely not cheating. In fact, _some form_ of model adaptation or search at
+test time is necessary.
+> If we look at the model weights after this active inference has been
+> performed, wouldn't that itself cause data leakage indirectly?
+Yes it would, but you cannot look at the weights afterwards.
+
+
+### [nosound](/zaharch)
+arrow_drop_up3
+  * format_quote
+  * link
+No, it is not cheating. One has 12h of inference time, and this time can be
+used for whatever. It is not possible to look at the resulting weights, - the
+only output from inference is your score, which is at max log_2(40)~=5 bits on
+information (because 39 is the current best score on the LB). Note, that the
+private test output is not available at the inference, only the test input,
+which limits useful information that one can possibly leak. Hope that
+clarifies!

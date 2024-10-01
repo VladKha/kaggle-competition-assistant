@@ -1,0 +1,12 @@
+[Chaitany Patel](/chaitanypatel) · 951st in this Competition · Posted 2 months
+
+### Using LLM for Time series Forecasting.
+I am Thinking That using LLM model to use time series forecasting As the
+Suggested in TimeLLM paper.
+
+
+## 1 Comment
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+You can try <https://docs.nixtla.io/docs/getting-started-timegpt_quickstart>

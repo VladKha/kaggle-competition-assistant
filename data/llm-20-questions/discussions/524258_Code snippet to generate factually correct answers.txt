@@ -1,0 +1,59 @@
+[Sadhaklal](/sambitmukherjee) · 93rd in this Competition · Posted a month ago
+
+
+### Code snippet to generate factually correct answers
+In the game replays, I'm coming across a lot of factually incorrect answers.
+Here's a code snippet to generate factually correct answers. It works with any
+instruction tuned model (such as "meta-llama/Meta-Llama-3.1-8B-Instruct"):
+    
+    
+    class Answerer:
+        def __init__(self, device, tokenizer, model):
+            self.device = device
+            self.tokenizer = tokenizer
+            self.model = model
+            self.generation_kwargs = {
+                'min_length': -1,
+                'top_k': 0.0, # No top-k sampling.
+                'top_p': 1.0, # No nucleus sampling.
+                'do_sample': True,
+                'temperature': 0.2,
+                'pad_token_id': tokenizer.eos_token_id
+            }
+    
+        def get_messages(self, keyword, question):
+            messages = [{'role': "system", 'content': f"""Your task is to reply with a single word answer - either 'yes' or 'no'.
+    
+    I am providing you an entity delimited by <entity> </entity>.
+    
+    Entity:
+    <entity>{keyword}</entity>
+    
+    Next, the user will ask you a question delimited by <question> </question>.
+    
+    Please use the entity and the question, and formulate a single word 'yes' or 'no' answer that is factually correct. You must use all your knowledge about the entity to formulate the answer.
+    
+    Never mention the entity in your answer. Do not provide an explanation for your answer, and do not use any other words."""}]
+            messages.append({
+                'role': "user", 'content': f"""Question:
+    <question>{question}</question>"""
+            })
+            return messages
+    
+        def answer(self, keyword, question):
+            messages = self.get_messages(keyword, question)
+            prompt_tensor = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=True, return_tensors="pt").to(self.device)
+            answer_tensor = self.model.generate(prompt_tensor, max_new_tokens=2, eos_token_id=self.tokenizer.eos_token_id, **self.generation_kwargs)
+            answer = self.tokenizer.decode(answer_tensor[0][len(prompt_tensor[0]):], skip_special_tokens=True)
+            answer = answer.lower()
+            if answer not in ['no', 'yes']:
+                answer = 'no'
+            return answer
+    
+    
+    content_copy
+I have tested this code on thousands of games, and it works well. Please feel
+free to try it out…
+
+
+## 0 Comments

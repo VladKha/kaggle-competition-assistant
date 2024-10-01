@@ -1,0 +1,25 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 2 months ago
+
+### Where can I find the llm 20 Q metric?
+Basically, the title wanted to be able to test my models. 😁
+
+
+## 2 Comments
+
+
+### [Chris Deotte](/cdeotte)
+The "metric" is how our overall LB increases which uses a formula based on
+number of games we have previously played. However during validation I do not
+think we can use this.
+For validation, I think we just want `accuracy` and `speed of win`. In other
+words optimize our models to correctly guess word in 20 questions and guess in
+the fewest number of guesses (i.e << 20)
+
+
+### [OminousDude](/max1mum)
+Ok, Thank you!
+
+
+### [OminousDude](/max1mum)
+Sorry but this is not what I meant I wanted to know if I could find how the
+zipped models are played against eachother

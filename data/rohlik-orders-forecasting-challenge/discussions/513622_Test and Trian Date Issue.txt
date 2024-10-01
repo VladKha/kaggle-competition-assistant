@@ -1,0 +1,54 @@
+[Adam Logman](/adamlogman) · 514th in this Competition · Posted 3 months ago
+
+
+### Test and Trian Date Issue
+When you look at the test dates, you'll see that they ran from 16 March 2024
+to 15 May (last month), and that data was regularly collected every 4 days.
+However, there is a significant difference in the train; the data was
+collected from 2020 to 14 May 2024. You will need to account for these in your
+calculations, along with any conflicts, COVID-19 outbreaks, and other crises
+that have occurred since 2020.
+you have to trust your cv , do not try to be smart ,  
+best way to prevent overfitting, train your data from 2023 or 2024 to avoid
+overfitting
+
+
+## 4 Comments
+
+
+### [Musa Khan](/lazer999)
+Hm, although the covid one is a great reminder, but will it be helpful in the
+testing data?
+
+
+### [G John Rao](/jaejohn)
+From the overview:
+> Our challenge focuses on predicting the number of orders (grocery
+> deliveries) at selected warehouses for the next 60 days.
+Covid outbreak consideration is a nice catch, thanks!
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+Hi [@adamlogman](https://www.kaggle.com/adamlogman), interesting point.
+However, I wouldn't train just from 2023 to 2024. The reason for that is that
+there is also the possibility that the final test set is not only a long
+sequence of several months. I could also imagine that it might be one month in
+Winter 2021, then a month in Summer 2023, etc. If you only collect more likely
+linear data that behaves in an ordinary way, then you might fail in every
+special case.
+
+
+### [Adam Logman](/adamlogman)
+We should focus on this season of the last two years or just the past year
+because the final test set prediction date may fall within this month and
+following months.
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+Yes, I didn't recall to read the 60 days as
+[@jaejohn](https://www.kaggle.com/jaejohn) said, with that information it
+makes sense. I'm going even further that I guess the private test set ranges
+from mid of May to mid of July (1 months buffer for host eventually). I don't
+know if the private test set has to be already be in place from the start or
+can be evaluated with the submitted versions later on? (as the new data is not
+existing). This is pure speculation!

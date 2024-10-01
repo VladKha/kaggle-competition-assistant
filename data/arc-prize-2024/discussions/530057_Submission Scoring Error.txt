@@ -1,0 +1,33 @@
+[Muhammad](/hark99) · 774th in this Competition · Posted a month ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Submission Scoring Error
+[@gregkamradt](https://www.kaggle.com/gregkamradt)
+[@inversion](https://www.kaggle.com/inversion), I'm stuck handling the topic
+error. The same model inference after committing is giving valid and invalid
+submissions. The difference is that the valid submission is trained on a few
+data points (just for submission checking) while invalid submission is tuned
+on much larger data. Also verified all the generated outputs for both json
+files through array testing including the ones having multiple outputs. Both
+files also have the same size. Despite these checks, still can't figure out
+the bug. I have attached both JSON files for your perusal.
+[Submissions.rar](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2968803/21095/Submissions.rar)
+comment
+
+
+## 1 Comment
+
+
+### [Muhammad](/hark99)
+arrow_drop_up0
+  * format_quote
+  * link
+The same submissions (the rejected ones) are accepted now on the third
+attempt. Is it a bug?

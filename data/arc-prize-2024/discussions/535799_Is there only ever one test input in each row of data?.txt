@@ -1,0 +1,72 @@
+[Ronan McGovern](/ronankmcgovern) · Posted 6 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Is there only ever one test input in each row of data?
+I just want to confirm that - in all cases - the challenge is to provide the
+output for a single test input (yes, also given multiple sample input-output
+pairs)? Thanks
+comment
+
+
+## 5 Comments
+
+
+### [CPMP](/cpmpml)
+arrow_drop_up0
+  * format_quote
+  * link
+Not in the public data.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+The main idea is to do what you said. After analyzing the ['train'] inputs and
+their respective outputs, you will provide the output for the ['test'] input.
+A HANDFUL of tasks have more than one ['test'] input for which you need to
+provide an output. MOST of them have 2 ['test'] inputs, and I think one or two
+have 3 ['test'] inputs. There is no written limit. You need to provide as many
+['test'] outputs as there are inputs. If your code creates the correct
+['test'] output for one of the (for instance) two ['test'] inputs, you get 1/2
+of a point. For a score of 26.5 (for instance)
+one tiny item: the ['test'] input(s) (and the respective output(s)) are in an
+array. So the majority of responses will be a array with a single item -- that
+item is a 2-dimensional array (a matrix). So, if, in the weird case your
+['test'] output is a 1x1 array with the value 9, that output would look like
+this [[[9]]] That's an array containing a single matrix with a single row and
+a single column, holding the value 9.
+
+
+### [Ronan McGovern](/ronankmcgovern)
+arrow_drop_up0
+  * format_quote
+  * link
+Many thanks, yes I think that clears things up that there may be multiple test
+inputs and multiple test outputs need to be provided in response.
+I suppose there is the added factor that there are two attempts allowed per
+output, so one should then format those two attempts.
+Perhaps it could be useful to clarify this someone (by providing a wider
+variety of examples) in the submission json sample?
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+arrow_drop_up0
+  * format_quote
+  * link
+This is not the actual test set but a sample for syntax check. The actual test
+data is hidden and will be available secretly when you submit the model for
+evaluation [@ronankmcgovern](https://www.kaggle.com/ronankmcgovern)
+
+
+### [Ronan McGovern](/ronankmcgovern)
+arrow_drop_up0
+  * format_quote
+  * link
+Makes sense Ravi, thanks.

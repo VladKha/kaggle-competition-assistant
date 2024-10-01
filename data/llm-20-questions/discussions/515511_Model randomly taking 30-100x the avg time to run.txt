@@ -1,0 +1,32 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 2 months ago
+
+### Model randomly taking 30-100x the avg time to run
+I am currently getting a lot of errors like this:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F80076ea1d8cf7fc2aaa148c13b080b3b%2FScreenshot%20from%202024-06-28%2009-52-58.png?generation=1719582855485045&alt=media)  
+Why is this happening most of my runs take only about 4 to 6 seconds. Has
+anyone else had this error? Thanks in advance!
+
+
+## 3 Comments
+[ _emoji_people_](/sirapoabchaikunsaeng)
+
+
+### [Sumo](/sirapoabchaikunsaeng)
+not sure how relevant our experiences are, but we found a couple cases that
+can lead into this issue
+  * huggingface model offloading some weights to the CPU instead of putting them all on GPU,there's a flag to disable this behaviour
+  * model not reaching its stop token:
+    * the model is a base model rather than a `chat` or an `instruct` model, these model just go on forever
+    * the model is used behind some library with its internal retry mechanism (looking at you dspy), these libraries tend to prompt the model over and over until it got the right structure from the model, and this leads to some cryptic time variances
+looking at your times there's a massive jump, which might hint you're making
+some conditional switching? like switching between hard-coded questions to an
+actual llm? If that's the case it's probably where to check first
+
+
+### [OminousDude](/max1mum)
+Thank you very much!
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Haven't seen this in mine.

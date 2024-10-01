@@ -1,0 +1,198 @@
+[Christian Jones](/cjchristianjones) · Posted 3 months ago
+arrow_drop_up26
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Platform for Creating ARC-AGI Puzzles
+Hi.
+I've created an app where you can design and create ARC-AGI Puzzles:
+<https://arc-agi-puzzle-maker.vercel.app/>
+# ARC-AGI Puzzle Maker
+As it stands currently, this is a robust implementation that allows users to
+create three example puzzles and one test puzzle. You can thereafter export
+the puzzle to JSON and use it with the ARC testing interface.
+The ARC dataset has been a great benchmark for testing abstract reasoning
+capabilities of our current AI systems. However, I think there is great
+potential in expanding it with more human-designed puzzles of new patterns and
+increased complexity.
+
+
+## Scaling
+I am interested in scaling this into a broader platform where we can aggregate
+human-designed puzzles into an open source dataset. Ideally, I'd like to
+implement saving, sharing, and collaboration on puzzles. I'd like to add a
+rating system for identifying challenging and innovative puzzles.
+Generally speaking, I really enjoy solving these puzzles, and I have found a
+few of them to be challenging. I would personally like to have a resource
+where I can go through and solve other people's puzzles. I could not find a
+platform like this, so I thought I would build one instead.
+
+
+## Collaboration
+If you're interested in a resource like this, please upvote or comment in this
+thread. Furthermore, try out the app and share any feedback you have. Thanks!
+
+
+## Features to Implement
+  * Color by Dragging 
+  * Naming, Tagging, and Descriptions for Puzzles
+
+
+## Updates
+(7/9/24) - Added some functionality for playtesting puzzles from import or
+creation. Minor changes to creating puzzles and UI. Some known bugs include
+'Return to Create' not carrying the playtesting puzzle into the creating page
+and coloring issues in the playtest environment.
+I have been a little sick, so I have not been able to scale this as quickly as
+I had hoped. I hope to have made a platform where we can start creating and
+collecting puzzles by the end of the week.
+(7/18/24) - For anyone who might still be following this thread, I am
+continuing to build out a platform for compiling these puzzles. I am extremely
+proud of the work I have done so far, and I am very excited to share it with
+you all soon. I hope that I can deploy something in the next few days. Until
+then, I am keeping up the grind. Cheers!
+comment
+
+
+## 9 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up3
+  * format_quote
+  * link
+Excellent editor. Is your project open source?
+I have added your editor here  
+<https://github.com/neoneye/arc-notes/tree/main/awesome#editors>
+Quote: "I would personally like to have a resource where I can go through and
+solve other people's puzzles. I could not find a platform like this, so I
+thought I would build one instead."
+I have made a something like that. Except there is no editor for creating new
+tasks.  
+<https://neoneye.github.io/arc/>
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+When you said, "…where I can go through and solve…" did you mean "you" or did
+you mean "your program"? (I cannot wait to go to awesome#editors, btw.)
+
+
+### [neoneye](/neoneye)
+arrow_drop_up1
+  * format_quote
+  * link
+It was a quote from the OP, that I responded to, with a link.
+Oh, I'm not there yet. My program cannot solve these puzzles.
+
+
+### [Christian Jones](/cjchristianjones)
+arrow_drop_up0
+  * format_quote
+  * link
+I like to solve the puzzles myself 😅
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+oOPs! sorry. me neither. heh heh!
+
+
+### [Christian Jones](/cjchristianjones)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for adding mine! A lot of cool stuff on the page there. I was hoping to
+establish more of a foundation before open-sourcing the editor, so not yet.
+Your platform is great! You have a great aggregation of puzzles there. Thanks
+for sharing!
+
+
+### [neoneye](/neoneye)
+arrow_drop_up0
+  * format_quote
+  * link
+what kind of foundation? like a backend where users can store their creations?
+
+
+### [Christian Jones](/cjchristianjones)
+arrow_drop_up1
+  * format_quote
+  * link
+Well I think there are a couple more features I'd like to implement, like
+color by dragging and importing puzzles to playtest. And then I will add
+backend functionalities for saving and aggregating puzzles.
+
+
+### [Luca Bottero](/lucabottero)
+arrow_drop_up1
+  * format_quote
+  * link
+Another feature that could be interesting would be the possibility to download
+the history of interaction with the image creation (especially for the
+solution). Not as useful as "solving" history, but maybe it can give some
+insights on how humans reason while doing this kind of tasks.
+
+
+### [neoneye](/neoneye)
+arrow_drop_up3
+  * format_quote
+  * link
+My editor records the user interaction. There are a bit more than 6000
+interaction history files.  
+<https://github.com/neoneye/ARC-Interactive-History-Dataset>
+The editor is here  
+<https://neoneye.github.io/arc/>
+Replay of interaction histories, showing that humans solve tasks in different
+ways:  
+<https://www.youtube.com/watch?v=NivPmxUfeHY>
+
+
+### [Luca Bottero](/lucabottero)
+arrow_drop_up0
+  * format_quote
+  * link
+That's great! Exactly what I was looking for! Very nice project!
+
+
+### [Luca Bottero](/lucabottero)
+arrow_drop_up2
+  * format_quote
+  * link
+Great work! I think it would be nice to have the possibility to add metadata
+such as tags (maybe using a common tag source?) and short
+descriptions/solutions: this would greatly help NLP-based approaches! Looking
+forward to see the progress on your platform
+
+
+### [Christian Jones](/cjchristianjones)
+arrow_drop_up0
+  * format_quote
+  * link
+Agreed. Adding tags to the list!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+Clean interface, great look! Nicely done. Naturally, ideas abound. I'd like to
+see a tiny [>] button between input and output that just copies everything
+(rows, columns, colors) over. There's so much I'd like to see that would just
+spoil your nice clean look. Wish I could upvote more than once!
+
+
+### [Christian Jones](/cjchristianjones)
+arrow_drop_up1
+  * format_quote
+  * link
+That is a fantastic idea, and I will add that to the front of a growing list
+of feature ideas. Thanks!

@@ -1,0 +1,24 @@
+[AC](/ahsuna123) · 137th in this Competition · Posted 21 days ago
+
+
+### Shakeup not as one might have reckoned
+While shakeup was expected, the solutions at top seemed quite stable. Also,
+the shakeup isn't as huge as one might have reckon (there have been pretty
+huge shakeups inverting the lb altogether). What led to the stability,
+especially at the top?
+
+
+## 1 Comment
+
+
+### [Ern711](/ern711)
+I was convinced of a huge shake-up early on in the competition, until I tried
+to replicate the LB situation locally.
+When doing a time based split to get (more or less) the latest 60 days for
+each warehouse in the test set, and then randomly splitting this test set into
+a 31% set and a 69% set, I found that the best model on the 31% set was almost
+always the best on the 69% set as well.
+From what I understand the private/public split was pretty random, so I think
+that's the reason for it. After all the training data were older than the LB
+data, so in my opinion not that strange if being good on public LB was better
+than being good on cv etc.

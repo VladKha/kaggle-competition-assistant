@@ -1,0 +1,20 @@
+[Hadeka](/elhadeka) · 331st in this Competition · Posted 18 days ago
+
+### Deadline extended?!
+If you checked the overview page, you will find that deadline for final
+submission is August, 27.  
+What’s wrong?  
+Is deadline being extended?!
+
+
+## 1 Comment
+
+
+### [Feida Wei](/feidawei)
+6th of August was deadline for joining the competition.
+Yesterday 13th we had submission deadline.
+Now the last two weeks mostly nothing will happen, just running the agents on
+the private leaderboard on the private test set for two weeks.
+TLDR:  
+Nothing changed, we have two weeks where the agents can be tested on the
+private LB.

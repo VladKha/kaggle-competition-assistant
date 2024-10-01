@@ -1,0 +1,64 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 2 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### High Speed, Low-Level Preprocessing II
+I call this process "whitewashing."  
+It replaces all the color values with 1's. Quickly.
+    
+    
+    import numpy as np
+    rng = np.random.default_rng(12345)
+    
+    
+    content_copy
+This code:
+    
+    
+    rints = rng.integers(low=4, size=(10,10))  # <--- 2D array of size==100
+    ones = np.ones(rints.shape, dtype=int)
+    zz = ones^(ones//(rints+1))
+    
+    
+    content_copy
+takes about 6.7 microseconds
+This code:
+    
+    
+    rints = rng.integers(low=4, size=(100,100))  # <--- 2D array of size==10,000
+    ones = np.ones(rints.shape, dtype=int)
+    zz = ones^(ones//(rints+1))
+    
+    
+    content_copy
+takes about 63 microseconds
+comment
+
+
+## 2 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+You think you want np.arange()…  
+This is really what you want. You want a neat-looking 4D array that's easy to
+make.  
+You want dint()
+    
+    
+    def dint(start, shape):
+      s = np.array(list(shape)).prod()
+      a = np.arange(start,start+s).reshape(shape)
+      return a
+    
+    dint(101,(3,2,3,5))
+    
+    
+    content_copy

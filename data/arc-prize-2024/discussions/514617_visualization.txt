@@ -1,0 +1,85 @@
+[Ali Moeeny](/alimoeeny) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### visualization
+I am new here. I hope this is not agains the rules or the etiquette.  
+I was wondering if anyone has visualized the dataset as images. Just to get a
+better intuition on what exactly is involved.
+comment
+
+
+## 3 Comments
+
+
+### [Pavel Orlov](/sapr3s)
+arrow_drop_up2
+  * format_quote
+  * link
+    
+    
+    import json
+    import matplotlib.pyplot as plt
+    from matplotlib import colors
+    
+    def plot_one(task, ax, i, train_or_test, input_or_output):
+        cmap = colors.ListedColormap(
+            ['#000000', '#0074D9','#FF4136','#2ECC40','#FFDC00',
+             '#AAAAAA', '#F012BE', '#FF851B', '#7FDBFF', '#870C25'])
+        norm = colors.Normalize(vmin=0, vmax=9)
+        input_matrix = task[train_or_test][i][input_or_output]
+        ax.imshow(input_matrix, cmap=cmap, norm=norm)
+        ax.grid(True,which='both',color='lightgrey', linewidth=0.5)    
+        ax.set_yticks([x-0.5 for x in range(1+len(input_matrix))])
+        ax.set_xticks([x-0.5 for x in range(1+len(input_matrix[0]))])     
+        ax.set_xticklabels([])
+        ax.set_yticklabels([])
+        ax.set_title(train_or_test + ' '+input_or_output)
+    
+    def plot_task(task):
+        num_train = len(task['train'])
+        _, axs = plt.subplots(2, num_train, figsize=(3*num_train,3*2))
+        for i in range(num_train):     
+            plot_one(task, axs[0,i],i,'train','input')
+            plot_one(task, axs[1,i],i,'train','output')        
+        plt.tight_layout()
+        plt.show()   
+    
+    with open(f'{data_path}/arc-agi_training_challenges.json', 'r') as f:
+        training_tasks = json.load(f)
+    
+    for i, (k, task) in enumerate(training_tasks.items()):
+        print(i+1, k)
+        plot_task(task)
+        break
+    
+    
+    content_copy
+
+
+### [Aryan Garg](/aryangarg01)
+arrow_drop_up0
+  * format_quote
+  * link
+You can look & play (6 examples) the puzzles from the official ARC website:
+<https://arcprize.org/>
+Here's a snapshot of how they look like 😊
+![ARC-Prize Playground
+Examples](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F14699577%2F3679d7a7612b50d4167df45fe2d8bf94%2FScreenshot%20from%202024-06-28%2014-55-52.png?generation=1719575765658751&alt=media)
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+You can check out the public tasks here, just append the task Id to the url  
+<https://arcprize.org/play?task=00576224>
+Or you can check out the viewer on Francois’s GitHub  
+<https://github.com/fchollet/ARC-AGI>

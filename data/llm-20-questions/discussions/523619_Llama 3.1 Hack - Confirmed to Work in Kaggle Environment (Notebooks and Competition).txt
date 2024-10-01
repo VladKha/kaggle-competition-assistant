@@ -1,0 +1,319 @@
+[Matthew S Farmer](/matthewsfarmer) · 108th in this Competition · Posted a
+month ago
+
+
+### Llama 3.1 Hack - Confirmed to Work in Kaggle Environment (Notebooks and
+Competition)
+# Llama 3.1
+So, you saw the latest release of Llama 3.1 and thought to yourself "I bet
+this would be good in the LLM 20 Questions competition". Then you fired up a
+notebook, imported the model, attempted to load it, then were faced with an
+error about RoPE scaling… You jump on the discussion board and don't find any
+help. You look online and all the posts say "update transformers". You do that
+and the notebook works, but then you get that pesky validation error. What are
+we to do! As any tinkerers or hackers know, there's always a workaround
+somewhere…
+
+
+## We have a workaround!
+I have validated that this works in the notebook and game environment without
+updating transformers.
+    
+    
+    import json
+    with open("YOUR_LOCAL_MODEL_PATH/config.json", "r") as file:
+        config = json.load(file)
+    config["rope_scaling"] = {"factor":8.0,"type":"dynamic"}
+    with open("YOUR_LOCAL_MODEL_PATH/config.json", "w") as file:
+        json.dump(config, file)
+    
+    
+    content_copy
+
+
+## Implementation
+  1. Remove any updates to transformers that you were trying.
+  2. Import your desired llama 3.1 model to your working folder
+  3. Validate the path to config.json in that folder and replace the all caps path in the code above.
+  4. Add the code in a code block that precedes your submission .py script and tarball submission. 
+  5. Load the model and script as you normally would. 
+  6. Validate text generation in the notebook if desired.
+  7. Prepare your script for submission, ensuring that the updated config file is zipped with the model. 
+  8. Enjoy the green checkmark after validation. 
+I hope this raises the bar for everyone in this competition as we approach the
+final evaluation. May the best agents win!
+
+
+## TL;DR
+Modify config.json to a dictionary that the current version of Transformers
+expects (2 fields).
+_Cheers! Happy Kaggling_
+If you have questions about RoPE scaling, check out [the docs!
+](https://huggingface.co/docs/text-generation-
+inference/en/basic_tutorials/preparing_model)
+
+
+## 18 Comments
+
+
+### [G R Shanker Sai](/grshankersai)
+Hello,  
+Thank you so much for sharing this,  
+I was trying this in my notebook but facing this error , I Imported the model
+from the kaggle itself.  
+can you please help me out in this?
+[Screenshot from 2024-08-06
+17-47-33.png](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2949124/21030/Screenshot from 2024-08-06 17-47-33.png)
+
+
+### [G R Shanker Sai](/grshankersai)
+This is the error
+[Screenshot from 2024-08-06
+17-47-18.png](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2949125/21031/Screenshot from 2024-08-06 17-47-18.png)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+You can't modify input models/datasets directly. You need to
+download/clone/copy it to a working directory first.
+
+
+### [Pranjal](/kitn19)
+hey,  
+will i have to download the model locally first and then upload? i dont think
+i have sufficient bandwidth for that? is there a way directly download/clone
+it into the kaggle env?
+
+
+### [davide](/davidemariani)
+having the same issue
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+You download the model into the kaggle notebook environment which is a virtual
+container. Your local machine does not need to be utilized. Check out some of
+the starter notebooks to see the process.
+
+
+### [Sadhaklal](/sambitmukherjee)
+This is working but degrading model performance significantly.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Can you provide some specifics by what you mean by "performance"?
+
+
+### [Sadhaklal](/sambitmukherjee)
+Success rate in self-play. And factual correctness rate of `Answerer`. Caught
+this only today by doing an offline game play with keyword "mouse".
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Thanks for the insight. I did not see a radical performance increase by trying
+some 3.1 models. Do we think it is specifically related to modifying the
+config file or something else? On my local device (without the mod) I saw
+similar performance in self-play. I am trying to make the mental connection
+from RoPE to model performance since we (typically) wouldn't use a large
+context length in this comp. Could it be that the 3.1 models don't work as
+well out-of-the-box compared to more mature fine tuned 3.0 models?
+
+
+### [Sadhaklal](/sambitmukherjee)
+Sorry my earlier comment was a bit rushed due to the last minute scramble.
+What I meant is that my fine-tuned Llama 3.1 is working much better on
+Transformers 4.44 than on 4.42 with your suggested workaround. I don't have a
+good theoretical understanding of rope scaling yet. But I'm observing this
+strange phenomenon empirically through self-play.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Interesting for sure! Might be worth a paper! How RoPE scaling alters
+performance of identical language models. I have noticed that Phi 4k vs. Phi
+128k have different results, even through the evals aren't specifically about
+context length. This is worth looking into! We may discover that we need
+context length, not just for long context, but for performance of model
+itself!
+
+
+### [Sadhaklal](/sambitmukherjee)
+I'll test this more rigorously & report my findings.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Did you quantize the model before submitting it? If so, that might be the
+reason. It was also possible to submit version 3.1 without quantization, and
+for me, it works ok
+
+
+### [uparupaaa](/uparupaaa)
+hello,  
+I want to load the llama3.1_8b but out of memory.  
+How can I solve this problem.  
+Thank you for your help.
+    
+    
+    import shutil
+    import json
+    
+    # 設定ファイルのコピー
+    shutil.copy("/kaggle/input/llama-3.1/transformers/8b/1/config.json", "/kaggle/working/config.json")
+    
+    # コピーした設定ファイルの修正
+    with open("/kaggle/working/config.json", "r") as file:
+        config = json.load(file)
+    
+    # 必要な設定を変更
+    config["rope_scaling"] = {"factor": 8.0, "type": "dynamic"}
+    
+    with open("/kaggle/working/config.json", "w") as file:
+        json.dump(config, file, indent=4)
+    
+    import torch
+    
+    torch.backends.cuda.enable_mem_efficient_sdp(False)
+    torch.backends.cuda.enable_flash_sdp(False)
+    
+    model_name = "/kaggle/input/llama-3.1/transformers/8b/1" 
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(model_name, config="/kaggle/working/config.json", low_cpu_mem_usage=True, cache_dir="/kaggle/working/cache")
+    
+    
+    content_copy
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+You'll need to quantize the model to make it fit on the GPU. See example
+[here. ](https://www.kaggle.com/code/matthewsfarmer/llm-20q-starter-
+notebook-2-0)
+
+
+### [Neuron Engineer](/ratthachat)
+Thanks for the hack, and finally found the way to make it work purely on
+Kaggle in the last minutes.  
+In addition to code by
+[@matthewsfarmer](https://www.kaggle.com/matthewsfarmer) , we have to take
+advantage or `/tmp` in kaggle notebook which will not consume our disk quota.
+(avoiding disk-space error)
+    
+    
+    YOUR_LOCAL_MODEL_PATH = "/tmp/llama-3.1/1"
+    !mkdir -p {YOUR_LOCAL_MODEL_PATH}
+    
+    !cp /kaggle/input/llama-3.1/transformers/8b-instruct/1/* {YOUR_LOCAL_MODEL_PATH}
+    !ls -sh {YOUR_LOCAL_MODEL_PATH}
+    
+    
+    content_copy
+Then
+    
+    
+    import json
+    with open(f"{YOUR_LOCAL_MODEL_PATH}/config.json", "r") as file:
+        config = json.load(file)
+    config["rope_scaling"] = {"factor":8.0,"type":"dynamic"}
+    with open(f"{YOUR_LOCAL_MODEL_PATH}/config.json", "w") as file:
+        json.dump(config, file)
+    
+    
+    content_copy
+Then in your main.py use
+    
+    
+    model_id = "/tmp/llama-3.1/1"
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+       ...
+    )
+    
+    
+    content_copy
+And finally in tar-ball  
+`!tar --use-compress-program='pigz --fast --recursive | pv' -cf submission.tar.gz -C /tmp/llama-3.1 . -C /kaggle/working/submission . # and others`
+
+
+### [(^-^)](/haimofang)
+Hi Mathew! Thanks for the helpful posting! It indeed resolve the RoPE scaling
+issue. =)  
+However, it seems that the model takes up too much GPU memory to load on my
+notebook using vllm. Is it the same case for you? Appreciate the helpful
+solution again!
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I quantize the model. If you are loading the full model, you will get OOM
+errors in the competition due to the single GPU we are allotted.
+
+
+### [(^-^)](/haimofang)
+Really helpful! Will try =) Are you quantizing it in INT8?
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+4 bit for me
+
+
+### [KKY](/evilpsycho42)
+Thanks! Successfully submit / run, but didn't see some significant improvement
+until now. (😂 even worse)
+Is there anyone here who would like report some good news about llama 3.1?
+
+
+### [ImBatman](/krishnakantch)
+It's great to see the Llama 3.1 hack confirmed for Kaggle environments! This
+is a valuable update for those working with notebooks and competitions. Thanks
+for sharing.
+
+
+### [Yuang Wu](/yuangwu)
+I tried to use your code, but the console told me that  
+`JSONDecodeError: Expecting value: line 1 column 1 (char 0)`.  
+What might be happening
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Did you validate the path to your downloaded config.json file?
+
+
+### [Yuang Wu](/yuangwu)
+I use `!cap /tmp/submission/config.json` and find that it is not empty. What
+else do I need to do to validate it?
+
+
+### [Yuang Wu](/yuangwu)
+Problem solved. But now I encountered another problem during submission. The
+size of output file reached the maximum size 19.5G. Is there any advice?
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+You should probably save your quantized model instead of the full one. That'll
+help with space.
+
+
+### [filtered](/huanligong)
+Great job! May I ask what's your feeling about Llama 3.1's performance? Is it
+better than Llama?
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+LLaMa 3.1 Instruct seems to be a great model for this competition. At this
+point, it seems to be at the same level or higher than community fine-tunings
+of LLaMa 3. Still testing though…
+
+
+### [filtered](/huanligong)
+cool! I'm a little worried about that because I found llama 3.1 didn't perform
+as well as llama 3 in another competition, and this competition is too random
+to confirm it. Thank you for your generous sharing!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Legend! thank you for this simple hack :)
+
+
+### [roskyluo](/roskyluo)
+thank you for this nice information
+
+
+### [blackbun](/blackbun)
+Indeed! Legend. Thank you very much!

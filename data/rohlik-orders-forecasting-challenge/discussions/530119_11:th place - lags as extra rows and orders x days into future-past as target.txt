@@ -1,0 +1,83 @@
+[Ern711](/ern711) · 11th in this Competition · Posted 21 days ago
+
+
+### 11:th place - lags as extra rows and orders x days into future/past as
+target
+First and foremost, thanks for a fun and interesting competition. I really
+enjoyed it and hopefully learned a lot by testing different approaches.
+My best private solution achieved a score of 0.0405 (0.0348 public) whilst my
+11:th place solution included the same models plus some additional ones, which
+apparently made it slightly worse. Therefore, I’ll focus on the better
+model(s) here, as I believe these are more interesting.
+To begin with, I did not delete any data, nor did I perform any post-
+processing (which might have been beneficial, based on the 6th place
+solution).
+**Features**
+Like for many others, days since latest holiday and days until next holiday
+came out to be really important. I created these using both the train and test
+calendars to ensure no dates were missed that weren't present in either train
+or test data.
+**Lag features**
+I'm not entirely sure how much they contributed in the end, but I employed a
+different approach to creating lag features. Essentially, I created features
+such as lag orders, lag weekday, and absolute difference (abs diff), where abs
+diff represents the absolute difference between the current date and the lag
+date. I did this for various lags and added each lag as an extra row in the
+dataset, rather than creating separate columns for each lag. This resulted in
+a much larger dataset for training. When predicting on the test set, I had one
+row for each lag and averaged the predictions for each ID.
+**Models**
+In addition, I created catboost models predicting the following:
+  * Orders for the current date
+  * Orders one day into the future from the current date
+  * Orders two days into the future from the current date
+  * Orders one day into the past from the current date
+  * Orders current date / orders one day into the future
+  * Orders current date / orders two days into the future
+  * Orders current date / orders one day into the past
+Aside from the prediction for the current date, I could estimate orders using
+the formula: orders one day into the future * (orders current date / orders
+one day into the future), etc. Thus the seven models provided me with four
+estimates of orders for the current date, which I then averaged. A submission
+using these models alone scored 0.0411 on private.
+Finally, I ensembled this with catboost models that were trained on the
+"normal" dataset (i.e., no extra rows or lagged features), where I created one
+such catboost model per warehouse.
+**What did not work**
+  * Multi-target regression for the additional targets
+  * Optimized models using time-based cross-validation
+  * Optimized models using standard cross-validation
+I'm looking forward to hearing about other people's solutions, and if there's
+any interest, I can publish a version of the notebook. **Last but not least**
+, this was quite a small and noisy dataset, so I'm not sure how much of this
+was solely due to luck.
+
+
+## 4 Comments
+
+
+### [Tanishk Patil](/tanishkpatil)
+Congratulations! Very enriched by knowledge you have shared.
+
+
+### [Stas Kolchin](/mordechaichick)
+Congrats, good thoughts! Thanks for sharing. Do you have any ideas why time-
+based cross-validation does not work in this competition?
+
+
+### [Ern711](/ern711)
+Thanks [@mordechaichick](https://www.kaggle.com/mordechaichick).
+I don't know if I would go as far as to say that time-based cross-validation
+does not work in this competition in general. Just that it did not work for me
+as well as other approaches. In general I think the benefit with time-based
+cross-validation is that you don't get a too optimistic cv-result due to
+leakage, but I'm not that sure that it will generalize better than normal
+cross-validation on new unseen data.
+Also I don't know the cv for my ensemble described above since it took too
+long time to run it due to the many models and additional rows. But for the
+very few random splits I tested it on, it was quite good. For time based I
+would guess it would be worse than the optimized models.
+
+
+### [Sruti Baibhab Mishra](/srutibaibhabmishra)
+Congratulations

@@ -1,0 +1,20 @@
+[francesco fiamingo](/francescofiamingo) · 415th in this Competition · Posted
+19 days ago
+
+### how it works the SCORE?
+in few hours we will start, what i cannot understand is why sometime the score
+go up by+100 and sometimes by -100 , looking the log, dont seems to have got
+behave of the bot extremely bad or extremely good , can anyone explain to me?
+
+
+## 2 Comments
+
+
+### [gguillard](/gguillard)
+Check [this notebook](https://www.kaggle.com/code/gguillard/llm-20-questions-
+trueskill-simulator), although there may be some approximations it should
+clarify a few things about how it works.
+
+
+### [francesco fiamingo](/francescofiamingo)
+thanks ….i will look

@@ -1,0 +1,21 @@
+[andy jennings](/ajenningsfrankston) · Posted a month ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### interesting paper on analogical reasoning in ARC
+<https://arxiv.org/abs/2408.14855>
+"This paper demonstrates that model-based reinforcement learning (model-based
+RL) is a suitable approach for the task of analogical reasoning. We
+hypothesize that model-based RL can solve analogical reasoning tasks more
+efficiently through the creation of internal models. To test this, we compared
+DreamerV3, a model-based RL method, with Proximal Policy Optimization, a
+model-free RL method, on the Abstraction and Reasoning Corpus (ARC) tasks"
+comment
+
+
+## 0 Comments

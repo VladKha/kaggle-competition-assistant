@@ -1,0 +1,98 @@
+[KirkDCO](/kirkdco) · Posted 2 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### 42 ‼️ The answer to the ultimate question?
+I don't see any discussion on the latest score is 42 by MindsAI. That's a big
+jump! Any details on the approach?
+comment
+
+
+## 5 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+I think they start with a **_really hot_** cup of tea…
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up1
+  * format_quote
+  * link
+MIT CSail has several papers and code online. I've read them, played with
+their code but I think they've hit a wall, hence all the entries. It's very
+cool stuff, I stumbled on it when I was digging through papers looking for
+ideas
+Edit: Almost all the really big progress in AI has come from; more data +
+GPUs, or, dusting off old algorithms and updating them. I've a book of dozens
+of old AI algorithms from the 1980s I'm going to start trying late this week.
+If you're looking for small models for small data you might also start looking
+backwards
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up2
+  * format_quote
+  * link
+Could you provide links to some of the papers you found interesting? I search
+for MIT CSail and ARC, but I didn't find much.
+
+
+### [Linda MacPhee-Cobb](/wrinkledtime)
+arrow_drop_up6
+  * format_quote
+  * link
+I was searching for Bayesian, few shot learning and generative and stumbled on
+the papers, code. You can download it, play with it and adapt it work on this
+dataset.
+The group of best scores in the previous contest all used reasoning type
+systems like John McCarthy etc used in the 1970s? 60s?
+paper  
+<https://people.csail.mit.edu/asolar/papers/EllisWNSMHCST21.pdf>
+more links and details  
+<https://www.reddit.com/r/MachineLearning/comments/moreee/d_paper_explained_dreamcoder_growing/>
+code  
+<https://github.com/ellisk42/ec>  
+<https://github.com/mlb2251/dreamcoder>
+…
+other resources  
+( follow the links to the papers and you'll find lots of interesting ideas )  
+<https://leaderboard.allenai.org/arc/submissions/public>  
+<https://lab42.global>
+
+
+### [KirkDCO](/kirkdco)
+arrow_drop_up0
+  * format_quote
+  * link
+Excellent! Thank you!!
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up1
+  * format_quote
+  * link
+They've been pretty mum about techniques, other than a couple of the
+interviews they've given. Notice their high number of submissions. Because
+this contest has no private leaderboard (what you see is what you get on the
+final score), it allows a very effective strategy of trying different methods.
+Since you need an exact answer to score a point on each example, you can't
+simply guess. But you can try many different methods and see which work. For
+example, in a week you can try 3x7=21 new methods and and see which solve more
+of the problems.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+There are more… 'precise' techniques.  
+"You can make it 'not so easy'"

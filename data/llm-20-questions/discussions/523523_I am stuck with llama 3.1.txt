@@ -1,0 +1,71 @@
+[VolodymyrBilyachat](/vovikdrg) · 45th in this Competition · Posted a month
+
+### I am stuck with llama 3.1
+I need some help with running llama 3.1 . It needs latest transformers which
+are installed in lib folder.
+Then in my code
+`  
+KAGGLE_AGENT_PATH = "/kaggle_simulations/agent/"
+if os.path.exists(KAGGLE_AGENT_PATH):  
+print("Kaggle Env")  
+sys.path.insert(0, os.path.join(KAGGLE_AGENT_PATH, 'lib'))  
+HF_MODEL_PATH = os.path.join(KAGGLE_AGENT_PATH, 'model')  
+else:  
+sys.path.insert(0, "submission/lib")  
+HF_MODEL_PATH = "submission/model"  
+`
+But I am getting an error
+`nError loading model:`rope_scaling`must be a dictionary with two
+fields,`type`and`factor`, got {'factor': 8.0, 'low_freq_factor': 1.0,
+'high_freq_factor': 4.0, 'original_max_position_embeddings': 8192,
+'rope_type': 'llama3'}\n\n", "stderr": "Traceback (most recent call last):\n
+File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\",
+line 50, in get_last_callable\n exec(code_object, env)\n File
+\"/kaggle_simulations/agent/main.py\", line 48, in <module>\n raise e\n File
+\"/kaggle_simulations/agent/main.py\", line 33, in <module>\n model =
+AutoModelForCausalLM.from_pretrained(\n File \"/opt/conda/lib/python3.10/site-
+packages/transformers/models/auto/auto_factory.py\", line 523, in
+from_pretrained\n config, kwargs = AutoConfig.from_pretrained(\n File
+\"/opt/conda/lib/python3.10/site-
+packages/transformers/models/auto/configuration_auto.py\", line 958, in
+from_pretrained\n return config_class.from_dict(config_dict,
+**unused_kwargs)\n File \"/opt/conda/lib/python3.10/site-
+packages/transformers/configuration_utils.py\", line 768, in from_dict\n
+config = cls(**config_dict)\n File \"/opt/conda/lib/python3.10/site-
+packages/transformers/models/llama/configuration_llama.py\", line 161, in
+__init__\n self._rope_scaling_validation()\n`
+
+
+## 4 Comments
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/523619>
+
+
+### [Krupal Patel](/krupalpatel07)
+from transformers import AutoModelForCausalLM, AutoConfig  
+config = AutoConfig.from_pretrained('model_path')
+model = AutoModelForCausalLM.from_pretrained('model__path', config=config)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+the RoPE error is a known issue for 3.1 until the transformers library is
+updated. You can update transformers in your notebook but I haven't seen a
+successful implementation of this for submission.
+
+
+### [Ngo Gia Lam](/lmnggia)
+Try
+    
+    
+    !pip install --upgrade transformers
+    import transformers
+    print(transformers.__version__)
+    
+    
+    content_copy
+iirc, you would need transformers >= 4.43.0 for llama 3.1. Also, keep retrying
+the upgrade or resetting your runtime if you still have this bug. I managed to
+resolve this issue after resetting my runtime twice. My transformers version
+for llama 3.1 runtime is 4.43.3.

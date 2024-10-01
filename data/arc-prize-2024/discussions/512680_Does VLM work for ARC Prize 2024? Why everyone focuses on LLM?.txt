@@ -1,0 +1,45 @@
+[Shure](/yusukemikami) · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Does VLM work for ARC Prize 2024? Why everyone focuses on LLM?
+I just joined this competition,  
+At first glance, it seems that this kind of question requires strong spatial
+understanding, so how about using VLM?  
+This is just a random thought, let me hear your thoughts.  
+I want to publish Code for this approach if there is a demand.  
+I saw some paper say GPT4V does not work well, but I think we can do better
+prompt engineering.
+Comparing Humans, GPT-4, and GPT-4V On Abstraction and Reasoning Tasks  
+<https://arxiv.org/abs/2311.09247>
+comment
+
+
+## 2 Comments
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up1
+  * format_quote
+  * link
+The paper says:
+The first-place program from the (previous) Kaggle challenge solved 21% of
+these hidden tasks, and an ensemble of the first- and second-place programs
+**solved 31%**.
+The winning programs on Kaggle used **program-synthesis** methods that
+searched over combinations of manually defined, primitive grid operations in
+order to find combinations that correctly map inputs to outputs in the task
+demonstrations. The authors of the winning programs acknowledge that such
+methods are not likely to generalize well and ARC remains largely unsolved by
+any AI methods.
+
+
+### [Shure](/yusukemikami)
+arrow_drop_up0
+  * format_quote
+  * link
+So, static approach still works better?

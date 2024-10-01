@@ -1,0 +1,12 @@
+[alekh](/aleksanderhan) · 502nd in this Competition · Posted 3 months ago
+
+
+### 20 question datasets
+Thought we could make a thread where we share relevant datasets for 20
+questions.
+I've found these that might be helpful to some:
+  * <https://huggingface.co/datasets/jtv199/Entity-deduction-arena-20-questions>
+  * <https://huggingface.co/datasets/clips/20Q>
+
+
+## 0 Comments

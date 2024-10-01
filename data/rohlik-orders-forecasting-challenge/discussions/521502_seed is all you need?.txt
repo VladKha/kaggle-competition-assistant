@@ -1,0 +1,30 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 2 months ago
+
+
+### seed is all you need?
+I conducted an experiment using the current high scoring open source solution.
+When the random seed is 2024, the score is 0.423, and when the random seed is
+777, the score is 0.397. If there is no scoring method, perhaps we can try
+random seeds?
+<https://www.kaggle.com/code/gkanamoto/ensemble-stacking-modified>
+
+
+## 3 Comments
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+[@yunsuxiaozi](https://www.kaggle.com/yunsuxiaozi) if this is true, then all
+of us should brace ourselves for a mighty shakeup in a month's time.
+
+
+### [Ern711](/ern711)
+I agree that a shakeup seems quite likely. I've tested a lot of different
+approaches, and for me, the local scores do not correlate with the public
+leaderboard at all. The only thing I see that suggests there might not be a
+shakeup is if the public/private split was done in a stratified manner, so
+that roughly the same time periods and warehouses are in both.
+
+
+### [Rabie El Kharoua](/rabieelkharoua)
+That's true, but it will not give you a significant improvement. This could be
+useful once you have a solution ranked in the top 5 or 10

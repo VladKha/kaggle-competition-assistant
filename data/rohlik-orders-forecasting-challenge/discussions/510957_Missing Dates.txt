@@ -1,0 +1,66 @@
+[Gunes Evitan](/gunesevitan) · 559th in this Competition · Posted 3 months ago
+
+
+### Missing Dates
+I found that there are 173 unique dates that are missing on at least one of
+the warehouse series. What does that mean? 0 orders on those dates for that
+warehouse?
+
+
+## 6 Comments
+
+
+### [MichalKecera](/mkecera)
+Hi [@gunesevitan](https://www.kaggle.com/gunesevitan),
+Thank you for the question. If the dates are missing then the warehouse was
+not open. This happens mostly on public holidays and mostly should be in
+German warehouses.
+I hope this answers the question.
+Kind regards,  
+Michal
+
+
+### [Gunes Evitan](/gunesevitan)
+Thanks for the reply [@mkecera](https://www.kaggle.com/mkecera). For example
+2024-03-10 doesn't exist for both Frankfurt_1 and Munich_1, but that date
+doesn't exist in train calendar either. Warehouses can be closed on any date
+and it doesn't necessarily have to be holiday, right?
+![1](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2706866%2F201ad1b67dab79c9b6e13ba1e9bfffd5%2FScreenshot%202024-06-08%20at%2019.55.39.png?generation=1717865859147705&alt=media)
+
+
+### [MichalKecera](/mkecera)
+Hi [@gunesevitan](https://www.kaggle.com/gunesevitan),  
+2024-03-10 is Sunday and the warehouses are closed on Sundays in Germany. So
+yes, it's not only holidays but also Sundays in Germany. In Prague, Sundays
+are open so it depends on the country.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1044449%2Fcecc3b6736cbe65f10e8117e56c33ff6%2FScreenshot%202024-06-08%20at%2022.51.30.png?generation=1717879912921802&alt=media)
+
+
+### [ikram ullah](/ikram98ai)
+what if we use synthetic data?
+
+
+### [Itachi Uchiha](/blade007)
+Hey, Would it make sense if we impute 0 in target variable for missing dates
+and introduce a new feature for warehouse closed or not ? I've observed dates
+are missing in test set as well so was thinking about it, will update if I
+find any difference post implementing.
+
+
+### [Marília Prata](/mpwolke)
+Hi Evitan,  
+Have you written FALSE on your title? That happened to the topic that I wrote
+just now.  
+If you wrote False, disconsider this comment.  
+Best regards,  
+Marília
+
+
+### [Gunes Evitan](/gunesevitan)
+Nope it seems like a bug
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Yes, it is a bug. Also got it for my topics.

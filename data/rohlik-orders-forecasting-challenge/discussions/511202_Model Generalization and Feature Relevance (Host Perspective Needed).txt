@@ -1,0 +1,83 @@
+[Etienne Kaiser (郑翊天）](/etiennekaiser) · 419th in this Competition · Posted 3
+
+### Model Generalization and Feature Relevance (Host Perspective Needed)
+As some have already mentioned, this competition might be a lottery or end up
+like the [Home Credit - Credit Risk Model Stability
+competition](https://www.kaggle.com/competitions/home-credit-credit-risk-
+model-stability) using a hack. I wanted to ask you
+[@mkecera](https://www.kaggle.com/mkecera) if you (and your team) have thought
+about the possible generalization of the resulting models at the end of the
+competition. There are valid concerns that, at the end of the day, the best
+score might come from just the prior days of the predicted time period, with
+the other time ranges not even considered. This sounds like heavy overfitting
+and not very helpful for building a generalized model. It might be that a good
+model (no overfitting; validation, test, and training error well aligned) is
+taking the short run.
+That would help me and probably others decide whether to join this competition
+(as I haven't yet), but I want to make sure I don't need to use hacks instead
+of building "the best" model.
+Another concern from my side is that I don't see many related features that
+can actually link to your "order" column. For instance, the date, public
+holidays, and almost all other features don't provide information if you have
+1 million or 10K orders/customers. I mean, of course, if there is a public
+holiday, some people shop more online, but it's only about what they do and
+does not relate to the prediction of orders itself. This means that the orders
+from 1 year ago (with a different user base) will tell literally nothing about
+the orders in 2 years (as there is no linkage in that data). Wouldn't it make
+sense to have correlated data to make an empirical statement? For instance:
+  * Amount of registered users
+  * Rate of users that actually order
+  * The type of user (weekly grocery buyer or one-timer)
+  * …
+I fear that massive over-fitting might be the "best" result in terms of score
+but actually for your business case, it's not usable at all (missing
+generalization and reliability)
+I hope you get my thoughts, thanks for your answer in advance!
+
+
+## 3 Comments
+
+
+### [MichalKecera](/mkecera)
+Hi [@etiennekaiser](https://www.kaggle.com/etiennekaiser),
+Good points. Thank you for raising them and I appreciate the opportunity to
+address them.
+As stated in the competition rules, we will be double-checking the winning
+solutions to make sure they are not just a 'hack' to overfit to leaderboard.
+We do hope the submissions are done in good faith and trying to develop the
+best model as you say. We are aware of the fact that there is limited data
+available for testing and will be careful to analyse the wining solutions. You
+are correct in saying that the recent data is very important. There are also
+public holidays and periods in the test set that require insight from
+historical data and without using them it will be tricky to get a very good
+result. The competition to large extend reflects our forecasting process where
+we estimate the next few months and then move forward. If you have any
+specific ideas to address this concern, please let me know. Happy to consider
+them and discuss further.
+Re the features, we have included user activity on the platform (2 different
+features in the dataset) that are in the training set. We can't be more
+specific about what they mean but they in essence represent volume of
+interaction of users on the platform and their shopping behaviour. I hope
+these help. These can't be provided for the test set - they are leaky. So at
+the time of the prediction, we don't know how users will be interacting so
+can't use it for prediction.
+Happy to continue the discussion and thanks again for the comments.
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+Good morning [@mkecera](https://www.kaggle.com/mkecera),
+Thank you for your detailed response!  
+I appreciate the assurance that winning solutions will be checked to prevent
+over-fitting to the leader board. Regarding the recent data and the role of
+public holidays, I agree that using external (historical) datasets may help in
+identifying patterns that are not directly visible in the provided data.
+I will discuss further ideas on the fly, this competition might also serve as
+base for a follow up, after you tested the final models in your production
+(Home Credit was also an example of that). Overall this is an interesting
+competition as you can go really into detail with relatively less
+features/dimensions, count me in.
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+I found you have also participated in Home Credit, and I agree with your
+opinion

@@ -1,0 +1,554 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 16 days ago
+
+
+### A few running stats
+Updated with the final stats:
+    
+    
+    time interval from 2024-08-15 04:00:26 until 2024-08-29 23:58:06
+    no. episodes in total: 100908
+    no. episodes with error: 775
+    
+    pure alpha applied in 2.1% of episodes
+    pure alpha success rate: 35.5%
+    forced alpha applied in 3.2% of episodes
+    forced alpha success rate: 5.6%
+    only other applied in 94.9% of episodes
+    other success rate: 2.5%
+    overall success rate: 3.1%
+    
+    no. episodes pure alpha beats other: 539
+    no. episodes other beats pure alpha: 108
+    
+    no. all agents: 1412
+    no. initiating alpha as guessers: 58
+    no. accepting alpha as answerers: 452
+    no. refusing alpha as answerers: 1114
+    no. asking alpha questions as guessers: 70
+    no. agents never seen alpha question: 131
+    no. agents not resolved at all, yet: 2
+    
+    how many agents resolved how many matches (i.e. won or lost or got bonus from error):
+    13  <=2<  385  <=5<  582  <=10<  274  <=20<  123  <=50<  33  <=100<  2  <=1000<  
+    
+    
+    content_copy
+
+
+## 31 Comments
+
+
+### [loh-maa](/lohmaa)
+    time interval from 2024-08-15 04:00:26 until 2024-08-23 05:14:14
+    no. episodes in total: 45238
+    no. episodes with error: 382
+    
+    pure alpha applied in 2.2% of episodes
+    pure alpha success rate: 33.6%
+    forced alpha applied in 3.4% of episodes
+    forced alpha success rate: 5.4%
+    only other applied in 94.6% of episodes
+    other success rate: 2.6%
+    overall success rate: 3.2%
+    
+    no. episodes pure alpha beats other: 285
+    no. episodes other beats pure alpha: 47
+    
+    no. all agents: 1412
+    no. initiating alpha as guessers: 58
+    no. accepting alpha as answerers: 353
+    no. refusing alpha as answerers: 952
+    no. asking alpha questions as guessers: 70
+    no. agents never seen alpha question: 377
+    no. agents not resolved at all, yet: 16
+    
+    how many agents resolved how many matches (i.e. won or lost or got bonus from error):
+    166  <=2<  768  <=5<  358  <=10<  81  <=20<  36  <=50<  3  <=100<  0  <=1000<  
+    
+    
+    content_copy
+
+
+### [Chris Deotte](/cdeotte)
+I'm trying to make sense of the following. Shouldn't `accepting alpha` plus
+`refusing alpha` plus `agents never seen alpha` equal 1412? Aren't these
+disjoint, we either accept, reject, or never seen?
+    
+    
+    no. all agents: 1412
+    no. initiating alpha as guessers: 58
+    no. accepting alpha as answerers: 353
+    no. refusing alpha as answerers: 952
+    no. agents never seen alpha question: 377
+    
+    
+    content_copy
+I am fascinated by these statistics. I think this explains why Agent Alpha is
+doing so well. It looks like only 4% of Kagglers initiate Agent Alpha but 25%
+of Kagglers accept Agent Alpha. This means that 1/4 (one quarter) of teams are
+helping Agent Alpha but not helping themselves! Hence the top of the Private
+LB is mostly the teams that initiate Agent Alphas.
+I'm curious how powerful Agent Alpha would have been if only 4% initiate and
+4% accept. I think the private LB would be much different in this case.
+Because in this case, after 17 games probabilistically 1/2 (one half) of the
+Agent Alphas would have never been paired with a team that accepts Agent
+Alpha. (i.e. `pr = 1 - (0.96 ^ 17)` ). Thus the LB would mostly be the result
+of non-Agent Alpha behavior.
+
+
+### [loh-maa](/lohmaa)
+I think not, because refusing alpha and never seen alpha questions are not
+disjoint. So a clarification is important here -- "alpha question" pertains to
+the comparison questions, not the handshake question. So there are agents who
+are refusing the handshake and thus never saw any alpha question, but many
+agents have seen alpha questions even though they refused the handshake --
+forced alpha questions.
+Well by helping alpha guesser in a match, the answerer also benefits. Surely
+4% of accepting alpha could change the picture considerably.
+BTW thank you for your engagement regarding the keywords. It's sad to see your
+agents still in the pit. I guess they had a bad luck during the tornado.
+
+
+### [loh-maa](/lohmaa)
+So it seems we had a tornado about 12 or 9 hours ago, uprooting trees and
+tearing off roofs… And it's even visible in the accumulated stats:
+    
+    
+    time interval from 2024-08-15 04:00:26 until 2024-08-22 03:41:41
+    
+    no. episodes in total: 40572
+    no. episodes with error: 347
+    
+    pure alpha applied in 2.0% of episodes
+    pure alpha success rate: 33.4%
+    forced alpha applied in 3.3% of episodes
+    forced alpha success rate: 5.3%
+    only other applied in 94.9% of episodes
+    other success rate: 2.3%
+    overall success rate: 2.8%
+    
+    no. episodes pure alpha beats other: 230
+    no. episodes other beats pure alpha: 41
+    
+    no. all agents: 1412
+    no. initiating alpha as guessers: 58
+    no. accepting alpha as answerers: 325
+    no. refusing alpha as answerers: 917
+    
+    no. asking alpha questions as guessers: 70
+    no. agents never seen alpha question: 433
+    no. agents not scored at all, yet: 19
+    
+    how many agents resolved how many matches (i.e. won or lost or got bonus from error):
+    [(0, 19), (1, 185), (2, 393), (3, 325), (4, 187), (5, 110), (6, 57), (7, 30), (8, 21), (9, 15), (10, 13), (11, 4), (12, 6), (13, 3), (14, 1), (15, 3), (16, 2), (17, 2), (18, 4), (20, 2), (21, 2), (22, 2), (24, 5), (25, 1), (26, 1), (27, 2), (29, 2), (30, 1), (31, 2), (33, 2), (34, 1), (36, 1), (38, 1), (42, 1), (43, 1), (44, 2), (45, 1), (49, 1), (59, 1)]
+    
+    
+    content_copy
+In particular we see the success rates going up, surely because resolute
+agents play relatively more games than before. The most resolved submission is
+`39531923` by Benjamin Kovacs, 59 resolutions with win-draw-loss ratio:
+38-26-21.
+
+
+### [loh-maa](/lohmaa)
+Late update. Now "pure alpha" is alpha with handshake, "forced alpha" is
+asking alpha questions without the handshake or with a refused handshake. So
+the count is much higher than pure alpha, but the success rate is well below.
+Apparently most agents cannot answer alpha questions properly. Surprisingly
+most agents still haven't seen any alpha question. That's another clue for how
+a few early games decided where you gonna be.
+    
+    
+    time interval from 2024-08-15 04:00:26 until 2024-08-18 05:16:28
+    no. episodes in total: 17792
+    no. episodes with error: 151
+    
+    pure alpha applied in 1.3% of episodes
+    pure alpha success rate: 22.0%
+    forced alpha applied in 3.0% of episodes
+    forced alpha success rate: 1.9%
+    only other applied in 95.8% of episodes
+    other success rate: 2.0%
+    overall success rate: 2.2%
+    
+    no. episodes pure alpha beats other: 50
+    no. episodes other beats pure alpha: 6
+    
+    no. all agents: 1412
+    no. initiating alpha as guessers: 56
+      no. accepting alpha as answerers: 180
+      no. refusing alpha as answerers: 572
+    no. asking alpha questions as guessers: 68
+    no. agents never seen alpha question: 842
+    
+    
+    content_copy
+
+
+### [Chris Deotte](/cdeotte)
+Great stats. Thanks!
+
+
+### [loh-maa](/lohmaa)
+Here's which keywords have been guessed by alpha, including forced alpha, i.e.
+without the handshake, data until `2024-08-17 05:19:22` :
+    
+    
+    Counter({'trifle': 2, 'french horn': 1, 'guacamole': 1, 'beaker': 1, 'mousse': 1, 'doorbell': 1, 'binocular': 1, 'seat belt': 1, 'pufferfish': 1, 'hammock': 1, 'beaver': 1, 'birdbath': 1, 'goggle': 1, 'thistle': 1, 'screwdriver': 1, 'hairdryer': 1, 'shaver': 1, 'beak': 1, 'lighter': 1, 'wine bottle': 1, 'lightning': 1, 'refinery': 1, 'halter': 1, 'wrist': 1, 'bourbon': 1, 'logbook': 1, 'jogging': 1, 'paperclip': 1, 'rabbit': 1, 'poppy': 1, 'digital clock': 1, 'nightgown': 1, 'faucet': 1, 'calf': 1, 'macaw': 1, 'heater': 1, 'bumblebee': 1, 'cookie': 1, 'peacoat': 1, 'mousetrap': 1, 'glove': 1, 'emu': 1, 'console table': 1, 'orangutan': 1, 'printer': 1, 'backgammon': 1, 'canister': 1, 'broom': 1, 'humidifier': 1})
+    
+    
+    content_copy
+And non-alpha:
+    
+    
+    Counter({'iphone': 4, 'bicycle': 3, 'lettuce': 3, 'cat': 3, 'garlic': 2, 'fridge': 2, 'limestone': 2, 'bus': 2, 'banana': 2, 'cushion': 2, 'wheelbarrow': 2, 'spatula': 2, 'austria': 2, 'cave': 2, 'bookshelf': 2, 'pillow': 2, 'eel': 2, 'cobra': 2, 'canary': 2, 'bag': 2, 'bat': 2, 'compost pile': 2, 'comb': 2, 'dolly': 2, 'keychain': 2, 'stove': 2, 'microwave': 2, 'phone': 2, 'blender': 2, 'toaster': 2, 'lion': 2, 'backpack': 2, 'orchid': 2, 'blackberry': 2, 'guinea pig': 2, 'subwoofer': 1, 'tent': 1, 'doll': 1, 'modem': 1, 'petal': 1, 'ipad': 1, 'sprinkler': 1, 'paddleboard': 1, 'parking meter': 1, 'oak': 1, 'canoe': 1, 'plum': 1, 'ale': 1, 'soap': 1, 'scarf': 1, 'shower': 1, 'goldfish': 1, 'jade': 1, 'moped': 1, 'donkey': 1, 'booklet': 1, 'clam': 1, 'vanity mirror': 1, 'wool': 1, 'freezer': 1, 'hairbrush': 1, 'airplane': 1, 'cellphone': 1, 'trifle': 1, 'toothpaste': 1, 'rivet': 1, 'telescope': 1, 'chamomile': 1, 'tangerine': 1, 'lanyard': 1, 'grasshopper': 1, 'keyhole': 1, 'drywall': 1, 'pliers': 1, 'barley': 1, 'harmonica': 1, 'firefly': 1, 'neck': 1, 'drape': 1, 'swan': 1, 'milk': 1, 'reed': 1, 'netherlands': 1, 'bead': 1, 'jar': 1, 'lotion': 1, 'seashell': 1, 'aspen': 1, 'turkey': 1, 'pavilion': 1, 'washing machine': 1, 'radio': 1, 'walleye': 1, 'surgical glove': 1, 'salt': 1, 'robin': 1, 'canopy': 1, 'hill': 1, 'razor': 1, 'mouse': 1, 'road': 1, 'nacho': 1, 'tadpole': 1, 'oat': 1, 'barbell': 1, 'tweezers': 1, 'monkey': 1, 'gerbil': 1, 'hairdryer': 1, 'collar': 1, 'awning': 1, 'recliner': 1, 'airplane ticket': 1, 'blouse': 1, 'macaw': 1, 'chandelier': 1, 'lcd screen': 1, 'cherry': 1, 'rattlesnake': 1, 'laptop': 1, 'tricycle': 1, 'letterboard': 1, 'cufflink': 1, 'pedestal': 1, 'submarine': 1, 'headset': 1, 'amp': 1, 'eagle': 1, 'peach': 1, 'stapler': 1, 'sidewalk': 1, 'quartz': 1, 'rollerblade': 1, 'pufferfish': 1, 'ammonia': 1, 'cranberry': 1, 'cup': 1, 'coyote': 1, 'macaroni': 1, 'deer': 1, 'cycling shorts': 1, 'calcium': 1, 'shelf': 1, 'trolley': 1, 'museum': 1, 'bobcat': 1, 'air conditioner': 1, 'mouthwash': 1, 'hockey': 1, 'garbage bin': 1, 'oatmeal': 1, 'cello': 1, 'walnut': 1, 'golf': 1, 'joystick': 1, 'rabbit': 1, 'basalt': 1, 'grizzly': 1, 'cucumber': 1, 'pajama': 1, 'storage bin': 1, 'bluetooth speaker': 1, 'energy bar': 1, 'auditorium': 1, 'cactus': 1, 'backhoe': 1, 'pillar': 1, 'cinnamon': 1, 'tin': 1, 'pond': 1, 'wasabi': 1, 'pepper': 1, 'viola': 1, 'antenna': 1, 'bridge': 1, 'thermometer': 1, 'waffle iron': 1, 'sailboat': 1, 'octopus': 1, 'skittle': 1, 'antacid': 1, 'lightning': 1, 'minivan': 1, 'shaver': 1, 'iguana': 1, 'shrimp': 1, 'ambulance': 1, 'sparrow': 1, 'spaghetti': 1, 'drainage ditch': 1, 'grapevine': 1, 'scalp': 1, 'clementine': 1, 'smartphone': 1, 'barn': 1, 'butterflyfish': 1, 'hummingbird': 1, 'alligator': 1, 'daffodil': 1, 'emu': 1, 'clarinet': 1, 'toothbrush': 1, 'elephant grass': 1, 'desk': 1, 'headlamp': 1, 'hanger': 1, 'rickshaw': 1, 'ointment': 1, 'mountain bike': 1, 'banjo': 1, 'bagel': 1, 'vinegar': 1, 'spinner': 1, 'plier': 1, 'stand mixer': 1, 'mosquito': 1, 'pine': 1, 'mower': 1, 'lilypad': 1, 'herring': 1, 'printer': 1, 'trout': 1, 'bison': 1, 'sapling': 1, 'tulip': 1, 'pouch': 1, 'grater': 1, 'windshield': 1, 'mallard': 1, 'dent': 1, 'ceiling fan': 1, 'mitten': 1, 'horse': 1, 'power bank': 1, 'porch': 1, 'tortoise': 1, 'rat': 1, 'latte': 1, 'axe': 1, 'eyelash': 1, 'tennis': 1})
+    
+    
+    content_copy
+So it seems we have some countries, here, `austria` and `netherlands` and
+probably some more…
+
+
+### [Chris Deotte](/cdeotte)
+Great stats. Thanks for posting! Which words are Alpha Agent failing to get
+correct? I'm very curious about that. I suspect it is words with adjectives
+like "blue bird" or "fast bike" or things like that which aren't words in an
+English dictionary by themselves.
+
+
+### [loh-maa](/lohmaa)
+Until `2024-08-18 05:16:28`, not guessed by pure alpha, seem to have
+relatively bit more two-word keywords than guessed indeed, but they should be
+also more difficult to guess by non-alpha:
+    
+    
+    Counter({'newspaper': 2, 'bar cart': 2, 'steam': 2, 'racket': 2, 'chalk': 2, 'cage': 2, 'crocodile': 2, 'prairie milkweed': 1, 'sea': 1, 'margarita': 1, 'lava': 1, 'nettle': 1, 'lark': 1, 'plank': 1, 'balm': 1, 'glacier': 1, 'hotdog': 1, 'baton': 1, 'cranberry': 1, 'undercarriage': 1, 'pavilion': 1, 'vehicle exhaust': 1, 'mower': 1, 'barge': 1, 'antacid': 1, 'bluestem': 1, 'oklahoma': 1, 'ipad stand': 1, 'spice rack': 1, 'stretcher': 1, 'highway': 1, 'drum': 1, 'windmill': 1, 'armadillo': 1, 'lip balm': 1, 'bus seat': 1, 'surge protector': 1, 'rockfall': 1, 'helmet': 1, 'bead': 1, 'touchscreen': 1, 'shears': 1, 'pie': 1, 'teddy': 1, 'poker chip': 1, 'kelp forest': 1, 'tong': 1, 'cobra': 1, 'cell door': 1, 'ssd': 1, 'air bubble': 1, 'gardenia': 1, 'submarine': 1, 'stove': 1, 'safety shower': 1, 'welding': 1, 'diamond': 1, 'plastic comb': 1, 'lemon': 1, 'honeycomb': 1, 'apricot': 1, 'comb': 1, 'aluminum can': 1, 'oil painting': 1, 'spine': 1, 'armrest': 1, 'nokia': 1, 'writing desk': 1, 'glider': 1, 'sea cave': 1, 'quail': 1, 'sulfur': 1, 'ring': 1, 'dental floss': 1, 'windowsill': 1, 'rickshaw': 1, 'pool chair': 1, 'sagebrush': 1, 'leather': 1, 'cushion': 1, 'postmark': 1, 'jewelry clasp': 1, 'snowboard': 1, 'honeybee': 1, 'whirlpool': 1, 'snapper': 1, 'tuber': 1, 'rind': 1, 'pickaxe': 1, 'blanket': 1, 'fertilizer spreader': 1, 'plug': 1, 'carton': 1, 'dust': 1, 'tuna': 1, 'badge': 1, 'turntable': 1, 'scoreboard': 1, 'silver': 1, 'wheelbarrow': 1, 'parallel bar': 1, 'keurig': 1, 'bicycle': 1, 'digital clock': 1, 'tower': 1, 'belly': 1, 'lightning': 1, 'pufferfish': 1, 'velveeta': 1, 'gopher': 1, 'diving board': 1, 'teabag': 1, 'strawberry plant': 1, 'lobster': 1, 'short': 1, 'coral': 1, 'coal': 1, 'mochi': 1, 'bed': 1, 'mint': 1, 'wifi router': 1, 'snack container': 1, 'quiche': 1, 'fish tank': 1, 'snapdragon': 1, 'playset': 1, 'bluetooth': 1, 'jerky': 1, 'bruschetta': 1, 'campfire': 1, 'cider': 1, 'cabbage': 1, 'luggage carousel': 1, 'lilypad': 1, 'ceiling': 1, 'thermometer': 1, 'hiking boot': 1, 'pebble': 1, 'candle': 1, 'nest': 1, 'arrowhead': 1, 'walking cane': 1, 'mist': 1, 'lighter': 1, 'reindeer': 1, 'rosary': 1, 'energy bar': 1, 'goat': 1, 'pot': 1, 'oven rack': 1, 'cup holder': 1, 'jazz record': 1, 'gps device': 1, 'lanyard': 1, 'ethernet cable': 1, 'necklace': 1, 'mountain bike': 1, 'hybrid car': 1, 'blackberry': 1, 'jar opener': 1, 'lcd': 1, 'seawall': 1, 'lighthouse': 1, 'lens': 1, 'rainbow lorikeet': 1, 'croc': 1, 'screenprint': 1, 'hose': 1, 'burrow': 1, 'choker': 1, 'makeup remover': 1, 'water bug': 1, 'thistle': 1, 'poster': 1, 'distilled water': 1})
+    
+    
+    content_copy
+
+
+### [Chris Deotte](/cdeotte)
+I'm surprised that Agent Alpha did not get most of these words. I suspect some
+Agent Alpha submissions are a fork of your notebook as is without updating the
+vocabulary list. Your agent alpha can successfully guess 250,000 words ( =
+2^18). An English dictionary has 174k words. So Agent Alpha can easily include
+every noun in the English dictionary plus tens of thousands of more words.
+(And words like "poster", "thistle", "choker", "burrow", etc etc etc are in
+the English dictionary).
+
+
+### [loh-maa](/lohmaa)
+Yes, a bit surprising, but indeed some people probably were just very easy
+about it, I've seen an alpha agent version 7 playing, an early one and
+probably with old keywords, and secondly, some answerers accept the handshake
+but don't really answer the questions correctly, leading to a fail.
+
+
+### [Chris Deotte](/cdeotte)
+For example [here](https://www.kaggle.com/datasets/leite0407/list-of-nouns) is
+a dataset on Kaggle of 6,800 nouns. Of the 175 words listed that Alpha Agent
+did not guess, 74 of them are included in this nouns dataset.
+(It would be interesting to compute what percentage of private LB keywords are
+contained in this Kaggle nouns dataset, or in the English dictionary).
+
+
+### [Feida Wei](/feidawei)
+I wish I got some time to make a Agent Alpha submission as well. I was mainly
+working on Kha Vo’s offline policy agent.
+Shouldn’t each keyword in private LB be in the English dictionary or at least
+somewhat a alternate version of it or with adjectives.
+
+
+### [Chris Deotte](/cdeotte)
+I plan to analyze private LB and public LB words soon. My feeling is that the
+private LB is easier for Alpha Agent than public LB (when using lists of nouns
+from the internet).
+My suspicion is that private LB contains more keywords that are one word like
+"chair" and thus in the English dictionary. I feel like most keywords in
+public LB were two or more words like "fast car" or "small toy" which are not
+in the dictionary (and not contained in lists of nouns from the internet).
+
+
+### [Chris Deotte](/cdeotte)
+I analyzed the length of keyword and published analysis
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/529115).
+On Public LB, 40% of keywords are one word while 60% are two or more words. On
+Private LB, 81% of keywords are one word while 19% are two or more words. So
+the Private LB keywords are easier to guess using an English dictionary of
+single word words.
+
+
+### [loh-maa](/lohmaa)
+    time interval from 2024-08-15 04:00:26 until 2024-08-20 05:13:15
+    no. episodes in total: 29722
+    no. episodes with error: 221
+    
+    pure alpha applied in 1.4% of episodes
+    pure alpha success rate: 18.8%
+    forced alpha applied in 3.0% of episodes
+    forced alpha success rate: 2.2%
+    only other applied in 95.7% of episodes
+    other success rate: 1.8%
+    overall success rate: 2.0%
+    
+    no. episodes pure alpha beats other: 72
+    no. episodes other beats pure alpha: 10
+    no. all agents: 1412
+    no. initiating alpha as guessers: 58
+      no. accepting alpha as answerers: 262
+      no. refusing alpha as answerers: 762
+    no. asking alpha questions as guessers: 70
+    
+    no. agents never seen alpha question: 609
+    no. agents not scored at all, yet: 38
+    how many agents resolved how many matches, i.e. won or lost or got bonus from error:
+      [(0, 38), (1, 487), (2, 442), (3, 267), (4, 108), (5, 34), (6, 21), (7, 8), (8, 3), (9, 3), (10, 1)]
+    
+    
+    content_copy
+
+
+### [loh-maa](/lohmaa)
+    time interval from 2024-08-15 04:00:26 until 2024-08-19 05:17:03
+    no. episodes in total: 23761
+    no. episodes with error: 182
+    
+    pure alpha applied in 1.3% of episodes
+    pure alpha success rate: 18.4%
+    forced alpha applied in 3.0% of episodes
+    forced alpha success rate: 2.2%
+    only other applied in 95.7% of episodes
+    other success rate: 1.9%
+    overall success rate: 2.1%
+    
+    no. all agents: 1412
+    no. initiating alpha as guessers: 56
+      no. accepting alpha as answerers: 220
+      no. refusing alpha as answerers: 689
+    no. asking alpha questions as guessers: 68
+    
+    no. agents never seen alpha question: 714
+    no. agents not scored at all, yet: 89
+    how many agents resolved how many matches (i.e. won or lost or got bonus from error):
+    [(0, 89), (1, 634), (2, 395), (3, 183), (4, 74), (5, 17), (6, 12), (7, 4), (8, 4)]
+    
+    
+    content_copy
+Amazingly, only 6 agents in the top100 lost their first resolved match, 4 in
+top50 and only 1 in top10. One may think "yes because good agents win their
+matches", however if we consider that even the best bot has a substantial
+chance of loosing a match due to pairing, the indication is rather reversed:
+"they are good (and highly ranked) agents partially because they won their
+first match".
+++ Let's consider only resolved matches. And suppose bot A has the best skill,
+it can win with any other bot, but obviously only with a good answerer. Let's
+say the odds of meeting a good vs bad answerers are 50-50. Than you have a
+match A+C vs B+D. If C is good, A wins regardless of D, but if C is bad and D
+is good, A loses. So it's basically 75%-25% win odds for A. So my
+understanding is that if top10 has really top10 players, or top50 really the
+top50, the proportions should be accordingly. We should see approximately
+75%-25% ratio with 1st wins vs losses in top10 or top50.
+
+
+### [namnguyen](/manh152924)
+win the first match is very important, I have agent with score is 1k now but
+another agent is only 580, it jammed.
+
+
+### [loh-maa](/lohmaa)
+[@manh152924](https://www.kaggle.com/manh152924) Thanks for reporting.. are
+your agents very different?
+
+
+### [namnguyen](/manh152924)
+2 agent is same code
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+My two submissions are duplicates except for the language model. Submission #1
+won the second game after reset and has done well. #2 has been in to 400-500
+pits after 1 loss. It's a good model, but stuck in the pits.
+
+
+### [namnguyen](/manh152924)
+With the current ranking algorithm, losing the first match is an early death
+sentence for any bot.
+
+
+### [Chris Deotte](/cdeotte)
+[@lohmaa](https://www.kaggle.com/lohmaa) I have some suggestions for analysis.
+I think many Kagglers submitted Kha Vo's public notebook
+[here](https://www.kaggle.com/code/khahuras/offline-policy-questioner-agent).
+His notebook **receives** an Alpha Agent handshake but does not **initiate**
+an Alpha Agent handshake. We could see which bots **start** (i.e. both start
+and receive) an Alpha Agent handshake and which bots **receive** (i.e. only
+receive not start) an Alpha Agent handshake. My guess is that there are many
+bots that are **receiving** handshakes which are helping the small number of
+bots which are **initiating** handshakes.
+Also we can identify all participants who use Alpha Agent and we can identity
+all participants who use Kha Vo's bot. It would be cool to compute what
+percentage of total 835 bots are using Alpha Agent, Kha Vo agent, and neither
+(i.e. the sum of these 3 would equal 835). Then we can compute the average
+score/rank of each of the three categories too. I suspect that the Alpha Agent
+bots will win this competition, followed by Kha Vo agents, followed by other
+agents.
+
+
+### [Chris Deotte](/cdeotte)
+Next it would be interesting to create a list of which words Alpha Agents are
+finding and which words they are not finding. My guess is that they are
+finding nouns without adjectives. So they find "bird" but not "blue bird".
+
+
+### [loh-maa](/lohmaa)
+Thanks for the suggestion, I can see Kha Vo's notebook can handle alpha
+questions, but I cannot see how does it handle the handshake. Presumably it
+should respond with 'yes', otherwise most agents wouldn't start asking alpha
+questions. So I will include 'passive alpha' stat later today. If it responds
+with 'no' but still can answer alpha questions when asked, then it's a bit
+weird situation, and I guess rare, although some agents were spotted asking
+alpha questions without handshake, so I can add this one. BTW there are around
+835 players but 1412 bots/agents.
+
+
+### [Chris Deotte](/cdeotte)
+[@lohmaa](https://www.kaggle.com/lohmaa) In code cell #13 (of Kha Vo notebook
+[here](https://www.kaggle.com/code/khahuras/offline-policy-questioner-agent))
+it responds "yes" to the handshake.
+    
+    
+    exp = re.compile('are you playing 20 questions|is it a thing|is it agent llama|is it agent |llama|is it agent llama3|is it agent meta')
+    if re.search(exp, q):
+        return 'yes'
+    
+    
+    content_copy
+I think the presence of hundreds of submitted forks of this public notebook
+has supercharged pure Alpha Agent's (i.e. your notebook) success rate in this
+competition. Furthermore, these forks help pure Alpha Agent climb LB but these
+forks do not climb LB themselves since they do not initiate handshake.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+The worst is inactive and unlucky :/
+
+
+### [loh-maa](/lohmaa)
+Yay, finally the dataset:
+<https://www.kaggle.com/datasets/lohmaa/llm20-evaluation-games-collected>  
+As of now it includes only the two first days, i will update with the 3rd day
+ASAP… I reckoned it's better someone maintened one such dataset because it
+takes lots for resources to create.
+
+
+### [KKY](/evilpsycho42)
+"AgentAlpha applied in 1.5% of episodes"
+Did you calculate this number based on the success of the alpha agent? If yes
+, that means there. are about 10%+ teams use agent alpha in there solution.
+
+
+### [loh-maa](/lohmaa)
+Hi, 1.5% is not related to the success rate, it's just how often a "positively
+answered handshake" is detected. (Including when it occurs on both teams in
+one episode.).. yeah, actually thanks for the suggestion, I will try to add,
+how many agents ever tried the handshake and how many refused..
+
+
+### [loh-maa](/lohmaa)
+Update
+    
+    
+    time interval from 2024-08-15 04:00:26 until 2024-08-17 05:19:22
+    no. episodes in total: 11766
+    no. episodes with error: 115
+    alpha applied in 1.3% of episodes
+    alpha success rate: 26.1%
+    no. agents ever tried alpha: 53 out of 1412
+    only other applied in 98.7% of episodes
+    other success rate: 2.0%
+    overall success rate: 2.3%
+    no. episodes alpha beats other: 41
+    no. episodes other beats alpha: 5
+    
+    
+    content_copy
+I would like to share the dataset of collected games, but i'm having trouble
+with creating dataset from notebook output. Basically when I go to "upload"
+and select "notebook output" the notebook I want to share from, isn't there to
+choose, only some other of my notebooks, and I don't have any idea why, any
+hints, please?
+
+
+### [torino](/pnmanh2123)
+Are you using a "save and run"(not quick save) notebook to create a dataset?
+We can only create a dataset from a notebook if it was created from "save and
+run". If you were doing it, check this notebook and make sure it has output,
+there may be some errors that cause the output not to be generated.
+
+
+### [loh-maa](/lohmaa)
+Thanks for the hint, torino, yes, I had tried to "save and run all" and the
+notebook still wasn't appearing on the list.. but, wait, maybe actually it
+didn't generate anything on that particular run, as I also use "file
+persistence". Will try today again…
+
+
+### [loh-maa](/lohmaa)
+I think I found the reason, when "saving and running" the notebook doesn't
+have access to "persistent files", it has to generate everything from scratch
+and save it, then it should work. Thanks again, torino.
+
+
+### [torino](/pnmanh2123)
+I look forward to seeing your analysis.
+
+
+### [loh-maa](/lohmaa)
+Hi [@torino](https://www.kaggle.com/torino), if you're able to help, please --
+I've set automatic daily updates in the notebook, but the meta-kaggle dataset
+gets removed itself from the notebook's inputs after its every update (no idea
+why), and so I guess it will be unavailable during the notebook's automatic
+update… would you have any idea what can be done about it?
+
+
+### [torino](/pnmanh2123)
+[@lohmaa](https://www.kaggle.com/lohmaa) seem meta kaggle choose only access
+to lastest version, so when it update new version, all notebook use old
+version will error. Only way is open and update or re append meta kaggle and
+re-run
+Example of my dataset, meta kaggle choose first selection:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F15873032%2Ffca5bfdf2b4f9a918a0bf786671c4cc0%2FScreenshot_20240819_143958.png?generation=1724053234674086&alt=media)
+Dataset had turn on old version access will look like :
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F15873032%2F26f317f13c1cef3ea273cf2bd0e71465%2FScreenshot_20240819_144402.png?generation=1724053490735158&alt=media)
+EDIT: I found discussion have way to solve it, you can try:
+<https://www.kaggle.com/datasets/kaggle/meta-kaggle/discussion/337043>
+
+
+### [loh-maa](/lohmaa)
+Thanks [@pnmanh2123](https://www.kaggle.com/pnmanh2123) ! Well it looks like a
+workaround indeed, although not quite a straightforward one, so I think I will
+just update manually for a few days.
+
+
+### [alka sharma](/alkasharma76)
+Winning the first game is crucial. Currently, my agent has a score of 1,k, but
+another agent's score is only 580 because of a jam.
+
+
+### [Harshit Sharma](/harshitstark)
+The disparity in success rates between alpha and other strategies is
+fascinating. Nice work [@lohmaa](https://www.kaggle.com/lohmaa) !
+
+
+### [KKY](/evilpsycho42)
+Nice analysis. BTW, is your data obtained through web crawling?
+
+
+### [loh-maa](/lohmaa)
+Noooo.. that would be terrible.. you can do analysis on your own, although it
+takes lots of data shuffling.. I've forked [this
+notebook](https://www.kaggle.com/code/waechter/llm-20-questions-games-
+dataset).. I will share my version soon after I finish improving it.

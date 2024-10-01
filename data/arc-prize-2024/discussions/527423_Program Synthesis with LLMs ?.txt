@@ -1,0 +1,85 @@
+[Prashant Limba](/prashantlimba) · Posted 2 months ago
+arrow_drop_up13
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Program Synthesis with LLMs ?
+Hello everyone,
+Its been a while since the leaderboard scores have changed. Only 12 teams were
+able to score more than the available public notebook so far. I am writing
+this post to know if this has already been tried or not. If not, maybe we can
+look in this direction to solve the ARC puzzle.
+I found this blog (<https://evanthebouncy.github.io/program-synthesis-
+minimal/>) which explains how to perform program synthesis with the help of
+Machine Learning/LLMs
+Here is the idea:
+  * Provided (input, output) examples in 'train' of every challenge are called specifications, and we want to find a program from a DSL (Domain Specific Language) which satisfy these specifications.
+  * Once we have the correct program, we can pass the 'test' inputs and get corresponding outputs.
+  * DSL (<https://github.com/michaelhodel/arc-dsl/>) which can solve ARC (assuming)
+  * Programs are nothing but python functions which are chain of different primitive functions (see <https://github.com/michaelhodel/arc-dsl/blob/main/dsl.py>) inside them. Example of programs: <https://github.com/michaelhodel/arc-dsl/blob/main/solvers.py>
+  * For model training, we can do unconditional program generation (read the blog) with some constraints which will produce good valid programs. Also we will need a sampler which produces good 'input' samples. We will pass this 'input' into the program to get corresponding 'output'. Together (input, output) will be one example in the specification, we can produce 'n' number of different (input, output) pairs. The output of model generation will be the program chain (function which calls primitive functions inside it).  
+![Sample training
+example](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F10556893%2F412360f1eb33f2d2cced1724cdca6dfc%2Fimage.png?generation=1723436501464331&alt=media)
+  * For the output, one can perform beam search to produce diverse programs with high probabilities. 
+The trained model will predict program using specifications, and this program
+will be used to get the output grid.
+I tried this approach (using CodeT5 Small, as it fits in Kaggle GPU easily for
+training) and some of the insights were:
+  * Producing this training dataset with diverse programs is most challenging (Can share the approach of program generation and dataset later)
+  * I created various type of programs of depth 1 (which only use 1 primitive function inside the program), depth 2 and depth 3. Assuming it will be able to solve programs in ARC-TRAIN whose solutions are of similar depth
+  * Model prediction on 6/14 examples of depth 1 were correct from ARC-TRAIN (400 examples in total), and all the rest examples of depth 2, depth 3 were incorrect
+Next steps:
+  * Since the model is not able to generalize examples which have multiple primitive function in program solution, need to rethink if this can be done in steps. Lets say we have a model which can predict programs of depth 1, can it be somehow used to produce programs of depth > 1
+  * Utilizing LLMs having billions of parameter for this task, or maybe modifying the type of embedding to represent the grids.
+  * Improving the unconditional program generation
+Any thoughts and suggestions are welcomed
+comment
+
+
+## 2 Comments
+
+
+### [Saisamrit Surbehera](/saisamrit)
+arrow_drop_up3
+  * format_quote
+  * link
+I have trained a model couple of days ago although with llama 3-8b lora
+exactly similar to the way you have described. I got the same conclusions as
+you have gotten.
+I did some simple augmentations to create more training datasets. 400( random
+sample 350) => 90000 different examples.
+I noticed that train accuracy is very high, Most programs which are
+represented in the train set and solved very well. The LLM's don't generalize
+to unseen dataset. Even if they do, you will have to call the language model
+100s of times to get a simple solution, longer solutions (20+ code solutions
+rarely solve even after calling the LLM 100+ times)
+I did some digging in my model and tried different decoding strategies, more
+k, more temp. All have the possible solution on the trees ( k<=10)
+
+
+### [Prashant Limba](/prashantlimba)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks [@saisamrit](https://www.kaggle.com/saisamrit), model fits very well on
+the examples which we created using unconditional sampling. The ARC dataset
+examples are slightly different. Maybe, a pretrained model on these
+unconditional sample examples will be able to perform well when it is
+finetuned on ARC-TRAIN dataset. In your case, when you say data augmentation
+do you mean that you have used original ARC-TRAIN only and augmented it to
+create more specifications of these 400 programs ?
+
+
+### [Saisamrit Surbehera](/saisamrit)
+arrow_drop_up1
+  * format_quote
+  * link
+Yes, i did a lot of augmentations with the 350 programs. In this case, i meant
+that if the specfic augmentation combination is not there in 350, it rarely
+generalizes to unseen/test set (remaning 50)

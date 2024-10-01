@@ -1,0 +1,37 @@
+[C R Suthikshn Kumar](/crsuthikshnkumar) · 233rd in this Competition · Posted
+2 days ago
+
+
+### English Specific Questions in Prize winning Bots
+Refer to LLM 20 Question Competition which just completed today.  
+<https://www.kaggle.com/competitions/llm-20-questions/>
+Congratulations to all winners and top performing teams in this competition.
+This is a very interesting competition and generated very insightful
+discussions and coding.
+I observe that many prize winning and top ranking bots are just asking
+questions specific to English language.  
+Examples :
+  1. Does the keyword (in lowercase) precede \"lake salmon\" in alphabetical order?"
+  2. Does the keyword (in lowercase) precede \"eomart discount\" in alphabetical order?
+  3. Does the keyword (in lowercase) precede \"lake salmon\" in alphabetical order?
+  4. Does the keyword (in lowercase) precede \"damage control\" in alphabetical order?
+I think same bots may not work if the 20 Questions game is in different
+language. The bots have to be completely reprogrammed altogether.  
+From the description of the competition by organizers:  
+_This competition will evaluate LLMs on key skills like deductive reasoning,
+efficient information gathering through targeted questioning, and
+collaboration between paired agents. It also presents a constrained setting
+requiring creativity and strategy with a limited number of guesses .Success
+will demonstrate LLMs' capacity for**not just answering questions** , but also
+asking insightful questions, performing logical inference, and quickly
+narrowing down possibilities._
+The questions are not insightful, the bots are just using direct questions.
+Maybe this strategy is giving good scores and higher rankings through quickly
+narrowing down possibilities. But these techniques are very specific to
+English but may not be generalized to other languages.
+Welcome comments from competition participants for my views.
+[Artificial
+Intelligence](/discussions?tags=12101-Artificial+Intelligence)[Languages](/discussions?tags=2107-Languages)[Intermediate](/discussions?tags=13103-Intermediate)[Advanced](/discussions?tags=13104-Advanced)[NLP](/discussions?tags=13204-NLP)
+
+
+## 0 Comments

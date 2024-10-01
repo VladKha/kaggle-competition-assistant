@@ -1,0 +1,19 @@
+[Ravi Ramakrishnan](/ravi20076) · 614th in this Competition · Posted 3 months
+
+### Competition in the present and deadline in the past?
+Hello [@mkecera](https://www.kaggle.com/mkecera)
+I think the team needs to correct the final deadline date to Aug23, 2024
+perhaps! It is currently displayed as 23Aug,2015.
+Screenshot is as below-
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8273630%2Fa32571b2435e9232a6146337af273837%2FFinalPastSubmission.png?generation=1717829827776050&alt=media)
+
+
+## 2 Comments
+
+
+### [MichalKecera](/mkecera)
+Hi [@ravi20076](https://www.kaggle.com/ravi20076)  
+Thank you for the feedback. I made the correction.  
+Kind regards,  
+Michal

@@ -1,0 +1,23 @@
+[ d1v1s10n_by_zer0](/d1v1s10nbyzer0) · 643rd in this Competition · Posted 19
+days ago
+
+### undo the last uploaded solution
+Is it possible to cancel the current last submission? I accidentally replaced
+my best solution with a completely non-working one, and the daily limits are
+used up. Is there anything that can be fixed?
+
+
+## 2 Comments
+
+
+### [Raki](/raki21)
+That's really unfortunate in this competition, because participants couldn't
+set the solutions they want to use in the end, so I don't think there will be
+an intervention, sorry for you :/
+
+
+### [loh-maa](/lohmaa)
+Sounds like divided by zero.. ,) I can't see any technical solution to this
+problem, perhaps only an intervention could help? And this would rise some
+interesting ethical questions… do you think it would be fair? (I'm not judging
+here, just asking about your own judgment.)

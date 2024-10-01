@@ -1,0 +1,24 @@
+[Ali](/asalhi) · 174th in this Competition · Posted 3 months ago
+
+### [Solved] 75% valid submission!
+Hi,
+It's my first time in such a competition  
+I am facing a problem like this:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6915758%2F54abdeebfa3703226d3c30deef573b97%2Ferrr.jpg?generation=1717990193196997&alt=media)
+also here (another sub) :
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6915758%2Fe00444a5fa2c9a314224fa46530579e0%2Ferrr2.jpg?generation=1717990429390881&alt=media)  
+Any idea why the error happens? suggestions where to debug?
+
+
+## 2 Comments
+
+
+### [OminousDude](/max1mum)
+You can check the replay of the submission and then click the download "Agent
+Logs" this should show you any problems your model has!
+
+
+### [Ali](/asalhi)
+Many Thanks, I didn't notice.

@@ -1,0 +1,11 @@
+[Araik Tamazian](/atamazian) · 734th in this Competition · Posted 22 days ago
+
+
+### Useful dataset to be used with your agent
+This dataset can be used to improve [this
+notebook](https://www.kaggle.com/code/khahuras/offline-policy-questioner-
+agent):
+<https://huggingface.co/datasets/clips/20Q>
+
+
+## 0 Comments

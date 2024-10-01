@@ -1,0 +1,77 @@
+[Mehran Kazeminia](/mehrankazeminia) · 17th in this Competition · Posted 3
+arrow_drop_up17
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ✍️Corpus Mistakes and Standard Tasks
+Hi, [@gregkamradt](https://www.kaggle.com/gregkamradt) ,
+[@fchollet](https://www.kaggle.com/fchollet)
+  * In the notebook below, we have shown some of the mistakes of the corpus. If we come across new mistakes, this notebook will be updated.
+<https://www.kaggle.com/code/mehrankazeminia/2-arc24-corpus-mistakes/notebook>
+  * We hope that the main test tasks of this challenge are standard and do not have any mistakes. The importance of the main test tasks is much more than the training and evaluation tasks, and we request the host to check the main test tasks again.
+  * Perhaps the best definition for a "Standard task" is that a unique function can correctly solve all pairs of trains and pairs of tests. "Standard tasks" are essential for both human and machine testing.
+
+### Files: training - Task Name: 9edfc990 - Number: 242
+
+### The black cell should turn blue.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2Fbea325eba2f8b160b5ebf70a10c5f2ad%2F242.png?generation=1718659674759381&alt=media)
+
+### Files: training - Task Name: 017c7c7b - Number: 2
+
+### The discrepancy is clear in train_0 and train_2.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2Fe9838d692009d8a4eab17a7e625e50d4%2F2a.png?generation=1718660099448411&alt=media)  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2Fbca90bf7f83ce4293dfe7bef1650049f%2F2b.png?generation=1718660117247079&alt=media)
+
+### Files: evaluation - Task Name: c35c1b4c - Number: 295
+
+### The blue cell should turn red.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2F03189d9f7bdb7ccd81b0eb3402471e9d%2Fe295.png?generation=1718660681357978&alt=media)
+
+### Files: evaluation - Task Name: 9def23fe - Number: 244
+
+### The two red cells should turn black.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2F7c3d25fceebdc92b939439ccd8d206fd%2Fe244.png?generation=1718660867408179&alt=media)
+
+### Files: evaluation - Task Name: 4852f2fa - Number: 109
+
+### Black cells in the first row should be deleted.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2F621a91b4d0da45866f28127edff26349%2Fe109.png?generation=1718661015295060&alt=media)
+
+### Files: evaluation - Task Name: 20818e16 - Number: 55
+
+### Magenta colored cells in the last row should be deleted.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2Faf145955ed66d37651bb96f35d20cd93%2Fe55.png?generation=1718661112062044&alt=media)
+
+### Files: evaluation - Task Name: be03b35f - Number: 288
+
+### The places of blue and black cells should be changed.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4288268%2Fb26b11d2f7a7aa4da1a0c42578496e9c%2Fe288.png?generation=1718661179858330&alt=media)
+comment
+
+
+## 1 Comment
+
+
+### [Robert Hatch](/roberthatch)
+arrow_drop_up1
+  * format_quote
+  * link
+Haven't done the others, so can't comment, but:
+> Files: training - Task Name: 017c7c7b - Number: 2  
+>  The discrepancy is clear in train_0 and train_2.
+This one is not wrong. If Train0 was the test question, then I think it would
+have two possible answers (not enough train data to disambiguate). However,
+there's a clear pattern with train 0 that fits with all the other repeating
+patterns.

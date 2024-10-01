@@ -1,0 +1,62 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 4 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### tiny error on 05a7bcf2
+05a7bcf2 (I think it's the 4th puzzle) has an error on the first-round output.
+The red shape, lower-right should be slightly different than it is. I have not
+checked the json for similar configuration.
+    
+    
+    is:      should be:
+    ##       #
+    ###      ##
+    ###      ###
+    
+    
+    content_copy
+comment
+
+
+## 2 Comments
+
+
+### [Pavel Orlov](/sapr3s)
+arrow_drop_up0
+  * format_quote
+  * link
+Yes, exactly, I see it too. The red shape on the right, which has moved down -
+in the first example. Error in `json`, because pictures are drawn using `json`
+(at least in my notebook)
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+And yet…. You were probably able to solve that puzzle (me too). So "slop
+tolerance" is probably important in the AGI code. Not a surprise, but I wonder
+how many people had that "top of mind" as they thought through solving this. I
+looked at the first four puzzles. I stopped after this one because it was
+killing my hand to click all of the squares that needed clicking. But also
+stopped to think it through a little. One in four with an error? I'm sure
+that's the only such error. Seriously. Imagine what the result might be if 25%
+of the json files had a tiny error of some kind. The kind of result that would
+stop a more pedantic piece of code in its tracks. I'm sure it's much lower
+that 25%. I always overthink these things.
+
+
+### [Pavel Orlov](/sapr3s)
+arrow_drop_up0
+  * format_quote
+  * link
+You just went straight to the eval set. In fact, I had previously viewed only
+the train set and did not notice any errors there (although I did not
+specifically look for them).  
+In this case, of course, the organizers must correct this error, but the main
+thing is that there are no errors in the hidden test :)

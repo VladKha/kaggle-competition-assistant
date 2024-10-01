@@ -1,0 +1,53 @@
+[dreamCatcher@SH](/dreamcatchersh) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What's the difference from Abstraction and Reasoning Challenge
+Hello everyone, I'm a novice in kaggle. After reading the introduction of this
+competition, I have a question.  
+what's the difference between this competition and this one :
+<https://www.kaggle.com/competitions/abstraction-and-reasoning-challenge>?
+comment
+
+
+## 4 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+It _is_ the same one, only the one you found ended four years ago. It was the
+original version (notice Francois' name at the bottom of the page) of the
+current one. And the prize is 50x bigger, this time.
+
+
+### [Pavel Orlov](/sapr3s)
+arrow_drop_up1
+  * format_quote
+  * link
+The prize is slightly larger.
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+
+arrow_drop_up2
+  * format_quote
+  * link
+Consider this competition a continuation of the competition you listed. AGI is
+still nowhere near the level of humans, and continuing the competition allows
+people to keep applying the latest techniques to push the cutting edge even
+further!
+
+
+### [dreamCatcher@SH](/dreamcatchersh)
+arrow_drop_up0
+  * format_quote
+  * link
+I understand. Thanks for your help.

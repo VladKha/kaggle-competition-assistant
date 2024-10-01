@@ -1,0 +1,34 @@
+[alekh](/aleksanderhan) · 502nd in this Competition · Posted 3 months ago
+
+
+### Agent interface
+Is there some kind of agent interface we can implement? Right now it's kinda
+unclear how this whole competition works.
+
+
+## 2 Comments
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Have you seen pinned notebook ?
+<https://www.kaggle.com/code/ryanholbrook/llm-20-questions-starter-notebook>
+
+
+### [alekh](/aleksanderhan)
+Yes, I've seen it, but it's a bit hard to parse what is the minimal
+requirement and where the entry point is etc. But I found some usefull
+information hidden away in the submission modal. Basically the last function
+of your main.py file should take an observation and return the response. - I
+think that is important information and shouldn't have been hidden away like
+that.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Apologies, and yes, the entry point is the last function of main.py
+
+
+### [monkeyHyx](/monkeyhyx)
+So in each step the function will be newly executed?  
+can it be something like a function inside a class?

@@ -1,0 +1,147 @@
+[Omar Isbaitan](/omarisbaitan) · 998th in this Competition · Posted 3 months
+arrow_drop_up-3
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Rotating 90 180 270 360 (L or R) is important !
+import numpy as np  
+import matplotlib.pyplot as plt  
+from matplotlib.colors import ListedColormap
+# Define colors for visualization
+colors = ['#000000', '#0074D9', '#FF4136', '#2ECC40', '#FFDC00',  
+'#AAAAAA', '#F012BE', '#FF851B', '#7FDBFF', '#870C25']  
+color_map = ListedColormap(colors)
+def visualize_grid(grid, title="Grid"):  
+plt.imshow(grid, cmap=color_map)  
+plt.title(title)  
+plt.colorbar(ticks=range(10))  
+plt.show()
+# Example transformation functions
+def rotate_90_clockwise(grid):  
+return np.rot90(grid, k=-1)
+def rotate_180_clockwise(grid):  
+return np.rot90(grid, k=-2)
+def rotate_270_clockwise(grid):  
+return np.rot90(grid, k=-3)
+def rotate_360_clockwise(grid):  
+return np.rot90(grid, k=-4)
+def rotate_90_counterclockwise(grid):  
+return np.rot90(grid, k=1)
+def rotate_180_counterclockwise(grid):  
+return np.rot90(grid, k=2)
+def rotate_270_counterclockwise(grid):  
+return np.rot90(grid, k=3)
+def rotate_360_counterclockwise(grid):  
+return np.rot90(grid, k=4)
+# Example input and output grids
+input_grid = np.array([[6, 3, 5],  
+[6, 8, 0],  
+[4, 0, 0]])
+# Visualize input grid
+visualize_grid(input_grid, title="Input Grid")
+# Apply transformations and visualize results
+transformed_grids = {  
+"Rotate 90 Clockwise": rotate_90_clockwise(input_grid),  
+"Rotate 180 Clockwise": rotate_180_clockwise(input_grid),  
+"Rotate 270 Clockwise": rotate_270_clockwise(input_grid),  
+"Rotate 360 Clockwise": rotate_360_clockwise(input_grid),
+    
+    
+    "Rotate 90 Counterclockwise": rotate_90_counterclockwise(input_grid),
+    "Rotate 180 Counterclockwise": rotate_180_counterclockwise(input_grid),
+    "Rotate 270 Counterclockwise": rotate_270_counterclockwise(input_grid),
+    "Rotate 360 Counterclockwise": rotate_360_counterclockwise(input_grid)
+    
+    
+    content_copy
+}
+for title, transformed_grid in transformed_grids.items():  
+visualize_grid(transformed_grid, title=title)
+comment
+
+
+## 5 Comments
+
+
+### [Luca Bottero](/lucabottero)
+arrow_drop_up2
+  * format_quote
+  * link
+Hi, what do you mean by "important"? Please note that a rotation of 360 is a
+null rotation: input is the same of output. Also defining separate function
+for clockwise and counter-clockwise is redudant: a 270 degree clockwise
+rotation is the same of a 90 degree counterclockwise rotation! In summary: if
+you want to visualize rotated grids using multiple integers of 90 degrees, you
+have to plot only 3 additional plots: 90, 180 and 270 deg rotated (clockwise
+or counterclockwise does not make any difference in the end)
+    
+    
+    for i in range(1,4):
+        print(f"Rotated {90*i} counterclockwise", np.rot90(grid, k=i))
+    
+    
+    content_copy
+
+
+### [Omar Isbaitan](/omarisbaitan)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks… I think. We. Need this to. Generate dataset … The solution should. Be.
+Simple…. Based. On core knowledge.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+also… you have 8 functions. but 180 cw precisely == 180 ccw. So you really
+only need 3 functions. 0! Luca already said that. sorry!
+
+
+### [Omar Isbaitan](/omarisbaitan)
+arrow_drop_up1
+  * format_quote
+  * link
+I think this ARC prize 2024… Need a new way. Of. Thinking by using complex GNN
+to. Create… Emergant properties
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+I wish you the greatest good luck, my friend!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+You know what's really important? Being able to focus in, or step back. It's
+really the most important thing going on. For instance… Rotate 90 degrees.
+Rotating the whole matrix 90 degrees is indeed of limited usefulness… But to
+be able to focus in (see directly above) on a little object, rotate _that_ 90
+degrees and see that it matches the output… We do that all the time! Or focus
+in, move one colored dot one pixel to the left, and note that micro-movement…
+THAT's on the radar!
+###### ACHILLES: Another deluded one! Not "HOLISM," not "REDUCTIONISM," but
+"MU" is the message of this picture, and that much is certain.
+from "GEB an EGB" -Hofstadter
+
+
+### [Adetoye](/adetoyeshearigbabuwo)
+arrow_drop_up0
+  * format_quote
+  * link
+Write this in a notebook instead
+
+
+### [Omar Isbaitan](/omarisbaitan)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks I am working on focus!

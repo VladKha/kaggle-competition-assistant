@@ -1,0 +1,50 @@
+[Mitul](/mitul0113) · 303rd in this Competition · Posted 3 months ago
+
+
+### InvalidArgument: Unknown Environment Specification
+Getting this error while making env
+* * *
+InvalidArgument Traceback (most recent call last)  
+Cell In[119], line 2  
+1 from kaggle_environments import make  
+2 env = make(environment="llm_20_questions")
+File ~\PycharmProjects\kaggle.venv\Lib\site-
+packages\kaggle_environments\core.py:108, in make(environment, configuration,
+info, steps, logs, debug, state)  
+106 elif has(environment, path=["interpreter"], is_callable=True):  
+107 return Environment(**environment, configuration=configuration, info=info,
+steps=steps, logs=logs, debug=debug, state=state)  
+\--> 108 raise InvalidArgument("Unknown Environment Specification")
+InvalidArgument: Unknown Environment Specification
+* * *
+from kaggle_environments import make  
+env = make(environment="llm_20_questions")
+
+
+## 5 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+A new version has been pushed to PyPI, pip install should work as normal now.
+
+
+### [loh-maa](/lohmaa)
+Same error when using kaggle-environments installed locally via pip, it's gone
+when importing from a cloned repo.
+
+
+### [Mitul](/mitul0113)
+Thanks, its working now
+
+
+### [Rinku Sahu](/rinkusahu1)
+How did you do it? I am trying use the cloned repo. but it is giving
+error![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F2999992%2F33cf28657bdca0fa964a5002247da049%2Fkaggle_llm.PNG.jpg?generation=1717314518605875&alt=media)
+
+
+### [neelpanchal](/neelpanchal23022003)
+Even i am getting this same error

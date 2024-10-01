@@ -1,0 +1,43 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted a month ago
+
+
+### Plagiarism or spam on the sidelines
+Hello everybody, although it's a more general issue than just this
+competition, it's taking place in this competition too, so I'd like to take
+opportunity and bring it up. Certainly that's nothing new, it's a common
+activity on Kaggle, copying notebooks without attribution and actually without
+any purpose other than trying to score some petty points, I guess.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Fdfb6be8a2100aeb12a8824fff0bbfdef%2FScreenshot_2024-08-05_20-58-27.png?generation=1722866796040733&alt=media)
+The notebooks are just verbatim copies from my notebook,
+[@rturley](https://www.kaggle.com/rturley) and the Starter Notebook from
+[@ryanholbrook](https://www.kaggle.com/ryanholbrook), not even forked properly
+and interestingly all of them have +2 upvotes for a starter. Certainly not a
+big crime, but I think it affects the quality of Kaggle experience, not so
+much for the authors as for many other decent users. Especially when
+proliferating. Another downside is that it tends to devaluate people's
+authentic effort and contributions.
+I had rised this issue before, long story short, perhaps such a spam issue (or
+the related multiple account issue) could be an interesting topic for a
+competition in itself, coz manually reporting this is a rather unsatisfactory
+solution in my view.
+Good luck by the way!
+
+
+## 2 Comments
+
+
+### [RS Turley](/rturley)
+Thanks for pointing this out. While copying/forking is a nice compliment, it
+is kind of awkward that these are exact copies without adding any unique
+improvements or referencing the source.
+I think part of the reason this happens is that Kaggle's default "Hotness"
+sorting heavily prioritizes recently submitted notebooks. It creates an
+incentive for someone to attract attention by copying older notebooks with
+lots of upvotes that no longer appear near the top and then resubmitting.
+It might be nice if Kaggle were to change their "Hotness" sort to prioritize
+lines of new code not already in the public notebooks.
+
+
+### [Songling](/wolfmedal)
+Each topic and each code notebook has a report, you can react like Kaggle

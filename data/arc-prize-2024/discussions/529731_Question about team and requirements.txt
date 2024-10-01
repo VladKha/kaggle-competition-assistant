@@ -1,0 +1,33 @@
+[Christian Basile](/cbasile2) · Posted a month ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Question about team and requirements
+HI
+I can there be teams of 1? Also, are we require to use an LLM or just highly
+encouraged to? Or perhaps highly discouraged to?Your input will help , thanks!
+Also, do we need to incrementally show progress or just results after final
+deadline?
+thanks
+Christian
+comment
+
+
+## 2 Comments
+
+
+### [Sandy](/sandeepmnair)
+arrow_drop_up1
+  * format_quote
+  * link
+You can compete as an individual or as a team. You are neither encouraged or
+discouraged from using any models. You are just limited by gpu/cpu inference
+time limit and licence restrictions.  
+Submissions after deadline won't be accepted for awarding prize/medals. You
+may submit and see your progress and depending on your c strategy choose the
+allowed number of top performing Submissions to count towards medals/prize.

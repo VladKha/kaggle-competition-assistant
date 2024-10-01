@@ -1,0 +1,128 @@
+[Adam Logman](/adamlogman) · 514th in this Competition · Posted 3 months ago
+
+
+### Do you think you will survive from upcoming shake up
+For example [M5 Forecasting
+](https://www.kaggle.com/competitions/m5-forecasting-accuracy/leaderboard)
+competition, how we can avoid something like this ?!
+
+
+## 8 Comments
+
+
+### [Ganesh Sharma](/ganeshstemx)
+The shakeup will be huge, I guess. I have tried doing good feature engineering
+and creating good models, and the score only gets worse each time, but with
+reckless feature engineering in which things do not make sense at all, it is
+giving good scores on the public leaderboard.
+
+
+### [Yan Teixeira](/yantxx)
+Pretty sure [@techniquetwice](https://www.kaggle.com/techniquetwice) also got
+his amazing score with "reckless feature engineering" 🤣
+
+
+### [Adam Logman](/adamlogman)
+I agree with you 😂😂, I have couple of weeks wasn’t active and I stopped at
+0.0491 with only tow features, when you do good feature engineering and stuff
+you will get bad result in the LB and when you do bad you will get good score
+in the LB .
+
+
+### [Yan Teixeira](/yantxx)
+I have no idea. I'm actually clueless whether this competition will have a
+huge shake-up or not. I'm just going to focus on building a good model, and
+that's it! I'm not even looking at the leaderboard.
+
+
+### [Adam Logman](/adamlogman)
+Indeed , but what if you built a good model in cv ,and will be bad at the
+private LB
+
+
+### [Vojtěch Ondra](/vojtchondra)
+Well, not much you can do about that.
+
+
+### [MichalKecera](/mkecera)
+[@adamlogman](https://www.kaggle.com/adamlogman) FWIW I think probability of
+having good private LB score is higher with good CV rather than optimising for
+public LB. I can see it in results of our own internal models where we are not
+that much better in public but are very good in private at the moment. We did
+not optimise at all for public data though.  
+Hence I am a bit hesitant to post it as benchmark (in other discussion there
+was a question if we will do it).
+
+
+### [Yan Teixeira](/yantxx)
+[@vojtchondra](https://www.kaggle.com/vojtchondra) Your pessimism is
+intriguing to me. Why do you think this way?
+
+
+### [Yan Teixeira](/yantxx)
+[@mkecera](https://www.kaggle.com/mkecera) I was the one who asked for the
+benchmark. I was thinking about this the last few days, and now I think it's
+not a good idea. It's too much information
+
+
+### [Vojtěch Ondra](/vojtchondra)
+Yeah sorry, on second read my message sound quite pessimistict, but what i Was
+trying to say (really badly) is that I think trusting your cv is quite good
+idea but you cannot really do anything about the shake up if there is any.  
+Hard to predict if there Will be one and hard to know if your LB score is just
+overfitting or generally good model.  
+In my case I consider my LB score just coincidenc and need to put more though
+into it.
+
+
+### [BOOBA](/youneseloiarm)
+Thank you [@mkecera](https://www.kaggle.com/mkecera) for your comment. It made
+me stick with my cross-validation. The current score for my robust model with
+an unseen dataset (~60 days) is between MAPE 0.04 and 0.06. Could you tell me
+if this score meets your expectations for a high score on the private
+leaderboard?
+
+
+### [Ern711](/ern711)
+No idea. I won't put much effort into this competition. My plan is to try out
+some new things that might or might not work. In addition I might test some
+other more common time series approaches. If I manage to try these things, I'm
+more or less satisfied regardless of the outcome.
+
+
+### [tanaka](/tanakasandesuka)
+m5 forecasting accuracy is an interesting example,  
+but in this competitions data, maybe not happens so much shake-up.
+
+
+### [torino](/pnmanh2123)
+Hi [@tanakasandesuka](https://www.kaggle.com/tanakasandesuka)  
+Do you have any basis for this assessment?
+
+
+### [tanaka](/tanakasandesuka)
+I am analyzing warehouse as a base, considering yearly levels, weekly levels,
+and special holiday cases. However, at present, I don't think there will be
+much of a shake-up.
+if you have any assumptions about special shake-ups that might occur, I'd like
+to hear about them.
+
+
+### [torino](/pnmanh2123)
+I received better score on both cv and lb when split and create some model for
+some warehouse, in detail:
+  * 1 model for only Prague_1, 2, 3 and Brno and model 2 for all warehouses, submit file is combined between 4 first warehouses from model 1 and another wh from model 2.
+  * Have less data on Munich and Frankfurt, so each model for each wh may not be well.
+Honestly, with only 123 samples on lb, shake-ups can happen when there are
+some really important dates in private test. However, as the competition lasts
+for another 2 months, we can expect some better solutions to be found.
+
+
+### [tanaka](/tanakasandesuka)
+Analyzing the data, it seems that trends indeed differ by country and
+warehouse, so I think creating custom models like country or warehouse levels,
+as you are currently doing, is a good approach.
+Yes, warehouses with less data might lack stability, but handling such aspects
+is likely a part of this competition, However considering the target months,
+it seems relatively conservative, so I don't think there will be significant
+shakeups. (December and January might be challenging, though.)

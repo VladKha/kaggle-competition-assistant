@@ -1,0 +1,222 @@
+[Khoi Nguyen](/suicaokhoailang) · Posted 4 months ago
+
+
+### Optimal strategy (can LLMs beat binary search?)
+Just a thought experiment. I'm not an expert on this game but from what I
+gathered, it looks like the optimal strategy when you have a finite pool of
+possible answers, assuming the correct answer is completely random, is to
+attempt to divide the remaining pool by half with each of your question.  
+Now in order to get a near perfect split while being sure that the answer
+agent did not hallucinate the result, a rule based approach like this is the
+best:
+  * Ask: Is the answer in this list <answer pool>, if answer is no, fallback to freestyle mode and pray to LLM god.
+If answer is yes:
+  * Ask: Is the answer in this list <insert half of the remaining answer pool>
+  * Get a yes/no answer, this is guaranteed to be correct **if** everyone complies and use a specific asking syntax.
+  * Repeat from step 2 until there is only one answer left.
+Looking at the `keywords.py` file, we can definitely crawl a large pool of
+possible countries, cities and landmarks for the private test. (if the
+landmark is too obscure for crawling I doubt the LLMs have enough information
+about it to guess anyway)
+What edge do LLMs offer over this approach? I mean if the answer was chosen by
+a known LLM then it's prior knowledge that we can exploit, but when its
+completely random?
+citation that Gemini gave me:
+<https://www.cns.nyu.edu/~reuben/blog/20-questions-info-theory/>
+Note: Even when if the answer pool is non-crawlable or quasi-infinite (all
+possible English words), this is still a strong approach, just ask for stuff
+like: Is the first character of that word in this list […] or something.
+
+
+## 10 Comments
+
+
+### [Chris Deotte](/cdeotte)
+I think the insightful idea here is:
+> Get a yes/no answer, this is guaranteed to be correct if everyone complies
+> and use a specific asking syntax.
+I think it is common knowledge that the best approach in 20 questions is to
+bisect the remaining choices (into two equal yes/no halves). The difficulty in
+this competition is that we cannot trust the Answerer to have given the
+correct "yes" or "no". Only 1 wrong answer will ruin a binary search.
+Therefore the success of Agent Alpha is because it adopts "a specific asking
+syntax" and the "yes/no answer is guaranteed to be correct".
+(Without using Agent Alpha, then the Guesser needs to include the possibility
+of incorrect answers from the Answerer in their search. For example, after 10
+yes/no questions our Guesser selects a word from our word pool which satisfies
+7 or more of the answers, i.e. allowing for 30% mistakes from Answerer).
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+Yeah it was kind of a gamble whether that convergence would eventually happen.
+I'm really surprised that people chose agent-alpha syntax since the notebook
+itself doesn't look very popular (I did not follow this competition closely).
+
+
+### [Chris Deotte](/cdeotte)
+[@suicaokhoailang](https://www.kaggle.com/suicaokhoailang) An interesting
+phenomena occurred.
+Only 33 teams out of 835 used Loh-Maa's Agent Alpha notebook
+[here](https://www.kaggle.com/code/lohmaa/llm20-agent-alpha) (i.e. initiate
+and accept the handshake). That is only 4%. So I think you are right that
+critical mass would not have been achieved to affect Private LB.
+However, 287 out of 835 teams (34%) used Kha Vo's notebook
+[here](https://www.kaggle.com/code/khahuras/offline-policy-questioner-agent).
+His notebook accepts the Agent Alpha handshake and acts as Agent Alpha
+Answerer. But his notebook never initiates Agent Alpha handshake nor acts as
+an Agent Alpha Questioner.
+So 287 teams continually helped the 33 teams climb the Private LB into Gold
+while the 287 teams stayed in Silver and Bronze.
+Below is a histogram (on Aug 24th) of the 835 team LB scores. Basically `Full
+Agent Alpha` is Loh-Maa's notebook and `Half Agent Alpha` is Kha Vo's notebook
+and `Pure LLM` is everyone else:
+![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Aug-2024/hist-
+bot.png)
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+That's indeed fascinating. What caused the two modes in the full agent alpha
+team?
+
+
+### [dynamic24](/dynamic24)
+The two modes are probably people who added a new word list to the agent alpha
+code vs people who just used the public code.
+
+
+### [Andrew Tratz](/jademonk)
+I think several of the full alpha agents would still have done well even if
+there were no half agents in the competition (i.e. if Kha Vo hadn't published
+his notebook). 33 full alpha teams give 3.9% of teams using this strategy.
+But, if win rate using the alpha strategy is 80-90%, then that can give an
+individual team an overall ~3.5% win rate boost. My bot can probably win 8%
+using its default LLM strategy paired with a decent answerer, so could
+therefore get close to 12% with a combo strategy, a 50% improvement over its
+base version… a huge gain in the context of this competition. This was my
+logic in deciding to use a combined strategy.
+Also, since pairing is biased towards agents of similar skill this creates a
+positive feedback loop, likely increasing win rate even higher. Having a bunch
+of half alpha agents in the competition amplified this even further.
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+I also added the alpha strategy to my solution for the same reason. I thought
+that high-ranking Kagglers on the leaderboard would be aware of all the public
+information, so the probability of the protocol working would increase as the
+rating goes higher. Additionally, the downside of consuming just one turn is
+minimal. However, I believe that to reach the high-rating range, other
+approaches, such as the Offline Policy, are also necessary, and that the
+outcome was not determined solely by the alpha strategy.
+
+
+### [Andrew Tratz](/jademonk)
+Very prescient. I joined the competition long after your post and overlooked
+it, but it seems you were spot on with your assessment.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+The list of possible words will change after the final submission deadline
+(meaning you won't be able to update your agent with the new list). I would
+strongly advise against any strategies that hard code in the list of possible
+words.
+> Final Evaluation  
+>  At the submission deadline on August 13, 2024, submissions will be locked.
+> From August 13, 2024 to August 27th, 2024 we will continue to run episodes
+> against a new set of unpublished, secret words. At the conclusion of this
+> period, the leaderboard is final.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+This is why I am frustrated with rules. Reality I doubt you can beat with pure
+LLM. Even as human its hard, there are some words which you would never guess
+because of multiple meanings. Watching my logs i see that sometimes my
+Questioneer thinks about word which has multiple meaning, then answerer
+correctly but about different meaning :). I wish we have this competition
+again in the future. There are many ideas how to get better.
+
+
+### [chris](/chris62)
+I had a similar thought. You do only get 2000 characters in your question
+(which means you can't really ask a question like "Is the answer in this
+list", but it does seem like a good approach to have some fixed list of
+possible values and do some kind of binary search.
+2^20 = 1,048,576
+So if you hit every split exactly 50% then you could go through a list of ~1M
+things
+If you use that approach though, you'd better hope that the thing is in your
+list! So it might be tricky if we're not given more information about the
+types of words in the private set.
+EDIT: oh, I guess you have to use one guess to actually guess the word, right?
+So in that case you only get 2^19 = 524,288 max words.
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+If no information are given about the words in the private set is it even
+possible to guess it? If the binary search method works perfectly like you
+said we can only narrow the search space down 2^19 times, anything beyond that
+is pure luck based.
+
+
+### [chris](/chris62)
+There are ~90,000 nouns in english, but presumably they wouldn't use that full
+list but just pull from the top N most common.
+There are far more individual places and people, but again, I would presume
+they would only pull the top N most famous of each.
+So to solve the problem this way, the trick may just be where you do a cutoff.
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+Yeah top N most popular things is a fine assumption, so it's a risk vs reward
+thing in the private set when you either want to guess things faster or have
+higher chance for a successful guess and who have the N closest to the hosts'
+wins?
+
+
+### [G John Rao](/jaejohn)
+"Ask: Is the answer in this list , if answer is no, fallback to freestyle mode
+and pray to LLM god."
+I don't think this is exactly what this competition is about.
+From the overview:
+> This competition will evaluate LLMs on key skills like deductive reasoning,
+> efficient information gathering through targeted questioning, and
+> collaboration between paired agents. It also presents a constrained setting
+> requiring creativity and strategy with a limited number of guesses. Success
+> will demonstrate LLMs' capacity for not just answering questions, but also
+> asking insightful questions, performing logical inference, and quickly
+> narrowing down possibilities.
+The `keywords.py` contains 3 categories: **country** , **city** , **landmark**
+I don't think the categories are limited to those 3, if that's the case, the
+competition is no fun.
+The starter notebook has a system prompt:
+`system_prompt = "You are an AI assistant designed to play the 20 Questions
+game. In this game, the Answerer thinks of a keyword and responds to yes-or-no
+questions by the Questioner. The keyword is a specific person, place, or
+thing."`
+For person and place one can make a list, I don't think it's worth it to make
+a list for "thing". Because a "thing" can be _anything_ really. It can be a
+noun, a concept, an object, an idea, a feeling, or even an abstract entity. I
+think that's where the fun is, and that's where the LLMs come into play.
+"What edge do LLMs offer over this approach? I mean if the answer was chosen
+by a known LLM then it's prior knowledge that we can exploit, but when its
+completely random?"
+I think the secret word has to be random. And all the participants work it to
+eliminate the randomness with each question.
+But my only question remains is: What if the opponent answerer straight up
+denies and lies or in someway lacks understanding of the questioner LLM? Or
+starts hallucinating?
+If the answerer LLM is from the hosts, it would have been equal grounds for
+all questioner LLMs. If not, the power is shifted a lot towards the answerer
+LLM.
+Maybe we will have more clarity later on
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+I mean "specific person, place, or thing" may as well mean "any arbitrary
+thing", you will need some prior knowledge to narrow it down somehow.
+
+
+### [G John Rao](/jaejohn)
+And we do that by crafting our first question. After we get answer to our
+first question, the secret won't be as arbitrary as it began with.

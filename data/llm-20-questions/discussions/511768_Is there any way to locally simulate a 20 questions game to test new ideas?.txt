@@ -1,0 +1,23 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+### Is there any way to locally simulate a 20 questions game to test new
+ideas?
+I just wanted to know if I could locally run model because I was having too
+many bugs with an agent and wanted to test new ideas locally.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F4f7c546500caf8c2edc7098e4cc86ab1%2FScreenshot%20from%202024-06-11%2023-09-01.png?generation=1718161801309335&alt=media)
+
+
+## 2 Comments
+
+
+### [RS Turley](/rturley)
+Yes. Try this: <https://www.kaggle.com/code/rturley/run-debug-
+llm-20-questions-in-a-notebook>
+
+
+### [loh-maa](/lohmaa)
+Errors on submission may result from other causes, I too struggle with
+submissions, even though notebooks work perfectly and the evaluation on
+submission is initially successful, they fail during the self-play and there
+are not many clues to figure out.

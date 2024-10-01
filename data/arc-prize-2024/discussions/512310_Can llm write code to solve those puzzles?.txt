@@ -1,0 +1,24 @@
+[VolodymyrBilyachat](/vovikdrg) · Posted 4 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Can llm write code to solve those puzzles?
+I cant find anywhere in a rules. Is it allowed for llm to generate code and
+using code produce response for each puzzle?
+comment
+
+
+## 1 Comment
+
+
+### [steubk](/steubk)
+arrow_drop_up1
+  * format_quote
+  * link
+Yes of course. Here a template provided by host
+<https://www.kaggle.com/code/hansuelijud/template-llama-3-8b-arc-
+prize-2024-inference> that use a fine tuned version of Llama 3 8b.

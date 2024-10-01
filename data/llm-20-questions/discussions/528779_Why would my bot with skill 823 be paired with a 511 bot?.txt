@@ -1,0 +1,79 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 15 days ago
+
+### Why would my bot with skill 823 be paired with a 511 bot?
+It seems that in this competition, only bots with similar skills are paired
+and face another random pair. And this is of course observed on many
+submissions (check top ones). But it seems this is not the case for everyone?
+  * I am shocked to see that my 823 bot is paired with a 511 bot, leading to an obvious defeat or draw. This is a 312 difference in skill.
+  * Does anyone else experience this?
+
+
+## 6 Comments
+
+
+### [loh-maa](/lohmaa)
+The chart is showing agent's score gain vs its score difference with its
+partner before the match, i.e. `my_score - my_partner_score`. The correlation
+is slightly negative `-0.070`, so it means it's slightly better to be paired
+with a higher-score agent.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F07beb4df96af365cff643b714f205b40%2Fscore_gain_vs_partner.png?generation=1723960564905249&alt=media)
+
+
+### [JK-Piece](/jeannkouagou)
+Good analysis. I was expecting an overall negative reward when paired with low
+rated agents
+
+
+### [gguillard](/gguillard)
+I hate to share [my TrueSkill
+notebook](https://www.kaggle.com/code/gguillard/llm-20-questions-trueskill-
+simulator) again and again, but there's a small section titled "Team Matching"
+in which I very briefly started to explore this, you could expand the
+exploration.
+> I am shocked to see that my 823 bot is paired with a 511 bot, leading to an
+> obvious defeat or draw. This is a 312 difference in skill.
+The coin has two sides. My two bots lost a game after a few draws and are now
+stuck at 466 and 480. One lost as an answerer, and the second had a lucky
+opponent :  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2708023%2F94a40e7ca0130eac93d6785fad417407%2Freplay.png?generation=1723883121243456&alt=media)
+Therefore the lost games say nothing about their skills. They'd have zero
+chance to recover if they'd encounter only bots in the same range. (Now I
+guess they've only _almost_ zero chance…)
+
+
+### [torino](/pnmanh2123)
+It's completely normal.
+
+
+### [JK-Piece](/jeannkouagou)
+Ooh, I just saw that your 900 skill bot was paired with a 500 one as well
+
+
+### [JK-Piece](/jeannkouagou)
+But I still wonder if it applies to everyone. It seems that once you are at
+the very top, then you are safe
+
+
+### [mxmm2123](/mxmm2123)
+It applies to everyone, of course we can't see all the players to confirm
+that, luckier bots will survive. Being at the top might be safer, but at the
+same time, the bonus points for each win will be less, and facing stronger
+opponent pairs, bots with lower scores have a chance.
+
+
+### [torino](/pnmanh2123)
+Argee, but for now we still need to wait for the old keywords to be deleted
+and the rankings to be reset.
+
+
+### [JK-Piece](/jeannkouagou)
+Hopefully this happens. We can't be sure. I remember
+[@bovard](https://www.kaggle.com/bovard) insisted that the new keywords would
+come from the same distribution as the public keywords, and didn't want to be
+very specific then. Technically, this is the case, he kept his word.
+
+
+### [torino](/pnmanh2123)
+If so it would be a huge disappointment(at least for me).

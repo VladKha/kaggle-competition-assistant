@@ -1,0 +1,64 @@
+[Barirah Zainal Abidin](/barirahzainal) · 527th in this Competition · Posted a
+month ago
+
+
+### help me ! submission failed !
+hi, experts ! help me to fix my submission code . i got mape score 0.061 but
+when i submit it failed . here my notebook -
+<https://www.kaggle.com/code/barirahzainal/my-project-rohlik-orders-h2o>
+
+
+## 4 Comments
+
+
+### [Krupal Patel](/krupalpatel07)
+submission = pd.DataFrame({'id': test.as_data_frame().index, 'orders':
+preds_test_df['predict']})  
+submission.to_csv('submission.csv', index=False)
+Try This,  
+sample['orders']=y_pred  
+sample.to_csv('submission.csv',index = False)
+
+
+### [Barirah Zainal Abidin](/barirahzainal)
+i will try soon . tq sir 👍
+
+
+### [AC](/ahsuna123)
+Hey! [@barirahzainal](https://www.kaggle.com/barirahzainal)  
+I just looked into your submission.csv file. The id column values are not
+appropriate. They are index values if I am interpreting correctly (starting
+from 0). But, the submission csv needs to have ids as column values.
+
+
+### [AC](/ahsuna123)
+This line from your notebook needs to be fixed:
+> # Create submission file
+>
+> submission = pd.DataFrame({'id': test.as_data_frame().index, 'orders':
+> preds_test_df['predict']})
+
+
+### [Barirah Zainal Abidin](/barirahzainal)
+okay sir thank you ! 👍
+
+
+### [Barirah Zainal Abidin](/barirahzainal)
+hi sir, i have questions, i'm using these code # Predict on the test set  
+y_pred = model.predict(X_test) but submission is failed again . i got 0.05
+score . these time i'm not using h2o .
+# Create a submission DataFrame
+submission_df = sample_submission_df.copy()  
+submission_df['predicted_orders'] = y_pred . so how to fix it?
+
+
+### [AC](/ahsuna123)
+Hey! So sorry for the late reply!
+[@barirahzainal](https://www.kaggle.com/barirahzainal)  
+I see you are using
+> submission_df['predicted_orders'] = y_pred
+**"predicted_orders"** column here, but the submission needs to have
+**"predict"** column. Replace the predicted_orders to predict and check if
+it's working. Also, it'd be helpful if you can post a screenshot of the
+structure of your submission csv file to figure out, if the cause of problem
+is the order of columns.

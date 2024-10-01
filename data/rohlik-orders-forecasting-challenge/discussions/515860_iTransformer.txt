@@ -1,0 +1,29 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 3 months ago
+
+
+### iTransformer
+This is a model I saw during a recent competition, and it is a model from the
+latest paper by Tsinghua University.It is said that it can achieve state-of-
+the-art on many datasets.
+github link:<https://github.com/thuml/iTransformer>
+arxiv:<https://arxiv.org/abs/2310.06625>
+I tried using this model in the Kaggle beginner competition and achieved a
+relatively good result:
+<https://www.kaggle.com/code/yunsuxiaozi/store-sales-transformer>
+
+
+## 3 Comments
+
+
+### [LH](/leonhardhochfilzer)
+Thanks for sharing, I would be curious to see if such models can be effective
+in this context. I'm afraid that the small training set might be slightly too
+limited for such complex models, but I would be gladly proven wrong :)
+
+
+### [Krupal Patel](/krupalpatel07)
+Thanks for sharing such interesting Data set
+
+
+### [Stas Kolchin](/mordechaichick)
+thanks for sharing

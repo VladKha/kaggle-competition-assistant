@@ -1,0 +1,62 @@
+[sheriffff](/sheriffff) · Posted 2 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Saturation score 26?
+Why are they soooo many competitors in leaderboard with score 26, but then
+suddenly socre goes down to 18? Where are the 25s, 24s…? And the 27s?
+It is a strange distribution, even if everyone is using a similar trick.
+Do all of them solve correctly the same 26 problems and fail on the remaining
+74?
+Thanks
+comment
+
+
+## 4 Comments
+
+
+### [rxe](/albartrose)
+arrow_drop_up8
+  * format_quote
+  * link
+This is the second run of the competition. Last time the competitions top 10
+(or so) solutions were made available publicly.  
+See more here: <https://www.kaggle.com/competitions/arc-
+prize-2024/discussion/511728>.
+All the 18% you are see are all running Icecuber's winning code. (there might
+be some exceptions to this, but it is pretty likely they are running
+Icecuber's code).
+Likewise, the 26% is an ensemble of a small subset of the top 10 solutions,
+including Icecuber's code. It also seems to be carefully curated as I've tried
+to improve it by adding others to ensemble, but to no avail.
+The two above are publicly available notebooks - so there is no effort to
+submit these. For me it was instant regret, as I know that I have a mountain
+to climb if I can ever improve upon on it. My own 5% solution is completely
+subsumed by the 26%.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for the detailed breakdown, rxe. There's a lot of folks with single-
+digit scores. They deserve some kind of "honorable mention" nod! They (you)
+toughed it out - not at all a trivial task. Hmmm… Consider yourselves
+"honorably mentioned." That includes zero (a single digit) with a handful of
+submissions. Keep trying!
+On a slightly different note, does anyone know if the correct test private
+input and output for ARC 2020 can be found? I know Francois tries to be
+consistent and random about these things (so it shouldn't matter), but I am
+still curious what the questions and "correct" answers were, back then.
+
+
+### [Luca Bottero](/lucabottero)
+arrow_drop_up2
+  * format_quote
+  * link
+26% is the baseline score, using the solution to ARC 2020

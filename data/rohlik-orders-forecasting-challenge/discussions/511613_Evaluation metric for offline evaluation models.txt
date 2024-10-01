@@ -1,0 +1,43 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 3 months ago
+
+
+### Evaluation metric for offline evaluation models
+This is an evaluation metric I designed to ensure the model is as stable as
+possible, but the specific content is still the original evaluation metric of
+the competition.
+I first take out a portion of the training data that is the same size as the
+test data and closest to the test data (about 400) as the validation data
+according to time, and use the remaining data as the training data.
+My offline evaluation of the model is partly based on cross validation of the
+training data, which is named 'oof', and partly on the model's score validity
+on the validation set,which is named 'valid'.
+𝑚𝑒𝑡𝑟𝑖𝑐=𝑜𝑜𝑓+𝑣𝑎𝑙𝑖𝑑2+𝑎𝑏𝑠(𝑜𝑜𝑓+𝑚𝑎𝑟𝑔𝑖𝑛−𝑣𝑎𝑙𝑖𝑑)metric=oof+valid2+abs(oof+margin−valid)
+The first half of this formula requires that the (oof+valid) values be as
+small as possible, while the second half requires that the oof and valid
+values be as close as possible, ensuring that both values are as small as
+possible.Due to the inevitable data leakage in cross validation, we hope that
+the value of oof can be slightly lower than valid, so we have introduced
+margin, and the specific value can be customized.
+I use this metric offline using optuna to find suitable parameters, and when I
+submit it, I train the model with all the training data to achieve the best
+results.
+
+
+## 3 Comments
+
+
+### [Yan Teixeira](/yantxx)
+please don't delete your posts! They have useful discussions.
+
+
+### [dib](/diegoiglesias)
+Nice idea! thanks for sharing. If I understood it correctly, for this specific
+competition where you have to minimize the metric shouldn't you change the
+second element to `abs(valid - margin - oof)`? And furthermore, for the
+optimization process with optuna, could not the `margin` concept be dropped as
+it is not relevant?
+
+
+### [Abhijit89Kumar](/abhijit89kumar)
+Damn thats very smart!!  
+How in-line are these scores to the PublicLB scores??

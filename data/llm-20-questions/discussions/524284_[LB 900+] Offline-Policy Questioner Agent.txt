@@ -1,0 +1,258 @@
+[Kha Vo](/khahuras) · 13th in this Competition · Posted a month ago
+
+
+### [LB 900+] Offline-Policy Questioner Agent
+EDIT: new version updated (version 4, fixed some bugs, works better).
+Hi all!
+I would like to share (part of) my approach to this competition, which will
+work in both public and private LB.  
+I named it as "offline-policy-questioner agent".
+You can find the notebook [here](https://www.kaggle.com/code/khahuras/offline-
+policy-questioner-agent).
+The idea is that public open-weight LLMs are not so skillful in 20 Questions
+game. Asking broad questions and narrowing down gradually is the only way to
+find out the secret keyword, but many LLMs seem not to be great in that area.
+In my approach, we will prepare an offline dataset of hundreds of possible
+questions and answers to every question-keyword pair. Then we will try to
+follow the policy of asking based on this offline dataset.
+The advantages of offline-policy approach are: 1) it can partly overcome the
+issue of LLM not being able to play the game properly, 2) it can resolve the
+issue of word-limit in asking questions, and 3) it can replace the LLM's
+questioning responsibility, which is the hardest part in [questioning,
+answering, guessing].
+Another good point is that you can submit it right away, as it can work in
+private leaderboard without no further changes.
+You can see an example episode below where this bot excellently correctly
+guessed the keyword in 10 moves.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1829450%2Fd9c51f05c4df55dee4a0e58624bf5fa9%2Fkhavo_episode_example.gif?generation=1722868290679729&alt=media)
+The successful rate of this bot is about 10%, which means you will win 1 game
+in about 10 games played! This is considered a high percentage given the
+difficulty of the game.
+In my own version of this bot, I have many more features that I want for my
+own. My version can reach >900 points on the LB recently (but it got
+deactivated when I submitted some new bots).
+A few possible improvements is shown in the last section of the notebook.
+Enjoy and please upvote this topic as well as the notebook if you find it
+useful! :-)
+
+
+## 20 Comments
+
+
+### [zxf](/saedghgdg)
+maybe something wrong with my code.this isn't work for me.😖
+
+
+### [mygdk11](/mygdk11)
+hh, it's not good.
+
+
+### [Neuron Engineer](/ratthachat)
+Apology for multiple posting (also in the notebook), but it is only 1.5days, I
+would love to make sure you get the comment:
+[@khahuras](https://www.kaggle.com/khahuras) again please correct me if I am
+wrong but
+    
+    
+    if 'start with letter' in q or \
+        'begin with letter' in q or \
+        'first letter' in q \
+        :
+        letters = [q.split('letter')[-1].strip(' ')[0]]
+    
+    
+    content_copy
+May not work properly e.g.
+`q="does the word begin with letter a, b, c, d, e, f, g, h, i, j, k, l, or
+m?"`
+it will return `['a']` instead of the full list.
+These two lines fix the problem (return the full list).
+    
+    
+    letters = q.split('letter')[-1].strip().split(',')
+    letters = [l.strip() for l in letters]
+    
+    
+    content_copy
+Hope it is not too late!
+
+
+### [Kha Vo](/khahuras)
+Yes you’re right
+
+
+### [Kha Vo](/khahuras)
+EDIT: version 4 updated, works better!
+
+
+### [Kha Vo](/khahuras)
+EDIT: new version updated (version 3), fixed some bugs, works better.
+
+
+### [yukky_maru](/yukkymaru)
+Thank you for the wonderful notebook! When I try to use llama3.1 with vllm, I
+encounter the following error. The model I used is **solidrust/Meta-
+Llama-3.1-8B-Instruct-abliterated-AWQ**. If you are familiar with how to
+address this issue, could you please share the solution?
+    
+    
+    [rank0]: Traceback (most recent call last):
+    [rank0]:   File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    [rank0]:     return _run_code(code, main_globals, None,
+    [rank0]:   File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    [rank0]:     exec(code, run_globals)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/entrypoints/openai/api_server.py", line 168, in <module>
+    [rank0]:     engine = AsyncLLMEngine.from_engine_args(
+    [rank0]:   File "/tmp/offline/srvlib/vllm/engine/async_llm_engine.py", line 366, in from_engine_args
+    [rank0]:     engine = cls(
+    [rank0]:   File "/tmp/offline/srvlib/vllm/engine/async_llm_engine.py", line 324, in __init__
+    [rank0]:     self.engine = self._init_engine(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/engine/async_llm_engine.py", line 442, in _init_engine
+    [rank0]:     return engine_class(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/engine/llm_engine.py", line 172, in __init__
+    [rank0]:     self._initialize_kv_caches()
+    [rank0]:   File "/tmp/offline/srvlib/vllm/engine/llm_engine.py", line 249, in _initialize_kv_caches
+    [rank0]:     self.model_executor.determine_num_available_blocks())
+    [rank0]:   File "/tmp/offline/srvlib/vllm/executor/gpu_executor.py", line 106, in determine_num_available_blocks
+    [rank0]:     return self.driver_worker.determine_num_available_blocks()
+    [rank0]:   File "/tmp/offline/srvlib/torch/utils/_contextlib.py", line 115, in decorate_context
+    [rank0]:     return func(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/worker/worker.py", line 139, in determine_num_available_blocks
+    [rank0]:     self.model_runner.profile_run()
+    [rank0]:   File "/tmp/offline/srvlib/torch/utils/_contextlib.py", line 115, in decorate_context
+    [rank0]:     return func(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/worker/model_runner.py", line 888, in profile_run
+    [rank0]:     self.execute_model(seqs, kv_caches)
+    [rank0]:   File "/tmp/offline/srvlib/torch/utils/_contextlib.py", line 115, in decorate_context
+    [rank0]:     return func(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/worker/model_runner.py", line 808, in execute_model
+    [rank0]:     hidden_states = model_executable(**execute_model_kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    [rank0]:     return self._call_impl(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1541, in _call_impl
+    [rank0]:     return forward_call(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/model_executor/models/llama.py", line 364, in forward
+    [rank0]:     hidden_states = self.model(input_ids, positions, kv_caches,
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    [rank0]:     return self._call_impl(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1541, in _call_impl
+    [rank0]:     return forward_call(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/model_executor/models/llama.py", line 291, in forward
+    [rank0]:     hidden_states, residual = layer(
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    [rank0]:     return self._call_impl(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1541, in _call_impl
+    [rank0]:     return forward_call(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/model_executor/models/llama.py", line 233, in forward
+    [rank0]:     hidden_states = self.self_attn(
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    [rank0]:     return self._call_impl(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1541, in _call_impl
+    [rank0]:     return forward_call(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/model_executor/models/llama.py", line 167, in forward
+    [rank0]:     attn_output = self.attn(q, k, v, kv_cache, attn_metadata,
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    [rank0]:     return self._call_impl(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/torch/nn/modules/module.py", line 1541, in _call_impl
+    [rank0]:     return forward_call(*args, **kwargs)
+    [rank0]:   File "/tmp/offline/srvlib/vllm/attention/layer.py", line 48, in forward
+    [rank0]:     return self.impl.forward(query, key, value, kv_cache, attn_metadata,
+    [rank0]:   File "/tmp/offline/srvlib/vllm/attention/backends/xformers.py", line 227, in forward
+    [rank0]:     out = self._run_memory_efficient_xformers_forward(
+    [rank0]:   File "/tmp/offline/srvlib/vllm/attention/backends/xformers.py", line 330, in _run_memory_efficient_xformers_forward
+    [rank0]:     out = xops.memory_efficient_attention_forward(
+    [rank0]:   File "/tmp/offline/srvlib/xformers/ops/fmha/__init__.py", line 296, in memory_efficient_attention_forward
+    [rank0]:     return _memory_efficient_attention_forward(
+    [rank0]:   File "/tmp/offline/srvlib/xformers/ops/fmha/__init__.py", line 407, in _memory_efficient_attention_forward
+    [rank0]:     out, *_ = op.apply(inp, needs_gradient=False)
+    [rank0]:   File "/tmp/offline/srvlib/xformers/ops/fmha/cutlass.py", line 243, in apply
+    [rank0]:     cls.apply_bmhk(
+    [rank0]:   File "/tmp/offline/srvlib/xformers/ops/fmha/cutlass.py", line 266, in apply_bmhk
+    [rank0]:     out, lse, rng_seed, rng_offset, _, _ = cls.OPERATOR(
+    [rank0]:   File "/tmp/offline/srvlib/torch/_ops.py", line 854, in __call__
+    [rank0]:     return self_._op(*args, **(kwargs or {}))
+    [rank0]: torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 
+    
+    
+    content_copy
+
+
+### [(^-^)](/haimofang)
+same issue here! I think the model is too large to be loaded onto GPU. But it
+appears weird to me that we don't have similar issue for llama 3 instruct
+under solidrust. Anyone any idea?
+
+
+### [filtered](/huanligong)
+I am also using this model, but instead of this issue I encountered
+`Exception: process did not open port 9999 within 60 seconds.` when I run the
+vLLM server using subprocess. Can you share at which step you encountered this
+issue?
+
+
+### [(^-^)](/haimofang)
+turn on the debug statement and you'll see why. If you're firectly loading the
+full model then it might cause gpu OOM issue so your porting process get stuck
+
+
+### [KKY](/evilpsycho42)
+Great post! I wonder why you choose the minimum balanced word as the offline
+guess, and just delete them when refine dataframe?
+
+
+### [Kha Vo](/khahuras)
+Because I want to eliminate the cases that are not common as early as possible
+to minimize long term return
+
+
+### [Chris Deotte](/cdeotte)
+This is a great solution. This is the same idea that I want to try but I have
+been busy in LMSYS chatbot comp so I haven't had time to code a new solution
+yet. Additionally we can use models like GPT-4 and Llama3.1-405B to generate
+questions for us based on the current keyword list (which will be similar to
+the final keyword list).
+
+
+### [Songling](/wolfmedal)
+Thank you for sharing your notebook. It is a good solution, but I suggest you
+don’t share it before the end of the competition.
+
+
+### [Yuang Wu](/yuangwu)
+Thank you for your notebook, I am also trying this method and try to generate
+some more questions. I wonder how do you evaluate the quality of the question
+set?
+
+
+### [jameshu8](/jameshu8)
+Brilliant!
+
+
+### [Rinku Sahu](/rinkusahu1)
+Which LLM model did you use for fine tuning. I tried to finetune llama3.1 8b
+with qlora, but I am getting Out of memory error. Event with r=1 and GPU t4 x2
+
+
+### [Kha Vo](/khahuras)
+I used the as-is version of LLAMA3 in my notebook, no finetuning needed
+
+
+### [Rinku Sahu](/rinkusahu1)
+Thank you for the clarification.
+
+
+### [Sadhaklal](/sambitmukherjee)
+5% in self-play mode or 5% in the competition?
+
+
+### [Kha Vo](/khahuras)
+It’s 10% not 5% sorry. In the competition on unseen words
+
+
+### [Sadhaklal](/sambitmukherjee)
+That’s pretty good, given the noisy environment.
+
+
+### [Bo Peng](/bopengiowa)
+Thanks for the share.

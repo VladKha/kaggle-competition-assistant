@@ -1,0 +1,55 @@
+[c-number](/cnumber) · 1st in this Competition · Posted 2 months ago
+
+
+### Let's share LLM models for making questions and answering!
+What models do you use?
+I use google/gemma-7b-it and meta-llama/Meta-Llama-3-8B-Instruct, both 8-bit
+quantized.
+
+
+## 8 Comments
+
+
+### [Chris Deotte](/cdeotte)
+The basic 5 models are Llama3, Mistral, Gemma2, Phi3, Qwen2. And two popular
+upgrades are Smaug and Bagel. All have versions around 7B parameter size which
+work well in this competition.
+
+
+### [Iqbal Singh](/isingh2910)
+Phi3 Mini. No fine tuning!
+
+
+### [TuMinhDang](/darkswordmg)
+i use gemma-9b-it fineturning
+
+
+### [OminousDude](/max1mum)
+I also use llama meta-llama/Meta-Llama-3-8B-Instruct as it has a very high IF-
+Eval score. But I chose 4-bit quantization as it works faster and lets me make
+my prompts and strategy more lengthy without having to worry about my agent
+timing out. Also, if you do not intend to keep it a secret how do you use both
+models is it chosen based on the category of the keyword or what?
+
+
+### [c-number](/cnumber)
+I only submit one of the two models for now, but am testing both of them.
+
+
+### [OminousDude](/max1mum)
+Oh ok! Nice Gemma 2 is pretty promising and has a very good strategy for
+locations. Might use it later when the actually benchmarks and a working AWQ
+version come out
+
+
+### [Kasahara](/kasafumi)
+I experimented with llama3-8b-it, gemma2-9b-it, gemma-7b-it, and mistral-7b.
+In my experiments, llama3-8b-it performed the best.
+
+
+### [c-number](/cnumber)
+Same impression here.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Phi3 mini here.

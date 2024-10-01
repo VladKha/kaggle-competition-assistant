@@ -1,0 +1,20 @@
+[Mahmoud Elshahed](/letemoin) · 153rd in this Competition · Posted 20 days ago
+
+### Evaluations Scoring Notes
+This simple discussion to highlight if there any notes on evaluation,  
+i know we can't make major changes at the end line here,  
+but i have some concerns, need to highlight as mentioned earlier in previous
+discussion and competition organizer has changed the leaderboard rule and
+reset it in evaluation period.
+**\- Concern 1:**
+  * Giving Score and deducting scores, some game are all blown, and you see some players received points, one game i have seen, only 1 Question for 20 Round and get +3 or +7 !
+**\- Concern 2:**
+  * Games of (Asker and Guesser) to (Answerer) Ratio, Hope you can adjust ratio to have equal games, because you can have good coding or LLM but you are not asking, just answering.
+**\- Concern 3:**
+  * It's Actually Humble Request, No time is remain to implement, but i hope you can create an Answerer Agent, play half of our evaluation round, to also set an even bar and opportunity for all contester.
+* * *
+  * If any one also has notes about scoring in current games, it will be good to share before last minute.
+Thanks
+
+
+## 0 Comments

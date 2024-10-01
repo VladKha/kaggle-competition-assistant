@@ -1,0 +1,36 @@
+[Akhilesh Patki](/akhileshpatki) · 803rd in this Competition · Posted 3 months
+
+### Submission Error
+I am naive to the kaggle competitions. Can someone please tell me why the
+submission console is showing me the error that it found 2 columns when the
+expected columns are 2 as well. I am attaching the screenshot of my csv as
+well for the reference. Thanks in advance for
+help:}![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F16582070%2Ff9d3e1f8bb3d1619413b7ba512835086%2FScreenshot%202024-06-21%20at%2011.27.21PM.png?generation=1718992962890210&alt=media)
+
+
+## 5 Comments
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+You need to remove the index while submitting
+[@akhileshpatki](https://www.kaggle.com/akhileshpatki)
+Use submission.to_csv('submission.csv', index = False) and resolve the issue
+
+
+### [Akhilesh Patki](/akhileshpatki)
+Thank You! It worked 💯
+
+
+### [Adam Logman](/adamlogman)
+You have to match your submission csv file shape as SampleSubmission.csv file  
+and features names as well
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+You can refer to the submission code in open source code
+
+
+### [G John Rao](/jaejohn)
+If you can provide the error screenshot, it'll be helpful.

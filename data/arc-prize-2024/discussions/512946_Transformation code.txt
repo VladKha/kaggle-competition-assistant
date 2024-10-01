@@ -1,0 +1,51 @@
+[PerceptualRobots](/perceptualrobots) · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Transformation code
+I am not sure if I am understanding this challenge correctly. Do we need to
+write the code to do the transformations (e.g. resize, crop, move objects etc)
+or does the code exist already somewhere?
+comment
+
+
+## 2 Comments
+
+
+### [Joost Dekker](/joostdekker)
+arrow_drop_up0
+  * format_quote
+  * link
+You need to do it yourself (or use a model that does it). There is some code
+examples made public from the previous competition
+
+
+### [PerceptualRobots](/perceptualrobots)
+arrow_drop_up0
+  * format_quote
+  * link
+> > You need to do it yourself (or use a model that does it). There is some
+> code examples made public from the previous competition
+Thanks. Do you mean this code?  
+<https://www.kaggle.com/code/zulqarnainalipk/starter-using-arc2020/notebook>
+
+
+### [Joost Dekker](/joostdekker)
+arrow_drop_up0
+  * format_quote
+  * link
+> > > You need to do it yourself (or use a model that does it). There is some
+> code examples made public from the previous competition
+>
+> Thanks. Do you mean this code?  
+>  <https://www.kaggle.com/code/zulqarnainalipk/starter-using-
+> arc2020/notebook>
+Yes that would be a good example of a starting place. You could also take a
+look at solutions from 2020 as inspiration
+<https://www.kaggle.com/competitions/abstraction-and-reasoning-
+challenge/leaderboard>

@@ -1,0 +1,44 @@
+[IlyaKamenshchikov](/ikamensh) · Posted 4 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Get .json data into python as 2D np arrays
+Hey all,
+Just wanted to mention a package I've created a few years ago to simplify
+reading and visualizing the data from python:
+<https://github.com/ikamensh/arc-py> .
+It essentially packages the original arc files and few utilities to read them
++ plotting and eval code. See the README on github if interested :) Hope it
+will save a few hours to challenge participants. If API is not what you would
+expect, feel free to create an issue with a proposal (or even a PR).
+Best of luck on new challenge!
+comment
+
+
+## 3 Comments
+
+
+### [IlyaKamenshchikov](/ikamensh)
+arrow_drop_up3
+  * format_quote
+  * link
+Actually found this package which appears to follow same idea but maybe has
+more features: <https://github.com/mxbi/arckit>
+
+
+### [Shubham Singh](/shubhamcodez)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you, this is awesome.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * reply
+Thanks for sharing the resource Ilya

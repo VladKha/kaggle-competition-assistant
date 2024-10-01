@@ -1,0 +1,1073 @@
+[Bovard Doerschuk-Tiberi](/bovard) · Posted 19 days ago
+· Kaggle Staff
+
+
+### Leaderboard reset and new keywords
+Hey all,
+We are working on getting the leaderboard reset and the new keywords updated.
+Once that has happened we will start matches again. Should be in the next 24
+hours.
+Good luck to you all!
+UPDATE: looks like a false start, the wrong word list is currently enabled.
+I'll fix that and restart once again
+
+
+## 59 Comments
+
+
+### [so_so](/shunsukeohashi)
+I was looking through LB and found keyword "ohio" being used. (The game was
+played in the past 5hours.)  
+From my understanding, the HOST announced that the final keyword list will be
+only things and not peoples or places.
+I specifically instructed my LLM not to guess peoples or places keyword, so
+would really want to see only things keyword appearing in the game played
+after our final subs.
+Am I missing something? Looking forward to hearing feedbacks and comments.  
+("ohio" is a state in USA which is a place right?)  
+Thank you.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F7390952%2F2c07edcc83dbd9281ee534233c7573e2%2Fohio.png?generation=1724719434903833&alt=media)
+
+
+### [Kha Vo](/khahuras)
+Just let the man be please… I am tired with his changes already honestly.
+People will never be satisfied, one way or another, and he will never stop
+changing… this competition looks like a mess already. Let it close..
+
+
+### [so_so](/shunsukeohashi)
+Thank you for your comment. Yes, I agree with you that this competition could
+have been done in a better way and we are kind of tired from all the changes
+made. Having said that, knowing the issue and fixing the issue is another
+thing. If the issue is not being noticed by the HOST and participants of this
+competition, I thought the issue needs to be raised so that it can be used to
+make future competition better (or if it is possible, make this competition
+better). I want to be constructive.
+
+
+### [Jonathan Chan](/jonathanchan)
+Totally agreed. Just want this competition to be over ASAP now. This is very
+tiring and the host may be handpicking now. Look forward to the next edition
+for sure though.
+
+
+### [Chris Deotte](/cdeotte)
+[@bovard](https://www.kaggle.com/bovard) I'm not sure that your latest private
+LB reset on Aug 15th removed the duplicate words from private LB keywords. I
+did some analysis. Analyzing all 17k private LB games played between 5am UTC
+Aug 15th thru 5am UTC Aug 18th, we observe that 7.7% (i.e. 139 out of 1798)
+keywords are duplicates of keywords from Public LB. I published analysis
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/529115)
+
+
+### [torino](/pnmanh2123)
+[@bovard](https://www.kaggle.com/bovard) please consider this, 7.7% is too
+much. We still have enough time to start everything over again.
+
+
+### [loh-maa](/lohmaa)
+I don't want to suggest anything particular, but there are also other options
+than a complete restart, and have both the keywords and the ranking algorithm
+fixed.
+
+
+### [torino](/pnmanh2123)
+If don't reset the leaderboard, we need to increase the frequency of matches
+so that the stuck bots have a chance.  
+For the ranking algorithm, I propose to divide the points in match tie by the
+cosine similarity between the final prediction and the true keyword to
+determine the winner.
+
+
+### [Chris Deotte](/cdeotte)
+I have updated my post to include all 23,958 private LB games from Aug 15th
+UTC 5am thru Aug 19th UTC 5am. The statistics are still the same.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+I responded to this here:
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/529115#2965419>
+
+
+### [francesco fiamingo](/francescofiamingo)
+Dear Bovard, there are tens of message that ask to cancel the old set(like you
+said), i think we should figure out how to do or inform about what to do….
+
+
+### [torino](/pnmanh2123)
+I have seen at least 4 wins in keywords in the previous list of fixed bot.
+Clearing old keywords and restarting the game is necessary now. Increasing the
+frequency of playing for agents also needs to be considered for the
+convergence of the leaderboards. We have worked hard for many months for this
+competition, so don't let it go to waste.  
+btw: I see keyword "cave" in this eps
+<https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55743392> Is it readly in category things?
+
+
+### [Kha Vo](/khahuras)
+Well, in a $50k prize Kaggle competition where rules were explicitly said by
+the organizers, and despite so many calls from serious competitors spending 3
+months of efforts on it, you can’t just simply ignore everything and let it
+flow wrongly like this… We all hope for a solution, at least removal of the
+used keywords in the secret private set to comply with what was put by the
+host… let’s make things right together…
+
+
+### [dynamic24](/dynamic24)
+The reuse of keywords from the previous list is a huge issue in terms of the
+outcome of the contest. It will reward bots that have the previous keyword and
+scraped keyword lists hardcoded (bots that would be weeded out otherwise). And
+it will punish people who took Kaggle at their word that previous keywords
+would not be used and built that information into their bot
+(<https://www.kaggle.com/competitions/llm-20-questions/discussion/523198)>.
+Another restart with a cleaned keyword list would be the fairest way to move
+forward.
+
+
+### [Kha Vo](/khahuras)
+[@addisonhoward](https://www.kaggle.com/addisonhoward)
+[@mylesoneill](https://www.kaggle.com/mylesoneill)
+[@bovard](https://www.kaggle.com/bovard) please review our request
+
+
+### [Feida Wei](/feidawei)
+Have the organizers gone completely MIA for the past few days?  
+However, if I am being hopeful I think they are spending lots of time
+rechecking the new private keyword list but I could be wrong. An update from
+the hosts would be nice.
+
+
+### [Chris Deotte](/cdeotte)
+We should do an analysis of which words are being correctly answered now in
+private LB. If the majority of successful games are because of previous public
+LB words then this supports the idea that the duplicated words are making a
+big difference and we need to fix things immediately.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I'm not sure if it would be that simple. Some players could have deployed an
+anti-keyword list, forcing the bot to avoid any keywords used previously in
+the competition. These bots would never have a win as guesser and would be
+excluded from the count.
+
+
+### [Kha Vo](/khahuras)
+A single loss derails one’s bot forever given this very slow schedule and big
+reward at the start. That single loss accounts for plus or minus 137 points
+which is 274 points.
+
+
+### [Kha Vo](/khahuras)
+[@cdeotte](https://www.kaggle.com/cdeotte) great idea! I am writing a notebook
+to analyze the impact from scraped games. Should be available soon in 24
+hours.
+
+
+### [dynamic24](/dynamic24)
+Yes, some bots have a list of "anti-keywords". My bots have a 0% chance for
+previously used keywords. I wouldn't have created an anti-keyword list if
+organizers hadn't repeatedly said that words wouldn't be reused in the test
+set.
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+I also incorporate the same process. Even if it's just a few percent, small
+differences can lead to significant changes. I trust that the host is working
+diligently towards a solution.
+
+
+### [Chris Deotte](/cdeotte)
+I analyzed whether keywords duplicated in private LB and public LB are easier
+to guess. According to a Z-Test for Two Proportions published
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/529115),
+it is statistically significant easier to guess duplicated words.
+
+
+### [francesco fiamingo](/francescofiamingo)
+Dear Bovard, if old keywords still in the set , people using codes linked to
+their identification , will win much easier then teams that used LMM and
+hibrid models, in reality to detect the word is not an easy game from
+infinitive words, i suggest take 24h , clean properly and run again, overall
+is the first time for such competitions, i see normal to refine the
+“competition model”, have a nice day!
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Are you sure you have changed the keywords? I've seen banana in the previous
+"hidden" keywords list.
+[2024-08-15 03.58.14.png](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2959506/21059/2024-08-15  03.58.14.png)
+
+
+### [NIWATORI](/niwatori)
+We also see equivalent words like "modem" in the final evaluation and "Modem"
+in keywords.py.  
+<https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/keywords.py#L1252-L1255>
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F661313%2Fc78f302559a01646ee3afa766df0e31c%2Fimage.png?generation=1723704304190814&alt=media)
+
+
+### [Mahmoud Elshahed](/letemoin)
+smartphone also exist in current evaluation keywords
+
+
+### [Jonathan Chan](/jonathanchan)
+[@bovard](https://www.kaggle.com/bovard): The new wordlist still contains
+keywords from the older list. The current 1st place score is from a game with
+the keyword "smartphone". Would another restart be needed?
+
+
+### [Kha Vo](/khahuras)
+Since [@bovard](https://www.kaggle.com/bovard) confirmed the new list won’t
+contain any used words, a lot of participants coded their solutions to NOT
+predict those old words. I think another restart is compulsory. Then we may
+need to also extend the evaluation period since we lost 2 days already.
+
+
+### [oks](/keisho)
+[@bovard](https://www.kaggle.com/bovard) We've also noticed that "paperweight"
+appeared in the final evaluation, while "Paperweights" was included in the
+previous list of keywords.  
+I suggest applying [compare_words](https://github.com/Kaggle/kaggle-
+environments/blob/367ad4598c76e7440261c5d610519122c094b48c/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L304-L321)
+to remove any duplicate keywords from the previous list.
+
+
+### [yukky_maru](/yukkymaru)
+In the `keywords.py` file, [there is an entry for
+"Plate."](https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/keywords.py)
+However, in my game, the keyword "plate" is currently being used. Is this
+intended behavior? [Even though the game normalizes case
+differences](https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/llm_20_questions.py),
+as well as the ending "s," "es," and "the," does the keywords.py file treat
+"Plate" and "plate" as different entries?
+This is probably not the only case. Although I'm not sure about the exact
+update time for meta-kaggle, once it is updated,By using this excellent
+[public notebook](https://www.kaggle.com/code/waechter/llm-20-questions-games-
+dataset) to create a dataframe, it should be possible to search simply by
+filtering the dataframe based on the creation time(>08-15) and keyword matches
+using [compare_words](https://github.com/Kaggle/kaggle-
+environments/blob/master/kaggle_environments/envs/llm_20_questions/llm_20_questions.py).
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F14340719%2F405b11e8bef7c3d2033661d820b3df32%2F.png?generation=1723734565130200&alt=media)
+
+
+### [JK-Piece](/jeannkouagou)
+[@bovard](https://www.kaggle.com/bovard), is it still a false start as the
+update says? Or are the current games correct?
+
+
+### [loh-maa](/lohmaa)
+The pace of games is a little bit worrying. At this pace, around 6-10 games a
+day, if someone falls into the "pit", they're like.. doomed, coz it takes many
+many games to get out of there even for a good agent…
+Moreover it seems the selection to the matches is quite unbalanced, some
+agents played only 1-2 times so far, some other already 7.
+
+
+### [Mahmoud Elshahed](/letemoin)
+Ratio Of Games  
+Ratio of Answerer vs (Guesser and Asker) Role  
+if possible also "Ratio of single keywords, or more than one word"
+these need to be considered
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+Too much randomness
+
+
+### [Songling](/wolfmedal)
+I feel like it depends on luck.
+
+
+### [Kha Vo](/khahuras)
+Increasing game pace is a must, and I don't think Kaggle have any resource
+issues with it since each team only has 2 bots for now. Maybe the frequency
+algorithm (for instance, determined by "days_since_submit") doesn't exploit
+resource to its full extent.
+
+
+### [yukky_maru](/yukkymaru)
+Hello. I have created a script to detect keywords from games that took place
+after August 15 and match them with those included in `keyword.py` through
+`compare_words`. I would like to share the results with you. Currently, the
+notebook cannot be shared due to the evaluation period, but I can provide it
+later, and I can immediately share it with the organizers if requested. The
+data has been sourced from Meta Kaggle, and currently, it only includes game
+data from 03:48 to 05:20 on August 15. By tomorrow, I expect the complete data
+for August 15 to be added to Meta Kaggle.
+Between 03:48 and 05:20, I have listed the duplicate words found through
+`compare_words` below. In reality, games continued after 05:20 on August 15,
+and I believe there are many more duplicates found through `compare_words`.
+Many users are making various efforts to avoid answering these words, and I
+consider this to be an issue that should be addressed.
+    
+    
+    Matches for 'toilet':
+    Matches for 'storage bin':
+    Matches for 'modem':
+    Matches for 'mural':
+    Matches for 'cutting board':
+    Matches for 'hazelnut':
+    Matches for 'reindeer':
+    Matches for 'scoreboard':
+    Matches for 'brochure':
+    Matches for 'champagne flute':
+    Matches for 'wristband':
+    Matches for 'van':
+    Matches for 'haybale':
+    
+    
+    content_copy
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+[@yukkymaru](https://www.kaggle.com/yukkymaru)  
+Hello! Thank you for your wonderful contribution!
+If you happen to know, could you please share what percentage of the old
+keywords that should have been deleted are included?(e.g. 5% vs. 50% is a big
+difference)
+
+
+### [yukky_maru](/yukkymaru)
+Thank you for the comment! If my script is not mistaken, it should be around
+5%. It seems that Meta Kaggle hasn't been updated yet, so the information is
+from 03:48 to 05:20 on August 15.
+
+
+### [dynamic24](/dynamic24)
+Thank you for your analysis of reused keywords. Considering the rather low
+average win rate, 5% repeated words is really quite a lot. Bots that do a
+binary search on the public keyword list will do rather well when they get a
+reused word and will end up with a fairly good score.
+
+
+### [yukky_maru](/yukkymaru)
+No exact matches were found; all matches were found using compare_words. When
+it was stated that 'keywords from keyword.py would not be used,' was this
+referring to exact matches or matches found by compare_words? If it was the
+latter, then the current behavior is incorrect, and with a few lines of code,
+it can be fixed, so I would appreciate it if you could make that correction.
+
+
+### [loh-maa](/lohmaa)
+It's worrisome the top of the LB has already started to play with their
+neighbors. Only after a couple of games, I think this is waay too soon. The
+selection range should be much wider for much longer for a proper convergence.
+
+
+### [Kha Vo](/khahuras)
+I think that's because Kaggle manually adjusted the magnitude of reward for
+this competition where draws are plenty. It needs to be rolled back to about
+50 points or less, from the first game, otherwise if some bots winning 5 first
+games then they will stay forever on top.
+
+
+### [JK-Piece](/jeannkouagou)
+Really worrying. The pairing with bots of similar performance should only
+happen in the last 2 days for example. If it starts now, many good agents will
+be doomed
+
+
+### [Kha Vo](/khahuras)
+Wrt [@lohmaa](https://www.kaggle.com/lohmaa) 's concern and regarding the
+unbalanced bot picking between the 2 bots, I have the lastest bot picked 10
+times while the other only 2 times. That means the picking algorithm favors
+the more recent submitted bots, which was true for previous simulation
+competition, because there was no LB reset like in this comp.
+Anyone can confirm if seeing the same pattern.
+I think it must be completely random for this picking. Another important thing
+to be adjusted, otherwise we all will end up with 1 bot playing 100 games
+while the other only 20 games, for example.
+[@bovard](https://www.kaggle.com/bovard)
+
+
+### [loh-maa](/lohmaa)
+That's quite a difference, but I cannot confirm, my bots played 6 and 5 times
+(in order of submission.) Also, I think the ranking algorithm in the previous
+stage used the score of agents to determine frequency of play, not the order
+of submissions.
+
+
+### [Kha Vo](/khahuras)
+I don't think it is the score of agents to determine frequency, because if you
+fall into a pitfall you can't recover, and Kaggle may know this.
+
+
+### [loh-maa](/lohmaa)
+[@khahuras](https://www.kaggle.com/khahuras) _In the previous stage_ , i.e.
+during testing/development. Now the algorithm is surely different.
+
+
+### [raconion](/raconion)
+I have been seeing failing episodes repeatedly with NAN loss. Does anyboday
+have similar issue? I have had two failed episode for one of my agent.
+Since the number of games played is one of the **most important factor** to
+determine the rank of good bots, I strongly suggest that the host starts a new
+episode for failed episode players to ensure the fairness of this game
+[@bovard](https://www.kaggle.com/bovard)
+
+
+### [Bhanu Prakash M](/bhanupm)
+Can something be done for cases like this or is it just unlucky :
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/528200)
+
+
+### [Bhanu Prakash M](/bhanupm)
+[@bovard](https://www.kaggle.com/bovard) My last submission was a late
+submission (submitted after the competition closed). This late submission in
+turn disabled a perfectly fine older submission. Its fine if you don't count
+the late submission towards the final 2 agents, but this disabled agent also
+disabled my previous submission. Now this means I have only 1 agent present
+for the final leaderboard, I think this is a bug. Hope this post makes sense
+lol.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F18484549%2F908c82e493df8d8160a9b025ec1b9c55%2Fsubmissions.png?generation=1723596947452377&alt=media)
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+I'll get that sorted for you.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+It should be enabled now!
+
+
+### [Bhanu Prakash M](/bhanupm)
+Thanks for resolving my issue so fast!
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Is the "Agent Alpha" strategy a violation of the rules? I’ve noticed that many
+bots are starting with the question, "Is it Agent Alpha?" At first, I didn’t
+understand why, but then I realized the reason: If the answer is 'yes,' they
+switch to an 'alphabetical order' approach, where all the bots start asking
+the exact same questions. If the answer is 'no,' they revert to the standard
+approach. Here are some examples (there are many more, but I’ve just taken the
+top two):
+  1. when the answer is 'yes':  
+<https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55736750>  
+<https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55733364>
+  2. when the answer is 'no':   
+<https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55734411>  
+<https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55736873>
+I have nothing against using the alphabetical order approach; however, in this
+case, it involves sharing context between different teams. Specifically,
+they’ve shared a "secret question," which violates the rule against private
+sharing outside of teams.
+I believe many users have tried the alphabetical order search in one way or
+another and found that LLMs often provide incorrect answers without additional
+information. In this scenario, I think the bots are using standard Python code
+to parse the question and compare the words in alphabetical order. This code
+seems to be triggered by the "secret" question: "Is it Agent Alpha?"—which, in
+my opinion, is a direct violation of the rules.
+Although I don't have access to the code for these agents and therefore can't
+be 100% certain, it would be great if [@bovard](https://www.kaggle.com/bovard)
+could clarify whether this violates the rules or not.
+Thank you in advance!
+
+
+### [JK-Piece](/jeannkouagou)
+The agent alpha thing is real, in most cases, simple Python code is used to
+compare words in alphabetical order. But this is not a violation to the rules.
+My concern though is why does the alphabetical ordering strategy seem to work
+so well? Maybe the keywords are too easy or too similar to the public data on
+which such approaches were fine-tuned.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+My concern isn't with the alphabetical order approach itself. It's about how
+the agents know when to switch to the simple Python code and start comparing
+words in alphabetical order. Imagine if I programmed my bot to ask questions
+like, "HeyHey, is it 'A'?" and then directly told you and 10 other
+participants, "If you see 'HeyHey,' check the first letter of the keyword." In
+my opinion, this would be a violation because I would have shared information
+outside the Kaggle environment. To me, this case seems similar; it's just that
+instead of 'HeyHey,' there is the question: Is it Agent Alpha?
+
+
+### [loh-maa](/lohmaa)
+[@chernovandrey1998](https://www.kaggle.com/chernovandrey1998) Yes, that's how
+it works ;) The issue you raised has been debated a few times already. Nobody
+could point to any rules that are violated. Have you seen those rules?
+++ The private sharing pertains to private code sharing, not just asking weird
+questions during the game. The "Is it Agent Alpha?" handshake is not private
+at all, it has always been public. But had it been unseen before, then you're
+right -- all this would indicate some collusion.
+++ Funny enough, the original motivation behind the public handshake was to
+neutralize any benefit from secret collusion.
+++ You can take a look at [this
+notebook](https://www.kaggle.com/code/lohmaa/llm20-agent-alpha)
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Yes, I've seen the rule. I think that this approach violates this written
+rule:  
+"No private sharing outside teams  
+Privately sharing code or data outside of teams is not permitted. It's okay to
+share code if made available to all participants on the forums."
+Let me try to explain why I think so:  
+My concern isn't about the code itself. My concern is that additional
+instructions were likely shared outside of the teams—specifically, the logic
+of what to do after asking the question, "Is it Agent Alpha?" I would argue
+that these instructions constitute information, and since any information is
+data, this would violate the rules.
+
+
+### [Benedikt Droste](/benbla)
+The notebook is public available…
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Let me try to explain myself better:
+In terms of logic:  
+I believe that it’s simply not fair and completely changes the competition. I
+could program a bot using 'secret' clue words and then share these words in a
+public environment with instructions like: "If you see this word, do the
+following."
+In terms of rules:
+  1. I have no complaints about the code itself.
+  2. My concern is that data was shared between different teams outside of the Kaggle environment. I’ve explained my reasoning in my previous comment.
+I hope this clarifies my opinion. In any case, I suggest we wait for the
+organizers to provide further guidance.
+
+
+### [loh-maa](/lohmaa)
+[@chernovandrey1998](https://www.kaggle.com/chernovandrey1998) It's strange to
+insist that
+> data was shared between different teams outside of the Kaggle environment
+no it wasn't, this premise is basically not true.
+
+
+### [JK-Piece](/jeannkouagou)
+So, is the alphabetical ordering the winner in this otherwise tough
+competition? I would be disappointed.
+
+
+### [Kha Vo](/khahuras)
+It’s not determining the winner. The winner will be the bot with both alpha
+ability and good LLM when paired with non-alpha answerer.
+
+
+### [JK-Piece](/jeannkouagou)
+I don't think so. Winning several "alpha agent" games and drawing with some
+other teams will make you winner. If Kaggle does nothing about it, only
+"alphabetical ordering question-based agents" will win the competition without
+any other effort.
+
+
+### [JK-Piece](/jeannkouagou)
+But that's ok, it is a valid approach after all. I am just arguing that this
+competition can be summarized as "alphabetical ordering is all you need"
+
+
+### [yukky_maru](/yukkymaru)
+The behavior of LLMs is fundamentally unpredictable. Therefore, to win this
+competition, it’s crucial to closely observe the questions posed by other
+agents and opt not to use LLMs by resorting to hard coding instead. In fact, a
+public notebook that acquired and analyzed all the agents' questions from Meta
+Kaggle won a silver medal. Besides narrowing down using "Does the keyword (in
+lowercase) precede" by "Agent Alpha," other patterns include "Does the keyword
+start with one of the letters?" or "Is the keyword one of the following?"
+Additionally, about 15 other fixed phrases were observed. Responding to these
+phrases with hard coding is naturally a tactic to improve performance.
+Moreover, using fixed phrases yourself may increase accuracy, as there is a
+high possibility that others have also developed countermeasures. Diversity is
+important in competitions, and I found these kinds of strategies to be
+excellent innovations.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+I have nothing against the questions like "Does the keyword (in lowercase)
+precede" by "Agent Alpha," or "Does the keyword start with one of the
+letters?"
+My concern is only about the question: "Is it agent Alpha". This question
+implicitly gives the instruction to use the simple python script to compare
+alphabetical order and the agent understands this instruction based on the
+agreement, which was made outside kaggle environment. Please check my previous
+examples with the secret clue words. I think it explains my logic in a simple
+manner.
+
+
+### [yukky_maru](/yukkymaru)
+I see. I fully understand your point now. First of all, I would like to
+apologize for my previous reply, which was based on a misunderstanding. I
+sincerely apologize, Chernov.
+Indeed, if the response to "Is it agent Alpha?" is "Yes," and the system
+changes its behavior based on that, then if this had been agreed upon
+externally (as in "promised"), it would fall under pre-shared information
+outside of the game. In fact, in the public notebook, this was used as a
+handshake, but whether it goes as far as being "promised" is something I
+cannot judge. Currently, people who have read the agent Alpha public notebook
+are "interpreting it on their own," but given the programming aspect, "their
+interpretations are almost 100% consistent." Whether you view this state of
+"interpreting it on their own" but "with interpretations being almost 100%
+consistent" as "shared information" depends on the organizer. However,
+If the question was "Are you agent Alpha?" instead of "Do you understand the
+order of the alphabet correctly, and when given two keywords, can you always
+arrange them in the correct order?" it would be completely clear, but since
+"agent Alpha" has an externally (in the public notebook) embedded meaning,
+it's in a gray area, and I think it's up to the organizer to decide.If two
+users had made an external agreement, for example, that they would only behave
+differently.
+If two users had made an external agreement, for example, that they would only
+behave differently if the question "Are you a water strider?" was answered
+with "Yes," then this would clearly be a violation. However, in this case, the
+specification where different behavior occurs only when the question "Are you
+agent Alpha?" is answered with "Yes" is being "independently and deliberately
+implemented" by each user on their own accord.
+
+
+### [Dawid Motyka](/dawidmt)
+I understand your perspective. There's surely no problem with the alphabetical
+approach, but agent identification seems not entirely "right". However, it
+seems to be true that there's no rule against this. I think that
+identification of agents should have been addressed by organizers, but to
+forbid it would probably require manual checking of code.
+Using binary search, we can guess perfectly about 500k predefined phrases with
+19 questions. I think that a good dictionary generated for this will cover the
+vast majority of phrases in the hidden set. We don't even need to bother with
+any questions - the answerer could just binary encode 19bit number (the index
+of a predefined dictionary) with yes/no.
+
+
+### [Sadhaklal](/sambitmukherjee)
+I think the Agent Alpha handshake protocol is an interesting idea. Whether
+it's legal or not depends on the answer to the following question:
+Is it ok to exchange information about the identity / type of the answerer? Or
+do all the questions need to be only about the keyword?
+For example, is it ok for the initial question to be: "Are you Llama 3.1"?
+In a human 20 questions game, is it ok to ask a question about the identity of
+the answerer? For example, is it ok to ask "Are you European?" to the
+answerer? -> If the answer is "yes", perhaps it would make sense to ask about
+things which are more commonly found in Europe.
+I don't have a stance on this issue. It's for the competition host to decide.
+
+
+### [loh-maa](/lohmaa)
+One more interesting remark to add -- a communication handshake is more
+natural than it seems in the context of the game. People do it all the time,
+for instance when we go abroad and we don't know which language shall we
+speak, we ask "Do you speak English?", "Hablas Espanol?" -- often because we
+don't want to waste time talking if they can't understand.. so it's kind of a
+natural thing to do. Actually it would be much more awkward and artificial to
+prevent that for the sake of some distilled gameplay.
+++ so in the end I think a handshake like "Do you speak Alpha?" would be much
+better..
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+I have a solution achieved a public score of 1023.5 (highest) , securing 3rd
+place. The score was achieved with three wins as a guesser (Agent Alpha
+victories not included) , zero losses, and three draws. In a similar
+subsequent submission, it scored 982.9, remaining within the gold medal range,
+with three wins as a guesser (Agent Alpha victories not included) and one win
+as an answerer, consistently reaching the gold medal range. The Alpha protocol
+was added for the final submission. Besides the Alpha protocol, there are
+various strategies such as using LLMs for guessing, listing through examples,
+and offline policies. It is up to each Kaggler to decide whether to adopt
+them. It would be unfair to Kagglers who have committed months of effort if
+the rules were changed after the final submission. If the Alpha protocol were
+to be banned, I believe it would have been announced in the 'Competition
+Update' post 16 days ago. In that post, it was mentioned that 'Question
+character length limit reduced from 2000 to 750 (the extra character limit was
+unused other than for “binary search” type questions).' Additionally, efforts
+have been made to design the competition so that simply using the Alpha
+protocol alone would not guarantee victory, considering the keyword updates
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+Anyway, I intend to share my solution and source code after the competition
+ends, as I want to contribute to the community. This competition is not so
+simple that you can win just by using the Alpha protocol. I'm looking forward
+to seeing the various ideas and innovations that different Kagglers have come
+up with.
+
+
+### [Dawid Motyka](/dawidmt)
+> For example, is it ok for the initial question to be: "Are you Llama 3.1"?
+>
+> In a human 20 questions game, is it ok to ask a question about the identity
+> of the answerer? For example, is it ok to ask "Are you European?" to the
+> answerer? -> If the answer is "yes", perhaps it would make sense to ask
+> about things which are more commonly found in Europe.
+The difference between this and the alpha approach is that with alpha, both
+sides share a predefined algorithm. And given your example with "Are you
+European?" - if the answer is yes, the guesser can use **his own** knowledge
+how European may answer, but not any predefined rules.
+After a successful handshake (and sharing the same keyword list), both agents
+may act in a way completely predictable for themselves, making it look more
+like one algorithm and not the cooperation of two algorithms. In other words,
+the game becomes deterministic.
+Still, I clearly don't like the alpha approach, but there was no clear
+statement that this was forbidden before closing the competition, so we cannot
+just ban it now.
+
+
+### [loh-maa](/lohmaa)
+[@dawidmt](https://www.kaggle.com/dawidmt) The team players don't have to
+share the same algorithm, and they don't need to share the same set of
+keywords. All the questioner wants is to _recognize_ the answerer and the
+answerer has to recognize the questions. So actually it's just a simple
+question-answer protocol they need to adopt, nothing else in particular.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+"The team players don't have to share the same algorithm" - that is simply not
+true. In this case, they are sharing the same implicit instructions, which
+were not mentioned at all in the questions during the bot's communications.
+This is why agents from different teams become dependent on each other,
+leading to a violation of the rules. After reading all these comments, I feel
+even more confident in my position.
+
+
+### [Kha Vo](/khahuras)
+[@chernovandrey1998](https://www.kaggle.com/chernovandrey1998) I am just
+curious why didn’t you bring this matter up about 2 months ago when this
+method was shared publicly and the forum discussed, debated about it a lot? Or
+you just see it performing well, hate it, and try your best to eliminate many
+teams that are definitely rule-abiding?
+
+
+### [Dawid Motyka](/dawidmt)
+[@loh-maa](https://www.kaggle.com/loh-maa)  
+I understand that this seems to be "just a protocol". But this protocol serves
+just one purpose, and both sides realize this one purpose predictably.
+I've just said that after a handshake, agents **may** act in any predefined
+way. And this was to raise the question of where we can draw the line between
+what is acceptable and what is not. Would you say that the handshake "Will you
+send me a keyword using an index of our predefined dictionary {version of
+dictionary}" as 19 bit number?" is also acceptable? It would, of course,
+require parsing this question with regex and following a simple protocol.
+Another approach would be to ask to encode the first 3 or 4 characters of
+keywords and also the number of words with 2 bits. What connects all these
+approaches and alpha is that there is a predefined question that is used to
+set the answerer or guesser in a specific state. I think that the reasonable
+line here is agent identification, and it separates LLM approaches from
+internal protocols.
+To be clear, I just think that it would be better if organizers made a
+statement on this before the deadline (I personally didn't have much time for
+competition and also to be involved in a discussion about binary search). I
+think that many people just didn't use alpha because they were afraid that
+they would be disqualified. Now, it is too late to say that agent alpha
+violates the rules.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+[@khahuras](https://www.kaggle.com/khahuras)
+  1. I didn't notice this before; if I had, I would have brought it up earlier."
+  2. Let's respect each other and not turn this into a typical Twitter thread. I believe some teams gained an unfair advantage, which is why I reported it. This is how a community works. The final decision rests with the organizers, so please don't take it personally.
+As a compromise, the organizers may add a condition that the so-called 'alpha
+agents' won't be on the same team during the private dataset phase. I am not
+sure whether this is technically feasible or not, but this would eliminate the
+unfair advantage gained through your cooperation. However, I would prefer a
+complete ban on these teams to protect merit and fairness.
+
+
+### [Dawid Motyka](/dawidmt)
+As I said before, I don't think that this is the same thing because "are you
+agent alpha" sets the state of the guesser, and a predefined string is used to
+follow the protocol. What you say here is "this is legitimate because it looks
+legitimate looking at the game log". But binary search really doesn't need it.
+After a handshake, bare keywords may just be sent to the answerer if he knows
+that he is let's call it "agent binary search". Alpha-like agents just use
+natural language to make the game seem "human", but they don't really have to.
+Doesn't it make it seem odd?
+
+
+### [Kha Vo](/khahuras)
+[@dawidmt](https://www.kaggle.com/dawidmt) There is actually no need for any
+formal handshake or state setting at all. From the LB, you can tell that team
+"Full Powered Agent" is doing that and can save 1 question. You don't need to
+ask "are you alpha?" in the first question. You can directly ask "does the
+keyword precede…" from the first question. If the answerer is able to do so,
+then it's good. If not, then ok. A team like that doesn't set the state or
+trying to make any handshake at all. In the long run it can beat other alpha
+agents on average thanks to saving 1 turn. (of course there are more factors
+like the prepared list word coverage percentage and list word count, but you
+get the idea).
+
+
+### [Andrei Chernov](/chernovandrey1998)
+[@khahuras](https://www.kaggle.com/khahuras) Let me provide you with an
+example of an agent, and please justify whether you think it would be legal or
+not.
+Imagine that I create an agent entirely based on secret words, using the
+following logic:
+1.The question: "HeyHey 'A'?" means the responder needs to check the first
+letter of the keyword and return 'yes' if it is 'A'.  
+2.The question: "OlaOla 5?" means the responder needs to check the length of
+the keyword and respond with 'yes' if the length is less than 5 characters.  
+3.The question: "YehYeh 'B'?" means the responder needs to check the last
+letter of the keyword and respond with 'yes' if it is a 'B'.  
+…
+I can create thousands of such rules and then share them publicly with the
+community. Then with the subgroups of participants we could agree that asking
+the question "Is it the Agent Beta?" would trigger this agent. Would you
+consider this agent to be fair?
+
+
+### [Kha Vo](/khahuras)
+Your example is weird. First, this is a public community where everybody is
+capable of everything. You have to share your code publicly for everyone to
+see and understand what OlaOla means, like AgentAlpha. Asking "OlaOla" or
+"Heyhey" like that doesn't make your bot stronger. In your code you have to
+code the answerer to be able to decode "OlaOla" or "Heyhey", and then what's
+the point of "Ola Ola" anymore? You can explicitly ask "Is the first character
+A" instead of "Heyhey A", because you can pair with a bot that is unable to
+understand Heyhey.
+That's why your responsibility is to scrape for games and search for those
+questions and answer them correctly for your own bot.
+In my implementation, I searched for questions such as:  
+"Does the keyword start with any letters a,b,c,d…"  
+"Does the keyword any of these words: bus", car, …"  
+Especially this question: "Does the keyword precede "abc" in alphabetical
+order?"
+So whenever my bot acts as the answerer, it will be able to answer those types
+of questions correctly without using LLM.  
+Does that sound fair to you?
+
+
+### [Dawid Motyka](/dawidmt)
+> There is actually no need for any formal handshake or state setting at all.
+> From the LB, you can tell that team "Full Powered Agent" is doing that and
+> can save 1 question
+[@khahuras](https://www.kaggle.com/khahuras) This is interesting. There's
+indeed no agent identification or setting of the state. Considering my point
+of view on what can or shouldn't be done, I wouldn't be against it. The team
+had to take the risk that the answerer wouldn't be able to answer correctly.
+The risk when using handshake is just losing one question.
+I think that this is a nice example of how taking the risk of assuming some
+skills of the answerer is beneficial for assessing what LLMs can and cannot
+do. It would be interesting if 8B llms with prompts used by Full Powered Agent
+were much more capable of judging alphabetical order (I'm not sure they will
+be).
+
+
+### [Andrei Chernov](/chernovandrey1998)
+"You can explicitly ask "Is the first character A" instead of "Heyhey A"". -
+For sure I can, but the a LLM bot might give the wrong answer. At my example I
+would use a deterministic code to answer this questions and at this case I
+would get 100% accuracy. The problem is that this deterministic code is
+triggered by predefined 'secret' words or questions.
+
+
+### [Kha Vo](/khahuras)
+There is no such things as "secret". Everything has been published publicly
+and transparently. Please stop obfuscate the scenario. I suppose you are new
+to Kaggle simulation competitions. In the past there are many competitions
+that will need to identify other agents to work better. For example in Halite
+a few years ago (Kaggle comp), a battle royale game of 4 agents (1 vs 1 vs 1
+vs 1) like in a classic Starcraft game. You will need to determine the
+patterns of other bots and try to form an early alliance in the game. That is:
+before the two of us fight each other, let's form a team to beat the other 2
+bots, then we can fight each other alone. If you don't agree to find a
+teammate and try to act on your own, you may fight with 3 other bots earlier
+and your team is more like to lose first. It is a zero-sum game of
+collaborative + competitive match-up. In this comp, the questioner and the
+answerer must collaborate with each other, and within the rules.  
+I won't comment on this matter anymore, it has taken me too much time.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+The key difference with the Halite competition example is that, in the Halite
+case, the agreement was made during the simulation. Before the simulation
+began, you did not have any agreements or contracts with other participants.
+However, in the case of Agent Alpha, the agreement was made outside the
+simulation environment, before the simulation even started, giving you an
+unfair advantage.
+
+
+### [loh-maa](/lohmaa)
+> I can create thousands of such rules and then share them publicly with the
+> community. Then with the subgroups of participants we could agree that
+> asking the question "Is it the Agent Beta?" would trigger this agent. Would
+> you consider this agent to be fair?
+[@chernovandrey1998](https://www.kaggle.com/chernovandrey1998) Certainly you
+could create thousands of such strange strategies, all of them equally
+powerful to alpha (not more powerful) -- but would it mean "therefore alpha is
+not fair"? Just because you could create thousands of such strategies? Doesn't
+it sound a bit irrational? … I will try not to bother this thread anymore. I
+think it might be better to open a new thread in the main forum if you'd like
+to continue, please.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Sorry that it was not clear, but my point is that if these rules are
+considered illegal, then Agent Alpha should also be considered illegal. The
+only difference is that Agent Alpha disguises these rules under human-friendly
+speech. Essentially, the underlying logic remains the same, which means that
+if one is unfair, the other should be as well.
+I am also a bit tired of this discussion, because there are clearly two
+different opinions, which are not going to converge. So I would suggest to
+wait until the organisers will respond
+
+
+### [yukky_maru](/yukkymaru)
+If the question 'Are you Japanese?' leads to a change in behavior when the
+answer is 'Yes' (for example, including more guesses of anime character
+keywords), it is an understandable approach. This method does not narrow down
+the meaning beyond the mere words but cannot refine the words beyond the
+framework of the game. Creating questions tailored for Japanese people and
+others is a very good choice. However, the question 'Are you Agent Alpha?'
+does not have any inherent meaning in the words themselves; its meaning is
+defined outside of the game. The act of creating questions specifically
+tailored for Agent Alpha, whose meaning is defined outside the game, may be
+seen as a gray area. An agent that conducts binary search without a handshake
+carries the risk of complete failure if it is not prepared. However, the
+handshake question 'Are you Agent Alpha?' does not carry such a risk and can
+be seen as gaining the ability to handle all agents through the 'meaning of
+words outside the game.' But this 'meaning of words outside the game' is
+something that people who have read the Agent Alpha public notebook are
+'interpreting on their own.' However, from the perspective of programming, it
+can be said that 'their interpretations are almost 100% consistent.' Whether
+to view this state of 'interpreting on their own, but with interpretations
+being almost 100% consistent' as 'shared information' depends on the
+organizer's judgment.
+
+
+### [loh-maa](/lohmaa)
+[@bovard](https://www.kaggle.com/bovard)
+[@cdeotte](https://www.kaggle.com/cdeotte)
+[@addisonhoward](https://www.kaggle.com/addisonhoward) I would like to call
+for your attention, please. I have been investigating the ranking algorithm
+and finally identified the main problem of its convergence, and it's
+demonstrated in [this
+post](https://www.kaggle.com/competitions/llm-20-questions/discussion/529474).
+While it may no longer be possible to fix it entirely, it's still possible to
+improve the convergence considerably. Looking forward to hearing some
+feedback.
+
+
+### [Helen](/jasminegreenj)
+[@bovard](https://www.kaggle.com/bovard) ：Can we choose the two best agents
+instead of the last two submitted agents? 🫨
+
+
+### [Mahmoud Elshahed](/letemoin)
+Based on What?,  
+highest score is not a criteria at all, the best agent is the one who has high
+correct guessing rate "in my Opinion" and this doesn't reflect to score due to
+pairing and multiple games results.
+Any way, that 's why many teams near the end resubmit their best performing
+agent `from their perspective` to enter evaluation with it.
+
+
+### [Andrei Chernov](/chernovandrey1998)
+Generally speaking, I think it would be better if we had the opportunity to
+choose agents, which we want to be calculated on the final dataset regardless
+the current score. Anyway I also resubmitted my agents at the end :)
+
+
+### [Vitaly Kudelya](/vitalykudelya)
+I have noticed another strange case  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F297456%2F5f60b0bdaa84f41ad257642062528f55%2F2024-08-15%20%2016.21.37.png?generation=1723728277074159&alt=media)
+It seems that one player's Error increased the score of 3 other players,
+including his teammate. It seemed to me that the penalty should be for two
+teammates, but I checked public episodes and it worked similar.
+
+
+### [Kha Vo](/khahuras)
+That is expected, although not well designed. I think only the error bot is
+punished and 3 other bots stay as is, otherwise a group of bot can produce
+error on purpose when matching with a master bot (just a case). “Are you
+master Roshi ?’ —> “yes” —> suicide
+
+
+### [Raki](/raki21)
+I don't think that's remotely worth it, the problem is that you only have a
+self match every 1000 rounds and for a 1 in 1000 1/3 win you sacrifice 1 of 2
+spots.
+Also if noone gets points but one loses it you'ld have a slow but consistent
+decay of average Elo I think
+
+
+### [yukky_maru](/yukkymaru)
+I don’t think this is a good design. If this behavior is exploited, in
+situations like late-game scenarios where an agent is stuck (for example, when
+an Agent Alpha type or an offline policy type doesn't have the word in its
+dictionary), it might become a rational action—if one abandons ethics—to
+inject an error on the opponent, hoping for a last chance.
+
+
+### [francesco fiamingo](/francescofiamingo)
+i d like to tks the kaggle team, for such competition, i learn a lot, that was
+my primary target, i hope more to come and looking forward for the matchs! :)
+: )
+
+
+### [Jonathan Chan](/jonathanchan)
+[@bovard](https://www.kaggle.com/bovard) : Just like to point out a potential
+loophole as internet is enabled and externals files may be read. I've not seen
+any rules/regulations against that yet. One solution is to not to have the
+episodes visible so that the new keywords cannot be extracted during this
+assessment period. Otherwise some agents may have an unfair advantage over
+others with updating dataset(s). I decided not to choose such agents as my
+final 2 selections. Perhaps I should have if such practice will not be banned.
+As we are in the transition period, the rules may be clarified further now, as
+necessary. I wonder if there are other potential loopholes that others have
+discovered, other than deliberately trying to cause the partner agent to
+error. This trick should be allowed as it is well-known and most agents have
+guarded against such tactic already.
+
+
+### [loh-maa](/lohmaa)
+No worries, the internet may be enabled only in your notebook, the submission
+won't have any access.
+
+
+### [Kha Vo](/khahuras)
+Interner maybe only available when self-validating (1st game) to download
+models to disk. From then, the games will be played using the image containing
+the downloaded files and scripts of each bot.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Containers running the agents do not have internet permissions, so this
+shouldn't be an issue. Where did you notice this happening?
+
+
+### [Jonathan Chan](/jonathanchan)
+Thanks for the clarification [@bovard](https://www.kaggle.com/bovard)
+[@khahuras](https://www.kaggle.com/khahuras) and
+[@lohmaa](https://www.kaggle.com/lohmaa) . If the container only has the
+initial image and no internet access, then there should not be any problems.
+It's simply my ignorance of this fact. Thanks.
+
+
+### [chandraprakash38](/chandraprakash38)
+great, looking forward to it
+
+
+### [VISHNU SINDAL T.B](/vishnusindal)
+How we'll know which agent out of the 2 submitted being used in the episode?.
+When I checked the log, based on the duration, I can see that only one Agent
+being used in all the episodes. My latest agent not being used so far. Is this
+the case for others also? I want to use latest agent I submitted, in this
+game. But not being used…
+
+
+### [yukky_maru](/yukkymaru)
+You can check it
+[here](https://www.kaggle.com/competitions/llm-20-questions/submissions).
+
+
+### [VISHNU SINDAL T.B](/vishnusindal)
+ya, now it's clear.

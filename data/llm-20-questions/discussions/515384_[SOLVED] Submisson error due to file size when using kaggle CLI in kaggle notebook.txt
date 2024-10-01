@@ -1,0 +1,94 @@
+[c-number](/cnumber) · 1st in this Competition · Posted 2 months ago
+
+### [SOLVED] Submisson error due to file size when using kaggle CLI in kaggle
+notebook
+Hello,  
+I am working on the competition based on this
+[notebook](https://www.kaggle.com/code/robikscube/intro-to-rigging-for-
+llm-20-questions-llama3), but I get the following error when trying to submit
+from the notebook.
+> 400 - Bad Request - Submission not allowed: Your file exceeds the maximum
+> size of 20 GB.
+Does anyone know how to submit files larger than 20GB? or is the submission
+file limited to that size for this competition? (I couldn' t find such a
+statement though.)  
+Thank you in advance.
+
+
+## 6 Comments
+
+
+### [OminousDude](/max1mum)
+The file size is limited however files larger than ~ 8 GB won't have time to
+run on the Tesla T4s for submission. Try using a smaller model (guessing you
+used Gemma 2 🫣)
+
+
+### [c-number](/cnumber)
+Thanks, I was trying to upload several models (Gemma 2 is not one of them :) )
+and run all of them for a single question.  
+Maybe I should upload the quantized weights directly.
+
+
+### [Sumo](/sirapoabchaikunsaeng)
+[@cnumber](https://www.kaggle.com/cnumber) I'm a bit late to the party, but I
+saw you marked this thread as solved. How did you get around it? I'm running
+into the same issue
+
+
+### [c-number](/cnumber)
+Well, it's not actually solved, but I managed to fit 2 models in 20GB by
+quantizing them.  
+Hope this helps!
+
+
+### [Sumo](/sirapoabchaikunsaeng)
+ah that's a shame. Thank you anyway!
+offtopic, but we're looking for a teammate for this comp (and future
+competitions!), in case you're interested we'll be very happy to have you in
+our team :)
+
+
+### [OminousDude](/max1mum)
+Off topic but I am asking all of the top places about if they use the public
+lb keywords for their model. Does your team use them?
+
+
+### [c-number](/cnumber)
+I'm having some trouble trying to submit 2 7B~8B models, so I really hope
+Kaggle would relax the submission file size restriction.
+
+
+### [OminousDude](/max1mum)
+I see the problem however is that on the Kaggle GPUs such a model would likely
+not have enough time (60 sec) to run
+
+
+### [c-number](/cnumber)
+Thanks for you advice, but currently I have no problems with running a single
+7~8B model in the given computation time, and the log tells me that I might
+have time for another model.
+
+
+### [OminousDude](/max1mum)
+Oh ok weird what model do you use. By the way here are the technical
+specifications:
+100 GB of disk space  
+16 GB of RAM  
+1 T4 GPU
+
+
+### [c-number](/cnumber)
+Some finetuned llama for now. Before switching models, you can just do
+something like model=None to release VRAM, and then load the other model.
+
+
+### [OminousDude](/max1mum)
+Ok llama should be able to run with 2 what is the file size?  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F46f812ca01d66ba1a94c5ef944dd0516%2FScreenshot%20from%202024-06-28%2011-29-26.png?generation=1719588595992070&alt=media)  
+See the 7 gb what is yours?
+
+
+### [c-number](/cnumber)
+meta-llama/Meta-Llama-3-8B is something like 13GB when zipped

@@ -1,0 +1,82 @@
+[ISAKA Tsuyoshi](/isakatsuyoshi) · 9th in this Competition · Posted 3 days ago
+
+
+### All Solutions in One Place
+Hi Kagglers,
+I’m gathering links to all the solutions in one place to make them easily
+accessible for everyone. Below are the solutions:
+1st place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531106>  
+2nd place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/529643>  
+3rd place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531387>  
+4th place ->  
+5th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531128>  
+6th place ->  
+7th place ->  
+8th place ->  
+9th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/529525>  
+10th place ->  
+11th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/529931>  
+12th place ->  
+13th place ->  
+14th place ->  
+15th place ->  
+16th place ->  
+17th place ->  
+18th place ->  
+19th place ->  
+20th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531083>  
+21st place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531104>
+26th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531081>
+45th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/530996>
+52nd place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531037>
+58th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531183>
+65th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531121>
+108th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/530999>
+181st place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531047>
+611th place ->
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/531077>
+If I’ve missed or forgotten to add any, please let me know, and I’ll update
+the list.
+Regardless of the result, sharing your solution is an opportunity for both you
+and everyone else to learn. I’ve always made it a point to share my solution,
+even when I wasn’t in the medal zone! I’m looking forward to seeing everyone’s
+solutions!
+Let’s keep learning from each other’s experiences!
+**How to register your solution:**
+  1. Post your solution in the discussion section. 
+  2. Go to **Team > Share your solution**. 
+  3. Copy and paste the link to your solution’s discussion in the URL field.
+This will make your solution link visible on the leaderboard.
+
+
+## 3 Comments
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+**UPDATED to Aug 31st 04:53 UTC**
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+<https://www.kaggle.com/code/vovikdrg/45th-pure-llm-20-questions> if 45th
+place deserve to be here :)
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+[@vovikdrg](https://www.kaggle.com/vovikdrg)  
+Of course, it's worth it! I've added it for sure. Congratulations on the
+silver medal!

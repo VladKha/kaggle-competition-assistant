@@ -1,0 +1,118 @@
+[Luca Bottero](/lucabottero) · 771st in this Competition · Posted 3 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What kind of "objects" there are in the figures?
+I would like to hear what are your impressions on what "objects" are present
+on the images.  
+By object I mean a pattern that a human would likely recognize as representing
+an entity "per se".  
+So far, I think we have those categories:
+  * Blocks
+    * Rectangles (of which squares are a subset)
+    * Blobs
+  * Lines
+    * Straight (vertical or horizontal)
+    * Diagonal
+    * Mixed
+  * "Fills"
+    * Single color (like background)
+    * Patterned (repetition of elements, symmetries)
+  * Dots (single pixels which do not belong to blocks or lines)
+I think that it is a very important element of the challenge the fact that
+humans can make multiple descriptions in terms of entities of what they see in
+a picture of ARC. For example, a checkerboard pattern can be both seen as a
+fill (with a pattern) or a set of lines. Which description is the most useful
+to solve the task depends on the applicability to the other examples on the
+same set and its "complexity".
+Do you think there are other objects that do not fit in the above categories?
+I would like to see images of counter-examples and hear what you think about
+this categorization of patterns present in ARC.
+comment
+
+
+## 5 Comments
+
+
+### [Twishmay Shankar](/glazeshadow)
+arrow_drop_up1
+  * format_quote
+  * link
+As a follow up on this, what are some concrete ways to detect objects?  
+Maybe a specific defiiniton will help since as noted in the other comment,
+this abstraction can from simple blocks and traingles to 'liquid'.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Great Q!! Not at all easy to detect objects. There is a very good possibility
+that there are ML techniques. Not my specialty. And when I said "water" that
+was an extremely high-level interpretation. Interesting "challenge", to be
+sure! The large problem is, though we can talk about and agree (or disagree!)
+upon what an object "is" or "could be", the real issue is achieving a working
+definition with a machine (or program) that isn't just "code it up!". I mean
+you _could_ just code it up… but it would probably not contribute to your
+score.  
+I'll just say this here.  
+The way humans do it involves moving the eyeballs. The peripheral vision is
+capable of detecting motion at a low level, pulling the eyeball in the
+direction of the motion, where the fovea centralis can detect sharp edges (and
+basically do the OCR). This is an evolutionary function that helped keep our
+ancestors alive! When the eye moves just a little, objects in the periphery
+create a "faux motion" that quickly pulls the fovea toward the object,
+allowing us to register its existence and classify what we see. We map a
+persistent "object location" so we are not continually surprised by objects in
+our peripheral vision. But when the glance brings a "new" object into view, it
+takes a precedent and we "deal with it."  
+Not so sure the best way to detect 'objects' as defined by integers in a
+matrix. Perhaps some hybrid technology. Currently, I am scanning 5 rows at a
+time, but it's early days in deciding what, exactly to do with that
+information.  
+YMMV!
+
+
+### [Luca Bottero](/lucabottero)
+arrow_drop_up1
+  * format_quote
+  * link
+I think that a good amount of the object can be detected solely based on set
+of well written, carefully tested "cell adjacency" logics. This is very easy
+to do with unicolor objects, more tricky with multicolored ones. I am actually
+working in that direction.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Excellent question. I see 2 answers. First off, what you described should be
+enough to score quite high on the test. That said, the hard part is getting a
+program to work with even those few. The other answer is, there are miles to
+go. For instance, my snap answer is, a perfect circle. Seeing something like
+that will definitely elicit an intellectual and emotional response (I use the
+term "sound") in 21st century humans. And with a 30x30 matrix, you can
+approximate one quite well. So there are reasons that you have not seen a
+perfect circle in the current mix. (One could go on, here…) One won't. Also,
+equilateral triangles exude their own "sound" (also attainable at 30x30). The
+point is, the larger the matrix; the greater the possibilities. Once you get
+in the "rods/cones" resolution, say 224x224, then you can (with only 10
+values) begin to differentiate between pizza and steak images. (both are valid
+"objects") My mom would have said, "finish what you have on your plate."  
+Also "sprites" (those little 3x3 images we have grown to love) might go on
+your list, as well as the notion of a "part" or "pixel" which play a role in
+the 3x3 -> 9x9 expansions. One has to process that the sprite is made up of
+parts, each of which gets somehow enlarged or reduced in the output.  
+I've also noticed at least one "meta-object". In short, a gray line that
+separates two or more areas, and has no other purpose than to differentiate
+"this" from "that".  
+Also, walls. Especially walls that either, while intact, contain a color, or
+when broken allow the color to escape. (again, this was conveyed at a very
+large matrix size). So walls and meta-walls. And liquid.  
+"And this paddle game. And this chair…"

@@ -1,0 +1,44 @@
+[Yan Teixeira](/yantxx) · 19th in this Competition · Posted 3 months ago
+
+
+### Friday is a special day
+Very interesting to see that Friday is a special day for Rohlik in every
+warehouse.
+Let's take Brno_1 as an example.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13062964%2F2a421a99726b4769ad3f5ed1f1eadb47%2F1.png?generation=1718217828265498&alt=media)
+The plot above is designed to analyze and visualize the ratio of orders
+received on each weekday, with Friday highlighted. We can see that throughout
+the year, Friday has the highest ratio.
+Heatmaps can help with the visualization:
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13062964%2F167b94ae7dc9cbb844bbf626f11937b4%2Fheatmap.png?generation=1718218073750090&alt=media)
+
+
+## 4 Comments
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+> Friday is a special day for Rohlik…
+Good observation, like the heatmaps! Friday is not only a special day for
+Rohlik ;)  
+I think the reason for that is that most people order for the weekend. Didn't
+check but I guess it's the same scenario if there are public holidays, more
+amount (which doesn't matter here) but I guess some order even twice a day,
+like there is no tomorrow. :D
+
+
+### [tanaka](/tanakasandesuka)
+Generally, Fridays tend to have more orders, but the trends can vary by
+region.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3032938%2F3faaf2af7cec0239febd8c29c49aa0ad%2FScreenshot%202024-06-14%20at%200.52.08.png?generation=1718294149400100&alt=media)
+
+
+### [AYUSH KHAIRE](/ayushkhaire)
+[@yantxx](https://www.kaggle.com/yantxx) thanks for sharing! God bless you :)
+I was underestimating dates and fays .
+
+
+### [Stas Kolchin](/mordechaichick)
+Hi all! How to specify this in preprocessing? Do we need it?

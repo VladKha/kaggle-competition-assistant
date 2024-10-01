@@ -1,0 +1,83 @@
+[Ronan McGovern](/ronankmcgovern) · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Data Format Clarifications
+  1. Why does the final example in "arc-agi_evaluation_challenges.json" contain only a test split? and no train split?
+  2. Why are we required to submit two solutions for each test? Why not just one?
+  3. Might I suggest that "arc-agi_evaluation_challenges.json" be updated to include 100 examples, i.e. the same as the test file that is hidden? This would make it easier to ensure the notebook runs in 10 hours.
+comment
+
+
+## 3 Comments
+
+
+### [Muhammad Tariq Pervez](/tariqcp)
+arrow_drop_up2
+  * format_quote
+  * link
+**2\. Why are we required to submit two solutions for each test? Why not just
+one?**
+Answer:  
+In the Abstract Reasoning Corpus (ARC) dataset competition, you are required
+to submit two solutions for each test input because of the nature of the
+abstract reasoning tasks. This may be due to following reasons:
+**Multiple Valid Solutions:**  
+Abstract reasoning tasks often have multiple valid solutions. The ARC tasks
+are designed to test a model’s ability to generalize and recognize patterns,
+which means there can be more than one correct answer that fits the given
+input pattern. By allowing two solutions/ attempts, it accounts for the
+inherent variability in abstract reasoning.
+**Increased Chances of Correctness:**  
+Allowing two predictions increases the chances that at least one of them will
+match the ground truth. Abstract reasoning involves a high degree of
+uncertainty, and sometimes a single solution may not capture the correct
+pattern or rule that the task is testing. By providing two possible outputs,
+the evaluation metric becomes more forgiving, improving the likelihood of
+scoring a correct match.
+**Model Flexibility and Testing Generalization:**  
+Two solutions encourage participants to develop models that can capture a
+broader range of patterns and potential solutions. This setup tests the
+generalization capabilities of the models better. Models that can produce two
+plausible solutions demonstrate a higher level of understanding and
+flexibility in pattern recognition.
+**Example:**  
+Consider the following task where the input is a sequence of numbers, and the
+pattern could be interpreted in multiple ways:
+**Input: [2, 4, 6, 8]**  
+Possible Outputs: [10] (following the pattern of even numbers increasing by 2)
+or [12] (if the model interprets it as skipping one even number).  
+By submitting both [10] and [12], the model covers both possible valid
+interpretations of the pattern, thus increasing the likelihood that at least
+one of the predictions matches the ground truth.
+
+
+### [Ronan McGovern](/ronankmcgovern)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks yeah, it's just that running a verifier is cheap and quick so I don't
+see why someone would submit a wrong answer.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Like Mr. Pervez said, it basically doubles your chances of getting it correct.
+I, myself, would probably never do that as a human participant. If I think I
+have the correct answer, it would feel like a waste of time to "come up with
+something else." And if I'm really so stuck as to feel that I need to feel
+around for the right answer, I'd probably schedule that for dead last,
+priority-wise. That said, I find that getting immediate feedback that I have
+failed to answer correctly is immediately valuable. I can't help but think
+that a (given) AGI might feel the same. That's a pretty big rewrite for the
+Challenge. If I think I got it, and I got it; I move on. If I think I got it,
+and I get the red buzzer, that is exceedingly valuable feedback. Although, two
+tries is rarely enough. I can see how a standard ML model process could
+utilize answering two different ways with no feedback.

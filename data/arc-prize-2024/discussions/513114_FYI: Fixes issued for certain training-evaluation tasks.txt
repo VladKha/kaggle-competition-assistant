@@ -1,0 +1,68 @@
+[fchollet](/fchollet) · Posted 3 months ago
+· Competition Host
+arrow_drop_up25
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### FYI: Fixes issued for certain training/evaluation tasks
+We have recently updated the "training" data and "evaluation" files used in
+the competition with minor fixes for evaluations tasks `20818e16`, `9def23fe`,
+`05a7bcf2`, `310f3251`, `4852f2fa`, `79fb03f4`, `c35c1b4c`, `e6de6e8f`, as
+well as training tasks `b230c067` and `9edfc990`. In nearly all cases, the
+fixes target an inconsistency in a training pair that would not have prevented
+the task from being solvable by a human. Thanks to all who reported issues!
+As a reminder, the private test has been previously verified to be 100%
+solvable by humans.
+Best of luck with the competition!
+comment
+
+
+## 4 Comments
+
+
+### [Lawson He](/lawsonhe)
+arrow_drop_up1
+  * format_quote
+  * link
+What about ac0c5833 example 3?
+
+
+### [fchollet](/fchollet)
+arrow_drop_up1
+  * format_quote
+  * link
+Issued a fix on GitHub, not live on Kaggle yet. This issue is not blocking to
+solve the task, mind you.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Quick followup question: how long did the human take to score 100%? (how many
+minutes, hours - just curious)
+
+
+### [fchollet](/fchollet)
+arrow_drop_up2
+  * format_quote
+  * link
+From one of the two people who solved the private test tasks (independently
+each): _"I needed for most tasks less than 30 seconds to figure the rule out.
+For few tasks up to a few minutes or a second look at a later point of time
+[…] there were two or three tasks I couldn't solve"_
+Taken together, they solved 100% of the tasks, but for any given person, a
+rate of 97-98% would be normal. Some tasks are non-obvious, but they're never
+very difficult.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you. I realized only too late that "100% solvable by humans" was not
+what I thought.

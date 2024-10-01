@@ -1,0 +1,32 @@
+[G John Rao](/jaejohn) · 174th in this Competition · Posted 24 days ago
+
+### Rohlik Orders Forecasting Challenge Top 50 Notebook [LB: 0.0352]
+Hi everyone!
+I am sharing the top 50 notebook which I have worked on the following existing
+notebooks:
+  1. <https://www.kaggle.com/code/wanyanwendi/ensemble-stacking-modified-metamodel>
+  2. <https://www.kaggle.com/code/pkuszboi/0-0358-ensemble-stacking-modified-metamodel>
+As no medals are offered in this competition, sharing the notebook with only 2
+days to go seems fine.
+Here's the notebook: <https://www.kaggle.com/jaejohn/public-rohlik-
+score-0-0352>
+Hopefully, this notebook helps clarify things on improving the LB score.
+Some ways you may further improve the score:
+  1. Implement a neural network model
+  2. Implement a transformer model
+  3. Understand the scores of each base model
+  4. Understand the scores of each meta-model
+  5. Research new papers on the problem
+  6. Adjust the number of features used
+  7. Explore feature engineering
+  8. How about first predicting the missing columns?
+Feedback appreciated!
+
+
+## 1 Comment
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+In terms of the score, I would give you a thumbs up, but I believe you haven't
+carefully reviewed the two pieces of code you studied, and you've kept the
+bugs from the original code, so I won't give you a thumbs up.

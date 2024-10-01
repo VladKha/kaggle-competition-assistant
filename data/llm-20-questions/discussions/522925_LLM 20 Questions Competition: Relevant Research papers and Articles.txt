@@ -1,0 +1,40 @@
+[C R Suthikshn Kumar](/crsuthikshnkumar) · 233rd in this Competition · Posted
+a month ago
+
+
+### LLM 20 Questions Competition: Relevant Research papers and Articles
+With respect to ML Competition " LLM 20 Questions"  
+<https://www.kaggle.com/competitions/llm-20-questions/>
+Wishing all best for the participants in this competition. I am sharing
+relevant research papers and articles:
+  1. Probing the Multi-turn Planning Capabilities of LLMs via 20 Question Games  
+Yizhe Zhang, Jiarui Lu, Navdeep Jaitly, <https://arxiv.org/abs/2310.01468v3>
+  2. Jie Huang and Kevin Chen-Chuan Chang.Towards reasoning in large language models: A survey.arXiv preprint arXiv:2212.10403, 2022.
+  3. Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge  
+Peter Clark, et al.,  
+<https://arxiv.org/abs/1803.05457>
+  4. Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance  
+Yao Fu, et al., <https://arxiv.org/abs/2305.17306>
+  5. 20 Questions Wiki: <https://en.wikipedia.org/wiki/Twenty_questions>
+[Artificial
+Intelligence](/discussions?tags=12101-Artificial+Intelligence)[Ratings and
+Reviews](/discussions?tags=16302-Ratings+and+Reviews)[Beginner](/discussions?tags=13102-Beginner)[Intermediate](/discussions?tags=13103-Intermediate)
+
+
+## 2 Comments
+
+
+### [Muhammad Ehsan](/muhammadehsan000)
+Thank you for sharing these valuable resources!
+[@crsuthikshnkumar](https://www.kaggle.com/crsuthikshnkumar)  
+The papers and articles you’ve listed are excellent for gaining deeper
+insights into the capabilities and challenges of LLMs, especially in the
+context of multi-turn reasoning and question-answering tasks.
+The links to research and the Wiki page will certainly help participants
+better understand the underlying concepts and strategies for the LLM 20
+Questions competition.  
+Best of luck to everyone competing!
+
+
+### [Andrew Tratz](/jademonk)
+Thank you - very interesting

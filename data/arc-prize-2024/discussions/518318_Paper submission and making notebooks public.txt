@@ -1,0 +1,66 @@
+[Amin Allam](/aminallam) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Paper submission and making notebooks public
+In the overview page, it is mentioned that the paper submission deadline is 10
+Nov, but in the submission form it is said 12 Nov. So, is it a mistake, or I
+should submit the Notebook link by 10 Nov then make it public by 12 Nov? What
+if the submission is a PDF or archiveX link, what should I do exactly before
+10 Nov and before 12 Nov?  
+In the submission form of the paper award, it is mentioned that Notebooks must
+be public by 12 Nov. Is it the Notebook containing description of the paper,
+or the Notebook containing the submitted code solution? or both?  
+Is it possible to just write the link of the paper PDF as a comment inside the
+Notebook of the submitted code solution and making it public by 12 Nov? Or
+attach the PDF to the Notebook (is it possible)?  
+What if I am not going to participate in the paper award, should I still make
+the Notebook of the code solution public by 12 Nov? I probably understand that
+from another discussion but is it mentioned somewhere in the rules? Where is
+that?
+comment
+
+
+## 1 Comment
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+Hey! Greg from the ARC Prize team here. Lots of questions. First off, the
+competition ends on Nov 10. Use that to anchor all questions and answers.
+Let's go through them!
+> In the overview page, it is mentioned that the paper submission deadline is
+> 10 Nov, but in the submission form it is said 12 Nov. So, is it a mistake,
+> or I should submit the Notebook link by 10 Nov then make it public by 12
+> Nov?
+Good call out. If it says the 12th this is a mistake. Can you link me to where
+you see the 12th? I don't see it. You need to submit the notebook and paper by
+the 10th
+> What if the submission is a PDF or archiveX link, what should I do exactly
+> before 10 Nov and before 12 Nov?
+A link is fine! You can submit the link on the
+[https://docs.google.com/forms/d/e/1FAIpQLSfhmYE6AMYfMBkxj5_G8QHyWTWWEe1wUg98LM1UQsUR8ci-1w/viewform](url)
+> In the submission form of the paper award, it is mentioned that Notebooks
+> must be public by 12 Nov. Is it the Notebook containing description of the
+> paper, or the Notebook containing the submitted code solution? or both?
+Papers must be submitted by the 10th, then notebook must be public shortly
+afterwards. Of course we would love them open sooner than that.
+> Is it possible to just write the link of the paper PDF as a comment inside
+> the Notebook of the submitted code solution and making it public by 12 Nov?
+> Or attach the PDF to the Notebook (is it possible)?
+You can do that! But we also request that you submit it through the normal
+google form as well. This is required for us to manage all submissions.
+> What if I am not going to participate in the paper award, should I still
+> make the Notebook of the code solution public by 12 Nov? I probably
+> understand that from another discussion but is it mentioned somewhere in the
+> rules? Where is that?
+Only submissions wishing to be eligible for prize money (which we expect will
+be most), need to open source their code at the end of the competition. There
+is a small grace period after the competition ends to do this.

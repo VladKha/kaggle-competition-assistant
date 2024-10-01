@@ -1,0 +1,30 @@
+[Stas Kolchin](/mordechaichick) · 274th in this Competition · Posted 3 months
+
+### Issues with data import
+I tried to import data into Google Colab notebook and ran into this problem.
+Does anyone have any ideas on how to deal with this?
+[photo_2024-06-26_17-05-53.jpg](https://storage.googleapis.com/kaggle-forum-
+message-attachments/2891147/20855/photo_2024-06-26_17-05-53.jpg)
+
+
+## 2 Comments
+
+
+### [G John Rao](/jaejohn)
+Judging by the indentation of wget, you seemed to have missed to store the
+dataframe in a variable, like so, df = pd.read_csv("train.csv")
+
+
+### [Stas Kolchin](/mordechaichick)
+But df = pd.read_csv("train.csv") is just saving the data in a convenient way
+into a variable for later use. The issue here is error tokenezing data, and
+i'm out of ideas
+
+
+### [G John Rao](/jaejohn)
+Okay, the file might be corrupt. Try re-downloading it, or try loading the
+other CSV files to see if the error persists. It's working on my end.
+
+
+### [Stas Kolchin](/mordechaichick)
+copy that

@@ -1,0 +1,59 @@
+[Neuron Engineer](/ratthachat) · 23rd in this Competition · Posted 23 days ago
+
+
+### As of Aug 9, "locations" still be used as Keywords
+Just want to ensure that the host know this issue.  
+[@bovard](https://www.kaggle.com/bovard)
+* * *
+As mentioned in [competition
+update](https://www.kaggle.com/competitions/llm-20-questions/discussion/523198),
+**all "locations" will be removed** , and there will be only "things"
+keywords.
+On **Aug 6** , [This was **confirmed to be done** here with the host's
+reply](https://www.kaggle.com/competitions/llm-20-questions/discussion/523198#2948233).
+Therefore, it is natural for competitors to remove all "locations" Q&A in
+their logics.
+However, as of **Aug 9** , [ (opens in a new tab)">my agent still **compete in
+the game with keyword
+"Australia"**](https://www.kaggle.com/competitions/llm-20-questions/submissions?dialog=episodes-
+episode-55669669), and unavoidbly lost.
+So, to repeat myself, this post just want to ensure that the host know this
+issue, and I hope this will be 100% fix in the evaluation period.
+
+
+## 6 Comments
+
+
+### [zxf](/saedghgdg)
+so what about person name?
+
+
+### [嘎嘎能睡](/gyhuuhiklik)
+also want to know this.
+
+
+### [ytguihkjk](/ytguihkjk)
+person name or place is removed from the test data?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+I will double check to make sure this isn't happening during the final
+evaluation, thanks!
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Got Oregon today during validation
+[Screenshot_20240811-161904.png](https://storage.googleapis.com/kaggle-forum-
+message-attachments/2956206/21047/Screenshot_20240811-161904.png)
+
+
+### [HelloGPX](/peixiangong)
+It's so weird. I think the office should give some feedback.
+
+
+### [Neuron Engineer](/ratthachat)
+Screenshort of the Aug 9 episode
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1364892%2Ff075838892253ec3fae3e1ae1f4ef7e9%2Faustralia_still_locations.png?generation=1723262908891416&alt=media)

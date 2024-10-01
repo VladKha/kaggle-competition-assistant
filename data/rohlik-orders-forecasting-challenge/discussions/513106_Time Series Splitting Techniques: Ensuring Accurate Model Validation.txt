@@ -1,0 +1,149 @@
+[mouadenna](/mouadenna) · 313th in this Competition · Posted 3 months ago
+
+
+### Time Series Splitting Techniques: Ensuring Accurate Model Validation
+So, you're working with time series data. Great! But before you jump into
+training your model, let's talk about splitting your data. For that, we need
+to split the time series data in a way that doesn't mess up your results.
+Let's explore some effective time series splitting techniques that keep your
+models grounded in reality.
+
+### 1\. **TimeSeriesSplit**
+Think of `TimeSeriesSplit` as the reliable timekeeper of your data splits. It
+divides your data into sequential folds, guaranteeing that each training set
+comes from the past and each test set lies in the future.
+    
+    
+    from sklearn.model_selection import TimeSeriesSplit
+    
+    tscv = TimeSeriesSplit(n_splits=5)
+    for train_index, test_index in tscv.split(X):
+        X_train, X_test = X[train_index], X[test_index]
+        y_train, y_test = y[train_index], y[test_index]
+    
+    
+    content_copy
+![TimeseriesSpliting](https://www.googleapis.com/download/storage/v1/b/kaggle-
+forum-message-
+attachments/o/inbox%2F16373126%2F5945d5b24a8db22fcd2d48127955244d%2Fexpanding.png?generation=1718759666474529&alt=media)
+
+### 2\. **Sliding/Rolling Window Split**
+In the rolling window approach, your model strides forward in time,
+maintaining a fixed-size training window that continuously moves along your
+dataset. It's like taking steps into the future while always keeping an eye on
+the past.
+    
+    
+    for date in pd.date_range('2021-02-01', '2021-12-31', freq='MS'):
+        delta = date - pd.offsets.MonthBegin(1)
+        train = series.loc[delta:date-pd.offsets.Day(1)]
+        valid = series.loc[date:date+pd.offsets.MonthEnd(1)]
+    
+    
+    content_copy
+![sliding window
+split](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16373126%2F80eb53df84f37506a3707e2d187c592a%2Frolling.png?generation=1718759716176218&alt=media)
+
+### 3\. **Expanding Window Split**
+With the expanding window split, your model starts small and gradually expands
+its training horizon as it progresses through the data. It's like accumulating
+knowledge over time, incorporating more observations as it moves forward.
+    
+    
+    for date in pd.date_range('2021-02-01', '2021-12-31', freq='MS'):
+        train = series.loc[:date-pd.offsets.Day(1)]
+        valid = series.loc[date:date+pd.offsets.MonthEnd(1)]
+    
+    
+    content_copy
+![expanding window
+split](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16373126%2F4305cba5e1bdfdabb9591c95b37748c4%2Fexpanding.png?generation=1718759748788759&alt=media)
+
+### 4\. **Sliding Window with Gap Split**
+The sliding window with a gap introduces a buffer zone between your training
+and validation sets, ensuring that no information from the future leaks into
+your model's training. It's like building a fence to keep your model grounded
+in the present.
+    
+    
+    for date in pd.date_range('2021-02-01', '2021-12-31', freq='MS'):
+        delta = date - pd.offsets.MonthBegin(1)
+        train = series.loc[delta:date-pd.offsets.Day(1)]
+        valid = series.loc[date+pd.offsets.MonthEnd(1)+pd.offsets.Day(1):date+pd.offsets.MonthEnd(2)]
+    
+    
+    content_copy
+![sliding window with gap
+split](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16373126%2F4d0cc9137762e2f87e277ec470150886%2Fgabb.png?generation=1718759772770309&alt=media)
+
+### 5\. **GroupTimeSeriesSplit**
+GroupTimeSeriesSplit is a scikit-learn compatible version of time series
+validation with groups, ideal for non-overlapping groups. This technique
+ensures that the training and test sets do not overlap, which is crucial for
+time series data to avoid data leakage.  
+(image from [1])  
+![grouptimeseriessplit
+1](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F16373126%2F1c7172b24091a4463b36822c8ca079ea%2FGroupTimeSeriesSplit_22_0.png?generation=1718809169485572&alt=media)
+#### References:
+  1. <https://rasbt.github.io/mlxtend/user_guide/evaluate/GroupTimeSeriesSplit/>
+  2. <https://robjhyndman.com/hyndsight/tscv/>
+  3. <https://otexts.com/fpp3/tscv.html>
+  4. <https://forecastegy.com/posts/time-series-cross-validation-python/>
+
+
+## 9 Comments
+
+
+### [Alaaeddin KHEİTİ](/alaaeddinkhet)
+Thanks for this contribution! it really helps
+
+
+### [Mahdi Ravaghi](/ravaghi)
+The visualizations really help in understanding how these approaches work!
+Thank you for adding them.
+A common issue is that you can't get the OOF predictions from them, since the
+first part of the training data is never used as the test set. Do you (or
+anyone else) know about other methods that provide OOF predictions for use in
+an ensemble, or is ensembling not sensible in time series forecasting? I use
+`GroupKFold` myself, but I'm worried about leakage in my pipeline and might
+need to change it.
+
+
+### [mouadenna](/mouadenna)
+I just added another technique used to avoid data leakage, which is an
+implementation of `GroupKFold` designed for time series called
+`GroupTimeSeriesSplit` from `mlxtend`. You can find more about it
+[here](https://rasbt.github.io/mlxtend/user_guide/evaluate/GroupTimeSeriesSplit/).
+If you find any new information, feel free to share it!
+
+
+### [Josh Haber](/joshhaber)
+Insightful post, time series specific validation is an important consideration
+for this project. Also consider the test_size parameter of time series split
+is looking for the forecasting horizon which we know to be 60, so
+test_size=60.
+
+
+### [alx](/l337tensors)
+Not much difference between the first and third method.
+
+
+### [tanaka](/tanakasandesuka)
+Thank you for the valuable information.
+I would like to ask if the results have improved using these techniques.
+Additionally, since this is a competition for future predictions, there are
+currently no data for testing. How are you planning to address this?
+(For example, will you use recent data as the test subject, or will you use
+data from a year ago?)
+
+
+### [Mitsutani](/dmitsutani)
+This seems very relevant to this competition in particular.
+
+
+### [Fabio Mazzarella](/fabiomazzarella)
+Thank you for adding this contribution!

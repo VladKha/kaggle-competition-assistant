@@ -1,0 +1,19 @@
+[C R Suthikshn Kumar](/crsuthikshnkumar) · 233rd in this Competition · Posted
+18 days ago
+
+
+### Sharing the pre-print of the paper entitled "Large Language Models(LLM)
+for Automating 20 Questions Game"
+With respect to the LLM 20 Questions Competition:  
+<https://www.kaggle.com/competitions/llm-20-questions>
+I am sharing pre-print of my research paper based on the competition dataset
+and my participation :  
+"Large Language Models(LLM) for Automating 20 Questions Game",
+[https://engrxiv.org/preprint/view/3842](url)  
+<https://doi.org/10.31224/3842>
+Appreciate review comments and suggestions for improvements.
+[Artificial
+Intelligence](/discussions?tags=12101-Artificial+Intelligence)[Games](/discussions?tags=2500-Games)[Intermediate](/discussions?tags=13103-Intermediate)[NLP](/discussions?tags=13204-NLP)[Advanced](/discussions?tags=13104-Advanced)
+
+
+## 0 Comments

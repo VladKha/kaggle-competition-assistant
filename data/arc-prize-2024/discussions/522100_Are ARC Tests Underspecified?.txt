@@ -1,0 +1,145 @@
+[Ronan Jones](/rolojo) · Posted 2 months ago
+arrow_drop_up10
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Are ARC Tests Underspecified?
+The answers to the ARC tests require assumptions that humans unconsciously
+make - hear me out.
+I've focused down on a single test for now, but the principle is easy to
+extrapolate to other tests. I answer the question in the way that anyone
+would. See the the image below. And hey, presto, it's correct. But its only
+correct if you make a key assumption: Other rules (to create patterns)
+override black blocks remaining unchanged from the Input to the Output - Well
+of course surely?  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2835990%2F761120ba74a81d9a33760ac2159c9fcb%2FHuman%20Way.PNG?generation=1721829840840578&alt=media)
+So what is the problem? One could be seemingly facetious, in this example, and
+say that the bottom right block is always black and therefore the rule should
+be that it always remains black. See the image below. Yet this is not a
+facetious point at all. Instead it is what the evidence should lead us to
+consider, after all we have nothing in the example set that disproves this
+rule. The only reason we don't consider it as a viable rule is that, as
+humans, we automatically assume that black must give way to other colours.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2835990%2Fd4c938e8e483b2598ffbeeb281ef38e6%2FBlack%20Corner%20Rule.PNG?generation=1721829883783622&alt=media)
+It is for this reason that I argue that these test are underspecified. In
+order to solve these problems we are introducing information or creating
+assumptions that simply do not exists the the example sets. We are being human
+about it instead of being objective about it.
+Would love your thoughts and critique of my arguments.
+comment
+
+
+## 4 Comments
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up4
+  * format_quote
+  * link
+The tests are clearly underspecified in a mathematical sense: in the space of
+all possible mappings X->Y, there are an infinite number of mappings that
+satisfy the 3 examples. This is true of all machine learning problems when
+trying to predict from a limited set of data - how do you fill in the missing
+items?
+If you read Chollet's paper "On the Measure of Intelligence," which sets the
+stage for ARC, he talks about prior knowledge of the world, such as
+objectness, etc. This is what is required to make the puzzles solvable.
+Take a look at this discussion [A Question about
+Priors](https://www.kaggle.com/competitions/arc-prize-2024/discussion/521044)
+In some sense, the rule we are looking for is the "shortest" one that explains
+the data, where the shortest is defined in terms of some _human centered prior
+knowledge_.
+Consider your example. Here are 2 alternative rules that describe the puzzle,
+both correctly describe the given answers:
+A. (1) Surround red pixels with pattern 1, surround blue pixels with pattern
+2, leave other non-black pixels alone.
+B. (1) Surround red pixels with pattern 1, surround blue pixels with pattern
+2, leave other non-black pixels alone.  
+(2) make the lower right hand pixel black
+Rule A is preferred because it is shorter. Of course, which rule is shorter
+depends entirely on the language (or DSL) used to describe the rules. So you
+need to figure out some way for your solution to incorporate this innate human
+knowledge, whether explicitly through a DSL, or learned through some type of
+training on examples, or a LLM that has "learned" some of these concepts.
+Not an easy task.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+  1. What about the **_upper-left_** black square?
+  2. I have lived to see a human experience the frame problem!
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up0
+  * format_quote
+  * link
+I assume you are joking, but the reason I used the lower-right square (other
+than [@rolojo](https://www.kaggle.com/rolojo) used it), is that it makes my
+rules A and B give a different answer on the test input. The upper-left square
+could be involved in a potential rule, but is moot because it gives the same
+prediction on the test input.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Well, verbal irony is often tossed in with joking, but… I actually noticed the
+unsuitability of upper left right after hitting send - I hoped no one would
+notice. There is another easy candidate: three from the top and two in from
+the right… pretty much any black square that hadn't already been _proven_ by
+one of the training outputs, but needs to have a new color added in the test
+output.
+
+
+### [Serhii Hrynko](/elvenmonk)
+arrow_drop_up0
+  * format_quote
+  * link
+What if we imagine red cell anywhere on the edge right outside the visible
+input grid? Color of any edge output cell is undetermined and depends on
+unknown data outside visible input grid.
+You can imagine some rule that determines where red and blue dots are on the
+input that will suggest that there must be red or blue dot on the outer edge
+of the grid. Or another task can actually have some visual hint that will
+point to red or blue cells even when they are not visible on the input.
+
+
+### [Serhii Hrynko](/elvenmonk)
+arrow_drop_up2
+  * format_quote
+  * link
+[@solverworld](https://www.kaggle.com/solverworld) is absolutely right that in
+fact no set of examples would be complete in a mathematical sense. Any
+function defined on any subset of 2d grids and returning 2d grid from any
+subset of all 2d grids is equaly valid. No finite set of examples defines this
+function or tells anything about outputs from any other inputs.  
+I already wrote about it here: <https://www.kaggle.com/code/elvenmonk/size-
+background-grid-lines-boundary-boxes>  
+We as humans interpret information as visual and give prefernce to visually
+outstanding rules, patterns. There are however, hidden/implicit rules that we
+must also take into account when solving each task, like rules defining size
+of a grid or colors of "irrelevant"/background pixels, grid lines, etc.
+And to you point there are even more rules that while can be inferred from
+input data, are ignored or rejected by us and not included in the resulting
+set of rules that define a solution of a task. Every time 2 or more "rules"
+that we infer contradict each other we must give one of them preference, based
+on our experience (again biased by human perception).
+There are couple of examples that I use to show that problem in our hand is
+not as simple as we think it is:
+  * first imagine that you don't have computer, only pen and paper and you are given these same tasks in their original JSOn format - you don't "see" 2d grids, instead you see lots of poorly formatted numbers. **How many of 100 test tasks you'll be able to solve in 9 hours?**
+  * next imagine that it is not you who has to solve the test tasks. Instead you are given group of toddlers or better yet chimpanzee, and your goal is to teach/train them to solve this kind of tasks, so that they can go and solve 100 tasks you have never seen in 9 hours. Will they succeed?
+I personally believe human kids as well as most of mammals have level of
+general intelligence unreachable by even largest modern and future language
+models. Still their results on these tasks are unlikely to get even close to
+the results that are already obtained by non-ML algorithms created
+specifically to solve this kind of problems.

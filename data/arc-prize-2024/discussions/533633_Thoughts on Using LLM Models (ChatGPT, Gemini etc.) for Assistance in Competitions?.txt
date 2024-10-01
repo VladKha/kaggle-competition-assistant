@@ -1,0 +1,57 @@
+[hklee](/zeemeen) · Posted 18 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+###  Thoughts on Using LLM Models (ChatGPT, Gemini etc.) for Assistance in
+Competitions?
+I’ve been thinking about the role of large language models (LLMs) like ChatGPT
+in competitions like this, and I’m curious to hear your thoughts. We all know
+the rules discourage sharing ideas or solutions outside of Kaggle, but what
+about using LLMs to help understand concepts or get general guidance?
+Here are a few specific points I’d like to hear from the community about:
+Do you think it's fair to use LLMs for general conceptual advice (e.g., asking
+for help understanding certain algorithms or exoplanet transit data)?
+Where would we draw the line between using LLMs for learning and using them to
+generate potential solutions for the competition?
+Has anyone used LLMs for any similar tasks, and what are your thoughts on
+whether this is within the spirit of the competition?
+I feel like it could be a gray area, so I wanted to hear from others. I want
+to make sure that I’m playing fair, but at the same time, I'm curious whether
+there’s a consensus on how far is too far when using tools like this.
+comment
+
+
+## 3 Comments
+
+
+### [hklee](/zeemeen)
+arrow_drop_up0
+  * format_quote
+  * link
+The confusion arises from how one can see LLM as either an external data
+source or a platform for indirect or implicit sharing of ideas and code. If it
+is an external data, and freely or comercially accessible like gemini pro, I
+think OK as long as one cite an external dataset. But it is regarded as a
+platform, we must clarify whether it is conflict with the no-sharing rule.
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up0
+  * format_quote
+  * link
+As far as I understand you cannot share code with other teams. That does not
+include LLMs
+
+
+### [Guillermo Barbadillo](/ironbar)
+arrow_drop_up0
+  * format_quote
+  * link
+I don't see any problem in using LLMs for any task related to the competition.
+Could you elaborate more your question? What would be the problem or the
+forbidden use of LLMs?

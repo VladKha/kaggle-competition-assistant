@@ -1,0 +1,118 @@
+[Marília Prata](/mpwolke) · Posted 4 months ago
+
+
+### Q20 Game with Reinforcement Learning. Markov Decision Process (MDP).
+# Q20 Game with Reinforcement Learning
+Playing 20 Question Game with Policy-Based Reinforcement Learning
+Authors: Huang Hu1, Xianchao Wu, Bingfeng Luo, Chongyang Tao,Can Xu, Wei Wu
+and Zhan Chen
+"In this paper,the authors proposed a novel policy-based Reinforce-ment
+Learning (RL) method, which enables the questioner agent to learn the optimal
+policy of question selection through continuous interactions with users. To
+facilitate training,they also proposed to use a reward network to estimate the
+more informative reward. Compared to previous methods, their RL method is
+robust to noisy answers and does not rely onthe Knowledge Base of objects.
+Experimental results show that our RL method clearly outperforms an entropy-
+based engineering system and has competitive performance in a noisy-free
+simulation environment."
+"It is not easy to design the algorithm to construct a Q20 game system.
+Although the decision tree based method seems like a natural fit to the Q20
+game, it typically require a well defined Knowledge Base (KB) that contains
+enough information about each object, which is usually not available in
+practice. It was used a object-question relevance table as the pivot for
+question and object selection, which does not depend on an existing KB
+(Knowledge Base). Further it was improved the relevance table with a lot of
+engineering tricks. Since these table-based methods greedily select questions
+and the model parameters are only updated by rules, their models are very
+sensitive to noisy answers from users, which is common in the real-world Q20
+games. It was utilized a value-based Reinforcement Learning (RL) model to
+improve the generalization ability but still relies on the existing KB.
+# Markov Decision Process (MDP)
+"In this paper, the authors formulated the process of question selection in
+the game as a Markov Decision Process (MDP), and further propose a novel
+policy-based RL framework to learn the optimal policy of question selection in
+the Q20 game. Their questioner agent maintains a probability distribution over
+all objects to model the confidence of the target object, and updates the
+confidence based on answers from the user."
+# RewardNet
+"At each time-step the agent uses a policy network to take in the confidence
+vector and output a question distribution for selecting the next question. To
+solve the problem that there is no immediate reward for each selected
+question, the authors also proposed to employ a RewardNet to estimate the
+appropriate immediate reward at each time-step, which is further used to
+calculate the long-term return to train their RL model."
+"Their RL (Reinforcement Learning) framework makes the agent robust to noisy
+answers since the model parameters are fully learnable and the question
+distribution provides us with a principled way to sample questions, which
+enables the agent to jump out of the local optimum caused by incorrect answers
+and also introduces more randomness during training to improve the model
+generalization ability. Furthermore, the ability to sample questions, compared
+to greedy selection, also improves the diversity of the questions asked by
+their agent, which is crucial for user experience."
+<https://www.researchgate.net/publication/327199595_Playing_20_Question_Game_with_Policy-
+Based_Reinforcement_Learning>
+
+
+## 4 Comments
+
+
+### [JDau](/jdaustralia)
+Hey that's pretty interesting. I've bookmarked this for future reference as
+I'm quite interested in the reinforcement aspect.
+Just for fun, I decided to give everyone's favourite LLM a go with this game.
+I wanted to see if Chats (via co-pilot) could figure out my choice of John
+Maynard Keynes. Chats spent a lot of questions trying to figure out a category
+(but economics wasn't a standard offering). Here's an example exchange:
+> Copilot  
+>  Let’s narrow it down. Is this historical figure known for their scientific
+> discoveries, or are they more famous for their political or social impact? 🤔  
+>  You  
+>  There is not a clear answer to that. They were involved in all 3,
+> particularly if you take a loose view on the phrase 'scientific discoveries'
+Despite the hint (regular hints) that the famous person was involved in what
+some would call a social science, it never honed in on the category. I did
+appreciate the emoji though…
+It was also obvious that Chat's was struggling with keeping track of the
+question number. (Perhaps it's human after all?)
+> Question 12: Did this person have a significant impact in the field of art,
+> music, or literature? 🤔  
+>  You  
+>  They wrote books. But I don't think this person would be regarded as having
+> a significant impact in the field of literature.  
+>  Copilot  
+>  Thank you for the additional context! It’s intriguing that this historical
+> figure wrote books, although their impact in the field of literature may not
+> be considered significant. Let’s continue our quest:  
+>  Question 12: Did this person have a significant impact in the field of art,
+> music, or literature? 🤔  
+>  You  
+>  You're up to question 13 now.  
+>  Copilot  
+>  My apologies for the oversight! Let’s continue with the next question:
+
+
+### [Marília Prata](/mpwolke)
+Very nice examples JDaustralia.  
+There are great competitions on Kaggle with Agents and reinforcement learning,
+such as:  
+[Connect X](https://www.kaggle.com/competitions/connectx)
+[Lux AI Season 2](https://www.kaggle.com/competitions/lux-ai-
+season-2/overview)
+[Kore 2022](https://www.kaggle.com/competitions/kore-2022/overview)
+[Halite by Two Sigma](https://www.kaggle.com/competitions/halite)
+
+
+### [Edwin Samuel Giftson](/edwinsamuelgiftson)
+This way of playing the 20 Questions game is really cool! They're using
+something called reinforcement learning to make a smart question-asking agent.
+It learns which questions to ask by talking with people. They also have this
+thing called RewardNet that helps figure out if the answers are good or not.
+It's a big step forward compared to how things used to be done, which often
+had problems with bad answers and needing a lot of info already set up
+
+
+### [Marília Prata](/mpwolke)
+The fun fact is that the authors wrote that "It's not easy to design the
+algorithm to construct a Q20 game system."  
+If it's not easy for them, imagine for me cause I'm a beginner : ) Thank you
+Giftson.

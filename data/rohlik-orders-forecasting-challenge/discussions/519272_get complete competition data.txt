@@ -1,0 +1,24 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 2 months ago
+
+
+### get complete competition data
+Due to the fact that the evaluation metric for the competition is MAPE,
+y_true=0 cannot appear in the data. If it does, a denominator of 0 will cause
+the metric to report an error. Adding a 1e-15 to the denominator can avoid
+errors, but it can lead to a huge loss in the evaluation metric.
+I think this is the reason for some missing dates in the training data. Do we
+need this data to train the model? I am also searching for the answer.
+I tried to recover complete training data.This is the first version I wrote,
+and if necessary, it may continue to be updated.
+<https://www.kaggle.com/code/yunsuxiaozi/rohlik-orders-get-complete-
+competition-data>
+
+
+## 1 Comment
+
+
+### [Rabie El Kharoua](/rabieelkharoua)
+[@yunsuxiaozi](https://www.kaggle.com/yunsuxiaozi) you can use RMSE to
+evaluate your model during testing. It is not sensitive to null values, and
+the formula is straightforward, But is it a good idea to use a different
+metric than the one used for scoring? I'm not sure about that.

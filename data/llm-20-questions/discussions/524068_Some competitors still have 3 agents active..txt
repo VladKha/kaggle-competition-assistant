@@ -1,0 +1,50 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted a month ago
+
+
+### Some competitors still have 3 agents active.
+While most participants that are actively submitting have 2 agents active,
+older submissions still have 3 agents active (at least this is displayed on
+the leaderboard). Is this a bug?
+
+
+## 6 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+I just ran an update to disable any third agents, all teams should now have 2
+agents
+
+
+### [JK-Piece](/jeannkouagou)
+Thanks for the feedback, but it seems it didn't work
+
+
+### [Regis Vargas](/regisvargas)
+But from what I understand, according to the rules, the last three agents
+would be competing until the end. Wouldn't that be it?
+
+
+### [Songling](/wolfmedal)
+[@regisvargas](https://www.kaggle.com/regisvargas) Changed my brother, game
+update
+
+
+### [blackbun](/blackbun)
+I guess the number of active agents changes once you submit a new agent after
+the rule update.
+
+
+### [HelloGPX](/peixiangong)
+I think so, as I haven't update code for a long time, I still have 3 active
+agents.
+
+
+### [Regis Vargas](/regisvargas)
+This is strange because my second to last agent is disabled, and he was
+submitted 15 days ago.
+
+
+### [Songling](/wolfmedal)
+It should be updated after the game. Now we have six agents

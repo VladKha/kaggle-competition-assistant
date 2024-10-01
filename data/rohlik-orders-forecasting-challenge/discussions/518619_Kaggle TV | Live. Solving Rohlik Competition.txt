@@ -1,0 +1,64 @@
+[Samvel Kocharyan](/samvelkoch) · 322nd in this Competition · Posted 2 months
+
+### Kaggle TV | Live. Solving Rohlik Competition 
+Hey, today I'm solving Rohlik in Live mode at live strem. Feel free [to join
+me](https://www.twitch.tv/samvelkoch). Will use H2Oai DriverlessAI to touch
+the Rohlik data. See you…
+UPD: July 10th, 10:00 CET | [LIVE Kaggling](https://www.twitch.tv/samvelkoch/) | Finished  
+UPD: July 11th, 18:30 CET | [LIVE Kaggling](https://www.twitch.tv/samvelkoch/) | Finished
+
+
+## 8 Comments
+
+
+### [Samvel Kocharyan](/samvelkoch)
+UPD: July 10th, 10:00 CET | [LIVE Kaggling](https://www.twitch.tv/samvelkoch/)
+I'll continue to work with Rohlik Data. Roadmap for today:
+  * get hands on tsururu framework, 
+  * some feature engineering, 
+  * AutoGluon 
+
+
+### [Thomas Meißner](/thomasmeiner)
+What was the result from this steam? Did H20 perform well?
+
+
+### [Samvel Kocharyan](/samvelkoch)
+0.0454 from the very basic settings. But I didn't dive too deep beyond
+defaults.
+[@thomasmeiner](https://www.kaggle.com/thomasmeiner) probably this competition
+already has its top possible scores in private LB. I'm not sure that we'll
+invent here a new magic wheel for sales prediction. Floating events as
+anomalies, user_activities and tricks with data drifts are the keys for a good
+models.
+[@mkecera](https://www.kaggle.com/mkecera) if that not a secret why you need 2
+month predictions? I assumed that Rohlik business implies more agile
+approaches to the replenishment of warehouse stocks
+
+
+### [MichalKecera](/mkecera)
+[@samvelkoch](https://www.kaggle.com/samvelkoch) good question. Thanks.  
+We actually need more than 2 months. There are several processes where order
+forecast is used:
+  * SKU forecast: yes, here you don't need that much in advance as ordering is done more frequently but still need at least a few weeks
+  * workforce planning: you need to have a short-term and long-term idea about how many people will be needed at the warehouses and in the logistics. Long-term is easily a couple months in advance.
+
+
+### [Samvel Kocharyan](/samvelkoch)
+That makes sense. Thanks for clarifying, Michal 🙏
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Stream finished.
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+Congrats for this endeavor [@samvelkoch](https://www.kaggle.com/samvelkoch)
+
+
+### [Yan Teixeira](/yantxx)
+where is the vod? haha
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Got it! Sorry, didn't saved it this time. 🥲

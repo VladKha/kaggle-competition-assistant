@@ -1,0 +1,21 @@
+[emoji_people](/madarshbb)
+[chinnum97](/madarshbb) · 50th in this Competition · Posted 7 days ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Test time augmentation for active inference
+For those working on active inference, how are you guys tacking the problem of
+data augmentation? The augmentation is the easy part, but how do you ensure
+the logic remains conserved when augmenting the input examples? I have been
+wondering about this for quite some time but dont really seem to get anything
+going here. Seems like the best shot is to keep the 'augmentors' as simple as
+possible, and naively augment the test set and fit our models on this noisy
+distribution.
+comment
+
+
+## 0 Comments

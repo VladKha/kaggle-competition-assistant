@@ -1,0 +1,44 @@
+[hengck23](/hengck23) · Posted 3 months ago
+
+
+### what!? there is even paper on this.
+<https://arxiv.org/pdf/2310.01468>  
+Probing the Multi-turn Planning Capabilities of LLMs via 20 Question Games  
+code and data: <https://github.com/apple/ml-entity-deduction-arena>
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F113660%2F4dd5932e7c34ee3d8e03f038f06eb0a0%2FSelection_999\(5434\).png?generation=1716486308187269&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F113660%2F4f2d49be99b62970abfc1cefc96e4b1a%2FSelection_999\(5435\).png?generation=1716486328454608&alt=media)
+<https://arxiv.org/abs/1808.07645>  
+Playing 20 Question Game with Policy-Based Reinforcement Learning
+<https://arxiv.org/pdf/2301.01743>  
+CHATBOTS AS PROBLEM SOLVERS: PLAYING TWENTY QUESTIONS WITH ROLE REVERSALS
+
+
+## 5 Comments
+
+
+### [Hongbin Na](/hongbinna)
+ChatGPT’s Information Seeking Strategy: Insights from the 20-Questions Game  
+<https://aclanthology.org/2023.inlg-main.11/>
+
+
+### [Wayne Kimutai](/waynekimutai)
+Kinda like Akinator
+
+
+### [kartikey bartwal](/kartikeybartwal)
+I love how LLM's have their own unique world for performance metrics. About to
+give this contest, really excited 😊
+
+
+### [jazivxt](/jazivxt)
+I believe key is in changing the questions from 'it' to the obs.keyword before
+asking the LLM the yes/no question in the game as would be interpreted by
+anyone answering. If there is no it or keyword and the question is something
+like is the grass green? the answer should be no :) but if asked directly to
+the LLM the answer will be yes.
+
+
+### [Pavithra Devi M](/ninjaac)
+little interesting

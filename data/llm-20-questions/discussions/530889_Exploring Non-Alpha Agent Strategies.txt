@@ -1,0 +1,91 @@
+[Magsen Chebini](/magsenchebini) · 76th in this Competition · Posted 3 days
+
+### Exploring Non-Alpha Agent Strategies
+As the competition is nearing its end, I've noticed that a majority of the top
+teams (10 out of top the 10, 17 out of the top 20) are employing a similar
+strategy, using alpha-agents that rely on lexicographical ordering to guess
+the keyword.
+While this approach is undoubtedly effective in securing a top spot, I believe
+it might not fully capture the broader scope of what this competition aims to
+evaluate.
+In light of this, I'm particularly interested in learning more about
+successful non-alpha agent strategies that have shown promise. For those of
+you who have taken a different approach (perhaps focusing on more creative or
+unconventional methods) could you share your insights?
+Thanks for you insights and best of luck for the final race!
+
+
+## 6 Comments
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Full LLM submission here. I deployed the following strategies:
+  1. Structured output using Pydantic classes (powered by Outlines)
+  2. Using the structured output to create Chain-of-Thought prior to question/answer/guess response and limits on length.
+  3. Questioner was given generic 20 question strategies in the prompt (broad->narrow questions, game state tracking, binary splitting, logical path-following, and backtracking)
+  4. Answerer was given specific instructions to answer questions with the "common" understanding of the keyword in question. 
+  5. Guesser was provided a distilled list of the broad categories in which the keyword list would be derived from (home items, furniture, health-related, tools, etc.). Also given suggestions for guess strategy. If a keyword was repeated from previous guesses, the guesser is reprompted to guess again with different model parameters. 
+Both questioner and guesser was the full q&a history.
+Model used: VAGOsolutions/Llama-3.1-SauerkrautLM-8b-Instruct (4 bit quant)
+Self-play eval win rate = 12%  
+Rank = 43 based on [@jademonk](https://www.kaggle.com/jademonk) 's LLM
+performance metric analysis  
+Leaderboard ranking = ~low 100's as of Aug 29.
+
+
+### [Andrew Tratz](/jademonk)
+Thanks for sharing! Hope you will consider doing a full write-up. I'd be
+interested in knowing more details of your solution, particularly #1 and #2
+above
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Sure. I can do that. I just didn't think anyone would be interested,
+especially since it likely won't even get a medal position.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Not in top 10 but somewhere in 50th. Will share my solution after competition
+ends. I am happy with my full on LLM approach. But unhappy with some of my
+mistakes :)
+
+
+### [Chris Deotte](/cdeotte)
+I think a main challenge of Pure LLM solution is handling incorrect Answerer
+answers. The Questioner Guesser cannot assume every yes/no answer is correct.
+(Doing so may rule out the correct guess).
+(Agent Alphas have the benefit of knowing Answerer answers are correct whereas
+Pure LLM dont)
+A simple solution is to assume 33% of answers are wrong. So for example after
+asking 9 yes/no questions, we can guess any word that satisfies 66% = 6 out of
+9 of answers.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Right! Due to this, I experimented with having the guesser assess the logical
+coherence of the answers and backtrack guesses when needed, and I had the
+questioner backtrack to previous questions to clarify answers if the guesser
+was 'confident' in its guess but the game was still ongoing. It didn't improve
+self-play evaluation too much but instead increased the inference time needed.
+Due to the comp restraints, I opted to leave that strategy behind, but it may
+have been useful if there was faster inference throughput or more time allowed
+per agent.
+The "truthfulness"/accuracy of any answerer agent was a heavy blow to many
+performant agents in this competition.
+
+
+### [loh-maa](/lohmaa)
+[@matthewsfarmer](https://www.kaggle.com/matthewsfarmer) Interesting, and I'm
+also curious how do you really work with these LLMs in such a non-trivial task
+-- is it just manual prompt rewriting and testing and experimenting like that?
+When I tried, I quickly became tired with this methodology. Simple stuff --
+yes, but tackling a bigger problem with a system of prompts seems so tedious.
+I've seen some "prompt optimization" packages here and there, but never tried
+and I guess it also takes lots of work to setup such an optimization task.
+
+
+### [Andrew Tratz](/jademonk)
+My general intuition was that "yes" answers provided more information value
+than "no" answers. Receiving a "no" and assuming that the opposite is
+therefore truth is a good way to get sidetracked. I thought of the questioner
+as a "yes-seeker".

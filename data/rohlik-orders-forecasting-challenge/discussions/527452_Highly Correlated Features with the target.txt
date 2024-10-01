@@ -1,0 +1,47 @@
+[AC](/ahsuna123) · 137th in this Competition · Posted a month ago
+
+
+### Highly Correlated Features with the target
+User_activity_1 and 2 turns out to be highly correlated features to our
+target.  
+Here's a list of feature correlation with "Orders". Used Orange software to
+evaluate.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2875376%2F160c99bd3afd832cfca1c13f9631fbda%2FScreen%20Shot%202024-08-12%20at%209.50.45%20AM.png?generation=1723447795119328&alt=media)
+
+
+## 4 Comments
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+I am currently trying to predict the current orders using user'activity2 from
+90, 180, and 365 days ago, and the ridge regression result is 0.0885
+
+
+### [Ahmed Alghali](/ahmedalghali)
+Thanks for sharing that, can you elaborate on what is “orange”? seems like
+it’s a statistical package software or something.
+
+
+### [AC](/ahsuna123)
+Oh yes, it's a software with widgets that performs the task at hand, for
+instance pre-process, visualizing embeddings and even train a regression
+model. There are lots of widgets, I just named a few.  
+Here's the link to the software : [Orange](https://orangedatamining.com/)  
+Hope, it helps! :) [@ahmedalghali](https://www.kaggle.com/ahmedalghali)
+
+
+### [Ahmed Alghali](/ahmedalghali)
+amazing, this is the first time I ever heard of it, I will definitely check
+it, thank you!
+
+
+### [Ern711](/ern711)
+It is high correlation yes, but if you check for each warehouse separately
+you'll find that it is much less (even though still quite high with > 0.7 for
+all warehouses and even > 0.8 for some).
+If comparing the correlation of lagged values against target one can also
+notice that the lagged user_activity_2 in general has higher correlation with
+target than the lagged target itself. So maybe lagged user activity could be a
+useful feature (as already suggested/hinted by
+[@yunsuxiaozi](https://www.kaggle.com/yunsuxiaozi))

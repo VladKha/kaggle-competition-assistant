@@ -1,0 +1,79 @@
+[Ravi Ramakrishnan](/ravi20076) · 614th in this Competition · Posted 22 days
+
+### Viewing and inferring the churn
+Hello all,
+We have a moderately high level of churn herewith- the below picture probably
+provides a better detail in this regard-
+![LB churn](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-
+message-
+attachments/o/inbox%2F8273630%2Fff2b9f7137042ab674aea8f6034aae49%2FRohlikLB.png?generation=1724450686445233&alt=media)
+Rank zones | Comments  
+---|---  
+R1 | * This is indicative of top 100 ranks that remained in the public and private leaderboards.   
+* Considering the level of churn overall, this is a success in my opinion  
+R2 | * This is a moderately highly dense region that indicates overfitting   
+* Considering the small size of the dataset and the overall churn potential in the competition, this was much expected  
+R3 | * This is a moderately highly dense region that indicates an upturn in ranks on the private leaderboard from the public leaderboard   
+* Hearty congratulations to these participants  
+R4 | * These indicate overfitting, but for those participants from moderate public leaderboard ranks to a moderate private leaderboard ranks   
+* This was also expected given the nature of the dataset and the nature of the test set  
+  
+
+### Analysis of the top 100 ranks
+Rank groups | Comments  
+---|---  
+1- 10 | * Stable teams = 6   
+* Teams entering from below = 4  
+11-50 | * Stable teams = 18   
+* Teams entering from below = 18   
+* Teams entering from above = 4  
+51-100 | * Stable teams = 9   
+* Teams entering from below = 33   
+* Teams entering from above = 8  
+  
+  
+We observe a very low level of stability across ranks 11-100 as mentioned in
+the table above. This was also expected considering the small size of the
+data.
+
+### Additional analysis
+Rank changes | Public LB rank | Private LB rank  
+---|---|---  
+Maximum rank change upwards | 73 | 676  
+Maximum rank change downwards | 525 | 51  
+  
+  
+Wishing everyone the best, happy learning and best regards!
+[Tabular](/discussions?tags=14101-Tabular)[Time Series
+Analysis](/discussions?tags=13209-Time+Series+Analysis)[Data
+Storytelling](/discussions?tags=17076-Data+Storytelling)
+
+
+## 5 Comments
+
+
+### [hoon0303](/hoon0303)
+Thank you for the detailed analysis on churn and rank stability.
+
+
+### [Ern711](/ern711)
+Nice visualization!
+I was convinced of a huge shake-up early on in the competition, until I tried
+to replicate the LB situation locally.
+When doing a time based split to get (more or less) the latest 60 days for
+each warehouse in the test set, and then randomly splitting this test set into
+a 31% set and a 69% set, I found that the best model on the 31% set was almost
+always the best on the 69% set as well. That made me like 50-50 regarding
+shake-up.
+
+
+### [Nikhil R](/nikhilramlukan)
+Thank you for sharing. Very helpful.
+
+
+### [Tanishk Patil](/tanishkpatil)
+Thanks for sharing.
+
+
+### [Aseem1999](/aseem1999)
+thanks for the info

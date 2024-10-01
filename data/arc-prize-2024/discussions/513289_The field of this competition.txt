@@ -1,0 +1,28 @@
+[yunsuxiaozi](/yunsuxiaozi) · 820th in this Competition · Posted 3 months ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### The field of this competition
+May I ask if the field of this competition is deep learning or reinforcement
+learning, and does it require high computing resource equipment? Is it
+suitable for ordinary people to play?
+comment
+
+
+## 1 Comment
+
+
+### [fchollet](/fchollet)
+arrow_drop_up3
+  * format_quote
+  * link
+It's AI. It could be framed as either a deep learning problem, a program
+synthesis problem, or a search for novel neurosymbolic architectures. Regular
+folks with low compute resources can definitely enter and in fact some of the
+top entries in previous editions of the competition did not consume much
+compute resources at all.

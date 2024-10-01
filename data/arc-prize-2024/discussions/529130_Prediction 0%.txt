@@ -1,0 +1,66 @@
+[adl212](/adl212) · 972nd in this Competition · Posted a month ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Prediction 0%
+I am getting ~48% on training set, ~22% on evaluation set, but whenever I
+submit I get 0%. In the output file, I leave the "input" section within the
+JSON file, could that possibly mess things up? Example of output:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6947232%2Fb73be9135510b94b124e9adf00ca24e8%2FScreenshot%202024-08-18%208.18.12%20PM.png?generation=1724037555351422&alt=media)
+comment
+
+
+## 5 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Also, the process is looking for a strictly-formatted answer - just the two
+attempts, etc. That will definitely mess things up, as far as even getting a
+score. BUT, the private test suite is specifically engineered to be new. There
+are no examples from the old training or eval. You really _are supposed to be
+getting a score of zero_ if you are in any way relying on previous examples.
+
+
+### [adl212](/adl212)
+arrow_drop_up1
+  * format_quote
+  * link
+I guess I will remove the input section to make sure the output is certainly
+evaluated correctly. As for the private test set, there are training examples
+given for which I fine-tune into my model. Thanks for your helpful input!
+
+
+### [lizhecheng](/lizhecheng)
+arrow_drop_up2
+  * format_quote
+  * link
+I think this is because the test data are significantly more challenging than
+both the training and validation data.
+
+
+### [MD Mushfirat Mohaimin](/mushfirat)
+arrow_drop_up0
+  * format_quote
+  * link
+why is your name "Enter your display name" 🤣
+
+
+### [feiwenxuan](/feiwenxuan)
+arrow_drop_up0
+  * format_quote
+  * link
+Yes, including the "input" section in the output JSON file could potentially
+mess up the submission format. Typically, submission files are expected to
+follow a specific format, and any extra or incorrect information can lead to
+errors or a score of 0%. I recommend removing the "input" section and any
+other unnecessary information from the output file before submitting it to
+ensure it matches the required format.

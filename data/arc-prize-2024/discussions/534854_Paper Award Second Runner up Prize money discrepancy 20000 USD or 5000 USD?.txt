@@ -1,0 +1,35 @@
+[AC](/ahsuna123) · Posted 12 days ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Paper Award Second Runner up Prize money discrepancy 20000 USD or 5000
+USD?
+Hey, there! In the competition's overview page, the prize money for second
+runner-up is 20000 USD. On the other hand thou, on the official website, it
+says 5000 USD?  
+Why is that? I guess, it's a glitch coz the pool prize for Paper Award is
+75000 USD.
+**Overview Page's Description:**
+> Paper Award Prizes: $75,000  
+>  Winner: $50,000  
+>  First Runner Up: $20,000  
+>  Second Runner Up: $20,000
+comment
+
+
+## 1 Comment
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+
+arrow_drop_up1
+  * format_quote
+  * link
+I've corrected the Overview page! The external website and competition rules
+were correct. It was a typo on my part - thanks for raising!

@@ -1,0 +1,35 @@
+[kartik pandey](/kartik3pandey) · 77th in this Competition · Posted a month
+
+### Incorporating Pre- and Post-Holiday Effects in Model Training
+Hi everyone,
+I've been thinking about the potential impact of holidays on consumer
+behavior, particularly how the days leading up to and following holidays might
+influence order patterns. To capture this, I'm considering adding features
+that indicate the number of days before and after a holiday.
+**Here's what I'm planning** :  
+Feature Creation: Add a new column that counts the number of days before and
+after holidays. This could help the model recognize patterns such as increased
+shopping before a holiday or decreased activity afterward.
+Categorical Features: I also add binary indicators for is_holiday,
+before_holiday, and after_holiday to see if the model benefits from this
+simpler representation.
+**Why This Matters** :  
+Holiday effects can introduce significant variability in order volumes.
+Capturing these nuances improve the model's ability to predict spikes or drops
+around these periods, leading to better overall accuracy.
+What other features might work well in capturing the pattern?
+
+
+## 1 Comment
+
+
+### [shota](/ikarishota)
+That is a great observation.  
+I looked up the days when order >= 5000 and found that there are indeed as
+many orders before and after holidays as there are on holidays.  
+I also heard that Fridays account for a large percentage of orders, so I
+checked and found twice as many orders as before and after holidays. These
+could be the amount of features that could significantly change the
+performance of the model.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F9418425%2Fc1b4ce1a8ff2fde53742e774144becb7%2F2024-08-19%202.38.06.png?generation=1724002720524812&alt=media)

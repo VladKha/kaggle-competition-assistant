@@ -1,0 +1,79 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 3 months ago
+
+
+### There are only 123 test data in the leaderboard.
+In fact, everyone is going further and further on the path of overfitting.
+
+
+## 8 Comments
+
+
+### [Yan Teixeira](/yantxx)
+For this competition, we should probably not care about the public LB.
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+Agreed, also complex workflows and models are unlikely to work here
+[@yantxx](https://www.kaggle.com/yantxx)  
+I think we can expect a high shakeup at the end!
+
+
+### [Yuchen20](/yuchen2066)
+But I thought from another post, the competition host have verified that the
+LB and private test are not divided
+[sequentially](https://www.kaggle.com/competitions/rohlik-orders-forecasting-
+challenge/discussion/510914), wouldn't that make the LB and private test
+really similar? and therefore would be better to 'overfit' public LB.
+
+
+### [Yan Teixeira](/yantxx)
+[@yuchen2066](https://www.kaggle.com/yuchen2066) I think the host made a good
+decision by not using a sequential split for the data. This makes it harder to
+probe the leaderboard and gain an unfair advantage.
+> wouldn't that make the LB and private test really similar?
+Since we don't know how the split was made, it's currently impossible to know
+the distribution of the target in the public and private sets. We don't know
+if they are similar or not. Sure you can bet that they will be similar, it's a
+valid strategy.
+
+
+### [Lennart Haupts](/lennarthaupts)
+Not that I condone this, but one could still probe the leaderboard to check if
+there is any imbalance between the included warehouses. Imagine, for example,
+finding out munich wasn't included in the public set at all.🤷‍♂️
+
+
+### [Yuchen20](/yuchen2066)
+oh yes, this could be very plausible
+
+
+### [MichalKecera](/mkecera)
+Hi [@lennarthaupts](https://www.kaggle.com/lennarthaupts) there is not that
+large imbalance. Every warehouse is included in the test. The split is fairly
+random.
+
+
+### [Thomas Meißner](/thomasmeiner)
+Personally I like this type of competition. This high level of uncertainty
+requires careful testing and evaluation.  
+A shakeup is very likely here. So far I have more question marks than answers,
+but it keeps the excitement.
+
+
+### [Adam Logman](/adamlogman)
+In addition there is no huge gaps between competitors
+
+
+### [Yan Teixeira](/yantxx)
+Please throw your questions on the forum. I want to discuss 🤣
+it has been too quiet so far
+
+
+### [Adam Logman](/adamlogman)
+You have to wait for a huge shake up  
+so trust your cv , don’t care about Lb
+
+
+### [Sheikh Muhammad Abdullah](/abdmental01)
+Half of the LB : Uses KFold and i think In Private Score There Will be a Big
+Change..

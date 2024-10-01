@@ -1,0 +1,19 @@
+[Mehran Kazeminia](/mehrankazeminia) · 17th in this Competition · Posted 2
+arrow_drop_up8
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ARC Mastery📌Tutorial-1
+  * The ARC challenge is very different from other Kaggle challenges and participants have limited resources to study and prepare. For this reason, we decided to prepare and publish our notebook number four in this connection. Of course, if this notebook gets the attention and use of readers, maybe we can publish more "Tutorial" notebooks.
+[[4]📶ARC
+Mastery📌Tutorial-1](https://www.kaggle.com/code/mehrankazeminia/4-arc-mastery-
+tutorial-1)
+  * The ARC challenge is the initial steps for machine learning in the field of "Abstraction and Reasoning". Therefore, we should not expect that unique routes are recommended for participating in this challenge. In this connection, we published discussion titled ["ARC2020 Vs. ARC2024"](https://www.kaggle.com/competitions/arc-prize-2024/discussion/521200) in "Discussion". We recommend that you read that discussion.
+comment
+
+
+## 0 Comments

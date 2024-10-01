@@ -1,0 +1,30 @@
+[Benedictus Mario](/benedictus1) · 1st in this Competition · Posted a month
+
+### Prague_1's winter_school_holidays
+hi [@mkecera](https://www.kaggle.com/mkecera)
+Hope you're doing well! I was looking at the winter_school_holidays and
+noticed something interesting. It seems like Prague_1 has more
+winter_school_holidays than the other Czech warehouses. I was wondering if
+this is intentional or if there might be a little mix-up in the dataset.
+Thanks for your time!
+
+
+## 2 Comments
+
+
+### [Kat](/mrskate)
+That is an interesting issue. Let me explain some context. The 'winter school
+holidays' is a week-long spring break for school kids. However, every
+'district' is scheduled for a different week (some coincide, obviously). It is
+(or used to be) common that families go skiing during that time. Prague is a
+big city, so it is divided into smaller 'districts'. If a warehouse covers
+more of them, there are more vacation weeks corresponding to it…  
+However, I am quite confused why there aren't more weeks assigned to the other
+warehouses too. For example, as far as I know, the Brno warehouse(s) cover(s)
+much of Moravia.  
+Moreover, there is only Hungarian spring break in the test data and it is much
+later in the year (= no snow).
+
+
+### [Aarav Sinha](/aaravsinha)
+it was probably intentional

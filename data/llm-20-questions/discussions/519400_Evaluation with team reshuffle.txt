@@ -1,0 +1,91 @@
+[Azat Akhtyamov](/azakhtyamov) · 26th in this Competition · Posted 2 months
+
+### Evaluation with team reshuffle
+Hi!
+Currently, A and B play against C and D. If model B, which is an answering
+model, is badly tuned (if tunned at all) - team AB is doomed no matter what.
+This introduces a lot of random, which does not allow us to evaluate the
+models properly. What if after the game AB-CD we run a game AD-CB (swapping
+the answering bots) with exactly the same keyword? This will introduce at
+least some symmetry and fairness to the scores.
+Dear Kaggle team, please think about this.  
+CC [@bovard](https://www.kaggle.com/bovard)
+[@addisonhoward](https://www.kaggle.com/addisonhoward)
+[@mylesoneill](https://www.kaggle.com/mylesoneill)
+
+
+## 4 Comments
+
+
+### [loh-maa](/lohmaa)
+What if model B is also poor at asking questions? Then perhaps A should also
+play with D against B and C, and C against B and D, and then against E and F,
+and to make things even more fair, every agent should play against every
+agent, and this is actually going to happen in the end, except randomly.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+While I agree that it would be even better, we are constrained with limited
+amount of gpu…
+
+
+### [loh-maa](/lohmaa)
+Hi [@azakhtyamov](https://www.kaggle.com/azakhtyamov), I think the same
+constraint applies to reshuffling. It doubles the cost of evaluation. And
+actually it's not just a matter of changing a single parameter -- the format
+is established, including the ranking algorithm and visualization.
+Implementing such team reshuffling would complicate things, introducing
+unclarity, possibly new bugs and likely inviting a new bunch of requests from
+players. I think people supporting this idea don't take this into account at
+all.
+The key question though is: does reshuffled evaluation provide significantly
+more overall "convergence gain" than two independent games? I doubt, and I
+would be seriously impressed If you could demontrate that actually it does..
+,)
+
+
+### [Robert Hatch](/roberthatch)
+Just guessing, but there's probably a ton of statistical benefit from the
+simple swap and replay.
+I'm not certain on the statistics in terms of theoretical proof, but I really
+think it should be trivial to show that as you increase the relative
+randomness of "pairing luck" and decrease the relative randomness of models AB
+beating models CD, then of course it will converge faster if swapping
+pairings.
+At that point, though, there's additional benefit if building a scoring system
+from scratch. Assuming no ties, every pairing will have a single winner and a
+single loser, which will either be the questioner models winning/losing, or
+the answerer models winning/losing. There might be ways to use that in bot
+ratings to quickly relegate the bad answerer models, or punish those losses
+higher, or whatever.
+Not invested in the competition, and I actually agree they shouldn't change it
+for this one at this point. But it seems very likely that the suggestion of
+match pairs (or quad battles) would indeed help (a lot) vs continuous random,
+statistically.
+
+
+### [Neuron Engineer](/ratthachat)
+I also want to question about the evaluation system on similar issue:
+Is the following result reasonable?
+**NewPlayer605** paired with **BadPlayer533** who always be a wrong syntax
+guesser.  
+vs. **BetterPlayer732** & **BetterPlayer652**
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1364892%2Fc03c4cb9a29249947668e8362405330b%2Fteam_matching_example.png?generation=1721014409303040&alt=media)
+**NewPlayer605** unavoidably lost and get the most penalized of the four.
+(-128 points), and so **continue to be paired with other BadPlayers**.
+Is this pairing and scoring intentional ?
+Because if yes, in order to measure the real ability of NewPlayer605, we have
+to continuously resubmit the agent and hope to not pair with the
+SyntaxErrorPlayers . And so it looks totally difficult to evaluate the
+NewPlayer capability.
+The shuffle matching mentioned in the OP seems to help this issue to be fairer
+in my opinion.  
+[@bovard](https://www.kaggle.com/bovard)
+[@addisonhoward](https://www.kaggle.com/addisonhoward)
+[@mylesoneill](https://www.kaggle.com/mylesoneill)
+
+
+### [Neuron Engineer](/ratthachat)
+Illustration of the **BadSyntaxErrorPlayer**
+![](https://i.imgur.com/Xv0kHI2.png)

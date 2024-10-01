@@ -1,0 +1,17 @@
+[GODDiao](/goddiao) · 188th in this Competition · Posted 3 months ago
+
+
+### Ask on a silly question about the observation
+I have read the code in llm_20_questions.py. I have noticed that many objects
+like active, and inactive has not been explained very clearly.  
+I am wondering where I can see the methods of the objects like obs…  
+obs.turnType, obs. question etc….
+
+
+## 1 Comment
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+throwing a `print(dir(obs))` in and running with debug mode should show you
+everything in there!

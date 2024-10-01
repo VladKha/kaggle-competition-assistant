@@ -1,0 +1,102 @@
+[Théo Boyer](/wolfy73) · Posted 3 months ago
+arrow_drop_up11
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Pretraining on the Test Set Is All You Need
+**TLDR: Don't be the N+1 "fintuning_Llama-3-Instruct-8B-QLora-.ipynb" into
+submit "inference.ipynb"**
+AFAIK [@fchollet](https://www.kaggle.com/fchollet) created this benchmark to
+make a point about the current state of deep learning not going in the right
+direction for AGI. Therefore ARC has been crafted to be the _anti-deep
+learning_ dataset.  
+**You are not going to prove Chollet wrong using the methods he crafted ARC
+against**.  
+If you do that, you are already thinking inside the box.
+We NEED a paradigm shift, and that's what this competition is about.
+# Why is ARC so hard ?
+Chollet often argues that deep learning is merely doing fancy interpolation
+and memorization of the training set and therefore is bad in the unknown
+unknowns regime (cf [On the Measure of
+Intelligence](https://arxiv.org/abs/1911.01547)). This weakness is at the core
+of the design of ARC: If one trains on arc_train+arc_eval, the tasks and the
+images of arc_test have never been seen by the model.  
+Furthermore, ARC is a small dataset by today's standards (it even was 4 years
+ago lol) with low bias and high variance.
+# Addressing data volume: Don't be fooled by large
+Nowadays, people assume that scale is the most important factor in deep
+learning and it's not always true. It sure is true only when you have
+virtually infinite data. Here, we are in a low data volume regime with a lot
+of structure. Furthermore, the structures are somewhat explicit and can easily
+be leveraged to narrow the search space with inductive bias (channel
+permutation invariance, locality, objectness, …).  
+Therefore it's likely that a very good score can be achieved with small
+models.
+# The intelligent part of deep learning is the optimizer
+Seriously, think about it for a sec.
+Do you believe ["Pretraining on the Test Set Is All You
+Need"](https://arxiv.org/abs/2309.08632) was a meme paper?
+You can _literally_ do that.
+Instead of submitting "inference.ipynb", you can submit
+"Training+Inference.ipynb". Have this in mind for all components of your
+pipeline.  
+You have some auto-encoder-like component? Train this representation on the
+test images.  
+You ruled out the possibility of a task embedding because embeddings don't
+allow zero-shot ? Well, not only can you do that but it also may be a good
+idea.
+**A trained model can't deal with unknown unknowns but a training model can.**
+[ Artificial Intelligence](/discussions?tags=12101-Artificial+Intelligence)
+comment
+
+
+## 4 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+When you solved your first ARC problem, manually (when you played the game the
+first time) how many training sets had you been exposed to?
+
+
+### [Théo Boyer](/wolfy73)
+arrow_drop_up0
+  * format_quote
+  * link
+What do you mean by "training sets" ? To be clear I don't claim this is how
+human intelligence works, I claim that it's a solid track to score well in
+this competition
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+I am compelled to agree with you. Good luck!
+
+
+### [Joost Dekker](/joostdekker)
+arrow_drop_up2
+  * format_quote
+  * link
+Personally, about 24 years worth of training, recognizing shapes etc. The
+online questions are in a format that humans are good at (images), if you put
+it in a different format (giving each color a very similar value) or putting
+it in a really long array instead of a square. Then humans would struggle
+allot more, even tho it is the same problem in a different representation (one
+we are not familiar with)
+
+
+### [Akul Vaishnavi](/akulvaishnavi)
+arrow_drop_up0
+  * format_quote
+  * link
+That's an interesting way to look at it
+[@wolfy73](https://www.kaggle.com/wolfy73)! Thanks for sharing this for us
+less experienced kagglers!

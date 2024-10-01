@@ -1,0 +1,59 @@
+[CchristoC](/cchristoc) · 184th in this Competition · Posted 13 days ago
+
+
+### Shouldn't everyone, every game have the same keyword to guess for all
+games?
+This will drop luckiness to get easy to guess keywords, and unluckiness to get
+complicated keywords. What do you think? Or is this already implemented but in
+different order games or something?
+For example:  
+Everyone's 1st game keyword: 'penguin'  
+Everyone's 2nd game keyword: 'cell phone'  
+Everyone's 3rd game keyword: 'elephant'  
+And so on
+
+
+## 4 Comments
+
+
+### [loh-maa](/lohmaa)
+Well, but this would convert the luck from "which keywords can you handle" to
+"how well can you handle this one single keyword", so if the selected keyword
+was "penguin" the team who always guesses "penguin" could win the competition,
+and actually there is such a team.
+IMO keywords are not the biggest source of randomness, it is pairings. While
+any randomness should sort itself out in the long run, it turned out we are
+not going to have any long run. The sigma is starting to reach half its
+initial value, we're seeing the algorithm slowly "converging" which really is
+just a frozen illusion of convergence.
+
+
+### [OminousDude](/max1mum)
+I think he mistyped or at least his text is misinterpreted. I think he means
+the keyword for all agents in the first round that runs should be one keyword.
+In the next round, all agents will have a different keyword.
+
+
+### [CchristoC](/cchristoc)
+Yeah i mean say 1st game 'penguin' for all, 2nd game 'cell phone' for all,
+etc.
+
+
+### [loh-maa](/lohmaa)
+But there are no "rounds", the selection is kind of spontaneous.
+
+
+### [OminousDude](/max1mum)
+They could remake the keyword selection so that all agents run at the same
+frequency. If Agent 1 is the first agent to run then Agent n is the last,
+Agent 1 wouldn't rerun until Agent n runs. Agent 1 and Agent n will also have
+the same keyword.
+
+
+### [JK-Piece](/jeannkouagou)
+I fully agree with this suggestion.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Probably not single word but kind of complexity. Like first round simple
+words, then more complex and so on. But thats not that simple

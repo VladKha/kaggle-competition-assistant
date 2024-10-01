@@ -1,0 +1,33 @@
+[Muhammad Tariq Pervez](/tariqcp) · Posted 4 months ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Resources for Abstraction and Reasoning Corpus for Artificial General
+Intelligence (ARC-AGI)
+<https://github.com/fchollet/ARC-AGI>  
+<https://pgpbpadilla.github.io/chollet-arc-challenge>  
+<https://www.researchgate.net/publication/377364281_Neural_networks_for_abstraction_and_reasoning_Towards_broad_generalization_in_machines>  
+<https://openreview.net/forum?id=E8m8oySvPJ>
+comment
+
+
+## 2 Comments
+
+
+### [Shure](/yusukemikami)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://docs.google.com/spreadsheets/d/1fR4cgjY1kNKN_dxiidBQbyT6Gv7_Ko7daKOjlYojwTY/edit?usp=sharing>
+
+
+### [Stefano Fabri](/bhacks)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://arxiv.org/abs/2403.11793>

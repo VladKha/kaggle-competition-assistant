@@ -1,0 +1,81 @@
+[nosound](/zaharch) · Posted 3 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Freelance help
+A question to organizers, is it allowed to employ outside workforce to do some
+mechanical tasks, like labelling and new examples generation? Without
+including them in the team.
+comment
+
+
+## 6 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+> C. External Data. You may use data other than the Competition Data
+> (“External Data”) to develop and test your Submissions including private or
+> proprietary data sets however eligible Submissions must be able to comply
+> and comply with all of Section A (Competition-Specific Rules), Section 1
+> (Winners License), and Section 11 (Winners Obligations).
+See that rules section for the answer. You may use proprietary datasets.
+However in order to be eligible for a prize you will need to open source it at
+the end of the competition
+[emoji_people](/jazivxt)
+
+
+### [jazivxt](/jazivxt)
+arrow_drop_up2
+  * format_quote
+  * link
+Just match up the output IDs
+<https://docs.google.com/spreadsheets/d/18hwHi39S4gnJvWQXKZwAtvQMfUzmbxz4Xw1d2iaWJW4/edit?usp=sharing>
+
+
+### [@kaggleqrdl](/kaggleqrdl)
+arrow_drop_up2
+  * format_quote
+  * link
+> C. External Data. You may use data other than the Competition Data
+> (“External Data”) to develop and test your Submissions including private or
+> proprietary data sets however eligible Submissions must be able to comply
+> and comply with all of Section A (Competition-Specific Rules), Section 1
+> (Winners License), and Section 11 (Winners Obligations).
+Comps sometimes don't allow private datasets, but I didn't see that in this
+one. Perhaps someone else saw something though.
+
+
+### [agenlu](/agenlu)
+arrow_drop_up0
+  * format_quote
+  * link
+I am not an organizer but I think it is not allowed. By the way, how much
+money are you planning to pay to those people? Maybe I would be interested in
+it 😄
+
+
+### [nosound](/zaharch)
+arrow_drop_up3
+  * format_quote
+  * link
+That's funny how in the first sentence you say it is not allowed and in the
+second offer you help 😅.
+
+
+### [Aryan Garg](/aryangarg01)
+arrow_drop_up0
+  * format_quote
+  * link
+ _Disclaimer: I'm not an organizer._
+Since external datasets are allowed, you should be able to do this.
+Usually, paid data annotators go in acknowledgments on a research paper and
+not co-authors. So technically they don't have to be on your team. Good luck!
+😊

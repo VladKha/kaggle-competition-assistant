@@ -1,0 +1,86 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 9 days ago
+
+
+### Interesting replays
+There was a thread with absurd replays, but I don't want to warm it up with
+not necessarily absurd replays. Just interesting in any way.
+In [this
+episode](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55833168) all the questions and guesses are identical. The answers are
+also identical presumably because of that particular keyword and the fact that
+both LLMs were similar. Well, perhaps both guessers used the same public
+notebook? Or the same LLM with very low temperature? But then their prompts
+would have to be very similar, too.
+
+
+## 7 Comments
+
+
+### [loh-maa](/lohmaa)
+Sensational! c-number's agent derailed by yukky_maru's long question..
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2Feae49638f93f5d42fc2f45328bff2005%2FScreenshot_2024-08-26_13-03-09.png?generation=1724652373323702&alt=media)
+
+
+### [torino](/pnmanh2123)
+I think the questions are copied from top agents (I saw some agents using the
+same question as C-number when he was top 1 for almost a month), but I have no
+explanation for the identical answers, it's quite strange.
+
+
+### [c-number](/cnumber)
+It's kind of the other way around; I copied some questions from the winning
+agents of the public LB.
+
+
+### [Jonathan Chan](/jonathanchan)
+How to "copy" from the top agents such as C-number? You mean trying to
+implement imitation learning by extracting the game data? This is a common
+practice in many past simulation competitions. Identical questions and answers
+are weird as LLMs are inherently stochastic. Both teams need to set their
+Temperature to effectively 0 which is definitely not the norm. Another
+possibility is the two agents may be rule-based with an identical keyword
+list. I don't recall seeing any such publicly shared notebook or discussion
+threads though.
+
+
+### [loh-maa](/lohmaa)
+I copied some questions from c-number, too, but I didn't copy any answers.
+
+
+### [torino](/pnmanh2123)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) "copy" in here means we
+fixed some first questions to narrow the domain space of keywords like the
+first is always "Is the keyword things?", it not LLM gen questions.
+
+
+### [loh-maa](/lohmaa)
+[@torino](https://www.kaggle.com/torino) not only identical questions, they
+obviously could be copied, but also identical order and guesses.
+
+
+### [loh-maa](/lohmaa)
+My agent just had a special match. Please, let me share to illustrate some
+points. The pit is real, it takes an opportunity to play with good agents to
+get out of there, or self-play. That's perhaps one of those 10% cross-ranking
+games which were meant to help agents get out of the pit. But is 10% enough in
+our context, to give enough opportunity for all stuck agents? I'm not sure.
+Secondly I'm really proud that my alpha could guess the keyword even though it
+was not in its dictionary. This is the technique that was mentioned earlier
+regarding RA-G. [@cdeotte](https://www.kaggle.com/cdeotte)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F823e2cd037f26dbe76cecc57de832311%2FScreenshot_2024-08-24_11-01-29.png?generation=1724472162273202&alt=media)
+PS. The other team kept guessing "eiffel tower", so.. no apologies this time.
+
+
+### [Chris Deotte](/cdeotte)
+Nice guess! Thanks for giving my bot a win and boosting my bot's score by
+`+199`!
+
+
+### [JK-Piece](/jeannkouagou)
+This is called resurrection:)
+
+
+### [Chris Deotte](/cdeotte)
+haha, yes. My bot got out of "The Pit" 😀

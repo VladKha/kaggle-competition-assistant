@@ -1,0 +1,42 @@
+[Kuldeep Rathore](/kuldeeprathoree) · 431st in this Competition · Posted 2
+
+### Game environment still not stable? 🤔
+How come the below game ended in the round one and the points are allotted?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8073405%2Fa403a5956341b2d8a03b77398a50d1eb%2Fepiso.png?generation=1719231631612628&alt=media)
+Episode link:
+<https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-
+episode-55162391>
+[@bovard](https://www.kaggle.com/bovard)
+
+
+## 2 Comments
+
+
+### [waechter](/waechter)
+The agent from Chris Deotte is in error, see `Answer: none` and `[Err]`  
+Probably due to the keywords/category change.
+
+
+### [Kuldeep Rathore](/kuldeeprathoree)
+Got it but the point is other two opponents got +19 which is fine, but Giba
+got +5 which shouldn’t be there. Ideally if one of the player of a team is
+giving error then that person should get negative score but the second team
+member should get 0 instead of giving +5.
+
+
+### [waechter](/waechter)
+I agree, this a been pointed out in the discussion
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/508415>  
+They made a change:
+> A fix for this should be rolling out tomorrow. The reward when an agent
+> fails after this should be net zero. For example the failing agent might get
+> -21 and the other three get an average of +7 each.
+But i'm not sure it works as intented since here the reward is 19+19+5-13 !=
+zero
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+The values themselves won't equal zero, especially depending upon the
+uncertainty of each agent.

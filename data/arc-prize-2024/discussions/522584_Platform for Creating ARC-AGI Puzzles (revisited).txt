@@ -1,0 +1,121 @@
+[Christian Jones](/cjchristianjones) · Posted 2 months ago
+arrow_drop_up8
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Platform for Creating ARC-AGI Puzzles (revisited)
+Hi. I am developing a platform for creating and sharing ARC-AGI Puzzles:
+<https://arcplayground.com/>
+This is a follow-up post from this thread:
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/518522>
+# ARC Playground
+At its core, ARC Playground is a platform for creating, sharing, and playing
+ARC-AGI puzzles. However, this platform provides an opportunity to evolve the
+ARC-AGI benchmark beyond the static set of puzzles provided in the evaluation,
+training, and testing datasets.
+
+
+## Vision
+Ultimately, I believe in the scalability and extensibility of the ARC
+benchmark. As our models increase in reasoning capability, our benchmarks
+should increase in complexity and diversity. I think these puzzles have a high
+ceiling when it comes to encoding logical rules, pattern recognition, and
+abstract reasoning challenges.  
+By allowing the community to create and share puzzles, we can:
+  * Generate a more diverse set of challenges
+  * Identify novel patterns and rules that push the boundaries of AI reasoning
+  * Create a dynamic benchmark that evolves with advancements in AI technology
+
+
+## What's next?
+  * An interface for interacting with the community-crafted dataset of puzzles
+  * A cohesive user system that allows users to access their created puzzles.
+  * An auditing system for measuring puzzle quality (something in the form likes, comments, ratings, solve stats).
+  * UI/UX overhaul
+
+
+## Known Bugs
+  * Visual bug on puzzle grid rendering.
+  * When coloring by dragging, there is sometimes an unresponsiveness on the first cell that is colored in.
+
+
+## Feedback
+I am going to spend the next day or two attempting to create some challenging
+while logically rigid puzzles. If you have some time, please try creating a
+puzzle for yourself and uploading it to the community database. Let me know
+your thoughts on any aspect, improvements to make, or suggestions for
+features.
+I am very open to public constructive feedback (in this thread) or private
+feedback (you can reach me at cjchristianjones at gmail dot com).
+I consider this platform in its current form to be a prototype and rough
+around the edges. I have a lot to learn when it comes to building this
+application, but I am excited to keep working on it.
+
+### Important Notes
+  * While there is no formal user system in place yet, try creating puzzles with a constant username that you would likely use. When I integrate a user system, I will make sure the puzzles you might make now transfer to your profile.
+comment
+
+
+## 6 Comments
+
+
+### [S J Moudry](/sethmoudry)
+arrow_drop_up1
+  * format_quote
+  * link
+Thanks for making this I enjoy it and added a couple puzzles.
+I think it would be nice to be able to download other's puzzles, as well as
+making sure they are open sourced by default. The community could use more
+examples, especially since the leaders right now are so far ahead in that
+regard with their million sample dataset. I'd be more likely to continue
+creating puzzles there if I knew we can use the samples for training.
+
+
+### [Christian Jones](/cjchristianjones)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for checking out the site, and making some puzzles!
+I agree, there is a lot of value in being able to download other's puzzles. I
+will be adding an interface for interacting with community created puzzles in
+the future.
+
+
+### [Aadit Shukla](/aaditshukla)
+arrow_drop_up2
+  * format_quote
+  * link
+Your platform for creating and sharing ARC-AGI puzzles looks promising; I'm
+excited to try creating some puzzles and will provide feedback to help improve
+it! [@cjchristianjones](https://www.kaggle.com/cjchristianjones)
+
+
+### [MD Mushfirat Mohaimin](/mushfirat)
+arrow_drop_up0
+  * format_quote
+  * link
+That would be a super useful tool Jones! Thanks a lot!
+I tried to visit the site but the link is not working. Can you check it?
+
+
+### [Christian Jones](/cjchristianjones)
+arrow_drop_up1
+  * format_quote
+  * link
+Thanks for the feedback! Can you try this link here:
+<https://arcplayground.com/>
+
+
+### [MD Mushfirat Mohaimin](/mushfirat)
+arrow_drop_up0
+  * format_quote
+  * link
+I tried to visit with a VPN now, and it works!
+I live in Bangladesh and there's some issues with the internet connection in
+my country, that's why I couldn't visit the site before. Not a problem from
+your end.
+Thanks.

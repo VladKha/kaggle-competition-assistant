@@ -1,0 +1,399 @@
+[Bovard Doerschuk-Tiberi](/bovard) · Posted 11 days ago
+· Kaggle Staff
+
+
+### Leaderboard Confidence Reset
+Hey all,
+My apologies for the known keywords showing up in the final keyword list. Due
+to this I will be resetting the confidence of all agents today. This should
+allow any agents that gained wins from those known keywords to sink in the
+ratings.
+I will also be extending the Final Evaluation period to Thursday August 29th.
+Finally, I've made a change that reduces the games played of agents sub 600
+and increases games for agents above 600 rating.
+Best of luck to you all!
+Bovard
+EDIT: I will be disabling the competition to make sure no games are in flight
+before doing the reset.
+
+
+## 38 Comments
+
+
+### [loh-maa](/lohmaa)
+Hello [@bovard](https://www.kaggle.com/bovard), it looks like most agents in
+top50 have their sigma depleted and the algorithm is again busy evaluating
+agents with high sigma in the middle of the ranking. Please consider
+increasing the rate of game play for low sigma (even without increasing
+sigma.) I bet many players competing for top spots would love to see more game
+play there, but some played just 2 or 3 matches in the last 24h.
+
+
+### [yukky_maru](/yukkymaru)
+Hello [@bovard](https://www.kaggle.com/bovard), **I believe the gain weighting
+and prioritization by sigma should be relaxed. This feature does not seem to
+be functioning well.**
+A high sigma value represents a greater opportunity, and it is not wise to
+deprive agents of chances by assigning low sigma values, especially with six
+days remaining. As a matter of fact, this game puts you at a significant
+disadvantage if you can't draw an Alpha Agent. **If a series of losses
+accumulates due to bad partner luck in the early to mid-game stages, the sigma
+will still converge. While this may be fair in terms of luck, is this really a
+method that accurately reflects skill? If the sigma converges after a series
+of losses due to bad luck, it becomes impossible for a skilled agent to climb
+back up.When deprived of opportunities and gains, it becomes impossible to
+climb back up once you fall into a hole. Is this really the intended
+behavior?**
+For example, **many agents ranked between 12th and 50th have low sigma values.
+Most of these agents are not inferior to the top-ranked agents but have ended
+up in their current positions due to bad luck in the early pairings (such as
+losing the partner draw). In the early stages of the game, luck (such as
+partner selection) plays a significant role, so it is premature to assign low
+sigma values to these agents based on initial information where such factors
+carry a heavy weight.**
+
+
+### [raconion](/raconion)
+Also too low sigma is causing the lb to be stagnent now because the gain from
+single game play will be single digit.
+
+
+### [yukky_maru](/yukkymaru)
+That's right. Despite the already limited number of matches, the gains are
+also extremely low. Even when defeating a top agent, the gain is only about 10
+to 20 points. For reference, my agent is currently around 17th place (and
+another one is in 7th place), but even when the 17th place agent defeated a
+top agent in the gold range, the gains were only +11 and +13. **In the last 9
+matches, I have 7 wins and 2 draws, but the total gain is only +42.** Sigma
+represents the number of potential future branches, and being assigned a low
+sigma in the silver or bronze range is equivalent to losing the possibility of
+reaching the gold range. Moreover, we are blocked by two barriers: the number
+of matches and the gain. I used my agents as an example, but of course, this
+isn't just my case; upon observation, this phenomenon can be seen affecting
+various agents.
+[@bovard](https://www.kaggle.com/bovard)
+
+
+### [loh-maa](/lohmaa)
+Lower sigma is obviously decreasing the score variability, down to some
+minimum value, which seems to be 45.0, and which has been reached by some
+agents now. However another aspect of sigma is that the current algorithm has
+also a strong preference to play agents with high sigma, because it wants to
+rank them. I think this preference is expressed by some parameters in the
+match-making code. If there were no ties in the game, all agents would play
+roughly at the same rate because sigma would decrease uniformly across the
+ranking. (And this is how things worked in the previous simulation
+competition, where ties were extremely rare if not impossible.) But here,
+since ties are overwhelming below top100 agents, sigma of those agents stays
+high and the algorithm keeps playing them. That's an imbalance that can be
+clearly seen in the stats. I believe the match-making could be and should be
+more balanced with respect to high-low sigma. I pointed to this in the report
+about the pit, too. In my simulations convergence was better when there was no
+preference for high sigma, but surely that could be a too radical change to
+drop it completely now. Adjusting that preference by a little, on the other
+hand, could be just great.
+
+
+### [loh-maa](/lohmaa)
+[@yukkymaru](https://www.kaggle.com/yukkymaru) it seems you have edited your
+message, and I think there's some unclarity now. I will try to convene a
+council meeting later today to discuss the situation and see everybody's
+arguments, and let's see if we can agree on the diagnosis and reach any
+conclusions.
+
+
+### [yukky_maru](/yukkymaru)
+Thank you. I appreciate your help.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Dear [@bovard](https://www.kaggle.com/bovard), there is something wrong with
+the game pace. I have a bot that plays 3-4 games per day which still has a
+reletively high sigma (eash win/loss is +- 70 points), meaning it's far from
+convergence, however it's only 4 days left.
+
+
+### [gguillard](/gguillard)
+> Finally, I've made a change that reduces the games played of agents sub 600
+> and increases games for agents above 600 rating.
+Not sure I get this right. You mean it will be _even more difficult_ than it
+already is for a legit bot to recover from a lost game ?
+
+
+### [Jonathan Chan](/jonathanchan)
+[@bovard](https://www.kaggle.com/bovard) : I agree that all agents should be
+given a chance with equal number of games initially for, say, 1 day. Then can
+allocate more resources for the above average agents.
+Also, your following statement does not seem correct: `Finally, I've made a
+change that reduces the games played of agents sub 600 and increases games for
+agents above 600 rating.` It seems the threshold is not 600 but perhaps
+average ranking instead? Otherwise, perhaps it's related to the NaN issue.
+I have a case of Tale of Two Cities with both bots above 600. The lucky one
+benefited from an opponent error and was in a comfortable range before the
+reset. This one is experiencing a wild roller coaster ride and has ~~13+~~ 26+
+game played already. However, the unlucky bot that was sunk by old keywords
+(more than once) was again unlucky and got sunk once more (legit but unlucky
+loss) to a score of 603.6 (but above 600) prior to the reset. It seems after
+the reset, two games were played but both resulted in NaN. After that, zero
+games have been played so far.
+So please consider allowing all agents equal chance initially and look into
+the NaN issue as you promised to do so tomorrow (in another reply). Thanks.
+
+
+### [JK-Piece](/jeannkouagou)
+First of all, I am not trying to offend anyone, so please don't take it
+personally.  
+But I believe agent alpha should be banned. Such agents do not ask smart
+questions at all. It is only based on alphabetical ordering. More diverse,
+smart, and human-like questions (hence human-like intelligence) should be
+promoted instead.
+Just reimagine this competition without the agent alpha thing.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Oh. Wait till everyone minus ya :DDD
+
+
+### [KKY](/evilpsycho42)
+Everyone can choose whether to use "agent alpha" or not before the submission
+deadline.
+It's fair to every participant.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+You are right as soon as it using llm.
+
+
+### [c-number](/cnumber)
+I am also curious what the matches would look like if only human-like
+questions were allowed, so let's hope Kaggle can afford another competition
+like this, with rules that ban questions that use lexicographic order, the
+first letter of the keyword, or any similar features!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Its not about questions. Its about using llms. This is not binary search 20
+question.
+
+
+### [JK-Piece](/jeannkouagou)
+In this competition, it is clearly stated that the goal is to see how good
+LLMs can be in both asking and answering questions. But agent alpha does not
+respect this; its questionner is not an LLM!
+
+
+### [Dawid Motyka](/dawidmt)
+> But I believe agent alpha should be banned. Such agents do not ask smart
+> questions at all. It is only based on alphabetical ordering. More diverse,
+> smart, and human-like questions (hence human-like intelligence) should be
+> promoted instead.
+[@jeannkouagou](https://www.kaggle.com/jeannkouagou) I think that whether
+alphabetic-based approaches are should be allowed isn't very obvious. Most
+players know that LLMs, especially smaller ones, are limited when it comes to
+spelling, asking for a first letter, ordering, etc. I think that a major
+problem is when one agent identifies (using a handshake) that his teammate is
+alpha and then changes its behavior because it knows exactly what it can do.
+For example, the Full Power Agent team approach is interesting, because it
+tests whether prompting techniques could improve LLMs understanding of
+alphabetic ordering. They use this prompt:  
+`keyword Please follow these 2 steps to compare alphabetical order:\nStep 1:
+take the known keyword and the comparison word and write them out with a space
+between each character, in lowercase.\nStep 2: Now iterate through the
+characters of both words, until you find a mismatch. The first mismatch
+determines alphabetical order.\nIf one word ends while the other has more
+letters, the shorter word comes first alphabetically. \nFinally answer with
+yes or no.\nFor your reference, the alphabetical order of characters is: a < b
+< c < d < e < f < g < h < i < j < k < l < m < n < o < p < q < r < s < t < u <
+v < w < x < y < z.\n\nDoes the keyword (in lowercase) precede "parallel bars"
+in alphabetical order?`  
+Unfortunately, they also take advantage of many top players having alpha
+ability, but that's because other agents use alpha with identification
+(handshake). If identification was banned, we would see if alphabetic-based
+searches with LLMs would give players an advantage, and I think that it may
+not.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+It seems that agents stop playing now, is the game going to stop as it is now?
+
+
+### [Kha Vo](/khahuras)
+They are still playing though, but slow speed. I think the algorithm is trying
+to decrease all bots with high sigma. When their games got resolved then bots
+with low sigma will play more against each other to determine the finest
+ranking
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+so many nans …
+
+
+### [raconion](/raconion)
+Indeed. We still don't know the cause of NANs. If that is the hardware failure
+rate then it is a little extreme…
+
+
+### [TuMinhDang](/darkswordmg)
+Nan all .I don't know why
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+I'll take a look at these tomorrow.
+EDIT: NaNs should be significantly reduced now
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Something wrong with the game pace as well. One of my bots played 47 games
+after confidence reset, another one played 7 with 2 NaNs, 0 losses and 1 win.
+They had a difference of only 100 points prior to restart.
+
+
+### [loh-maa](/lohmaa)
+[@azakhtyamov](https://www.kaggle.com/azakhtyamov) It likely depends on sigma,
+one of your agents has 78.1 the other 199.4.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+shouldn't they be equal after the reset?
+
+
+### [loh-maa](/lohmaa)
+[@azakhtyamov](https://www.kaggle.com/azakhtyamov) It seems they were, it's
+just one of your agents got resolved a few times since then, the other not, at
+least until 5am.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+The first bot managed to play 17 games after the reset before the second one
+played its first game…
+
+
+### [loh-maa](/lohmaa)
+Just woke up and.. I couldn't believe my eyes what's going on. I was so
+resigned.. Thank you [@bovard](https://www.kaggle.com/bovard) for taking the
+issue seriously and acting upon it. My trust in Kaggle has been restored.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+[@bovard](https://www.kaggle.com/bovard) How about agents which are not using
+LLMs?
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Dont be kids folks if you downvote say you point. Otherwise I like bunch of
+kids getting offended. Otherwise you are not better then
+<https://www.businessinsider.com/amazons-just-walk-out-actually-1-000-people-
+in-india-2024-4>
+
+
+### [JK-Piece](/jeannkouagou)
+I also disagree with people who just downvote only because they used
+alphabetical ordering.
+
+
+### [JK-Piece](/jeannkouagou)
+Imagine this competition without agent alpha questions. The agent alpha thing
+spoilt the competition.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Completely agree with you. But looks like
+[@bovard](https://www.kaggle.com/bovard) decided to ignore it. Its like you
+get requirements from customer and instead of follow it you cheat and ask them
+to pay you money. Some people have to grow up…..
+
+
+### [JK-Piece](/jeannkouagou)
+It would be great if Kaggle could require that everyone add a comment when
+trying to downvote a post. It seems that some people have fun in pressing the
+downvote button.
+`#Kaggle #Downvote`
+
+
+### [JK-Piece](/jeannkouagou)
+Thanks for the deleted comment. Actually I am not referring to this
+competition specifically, and it is not about my own comments. This is a valid
+concern everywhere on Kaggle. Those who enjoy downvoting should just continue,
+after all, maybe it is what they enjoy most on Kaggle 😄
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Dont worry they will grow up :) maybe
+
+
+### [Mahmoud Elshahed](/letemoin)
+Also please if there are any possible review for balance ratio of game (asker
+& Guesser) vs (answerer).
+
+
+### [Jonathan Chan](/jonathanchan)
+I believe this is purely random and one may simply be unlucky. This is the
+case for my two agents with one lucky and the other not. So it averages out I
+supposed in my case. Unfortunately, for my unlucky bot, the current score is
+at the threshold (but above 600) and may not be given any chance to recover.
+
+
+### [Jonathan Chan](/jonathanchan)
+[@bovard](https://www.kaggle.com/bovard) : It seems the host has been tweaking
+the system parameters recently. A few related items.
+  1. Starting a few days ago, there seems to be more new keywords introduced into the system and my decent keyword list (from the unlucky agent) does not cover almost all of them now (from 25% to <5%).
+  2. **IMPORTANT** However, starting from earlier today, the system is spitting out old keywords found in Public LB again. E.g. crayon, curtain, escalator. Please see the following that includes match among the leaders and two involving my unlucky agent.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F767%2F914a70deade56a2ad5d0e6af644e409a%2Fllm20q_pic5.jpg?generation=1724661071406409&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F767%2F6c3407bd8578c296ae016f715c1596da%2Fllm20q_pic2.jpg?generation=1724660092196709&alt=media)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F767%2Fb48853909c226745205980d44658dbf9%2Fllm20q_pic4.jpg?generation=1724660961967834&alt=media)
+  1. Thanks for giving the lower scoring agents a chance for more matches, as per my earlier request at <https://www.kaggle.com/competitions/llm-20-questions/discussion/529606#2966621>. This unlucky agent is still rather unlucky but it's slowly climbing closer to 600. It has played over 20 matches in the past 24 hrs. Although this agent would do well pairing up with the top agents, it won't do well in general because it's strategy is to be non-cooperative. According to the recent alpha analysis at <https://www.kaggle.com/competitions/llm-20-questions/discussion/530312#2970423>, my unlucky bot is listed but it played only 1 single valid match (which it won with an old keyword). 
+  2. Even the worst Public LB agents are getting a chance for matches and the lowest scoring team even matched against one of the top teams. Most of the low scoring agents would error and there are agents with negative scores.
+Thanks again for giving all agents a chance to recover. However, it's time to
+focus more resources on the top teams now as all agents have been given a
+chance for a day or so now. Also, please look into why some old keywords are
+appearing again.
+
+
+### [loh-maa](/lohmaa)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) if that helps to clarify
+-- "crayon" was not in the public set, at least according to my data.
+"curtains" and "escalators" were, but not "curtain" or "escalator", so I think
+the duplicates had been removed as announced, but some plural/singular
+alternatives could still survive the cleaning.
+
+
+### [Jonathan Chan](/jonathanchan)
+[@lohmaa](https://www.kaggle.com/lohmaa) : The system is normalizing the
+keywords. So with or without "s"/"es" are accepted. This was confirmed by
+[@bovard](https://www.kaggle.com/bovard). Also, it seems there's been a recent
+change that double words that are combined as one word would be accepted as
+well.
+EDIT: Perhaps it's my (manual) error in compiling the old keyword list. I used
+two different list versions and combined them. Since it was not coded, perhaps
+I made a mistake (that extended the keyword list of my unlucky agent).
+[@cdeotte](https://www.kaggle.com/cdeotte) also question "mug" that I found in
+my old keyword list as well.
+
+
+### [loh-maa](/lohmaa)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) yes, the comparison in
+the game works like you describe, but the cleaning procedure was not part of
+the game, so it's totally imaginable that it involved some other
+function/approach.. ,)
+
+
+### [Jonathan Chan](/jonathanchan)
+Hmm. I wonder if there needs to be another dreaded reset then to rectify the
+cleaning procedure. Hope such keywords would not affect the prize-winning
+teams.
+
+
+### [yamitomo](/yamitomo)
+Please update Overview -> Timeline, or is it correct?
+
+
+### [francesco fiamingo](/francescofiamingo)
+No need apologies, tks for adjustments, being the first time for such
+competition i hope that this tecnical problems will be help for future, i
+remind to all kaggles, the aim is to build the best ai community …,hope will
+be other competitions in future…thanks kaggle team

@@ -1,0 +1,47 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What is the official stance on discussing the challenges?
+I have found a few mistakes in the area of tiny details, and made a few errors
+in understanding what I was looking at. What I would like to say is, "Is that
+right? It doesn't look right" in the discussion board, and without any real
+need to divulge solutions, someone else could either say, "Just keep working
+on it. I solved it, so it's probably not a mistake," or, "Say, that does look
+wrong." The latter would be a critical-mass builder toward creating a Github
+Issue, and the former would be equally helpful. I am uninclined to behave
+thus, without first checking with the powers that be. Freedom to chat at that
+level would be a potential time saver. Feedback?
+comment
+
+
+## 2 Comments
+
+
+### [chris](/chris62)
+arrow_drop_up2
+  * format_quote
+  * link
+You can say anything and talk in any level of detail here on the forums -
+including sharing your entire solution if you want. Anything discussed on the
+forums is considered public discussion, so it's all ok. The relevant line from
+the rules is:
+> It's okay to share code if made available to all participants on the forums.
+What's _not_ ok is if you were to privately discuss your solution (with code)
+with someone and ask if it looks ok (unless they are already on your team).
+(Also, as an aside, that rule is specifically about code and data sharing; I
+think there's been some gray lines in the past about what constitutes "code or
+data" sharing vs just "talking about the problem", but you'll always be ok if
+you use the forum to talk about it)
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+That makes a lot of sense! Thanks for the clarity.

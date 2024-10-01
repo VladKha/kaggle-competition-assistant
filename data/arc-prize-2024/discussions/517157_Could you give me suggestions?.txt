@@ -1,0 +1,73 @@
+[Rustam Bazarbayev](/rustambazarbayev) · Posted 3 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Could you give me suggestions?
+I am a newcomer to this field. But, I am willing to attend this competition
+and evolve my knowledge. I will be glad if somebody shows me the right way to
+get knowledge.
+comment
+
+
+## 6 Comments
+
+
+### [Kamil Horvat](/khorvat)
+arrow_drop_up3
+  * format_quote
+  * link
+Since tasks for ARC Prize 2024 are identical to 2020 ARC challenge, you can
+start with studying best solutions to 2020 challenge. Even though they don't
+perform well enough to be competitive in 2024, you can reuse same ideas ,
+refine and improve them. Possibly even combine several solutions together.
+<https://www.kaggle.com/competitions/abstraction-and-reasoning-
+challenge/leaderboard>
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * format_quote
+  * link
+Glad you're here!
+We've made a guide just for this. Here is how to get started with ARC-AGI
+<https://arcprize.org/guide>
+
+
+### [Krupal Patel](/krupalpatel07)
+arrow_drop_up0
+  * format_quote
+  * link
+you have to join this competition on start working on preprocessing data and
+apply various algorithms.
+
+
+### [evoalg](/evoalg)
+arrow_drop_up0
+  * format_quote
+  * link
+This competition welcomes people to give it a go, from all different levels of
+skill. No-one has been able to do that well on the arc set for a few years now
+… so it might require some out-of-the-box thinking.
+You may want to start on this starter notebook and have a play:  
+<https://www.kaggle.com/code/michaelhodel/program-synthesis-starter-
+notebook/notebook>
+
+
+### [mehmettellioglu](/mehmettellioglu)
+arrow_drop_up0
+  * format_quote
+  * link
+you can test yourself with other competitions
+
+
+### [mehmettellioglu](/mehmettellioglu)
+arrow_drop_up0
+  * format_quote
+  * link
+You should start from easy one cuz you can't do it while you don't know
+machine learning fundamentals

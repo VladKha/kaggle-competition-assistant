@@ -1,0 +1,22 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 14 days ago
+
+### Award a prize or gold to the best non alpha agent
+Unless some magic happens, it is no longer a secret that alpha agents will win
+the competition. However, there a lot of good agents out there.
+  * Would it make sens to award a prize to the best overall non alpha agent?
+  * In addition, award a gold medal to the top-10 non-alpha agents
+
+
+## 2 Comments
+
+
+### [gmin5y](/gmin5y)
+What you are suggesting is very dangerous. One could easily argue that awards
+from all competitions should be divided manually by all strategies (including
+not optimal ones). Its like suggesting giving medals to athletes that do not
+win the game in Olympics simply because "they also tried hard"
+
+
+### [JK-Piece](/jeannkouagou)
+Not really. There are agents in top50 that do not use alpha agent. So they are
+doing quite good, it is not just about trying hard

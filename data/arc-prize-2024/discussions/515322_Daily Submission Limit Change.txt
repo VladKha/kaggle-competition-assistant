@@ -1,0 +1,369 @@
+[Greg Kamradt](/gregkamradt) · 647th in this Competition · Posted 3 months ago
+· Competition Host
+arrow_drop_up38
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Daily Submission Limit Change
+Hey ARC Prize contestants!
+Greg from the ARC Prize team here. We are reducing the daily submission limit
+from 5 to 3 submissions per day.
+**Why we're making this change:**
+  1. **Discourage test probing** : We want to ensure that the competition remains focused on developing robust, generalizable solutions rather than overfitting to the private evaluation data through repeated submissions.
+  2. **Maintain competition integrity** : This change helps mitigate the risk of model selection bias, where participants might inadvertently learn enough about the private test set through frequent submissions to gain an unfair advantage.
+  3. **Encourage thoughtful iterations** : By limiting submissions, we hope to promote deliberate and well-considered improvements to your models.
+**What this means for you:**
+  * You will now have 3 submission opportunities per day, not 5.
+  * This change reduces the total potential submissions over the remaining competition period by approximately 40%.
+  * We encourage you to use the public evaluation set for more frequent testing and iteration.
+We believe this change strikes a reasonable balance between allowing for
+necessary iterations and maintaining the integrity of the challenge. It also
+aligns our competition more closely with best practices in machine learning
+competitions.
+If you want to test more frequently we’ve made a secondary leaderboard, [ARC-
+AGI-Pub](https://arcprize.org/arc-agi-pub), just for this check out our
+[launch post](https://arcprize.org/blog/introducing-arc-agi-public-
+leaderboard) for more information.
+We appreciate your understanding and continued participation in ARC Prize. If
+you have any questions, you can reach us at:
+[team@arcprize.org](mailto:team@arcprize.org)
+Good luck in the competition and in advancing AI research!
+comment
+
+
+## 27 Comments
+
+
+### [Nick Sarris](/misfyre)
+arrow_drop_up3
+  * format_quote
+  * link
+Just for visibility in the spirit of fairness, I think I'm still able to
+submit 5 times daily through the "Submit" button in the notebook. Submitted my
+third submission a minute ago. I am seeing the 2 submission limit when
+clicking the "Submit Prediction" button in the competition overview though
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you for this. We were unaware of this and we appreciate it. I'll dig
+into it
+
+
+### [Maggie](/maggiemd)
+Kaggle Staff
+
+arrow_drop_up1
+  * format_quote
+  * link
+The update was made and we just verified that it is in place.
+
+
+### [Ali](/asalhi)
+arrow_drop_up2
+  * format_quote
+  * link
+> Your team has used its overall Submission allowance (68 of 38), please try
+> again tomorrow UTC (23 hours from now).
+[@gregkamradt](https://www.kaggle.com/gregkamradt)
+[@maggiemd](https://www.kaggle.com/maggiemd) I can't submit because I am 30
+subs over limit :D !  
+Please fix this. It's already a new day.  
+Thanks
+
+
+### [Ali](/asalhi)
+arrow_drop_up1
+  * format_quote
+  * link
+[@gregkamradt](https://www.kaggle.com/gregkamradt)
+[@maggiemd](https://www.kaggle.com/maggiemd) it's now 3 days without the
+ability to submit :-( Please check.  
+Me and some other teams like [@jcole75](https://www.kaggle.com/jcole75) team
+are facing the same problem and I think
+[@szabo7zoltan](https://www.kaggle.com/szabo7zoltan) also
+
+
+### [Zoltan](/szabo7zoltan)
+arrow_drop_up0
+  * format_quote
+  * link
+I think this restriction would affect anyone with more than 40 submissions, of
+course. In the meantime one can work on trying to get better results on the
+evaluation dataset. Since that is larger (400 tasks) the scores are more
+informative.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up3
+  * format_quote
+  * link
+Hi Ali! Yes, this is an issue and I'm working with the Kaggle team as we speak
+to resolve it.
+
+
+### [Matt McDonagh](/mattmcdonagh)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you Greg!
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * format_quote
+  * link
+[@asalhi](https://www.kaggle.com/asalhi) thank you for raising this. We've
+worked with the Kaggle team and we will be increasing the daily submission
+limit from 2x/day to 3x/day. This means that your team w/ 68 submissions so
+far will be able to submit again either tomorrow or Thursday, July 4.
+There were originally 4 teams that were impacted, this change decreases that
+to 2, of which there will be 1 after you're unlocked this week.
+We feel this change is a good balance for the 240 teams that have submitted a
+working solution and our top teams.
+Happy to answer any questions you have, please email us if so,
+[team@arcprize.org](mailto:team@arcprize.org)
+Thanks for your energy for ARC Prize!
+Hide repliesarrow_drop_up
+
+
+### [Muhammad Ehsan](/muhammadehsan000)
+arrow_drop_up-1
+  * format_quote
+  * link
+Hey [@gregkamradt](https://www.kaggle.com/gregkamradt),
+Thank you for the update and for implementing this change! Reducing the daily
+submission limit from 5 to 3 is a thoughtful move to encourage more robust and
+generalizable solutions. Limiting submissions can indeed help prevent
+overfitting and maintain the competition’s integrity by discouraging excessive
+test probing.
+I appreciate the introduction of the ARC-AGI-Pub leaderboard for more frequent
+testing. This seems like a great way to balance iterative model development
+with the need for a fair competition environment.
+The focus on thoughtful iterations rather than rapid, numerous submissions
+aligns well with best practices in machine learning and will likely lead to
+more innovative solutions. Thanks for keeping us informed and for your ongoing
+support in advancing AI research.
+Best of luck to everyone participating!
+
+
+### [OminousDude](/max1mum)
+arrow_drop_up2
+  * format_quote
+  * link
+Seems really ChatGPT written…
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+o.m.g. This is on the edge, but yeah. If it wasn't, I understand being serious
+about speaking correctly… But wow. Missed it the first few reads.
+
+
+### [Rostislav Grigorev](/irlirion)
+arrow_drop_up0
+  * format_quote
+  * link
+agi achieved internally
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Hover over Muhammad's avatar. Doesn't have a Kaggle account. How 'bout that?
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up2
+  * format_quote
+  * link
+Hello all!
+We've worked with the Kaggle team and we will be increasing the daily
+submission limit from 2x/day to 3x/day.
+There were originally 4 teams that were impacted, this change decreases that
+to 2, of which there will be 1 after this week.
+We feel this change is a good balance for the 240 teams that have submitted a
+working solution and our top teams.
+Happy to answer any questions you have, please email us if so,
+[team@arcprize.org](mailto:team@arcprize.org)
+Thanks for your energy for ARC Prize!
+
+
+### [Matt McDonagh](/mattmcdonagh)
+arrow_drop_up0
+  * format_quote
+  * link
+That's great news!
+Smart to analyze (very kaggle) the number of impacted teams from these
+changes.
+Excited to start working on this over the weekend.
+
+
+### [Rodney Thomas](/vasilkor)
+arrow_drop_up2
+  * format_quote
+  * link
+Is there a way to allow failed submissions (no score reported) to not count as
+a submission? Maintaining the right format isn't all that easy in this
+competition.
+
+
+### [Yashchavn](/yashchavn)
+arrow_drop_up2
+  * format_quote
+  * link
+makes sense.
+
+
+### [WATCHARA](/watohara)
+arrow_drop_up0
+  * format_quote
+  * link
+hmmm makes sense.
+
+
+### [prashant kumar](/prashantkumaryt)
+arrow_drop_up0
+  * format_quote
+  * link
+Hi Greg and the ARC Prize team,
+Thank you for the update on the submission limit. I appreciate the intention
+behind this change to maintain competition integrity and encourage thoughtful
+iterations. The new ARC-AGI-Pub leaderboard is a great addition for more
+frequent testing. Looking forward to continuing this journey and advancing AI
+research!
+Best of luck to all! 👍🏻
+
+
+### [Aayushi Jaiswal 01](/aayushijaiswal01)
+arrow_drop_up0
+  * format_quote
+  * link
+that's great
+
+
+### [emircanyuksel](/emircanyuksel)
+arrow_drop_up0
+  * format_quote
+  * link
+This is a positive change that promotes thoughtful development and keeps the
+competition fair.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up-1
+  * format_quote
+  * link
+This **_was_** a positive change that promoted thoughtful development and kept
+the competition fair.
+
+
+### [Mohamed Abbas](/abbasid)
+arrow_drop_up0
+  * format_quote
+  * link
+what happened, did they change it back?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+No. I was just saying that this was a positive change that promoted thoughtful
+development and kept the competition fair. You are correct to read that
+meaning into what I said though. Sorry for the miscommunication. I guess I was
+pointing out that this happened 3 months ago. Not my best foot forward. Apols.
+
+
+### [Mohamed Saïd Bahri](/mohamedsadbahri)
+arrow_drop_up0
+  * format_quote
+  * link
+[www.kaggle.com/competitions/arc-
+prize-2024/overview/$citation](http://www.kaggle.com/competitions/arc-
+prize-2024/overview/$citation)
+
+
+### [Corleone](/corleoneyyh)
+arrow_drop_up0
+  * format_quote
+  * link
+Nice work.
+
+
+### [DraganPinsent98](/draganpinsent98)
+arrow_drop_up0
+  * format_quote
+  * link
+Maybe we should just reduce max attempts rather than max daily? Surely then
+you can extract the best you can from your model without having to space out
+the work over multiple days.
+
+
+### [kymoji](/kymoji)
+arrow_drop_up0
+  * format_quote
+  * link
+i just wanna test my result is right or not by test probing, and it made my
+submission failed and lost one chance. Is this competition not have hidden
+evaluation dataset?
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+You should be able to test your result offline without needing to submit by
+making sure you have a submissions.json that follows the same format in the
+example given in the default datasets.
+After you feel comfortable there you can make a proper submission
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up0
+  * format_quote
+  * link
+[@gregkamradt](https://www.kaggle.com/gregkamradt) You said
+> > we’ve made a secondary leaderboard, ARC-AGI-Pub
+Is there a restriction that this leaderboard will require participants to make
+their code "public"? Can we claim $2,500 reimbursement without sharing code
+publicly?
+Is the $150,000 Verification Fund mentioned in that page considered to be part
+of the "to be announced later $500,000" prize money of the current
+competition?
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+> Can we claim $2,500 reimbursement without sharing code publicly?
+No, solutions must be public to qualify for verification and reimbursement.
+> Is the $150,000 Verification Fund mentioned in that page considered to be
+> part of the "to be announced later $500,000" prize money of the current
+> competition?
+Yes, this is a part of it, we are updating the website with this now
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up0
+  * format_quote
+  * link
+[@gregkamradt](https://www.kaggle.com/gregkamradt) First 3 months completed -
+is there any update on "To Be Announced Prizes (on ARCprize.org): $500,000"?
+Did any one utilise the fund "ARC-AGI-Pub Verification: $150,000"?
+
+
+### [Dinwald Snorri](/dinwaldsnorri)
+arrow_drop_up0
+  * reply
+Thanks for letting us know.

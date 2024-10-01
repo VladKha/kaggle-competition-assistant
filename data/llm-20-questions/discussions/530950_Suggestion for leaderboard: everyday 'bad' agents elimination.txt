@@ -1,0 +1,16 @@
+[Dmitry Leontyev](/leontyevdm) · 18th in this Competition · Posted 3 days ago
+
+### Suggestion for leaderboard: everyday 'bad' agents elimination
+The top segment of the leaderboard is still random walking. What do you think
+about following suggestion?
+  1. Extend the competition timeline for a week.
+  2. Every day 'disable' the worst half of remaining agents by manipulating with sigma - for example, increasing the confidence of 'remaining' to 75 and lowering 'exited' agents to 45.
+  3. After 6 days the will be 835*2/64 ~ 26 agents which will play hundreds of games at final round to make the distribution closer to ground truth.
+
+
+## 1 Comment
+
+
+### [loh-maa](/lohmaa)
+I'm surprised someone still has new ideas for redoing the evaluation at this
+stage…

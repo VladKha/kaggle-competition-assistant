@@ -1,0 +1,11 @@
+[kartik pandey](/kartik3pandey) · 77th in this Competition · Posted 25 days
+
+### THE TRINITY'S - Friday, Sunday and Holiday
+Hi, from training on different feature again and again i have observed that
+these three are the main factors that are affecting the prediction after the
+warehouse as there is much more complex things to do with the warehouse
+column. But even after that simply by these feature the performance has
+increased significantly.
+
+
+## 0 Comments

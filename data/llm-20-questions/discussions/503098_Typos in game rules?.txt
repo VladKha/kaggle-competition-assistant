@@ -1,0 +1,23 @@
+[Kha Vo](/khahuras) · 13th in this Competition · Posted 4 months ago
+
+
+### Typos in game rules?
+`If neither questioner guesses correctly, the game continues to the next
+round. The two answerers will each respond to the question from the opposing
+team's questioner with either "yes" or "no". Using this information, the
+questioners will then submit new questions and guesses in the following
+round.`
+\--> should we replace "opposing" with "teammate's"?
+`Any questioner agent responded with anything other than yes or no will result
+in the game ending and them losing the match.`
+\--> should we replace "questioner agent" with "answerer agent"?
+
+
+## 1 Comment
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+
+Hi there,
+I've updated the language for clarity. Thanks!

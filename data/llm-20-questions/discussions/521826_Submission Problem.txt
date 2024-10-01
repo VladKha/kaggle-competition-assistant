@@ -1,0 +1,100 @@
+[Jonathan Harker](/jonathanjamesharker) · 258th in this Competition · Posted a
+month ago
+
+### Submission Problem
+My notebook runs successfully however there are no logs at all in agent 0 logs
+or replay. This means something failed between the successful running of the
+notebook and uploading the submission but I have no idea what it is.
+library set up
+    
+    
+    pip install -q -U -t lib bitsandbytes 
+    
+    
+    content_copy
+save model
+    
+    
+    model.save_pretrained("my_model")
+    
+    
+    content_copy
+write submission file at top of python file
+    
+    
+    %%writefile main.py
+    
+    
+    content_copy
+zip files
+    
+    
+    tar -cf submission.tar.gz lib
+    rm -r /kaggle/working/lib
+    
+    tar -rvf submission.tar.gz my_model
+    rm -r /kaggle/working/my_model
+    
+    tar -rvf submission.tar.gz main.py
+    
+    
+    content_copy
+submission.tar.gz is visible in the output and the notebook completes its run.
+Notebook also runs fine within the kaggle env.
+Any suggestions are appreciated!
+
+
+## 2 Comments
+
+
+### [torino](/pnmanh2123)
+how many size of ouput file? may be the last command was overwrite main.py to
+submission.tar.gz instead add main.py to zip, try zip all on one command.
+
+
+### [Jonathan Harker](/jonathanjamesharker)
+Thanks for suggestion - I followed the starter example to zip all and that
+works great. However the bitsandbytes library with it's dependancies is pretty
+large and was pushing the zip plus uncompressed over 20GBs, causing the
+notebook to fail. To keep it within 20GBs I had an idea of zipping some parts
+as I go. But whatever I try I cannot get it to work.
+I just tried using zip - this works locally - however this also fails with no
+logs.
+I downloaded an artifact and main.py was in the root of the folder.
+Any ideas on how to zip 1 folder delete the source, zip the next and delete?
+I don't mind if I use zip or tar. I've tried both and cannot get the above
+process to work.
+
+
+### [torino](/pnmanh2123)
+You can download anything to /kaggle/tmp or any folder you can make new folder
+in /kaggle(you can't see it but can view by `!ls /kaggle/some_folder`), in
+that we have ~50-70gb. Download to it and zip from that, remember size of
+folder /kaggle/working/ is max 20gb but in /kaggle is larger and you don't
+need `zipping some parts`
+    
+    
+    !pip install --install-option="--prefix=/kaggle/my_packages" bitsandbytes
+    # down model
+    from huggingface_hub import snapshot_download
+    from pathlib import Path
+    import shutil
+    g_model_path = Path("/kaggle/tmp/model")
+    if g_model_path.exists():
+       shutil.rmtree(g_model_path)
+    g_model_path.mkdir(parents=True)
+    snapshot_download(
+       repo_id=model_id,
+       ignore_patterns="original*",
+       local_dir=g_model_path,
+       local_dir_use_symlinks=False,
+       token=globals().get("HF_TOKEN", None)
+    )
+    !tar --use-compress-program='pigz --fast --recursive | pv' -cf submission.tar.gz -C /kaggle/tmp . -C /kaggle/my_packages . -C /kaggle/working/submission .
+    
+    
+    content_copy
+If you only need bitsandbytes, it don't have in kaggle notebook but it was
+installed in submit env, don't need offline install it.  
+If you model is so big, quant and save it in another notebook, then import
+your notebook. ~10gb for 8bits model, and ~5gb with 4 bits, it is enough.

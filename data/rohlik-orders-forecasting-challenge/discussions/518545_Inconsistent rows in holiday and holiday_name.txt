@@ -1,0 +1,37 @@
+[Mohammed Mustafa](/mohammedmustafa648) · 540th in this Competition · Posted 2
+
+### Inconsistent rows in holiday and holiday_name
+Notice when you clean your data there are some rows in the holiday variable
+that are **zero** and they're already holidays and vice versa (non-holidays
+with **one**)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8404360%2F259143337a3dcc137d15d65c6ad3bf73%2Finconsistent_rows.png?generation=1720320306378940&alt=media)
+
+
+## 5 Comments
+
+
+### [MichalKecera](/mkecera)
+Hi, Those days are within easter holidays in CZ. They are not specifically
+public holidays but the time between Friday and Monday is considered easter
+holidays. (with Fri and Mon specifically public holidays) It's not an error.
+
+
+### [techniquetwice](/techniquetwice)
+Hi [@mkecera](https://www.kaggle.com/mkecera),  
+Do you have any data on the expected sale date? I mean the warehouse discount
+plan.
+
+
+### [Mohammed Mustafa](/mohammedmustafa648)
+I got it, thank you 🤗
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+I think that's a mistake, yes
+
+
+### [amatas](/abelmatas)
+Yes, you are right.  
+According Dataset Description: 0/1 indicating the presence of holidays
+I consider 0 means disable ans 1 enable.

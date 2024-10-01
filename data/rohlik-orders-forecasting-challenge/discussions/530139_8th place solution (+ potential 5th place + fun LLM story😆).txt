@@ -1,0 +1,124 @@
+[Vladyslav Khaitov](/vladyslavkha) · 8th in this Competition · Posted 21 days
+
+### 8th place solution (+ potential 5th place + fun LLM story😆)
+Thanks organizers for the interesting competition.  
+Also, big kudos for nicely structured and mostly clean data, which was easy to
+start working with right away.
+Yes, dataset wasn't big and test set was small relatively to most Kaggle
+competitions, but it represented real world challenges for organizers and I
+think generally for many real-world ML setups.
+And big thanks to the community for insightful notebooks and discussions,
+learned a lot from you.
+My main solution scored _8th_ place.  
+But after learning from great [6th place
+solution](https://www.kaggle.com/competitions/rohlik-orders-forecasting-
+challenge/discussion/530069) I retested my early discarded feature about
+**_number of days after last holiday_** and found out that it a bit improved
+my final solution both on local CV and public/private LB and just including it
+could have scored _5th_ place.
+See all in
+[notebook](https://www.kaggle.com/code/vladyslavkha/rohlik-2024-8th-place-
+potential-5th-place)
+
+
+## Motivation of solution
+From the size of data + nature of problem I, as many of us, was expecting big
+shakeups in private LB.  
+So I decided to try to focus more on some learning aspect of the competition:  
+1) creating useful CV strategy  
+2) practical solution (e.g. less focus on ensembling and more on general
+feature engineering for this type of problems)
+
+
+## Solution
+  * CV strategy
+    * type: time-series based CV (custom implementation, since scikit-learn based felt a bit limiting for me)
+    * oof size: test dataset included 61 days, so I decided to try to use same size
+    * date periods: 5 previous 61 days periods (i.e. `2023-05-16 to 2023-07-15`, `2023-07-16 to 2023-09-14`, `from 2023-09-15 to 2023-11-14`, `from 2023-11-15 to 2024-01-14`, `from 2024-01-15 to 2024-03-15`). See more in the notebook
+    * thanks to organizers for the [hints](https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/510865#2884247) that a useful CV was obtainable with available training data + public LB
+    * overall CV step was important for me. It allowed me to trust my experiments. And the results in private LB (+13 places up) confirmed this conclusion for me
+  * Baseline
+    * previous 61-days orders averaged by day of week (i.e. take all Monday's orders in previous 61 days and average). Turned out to be quite nice baseline which would get 281 place in private LB (see more in notebook)
+  * Feature engineering
+    * warehouse-based: warehouse, city, country
+    * date-based: basic ones + some more advanced ones both from the forum and some more advanced like days till next holiday, moon phase 🌚
+    * LLM based feature: generate text description of the holiday (see fun story in the end, and implementation in notebook)
+    * embeddings: city, holiday description
+  * Model
+    * Single LightGBM model, no ensembling
+
+### Fun story
+One hour before competition deadline I was testing one of the LLM chat
+services.  
+And asked it about what features based on LLM outputs I can add to improve my
+model. It suggested adding text description of the holiday. So I decided to
+test it - generated some descriptions using GPT-4o and embedded it.  
+My local CV score slightly degraded, but I still had a spare submission - so
+tested it on public CV. And to my awe the public CV score improved quite a bit
+from `0.0350` to `0.0335`. That got me laughing a lot and made my evening😂  
+So I decided to switch one of final submissions to this one just for fun. I
+was quite sure in my main submission so why not.  
+In the end in the private CV it also improved my score from `0.0404` to
+`0.0398` which moved me 1 place up.  
+I think this was rather just random luck. But a funny story to tell now😁
+
+
+## What did not work for me
+  * lag features
+  * many simple features (e.g. `is_weekend`)
+  * ensembling (simple blending, stacking, same model types, different model types, different seeds) didn't provide any noticeable improvements in my local CV. But I didn't invest too much here
+  * separate model per warehouse
+  * removing first month's data from each warehouse (hypothesis was that it could be more noise than signal)
+Congratulations to the winners! And would be grateful to learn from your
+solutions.
+
+
+## 2 Comments
+
+
+### [Ern711](/ern711)
+Congrats and good job. Also interesting to see that the time based cross
+validation worked for you. For me it did not work that well (used sklearns
+simpler version), but did not try it with lightbgm and guess we had different
+features as well.
+If I understand you correct first fold was 2023-05-16 to 2023-07-15, second
+test fold was 2023-07-16 to 2023-09-14 etc? Think a rolling version maybe
+could be interesting? Will certainly be more test folds, but not sure if it
+will increase/decrease the risk of overfitting though.
+
+
+### [Vladyslav Khaitov](/vladyslavkha)
+Thanks! You too, thanks for sharing your great solution
+> time based cross validation worked for you
+It wasn't perfect, but at least I was able to trust it and it correlated with
+public LB well enough. Also the baseline test was informative for me here to
+confirm it
+> first fold was 2023-05-16 to 2023-07-15, second test fold was 2023-07-16 to
+> 2023-09-14 etc
+Yep, so each test fold was also 61 days same as the LB test set. And previous
+dates data used for training
+> Think a rolling version maybe could be interesting?
+I assume you mean scenario 2 from <https://www.kaggle.com/competitions/rohlik-
+orders-forecasting-challenge/discussion/513106>, which means (a) limiting
+training set start date + (b) having more test folds.  
+I didn't test to compare with my version, so just my intuition here:
+  * My hunch was that our particular dataset was too small benefit from (a).
+  * And having test folds too much in the past (b) would provide more noise than signal to me in this particular case.  
+I was even considering decreasing number of test folds to just 3 latest, but
+since one of them was in New Year's period decided to stick with 5.
+
+
+### [Ern711](/ern711)
+Thanks for your insights!
+Yes, I meant something like scenario 2, but rather with overlapping test folds
+(so one could use for instance the latest 120 days as test but still have
+several overlapping test folds of 61 days).
+
+
+### [Vladyslav Khaitov](/vladyslavkha)
+I see your point about overlapping. I was thinking to try it, but didn't get
+to.  
+My concern was that overlaps and different starting and ending periods (note
+that LB test set and the CV test folds I used above start and end in the
+middle of the month) in CV folds would correspond to more skewed metrics vs LB
+test set.

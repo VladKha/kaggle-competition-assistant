@@ -1,0 +1,9 @@
+[ Pulkit Mehta](/pulkitmehtawork1985) · 56th in this Competition · Posted 3
+
+### Some llm ideas for this competition
+  1. together.ai gives $25 free credits & it has lot of llms .
+  2. Experiment with different system prompt e.g. simple system prompt like you are a math expert who solves given math question . Only return result , do not return any intermediate step description .
+  3. Answers may contain units etc . We might have to remove before submitting . Make it part of system prompt 
+
+
+## 0 Comments

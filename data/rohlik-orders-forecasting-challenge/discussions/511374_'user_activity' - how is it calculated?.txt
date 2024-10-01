@@ -1,0 +1,104 @@
+[Samvel Kocharyan](/samvelkoch) · 322nd in this Competition · Posted 3 months
+
+### 'user_activity' - how is it calculated?
+If that possible [@mkecera](https://www.kaggle.com/mkecera) could you please
+clarify how you get numbers for 'user_activity' columns? What that number
+means? Is it some complex pivot data from website metrics or something else?
+These features are highly correlated to target and probably we can boost
+models by synthetic data modeling. Thank you in advance.
+
+
+## 4 Comments
+
+
+### [Yan Teixeira](/yantxx)
+what do you mean **by synthetic data modeling**?
+
+
+### [Samvel Kocharyan](/samvelkoch)
+Hey [@yantxx](https://www.kaggle.com/yantxx) // not sure yet what can we make
+exactly but my first intention was just to have more data in test. Website
+interactions are the well predicted data based on weekdays, holidays,
+historical data and marketing companies.
+Just as a simple starting point for experiment - check Rohlik / Kifli public
+accounts in social media, find correlations between new posts publications and
+user_activities and here we go… New data for highly correlated features 😉 Or
+we can just predict user_activities with additional time-series models.
+What confuse me a bit in this competition is the fact that the dates ranges in
+test.csv are already in the past. We have to build models which predict orders
+for March - May 2024 and we're in June 2024 now.
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+> What confuse me a bit in this competition is the fact that the dates ranges
+> in test.csv are already in the past. We have to build models which predict
+> orders for March - May 2024 and we're in June 2024 now.
+[@samvelkoch](https://www.kaggle.com/samvelkoch) I understand that you are a
+bit confused, the reason the prediction is partially (31%) towards "old" but
+still unseen data, is that you can evaluate it as you already know the
+outcome. With you I mean on the Public score board, otherwise it wouldn't be
+possible to get a reliable score there. I bet the final prediction (private
+Leaderboard with 69%) might also be again totally new data, as till the end of
+the competition there are some months left, even though it's a bit less than
+69% if you compare to the length of the 31% test data. I hope I didn't confuse
+you more with that :)
+
+
+### [Samvel Kocharyan](/samvelkoch)
+[@etiennekaiser](https://www.kaggle.com/etiennekaiser) thank you… Here is what
+I meant behind 'a bit confused' - my concerns are related only to the fact
+that we're building models to predict values for not so 'hidden' events which
+happened already. Organizers asked us to avoid using data which is not
+presented in test.csv but same time they gave us those features in train and
+we see in that some covariate features could boost models. It is a temptation
+to research in past to get more data to have higher scores at LB.
+btw here at Kaggle we sometime see 'future predict' competitions with
+postponed results announcement.
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+[@samvelkoch](https://www.kaggle.com/samvelkoch) Yes I totally see your point
+of view, that's very true, there is relatively less to rely on with the given
+data. We can try our best with what we have. Regarding the "future predict"
+I'm well aware of that as e.g.
+"[Enefit](https://www.kaggle.com/competitions/predict-energy-behavior-of-
+prosumers/overview)" and
+"[Optiver](https://www.kaggle.com/competitions/optiver-trading-at-the-close)"
+were some of them. What do you think about the limitation itself? I think
+sometimes the curse is coming with having too much choice of datasets or
+features you want to bring in, here it's quite closed book. :)
+
+
+### [Samvel Kocharyan](/samvelkoch)
+> What do you think about the limitation itself?
+I think simple solutions are great and sometimes ML not needed at all for that
+kind of predictions.
+
+
+### [MichalKecera](/mkecera)
+Hi [@samvelkoch](https://www.kaggle.com/samvelkoch) and
+[@etiennekaiser](https://www.kaggle.com/etiennekaiser),  
+Very good discussion. It could make sense to also investigate if lagged values
+of user activity would be helpful. That way you can extend them to test
+without using any external inputs. Or assuming that user activity in future
+will be an average of the past. So that you don't assume some outlier
+development in user activity in test. That's why we included this in the
+dataset.  
+I would advise against using any completely external data sets to create the
+solution (it could be leaky).
+
+
+### [Etienne Kaiser (郑翊天）](/etiennekaiser)
+As [@mkecera](https://www.kaggle.com/mkecera) stated in [my previous
+post](https://www.kaggle.com/competitions/rohlik-orders-forecasting-
+challenge/discussion/511202#2864485), I think the context is maximum exposed
+to provide user confidentiality:
+> Re the features, we have included user activity on the platform (2 different
+> features in the dataset) that are in the training set. We can't be more
+> specific about what they mean but they in essence represent volume of
+> interaction of users on the platform and their shopping behaviour.
+
+
+### [Samvel Kocharyan](/samvelkoch)
+[@etiennekaiser](https://www.kaggle.com/etiennekaiser) thanks for
+clarification

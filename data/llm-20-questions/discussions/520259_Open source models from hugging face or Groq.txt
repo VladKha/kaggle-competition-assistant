@@ -1,0 +1,19 @@
+[G R Shanker Sai](/grshankersai) · 128th in this Competition · Posted 2 months
+
+### Open source models from hugging face or Groq
+Hi ,  
+Is it possible to use models hosted in hugging face / groq, via an api call,
+as i am facing lot of issues to create a langchain based agent wrapper for the
+local llm?
+
+
+## 1 Comment
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+The evaluation environment does not access the internet. Model weights must be
+loaded into submission. Therefore, an API call that relies on an internet
+connection would not work. Models on HF can be used, but you need to either
+download the snapshot and upload or use the save pretrained function within
+the transformers library. Since groq would rely on an internet connection, it
+would not work.

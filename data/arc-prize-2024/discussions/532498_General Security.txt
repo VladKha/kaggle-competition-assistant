@@ -1,0 +1,43 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 24 days ago
+arrow_drop_up-2
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### General Security
+
+
+## Please help with this question: How do you secure your machine?
+The way I used to do it was that I had two laptops. The dirty machine, which
+was just whatever (in this particular case Ubuntu 18 running ufw.) The clean
+machine I used for years, only to write code and notes. After basic software
+needs were met, it was never plugged into a router, the wireless card was
+removed, and it only ran on battery power. It was never plugged in to charge
+while running. Shut all the way down; plug in to charge the battery; unplug;
+turn on and use. I basically had nothing to lose on the dirty box; all my IP
+(good, bad or ugly) was on the clean box. Now I need better security for the
+working box. I welcome tips. The last time I asked, I was pointed to an
+online, British, "Security as a service" company… Didn't seem like a good
+risk. And here's why: my perspective has been tainted (bent? damaged?) by
+watching a movie titled, "The Good Shephard," a (I'm guessing) fictional
+presentation of the beginning of America's security machine, which went into
+high gear with the OSS during WWII. It explained how the Americans were a
+little green at the cloak and dagger stuff, that the Brits had been perfecting
+for centuries. So Britain took young America under its wing. Anyway. Heavy
+stuff. Really pushed me away from words like "Let me handle that for you." in
+Security situations.
+comment
+
+
+## 1 Comment
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up-1
+  * format_quote
+  * link
+So, other than the downvotes, nothing? No details, no info? Security just an
+uncool topic in "The Boring 20's"? My Windows box uses Eset. 64G and it runs
+like mud. Am I just doomed to darkness? Bueller? Anyone? Anyone?

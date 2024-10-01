@@ -1,0 +1,12 @@
+[Azzoug Aghiles](/raiderrzj) · 181st in this Competition · Posted 2 days ago
+
+
+### 181th place solution - LLM only with Llama3.1
+Here's our [**solution**](https://www.kaggle.com/code/raiderrzj/181th-prompt-
+engineering-only-with-llama3-1) for the 20 Questions competition, where we
+ranked 49th on the public leaderboard and 181st on the private leaderboard.
+We've outlined our approach to tackle the challenge.
+We’d appreciate any feedback or suggestions you might have!
+
+
+## 1 Comment

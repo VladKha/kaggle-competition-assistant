@@ -1,0 +1,76 @@
+[AC](/ahsuna123) · Posted 6 days ago
+arrow_drop_up10
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Solution approaches that have led to the current state-of-the-art.
+As per ARC official website:  
+These 5 approaches have led to the current state of the art (Taken from
+<https://arcprize.org/guide>) :
+**_1\. Discrete program search_**  
+This was the first domain of solutions that started working well in the
+original ARCathon competition in 2020 hosted by Lab42. It involves searching
+through a massive program space in a discrete, step-by-step manner.
+**_2\. Ensemble Solutions_**  
+This approach consists of piecing together existing publicly available
+solutions to correctly answer more tasks than any solution achieved alone.
+This is the approach that was used to get to the current high score.
+One thing to consider in utilizing this approach: it's unlikely that an
+ensemble approach will be able to generalize to correctly solve tasks outside
+of the public datasets. If you've got your eyes on the Grand Prize, you'll
+want to create new and novel techniques.
+**_3\. Direct LLM Prompting_**  
+In this method, contestants use a traditional LLM (like GPT-4) and rely on
+prompting techniques to solve ARC-AGI tasks. This was found to perform poorly,
+scoring <5%. Fine-tuning a state-of-the-art (SOTA) LLM with millions of
+synthetic ARC-AGI examples scores ~10%.
+"LLMs like Gemini or ChatGPT [don't work] because they're basically frozen at
+inference time. They're not actually learning anything." - François Chollet
+Additionally, keep in mind that submissions to Kaggle will not have access to
+the internet. Using a 3rd-party, cloud-hosted LLM is not possible.
+See templates for [fine-tuning Llama
+3b](https://www.kaggle.com/code/hansuelijud/template-llama-3-8b-arc-
+prize-2024-finetuning), [open source LLM (without fine-tuning
+it)](https://www.kaggle.com/code/hansuelijud/template-llama-3-8b-arc-
+prize-2024-inference), and using [frontier
+models](https://www.kaggle.com/code/gregkamradt/using-frontier-models-on-arc-
+agi-via-langchain) ([Video
+tutorial](https://www.youtube.com/watch?v=crhrzhVjWog), [ARC-AGI-
+Pub](https://arcprize.org/arc-agi-pub) only).
+**_4\. Domain-Specific Language (DSL) Program Synthesis_**  
+This approach involves developing a domain-specific language (DSL). The DSL is
+designed to encapsulate common concepts such as rotation, mirroring, and other
+grid transformations that frequently occur in ARC tasks. By defining a set of
+primitives or basic functions that perform these transformations, solutions
+can be synthesized by composing these primitives into programs that solve
+specific tasks.
+Program synthesis in this approach involves searching through possible
+compositions of the DSL primitives to find programs that correctly transform
+input grids into their corresponding output grids. This search can be brute-
+force or more sophisticated, but the key idea is to leverage the DSL to build
+task-specific programs efficiently.
+See [Michael Hodel's example
+notebook](https://www.kaggle.com/code/michaelhodel/program-synthesis-starter-
+notebook) with this approach.
+**_5\. Active inference_**  
+More recently, solutions using pre-trained large language models (LLMs) have
+been attempted. The LLMs are additionally trained on code data, ARC-AGI data,
+and because there aren’t enough ARC-AGI tasks, you’ll augment this with
+synthetic ARC-AGI-like data.
+The trick to making this LLM based solution work is using active inference.
+This is the idea that when you’re presented with a test task demonstration
+examples, fine tune the LLM on those examples. Of course, because there are
+only a couple of them, you’ll need to expand them artificially to have enough
+data points to fit your curve.
+This unlocks the performance that we see with top solutions. Jack Cole's 34%
+solution utilizes this approach.
+“The fact that this technique has an outsized impact is really interesting” -
+François Chollet
+comment
+
+
+## 0 Comments

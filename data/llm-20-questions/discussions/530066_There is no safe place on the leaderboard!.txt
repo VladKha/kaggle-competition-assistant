@@ -1,0 +1,87 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 8 days ago
+
+
+### There is no safe place on the leaderboard!
+  1. I don't use Agent alpha, my agent actually responds "no" to the question "is it Agent alpha" which is unfortunate because it can, in principle, answer agent alpha's questions
+  2. Before the confidence reset I was in the top-20's!
+  3. After confidence reset, I dropped to 400+ in less than 24h. This is because I competed with the agent alphas
+  4. My two agents are fighting for resurrection. It is hard! The dead won't let them come back alive.
+  5. One agent managed to win a game, came back in top-200. But this only lasted 24h. Both agents are dead again.
+  * So my conclusion, it is hard to be in top-20's as a non-alpha agent. It is even harder to remain in the middle, very unstable agents there. At the bottom, you don't want to know what is happening there.
+  * Your thoughts?
+
+
+## 12 Comments
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I'm hopeful there's an additional LLM-focused competition soon. Pushing LLM
+capabilities to thier max within a contained environment was a great learning
+experience. I learned much from experimenting with different models,
+techniques, and learning from others.  
+There's almost no chance my agent will reach the top 10% versus alpha/search
+bots BUT I am thankful for what I learned. That's enough for me!  
+Looking forward to seeing y'all in other comps. ✌️
+
+
+### [JK-Piece](/jeannkouagou)
+Maybe we should have implemented alphabetical ordering in addition to our own
+approach
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+That wouldn't have been a beneficial learning experience for me. In my
+research, I am using small language models to create emergent ontologies for
+clinical applications on unstructured text. Pushing LLMs to their limit
+without a verbose reference list aligns with my path. Unfortunately for me,
+that means low placement on the leaderboard, but I'm still pleased with the
+knowledge gained. Bonus: it did, in fact, help in my research activities.
+
+
+### [JK-Piece](/jeannkouagou)
+That's great..
+
+
+### [loh-maa](/lohmaa)
+It's all correct and little hope is left unless your agents have a streak of
+3-4 wins while still having high sigma… Actually, there's a movie kinda about
+the pit and your situation -- The Platform (2019), very recommendable. Hang on
+amigo!
+
+
+### [JK-Piece](/jeannkouagou)
+The decrease of sigma seems magical. Agents that go from top20 to 400+ should
+still have a high sigma. But it seems it is not the case
+
+
+### [loh-maa](/lohmaa)
+It's not magical to me anymore, I've read a bit about the algorithm.
+
+
+### [Sadhaklal](/sambitmukherjee)
+Same here. Sudden & huge drop after confidence reset…
+
+
+### [JK-Piece](/jeannkouagou)
+5 days left though, anything can happen. One might still win a bronze medal
+
+
+### [Aravind S](/aravind36)
+It's like hoping/praying not to get paired with Agent Alpha or face teams
+using Agent Alpha.
+
+
+### [JK-Piece](/jeannkouagou)
+Lots of rollercoasters at the top of the leaderboard.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+Now my agent almost stopped playing
+
+
+### [JK-Piece](/jeannkouagou)
+This happens from time to time.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Life iz tough 😪

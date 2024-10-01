@@ -1,0 +1,67 @@
+[kymoji](/kymoji) · 659th in this Competition · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### this puzzle might error【fixed】
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4199018%2F199797b7a29209336b83e73f9903a7cc%2Faa.png?generation=1720807118785775&alt=media)
+comment
+
+
+## 5 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+It looks ok to me, can you explain the error you see?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Train[0] Input differs from the other 3 inputs in that the "square image" gets
+flipped LR (normal, flip, normal) and the other 3 inputs (Train[1], Train[2],
+Train[3]) do not appear to flip the image in the input. Maybe I'm seeing it
+incorrectly. This does not affect the outputs if the rule is simply to copy
+the first square image from the Input matrix.
+
+
+### [kymoji](/kymoji)
+arrow_drop_up0
+  * format_quote
+  * link
+Oh, It's correct. I'm confused when I saw the Train[0] differs from other
+inputs (Train[1], Train[2], Train[3]). but the input set do not have to follow
+a patten.
+
+
+### [S J Moudry](/sethmoudry)
+arrow_drop_up0
+  * format_quote
+  * link
+I think what they are trying to say is that if you take the inputs and slice
+them into thirds, for train 1-3 the output matches any of those 'slices'. For
+train 0, it matches the first and the last slice, but not the middle.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up2
+  * format_quote
+  * link
+The input for 2dee498d Train[0] seems incorrect, but there are no hard and
+fast rules. As long as you observe the input and isolate the first "square
+design", it works. It is off-putting to be sure, but that is the difference
+between a human "player" and a machine "process." That said, Train[0] Input is
+notably different, and it is quite disturbing. I'm not sure if that qualifies
+as an error. Had you not reported it, I probably would have had a difficult
+time with it as well. But it's not about what we think it should be, so much
+as, what it takes to get the correct "answer," which (with your help) I was
+able to submit correctly, with a sense of certainty!

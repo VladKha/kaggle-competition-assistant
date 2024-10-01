@@ -1,0 +1,400 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 16 days ago
+
+### Top competitors on private LB weirdly using same strategy.
+Currently, if you check the private LB almost all the top places are filled
+with agent alpha bots. All alpha bots, submitted the same day, boosting each
+other's scores to the top 5, on a 'secret keyword list'… something is fishy
+here. Another weird thing is that for example c-number wasn't using alpha
+before and even had one of the best if not the best non-alphabetical bots in
+the competition and he magically just decides to switch to alpha? This would
+(at least to me) indicate that some form of teaming is occurring, they also
+seem to follow the same types of words (none of which are in the public
+keywords list). In some cases, I have even noticed that the keyword for one
+game is exactly what another bot asks about in a different game. This of
+course could all be a coincidence. However, what is definitely not a
+coincidence is the fact that a massive group of all the top teams use alpha-
+bots which is as I said above, likely planned ahead of time.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F960bc2b7e2a6b57aafea89c8d06341c3%2Fimage%20\(1\).webp?generation=1723856291485294&alt=media)
+I feel like the hosts should utilize this to disqualify the agent alpha bots.  
+Specifically due to the competition description: This competition will
+evaluate LLMs on key skills like deductive reasoning, efficient information
+gathering through targeted questioning, and collaboration between paired
+agents. It also presents a constrained setting requiring creativity and
+strategy with a limited number of guesses. Success will demonstrate LLMs'
+capacity for not just answering questions, but also asking insightful
+questions, performing logical inference, and quickly narrowing down
+possibilities.
+If all (or even some) of the $50,000 dollars go to non-llm bots, I think it
+would be a huge waste of time for the hosts and the participants it would also
+be a massive waste of money.
+All of the following top 5 are alphabots:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F3fb312ffa8ca87850ccbc099c8dc2a9c%2Fimage%20\(2\).webp?generation=1723856509917676&alt=media)
+
+
+## 13 Comments
+
+
+### [Sadhaklal](/sambitmukherjee)
+“Given the opportunity, players will optimize the fun out of a game.” - game
+designer Soren Johnson
+
+
+### [Ilmari Vahteristo](/ilmarivahteristo)
+I don't like the idea of Alpha bots either. I initially went full LLM, and
+only on the second last day I figured why some agents were asking "Is it Agent
+Alpha?".  
+I thought that it's "poor sportsmanship", but also, that it's very hard to ban
+certain strategies. So I decided that I have to include the Agent Alpha part
+in my code, because it offers such a big advantage if a lot of people use it,
+and almost no downside.  
+After the Alphabet search fails, I fallback to an LLM and integrate the
+results of the Alphabetic search (such as starting letters) for the LLM.  
+For words, I just took a lot of lists of words I found online, and removed all
+words that werent "things" according to GPT4.
+
+
+### [Chris Deotte](/cdeotte)
+That's very smart. After handshake, an Alpha Agent has 19 questions, so it can
+locate 1 word from a list of 2^18 = 250k words. That's 1/4 million words.
+Therefore if we find a list of 1/4 million words and the Kaggle keyword is in
+this list, then Alpha Agent will find it every time!
+Here is a list of 466k words on GitHub [here](https://github.com/dwyl/english-
+words?tab=readme-ov-file), if we keep only the nouns, then it will be 250k
+words or less. I checked a few Kaggle words from game replays and so far they
+are all on this list.
+
+
+### [OminousDude](/max1mum)
+How about the following: "leave-in", "greater middle east", "glasgow smile",
+"dandie dinmont terrier", or "dogmatically"?
+
+
+### [Chris Deotte](/cdeotte)
+I've also notice that 256 Kagglers forked Kha Vo's notebook
+[here](https://www.kaggle.com/code/khahuras/offline-policy-questioner-agent).
+His notebook includes the Agent Alpha handshake (receive half not initiate
+half). Therefore I think 100s of participants have the Alpha Agent handshake
+(receive half). Therefore in many games if a participant initiates the Alpha
+Agent handshake then the opponent team will receive and complete the
+handshake.
+
+
+### [loh-maa](/lohmaa)
+Ironically, when alpha was discussed before, you insisted it will "not work on
+private keywords". You've even been warning other players not to use it,
+because it would fail. And now you're suspecting a conspiracy or collusion… To
+me it appears like a terrible misjudgment.
+
+
+### [OminousDude](/max1mum)
+Because the older alpha used a hardcoded public LB keyword list. This strategy
+uses something more like a wordnet dataset. However, it is weird as word-net
+does not have some one the keywords that the top competitors use. Word-net and
+every single word set does not contain something like "leave-in":  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Ffca751a918596a4ee12cf49bdba6cdae%2FScreenshot%20from%202024-08-17%2014-53-09.png?generation=1723920834907107&alt=media)
+
+
+### [Chris Deotte](/cdeotte)
+There are many lists of words online. For example
+[here](https://github.com/dwyl/english-words?tab=readme-ov-file) is 466k
+words. If we include only nouns, then we have a nice word list (and Alpha
+Agent can utilize up to 250k words successfully). We can tell that all the
+Alpha Agents use a different word list (and are not private sharing) because
+the first question is always the middle word. And every Alpha Agent uses a
+different middle word.
+
+
+### [OminousDude](/max1mum)
+This is not conclusive proof because if they are teaming they would just all
+use slightly different middle words. Add a couple extra words and the entire
+decision tree of alpha questions will be entirely different. This could all be
+pre-arranged!
+
+
+### [Chris Deotte](/cdeotte)
+There is no reason for them to privately team. Anyone can fork the public
+notebook and download a list of words from the internet. Sharing a list
+privately does not help anyone's chances of winning.
+This Kaggle competition is about who can find the best word list from online
+(which includes the most Kaggle words and excludes the most unnecessary
+words).
+
+
+### [OminousDude](/max1mum)
+I always looked up to you in competitions but in this one, you went really far
+off your usual standard…
+
+
+### [Chris Deotte](/cdeotte)
+Thank you. Note that I am not downvoting any of your comments. Nor am I using
+Alpha Agent initiation in my submission. I am only helping to provide helpful
+information and clarify things you are saying.
+
+
+### [OminousDude](/max1mum)
+It is totally fine! I feel like Agent Alpha (loh-maa) and I have become the
+two opposites of this competition. We are fighting for the exact opposite
+thing. Currently, I feel like you are leaning toward Agent Alpha's side. When
+I said you were off your usual standard it was because I wasn't impressed with
+you first public submission because it used hardcoded keywords. No
+exasperation or anything to you I just meant that I wasn't expecting you to
+use the keywords!
+
+
+### [Chris Deotte](/cdeotte)
+I like Agent Alpha and Kha Vo's notebook. This is the current trend in LLM
+today. It is called RAG (retrieval augmented generation). Instead of teaching
+LLM everything we have a database of information that we use to help answer
+questions. This is similar to my starter notebook which I didn't have time to
+update (i.e. eventually I would replace keywords.py with a word list from the
+internet).
+We can finetune an LLM to replicate the behavior of Agent Alpha and Kha Vo's
+agent. The LLM would ask questions (which would attempt to bisect potential
+words list) and LLM would provide best guesses (by using all previous
+answers). We would use a word bank (containing 100k to 1m words) behind the
+scenes for RAG to give the LLM a greater vocabulary than it will ever possess
+by itself.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Which notebook you are talking ?
+
+
+### [Chris Deotte](/cdeotte)
+Here are the 3 notebooks I'm talking about. Each uses a list of words to help
+the question and guess procedure. Each could be transformed into a LLM RAG
+solution:
+  * Kha Vo's notebook [here](https://www.kaggle.com/code/khahuras/offline-policy-questioner-agent)
+  * Agent Alpha [here](https://www.kaggle.com/code/lohmaa/llm20-agent-alpha)
+  * My starter [here](https://www.kaggle.com/code/cdeotte/starter-code-for-llama-8b-llm-lb-0-750)
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Thank you will have a look
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+[@cdeotte](https://www.kaggle.com/cdeotte) I agree with your explanation but
+disagree that the methods coded into the example notebooks we can see are
+actual RAG. A necessary element of RAG is the "G" - generation which these
+notebooks do not possess as part of the policy for question or guess
+generation. I may even be a stretch to call these methods NLP. I may be
+missing something though, is there an example in your mind that leads to that
+conclusion? I see no text embeddings or query processing in these notebooks.
+In theory, these can be ran on CPU-only with jus the python code with a few
+tweaks. I've seen no notebooks shared publicly in this competition with an
+embedding model at all.
+
+
+### [Chris Deotte](/cdeotte)
+[@matthewsfarmer](https://www.kaggle.com/matthewsfarmer) The 3 linked
+notebooks are pure retrieval (i.e. "RA" no "G"). This is the beginning of a
+RAG solution. Each can be improved by adding LLM generation (i.e. "G"). Note
+that retrieval does need the use of embeddings, that is only one technique.
+For example, we can improve Alpha Agent by using an LLM to select the choice.
+Currently (public notebook) Alpha Agent randomly chooses a guess from all the
+possible choices. Instead we can show an LLM 100 choices and show an LLM 100
+examples of words from public LB. We can then ask the LLM to pick our guess:
+"Which of these 100 words is most similar to these previous 100 words?". There
+are patterns in what types of words Kaggle selects to be answers and an LLM
+can help us find them.
+
+
+### [loh-maa](/lohmaa)
+That's interesting, it seems I did enhance -- unknowingly -- RA with G by
+using an LLM to generate missing words on the list, i.e. after exhausting the
+keywords (not in the public notebook.) I called it "dynamic sampling" in my
+small mental world and I spent quite some time fine-tuning it and it is quite
+effective in a self-play with the keyword removed from the alpha list.
+Unfortunately it may have little opportunity to even get a real test because
+the whole evaluation seems inadequate. Thus my frustration. I hope you guys
+can understand.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+[@cdeotte](https://www.kaggle.com/cdeotte) I would really love to see G in
+that solution. Because i suspect it will end up like how many R are in
+strawberry. Again I am not big expert still learning but LargeLanguageModel
+are actually LargeTokenModels. So I doubt that LLM can answer question is car
+smaller bla bla bla. LLM know about token, llms are not capable to do sorting.
+Even papers i read which are doing math they would use python underneath.
+
+
+### [Chris Deotte](/cdeotte)
+I don't understand what you are saying. Here is an example of what I'm talking
+about.
+Let's imagine that we used Agent Alpha to search the dictionary and we know
+the guess begins with the letter "h". From public LB, we know which keywords
+were used previously. Let's pretend we don't know what types of words are
+being asked on public LB (i.e. maybe things, maybe places, maybe sports, etc).
+Below Llama3.1 is acting as the "G" in "RAG" after retrieval from Agent Alpha
+as "RA". Agent Alpha "RA" provides eight possible candidates. We also show
+Llama3.1 eight example keywords from public LB.
+We ask Llama3.1-405B:
+> I'm playing 20 questions with a friend. Here are the keywords from the last
+> 8 times we played; cat, dog, horse, cow, chicken, rabbit, mouse, turtle.
+> This time, I know the word starts with the letter "h". From the dictionary I
+> have determined the word is either; house, happy, haircut, hat, hamster,
+> height, hearsay, heaven. Which word do you think my friend is thinking of?
+then Llama3.1-405B answers:
+> A fun game of 20 questions!  
+>  Considering the pattern of previous answers, which are all animals, I'm
+> going to take a guess that the word starting with "h" is also an animal.  
+>  From your list of possibilities, I think the most likely answer is…
+> hamster!  
+>  Am I correct?
+Afterward we search Llama3.1's response and find which of the words; house,
+happy, haircut, hat, hamster, height, hearsay, heaven is present in the
+response. We find the word "hamster" and reply to Kaggle 20 questions with the
+guess "hamster". This is an example of using Agent Alpha as "RA" and Llama as
+"G" to build a RAG solution.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+LLM are thinking about tokens not letters and words. So now you asking it to
+guess. In early stages when i asked LLama does Philippines contains F, it
+answered I think yes and provided some evidence. Secondly my understanding and
+the way i played 20 Question game you are not allowed to ask questions like
+does it contains letter and so on. Is your solution hypothetical? I would love
+to see it in action. I cant understand that it will be robust and working.
+Here is example of llm answer when ask it to list me animals with letter H  
+**Certainly! Here's a list of animals that contain the letter "h" in their
+names: Elephant Rhinoceros Hippopotamus Cheetah Hamster Hedgehog Horse Sheep
+Chicken Dolphin Whale Shark Chameleon Python Chimpanzee Sloth Koala bear
+Seahorse Hummingbird Piranha Goldfish Moth Panther Pheasant Alpaca This list
+includes a variety of animals from different categories, including mammals,
+birds, fish, reptiles, and insects. Some of these animals have the letter "h"
+at the beginning of their name, while others have it elsewhere in the name. If
+you need more examples or have any questions about specific animals on this
+list, feel free to ask!**  
+No reverse  
+**Return all animals which does not contains letter h. **  
+Here are the animals from the given list that do not contain the letter 'h':
+  1. Elephant
+  2. Rhinoceros
+  3. Hamster
+  4. Horse
+  5. Sheep
+  6. Chicken
+  7. Dolphin
+  8. Chameleon
+  9. Python
+  10. Sloth
+  11. Koala bear
+  12. Piranha
+  13. Goldfish
+  14. Moth
+  15. Panther
+  16. Alpaca
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+where "This time, I know the word starts with the letter "h"." Coming from ?
+Because my understanding was that AlphaAgent did not guess letters but it
+would pick word from middle of dataset and based on yes or no it would go to
+beginning or an end
+
+
+### [Songling](/wolfmedal)
+I don't understand why there are downvotes
+
+
+### [OminousDude](/max1mum)
+Probably the top people angry at me.
+
+
+### [KKY](/evilpsycho42)
+LLMs is the dream, AgentAlpha is the reality.
+
+
+### [OminousDude](/max1mum)
+LLMs is the competition, AgentAlpha is the cheat code.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Well but rule clearly states " guesser LLM," and "answerer LLM" so in this
+case as I understand its clearly violation of the rules.
+
+
+### [OminousDude](/max1mum)
+Exactly! Competition name is literally "**LLM** 20 Questions" not just "20
+Questions"! The competition overview also states "Each team will consist of
+one guesser LLM, responsible for asking questions and making guesses, and one
+answerer LLM, responsible for responding with "yes" or "no" answers." and
+"This competition will evaluate LLMs on key skills like deductive reasoning,
+efficient information gathering through targeted questioning, and
+collaboration between paired agents. It also presents a constrained setting
+requiring creativity and strategy with a limited number of guesses.Success
+will demonstrate LLMs' capacity for not just answering questions, but also
+asking insightful questions, performing logical inference, and quickly
+narrowing down possibilities."!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Honestly i was thinking kaggle is people who want to learn first then win :D
+
+
+### [Raki](/raki21)
+Is anyone using LLM as asker? Even the methods that lean heavily on LLM
+capabilities have a defined list of questions from what I've seen. I didn't
+see any code that just lets the asker LLM go wild, giving it a prompt and just
+seeing what it asks based on replies. Normally the answerer is LLM + optional
+function calls and asker is a defined list of questions or a defined format.
+The only difference I see is if the closed loop (if you had your asker and
+your answerer in the same game) would always function call or always go to LLM
+as answerer.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+I do, both are LLM. WIth few shots examples.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+Mine is 100% LLM (asker, answerer, guesser). No hard coded questions at all.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+What is "agent alpha bots" ?
+
+
+### [Jacky285](/jacky285)
+It's asking the question like is the keyword smaller than 'car' in
+alphabetical order.
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+OKay found notebook. So basically people spend sometimes to find all keywords
+added them to dictionary and done :)
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I'm excited to see your strategy and/or code if you decide to share. I think
+you are one of the few in the top 20 not using an alphabet search strategy. Is
+yours pure LLM generation?
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Yes. I am very new to this. I am "shy" to share but i will do it.
+
+
+### [OminousDude](/max1mum)
+It's fine don't be I am sure we will all be interested to see your code!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Yes i will share my notebook for sure a bit later today or tomorrow. And will
+get some nice feedback :)
+
+
+### [OminousDude](/max1mum)
+I just realized that we can share our notebooks now! The competition is
+technically over!
+
+
+### [OminousDude](/max1mum)
+Oops! Hosts don't allow this we have to wait for 9 more days…  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F96f60953e60019ecc3f4c298bf93cb4b%2FScreenshot%20from%202024-08-17%2021-48-39.png?generation=1723945753501048&alt=media)

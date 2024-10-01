@@ -1,0 +1,55 @@
+[andy jennings](/ajenningsfrankston) · Posted 3 months ago
+arrow_drop_up8
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### DreamCoder supplemental material
+Supplements are here:
+<https://www.cs.cornell.edu/~ellisk/documents/dreamcoder_with_supplement.pdf>
+comment
+
+
+## 2 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+That is searingly impressive!! Someone should see how it handles ARC-AGI!!
+Thanks for sharing.
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://pub.tik.ee.ethz.ch/students/2021-HS/BA-2021-38.pdf>. this is an
+exploration of the use of DreamCoder in ARC challenge
+
+
+### [andy jennings](/ajenningsfrankston)
+arrow_drop_up0
+  * format_quote
+  * link
+The results are not very good. But I suspect that is because DreamCoder does
+not have the programming primitives to tackle the harder problems in this
+challenge. Which made me wonder: what are the complete set of primitives that
+can program any of the ARC type challenges?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up-1
+  * format_quote
+  * link
+Not to wax too poetic, but ARC is a "work in progress". When you say "any of
+the ARC type challenges," you assume a complete list.  
+Drift caught, though. My gut reaction to DreamCoder is, there aren't enough
+hours left to learn how to fly that system! Hence my original comment. Still,
+a great system (if it works)… Frankly an incredible notion, regardless.  
+One last thing… The idea is to create something that is "complexity agnostic"
+to attack the challenges. That's why ML is such a sexy choice… If it works!

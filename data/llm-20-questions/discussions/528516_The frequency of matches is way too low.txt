@@ -1,0 +1,52 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 16 days ago
+
+
+### The frequency of matches is way too low
+Some agents spend 7 to 10 hours without playing. I am not convinced this
+delayed match kickoffs will let the best agents win.
+  * I would humbly request that Kaggle increases the computational budget for this competition so that every agent, whatever its skill rating is, can play a match at least every 1h
+  * Without this, there will not be convergence in skill
+
+
+## 2 Comments
+
+
+### [loh-maa](/lohmaa)
+It seems to me it's all tied to the confidence or sigma in the ranking
+algorithm. The confidence is significantly updated only when the match is not
+a tie, i.e. when it's _resolved_. So when an agent is involved in a few
+resolved matches in a short period, its sigma drops very much below the
+average level of other agents, and so it's forced to "wait" for other agents
+to catch up and resolve more matches. We may say each agent has a fixed budget
+of resolved matches, how many -- depends on how sigma is decreased. The more
+slowly it's decreased the more games agents will be able to play and resolve.
+From how sigma was decreased after 3-4 initial resolutions it looks like the
+budget is around 15-20 resolved matches, which I think is not many. So if we
+want to have slower and nicer convergence, the sigma has to be slowed down,
+i.e. decreased more slowly. That's my understanding at the moment.
+BTW a word about convergence -- as I understand convergence it's not just a
+mere "freeze" in the LB. This would be trivial. We would have the true
+convergence if the final LB would look similar every time the algorithm was
+restarted. Certainly it's going to be difficult to verify, whether we had true
+convergence or not coz in practice we just have a single run, but at least
+that's what I think convergence would mean in theory. So naturally, the slower
+the sigma, the more matches, more shaking and closer to the true convergence.
+
+
+### [JK-Piece](/jeannkouagou)
+By convergence I mean, the standard deviations of skill ratings get negligible
+
+
+### [loh-maa](/lohmaa)
+OK, but that's not true convergence, that's just trivial convergence.
+
+
+### [JK-Piece](/jeannkouagou)
+Mathematically we can't reach convergence in a finite number of steps. So I am
+talking about convergence in practice, not in theory
+
+
+### [loh-maa](/lohmaa)
+We're going to have such a "practical" convergence for sure, we could have it
+at any moment, just by zeroing the confidence and done. The question is how
+similar it's going to be to the true convergence.

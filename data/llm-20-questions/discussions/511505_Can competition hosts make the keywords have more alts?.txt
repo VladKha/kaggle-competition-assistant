@@ -1,0 +1,16 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+
+### Can competition hosts make the keywords have more alts?
+I was looking through my agent runs/logs and noticed that in one of my
+validation runs this happens.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F2facb11da3ec68137d94fec846356d85%2FScreenshot%20from%202024-06-10%2021-11-06.png?generation=1718068351850327&alt=media)  
+Could the next keyword list possibly have more alts?
+
+
+## 1 Comment
+
+
+### [OminousDude](/max1mum)
+[@bovard](https://www.kaggle.com/bovard) any comment on this?

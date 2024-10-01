@@ -1,0 +1,76 @@
+[emoji_people](/sriramanush123)
+[sriram anush123](/sriramanush123) · Posted 2 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Redefining Problem as X-->Y mapping What could be the best model
+architecture?
+From the competition details and also from the interview by Francois chollet
+It is clear that we need to come up with a model which has more intelligence
+than traditional models to ace ARC challenge . A model which can learn new
+patterns just by observing 2 or 3 examples. I thought if we can redefine the
+problem that we have from mapping input X[ image grid] -->Y[output image grid]
+to a problem where model need to learn a way of finding patterns faster we
+might step closer in solving challenge. In the new X-->Y mapping our X will
+be[ Input-output image pair+test input image] While Y will be [test Output
+image] . If we can find out an architecture where we can pass model both
+input-output sample pairs along with test input to map to test output the
+model will now try improving itself in learning patterns faster than just
+trying to finding patterns. Since we are dealing with image grids I think
+architectures utilizing convolutions and pooling layers would be a good
+approach. Even though there are lot of questions as how to combine all input-
+output pairs as single input and passing test input image along with them and
+also question on what could be best architecture for this approach I would
+like to get your advices on these thoughts . Thank you
+comment
+
+
+## 3 Comments
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up2
+  * format_quote
+  * link
+Zero-shot learners learn to match 2 images (think facial recognition) by have
+2 CNNs, each operating on one of the input images, with the difference between
+their embeddings (think a 2048x1 vector output from the CNN) being the
+difference between the images. By training with pairs of faces, some the same
+person, some not, the network learns what makes a face be from the same
+person. So this is a potential idea in response to how could CNNs take in
+multiple images. The other way is to stack them, so that a 30x30x7 image could
+represent 3 input/output pairs plus a test input. However, I think a bigger
+problem is that ARC requires an exact answer to get credit (no partial
+credit!), so your X->Y mapping must be exactly correct. You need to find a way
+to limit the outputs Y to "plausible" outputs in response to the test input,
+where the definition of plausible is key.
+[emoji_people](/sriramanush123)
+
+
+### [sriram anush123](/sriramanush123)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you for the advice. Stacking might be a good way to proceed and I am
+working on preparing a dataset With input image that has input-output pairs +
+test input embedded in it and output would be corresponding test image output.
+Later on planning to train CNN and Auto Encoder models on these dataset. Need
+to evaluate the results and see how models going to perform.
+
+
+### [SolverWorld](/solverworld)
+arrow_drop_up3
+  * format_quote
+  * link
+Another thought on stacking. Since the colors are really different objects and
+not real-world images, the numbers (0-9) don't have a numeric meaning - they
+are just labels. So it might make sense to one-hot encode the inputs, rather
+than use them as numbers. For example, I don't know if there are any examples
+that can be solved by adding or subtracting the colors as numbers. So each
+10x10 image would be converted to a 10x10x10 stack. For example, if
+input[3,3]=6, you would have stack[3,3,m]=1 if m==6 else 0.

@@ -1,0 +1,91 @@
+[KKY](/evilpsycho42) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What's the meaning of multiple outputs?
+Hi guys, the description page says that "Most tasks only have a single output
+(a single dictionary enclosed in a list), although some tasks have multiple
+outputs that must be predicted."
+But I didn't find any multiple output example in datasets. Is there anything I
+missed?
+comment
+
+
+## 4 Comments
+
+
+### [waechter](/waechter)
+arrow_drop_up1
+  * format_quote
+  * link
+Here are the tasks with multiple output in `arc-agi_training_challenges.json`:
+task id | number of test  
+---|---  
+239be575 | 2  
+25ff71a9 | 2  
+27a28665 | 3  
+3428a4f5 | 2  
+44f52bb0 | 2  
+53b68214 | 2  
+794b24be | 2  
+bda2d7a6 | 2  
+d4469b4b | 2  
+d5d6de2d | 2  
+dae9d2b5 | 2  
+dc433765 | 2  
+e9614598 | 2  
+ff28f65a | 3  
+  
+Example:  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F9328269%2F1767a58863a00caf4f6d1a7889bf0db7%2Ftask_ff28f65a.svg?generation=1718965714676862&alt=media)
+
+
+### [KKY](/evilpsycho42)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks! 😀
+
+
+### [KKY](/evilpsycho42)
+arrow_drop_up0
+  * format_quote
+  * link
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1238483%2Fb7282d9e5b141b4461b3db6d4f8b0305%2FSnipaste_2024-06-21_22-51-21.png?generation=1718981491918011&alt=media)
+Hi, I checked the task ff28f65a, the output is a 3x3 matrix, it is seems not a
+multiple output. What does "len" mean in your table?
+
+
+### [Robert Hatch](/roberthatch)
+arrow_drop_up0
+  * format_quote
+  * link
+The 3x3 matrix should enclosed in a list, even if single output. Maybe you
+copy pasted example EDA code that only looks at first entry.
+Not at my computer, but if I remember right, it would be something like:  
+single_output_oops = all_train_solutions[task_id]['test'][0]
+Take the parsed json, and make sure you go one level deeper at a time.
+
+
+### [waechter](/waechter)
+arrow_drop_up0
+  * format_quote
+  * link
+I updated my comment, "len"->number of test.  
+For example the task ff28f65a has 3test, that mean 3(test_input, solution)
+pairs.  
+For each task, we must output a solution for each test_input
+
+
+### [Aryan Garg](/aryangarg01)
+arrow_drop_up0
+  * format_quote
+  * link
+Any updates on this [@evilpsycho42](https://www.kaggle.com/evilpsycho42) ?

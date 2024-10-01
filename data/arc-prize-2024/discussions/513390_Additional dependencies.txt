@@ -1,0 +1,39 @@
+[Jackson Neal](/jacksonneal) · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Additional dependencies
+I started playing around with the data locally with several 3rd party
+dependencies that I typically use. These are not included in the notebook
+environment and I see that the submission must run without internet
+connection. Is the idea that the notebooks are intended to not use any
+additional packages beyond the ones provided? Or is there a way I could
+include built wheels to avoid downloading and installing in the notebook? The
+packages I am using are not critical to making predictions (yet) but it seems
+like I might run into that.
+comment
+
+
+## 1 Comment
+
+
+### [chris](/chris62)
+arrow_drop_up0
+  * format_quote
+  * link
+You can use other libraries, but there are a couple of extra steps since you
+can't just pip install them.
+First (sounds like you already have these), get or create the wheel file (.whl
+file) of the package.
+Then, upload those as a kaggle dataset (there's an upload/create new dataset
+button in the notebook editor on the right) and upload your whl file. You can
+keep your dataset as private, or mark it as public if you want to let others
+use it as well.
+Then that dataset will be attached to your notebook as a local file (there's a
+"copy path" button to get the full local path), and you can pip install the
+library from that whl file you just uploaded

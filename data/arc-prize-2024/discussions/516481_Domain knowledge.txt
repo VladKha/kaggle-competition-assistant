@@ -1,0 +1,85 @@
+[emoji_people](/vasileioscharatsidis)
+[Vasilis](/vasileioscharatsidis) · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Domain knowledge
+Hi guys, i have seem several examples of inputs and outputs a while ago. As i
+remember most of the time i was able to figure the pattern by looking the
+first input-output pair and many times the second input-output pair. Are there
+hard puzzles that someone needs more than two input-output pairs to figure out
+the pattern? Another question, are all tests in train/eval/test sets going to
+be different or there can be common tests across the sets?
+comment
+
+
+## 5 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up3
+  * format_quote
+  * link
+Tasks that have 3 or more examples, where having fewer may make the puzzle
+unsolvable.
+  * [task 25d8a9c8](https://neoneye.github.io/arc/edit.html?dataset=ARC&task=25d8a9c8)
+  * [task 27a28665](https://neoneye.github.io/arc/edit.html?dataset=ARC&task=27a28665)
+I don't understand your "Another question"?
+[emoji_people](/vasileioscharatsidis)
+
+
+### [Vasilis](/vasileioscharatsidis)
+arrow_drop_up0
+  * format_quote
+  * link
+Hey thanks for the reply. I mean can we notice the exact same pattern of a
+task in the train set also in the test set? Or the patterns there will be all
+different?
+
+
+### [Kamil Horvat](/khorvat)
+arrow_drop_up0
+  * format_quote
+  * link
+If you notice that one of test puzzles uses exactly the same pattern as task
+in public dataset, then IMHO applying the same algorithm should give correct
+solution. Since the goal of competition is reaching 85% of successfully solved
+puzzles, each puzzle should have one correct solution only. But I suspect
+there won't be many such puzzles, if any.
+[emoji_people](/vasileioscharatsidis)
+
+
+### [Vasilis](/vasileioscharatsidis)
+arrow_drop_up0
+  * format_quote
+  * link
+Another question, is it guaranteed that the biggest grid is 30x30 or it can be
+as well bigger?
+
+
+### [evoalg](/evoalg)
+arrow_drop_up0
+  * format_quote
+  * link
+Min is 1x1 and Max is 30x30
+This page mentions it:  
+<https://arcprize.org/arc>
+
+
+### [evoalg](/evoalg)
+arrow_drop_up0
+  * format_quote
+  * link
+Often a task with have several in-out examples to help rule out alternative
+solutions.  
+Hopefully there should be one clear solution.  
+An AI program might find, for example, the top-left square is always red when
+it is XYZ type of solution, but completely misses the general pattern that the
+task is trying to test on. More examples can help to rule out those wrong
+hypotheses.  
+Harder problems may need more examples to make it less ambiguous.

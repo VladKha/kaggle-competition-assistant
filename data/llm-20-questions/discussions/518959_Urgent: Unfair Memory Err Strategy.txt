@@ -1,0 +1,46 @@
+[CchristoC](/cchristoc) · 184th in this Competition · Posted 2 months ago
+
+
+### Urgent: Unfair Memory Err Strategy
+I found that if someone's agent gets an Err, all the other 3 Agents will get a
++ Point.
+This can be misused by questioner prompting as much words as possible (lengthy
+prompts), so that if the answerer's agent has less available memory, it will
+result in an Err and all points will be given to the other 3 agents, while the
+Err agent get a - point.  
+Even if they all didn't guess the correct keyword.
+This strategy is vulnerable to those who don't have a condition to give a
+backup answer when there is no output from the agent, especially for those who
+are using big size LLMs and lengthy answerer prompt too.
+Should be fixed by not giving + points to the other 3 if an agent gets an Err.
+(Only - point to the Err agent.)
+
+
+## 3 Comments
+
+
+### [Chris Deotte](/cdeotte)
+This was discussed
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/508415)
+and other threads.
+
+
+### [CchristoC](/cchristoc)
+But it's still not fixed yet?
+
+
+### [RS Turley](/rturley)
+I don't see an issue. The rules are pretty clear that a question can be up to
+2000 characters. Each agent should be responsible not to run out of time or
+memory.
+
+
+### [Chris Deotte](/cdeotte)
+> But it's still not fixed yet?
+The non-error teams used to receive like +150 points! It is much better than
+it was.
+
+
+### [Coldstart Coder](/tylerpoff)
+Thanks for the heads up, will need to put in safe guards for my own agents to
+make sure it doesn't error out like that.

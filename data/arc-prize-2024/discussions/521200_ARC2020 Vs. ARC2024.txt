@@ -1,0 +1,53 @@
+[Mehran Kazeminia](/mehrankazeminia) · 17th in this Competition · Posted 2
+arrow_drop_up30
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ARC2020 Vs. ARC2024
+  * Challenge 2020 had many lessons for all of us. These lessons were sometimes in the form of victory and good scores and sometimes in the form of failure. In [our notebook number 3](https://www.kaggle.com/code/mehrankazeminia/3-arc24-developed-2020-winning-solutions), we tried to develop all the successful solutions of 2020 for the challenge of 2024. In other words, maybe getting a score of 26 can be considered as the starting point of the 2024 challenge. But we should not neglect the other teachings of the 2020 challenge.
+  * Please note that if you can score 10 through your own method, very different situations may occur when Ensembling your results with the 2020 results. That is, your final score can vary between 26 and 36. In this situation, your success to get a better score depends on two factors; First, your method must solve different tasks compared to the results of 2020, and second, make sure that correct results are not removed when Ensembling.
+  * Another lesson of the 2020 challenge includes failures. In 2020 and the following years, many unsuccessful attempts were made. Those who had a special mastery in logical languages ​​or neural networks and image processing, or Binary Images, etc., made a lot of efforts to provide a comprehensive solution that is somehow different from solvers and DSLs. As far as we know, all these efforts have failed to date. And in the best case, they have solved only a few special and exceptional tasks that can be solved easily with solvers.
+  * But in the 2024 challenge, "LLM" has provided the participants with very good facilities to get better scores. It is clear that these facilities did not exist in previous years. With the start of the 2024 challenge, it seems that using this method (especially combined with the previous methods) to get excellent scores is very successful.
+  * Please note that although the use of "LLM" can not help much to improve Abstraction and Reasoning in machines, (because its function is more based on memorization. In addition, it seems that the host for the final test of the participants during the competition It uses fixed tasks and "LLM" guesses the leakage of the final test and related tasks better than any human) but anyway, getting a better score and winning this competition without using "LLM" is a big risk.
+  * Good luck to all participants.
+comment
+
+
+## 3 Comments
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks. Is there a way to get ice cuber's code? I'm really curious.
+
+
+### [Mehran Kazeminia](/mehrankazeminia)
+arrow_drop_up2
+  * format_quote
+  * link
+you're welcome.
+<https://github.com/top-quarks/ARC-solution>
+<https://www.kaggle.com/competitions/abstraction-and-reasoning-
+challenge/discussion/154597>
+
+
+### [Peter CXL](/a6893676)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks for reply. I know the GitHub site provide some information, the author
+said that the c++ code is classified, but I'm so curious that I need to read
+the c++ code^^.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up0
+  * format_quote
+  * link
+This is great! Thank you for sharing Mehran

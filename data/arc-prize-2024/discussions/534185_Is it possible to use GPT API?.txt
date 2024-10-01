@@ -1,0 +1,27 @@
+[young](/youngjae) · Posted 15 days ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Is it possible to use GPT API?
+I read that Internet access is not allowed.
+Does that mean using the GPT API is not available?  
+So, should I use Llama or something else?
+Thanks for any replies :)
+comment
+
+
+## 1 Comment
+
+
+### [young](/youngjae)
+arrow_drop_up1
+  * format_quote
+  * link
+I found answer.  
+Thanks!
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/512075>

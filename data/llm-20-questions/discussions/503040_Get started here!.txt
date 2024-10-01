@@ -1,0 +1,104 @@
+[Addison Howard](/addisonhoward) · Posted 4 months ago
+· Kaggle Staff
+
+
+### Get started here!
+**New to machine learning and data science?** No question is too basic or too
+simple. Feel free to start your own thread, or use this thread as a place to
+post any first-timer clarifying questions for the Kaggle community to help you
+with!
+**New to Kaggle?** Take a look at a few videos to learn a bit more about [site
+etiquette](https://www.youtube.com/watch?v=aIus8si_Et0), [Kaggle
+lingo](https://www.youtube.com/watch?v=sEJHyuWKd-s), and [how to enter a
+competition using Kaggle
+Notebooks](https://www.youtube.com/watch?&v=GJBOMWpLpTQ). Publish and share
+your [models on Kaggle Models](https://www.kaggle.com/docs/models#publishing-
+a-model)!
+**Looking for a team?** Express your interest in joining a team through our
+[Team Up](https://www.kaggle.com/discussions/product-feedback/341195) feature.
+**Remember** : Kaggle is for everyone. Whether you're teaming up or sharing
+tips in the competition forum, we expect everyone to follow our Kaggle
+[community guidelines](https://www.kaggle.com/community-guidelines).
+
+
+## 17 Comments
+
+
+### [usng](/tph0203)
+Your information has been very helpful. Thank you!
+
+
+### [Hadi Aman](/hadiaman)
+Hi, should we create our own model, or can we use existing ones and train them
+further?.
+
+
+### [Muhammad Rameez242](/muhammadrameez242)
+train your own model
+
+
+### [ash gamer](/ashgamer)
+It is taking too long for submission in the kaggle competition
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+We are currently trying to solve an issue with our servers. Should be sorted
+out in the new few hours
+
+
+### [Mohan Bhat](/mohanbhat612)
+Hello, can someone please summarize the important aspects or body of this
+competition its too confusing
+
+
+### [Daniel Andres Miranda](/danielandresmiranda)
+hi, I'm very happy to find this competition, I'm new at this and I've never
+before played "20 questions".  
+I want to know if in each match, we always know the category of all keywords?
+
+
+### [Veekshith Rao Poleni](/veekshithraopoleni)
+Hey, Im am minor interested in participating in this competition. Can someone
+help me with that?
+
+
+### [Naoism](/naoism)
+In the overview, it says the following: So does this mean that in this
+competition, we must use LLM generation for all "questions," "guesses," and
+"answers"?
+`Each team will consist of one guesser LLM, responsible for asking questions
+and making guesses, and one answerer LLM, responsible for responding with
+"yes" or "no" answers.`
+
+
+### [mhericks](/mhericks)
+Currently, no strict rule is enforced on this. Especially, there are agents
+that hard-code part of the agent behaviour and even agents that fully rely on
+non-LLM strategies (binary search on a fixed vocabulary). The rules are not
+clear whether agents without a significant LLM component will be disqualified
+- the challenge is called _LLM_ 20 Questions after all.
+
+
+### [Yash Jadhav](/iamyashjadhav)
+I tried various ways but unable to start for this competition . Can someone
+explain correct way to submit and why it goes on infinite loop?
+
+
+### [A. John Callegari Jr.](/ajohncallegarijr)
+Can our LLM agents access the internet during competitions to, for instance,
+use openai API calls?
+
+
+### [David](/davidxueml)
+No you cannot. The specifications have stated the submission files cannot
+communicate with anything external when it’s running.
+
+
+### [Saksham Sapkota](/sakshamjr10)
+Nicely trained Model!
+
+
+### [Muhammad Rameez242](/muhammadrameez242)
+I preferred local server

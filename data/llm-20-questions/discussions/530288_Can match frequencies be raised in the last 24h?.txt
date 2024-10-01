@@ -1,0 +1,10 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 7 days ago
+
+
+### Can match frequencies be raised in the last 24h?
+  * It seems that agents have stopped playing frequently again, with very small sigma's this time
+  * How can we ensure all agents move to the position they really deserve on the final leaderboard?
+  * Would it be possible to accelerate match plays again, as immediately after confidence reset? Maybe for the last 24h of the competition.
+
+
+## 0 Comments

@@ -1,0 +1,55 @@
+[JK-Piece](/jeannkouagou) · 197th in this Competition · Posted 15 days ago
+
+
+### Kaggle should reset the leaderboard multiple times
+In this 50% chance 50% skill competition, I believe there should be multiple
+leaderboard resets, and the final ranking would be based on the average skill
+from multiple restarts.
+  * Currently, bots that are unlucky at the very beginning get almost no chance of recovering
+  * If Kaggle could perform let's say 10 restarts (leaderboard resets) and measure the latest skill rating of every agent at the end of every restart, and average skill ratings throughout the restarts as final skill rating, this would determine the most deserving winners 
+  * Your thoughts?
+
+
+## 7 Comments
+
+
+### [Kha Vo](/khahuras)
+FYI, We are working to get them restart just 1 time and still fail 🥲
+
+
+### [torino](/pnmanh2123)
+We will probably need to wait until Monday for more information.
+
+
+### [JK-Piece](/jeannkouagou)
+Well, the difference is that we are requesting them to change the keywords. My
+post suggests something more
+
+
+### [Omikumar Bhavinkumar Makadia](/omikumarmakadia2121)
+I agree with this
+
+
+### [loh-maa](/lohmaa)
+Kaggle probably doesn't have a budget for such a multiple restart, however
+there's a cheap way to check whether the current algorithm is doing well --
+mirror the current stage of the leaderboard, take the best agent and reset its
+score to the worst score, and evaluate only games with that agent, see how
+long it would take for it to get to the top, or if it gets there at all.
+Perhaps this could be somehow related to sigma and the convergence criterion.
+++ An efficient ranking algorithm would take it to the top quickly, and my
+guess is the current one would not.. if the agent cannot make it to the top
+within default sigma settings it would indicate the current algorithm is not
+doing well and/or it was not suitable for this game format.
+
+
+### [JK-Piece](/jeannkouagou)
+I don't think the owner of the agent would like that
+
+
+### [loh-maa](/lohmaa)
+:D… by "mirror" I meant operate on a copy.
+
+
+### [Mr.kaggler](/deonkim)
+yeah i totaly agree

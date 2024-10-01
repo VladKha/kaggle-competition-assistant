@@ -1,0 +1,49 @@
+[Oleg Trott](/olegtrott) · Posted 3 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Fix simple LLM mistakes (if you are using LLMs)
+**Program Dithering**
+Not sure if it's a novel idea, but I wrote it up in a blog post:
+<https://www.lesswrong.com/posts/jEEWe42fcJWdbCZo9/fix-simple-mistakes-in-arc-
+agi-etc>
+comment
+
+
+## 2 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+That was a neat read. Ask yourself this: Let's say a few of the suggestions
+were attempted and tested and re-rigored and spit-polished and one of the
+"final programs" scored 100%. 100% on the training 400 and 100% on the eval
+400. And then you submitted a notebook and scored 100% on the current test
+100. Outside of shouting woo-hoo and buying a round of beers, what could you
+say? I know how I would feel, but I'm really curious what you (or others)
+think.  
+btw, your novel idea is pretty cool; reminded me a little of the "Infinite
+Improbability Drive" from "Hitchhiker's Guide" …also, backpropagation!
+
+
+### [Oleg Trott](/olegtrott)
+arrow_drop_up1
+  * format_quote
+  * link
+If I saw a 100% score on the leaderboard, I'd suspect that someone got
+inspired by my "perfect score": <https://olegtrott.com/#perfect> and found
+something similar here?
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Inspiring!! I'm speechless!

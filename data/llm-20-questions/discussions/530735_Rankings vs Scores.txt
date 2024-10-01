@@ -1,0 +1,195 @@
+[ISAKA Tsuyoshi](/isakatsuyoshi) · 9th in this Competition · Posted 4 days ago
+
+
+### Rankings vs Scores
+Here's a simple scatter plot with rank on the horizontal axis and score on the
+vertical axis. Due to size constraints, only the top 50 are shown.
+**37 hours to go**
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F4dfa38ab837eeccc54e3afdf4c9e1c6b%2FTop%2050%20Rankings%20vs%20Scores.png?generation=1724842072287519&alt=media)
+The HTML file containing the plot with all teams is saved below. If you're
+interested, feel free to check it out! (You can zoom in on specific ranges.)  
+[LLM 20 Questions Overall Rankings vs
+Scores](https://www.kaggle.com/datasets/isakatsuyoshi/llm-20-questions-
+overall-rankings-vs-scores/data)
+The top 1 to 6 ranks seem to be very close. The remaining time is getting
+short, but good luck all!
+**UPDATE**
+**25 hours to go**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F01144094580bf7b0744953de92f3cd4c%2F25%20hours%20remaining.png?generation=1724916096030021&alt=media)
+**17 hours to go**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F141d93435783fd068f350b09eac5922a%2F17%20hours%20to%20go.png?generation=1724918330480084&alt=media)
+The top 3 are standing out, while the 4th and below show a smooth, continuous
+decline.
+**11 hours to go**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F4d63f55bb9a96b7a0774c01b3aab64e0%2F11%20hours%20to%20go.png?generation=1724935799985978&alt=media)
+**2.5 hours to go**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F3370b11965f6220f8ba8d4365a793214%2F2.5hours%20to%20go.png?generation=1724966886517954&alt=media)
+**0 hours to go**  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5927283%2F69cdf479e9b4e8df5e5158e98d2239f9%2F0hourstogo.png?generation=1724978985437651&alt=media)
+
+
+## 13 Comments
+
+
+### [Chris Deotte](/cdeotte)
+Nice plot. Can you update this plot with the most recent dataset? Maybe put
+the new image below the old image. I'm curious if there are still the same
+clusters of top6 then next4 then next4 or if that is random.
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+Hi [@cdeotte](https://www.kaggle.com/cdeotte)!  
+I've updated it!
+
+
+### [Chris Deotte](/cdeotte)
+Great! Thank you. It is interesting to observe that the most recent plot is
+converging to 3 groups. There is a gap in scores between the groups. That is
+fascinating. (50 point gap between 3rd and 4th. And 50 point gap between 14th
+and 15th. Smooth everywhere else).
+Also there is a "bend" around rank 30. The teams ranked 30+ look like a
+horizontal line whereas the teams 1-29 are a slanted line. I think the top30
+teams really begin to stand out compared with the remaining 805 teams. (And
+certainly the top3 and top14 standout compared with rest too).
+
+
+### [Kha Vo](/khahuras)
+[@cdeotte](https://www.kaggle.com/cdeotte)
+[@isakatsuyoshi](https://www.kaggle.com/isakatsuyoshi) I think the 3 groups
+are as below:
+  * The best alpha group has the best "balance" between coverage and efficiency. You have to have 80% coverage or above, and should find the keyword with 15 questions or fewer (meaning reward > 5).
+  * The second alpha group comprises of either too much coverage (>90%) but too slow (reward < 5) , or fast but bad coverage (60%). Either this case is as good as the first group. 
+  * The third group, comprises of both full alphas and half alphas, where the full alphas have bad coverage and also slow.
+My bot coverage not just covers >90% of the private list, but also ~90% of the
+1500 public things keywords, where most multiword keywords present, such as
+plant pot, push pin, desk lamp, phone charger, chicken skewers… I am unware of
+the 2 facts: there are this many full alphas, and Kaggle made the private list
+too simple. It struck me really bad in alpha vs alpha matches, as I always 1
+or 2 step slower in finding it. In this kind of exact algorithm match, you
+can't be slow. I wish I can reduce 3/4 of my keyword list for speed (2 moves
+faster), that would make such a huge difference. Thorough preparation didn't
+pay off but simple single word keywords list works better. …
+
+
+### [raconion](/raconion)
+Our group's agents are in the intersection of group 1 and group 2, which also
+face issues when competing with great group 1 agents on simple keywords. It
+would be great if someone can curate a private keyword list after the comp
+ends today so everyone can also report they true coverage rate in the writeup
+as an enhancement for [@jademonk](https://www.kaggle.com/jademonk)'s great
+analysis
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/530312).
+
+
+### [Andrew Tratz](/jademonk)
+Check out the keyword list at
+<https://www.kaggle.com/competitions/llm-20-questions/discussion/528488>
+Not updated after the duplicates were removed, but perhaps still useful
+
+
+### [raconion](/raconion)
+Thank you Andrew :) Good luck to your agents! This comp is finally going to
+end
+
+
+### [loh-maa](/lohmaa)
+Looks like some players resort to prayers! Is it fair?… ,)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F0eb3b5c5f2fed1cbe4d51ee7c88f6cf4%2FScreenshot_2024-08-28_19-13-19.png?generation=1724847315055539&alt=media)
+
+
+### [Kha Vo](/khahuras)
+You pray or you lose. You better pray now to keep your 1st spot! 😀
+
+
+### [loh-maa](/lohmaa)
+I think you're right! So I'm heading out to pray at my favorite bar now… ,)
+
+
+### [Andrew Tratz](/jademonk)
+First round on the winner? :)
+
+
+### [loh-maa](/lohmaa)
+I'm afraid it's going to be a long night at the bar again.. would be so fun to
+meet you there, guys ,)
+
+
+### [loh-maa](/lohmaa)
+I think "pray" is a better choice.. ,)
+
+
+### [loh-maa](/lohmaa)
+It is very tight indeed, 6 agents competing for the 5 top spots, all within 1
+strike reach, and the odds of winning or loosing are also close to 50-50. And
+it's still very possible for the 4 outstanding bots to catch up. Hopefully
+everybody have fun… ,)
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+At this pace, top teams will play only 4~5 games to settle it down.
+I don't know why, but agent alpha are pairing with agent alpha more frequently
+than expected.
+
+
+### [KKY](/evilpsycho42)
+I've noticed that as well, and there must be some reason behind this
+phenomenon. One possible explanation is that Agent Alpha has a higher
+probability (the ratio beat the threshold) of winning, so most of them end up
+in the high score group and are paired more frequently.
+
+
+### [Andrew Tratz](/jademonk)
+Like other Kaggle simulations, the pairing is not entirely random. Agents are
+more likely to be paired with other agents within similar score ranges. Not
+always, though (my 1150 score bot was paired with a 140 bot one time). Since
+the pairing isn't random it creates a positive feedback loop for bots which
+are already near the top as long as they are able to remain competitive at
+that level. Consequently, as more alpha agents filtered to the top, frequency
+of alpha+alpha pairings increased.
+
+
+### [gguillard](/gguillard)
+And now if you plot ranking vs percentage of wins, it's another story. ;)
+
+
+### [ISAKA Tsuyoshi](/isakatsuyoshi)
+    import pandas as pd
+    import plotly.express as px
+    
+    # Load the file
+    file_path = 'llm-20-questions-publicleaderboard-2024-08-28T10_38_55.csv'
+    leaderboard_data = pd.read_csv(file_path)
+    
+    # Create the plot using the entire dataset
+    fig = px.scatter(leaderboard_data, 
+                     x='Rank', 
+                     y='Score', 
+                     title='Overall Rankings vs Scores')
+    
+    # Adjust the text position and rotation 
+    fig.update_layout(
+        annotations=[
+            dict(
+                x=leaderboard_data.iloc[i]['Rank'],
+                y=leaderboard_data.iloc[i]['Score'],
+                text=leaderboard_data.iloc[i]['TeamName'],
+                textangle=-45,  # Rotate counterclockwise by 45°
+                showarrow=False,
+                font=dict(size=10),
+            ) for i in range(len(leaderboard_data))
+        ]
+    )
+    
+    # Save the plot as an HTML file
+    output_path = 'overall_rankings_vs_scores_with_rotated_team_names.html'
+    fig.write_html(output_path)
+    
+    
+    content_copy

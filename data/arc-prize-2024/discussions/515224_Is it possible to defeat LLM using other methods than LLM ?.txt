@@ -1,0 +1,23 @@
+[ton8600](/ton8600) · 831st in this Competition · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Is it possible to defeat LLM using other methods than LLM ?
+Is it possible to defeat LLM using other methods than LLM ?
+comment
+
+
+## 2 Comments
+[emoji_people](/noorchauhan)
+
+
+### [Noor Chauhan](/noorchauhan)
+arrow_drop_up2
+  * format_quote
+  * link
+Most of the solutions are trying LLMs but they are not intuitive and I am sure
+LLMs are not the actual goal for this problem

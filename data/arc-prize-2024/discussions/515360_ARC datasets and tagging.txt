@@ -1,0 +1,92 @@
+[nosound](/zaharch) · Posted 3 months ago
+arrow_drop_up44
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ARC datasets and tagging
+What additional public ARC datasets are out there? I am familiar with the list
+below, do you know any more?
+  1. The absolutely beautiful work of Michael Hodel [@michaelhodel](https://www.kaggle.com/michaelhodel) , generating random examples for the 400 training tasks. The github contains 1000 generated tasks per each training example, but the code for generation is provided. He is my personal ARC super-hero, I am confident all gold medalists in this competition will use this repo.  
+[github](https://github.com/michaelhodel/re-arc)
+  2. 1D-ARC, where all grids are limited to one row.   
+[github](https://github.com/khalil-research/1D-ARC)
+  3. Mini-ARC, where all grids are 5x5.  
+[github](https://github.com/KSB21ST/MINI-ARC)
+  4. A small dataset by Andy Penrose [@andypenrose](https://www.kaggle.com/andypenrose)   
+[kaggle datatset](https://www.kaggle.com/datasets/andypenrose/extra-arc-tasks-
+for-testing)
+  5. A small dataset by me  
+[kaggle datatset](https://www.kaggle.com/datasets/zaharch/arc-nosound-tasks)
+Additionally, are you familiar with any tagging effort for the existing train
+and validation examples? There are the following tagging sources that I know
+so far:
+  1. The Michael's github contains "the verifiers", which are basically the solution to the tasks (have I already mentioned that he is my super-hero?), and the function names can be used as tags, theoretically.   
+[verifiers](https://github.com/michaelhodel/re-arc/blob/main/verifiers.py)
+  2. Careful work by [@davidbnn92](https://www.kaggle.com/davidbnn92) to tag the 400 training examples  
+[kaggle notebook](https://www.kaggle.com/code/davidbnn92/task-tagging)  
+[google
+sheet](https://docs.google.com/spreadsheets/d/18hwHi39S4gnJvWQXKZwAtvQMfUzmbxz4Xw1d2iaWJW4/edit?gid=0#gid=0&fvid=1515994134)
+  3. MC-LARC is something special, it attaches textual description to the tasks and converts the problem to a multiple-choice question.  
+[github](https://mc-larc.github.io/)
+comment
+
+
+## 2 Comments
+
+
+### [neoneye](/neoneye)
+arrow_drop_up5
+  * format_quote
+  * link
+Your "nosound" dataset is nice. It can be tried out here:  
+<https://neoneye.github.io/arc/?dataset=nosound>
+[@michaelhodel](https://www.kaggle.com/michaelhodel) super hero, agree.
+I have collected a few ARC like datasets for use with the ARC-Interactive, so
+it may diverge slightly from the original datasets.  
+<https://github.com/neoneye/arc-dataset-collection/tree/main/dataset>
+
+
+### [nosound](/zaharch)
+arrow_drop_up0
+  * format_quote
+  * link
+Wow, I so much love what you did! This is the best viewer / solver.
+Have you done it as part of a cognitive science project? What are the
+conclusions of your research?  
+<https://braingridgame.com/>
+About the datasets that you have, - this is the most comprehensive collection
+that I have seen. Can you please give some background and the origin of the
+less known datasets on your github:
+    
+    
+    ARC_synthetic_extend
+    ConceptARC
+    IPARC
+    PQA
+    Sequence_ARC
+    arc-community
+    arc-dataset-diva
+    dbigham
+    synth_riddles
+    
+    
+    content_copy
+
+
+### [neoneye](/neoneye)
+arrow_drop_up2
+  * format_quote
+  * link
+Each dataset have a readme with info about authors, license, paper(s).  
+Can these readme's be improved?
+I made ARC-Interactive/BrainGridGame for collecting how humans solve ARC
+tasks. Around 5940 interaction histories so far:  
+<https://github.com/neoneye/ARC-Interactive-History-
+Dataset/tree/main/history_files>
+Here is a 3 minute replay of how humans solve some ARC tasks:  
+<https://www.youtube.com/watch?v=NivPmxUfeHY>
+Thank you. Suggestions are welcome, and I may add/fix it.

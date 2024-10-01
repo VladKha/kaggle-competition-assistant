@@ -1,0 +1,18 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 2 months ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Abstraction *and* Reasoning
+One gets to a point when the opposing nature of those two words hits home.  
+Both are required for this contest. Required by your software. At the same
+time.  
+Before you write this off as "no big deal," don't.
+comment
+
+
+## 0 Comments

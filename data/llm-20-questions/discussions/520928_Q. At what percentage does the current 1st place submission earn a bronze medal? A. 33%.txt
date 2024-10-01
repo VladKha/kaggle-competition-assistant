@@ -1,0 +1,71 @@
+[c-number](/cnumber) · 1st in this Competition · Posted a month ago
+
+
+### Q. At what percentage does the current 1st place submission earn a bronze
+medal? A. 33%
+8 days ago, 3 identical submissions were made.  
+One is in 1st place, one is in gold range, and one is in bronze range.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6624777%2F0f0e94c6bc8b71dca46acc66a557a758%2FScreenshot%20from%202024-07-18%2013-09-42.png?generation=1721275803652643&alt=media)
+
+
+## 11 Comments
+
+
+### [c-number](/cnumber)
+Udpate (15 days after submission)
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6624777%2Fe78e22de1f88578f09ef7e102f5c2c43%2FScreenshot%20from%202024-07-25%2012-19-47.png?generation=1721877608825883&alt=media)
+
+
+### [c-number](/cnumber)
+Update for those who are interested (21 days after submission).  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F6624777%2Fed31847f2291a5623ccbb3c46cc4f18a%2FScreenshot%20from%202024-07-31%2023-45-54.png?generation=1722437186498527&alt=media)
+
+
+### [kothiwsk28](/kothiwsk28)
+I couldn't figure out from instructions about which submissions will be
+selected as final entries. Do only active submissions get selected as final
+entries or do we get to choose in the end out of all submissions? Given the
+discrepancies in scoring, it is kinda hard to choose an entry but it would be
+nice to at least select experiments that scored well in the past!
+
+
+### [Chris Deotte](/cdeotte)
+Good question. I think it will only be active which are our last 3
+submissions.
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+I made two identical submissions at the same time a few weeks back. 200 point
+disparity.
+
+
+### [Jonathan Harker](/jonathanjamesharker)
+It seems to be who you happen to get partnered with. If you happen to get
+paired with a no agent or a yes agent or gives very poor answers as the
+questioner you have no chance.
+Or if you are a good answerer and get partnered with a great question model
+you can shoot up in the rankings.
+
+
+### [TuMinhDang](/darkswordmg)
+I see that some articles have somewhat strange answers to questions. it seems
+to be in a constant draw. and I still don't understand why it says auto answer
+no.
+
+
+### [Ioannis M](/imeintanis)
+Interesting fact! All 3 agents have played the same number of games with the
+same opponents?
+1) does this hold true for any simulation competition, e.g. Rock, papers,
+scissors etc?  
+2) has to do with the number of games/opponents played?  
+3) Is there a way to calculate mathematically min/upper bounds ?  
+4) from your experience what percentage of "luck" you'd say is involved in
+such competition?
+
+
+### [Chris Deotte](/cdeotte)
+Interesting. Thanks for sharing.

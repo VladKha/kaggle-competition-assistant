@@ -1,0 +1,66 @@
+[Nick Liu](/chickenboy) · 5th in this Competition · Posted 21 days ago
+
+
+### 5th place solution
+Thanks for hosting the interesting competition. I really have a lot of fun and
+practice during this period.  
+Before my approach, I have to say I make some mistakes:
+  1. chose the wrong Kfold method so that the CV is not very accurate reveal the true distribution of real test set.
+  2. I used target encoding, but I didn't do it only based on train data, instead, I did it to full train+ valid dataset so that it cause some leakage.
+My best private score is 0.0386, some of them didn't perform well on public
+score so I discard them, now I submit a best version after competition and end
+up to have a 0.0381 private score. You can find it
+[here](https://www.kaggle.com/code/chickenboy/gbdt-approach)
+What work for me:
+  1. Discard too old training data: There are 2 warehouses are opend in 2021 mid and 2022 early year, so if we took all training data, model will focus on other warehouses more. On top of that, the older data have more deviation in the target compared to the new one. It might add some noise so that the model performance become worse.
+  2. Using target-encoding: This might cause some data leakage if we didn't handle carefully but it can give model more information about the target distribution, especially when we deal with some high diverse situation (ex: orders between warehouses, orders between holiday or non-holiday)
+  3. record x_day after/before today is a holiday and what kind of holiday is: This feature also appears on a lot of public notebook since the orders before / after holiday are abnormal.
+  4. record how many continous days the warehouse are closed before / after today: Same as 3., the day before or after a long close would cause some abnormal orders.
+  5. record the delta day from the first date of the training set.
+  6. concatenate data features with previous x days data features.
+What didn't work for me:
+  1. cyclic encoding
+  2. any kind of lag target feature
+  3. record continues shop closed days before/after today
+  4. record continues school holidays before/after today
+  5. seed 777
+Hoping you guys also have fun. If you find some of my thoughts are wrong, feel
+free to correct me.
+
+
+## 5 Comments
+
+
+### [Tanishk Patil](/tanishkpatil)
+Congratulation CHICKENBOY!  
+As a beginner it will help me a lot in near future.
+
+
+### [DraganPinsent98](/draganpinsent98)
+Thanks Chicken Boy! Very insightful for top competitors to explain there
+methods.
+
+
+### [Ern711](/ern711)
+Good job and congrats!
+Do you have any idea (approximately) how much bullet point 4 about the number
+of continous days the warehouse is/was closed before/after holiday improved
+the score?
+
+
+### [Nick Liu](/chickenboy)
+Hi Ern711,
+When I first implement it, it gave me 0.0003 boost on cv (0.0324 -> 0.0321),
+0.0001 boost on pb (0.0336 -> 0.0335) and now I can also see it gave me 0.0010
+boost on private score.
+I also tried to remove these two features from my public notebook, the public
+/ private score all become worse around 0.002x (public from 0.0304 -> 0.0325,
+while private from 0.0381 -> 0.0410). You can see
+[here](https://www.kaggle.com/code/chickenboy/gbdt-
+approach?scriptVersionId=194085688) for your reference
+Thank you for your asking.
+
+
+### [Musa Khan](/lazer999)
+Good Job, this competition sure was simple but confusing with the data
+selection

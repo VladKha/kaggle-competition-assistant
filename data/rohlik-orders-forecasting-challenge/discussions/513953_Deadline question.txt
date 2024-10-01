@@ -1,0 +1,21 @@
+[Stas Kolchin](/mordechaichick) · 274th in this Competition · Posted 3 months
+
+### Deadline question
+Hi all! I'm new to Kaggle and I have a question: I won't be able to submit my
+solution after August 9, 2024 if I haven't done so before, right?
+
+
+## 3 Comments
+
+
+### [G John Rao](/jaejohn)
+You can, it'll be a late submission (not eligible for rewards and points), a
+few competitions disable the submissions though.
+
+
+### [Stas Kolchin](/mordechaichick)
+Oh, i see. Thx man
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+Yes, this is the rule [@mordechaichick](https://www.kaggle.com/mordechaichick)

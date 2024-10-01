@@ -1,0 +1,188 @@
+[Marília Prata](/mpwolke) · Posted 4 months ago
+arrow_drop_up34
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### ARC: Generalization Difficulty. Computation efficiency. Core Knowledge
+priors.
+Since the last ARC competition was hosted by François Chollet, creator of the
+Keras neural networks library. Chollet’s paper on measuring intelligence
+provides the context and motivation behind the ARC benchmark.
+# On the Measure of Intelligence by François Chollet - November 5, 2019
+"On that paper Chollet proposed a set of guidelines for what a general AI
+benchmark should look like. Finally, he presented a new benchmark closely
+following these guidelines, the Abstraction and Reasoning Corpus (ARC), built
+upon an explicit set of priors designed to be as close as possible to innate
+human priors. He argued that ARC can be used to measure a human-like form of
+general fluid intelligence and that it enables fair general intelligence
+comparisons between AI systems and humans."
+# AI with a degree of generality comparable to human intelligence
+"The author proposed that research on developing broad in AI systems (up to
+“general” AI, i.e. AI with a degree of generality comparable to human
+intelligence) should focus on defining, measuring, and developing a
+specifically human-like form of intelligence, and should benchmark progress
+specifically against human intelligence (which is itself highly specialized).
+" pg.24
+Human cognitive priors come in multiple forms:
+Low-level priors, Meta-learning priors and High-level knowledge priors. (pg.
+25)
+# Generalization Difficulty
+"The author defined Generalization Difficulty as: Generalization Difficulty of
+a task given a curriculum C and a skill threshold θ, noted GDθ T,C: Fraction
+of the Algorithmic Complexity of solution Solθ T that is explained by the
+shortest optimal training-time solution T rainSolopt T,C (i.e. length of the
+shortest program that, taking as input the shortest possible program that
+performs optimally over the situations in curriculum C, produces a program
+that performs at a skill level of at least θ during evaluation, normalized by
+the length of that skill program). Note that this quantity is between 0 and 1
+by construction." (pg. 35)
+Read it (pg 35) because I didn't know how to reproduce those formulas.
+# Defining intelligence
+"The author expressed the intuitive definition of intelligence stated earlier,
+“the intelligence of a system is a measure of its skill-acquisition efficiency
+over a scope of tasks, with respect to priors, experience, and generalization
+difficulty.” (pg.38/39)
+# Computation efficiency, time efficiency, energy efficiency, and risk
+efficiency
+"Computation efficiency of skill programs: encourage the generation of the
+skill programs that have minimal computational resource consumption."
+"Computation efficiency of the intelligent system: to expend a minimal amount
+of computation resources to generate a skill program."
+"Time efficiency: o minimize the latency with which the intelligent system
+generates skill programs."
+"Energy efficiency: minimize the amount of energy expended in producing a
+skill program."
+"Risk efficiency: this is highly relevant to biological systems and natural
+evolution, in which certain novelty-seeking behaviors that would lead to
+faster learning may also be more dangerous."
+" Information efficiency acts in many settings as a proxy for energy
+efficiency and risk efficiency." (pg. 41/42)
+# What is ARC?
+"ARC can be seen as a general artificial intelligence benchmark, as a program
+synthesis benchmark, or as a psychometric intelligence test. It is targeted at
+both humans and artificially intelligent systems that aim at emulating a
+human-like form of general fluid intelligence. It is somewhat similar in
+format to Raven’s Progressive Matrices , a classic IQ test format going back
+to the 1930s." (pg. 46)
+> ARC has the following top-level goals:
+• "Stay close in format to psychometric intelligence tests (while addressing
+issues found in previous uses of such tests for AI evaluation, so as to be
+approachable by both humans and machines; in particular it should be solvable
+by humans without any specific practice or training."
+• "Focus on measuring developer-aware generalization, rather than task-
+specific skill, by only featuring novel tasks in the evaluation set (assumed
+unknown to the developer of a test-taker)."
+• "Focus on measuring a qualitatively “broad” form of generalization (cf.
+I.3.2), by featuring highly abstract tasks that must be understood by a test-
+taker using very few examples."
+• "Quantitatively control for experience by only providing a fixed amount of
+training data for each task and only featuring tasks that do not lend
+themselves well to artificially generating new data."
+• "Explicitly describe the complete set of priors it assumes, and enable a
+fair general intelligence comparison between humans and machines by only
+requiring priors close to innate human prior knowledge. ( pg.46)
+# Objectness priors:
+"Object cohesion: Ability to parse grids into “objects” based on continuity
+criteria including color continuity or spatial contiguity (figure 5), ability
+to parse grids into zones, partitions."
+"Object persistence: Objects are assumed to persist despite the presence of
+noise or occlusion by other objects. In many cases (but not all) objects from
+the input persist on the output grid, often in a transformed form. Common
+geometric transformations of objects are covered in category 4, “basic
+geometry and topology priors”. (pg. 48)
+# What a solution to ARC may look like, what it would imply for AI
+applications
+"ARC does not appear to be approachable by any existing machine learning
+technique (including Deep Learning), due to its focus on broad generalization
+and few-shot learning, as well as the fact that the evaluation set only
+features tasks that do not appear in the training set."
+# A hypothetical ARC solver
+"A hypothetical ARC solver may take the form of a program synthesis engine
+that uses the demonstration examples of a task to generate candidates that
+transform input grids into corresponding output grids. Schematically:"
+"Start by developing a domain-specific language (DSL). Given a task, use the
+DSL to generate a set of candidate programs that turn the inputs grids into
+the corresponding output grids. Select top candidates among these programs
+based on a criterion such as program simplicity or program likelihood. Use the
+top three candidates to generate output grids for the test examples." (pg.53)
+# Weaknesses and future refinements:
+"Generalization is not quantified. Test validity is not established. Dataset
+size and diversity may be limited. The evaluation format is overly close-ended
+and binary. Core Knowledge priors may not be well understood and may not be
+well captured in ARC. (pg. 54)
+# ARC Benchmark
+"ARC takes the position that intelligence testing should control for scope,
+priors, and experience: every test task should be novel (measuring the ability
+to understand a new task, rather than skill) and should assume an explicit set
+of priors shared by all test-takers."
+• "ARC explicitly assumes the same Core Knowledge priors innately possessed by
+humans."
+• "ARC can be fully solved by humans, but cannot be meaningfully approached by
+current machine learning techniques, including Deep Learning."
+• "ARC may offer an interesting playground for AI researchers who are
+interested in developing algorithms capable of human-like broad
+generalization. It could also offer a way to compare human intelligence and
+machine intelligence, as we assume the same priors."
+<https://arxiv.org/pdf/1911.01547>
+Since this article was written on 2019, some concepts may have changed.
+For the record, I'm still struggling to draw the geometric objects of ARC.
+comment
+
+
+## 6 Comments
+
+
+### [aimind](/aimind)
+arrow_drop_up2
+  * format_quote
+  * link
+The most promising way：​Relational decomposition for program synthesis
+arxiv.2408.12212； new AI tech method is need；
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you for the tip AIMind.
+
+
+### [TheItCrOw](/kevinbnisch)
+arrow_drop_up1
+  * format_quote
+  * link
+> Read it (pg 35) because I didn't know how to reproduce those formulas.
+It really is troublesome to write latex code on kaggle comments. Here is the
+screenshot, taken directly from the paper:
+* * *
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F17421843%2F530a06267151534b8011115cc5275bad%2Fmsedge_zxKxQp6FJr.png?generation=1718180447416749&alt=media)
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up1
+  * format_quote
+  * link
+Hi TheItCrow.  
+if you recognize that's hard to write formulas on Kaggle environment imagine
+for me. That's why I recommended to read the page. Thank you.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+Thanks for sharing!
+
+
+### [Marília Prata](/mpwolke)
+arrow_drop_up0
+  * format_quote
+  * link
+You're welcome Kamradt. I was waiting for this competition for 2y. And now,
+since the files changed  
+I wasn't able (yet) to plot the Mondrianish Art drawings :(

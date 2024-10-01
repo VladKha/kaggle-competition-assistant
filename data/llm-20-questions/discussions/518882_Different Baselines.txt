@@ -1,0 +1,10 @@
+[Sarvesh Gharat](/sarveshgharat012) · Posted 2 months ago
+
+### Different Baselines
+Hi there, I am new to this competition and was wondering if there's any thread
+talking about baselines along with the links to their codes. If not, it would
+be great if someone could help me do that, so that it will be easy to work and
+compare with
+
+
+## 0 Comments

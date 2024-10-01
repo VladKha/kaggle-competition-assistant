@@ -1,0 +1,23 @@
+[VolodymyrBilyachat](/vovikdrg) · 45th in this Competition · Posted 3 months
+
+### Is this competition limited to Gemma only?
+I cant find in rules anything but am I allowed to use other LLM models than
+Gemma? Or anything as soon as it fits into  
+Technical Specifications  
+100 GB of disk space  
+16 GB of RAM  
+1 T4 GPU ?
+
+
+## 2 Comments
+
+
+### [Addison Howard](/addisonhoward)
+Kaggle Staff
+Yes - you can use any LLM model you wish (that fits the constraints of
+submission)
+
+
+### [Kuldeep Rathore](/kuldeeprathoree)
+We have a public notebook which is using Phi3  
+[https://www.kaggle.com/code/pawinchan/phi3-20-questions](url)

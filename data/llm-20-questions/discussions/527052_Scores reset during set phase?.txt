@@ -1,0 +1,18 @@
+[raconion](/raconion) · 10th in this Competition · Posted 23 days ago
+
+
+### Scores reset during set phase?
+Will the scores of current public lb be reset to the same 600 after keywords
+are swapped during test phase? It would be not fair for newer submissions if
+we keep the current scores as they affect who your teammates and opponents
+are. It is much easier to improve faster if you are paired with better
+teammates.
+
+
+## 1 Comment
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Yes, all scores will be reset to 600

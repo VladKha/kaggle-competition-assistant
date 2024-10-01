@@ -1,0 +1,42 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 3 months ago
+
+
+### fine tune prediction
+It can be clearly observed from the graph that the 'orders' of each warehouse
+has a trend of increasing over time.Perhaps the population has increased?  
+So we can fine tune the prediction results.
+Firstly, we can multiply the predicted results by a weight greater than 1,
+where each warehouse can be operated separately for better results. In the
+figure, there is a warehouse that has increased from 1000 to 2000, one
+warehouse that has increased from 1000 to 6000, and the rest of the warehouses
+have an increase of around 2000. The specific weights can be set
+independently, but the size relationship still depends on the increase in
+'orders'.
+Secondly, due to the overall upward trend of 'orders', the predicted results
+of' orders' can be fine tuned, requiring it to not be lower than the minimum
+value of 'orders' in the past year.
+
+
+## 3 Comments
+
+
+### [Samvel Kocharyan](/samvelkoch)
+> It can be clearly observed from the graph that the 'orders' of each
+> warehouse has a trend of increasing over time.Perhaps the population has
+> increased?
+Just a simple business growth is the most obvious explanation of the orders
+increasing trends. Topic research supports this ideas strongly. Models which
+we'll create here will struggle from the data drift very soon. Especially for
+German market. I guess [@mkecera](https://www.kaggle.com/mkecera) and his team
+knows that fact. I assume that Rohlik as many other new businesses which
+growth started or overlapped Covid and post Covid years suffers more than
+usual from some uncertainty in predictive models. Conformal predictions could
+be a solution.
+
+
+### [Yan Teixeira](/yantxx)
+Is it supposed to have figures here?
+
+
+### [Shubham Singh](/shubhamcodez)
+Thank you for the insight.

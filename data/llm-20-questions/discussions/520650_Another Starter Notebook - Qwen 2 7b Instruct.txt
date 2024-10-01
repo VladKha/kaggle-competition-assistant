@@ -1,0 +1,23 @@
+[Matthew S Farmer](/matthewsfarmer) · 108th in this Competition · Posted 2
+
+### Another Starter Notebook - Qwen 2 7b Instruct
+In the spirit of Chris Deotte releasing his code, I am sharing a notebook that
+incorporates some alternative strategies and a different model. It also
+includes an evaluation session and debugger that can be used to improve your
+model in real-time in the notebook.
+Notebook is [here](https://www.kaggle.com/code/matthewsfarmer/llm-20q-starter-
+notebook-2-0)
+I am excited to see some of the different strategies other competitors have
+used for this competition as it comes to a close.
+Happy coding! Cheers.
+
+
+## 2 Comments
+
+
+### [Ahmed Arham](/ahmed72raza)
+Happy coding! Cheers.
+
+
+### [Rishit Jakharia](/rishitjakharia)
+Thanks for sharing, greatly appreciated

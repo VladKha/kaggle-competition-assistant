@@ -1,0 +1,47 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 2 days ago
+
+
+### 611th place full-llm solution... I've seen better days
+I wanted to post my final submission so that others could learn from it I do
+not have a highscore since my final submission wasn;'t able to submit because
+of a server overload (More info
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/527990)).
+Please do not take my low ranking as a sign of bad code, the notebook that was
+running before my final code had a weird error that caused me to get such a
+bad position. My final code has this error fixed along with some other
+improvements that I sadly wasn't able to submit. In fact in the first half I
+was commonly drifting around in the top-5 even had a few #1s back then. I hope
+my code helps you learn something, this competition was a wonderful idea that
+was poorly executed.  
+Without further ado here's my code (please give me a like or comment if you
+find it useful): [Solving 20 Questions with L3 and Tree of
+Thought](https://www.kaggle.com/code/max1mum/solving-20-questions-with-l3-and-
+tree-of-thought/notebook)
+
+
+## 4 Comments
+
+
+### [Tanishk Patil](/tanishkpatil)
+The amount of efforts you put in that's matter, Nothing else.
+
+
+### [OminousDude](/max1mum)
+Thank you! I hope you like my final work!
+
+
+### [Tanishk Patil](/tanishkpatil)
+Yes Very Informative Notebook. I referred your notebook for my final year
+project on LLM
+
+
+### [OminousDude](/max1mum)
+Thank you for that compliment!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Life is always up side down. Learn lesson :) And be better :D good luck
+
+
+### [OminousDude](/max1mum)
+Thank you!

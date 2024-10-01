@@ -1,0 +1,22 @@
+[Michael Kamal 92](/michaelkamal92) · 544th in this Competition · Posted 3
+
+### i want help what i should be do ?
+I understand, make 2 agent, one to make ask, second to make guess.  
+guess from answer questions from vs agent.  
+what i should be do? train 2 models ? one for asks, second to guess ?  
+this first time to make thing like this
+
+
+## 2 Comments
+
+
+### [Matthew S Farmer](/matthewsfarmer)
+For learning, I would attempt to prompt and constrain a pre-trained agent like
+Gemma. The starter notebook can help you with that. Even a well-trained LLM
+has trouble with deterministic thinking and game-like constraints. This is a
+hard competition. Don't take my word for it, find the best LLM chat you have
+access to and attempt to play 20 questions with it.
+
+
+### [Michael Kamal 92](/michaelkamal92)
+Thank you, i will try with Gemma to understand what happened 😁

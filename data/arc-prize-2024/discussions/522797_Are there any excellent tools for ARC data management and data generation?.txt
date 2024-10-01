@@ -1,0 +1,56 @@
+[rangtang](/rangtang) · 152nd in this Competition · Posted 2 months ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Are there any excellent tools for ARC data management and data generation?
+I have some hobby-level experience with UI, and if there are no such tools
+available, I'm considering creating one myself.  
+The following discussion about datasets was very informative:  
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/515360>  
+I would appreciate it if you could share any other past examples or resources.  
+Thank you in advance for your help.
+comment
+
+
+## 3 Comments
+
+
+### [WOOSUNG YOON](/woosungyoon)
+arrow_drop_up0
+  * format_quote
+  * link
+I would like to propose the following features for the user interface.
+**Function 1: Load Data**
+  1. Allow users to upload data in JSONL format.
+**Feature 2: Category Visualization**
+  1. Enable the application of a custom Python script to categorize the data.
+     * Users should be able to test this functionality within the UI.
+  2. Provide a visualization of the data based on the categories.
+**Function 3: Apply Solver**
+  1. Implement a solver feature.
+  2. Indicate the solver's results with visual markers:
+     * A green mark for correctly solved problems.
+     * A red mark for unsolved problems.
+The above UI will be a great help in understanding and improving the existing
+solver.
+In fact, I am considering a completely different methodology for solving the
+problem.
+
+
+### [rangtang](/rangtang)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you for your response.  
+In the structure I'm currently considering, I'd like to be able to show:
+  * Data loading
+  * Correct/Incorrect answers
+  * Metadata  
+I want to be able to show these in a format.  
+Is it necessary to run Python on the UI? I'm thinking that it might be
+sufficient to just provide the output data to the UI. What do you think?

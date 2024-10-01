@@ -1,0 +1,45 @@
+[zhuoqunli](/ucas0v0zhuoqunli) · 472nd in this Competition · Posted 3 months
+
+### Meaning of 0.7 in the mov_change column
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F11486426%2F15fe0a21a98ee83b690bd3c491aa4ac1%2F2024-06-12%20154729.png?generation=1718178462699576&alt=media)
+
+
+## 5 Comments
+
+
+### [MichalKecera](/mkecera)
+Hi [@ucas0v0zhuoqunli](https://www.kaggle.com/ucas0v0zhuoqunli), 0.7 means
+there was a small minimum order value change. 1 means there was a larger
+change.
+
+
+### [zhuoqunli](/ucas0v0zhuoqunli)
+Thank you, that's helpful
+
+
+### [Aya Nabil](/ayanabil11)
+Hi [@mkecera](https://www.kaggle.com/mkecera) can you tell me what is the
+meaning of the mov_change column
+
+
+### [tanaka](/tanakasandesuka)
+And what is the difference between user_activity_1 and user_activity_2🤔
+[@mkecera](https://www.kaggle.com/mkecera)?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F3032938%2Fb3e707ae82b1784056a942dc7fbe6a42%2FScreenshot%202024-06-14%20at%201.08.32.png?generation=1718294933002821&alt=media)
+Additionally, whats the difference between these thee shutdown info?
+  * shutdown - warehouse shutdown or limitation due to operations (not provided in test)
+  * mini_shutdown - warehouse shutdown or limitation due to operations (not provided in test)
+  * frankfurt_shutdown - warehouse shutdown or limitation due to operations (not provided in test)
+
+
+### [MichalKecera](/mkecera)
+Hi [@tanakasandesuka](https://www.kaggle.com/tanakasandesuka) ,
+Thanks for the questions. Re user activity I can’t be more specific
+unfortunately as we can’t disclose exactly what these mean. I can say that
+they are different way if measuring user activity on the platform but they
+will be correlated. Shutdowns are pretty much the same but mini shutdown means
+that only a part if warehouse was affected or just for few hours. Shutdown is
+more severe.
+I hope this helps.

@@ -1,0 +1,61 @@
+[ d1v1s10n_by_zer0](/d1v1s10nbyzer0) · 643rd in this Competition · Posted 2
+
+### Why is the oldest agent being deleted and not the agent with the worst
+results?
+I would like to try new hypotheses, but for that I have to remove the agent
+with the highest rating. Is it possible to replace new agents with the worst
+of my attempts rather than the best (in my case, it coincides with the oldest
+shipment)?
+
+
+## 2 Comments
+
+
+### [Jasper Butcher](/jasperbutcher)
+Doesn't seem so. Just lose the ego & document the old code, rankings don't
+matter.
+
+
+### [Hadeka](/elhadeka)
+What do u mean by “ranking don’t matter”?  
+Isn’t an evidence that this code can overcome others, and can somehow defend
+itself from other codes to overcome it?  
+Or am I missing something?
+
+
+### [Jasper Butcher](/jasperbutcher)
+You're right, perhaps it's a bit of a blanket statement but I mean in the
+long-term they won't provide you much information because I've found the
+rankings are super volatile.
+I submitted 3 identical bots, and after 3 days they had scores ranging from
+800, 700 and 500. You win once by chance, you shoot up, you lose once, you're
+stuck with lobotomized bots which give you no information whatsoever. I simply
+don't have time to wait a week for the rankings to stabilize - even then
+though, this is very slow signal.
+It's really really hard to submit one decent bot, make some changes, and
+submit an improved one and use the difference in ranking to see if that truly
+improved it.
+I'm leaning towards trying to test bots offline? Not sure if people have tried
+doing this?
+
+
+### [Hadeka](/elhadeka)
+Well I totally agree with you.  
+I’ve did the same actually, submitted 3 identical agents, their score ranged
+from 470 to 890. My rank was 360, then after few hours, I’m the 20th! All with
+the same agent, same submission.  
+My 3 identical agents, one kept around 400, the second is around 600, and the
+third between 800 and 900!
+It’s not really weird, but stabilizing LLM generations is actually too hard,
+almost impossible to do it 100%. We tried a lot in the past AIMO here on
+Kaggle, but you can only relatively reduce its instability, but you cannot
+eliminate it. That’s anyway one of the key factors that define LLMs, but for
+that kind of research (and competitions), it’s really annoying.
+I was thinking about testing it offline, but haven’t done so, yet.
+
+
+### [Jasper Butcher](/jasperbutcher)
+My guess is that testing offline wouldn't be needed as much if we could just
+select one bot to put all of our games quota to. Best work-around is just to
+submit all of your daily allowance. I sympathise with the hosts though, not an
+easy competition to run!

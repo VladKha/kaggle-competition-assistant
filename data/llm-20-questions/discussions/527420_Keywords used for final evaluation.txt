@@ -1,0 +1,42 @@
+[Mitsutani](/dmitsutani) · 88th in this Competition · Posted 21 days ago
+
+
+### Keywords used for final evaluation
+I know this has been asked before, but with 2 days left in the competition it
+would be great if we could get some clarification regarding the list of
+keywords that will be used after the submissions close.
+It was only mentioned explicitly that the keywords in keywords.py will not be
+used, but as has been pointed out in other discussions there are larger public
+lists of keywords scraped from the current games being played. Will these
+words be in the final keywords list? This seems to me like a pretty important
+piece of information regarding the rules of the game.
+[@kaggle](https://www.kaggle.com/kaggle)
+[@bovard](https://www.kaggle.com/bovard)
+
+
+## 2 Comments
+
+
+### [loh-maa](/lohmaa)
+It's been asked so many times indeed. Nothing new has been scraped that would
+change the last
+[update](https://www.kaggle.com/competitions/llm-20-questions/discussion/523198).
+
+
+### [Mitsutani](/dmitsutani)
+I still don't think it's obvious from the phrasing in the post or any of the
+official responses that any of the scraped keywords won't be used. All that
+seems very explicit to me is that the keywords in keywords.py won't.
+
+
+### [loh-maa](/lohmaa)
+> When the competition closes:  
+>  The unseen secret “things” keyword list will be swapped in
+but certainly our interpretation may be different… maybe the official
+clarification is already on the way.. ,)
+
+
+### [Mitsutani](/dmitsutani)
+It does sounds like the scraped words will be swapped, just think it would be
+good to make it very explicit since it's a pretty important detail. But
+hopefully you're right :)

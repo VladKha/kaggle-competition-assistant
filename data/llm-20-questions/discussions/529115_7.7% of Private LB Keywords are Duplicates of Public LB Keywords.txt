@@ -1,0 +1,347 @@
+[Chris Deotte](/cdeotte) · 311th in this Competition · Posted 14 days ago
+
+
+### 7.7% of Private LB Keywords are Duplicates of Public LB Keywords
+# Private LB Public LB Keyword Duplicate Analysis
+Using [@lohmaa](https://www.kaggle.com/lohmaa) dataset
+[here](https://www.kaggle.com/datasets/lohmaa/llm20-evaluation-games-
+collected) (version 3), we can view all 23,958 private LB games played between
+Aug 15th UTC 5am thru Aug 19th UTC 5am. (This is after all the LB resets).
+There are 1799 unique Private LB keywords. Among these, there are 139 keywords
+which are contained in Public LB keywords. Therefore `7.7% of Private LB
+keywords are duplicates of Public LB keywords`. (I use the list of Public LB
+keywords [here](https://www.kaggle.com/datasets/waechter/llm-20-questions-
+games?select=keywords.csv) which contains 1499 thing keywords).
+This is strange because Kaggle said
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/523198#2964963)
+that the Private LB `will not re-use` any Public LB keywords. The 139
+duplicate words are:
+    
+    
+    ['air compressor' 'air conditioner' 'anemone' 'auditorium' 'backrest'
+     'baguette' 'balcony' 'bat' 'bike' 'binoculars' 'bookcase' 'bread knife'
+     'briefcase' 'brochure' 'bulb' 'cantaloupe' 'cardboard box' 'cauliflower'
+     'ceiling fan' 'champagne flute' 'chandelier' 'chessboard' 'cup holder'
+     'cutting board' 'dandelion' 'diaper' 'diving board' 'duvet' 'dvd'
+     'edamame' 'electrical panel' 'elevator' 'eucalyptus' 'extension cord'
+     'fireplace' 'fish tank' 'frappuccino' 'glove' 'grapefruit' 'hairbrush'
+     'hairspray' 'handbag' 'handrail' 'hazelnut' 'headlamp' 'hearing aid'
+     'hibiscus' 'holly' 'honeybee' 'ice water' 'iced coffee' 'icicle'
+     'incense' 'iron' 'ironing board' 'joystick' 'lanyard' 'laptop' 'latte'
+     'lego' 'lightbulb' 'mailbox' 'marshmallow' 'microscope' 'microwave'
+     'mixing bowl' 'modem' 'mouse' 'muffin' 'muffler' 'mural' 'necklace'
+     'nightstand' 'notebook' 'nozzle' 'ointment' 'olive oil' 'orange peel'
+     'oven rack' 'oxygen tank' 'pamphlet' 'pickaxe' 'placemat' 'plaque'
+     'plate' 'pliers' 'popcorn' 'potato' 'pressure gauge' 'rabbit' 'radish'
+     'rat' 'reindeer' 'resin' 'respirator' 'rivet' 'router' 'rug' 'scoreboard'
+     'screwdriver' 'silicone' 'sketchbook' 'smartphone' 'smartwatch'
+     'smoke detector' 'spatula' 'spice rack' 'spotlight' 'sprinkler'
+     'squirrel' 'sticker' 'storage bin' 'stove' 'sunscreen' 'telescope'
+     'television' 'tissue box' 'tofu' 'toilet' 'tomato' 'toothbrush'
+     'toothpaste' 'touchscreen' 'towel' 'tracksuit' 'tractor' 'tricycle'
+     'tulip' 'turkey' 'tweezers' 'vanity mirror' 'vase' 'washing machine'
+     'whistle' 'windbreak' 'wine aerator' 'wrench' 'wristband' 'yogurt'] 
+    
+    
+    content_copy
+# Keyword Length Analysis
+I also analyzed the length of keyword. On Public LB, 43% of keywords are one
+word while 57% are two or more words. On Private LB, 81% of keywords are one
+word while 19% are two or more words. So the Private LB keywords are easier to
+guess using an English dictionary of single word words.
+# Q: Are Duplicates Easier to Guess?
+From Aug 15th UTC 5am thru Aug 19th UTC 5am, there have been 23,958 unique
+episodes. In the 22,083 Private LB games where the keyword is not present in
+Public LB, one team guesses the keyword in 2.6% of games. In the 1875 Private
+LB games where the keyword is present (i.e. duplicated) in Public LB, one team
+guesses the keyword in 4.5% of games.
+# A: Yes, Duplicates are Easier to Guess!
+Using a one-tailed Z-Test for Two Proportions, the `Z score is 4.83` and `p
+value < 1e-5`. This implies it is statistically significant that the presence
+of duplicated Public LB keywords makes the Private LB keyword easier to guess
+then when the Private LB keyword is not a duplicate.
+
+
+## 17 Comments
+
+
+### [Chris Deotte](/cdeotte)
+UPDATE: I brought this issue to Kaggle admin's attention
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/523198#2964963)
+
+
+### [Feida Wei](/feidawei)
+Thank you for doing this! I hope the admins will respond someday and extend
+ASAP and fix/change the problems before the two weeks end just to determine
+that we have to start over 🙏.
+
+
+### [Kha Vo](/khahuras)
+This is unusual. Kaggle has always been very supportive in competition
+requests and questions related to leak, ambiguity, cheating… to ensure the
+maximum fairness of the challenge where hundreds or thousands of people invest
+thousand of hours into.  
+Maybe they are evaluating some options and will come up with a solution. We
+can wait a little.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Taking a look at this now.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Looks like there are some dupes in there, removing them now.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Duplicates removed, I'll talk to the team and see if/what further action we
+can take
+
+
+### [Jonathan Chan](/jonathanchan)
+[@bovard](https://www.kaggle.com/bovard) : One of my agents got sunk by
+another old keyword "comb" 4 hrs ago (about an hour after the supposed old
+keyword removal).
+
+
+### [Chris Deotte](/cdeotte)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) is "comb" a Public LB
+keyword? Is it not in the dataset
+[here](https://www.kaggle.com/datasets/waechter/llm-20-questions-
+games?select=keywords.csv) which contains Public LB keywords. What list of
+Public LB keywords are you using?
+
+
+### [Jonathan Chan](/jonathanchan)
+From the excellent notebook shared by
+[@waechter](https://www.kaggle.com/waechter) :
+<https://www.kaggle.com/code/waechter/llm-20-questions-games-dataset>. I used
+two different versions to compile the old keywords.
+
+
+### [e-toppo](/masatomatsui)
+[@bovard](https://www.kaggle.com/bovard)  
+As Chris mentioned in this discussion, the keyword length distribution differs
+between the Public LB and Private LB.
+Previously, you say that 'the Private LB is taken from roughly the same
+keyword list as the current one,' but it seems clear that they are actually
+taken from different lists.
+
+
+### [raconion](/raconion)
+True. There are a lot more multi-word keywords in keywords.py than in private
+test set. It would be great if some measures can be done to maintain keyword
+length distribution
+
+
+### [Kha Vo](/khahuras)
+[@bovard](https://www.kaggle.com/bovard) please consider this keyword length
+distribution because the simple unigram keywords will be very easy to be
+searched by binary methods using available English dictionary
+
+
+### [Are Quon](/arequon)
+Thahk you for updated your discussion post to use the larger list of Public LB
+keywords
+
+
+### [Kha Vo](/khahuras)
+Beside a fresh restart, I suggest Kaggle to add many many difficult 2-word
+keywords that make life harder for alpha bots, but not very hard for LLMs,
+such as phone charger, tennis ball, hockey gloves… Jamming 2x 3x or 4x number
+of new and hard keywords will significantly lower alpha successful rate.
+Of course that can be possible if play pace must be increased significantly
+too.
+
+
+### [loh-maa](/lohmaa)
+I don't want to undermine your calls, I also would like to see the hosts
+fixing something. But the pace is not the issue, the issue is sigma which is
+decreasing rapidly with every resolved game and in consequence every agent
+will have such a small number of resolved games, not to mention the
+disproportionate importance of early games to "boost" the ranking, but I'm
+convinced it was not adequate for this game format and the level of randomness
+vs skill.
+There are still many agents which haven't resolved a single game and they
+played a hundred of times and their score is still around 600 which
+illustrates how inefficient the algorithm is. And I think the algorithm keeps
+playing them with a priority because it wants to rank them. But they just keep
+guessing "penguin" and "I think the answer is:"… xD
+
+
+### [loh-maa](/lohmaa)
+So what I think are options, without being too specific:
+  1. increasing the selection range so that low rank bots can meet high rank bots and finally resolve some games
+  2. disabling the priority for playing the unresolved bots, which I think devour most resources at the moment
+  3. freeing the resources would allow to increase sigma and have more resolved games per agent
+  4. staged elimination of the worst performing bots would also free more resources to give more sigma
+This is just a handful of blurry ideas.. because ultimately it's our hosts who
+have to come up with a fix.. but is there anybody watching at all?
+
+
+### [Chris Deotte](/cdeotte)
+Another idea (after resetting all bots) is to play 48 hours of games while
+keeping everyone at score 600. Then after 48 hours, we update everyone's
+scores (based on their wins and loses in the first 48 hours) then continue as
+usual. This will prevent the first few wins or loses to have such a large
+effect.
+
+
+### [Kha Vo](/khahuras)
+I respect both of you [@lohmaa](https://www.kaggle.com/lohmaa)
+[@cdeotte](https://www.kaggle.com/cdeotte) ideas,.. but it seems impossible to
+change anything significantly given Kaggle's inactivity / reluctancy
+
+
+### [loh-maa](/lohmaa)
+Yes, I can see what you mean Kha Vo. Nevertheless, in the spirit of a
+brainstorm. I keep pondering how to overcome the "inefficiency" and give more
+evaluation to the "resolvable" bots. So an alternative to Chris' idea could be
+a pre-heat/qualification self-play, with 10 easy common keywords, for
+instance. This would be a thank you for the non-resolvable agents. Players
+didn't know the evaluation details beforehand anyway, so I don't think anybody
+can complaint they were not ready for this, but I agree that's not a cosmetic
+adjustment.
+
+
+### [Kha Vo](/khahuras)
+Plugging [@cdeotte](https://www.kaggle.com/cdeotte) 's numbers to calculate
+Z-test for Two Proportions:
+Null Hypothesis H0 = Two populations of (population 1 = private keywords that
+are not in public LB) and (population 2 = private keywords that are in public
+LB) have the same rate of successful guess.
+p1 = 0.026 = success rate of population 1  
+p2 = 0.045 = success rate of population 2  
+n1 = 22083 = sample size of population 1  
+n2 = 1875 = sample size of population 2  
+p = overall sample proportion = (p1 _n1 + p2_ n2)/(n1+n2) = 0.02748  
+Z = (p1 - p2) / np.sqrt(p _(1-p)_(1/n1 + 1/n2)) = -4.83 --> population 1 has
+success rate about 4.83 standard deviations below the mean success rate  
+With Z=4.83 and alpha = 0.05 --> p value < .00001.  
+Since p value < 0.05 we can reject H0, meaning that it is statistically
+significant that population 2 is more easier to guess than population 1.  
+[@cdeotte](https://www.kaggle.com/cdeotte) My calculation has somewhat
+different result than yours… any idea why? (however with the same conclusion)
+
+
+### [Chris Deotte](/cdeotte)
+Thanks for double checking my work
+[@khahuras](https://www.kaggle.com/khahuras) . I mistakenly used n1=22083 with
+p1=0.045 and n2=1875 with p2=0.026 which is flipped. I should have used
+n1=22083 with p1=0.026 and n2=1875 with p2=0.045. Then z=4.83. Your
+calculation is correct. I will update my post.
+
+
+### [Kha Vo](/khahuras)
+[@cdeotte](https://www.kaggle.com/cdeotte) It’s not double checking, it’s
+reviewing my statistics knowledge after I read again Z test for a long time.
+The beauty of statistics truly excited me. Thanks for bringing this up!
+
+
+### [Chris Deotte](/cdeotte)
+Great. These tests are interesting and important to determine if what we are
+observing is due to randomness or if there is a meaningful difference.
+
+
+### [KKY](/evilpsycho42)
+Super clear analysis and explanation. Sad story.
+
+
+### [Blue Fairy](/happier13)
+how to start with kaggle
+
+
+### [Mahmoud Elshahed](/letemoin)
+repeated words are excluded by hard code from some agents for targeting higher
+probabilities, but presence of these duplicate is very weird, this actually
+lower performance of these agents.
+two words or more is very harder in guess actually, and was complete disaster
+in public LB "for me at least"
+also the logic of tie, we deduct points from highest to lowest or so is not
+logical, despite it has a logic on action, but i review some episode my
+guesses are nearby from correct get first word correct but the second is
+different 'something like street lamp' or so,  
+and the team opposing, has one repeated question and same guess, they got
+points :(
+
+
+### [NIWATORI](/niwatori)
+The keyword list from the Agent Alpha notebook seems to represent only a small
+portion of the complete public keyword list, as it contains just 794 keywords,
+including place names. The full public keyword list found
+[here](https://www.kaggle.com/datasets/waechter/llm-20-questions-
+games?select=keywords.csv) has about 1,500 keywords. As a result, the
+duplication ratio might be higher than 7.7%.
+
+
+### [Chris Deotte](/cdeotte)
+Thank you for sharing the larger CSV of Public LB keywords. Strangely when
+using the larger list, the percentage of duplicates does not change. The Agent
+Alpha list has 577 things, while your list has 1499 things. Also your list
+includes all the Agent Alpha words. The duplicates between Private LB and both
+lists is only the 139 words listed in my discussion post (so duplicate
+percentage stays 7.7%).
+Using your list of 1499 things, we see that 43% are one word keywords while
+57% are two or more words. This statistic changes slightly. The other
+statistics in my discussion post do not.
+
+
+### [torino](/pnmanh2123)
+Hi [@cdeotte](https://www.kaggle.com/cdeotte) ,  
+Can you check win rate of duplicate keywords with others? Is there any
+difference?
+
+
+### [Kha Vo](/khahuras)
+[@cdeotte](https://www.kaggle.com/cdeotte) FYI, when the alpha notebook was
+first released and dominated the LB with the first batch of places and things,
+Kaggle removed all places from keywords.py, and added 1000 other secret words
+(that are not in keywords.py anymore). That was their counter-measure attempt
+to make that alpha notebook void on public LB and the competition goes
+normally again, otherwise this competition would be destroyed. The 1000 added
+secret words are mostly 2-word words and difficult to be guessed and retrieved
+from public word sets or nouns. Those 1000 2-word words were likely to be
+drawn or generated from a different distribution than the first 500 things.  
+In private LB, I guess Kaggle just use the remaining things that were drawn
+from the same distribution of the things in keywords.py. Most of them are easy
+to guess.
+
+
+### [loh-maa](/lohmaa)
+Just to clarify, the list of keywords in the last alpha notebook was just an
+improvised subset meant for testing.
+
+
+### [Chris Deotte](/cdeotte)
+> Can you check win rate of duplicate keywords with others? Is there any
+> difference?
+What do you mean? If I use Agent Alpha Public LB keyword list or if I use your
+larger Public LB keyword list, then there are only 139 duplicate keywords. So
+in each case the games with and without duplicates are the same. So the win
+rate with duplicates and the win rate without duplicates do not change based
+on which list of Public LB keywords that we use.
+
+
+### [torino](/pnmanh2123)
+Thank for your information.
+
+
+### [Chris Deotte](/cdeotte)
+I have updated my discussion post to use the larger list of Public LB
+keywords.
+
+
+### [Chris Deotte](/cdeotte)
+UPDATE: I updated this post using all 23,958 private LB games from Aug 15th
+UTC 5am thru Aug 19th UTC 5am since [@lohmaa](https://www.kaggle.com/lohmaa)
+updated his dataset to version 3 to include more private LB games. I also use
+the full list of public LB keywords
+[here](https://www.kaggle.com/datasets/waechter/llm-20-questions-
+games?select=keywords.csv) (suggested by
+[@niwatori](https://www.kaggle.com/niwatori) below) for comparision.

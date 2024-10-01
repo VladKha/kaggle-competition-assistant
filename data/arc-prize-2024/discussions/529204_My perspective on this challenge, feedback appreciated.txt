@@ -1,0 +1,39 @@
+[G John Rao](/jaejohn) · 57th in this Competition · Posted a month ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### My perspective on this challenge, feedback appreciated
+Hi everyone!
+I've been pondering the limitations of machine learning, which relies heavily
+on making predictions based on past data. This raises an important question:
+where is the room for novel, unique solutions to problems?
+Limiting our reliance on past data while exploring new and innovative ways to
+approach problems is, in my opinion, the most critical focus area. As I delve
+deeper into this topic, I've come to realize that relying solely on past data
+to predict the future is a more perilous issue in Gen AI than I initially
+thought.
+As I delve deeper into this area, I've come to realize that relying solely on
+past data to predict the future is a more perilous issue in general AI than I
+initially thought. There may be multiple ways to solve a particular problem,
+but all of these approaches rely on existing data. The adage 'The solution is
+in the problem' suggests that the answer lies within the problem itself, but I
+believe there's a fundamental flaw in this statement. I'd like to illustrate
+this point with an example from the job applicant context:
+If a job applicant analysis system only accepts candidates based on the
+existing data of profiles who performed well, there's a negligence towards job
+profiles that deviate from those who did well. As humans, it's common sense to
+recognize how flawed this system is, and I think this problem is pervasive in
+everything else related to Gen AI.
+Are we tackling exactly this problem in this challenge? I know we are trying
+to generalize gen AI.
+Any resources to look into this specific area would be greatly appreciated.
+[Artificial Intelligence](/discussions?tags=12101-Artificial+Intelligence)
+comment
+
+
+## 0 Comments

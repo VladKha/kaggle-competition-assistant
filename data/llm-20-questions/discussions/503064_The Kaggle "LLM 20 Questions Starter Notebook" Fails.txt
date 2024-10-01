@@ -1,0 +1,60 @@
+[marketneutral](/marketneutral) · 750th in this Competition · Posted 4 months
+
+### The Kaggle "LLM 20 Questions Starter Notebook" Fails
+All I did was clone the notebook; save it; and hit submit. And it fails… Any
+ideas why?
+[fail.PNG](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2815506/20702/fail.PNG)
+
+
+## 4 Comments
+
+
+### [Ryan Holbrook](/ryanholbrook)
+Kaggle Staff
+
+Hi [@marketneutral](https://www.kaggle.com/marketneutral), You'll need to
+submit the output of the notebook instead of the notebook itself. Check out
+the first cell of the notebook for more details.
+
+
+### [marketneutral](/marketneutral)
+Ok. Got it. Thank you. I tried that. It still errors. The log file:
+    
+    
+    [[{"duration": 0.077924, "stdout": "Initializing model\n", "stderr": "Traceback (most recent call last):\n  File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 159, in act\n    action = self.agent(*args)\n  File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 130, in callable_agent\n    agent(*args) \\\n  File \"/kaggle_simulations/agent/main.py\", line 245, in agent_fn\n    response = get_agent('answerer')(obs)\n  File \"/kaggle_simulations/agent/main.py\", line 229, in get_agent\n    agent = GemmaAnswererAgent(\n  File \"/kaggle_simulations/agent/main.py\", line 187, in __init__\n    super().__init__(*args, **kwargs)\n  File \"/kaggle_simulations/agent/main.py\", line 106, in __init__\n    model = GemmaForCausalLM(model_config)\n  File \"/kaggle_simulations/agent/lib/gemma/model.py\", line 400, in __init__\n    self.tokenizer = tokenizer.Tokenizer(config.tokenizer)\n  File \"/kaggle_simulations/agent/lib/gemma/tokenizer.py\", line 24, in __init__\n    assert os.path.isfile(model_path), model_path\nAssertionError: /kaggle_simulations/agent/gemma/py"}]]
+    
+    
+    content_copy
+
+
+### [marketneutral](/marketneutral)
+Has anyone been able to submit the Kaggle baseline agents?
+
+
+### [jazivxt](/jazivxt)
+Yes, just submitted successfully.
+
+
+### [marketneutral](/marketneutral)
+Any secrets to getting this to work? All I am doing is cloning the notebook,
+running it, downloading the output compressed submission file; uploading it as
+as a submission.
+
+
+### [marketneutral](/marketneutral)
+I think I may have figured it out. I see this notice now
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1748051%2Fc767c25f711620bf759e45f373f69a43%2Fsteps.PNG?generation=1715884067689405&alt=media)
+Which is a little cryptic to be honest. I looked at the Models panel in the nb
+and see nothing to do
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F1748051%2F11076d02cd1b651fc7c3b968b1395053%2Fmodels.PNG?generation=1715884107515364&alt=media)
+However I think I solved it. You have to accept the license on the Gemma
+Models tab from the homepage.
+
+
+### [Benjamin Maréchal](/irmo322)
+Thank you. I had the same issue.  
+For those who wonder where you have to go for accepting the licence, search
+Gemma in kaggle models.

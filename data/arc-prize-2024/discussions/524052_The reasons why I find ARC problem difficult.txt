@@ -1,0 +1,46 @@
+[WOOSUNG YOON](/woosungyoon) · Posted 2 months ago
+arrow_drop_up8
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### The reasons why I find ARC problem difficult
+The reasons why I find ARC problem difficult.
+When I first saw the problem in the ARC Prize 2024, it made me think of the
+challenge of training a AI to find approximate solutions to partial
+differential equations (PDEs) using graph neural networks (GNNs).
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4808143%2F3d219556e9899c8d9113e51858a2fe7b%2F11.png?generation=1722770282621410&alt=media)
+  * Lino, M., Cantwell, C., Bharath, A. A., & Fotiadis, S. (2021, June 9) on Simulating Continuum Mechanics with Multi-Scale Graph Neural Networks 
+Partial differential equations typically generate successive solutions based
+on an initial state.
+However, the challenge presented in the ARC Prize 2024 has a large gap.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F4808143%2F2dc9b1a86d47a1723020a91a7bccb598%2F22.png?generation=1722770349371758&alt=media)  
+(by MakiMakiAi, <https://www.kaggle.com/code/makimakiai/jp-arc-applying-
+algebra-to-eda-2)>.
+There is a large gap between the initial state and the answer state, as shown
+by a particular example on the EDA notebook
+This makes solving the ARC Prize 2024 problem more challenging than solving
+partial differential equations.
+  * (1) Limited data availability.
+  * (2) Unfixed environments.
+  * (3) A variety of complex problems.
+  * (4) A significant distance between the initial and answer states.
+  * (5) Too many colors (different colors can be identified, but simultaneously exchanging colors doesn't alter the nature of the problem)
+I'm considering approaching the problem by creating a state vector that
+combines the initial state and the answer state.
+I would like to try using GNN or transformer model.
+comment
+
+
+## 1 Comment
+
+
+### [shine ocean](/shineocean)
+arrow_drop_up0
+  * reply
+thanks, you are right.

@@ -1,0 +1,101 @@
+[Turbo](/mankyfej) · 501st in this Competition · Posted a month ago
+arrow_drop_up6
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Tasks 39a8645d and 73ccf9c2 have 2 possible solutions
+The following tasks can be interpreted in 2 ways:
+39a8645d:
+  * choose the most common shape (accepted answer)
+  * choose the shape in the top left corner
+73ccf9c2:
+  * choose the only not horizontally symmetric shape (accepted answer)
+  * choose the bottom most shape
+comment
+
+
+## 8 Comments
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up-1
+  * format_quote
+  * link
+> The following tasks can be interpreted in 2 ways:
+>
+> 39a8645d:
+>
+> choose the most common shape (accepted answer)  
+>  choose the shape in the top left corner
+**This seems to not be so much "choosing a shape" as it is "creating a pattern
+from a shape"**
+> 73ccf9c2:
+>
+> choose the only not horizontally symmetric shape (accepted answer)  
+>  choose the bottom most shape
+**Ex. 2 _has no_ bottom most shape**
+
+
+### [fuzzthink](/fuzzthink)
+arrow_drop_up0
+  * format_quote
+  * link
+39a8645d really has 2 possible outputs based on train examples (I was wrong is
+my previous reply). If one sees choosing the shape in the upper left corner, a
+valid guess based on the train examples, he will get it wrong as the author's
+answer is based on most common occurrence instead. The examples needs to
+demonstrate only 1 possible solution.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks… fuzzthink. You're humble and lovable.  
+Turbo (and you) were right. I have no idea why when I typed 39a8645d into the
+ARC game URL I saw a different task. My response was that of an idiot.
+Apologies all 'round.
+
+
+### [fuzzthink](/fuzzthink)
+arrow_drop_up0
+  * format_quote
+  * link
+39a8645d: Not a concern as both interpretations yield the same result.
+73ccf9c2: Not true. Choose the bottom most shape does not apply to the 2nd eg.
+
+
+### [Turbo](/mankyfej)
+arrow_drop_up0
+  * format_quote
+  * link
+In the 2nd train example of 73ccf9c2 the shape on the right starts 1 row lower
+than the left one, so there is a bottom most shape.
+
+
+### [Turbo](/mankyfej)
+arrow_drop_up0
+  * format_quote
+  * link
+39a8645d: no, they don't. The accepted solution is the red shape, the top left
+shape is the green one.
+
+
+### [CPMP](/cpmpml)
+arrow_drop_up0
+  * format_quote
+  * link
+How do yo define bottom most? in 73ccf9c2 there are two shapes at the bottom
+in the second train sample.
+
+
+### [Turbo](/mankyfej)
+arrow_drop_up0
+  * format_quote
+  * link
+In the 2nd train example the one on the right starts 1 row lower than the left
+one, so there is a bottom most shape.

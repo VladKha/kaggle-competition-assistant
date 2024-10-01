@@ -1,0 +1,31 @@
+[Guillermo Barbadillo](/ironbar) · 5th in this Competition · Posted 18 days
+arrow_drop_up9
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Measuring submission runtime with Distill Web Monitor
+Currently, Kaggle does not show the submission runtime, it only shows the time
+when the submission was made. Being able to measure the submission runtime is
+important to optimize the submission configuration and maximize the
+leaderboard score.
+On this post, I'm going to share my method to measure submission runtime.
+  1. Install [Distill Monitor Chrome extension](https://chromewebstore.google.com/detail/distill-web-monitor/inlikjemeeknofckkjolnjbpehgadgge?hl=en&pli=1). It is an extension that allows to monitor changes in websites.
+  2. Go to <https://www.kaggle.com/competitions/arc-prize-2024/submissions>
+  3. Click on the extension and select `Monitor full page`  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F264656%2Fb51b52cf9e721d2693ce68eba7e0c140%2FScreenshot%20from%202024-09-12%2010-59-02.png?generation=1726131762127625&alt=media)
+  4. Click on Open Webpage Selector settings  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F264656%2F6071afad3bc60107762b25856301d9e1%2FScreenshot%20from%202024-09-12%2011-00-00.png?generation=1726131779268791&alt=media)
+  5. Add the following regex: `(\d+\.\d{2})|(Version \d+)` This will filter all the website content except from notebook versions and scores.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F264656%2F0a5a33762f1564f34c9d7033450b32c5%2FScreenshot%20from%202024-09-12%2011-01-55.png?generation=1726131803032148&alt=media)
+  6. Select your monitor interval, alerts and you are done!
+comment
+
+
+## 0 Comments

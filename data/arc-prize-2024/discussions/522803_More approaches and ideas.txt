@@ -1,0 +1,163 @@
+[Sirish Somanchi](/sirishks) · Posted 2 months ago
+arrow_drop_up25
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### More approaches and ideas
+Algorithm for ARC Challenge  
+<https://alexandernaumenko.substack.com/p/algorithm-for-arc-challenge>  
+PS: Author Alexander Naumenko is interested in forming a team
+Chollet ARC Priors Summary  
+<https://chatgpt.com/share/d70e9abb-3be0-4b2e-b3d8-7f96b4f1a954>
+The ConceptARC Benchmark: Evaluating Understanding and Generalization in the
+ARC Domain  
+<https://arxiv.org/abs/2305.07141>  
+<https://github.com/arc-community/arc/wiki/Concepts>  
+<https://github.com/victorvikram/ConceptARC/tree/main/corpus>
+LLMs are prone to (partially) copying the input matrices when giving a
+response, fail to develop symbol-level abstractions, leading to strategies
+that diverge from those used by humans  
+<https://arxiv.org/abs/2403.09734>  
+<https://github.com/cstevenson-uva/kidsARC>
+Infusing Lattice Symmetry Priors in Attention Mechanisms for Sample-Efficient
+Abstract Geometric Reasoning  
+<https://arxiv.org/abs/2306.03175>
+Abstract Visual Reasoning Enabled by Language  
+<https://arxiv.org/abs/2303.04091>
+Learning-independent abstract reasoning in artificial neural networks  
+<https://arxiv.org/abs/2407.17791>
+Model-Agnostic Meta-Learning (MAML)  
+<https://interactive-maml.github.io/maml.html>
+Provable Compositional Generalization for Object-Centric Learning  
+<https://arxiv.org/abs/2310.05327>  
+<https://github.com/brendel-group/objects-compositional-
+generalization?tab=readme-ov-file>
+comment
+
+
+## 8 Comments
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up1
+  * format_quote
+  * link
+Generalization and Knowledge Transfer in Abstract Visual Reasoning Models,
+using Pathways of Normalized Group Convolution (PoNG) model on **I-RAVEN**
+dataset  
+<https://arxiv.org/abs/2406.11061>
+Towards Generative Abstract Reasoning: Completing **Raven's Progressive
+Matrix** via Rule Abstraction and Selection  
+<https://arxiv.org/abs/2401.09966>
+Improving Generalization for Abstract Reasoning Tasks Using Disentangled
+Feature Representations, on a set of relational reasoning problems derived
+from **Raven Progressive Matrices**  
+<https://arxiv.org/abs/1811.04784>
+Abstract Reasoning via Logic-guided Generation (LoGe), a novel generative DNN  
+<https://arxiv.org/abs/2107.10493>
+Tree-of-Thought and Building Reasoning AI  
+<https://patmcguinness.substack.com/p/tree-of-thought-and-building-reasoning>
+Deep Q-learning from Demonstrations (DQfD), with Generalization ability  
+<https://arxiv.org/abs/1704.03732>  
+<https://en.m.wikipedia.org/wiki/Q-learning>
+OpenAI Q* is a powerful artificial intelligence discovery that they said
+**could threaten humanity**  
+<https://www.reuters.com/technology/sam-altmans-ouster-openai-was-
+precipitated-by-letter-board-about-ai-breakthrough-2023-11-22/>  
+<https://patmcguinness.substack.com/p/llm-reasoning-and-the-rise-of-q>  
+<https://www.interconnects.ai/p/q-star>
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Thank you for all the data, Sirish!!! Shout out to Alexander Naumenko… Email?
+Hope everyone had a nice weekend!
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up1
+  * format_quote
+  * link
+[@jameshuddle](https://www.kaggle.com/jameshuddle) You can chat with Alexander
+(@alexencon) on the competition Discord channel at:  
+<https://discord.com/invite/vhExsHYQ>
+
+
+### [Alexander Naumenko](/alexencon)
+arrow_drop_up2
+  * format_quote
+  * link
+Here I am! My email: [alexencon@gmail.com](mailto:alexencon@gmail.com) I will
+be happy to chat and share what I have so far.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Thanks, gents! I put a sentence out on Discord, but I'll be in touch,
+directly. Thanks again, Sirish!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+In your second reference,
+<https://chatgpt.com/share/d70e9abb-3be0-4b2e-b3d8-7f96b4f1a954> , you show an
+interesting exchange with an LLM. Two comments: My takeaway from Chollet's
+incredible paper was that there were four main categories of priors:
+Objectness, Agentness, Numbers & Math, Geometry & Topology. And of course the
+paper expounded on those. But if I were asked to give a summary, my first
+answer would be, "I can't remember them all but I know there are four main
+categories. Here, I have the paper. Yes four," and then I'd give the list I
+just looked up and reproduced, here. No such "clarity" from LLM.  
+Meanwhile, we get up to 60 from the LLM. And looking at the list of 60, my
+brain does what it always did, which is go watch TV. Still I wonder, if the
+Human had said, "Not 60 make it 300" what would that have looked like? I mean,
+already it was kind of dissolving into white-paper hypnosis. [edited for
+stupidity reasons]
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up0
+  * format_quote
+  * link
+Distributional reasoning in LLMs:  
+a novel and interpretable analysis of internal multi-hop parallel reasoning
+processes in LLMs  
+<https://arxiv.org/abs/2406.13858>  
+<https://m.youtube.com/watch?v=tFcz-aTBqG0>
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up0
+  * format_quote
+  * link
+Any chance anyone can comment on my progress?
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/521873>
+Are you seeing the same outputs if doing a similar strategy?
+
+
+### [Sirish Somanchi](/sirishks)
+arrow_drop_up1
+  * format_quote
+  * link
+[@markrdabler](https://www.kaggle.com/markrdabler) Although you have asked
+this question (about your outputs) in multiple posts, no one has replied so
+far, which likely means that they are following different strategies which are
+not similar to what you are trying. Don't be discouraged - sometimes uncommon
+approaches can give great results in the end.
+
+
+### [darkmabler](/markrdabler)
+arrow_drop_up2
+  * format_quote
+  * link
+Thanks for the reply!

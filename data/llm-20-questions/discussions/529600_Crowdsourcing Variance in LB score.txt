@@ -1,0 +1,90 @@
+[Raki](/raki21) · 10th in this Competition · Posted 11 days ago
+
+
+### Crowdsourcing Variance in LB score
+I imagine some people have submitted copies or very similar pipelines, because
+it was clear that variance would be high and when there is so much luck
+involved it makes sense to stay close to your strongest approach and submit it
+twice.
+Our submissions aren't exact copies but pretty similar and are currently at
+~1010 and ~920.
+Would be interesting to see additional score comparisons!
+
+
+## 7 Comments
+
+
+### [loh-maa](/lohmaa)
+That's the current score correlation. It's a bit better than the previous one,
+the coefficient went up from 0.25 to 0.35. It seems both submissions are high
+for a few top players, but many players around 1000 have their other
+submission much lower.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F2e5c841a02d4cad3dc28e78873bb5319%2Fscore_correlation-0823.png?generation=1724414262537944&alt=media)
+
+
+### [loh-maa](/lohmaa)
+[@khahuras](https://www.kaggle.com/khahuras) I have a question, the scatter
+plot above is random with respect to the order of scores, i.e. the x and y
+axis. But if I sort the scores so that score 1 is always the better one, it
+looks very different (obviously) and the correlation is 0.66. What's the
+correct approach?
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F5871958%2F5fe3d5b761d9aaba3f264532fe01d411%2Fscore_correlation-0823.png?generation=1724414765906229&alt=media)
+
+
+### [Kha Vo](/khahuras)
+I guess when sorting you accidentally decrease variance of each variable,
+causing corr to rise?
+
+
+### [loh-maa](/lohmaa)
+But only the order (score_1, score_2) is sorted for each player, ~~variance is
+not affected~~ … actually yes, my misunderstanding, variance is affected
+
+
+### [Kha Vo](/khahuras)
+I mean corr is something like “how likely x is high when y high and vice
+versa”. When not sorting x spread from 600 to 1200 , same as y. After sort x
+spread from 900 to 1200, y spread from 600 to 1000. So both var x and y
+decrease. It boosts corr significantly. Sorting looks better though imho,
+because we want to know “how likely the worse submission correlate with the
+better submission for each team”
+
+
+### [loh-maa](/lohmaa)
+Thanks a lot, LLM also said that by sorting the order of scores some bias is
+introduced… well, maybe it makes sense, the columns are no longer independent,
+but modified in a specific way.
+
+
+### [Andrew Tratz](/jademonk)
+Right now I've got two exactly identical bots with 1178 and 678 scores
+
+
+### [Kha Vo](/khahuras)
+I have 2 similar bots, not identical though. One is 1137 and the other 1098
+
+
+### [loh-maa](/lohmaa)
+I think the tornado has helped to shake the ranking, but it most probably
+didn't eliminate the pit, so it's still possible to be trapped. It's difficult
+to say what else has been changed except the sigma reset. If you look at my
+post about the pit, there are a few options to improve the convergence, but
+which options are feasible to apply is really hard to say without knowing more
+details about the current algorithm, the match-making, and without a better
+model of the skill distribution.
+
+
+### [loh-maa](/lohmaa)
+I have two identical bots except one is using alpha in pro-active mode.. It
+was trailing and stuck in the pit for the most part, but got out yesterday and
+now is well ahead of the non-alpha bot.
+
+
+### [Garvin Bhati](/bhatiji)
+Yes, I have two bots that are fairly identical with minor changes, and their
+current individual scores are 787 and 622. Due to the nature of the game
+sometimes they can have significant difference, such as if one fails and the
+other guesses right on the same day, but I've typically seen them with roughly
+the same scores.

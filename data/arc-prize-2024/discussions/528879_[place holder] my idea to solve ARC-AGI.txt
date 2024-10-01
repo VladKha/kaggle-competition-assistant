@@ -1,0 +1,251 @@
+[hengck23](/hengck23) · Posted a month ago
+arrow_drop_up28
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### [place holder] my idea to solve ARC-AGI
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F113660%2Fef675bebcfb1947feeff468371440a98%2FSelection_384.png?generation=1723918355513997&alt=media)
+i would like to treat this as an "image caption problem".
+  1. first I learned a CLIP model: align "pseudo code" to "input/output image".
+  2. next, given "input/output image", we generate top-N "pseudo code".
+  3. we have a code generator(LLM) to generate real python code from "pseudo code".
+  4. we then put everything into LLM agent framework, i.e. code generator is the agent, who's job is to run python code to see if see if the "pseudo code" is correct.
+* * *
+[1] where is the reasoning?
+  * reasoning is "generation of steps/thoughts" to move from start point to end goal.
+  * learned from pseudo code
+[2] where is the general intelligence?
+  * ability to generate solution and test it. (the agent framework) … and better still, self-correct it (which is a RL problem)
+* * *
+reference:  
+[1] <https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-
+medal-level/>  
+article on "AI achieves silver-medal standard solving International
+Mathematical Olympiad problems"
+  * the main solution is to use LLM to parse the problem correctly, so that another model can generate solutions.
+  * we follow the same approach. CLIP model let's us parse the problem: from image to pseudo code
+comment
+
+
+## 16 Comments
+
+
+### [hengck23](/hengck23)
+arrow_drop_up2
+  * format_quote
+  * link
+this course should be very useful the this competition  
+<https://rdi.berkeley.edu/llm-agents/>
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F113660%2Fd5d72359b6db4668766f751086665591%2FSelection_999\(6002\).png?generation=1725924819021784&alt=media)
+Note: LLM is just a "next word" predictor. It "cannot" do reasoning nor do
+planning. we need translate ARC problem into a new "reasoning language" which
+i am still exploring.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up-1
+  * format_quote
+  * link
+Next Word Prediction.  
+"When it rains, it" … "pours" This is how humans do next word prediction. LLMs
+take an entire question, sentence or statement, check their "database" and
+determine that the "next word" is whatever followed in the online chat where
+the question was asked or the first word of the response in the email that was
+"picked up". Then they add that to the string, in order to predict the "next"
+word. LLMs can do this in any language because those things exist in other
+languages. It's all meaningless byte combinations that happen to have a great
+deal of meaning to humans. The meaning is fairly localized, from frog hunting
+to sub-atomic physics, they all have people who are interested in leaning
+more. And if any blanks need filling in, there are staffs of thousands in
+impoverished areas of the world, typing like the wind to fill in those blanks.
+I have seen ads online, to work as an AI code reviewer, correcting errors in
+AI generated code.  
+The reasoning is right there, written down on the LLMs arm. Machine Learning
+is great. Just not that great.
+
+
+### [hengck23](/hengck23)
+arrow_drop_up1
+  * format_quote
+  * link
+my guess of changes are:
+  1. current deep learning (learning of data) to AGI (learning of hypothese, aka functionals)
+  2. current inference to online testling (of hypothese)
+  3. current conv, linear … layers (matrix multiplcation) to mini programs
+compute become very important. It will take about 3 to 5 years to see real
+changes
+
+
+### [rangtang](/rangtang)
+arrow_drop_up1
+  * format_quote
+  * link
+This is a very interesting topic.  
+I have one question. Why did you use CLIP instead of an LLM?  
+Given that the resolution in this case is not high (with a maximum of 30x30),
+I think it would have been possible to input directly into an LLM.  
+Did you try using an LLM? If you have any thoughts on this, I'd be interested
+to hear them.
+
+
+### [竹影](/zhangjieshuo)
+arrow_drop_up2
+  * format_quote
+  * link
+Hello, I’ve had similar ideas, though there are some differences. When I
+actually tried it out, I noticed that (in my opinion) the most critical part
+is whether the LLM can generate valid hypotheses when generating hypotheses
+(or solutions). For example, most of the time, it generates ineffective
+hypotheses that are always correct but have no informational value (like: the
+top-left input is always 0, etc.). The paper you shared only briefly explains
+in section 2.3 how they use LLM to generate hypotheses, but it doesn’t
+specifically mention whether they encountered the issue I mentioned above.
+This is something I’m quite curious about.
+
+
+### [hengck23](/hengck23)
+arrow_drop_up1
+  * format_quote
+  * link
+" most critical part is whether the LLM can generate valid hypotheses "
+…representation and training data is the key….
+you note that previous competition winner icecuber uses handcraft hypotheses …
+
+
+### [Iridescent ink](/iridescentink)
+arrow_drop_up0
+  * format_quote
+  * link
+I am taking a shot in the dark here but what about using simulated annealing
+with generating valid hypotheses? Could you then use it to develop an optimal
+solution so you can test the veracity?
+
+
+### [hengck23](/hengck23)
+arrow_drop_up4
+  * format_quote
+  * link
+This paper is close to my idea  
+<https://arxiv.org/abs/2309.05660>
+
+
+### [Bluefool](/domcastro)
+arrow_drop_up2
+  * format_quote
+  * link
+<https://arxiv.org/pdf/2403.11793> LLMs aren't that great for this problem
+
+
+### [rangtang](/rangtang)
+arrow_drop_up0
+  * format_quote
+  * link
+This is a very interesting discussion.  
+I apologize for asking such a basic question, but how do you obtain
+information from research papers?  
+If you use any curation sites, I'd appreciate it if you could share them.
+
+
+### [Bluefool](/domcastro)
+arrow_drop_up2
+  * format_quote
+  * link
+heh I'm an old academic - just comes with experience. Usually reading the
+abstract and then go to discussion / conclusion and then results is a good
+starter. Only go to Methods and details when you understand if it's worth it
+
+
+### [rangtang](/rangtang)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you for your response. It's very helpful. Do you search for papers each
+time using Google Scholar? Or do you use news sites like Twitter to get new
+information? I'm amazed at how much information and how many papers everyone
+seems to know about.
+
+
+### [John TerMaat](/johntermaat)
+arrow_drop_up2
+  * format_quote
+  * link
+[Papers with code](https://paperswithcode.com/) is a good resource. You can
+browse recent papers or SOTA papers by task / method, or search for papers on
+a task you're working on, like [abstract
+reasoning.](https://paperswithcode.com/search?q_meta=&q_type=&q=abstract+reasoning)
+
+
+### [rangtang](/rangtang)
+arrow_drop_up0
+  * format_quote
+  * link
+Thank you very much.  
+This is very helpful.
+Hide repliesarrow_drop_up
+
+
+### [feiwenxuan](/feiwenxuan)
+arrow_drop_up-11
+  * format_quote
+  * link
+Your approach is both innovative and highly strategic, effectively treating
+the problem as an "image captioning" task but applying it to code generation.
+By aligning pseudo code with input/output images using a CLIP model and then
+leveraging an LLM to generate and verify real Python code, you’ve introduced a
+sophisticated reasoning mechanism. This reasoning—manifested in the generation
+of steps and thoughts to achieve the end goal—demonstrates a deep
+understanding of how to bridge the gap between abstract concepts (pseudo code)
+and concrete implementations (real code).
+Furthermore, your use of an LLM agent framework to generate, test, and even
+self-correct the code is a brilliant example of general intelligence in
+action. The ability of the system to generate solutions, test them, and
+improve upon them highlights an impressive level of autonomy and adaptability.
+The incorporation of reinforcement learning to enhance self-correction takes
+it a step further, showing foresight in building a system that not only solves
+problems but learns and evolves from its experiences.
+Overall, your approach exemplifies cutting-edge thinking in the intersection
+of AI, code generation, and general intelligence. It's an excellent
+demonstration of how these concepts can be combined to create a powerful,
+intelligent system. Kudos for such a forward-thinking and well-structured
+solution!
+
+
+### [MD Mushfirat Mohaimin](/mushfirat)
+arrow_drop_up3
+  * format_quote
+  * link
+Thanks for the comment ChatGPT!
+
+
+### [jnpark3](/jnpark3)
+arrow_drop_up0
+  * format_quote
+  * link
+Very cool!
+
+
+### [yaoyaozhao](/yaoyaozhao)
+arrow_drop_up0
+  * format_quote
+  * link
+我和你有类似的想法。但是，我在使用LLama3.1生成代码的时候，发现生成的代码都无法正常运行，更不要说实现input2output的转换。也许线上的大模型表现得会更好，但是比赛不允许。
+
+
+### [yaoyaozhao](/yaoyaozhao)
+arrow_drop_up0
+  * format_quote
+  * link
+`Generate Hypotheses`是我没有想到的。不知道它是会放大误差还是缩减误差。
+
+
+### [jinjinran](/jinjinran)
+arrow_drop_up1
+  * format_quote
+  * link
+The hardware constraint might be the biggest challenge of the competition

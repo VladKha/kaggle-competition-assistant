@@ -1,0 +1,45 @@
+[Yan Teixeira](/yantxx) · 19th in this Competition · Posted 21 days ago
+
+
+### 19th place with just ARIMA
+[My final submission is literally my public
+notebook](https://www.kaggle.com/code/yantxx/rohlik-forecasting-statistical-
+learning). The only difference is that while my public notebook focuses solely
+on ARIMA, for my final submission, I added exogenous variables based on the
+'Warehouse Analysis' section, transforming the ARIMA models into ARIMAX.
+I began this competition with zero knowledge of time series models like ARIMA.
+I decided to go in this direction because we had so little data that using
+GBDTs felt like overkill, and simply doing an ensemble of boosting trees
+seemed too boring to me. So, I bought some books on time series models and
+spent the first month of the competition studying intensively.
+After completing my studies, I published the notebook and made the final
+submission within about a week.
+I really enjoyed the learning process and will definitely use this approach
+for future time series projects. Thanks to the host for being very active in
+the forum (especially during the first month). I hope to see more from Rohlik
+in the future.
+
+
+## 6 Comments
+
+
+### [Tanishk Patil](/tanishkpatil)
+Congratulation! I refer you notebook to create my solution thanks for sharing.
+
+
+### [Duplesse Nangmo](/duplessenangmo)
+genial merci
+
+
+### [Thomas Meißner](/thomasmeiner)
+Nice seeing Arima to high ranked here. Never underestimate statistical models
+
+
+### [Gamze Akkurt](/gamzeakkurt)
+Congratulations! Excellent work and a great notebook! I found this notebook
+especially useful while coding during the competition. Thank you for sharing
+it.
+
+
+### [Ern711](/ern711)
+Congrats, well done!

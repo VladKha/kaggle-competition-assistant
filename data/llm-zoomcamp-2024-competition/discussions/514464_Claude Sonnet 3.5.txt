@@ -1,0 +1,11 @@
+[Illya Vasylevskiy](/ineersa) · 20th in this Competition · Posted 3 months ago
+
+
+### Claude Sonnet 3.5
+I've decided to test new Claude model, shared test.csv file to it, and with 0
+shots it achieved 85% of accuracy, which is actually really impressive. Maybe
+someone can try with other paid models like GPT for example to test what is
+their baseline?
+
+
+## 0 Comments

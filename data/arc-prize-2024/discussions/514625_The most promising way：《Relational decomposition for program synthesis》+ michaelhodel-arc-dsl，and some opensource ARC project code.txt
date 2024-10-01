@@ -1,0 +1,389 @@
+[aimind](/aimind) · Posted 3 months ago
+arrow_drop_up31
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### The most promising way：​《Relational decomposition for program synthesis》+
+michaelhodel/arc-dsl，and some opensource ARC project code
+<https://github.com/michaelhodel/arc-dsl>
+Relational decomposition for program synthesis
+<https://arxiv.org/abs/2408.12212>
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F383865%2Fea50229415621f9c5b4295289f099d2a%2F8001727058910_.pic.jpg?generation=1727058981656086&alt=media)
+![!\[](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F383865%2F20d740cbb82933186dc42955d8ec9ed3%2F7601725695342_.pic.jpg?generation=1725695361905520&alt=media)](url
+to embed)
+  1. <https://github.com/you68681/GPAR> Generalized Planning for the Abstraction and Reasoning Corpus <https://arxiv.org/abs/2401.07426> update 
+!! pure graph representation !! **<https://github.com/khalil-research/ARGA-
+AAAI23>** <https://ar5iv.labs.arxiv.org/html/2210.09880> goon：  
+<https://khalil-research.github.io/LLM4ARC>
+**<https://github.com/ajenningsfrankston/arc_challenge_arga>** 2024data
+**Hypergraph is a more better abstract method.**  
+Hypergraphx: a library for higher-order network analysis  
+<https://github.com/HGX-Team/hypergraphx>
+<https://xgi.readthedocs.io/en/stable/using-xgi.html>
+2 <https://github.com/sebferre/ARC-MDL> <https://arxiv.org/abs/2311.00545>
+Tackling the Abstraction and Reasoning Corpus (ARC) with Object-centric Models
+and the MDL Principle
+3 <https://arxiv.org/pdf/2402.03507> Neural networks for abstraction and
+reasoning:Towards broad generalization in machines
+<https://github.com/mxbi/dreamcoder-arc> **published**!, base: 相关两个早期代码：  
+<https://github.com/ellisk42/ec>
+<https://github.com/neurosymbolicgroup/neurosymbolic-modules>
+4 related code: **Probabilistic Abduction for Visual Abstract Reasoning** via
+Learning Rules in Vector-symbolic Architectures
+<https://arxiv.org/abs/2401.16024> [https://github.com/IBM?q=vector-
+symbolic&type=all&language=&sort=](https://github.com/IBM?q=vector-
+symbolic&type=all&language=&sort=)  
+<https://github.com/IBM/abductive-rule-learner-with-context-awareness>
+5 ！！ ViRel: Unsupervised **Visual Relations Discovery** with Graph-level
+Analogy 2022  
+<https://github.com/snap-stanford/virel>  
+<https://github.com/snap-stanford/zeroC>
+6 <https://github.com/neoneye/arc-notes/tree/main/awesome#best-
+implementations>
+7 <https://github.com/jeffteeters/hdfsa> On separating long- and short-term
+memories in hyperdimensional computing
+comment
+
+
+## 31 Comments
+
+
+### [aimind](/aimind)
+arrow_drop_up1
+  * format_quote
+  * link
+​Relational decomposition for program synthesis
+<https://arxiv.org/abs/2408.12212>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://arxiv.org/abs/2005.02259> Learning programs by learning from failures
+from：​Relational decomposition for program synthesis
+<https://arxiv.org/abs/2408.12212>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+The child as hacker : building more human-like models of learning  
+and ​Symbolic metaprogram search improves learning efficiency and explains
+rule learningin humans
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F383865%2F44034701ea627992de994d304c482c68%2F8001727058910_.pic.jpg?generation=1727059030598970&alt=media)
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/michaelhodel/arc-dsl/blob/main/solvers.py>
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Thanks, aimind, for finding and sharing this. Thanks,
+[@michaelhodel](https://www.kaggle.com/michaelhodel) , for the mind-months
+that went into these training solutions. Just looking at the line numbers is
+exhausting!!! I'm assuming they all work, as eyeballing the first few made
+perfect sense. C'est incroyable! On an odd note, the local Presbyterian Church
+will celebrate Michaelmas in one hour. I'm sure it's purely coincidental.
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+ARC is perhaps best understood as a program synthesis benchmark.  
+ARC可能最好被理解为一个程序合成基准。  
+<https://github.com/ac20/IPARC_ChallengeV2/blob/main/img/ARC.pdf>  
+Crucially, to the best of our knowledge, ARC does not appear to be
+approachable by any existing machine learning technique (including Deep  
+Learning), due to its focus on broad generalization and few-shot learning, as
+well as the fact that the evaluation set only features tasks that do not
+appear in the training set. For a researcher setting out to solve  
+it, ARC is perhaps best understood as a program synthesis benchmark.
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+There are good reasons to consider ILP as being well-suited to address tasks  
+in the IPARC: (a) Sequences, selection and iteration can all be represented as  
+logic- (or functional-)programs; (b) Basic functions can be provided as
+background knowledge to an ILP system; (3) Identification of sub-functions
+corresponds to the invention of new predicates by an ILP system; and (4)
+Identification  
+of iteration can be achieved through the construction of recursive statements
+by  
+an ILP system. In principle therefore, the tasks in the IPARC challenge should  
+be solvable by an ILP system. But, in practice is there a single ILP system or  
+approach that can effectively construct structured programs? The purpose of
+the  
+IPARC challenge is to determine if this is the case.
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/richemslie/McARGA>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+ref code <https://github.com/logic-and-learning-lab/ilp-experiments>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Lab42 Essay Challenge The Hitchhiker’s Guide to the ARC ChallengeSimon
+Ouellette
+<https://lab42.global/wp-content/uploads/2023/06/Lab42-Essay-Simon-Ouellette-
+The-Hitchhikers-Guide-to-the-ARC-Challenge.pdf>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/khalil-research/ARGA-AAAI23>.
+效率低引用实验的是图（循环1万次），如果用超图可以大幅提升效率
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://xgi.readthedocs.io/en/stable/using-xgi.html>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/VITA-Group/ViHGNN>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Hypergraphx: a library for higher-order network analysis
+Hypergraphx:用于高阶网络分析的库
+<https://github.com/HGX-Team/hypergraphx>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+HygHD: Hyperdimensional Hypergraph Learning  
+<https://ieeexplore.ieee.org/document/10546871>  
+<https://past.date-conference.com/proceedings-
+archive/2024/DATA/973_pdf_upload.pdf>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Hypergraph is a more better abstract method.  
+图边仅连接两个节点，超边则连接任意数量的节点，多节点抽象为一个整体。
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Conjunctive block coding for hyperdimensional graph representation
+用于超维图表示的合取块编码
+<https://www.sciencedirect.com/science/article/pii/S2667305324000292>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+ARGA-AAAI23 后续：  
+LLMs and the Abstraction and Reasoning Corpus: Successes, Failures, and the
+Importance of Object-based Representations  
+LLMs和抽象与推理语料库:成功、失败和基于对象表示的重要性
+<https://arxiv.org/abs/2305.18354v2>  
+<https://khalil-research.github.io/LLM4ARC>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/mxbi/dreamcoder-arc> published!
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+ViRel: Unsupervised Visual RelationsDiscovery with Graph-level Analogy 2022
+<https://github.com/snap-stanford/virel>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Our key insight is that the emergence of relations comes  
+from graph-level analogy, where scenes within a task share a  
+common relational subgraph consisting of concepts as nodes  
+and relations as edges. We introduce a graph-isomorphism  
+based objective to learn a distinct graph embedding (computed from relation
+embeddings with a GNN) for each task,  
+which then encourages distinct clusters of relation embeddings to form. Once
+our method has learned the relations,  
+our method retrieves the shared relational graph structure  
+for each task by parsing the predicted relational structures.  
+While the types and appearances of concepts within a task  
+may vary, ViRel is able to infer the global relation types,  
+achieve above 95% accuracy in relation classification in  
+all our 6 dataset configurations, and retrieve the common  
+relational graph structure in seen tasks and further generalize  
+to unseen, more complex tasks.
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/snap-stanford/ViRel/issues/3>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Direct conversion from raw data input to graphical representation,
+There is no need to convert the original data into images and then into
+graphic representations.
+raw data enough to graphical representation。
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Abstractors  
+Welcome to the repository for the paper:
+"LARS-VSA: A Vector Symbolic Architecture For Learning with Abstract Rules"
+<https://github.com/mmejri3/LARS-VSA>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/Shanka123/OCRA> "Systematic Visual Reasoning through
+Object-Centric Relational Abstraction."
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/Awni00/Abstractor>  
+An extension of Transformers is proposed that enables explicit relational
+reasoning  
+through a novel module called the Abstractor. At the core of the Abstractor is
+a  
+variant of attention called relational cross-attention. The approach is
+motivated by  
+an architectural inductive bias for relational learning that disentangles
+relational  
+information from object-level features. This enables explicit relational
+reasoning,  
+supporting abstraction and generalization from limited data. The Abstractor is  
+first evaluated on simple discriminative relational tasks and compared to
+existing  
+relational architectures. Next, the Abstractor is evaluated on purely
+relational  
+sequence-to-sequence tasks, where dramatic improvements are seen in sample  
+efficiency compared to standard Transformers. Finally, Abstractors are
+evaluated  
+on a collection of tasks based on mathematical problem solving, where
+consistent  
+improvements in performance and sample efficiency are observed.
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+From pixels to planning: scale-free active inference
+Karl Friston, Conor Heins, Tim Verbelen, Lancelot Da Costa, Tommaso Salvatori,
+Dimitrije Markovic, Alexander Tschantz, Magnus Koudahl, Christopher Buckley,
+Thomas Parr  
+This paper describes a discrete state-space model -- and accompanying methods
+-- for generative modelling. This model generalises partially observed Markov
+decision processes to include paths as latent variables, rendering it suitable
+for active inference and learning in a dynamic setting. Specifically, we
+consider deep or hierarchical forms using the renormalisation group. The
+ensuing renormalising generative models (RGM) can be regarded as discrete
+homologues of deep convolutional neural networks or continuous state-space
+models in generalised coordinates of motion. By construction, these scale-
+invariant models can be used to learn compositionality over space and time,
+furnishing models of paths or orbits; i.e., events of increasing temporal
+depth and itinerancy. This technical note illustrates the automatic discovery,
+learning and deployment of RGMs using a series of applications. We start with
+image classification and then consider the compression and generation of
+movies and music. Finally, we apply the same variational principles to the
+learning of Atari-like games.  
+Comments: 64 pages, 28 figures  
+Subjects: Machine Learning (cs.LG); Neurons and Cognition (q-bio.NC)  
+MSC classes: 92  
+ACM classes: F.1.1
+Cite as: arXiv:2407.20292 [cs.LG]
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/jeffteeters/hdfsa> On separating long- and short-term
+memories in hyperdimensional computing
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+<https://github.com/hyperdimensional-computing/torchhd>
+
+
+### [aimind](/aimind)
+arrow_drop_up0
+  * format_quote
+  * link
+Hopfield Networks is All You Need
+对Hebbian Learning的根本性重新思考
+<https://github.com/ml-jku/hopfield-layers>

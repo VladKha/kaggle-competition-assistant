@@ -1,0 +1,42 @@
+[Double Cringe](/yannchikk) · Posted 3 months ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Submission Scoring Error
+"Your notebook generated a submission file with incorrect format. Some
+examples causing this are: wrong number of rows or columns, empty values, an
+incorrect data type for a value, or invalid submission values from what is
+expected. See more debugging tips"
+I get this message everytime when i trying to submit my notebook code. How i
+should change my submission file to make it correct?
+[submission.json](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2893222/20862/submission.json)
+[Beginner](/discussions?tags=13102-Beginner)
+comment
+
+
+## 2 Comments
+
+
+### [Yashchavn](/yashchavn)
+arrow_drop_up3
+  * format_quote
+  * link
+everything looks fine to me, also verified with json file integrity checker.
+if you find the problem please update.
+
+
+### [Nick Sarris](/misfyre)
+arrow_drop_up1
+  * format_quote
+  * link
+Also getting this error annoyingly, have lost ~8 submissions to it. I imagine
+that there's not really a way for anyone to really help as I'm sure it's
+submission-specific, but if anyone has some tips, would appreciate it. Pretty
+sure that it's not due to an error in the pipeline and the initial JSON
+generated on the test set doesn't have any glaring issues.

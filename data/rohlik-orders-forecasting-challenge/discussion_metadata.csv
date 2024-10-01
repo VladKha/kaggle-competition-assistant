@@ -1,0 +1,80 @@
+title,author_name,url,num_upvotes,page_number
+3rd Place Solution | custom stable CV & a missed chance for 1st place,LH,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530278,17,1
+2nd place solution - single LGBM Model,TuMinhDang,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530252,25,1
+Viewing and inferring the churn,Ravi Ramakrishnan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/529988,11,1
+Thank you for participating and congratulations to the winners!,MichalKecera,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530517,12,1
+6th place solution,Vincent Schuler,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530069,22,1
+19th place with just ARIMA,Yan Teixeira,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530128,18,1
+11:th place - lags as extra rows and orders x days into future/past as target,Ern711,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530119,11,1
+5th place solution,Nick Liu,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530196,11,1
+8th place solution (+ potential 5th place + fun LLM story😆),Vladyslav Khaitov,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530139,8,1
+21st Place Solution,Musab Ahmed,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530464,1,1
+your evaluation about this competition,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/529297,10,1
+"12th place solution - stacked ensemble (NN,XGB,LGB...) + extra features",Eran Aharonovich,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530150,2,1
+Shakeup not as one might have reckoned,AC,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/530118,1,1
+"stable solution,only 330",yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/529994,-3,1
+Are GPUs allowed for the final submission?,Ern711,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/528374,1,1
+Frankfurt seems to have a strong weekly cycle,Akindu Himan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/529489,0,1
+"Comparison of Random Forest, XGBoost, and ARIMA (Time Series)",yokoshu25,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/528811,1,1
+Rohlik Orders Forecasting Challenge Top 50 Notebook [LB: 0.0352],G John Rao,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/529517,-4,1
+"THE TRINITY'S - Friday, Sunday and Holiday",kartik pandey,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/529368,0,1
+Friday it is 😁 (I mean the date),Ahmed Alghali,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/528507,8,1
+Stacking Model,karimzade,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/528775,2,2
+Incorporating Pre- and Post-Holiday Effects in Model Training,kartik pandey,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/527672,2,2
+Highly Correlated Features with the target,AC,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/527452,2,2
+Did someone try predicting user_activity_2 first?,Wajahat Waheed,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/523376,3,2
+Can Random Seed ensemble work?,AC,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/527450,1,2
+Prague_1's winter_school_holidays,Benedictus Mario,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/527320,1,2
+Model's and Public score difference,Mohammad Yousif Jamali,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/526937,3,2
+please explain me the matric .,AYUSH KHAIRE,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/527043,2,2
+help me ! submission failed !,Barirah Zainal Abidin,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/524191,1,2
+any advice for the features which is not in the test set?,Fan Bao0819,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/524601,1,2
+Difference between user activity 1 and 2 ?,AC,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/524083,1,2
+Does it break the rules to probe the LB?,Aleix Gimenez,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/522923,2,2
+seed is all you need?,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/521502,7,2
+Weather Data for Test,mexwell,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/522480,7,2
+Why Simplicity is Better than Complexity in Forecasting,Adam Logman,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/519120,5,2
+Impact of Random Seed,karimzade,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/522523,4,2
+Using LLM for Time series Forecasting.,Chaitany Patel,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/522449,1,2
+Friday is a special day,Yan Teixeira,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511935,11,2
+get complete competition data,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/519272,2,2
+A Question regarding the 2 train sets,Marc Sahakian,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/519478,2,2
+What about uncertainty quantification?,Thomas Meißner,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/519435,11,3
+Understanding train and test calendar files,Etienne Kaiser (郑翊天）,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/519991,1,3
+Evaluation metric for offline evaluation models,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511613,10,3
+Time Series Splitting Techniques: Ensuring Accurate Model Validation,mouadenna,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/513106,34,3
+z-score of orders by different groupings,Boyd Johnson,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/519609,3,3
+Kaggle TV | Live. Solving Rohlik Competition,Samvel Kocharyan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/518619,8,3
+How to Leverage Training-Only Columns for Better Predictions,Jan Hesse,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/519062,0,3
+Need your help in two points,Mohammed Mustafa,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/518658,1,3
+Inconsistent rows in holiday and holiday_name,Mohammed Mustafa,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/518545,4,3
+Leaking Public Leaderboard to Leaking Private Leaderboard,BOOBA,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/515758,5,3
+Test and Trian Date Issue,Adam Logman,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/513622,6,3
+Do you think you will survive from upcoming shake up,Adam Logman,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/515370,5,3
+Smart Duplicating 2023 numbers gives 0.059 score,Anmol Garg,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/517249,2,3
+iTransformer,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/515860,10,3
+Munich is different,Yan Teixeira,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/512393,21,3
+What's your CV and LB？,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/512642,6,3
+Additional data allowance,Samvel Kocharyan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511341,4,3
+Meaning of 0.7 in the mov_change column,zhuoqunli,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511814,1,3
+A lottery competition?,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/510865,15,3
+Issues with data import,Stas Kolchin,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/515009,0,3
+The stability of catboost,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/513945,8,4
+Deadline question,Stas Kolchin,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/513953,1,4
+There are only 123 test data in the leaderboard.,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/512792,16,4
+Missing Dates,Gunes Evitan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/510957,16,4
+Submission Error,Akhilesh Patki,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/513836,1,4
+Suspicious Activity on Leaderboard,Etienne Kaiser (郑翊天）,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/512039,7,4
+Don't forget to visualize your results,Thomas Meißner,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511783,19,4
+fine tune prediction,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511970,7,4
+Dates to keep eyes on (hypothesis),Samvel Kocharyan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/512484,0,4
+Missing time series data of the test data,tanaka,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/512217,3,4
+We can know the holiday information in advance,yunsuxiaozi,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511754,8,4
+Calendar only have data from Budapest,Yan Teixeira,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511077,7,4
+'user_activity' - how is it calculated?,Samvel Kocharyan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511374,5,4
+The leaderboard is not split sequentially,Ravi Ramakrishnan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/510914,31,4
+School Holidays,Yan Teixeira,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511495,6,4
+Why this competition does not reward medals?,Sinan Calisir,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511053,8,4
+Competition in the present and deadline in the past?,Ravi Ramakrishnan,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/510884,21,4
+Model Generalization and Feature Relevance (Host Perspective Needed),Etienne Kaiser (郑翊天）,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511202,3,4
+test - at least 10 characters,Sinan Calisir,https://www.kaggle.com/competitions/rohlik-orders-forecasting-challenge/discussion/511054,0,4

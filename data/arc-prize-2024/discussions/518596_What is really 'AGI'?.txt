@@ -1,0 +1,140 @@
+[June](/hyeonjunkim) · Posted 3 months ago
+arrow_drop_up4
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### What is really 'AGI'?
+Interesting to see how this competition unfolds. Of course, I'm also working
+hard on developing models, but I wonder what everyone think of AGI. Is any
+test really able to figure out if the model has AGI? Or does defining it by a
+test like this one make 'building AGI' just another optimization task?  
+It is really hard to define AGI and develop it, at least for me…I'm not a AI
+engineer so maybe this might be because of my lack of knowledge. If anyone has
+comments, I will be thankful for receiving one.
+comment
+
+
+## 9 Comments
+
+
+### [SalmonPod](/salmonpod)
+arrow_drop_up2
+  * format_quote
+  * link
+There is no test capable of confirming the presence of AGI, as we can't
+technically describe, or haven't reached a consensus on what AGI is.
+Yet we can easily tell the absence of AGI, given that we expect it to solve
+arbitrary reasoning problems at least like an average human. Everything to
+this point, including the current LLM craze, is still an "optimization" task
+and is nothing about AGI. AGI simply cannot emerge from Von Neumann's
+"input->compute->output" architecture. As soon as these kinds of systems are
+challenged by out-of-distribution inputs, they easily collapse and generate
+wildly unsensible outputs, unlike humans.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+Word.  
+One of the biggest issues that I see with Classic AI, is the tendency to say
+things like "a calculation" or "an equation." And it really seems like more
+than one serious researcher is headed in that direction! It's like pointing at
+the moon and saying, "if there's a distance to be traveled, I can get there in
+my Ford Explorer. All I need is enough gas."
+
+
+### [Kishore Badyakar](/kishupro)
+arrow_drop_up0
+  * format_quote
+  * link
+ _What is really 'AGI'?_ \- Now, that's a good question. A question everyone
+should ask, and in my opinion, try to get the answer before doing anything
+else.
+[A commonsensical definition of general
+intelligence](https://www.kaggle.com/competitions/abstraction-and-reasoning-
+challenge/discussion/363038)
+
+
+### [Ern711](/ern711)
+arrow_drop_up0
+  * format_quote
+  * link
+Without answering your question directly, I believe the following to be true:
+  * The "logical" puzzles in this competition are only logical when viewed from the correct perspective, similar to how humans perceive them.
+  * Since each puzzle is slightly different, there is no "easy" universal solution that a model can learn from. Therefore, it is impossible to solve these puzzles with traditional ml methods.
+  * A very advanced multimodal LLM, which excels at understanding implications and can also classify and construct images, might be able to determine similarities and differences in the puzzles through trial and error, thereby solving them.
+That said, I'm not sure if this dataset is particularly helpful for developing
+a model for AGI, even though I believe that handling logic and implications
+(perhaps through a multimodal LLM) could be an important part of it
+
+
+### [PhilippeVachon-Rivard](/pvachon)
+arrow_drop_up0
+  * format_quote
+  * link
+I just finished Chollet's "On the Measure of Intelligence" and it has on some
+very interesting sections you might be interested in, namely those that
+discuss intelligence with respect to generalization capabilities and the
+distinction between ability and skill when measuring intelligence. Overall,
+what we should be striving for when developing AGI made a lot more sense to me
+after reading this paper, and I appreciated the formalization of intelligence
+in the lens of algorithmic information theory. Now, I'm sure I'll find a
+thousand more nuances going down the rabbit hole, but I highly recommend
+reading it!
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+The main goal is to test abstraction and reasoning. Also, to wake ourselves
+from the dream state that we have lulled ourselves into because of the (quite
+phenomenal) success of modern machine learning. To quote myself, "It ain't
+AI."  
+ARC-AGI does an admirable job of both. Perhaps not perfect, but amazing.  
+Here's a thought: as we get closer and closer to AGI (GOFAI, AI, whatever) we
+continually develop technologies (like the chess-winning toys of the early
+1980's) that some people say, "It's cool, but it's not AI." This has led other
+people to posit that once we have attained _something_ , we're really quick to
+proclaim it isn't AI. It's like we refuse to join the club that would accept
+us.  
+I think that real AI is still light-years away. But we are becoming better and
+better at holding our tiny flashlight up and comparing it to the stars. "Look!
+This robot can dance like Britney Spears!" "So I guess it has a poster of
+Britney on its bedroom wall, because it was its lifelong dream to dance like
+that?" "It doesn't have a bedroom. We just turn it off at night and pack it in
+its dust crate. You should meet Jeff, the choreographer. He programmed all the
+moves." "So, 'dance like Britney Spears' is… Hype?" "-Hype. Yeah. You should
+meet Adolpho. He's in charge of Hype."
+
+
+### [June](/hyeonjunkim)
+arrow_drop_up0
+  * format_quote
+  * link
+Interesting point. We might keep missing the essence of AGI due to our
+instinct to judge intelligence by its actions. Thanks for the comment.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up0
+  * format_quote
+  * link
+More like "We keep missing the essence of AGI because of middle management's
+need to meet sales quotas." A breadth-first-search will not do.
+> Burroughs: "Exterminate all rational thought. That is the conclusion to
+> which I have come."  
+>  Ginsberg: "Come on, Bill. We're serious."  
+>  Kerouac: "So is Bill."
+
+
+### [June](/hyeonjunkim)
+arrow_drop_up0
+  * format_quote
+  * link
+Oh, I see. I didn't know that. Thanks for the info. :)

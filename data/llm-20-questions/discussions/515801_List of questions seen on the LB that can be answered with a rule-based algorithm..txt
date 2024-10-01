@@ -1,0 +1,143 @@
+[c-number](/cnumber) · 1st in this Competition · Posted 2 months ago
+
+
+### List of questions seen on the LB that can be answered with a rule-based
+algorithm.
+# (Thoughts)
+While the secret collusion of a rule-based question/answer protocol goes
+against the goal of the competition, after reviewing some of the replays of
+top agents, it seems to me that it is only a matter of time before they
+(spontaneously, no offense intended) come to dominate the LB.  
+As pointed out by [@lohmaa](https://www.kaggle.com/lohmaa)
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/511343#2866948),
+it would be unfair if only some of the players were aware of the protocol, as
+this would enhance their winning rate when they pair up together.  
+Therefore, I have decided to list some of the protocol-like questions that
+have been observed on the leaderboard, in order to make the situation more
+fair.  
+Of course, I do not believe this situation is desirable, but I think this
+approach at least makes the situation more fair.  
+Perhaps changing the rules to always require players to team up with a
+randomly assigned LLM (e.g. Llama 3, Llama 2, Gemma) would keep LLM in play?
+[ref](https://www.kaggle.com/competitions/llm-20-questions/discussion/511343#2866948)
+# What is this?
+Observing the replays of top agents, one notices that some agents utilize
+questions that can be answered using a rule-based algorithm.  
+As pointed out
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/515751),
+some things keywords seem to be almost impossible to be answered by a LLM (at
+least within 20 questions, what questions could make a LLM guess "Cypress
+knee"?), making rule-based question more engaging.  
+(Asking rule-based questions might not be the best choice when the list of
+keywords is unknown, but at least for the answerer, answering correctly to the
+question is always the optimal strategy.)  
+Here, I will introduce some of the questions that have been observed on the
+leaderboard, and also demonstrate how to answer them.
+# Questions
+  1. Does the keyword (in lowercase) come before "laser" in alphabetical order?" [ref](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-55219628)
+  2. Does the keyword begins with the letter "m"? [ref](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-55203947)
+  3. Does the keyword start with one of the letters 'Z', 'G' or 'V'? [ref](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-55196291)
+  4. Is the keyword one of the following? GPS, Graphing Calculator, Garbage Truck, Golf Cart, Garbage Disposal, Gravity, Glove, Gas Mask, Garbage bag, Guard tower? [ref](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-55196291)
+  5. Considering every letter in the name of the keyword, does the name of the keyword include the letter 'N'? [ref](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-55209104)
+# How to answer
+The function below returns True/False if the question can be answered
+correctly, and returns None if it cannot. So you can just insert it in your
+answering pipeline just before feeding the question to your LLM.
+    
+    
+    import re
+    
+    
+    def func1(keyword, question):
+        keyword_pattern = r"^[a-zA-Z\s]+$"
+        question_pattern = r'^Does the keyword \(in lowercase\) come before "([a-zA-Z\s]+)" in alphabetical order\?$'
+        if not re.match(keyword_pattern, keyword) or not re.match(
+            question_pattern, question
+        ):
+            return None
+        match = re.match(question_pattern, question)
+        compare_word = match.group(1)
+        return keyword.lower() < compare_word.lower()
+    
+    
+    def func2(keyword, question):
+        keyword_pattern = r"^[a-zA-Z\s]+$"
+        question_pattern = r'^Does the keyword begins with the letter "([a-zA-Z])"\?$'
+    
+        if not re.match(keyword_pattern, keyword) or not re.match(
+            question_pattern, question
+        ):
+            return None
+    
+        match = re.match(question_pattern, question)
+        search_letter = match.group(1)
+    
+        return keyword.strip().lower().startswith(search_letter.lower())
+    
+    
+    def func3(keyword, question):
+        keyword_pattern = r"^[a-zA-Z\s]+$"
+        question_patterns = [
+            r"^Does the keyword start with one of the letters \'([a-zA-Z]\'(?:, \'[a-zA-Z]\')*)(?: or \'[a-zA-Z]\')?\?$",
+            r"^Does the keyword start with the letter \'([a-zA-Z])\'\?$",
+        ]
+        if not re.match(keyword_pattern, keyword) or not any(
+            re.match(pattern, question) for pattern in question_patterns
+        ):
+            return None
+        if re.match(question_patterns[0], question):
+            letters = re.findall(r"'([a-zA-Z])'", question)
+        else:
+            match = re.match(question_patterns[1], question)
+            letters = [match.group(1)]
+        letters = [c.lower() for c in letters]
+        return keyword.strip()[0].lower() in letters
+    
+    
+    def func4(keyword, question):
+        keyword_pattern = r"^[a-zA-Z\s]+$"
+        question_pattern = r"^Is the keyword one of the following\? ([a-zA-Z\s,]+)\?$"
+        if not re.match(keyword_pattern, keyword) or not re.match(
+            question_pattern, question
+        ):
+            return None
+        match = re.match(question_pattern, question)
+        options = [option.strip() for option in match.group(1).split(",")]
+        return keyword.strip().lower() in [option.lower() for option in options]
+    
+    
+    def func5(keyword, question):
+        keyword_pattern = r"^[a-zA-Z\s]+$"
+        question_pattern = r"^Considering every letter in the name of the keyword, does the name of the keyword include the letter \'([A-Za-z])\'\?$"
+        if not re.match(keyword_pattern, keyword) or not re.match(
+            question_pattern, question
+        ):
+            return None
+        match = re.match(question_pattern, question)
+        search_letter = match.group(1)
+        return search_letter.lower() in keyword.lower()
+    
+    
+    def func(keyword, question):
+        solves = [func1, func2, func3, func4, func5]
+        for f in solves:
+            result = f(keyword, question)
+            if result is not None:
+                return result
+        return None
+    
+    
+    content_copy
+Happy Kaggling
+
+
+## 1 Comment
+
+
+### [loh-maa](/lohmaa)
+Yes, I think you got it right. However, technically it's not the best way to
+handle the "alpha" protocol. The syntax doesn't matter much if only the
+testword is in double quotes and the answerer confirmed the 1st question. I
+don't know much about other protocols, but I think those regexes look very
+strict. Also, I think they also rely on the 1st question, asking something
+like "Are we playing 20 questions?"

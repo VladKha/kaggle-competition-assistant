@@ -1,0 +1,24 @@
+[NobelK5342](/nobelk5342) · 685th in this Competition · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Is there a starter for NN or CNN?
+I am considering tackling this task using deep learning, but as a beginner, I
+am struggling with data preprocessing and model creation. Could you recommend
+any helpful notebooks or resources?
+comment
+
+
+## 1 Comment
+
+
+### [Andrew](/andrewrrose)
+arrow_drop_up1
+  * format_quote
+  * link
+There are several [public notebooks](https://www.kaggle.com/competitions/arc-
+prize-2024/code) that you might find helpful for getting started.

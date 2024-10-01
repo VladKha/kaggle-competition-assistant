@@ -1,0 +1,82 @@
+[Dipam Chakraborty](/dipamc77) · Posted 4 months ago
+arrow_drop_up13
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Why only public leaderboard
+The weakest part of the last competition in my opinion was that the public
+leaderboard was on the full test set. That is the reason there were a ton of
+uninteresting solutions doing hit and trial/probing to guess the test puzzles.
+I've read Francois' post that probing the leaderboard is against the spirit of
+the competition, and I agree. However, competitors will always optimize for
+the incentives setup for them. The incentive with all the test set being on
+public leaderboard is to probe and overfit. With a private leaderboard
+everyone is forced to try and generalize. Hope future iterations take this
+into account.
+comment
+
+
+## 4 Comments
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up-3
+  * format_quote
+  * link
+Thanks for the comments! We are learning along the way too.
+All solutions are subject to review. Probing/trialing the leaderboard will
+show itself in submission history and potentially overfitting for the
+solutions.
+Given that the search space is large for the private evaluation set and no
+feedback is given other than the score we expect this won't happen.
+
+
+### [Dipam Chakraborty](/dipamc77)
+arrow_drop_up4
+  * format_quote
+  * link
+I'm not saying probing/guessing is very easy or successful, but participants
+in the previous competition did it anyway, because that's the incentive when
+there's no private leaderboard.
+
+
+### [Arunodhayan](/arunodhayan)
+arrow_drop_up1
+  * format_quote
+  * link
+[@dipamc77](https://www.kaggle.com/dipamc77) you are right and adding to the
+point, it will easily overfit the private leaderboard
+
+
+### [Fritz Cremer](/fritzcremer)
+arrow_drop_up0
+  * format_quote
+  * link
+[@gregkamradt](https://www.kaggle.com/gregkamradt) "All solutions are subject
+to review." What exactly does this mean? Does it mean the probing solution
+won't be allowed or that there are restrictions on probing? Of course probing
+with multiple accounts is not allowed, but are there any limits for probing on
+your own? "potentially overfitting for the solutions" This won't be an issue
+for probers since there is not second test set?
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+The limits to probing on your own (which in general probing is discouraged but
+we know it will happen) are the normal 5 submissions a day w/ normal Kaggle
+rules.
+
+
+### [JK-Piece](/jeannkouagou)
+arrow_drop_up0
+  * format_quote
+  * link
+I am wondering what was the motivation not to create two separate test sets
+from the beginning. It is the first time I see a competition on Kaggle with
+the public leaderboard covering 100% of the test set.

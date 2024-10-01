@@ -1,0 +1,281 @@
+[Greg Kamradt](/gregkamradt) · 647th in this Competition · Posted 4 months ago
+· Competition Host
+arrow_drop_up41
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Welcome to ARC Prize 2024!
+Hey team!
+We are super excited you're here with us on Kaggle to learn more and
+participate in ARC Prize 2024. Our #1 goal is to make sure you have the tools,
+knowledge, and support you need to start solving ARC-AGI.
+Here is a [guide](https://arcprize.org/guide) to help you get started and ton
+of [high signal resources](https://arcprize.org/guide#resources) to get you up
+to speed.
+Plug into the community & get competition updates:
+  * [Subscribe to the newsletter](http://eepurl.com/iQFqH2)
+  * [Join the Discord server](https://discord.gg/9b77dPAmcA)
+Have questions? Feel free to start a discussion topic on this competition,
+reach out to us on Twitter, Discord, or team@arcprize.org.
+Greg Kamradt, Co-Lead ARC Prize 2024
+comment
+
+
+## 20 Comments
+
+
+### [anthony michel](/michela78)
+arrow_drop_up1
+  * format_quote
+  * link
+Hello i have just discovered ARC-AGI and kaggle competition last week.  
+Thank you very much for this very interresting challenge.
+I have a newbee question : when i submit a notebook today and get a score, is
+it the result of my notebook for the "secret test-challenge tasks" or the
+"dummy test-challenge tasks" ? Is there a trace of this information in the
+outputs or log of the notebook ?
+
+
+### [Ahmed Merie](/aa7767)
+arrow_drop_up1
+  * format_quote
+  * link
+Do we have to test the tasks individually or all together?
+
+
+### [Mahdieh Mortazavi](/mahdieh002)
+arrow_drop_up3
+  * format_quote
+  * link
+I'll try to be here or in similar competitions soon. Seems fantastic!
+
+
+### [Muhammad Reza](/muhammadreza63)
+arrow_drop_up2
+  * format_quote
+  * link
+How can we test whether an AI has the ability to understand and reason
+abstractions in general, rather than just following certain patterns in
+existing data?
+
+
+### [Nadjem eddin](/seewup)
+arrow_drop_up1
+  * format_quote
+  * link
+Good question I guess it will depend on the ability of solving Depp logical
+problems outside data base
+
+
+### [Muhammad Ehsan](/muhammadehsan000)
+arrow_drop_up1
+  * format_quote
+  * link
+Hey [@gregkamradt](https://www.kaggle.com/gregkamradt) ,
+Thank you for the warm welcome and the comprehensive guide! I’m thrilled to be
+part of ARC Prize 2024 and appreciate the detailed resources you’ve provided.
+I’ve already subscribed to the newsletter and joined the Discord server to
+stay updated and engaged with the community. The support and guidance from the
+ARC Prize team are invaluable as we dive into solving the ARC-AGI challenges.
+
+
+### [Pete Kai Cunliffe](/kaicunliffe)
+arrow_drop_up1
+  * format_quote
+  * link
+I just wanted to say thanks for uploading the data and hosting the comp., I
+got quite close to a fully-working solution for this exact thing around 1.5
+years ago. The models were good but with work & time constraints I had to quit
+building the dataset in its entirety. So, this is like the missing link in a
+huge project I was actually sad to have to leave on the backburner! Thanks
+again, you have no idea how much of a relief this is -.- Pete.
+
+
+### [Coachhhhhomg](/mynamewomab)
+arrow_drop_up3
+  * format_quote
+  * link
+Hi - maybe dumb question. Say someone hits 85%, will their solution be
+revealed publicly at the time?
+It seems to me it ought be concealed until the end of the competition.
+Otherwise, couldn't people just piggyback off of their solution and provide
+incremental improvements to split the prize?
+I couldn't find this covered anywhere, I could well have missed it.
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up3
+  * format_quote
+  * link
+Only solutions which want to be considered and eligible for a prize must be
+open sourced. This must be done by the end of the competition. Anyone can open
+their solution up before that, but it would allow for piggy backing like
+you're saying.
+
+
+### [Coachhhhhomg](/mynamewomab)
+arrow_drop_up2
+  * format_quote
+  * link
+Wish you guys could score it privately first.
+Yk what kaggle needs here, and many other things need the same solution…
+
+
+### [Coachhhhhomg](/mynamewomab)
+arrow_drop_up0
+  * format_quote
+  * link
+Sorry, I feel like I'm being annoying.
+A potential process flow:  
+1) I submit, you score, I can choose not to os, thus making it ineligible for
+the moment, but you guys see the solution, and it stays closed source for now.
+If this isn't an option, it seems I must either  
+1) wait until the end of the competition, or  
+2) os it as it's submitted
+Isn't piggybacking still an issue with 2)?
+I appreciate your time replying to so many q's.
+
+
+### [Oleg Trott](/olegtrott)
+arrow_drop_up1
+  * format_quote
+  * link
+Kaggle cannot open-source your code automatically, because you own the
+copyright.
+If you win the competition, you'll be notified after Nov 10. You'll have a
+week to respond. It's in the "Rules" section.
+At that point, you'll have 3 options:
+  1. Open-source your code
+  2. Explain your approach only to Kaggle and show them the code
+  3. Do neither
+Depending on what you choose, you'll (probably)
+  1. Get the prize
+  2. Stay on the leaderboard, but won't get the prize
+  3. Get removed from the leaderboard
+
+
+### [Coachhhhhomg](/mynamewomab)
+arrow_drop_up0
+  * format_quote
+  * link
+Yes - sorry to be so obtuse/nitty. But it will be scored on submission, even
+if code is kept closed source for the moment?
+
+
+### [Coachhhhhomg](/mynamewomab)
+arrow_drop_up0
+  * format_quote
+  * link
+And the score will be public, even if solution isn't? Just want to make sure I
+understand. And thank you so much.
+
+
+### [Oleg Trott](/olegtrott)
+arrow_drop_up2
+  * format_quote
+  * link
+Right, unless you choose to make your "notebook" public, it should be private
+(website bugs, security breaches and leaks aside).
+If you really want to make sure, you can use a compiled language like C++, and
+just upload a binary.
+
+
+### [David I Achugbue](/davidikeachugbue)
+arrow_drop_up1
+  * format_quote
+  * link
+Hi, hope you're having a good day. Two enquires if you don't mind..
+  1. Concerning Leaks & security breaches… I assume we do not need to be concerned with… I don't know… Let's say an employee of kaggle who could potentially/theoretically have access to said "private" notebook… Then could proceed to forward result to a colleague, friend, accomplice etc… Who in turn would then submit same/tweaked data.
+  2. Regarding c++ compilation. Could you please elaborate further. No need to go into great detail, just a quick run-down would be fine.
+Thanks in advance for your response.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Regarding 1: Unlikely. But if it did happen, it would probably reflect with
+more… **zeal** on the Leaderboard.  
+Regarding 2: If you are referring to the idea of uploading a compiled binary,
+you will probably be in over your head, depending on how close you can get to
+matching the ABI (Application Binary Interface) of the docker container
+running the private test dataset. The one guy that ever went with C++ and won
+(in 2020) compiled the C++ source as part of his Jupyter Notebook code. So
+even _he_ didn't try uploading the compiled binary.
+
+
+### [Oleg Trott](/olegtrott)
+arrow_drop_up1
+  * format_quote
+  * link
+Sure. Compile your C++ code on AMD64 Linux. Consider using "-static". Upload
+the binary as a "dataset" and attach it to your Python notebook. From your
+Python notebook, unpack, "chmod +x" and run the binary.
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+There might be security issues that keep such code from being considered. So,
+ask questions and start small.
+Hide repliesarrow_drop_up
+
+
+### [Mahmoud Abdulhamid](/triblex)
+arrow_drop_up1
+  * format_quote
+  * link
+what is the fifferent between this and Abstraction and Reasoning
+Challenge(2020)
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up1
+  * format_quote
+  * link
+This is the next year of that challenge. You'll notice it under the same org
+
+
+### [Khoi Nguyen](/suicaokhoailang)
+arrow_drop_up4
+  * format_quote
+  * link
+May I ask where is our favorite French man?
+
+
+### [anokas](/anokas)
+arrow_drop_up4
+  * format_quote
+  * link
+Super exciting! Is the dataset the same as the previous ARC competition on
+Kaggle?
+
+
+### [Greg Kamradt](/gregkamradt)
+arrow_drop_up4
+  * format_quote
+  * link
+Hey! Yes, it is still ARC-AGI-1 (we are starting to version the datasets w/
+Francois in anticipation for a v2 after v1 learnings).
+A few problems have been corrected, you can check those out via Francois
+github <https://github.com/fchollet/ARC-AGI/commits/master/>
+
+
+### [Yogesh Jaiswal](/yogi050294)
+arrow_drop_up0
+  * format_quote
+  * link
+This is really great…
+
+
+### [Arora Vasu](/aroravasu)
+arrow_drop_up0
+  * format_quote
+  * link
+Does anyone have a deep understanding of how the evaluation metrics work for
+this competition? How should we optimize our solutions to perform well

@@ -1,0 +1,15 @@
+[A. John Callegari Jr.](/ajohncallegarijr) · Posted a month ago
+
+### are multiple keyword guesses legal?
+I noticed some guessers that guess multiple keyword solutions in the
+questioning phase (see attached image). Is this legal?
+[multiple_questions.png](https://storage.googleapis.com/kaggle-forum-message-
+attachments/2948313/21026/multiple_questions.png)
+
+
+## 1 Comment
+
+
+### [C R Suthikshn Kumar](/crsuthikshnkumar)
+As long as questions are limited to 2000 characters, it should be legal I
+suppose.

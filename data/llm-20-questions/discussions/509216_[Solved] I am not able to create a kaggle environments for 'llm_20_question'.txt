@@ -1,0 +1,39 @@
+[Rinku Sahu](/rinkusahu1) · 62nd in this Competition · Posted 3 months ago
+
+### [Solved] I am not able to create a kaggle environments for
+'llm_20_question'
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2999992%2Fa809a6dd1862d8b33dad365fb316340e%2FEnvironment%20Error.PNG?generation=1717256840858445&alt=media)
+
+
+## 4 Comments
+
+
+### [Josef Leutgeb](/josefleutgeb)
+I had the same Issue. Check
+`import kaggle_environments`  
+`kaggle_environments.__version__`
+If it is below 1.14.11 do
+`pip install kaggle_environments==1.14.11`
+and restart the kernel.
+
+
+### [Rinku Sahu](/rinkusahu1)
+I tried to install newer version and then did import but still it is showing
+older version of package.
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+What version of kaggle-environments are you using? Make sure it's the latest
+(>= 1.14.11)
+
+
+### [Rinku Sahu](/rinkusahu1)
+I tried to install the '1.14.11' version but after importing and checking
+version, it is still showing the '1.14.11'. following things I tried
+  1. Uninstall the package '', but import kaggle_environments still works and gives 1.14.9 version. 
+  2. After uninstallation, again installed it but still showing older version 1.14.9.
+  3. After Installation, I tried to restart the kernal but still older version
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F2999992%2F7d2cdfe31b27b947c57aba5e1c86d61e%2FEnvironment%20Error%201.PNG?generation=1717310770431592&alt=media)

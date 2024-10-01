@@ -1,0 +1,30 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up2
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### TIL...
+Solved yet another challenge. No major achievement. It _was_ difficult… And I
+was about to "just walk away" from it, when I realized, "I have learned a new
+thing." Not _just_ the challenge. I learned an interesting rule regarding
+colored objects on a grid. It's a new rule for me, which has not occurred in a
+long time. Here it is:
+    
+    
+    If you have an object
+    And that object (and its colors) are symmetrical to any diagonal
+    Then flipping the object along an orthogonal (LR or UD) axis
+    Is identical to rotating the object 90 degrees.
+    
+    
+    content_copy
+A quick mental check suggests the obverse is true, as well.  
+Flipping a LR or UD symmetrical object along a diagonal == rotating it.
+comment
+
+
+## 0 Comments

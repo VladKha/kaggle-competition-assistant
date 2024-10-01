@@ -1,0 +1,315 @@
+[Bovard Doerschuk-Tiberi](/bovard) · Posted 6 days ago
+· Kaggle Staff
+
+
+### Leaderboard Confidence Update
+I'll be stopping matches for a few minutes to reduce confidence for all
+agents. Due to the high number of ties the confidence of some agents is still
+significantly higher than it should be. This causes a large amount of games to
+be spent on these agents (who tie almost every game).
+Any agent over 75 confidence will be dropped to 75 confidence after this
+change.
+Depending on the match distribution I might follow this up with another to
+reduce confidence even further.
+
+
+## 19 Comments
+
+
+### [Aslı kuscu](/aslkuscu)
+It seems like you're planning to take a temporary action to adjust the
+confidence levels of agents in a competitive environment, likely to ensure a
+more balanced and efficient distribution of matches. By reducing the
+confidence of agents with disproportionately high confidence, particularly
+those involved in frequent ties, you're aiming to prevent excessive focus on
+these agents and promote more diverse matchups. This approach suggests that
+you're closely monitoring the match distribution and are prepared to make
+further adjustments if necessary. If there's anything specific you'd like to
+address or clarify, I'm here to help you craft a response.
+
+
+### [Dmitry Leontyev](/leontyevdm)
+hello [@bovard](https://www.kaggle.com/bovard), there are few hours before the
+end of the competition, but the top segment of the leaderboard is still random
+walking. Great research made by [@lohmaa](https://www.kaggle.com/lohmaa) and
+[@jademonk](https://www.kaggle.com/jademonk) show how significant the luck is.
+I suggest the following solution (of course, it is still not ideal, but I
+think it will better rank top solutions):
+  1. Extend the competition timeline for a week.
+  2. Every day 'disable' the worst half of remaining agents by manipulating with sigma - for example, increasing the confidence of 'remaining' to 75 and lowering 'exited' agents to 45.
+  3. After 6 days the will be 835*2/64 ~ 26 agents which will play hundreds of games at final round to make the distribution closer to ground truth.
+
+
+### [francesco fiamingo](/francescofiamingo)
+Dear all, i think that the most important is not to win or loose(money is
+money i know…), but to learn (much more valuable then the money) , i think the
+winning team should share they approach and maybe dedicate a forum discussion
+, we are the pick of the iceberg of AI …sharing , open source and cross
+learning , can make us stronger, hope that organizators will think how to
+manage such forum/session…
+
+
+### [raconion](/raconion)
+[@bovard](https://www.kaggle.com/bovard) Thank you for responding to Kagglers'
+request for increasing game frequency. As there are only two days till the
+end, would you consider increasing the ratio of more difficult keywords for
+top agents (e.g. multi-word keywords) so that a more robust convergence may
+form? It has been pointed out that the private keyword set has a lot lower
+proportion of multi-word keywords than the public keyword set. This might also
+give non-alpha agents a good chance to shine. I would love to see alpha and
+non-alpha agents' performance on these challenging ones because right now
+simple keywords are like a random lottery for gold region agents.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+Can we increase the frequency of plays again without changing anything else
+(key word list frequency, etc)? It's good to see agents playing more, no one
+want to see their agents stay AFK the last day of competition …
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+It seems that some people do not want to play lol
+
+
+### [gmin5y](/gmin5y)
+It seems like most agents are still playing actively (including yours) and
+converge to a new balance. I think the biggest problem for your proposal is:
+if we simply increase game plays, how can we establish convergence with only
+less than two days left? Anybody who is not happy about the ranking could
+easily request the same thing again on the last day. Also, do we increase the
+frequency of game play for all agents or just top players? It is impossible to
+make it fair.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+Well, playing more will only make it fairer. It is the most simple way to
+establish convergence. I do not get your point that it will make things
+unfair.  
+Our real problem is that we only have limited amount plays possible given the
+computational resources.
+
+
+### [gmin5y](/gmin5y)
+I don't think the argument: More games -> fairer is true. As we have seen from
+several restarts, each time the increase in game freq brought turbulance in
+lb: some lucky agents get out of the pit, some unlucky agents fall. Simply
+increase the number of games does not guarentee a better convergence.
+As for making things unfair, I mean the following: with fixed amount of
+compute, simply "play more games" does not work. The decision is actually
+"which group of agents should play more games", which will be biased one way
+or another.
+The restart a day ago is giving chances to all agents and I personally just
+wish this game to end peacefully without any more shocks… Hope to learn from
+all leading agents' solutions and discuss about how to make next competition
+better.
+I know I am not in a position to say this but stay hopeful for your agents.
+There are still two days and anything could happen.
+
+
+### [Kha Vo](/khahuras)
+I agree with more games, but I’m afraid we have to add more difficult keywords
+into the pool. For the past 1-2 days there is frenzy of top bots randomly
+swapping places without any meaning, because they all cover 90% of current
+keywords. Add more difficult keywords, say, 500, in the last 20-30 hours will
+help the LB converge and find the best agents.
+
+
+### [loh-maa](/lohmaa)
+[@khahuras](https://www.kaggle.com/khahuras) I agree the variability is high,
+because the margins are tight, but I think the way to handle it would be to
+reduce the minimum sigma, so the score update would decrease as well and it
+would take more than just 1 game to climb or fall. Although lower minimum
+sigma could reduce the number of games for these agents, so this would need to
+be counter-balanced somehow. But all this would obviously not be in favor of
+agents who fell out a bit (and would be in favor of those that are high), so
+any decision has plenty of factors and dilemmas and I don't want to say much
+anymore, let's believe in the best judgment of the decision-maker..
+
+
+### [Kha Vo](/khahuras)
+Yes. Decreasing min sigma from 45 to 20 would solve it.
+
+
+### [loh-maa](/lohmaa)
+[@khahuras](https://www.kaggle.com/khahuras) 20 sounds very low, and anyway
+this would obviously favor the current leaders, so you see, I cannot recommend
+it. Maybe I shouldn't even speak about it…
+
+
+### [Kha Vo](/khahuras)
+Well, 75 is too low… It will cause quite a surpise big stir to the top bots. I
+think 100 should be good first…
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Indeed. You can find a lot of agents with a sigma > 75 in the top 100. We
+might as well stop the competition right now, hand out the medals and prizes,
+since clipping sigma with 75 is essentially freezing everyone in their current
+positions.
+
+
+### [loh-maa](/lohmaa)
+I agree 100 could be a better cap to start with… but anyway, hang on
+everybody, storm is coming!…
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+why do you thing the storm is comming, if the sigma will be the same or
+decreased?
+
+
+### [Kha Vo](/khahuras)
+Decreasing sigma will cause many matches for all bots with same sigma, because
+the algorithm prefers high sigma bots to play. It will cause many games and
+unexpected pairings, leading to heavy punishments or heavy reward. At this
+stage of the competition with only 3 days to close, we will have another
+storm, and we don't know exactly what will come next by Kaggle staff…
+
+
+### [loh-maa](/lohmaa)
+[@azakhtyamov](https://www.kaggle.com/azakhtyamov) The sigma cap means that
+the algorithm will start selecting agents more uniformly, so more games in
+top100 as well. Even though low sigma will be unaffected and the score update
+for the low sigma will remain low, more games means more movement. (At least
+according to my understanding of the current match-making.)
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+In theory, you are right. In practise, your bot plays 3-4 games per day and
+mine plays 3-4. However difference in sigma between them is 3-4 times as well.
+So I don't think it works this way.
+
+
+### [loh-maa](/lohmaa)
+[@azakhtyamov](https://www.kaggle.com/azakhtyamov) One of your agents has
+sigma about 100 and it doesn't play a lot just like sigma 50, that's true. But
+I think that's because for the match-making sigma 50 and sigma 100 are both
+well below the mean over all agents.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+My point is that by clipping the sigma, you’re not reducing the number of
+agents that need to be “resolved,” you’re just limiting their sigma. The game
+frequency distribution will remain the same, as all the games will still go to
+the agents with sigma == 100. This doesn’t mean that the bots in the top 100
+will play more. It would be far more effective to freeze the bots with 600
+points or less since they don’t have a chance anyway.
+
+
+### [loh-maa](/lohmaa)
+OK, maybe you're right, maybe it's not going to be a big storm, but I bet an
+increase.. let's see what happens.. ,)
+
+
+### [Kha Vo](/khahuras)
+First, bots from bottom half of the table will play wildly with each other,
+wildly… Then a bunch of them will rise, and some will fall, then those who
+rise will play plenty of matches with the top bots, causing big stir. Even if
+their matches won't resolve, pairing the highest sigma=75 with the lowest
+sigma=45 is much more probable, and the frenzy will never cease
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+to rise, they need to win at least once. it's almost impossible if you play
+with bots with 600 points or less.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+previous win was +71, now it's +21. Well, gg.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+GG, win score reduced by half now :/
+
+
+### [Jonathan Chan](/jonathanchan)
+Despite my LLM agent able to guess the correct keyword with a high reward of
+13, the score only increased by +12. The opposing guesser is weaker though.
+
+
+### [Jonathan Chan](/jonathanchan)
+Wish the cap was 100 but it seems my (previously lucky) LLM agent was
+definitely one of the targets with an earlier sigma of just less than 90 (and
+decreasing).
+Wow. What a storm. Played ~~30~~ 34 games already since reset and it doesn't
+seem random that the first 6 matches were against alpha agents and my LLM
+agent was assigned the role of questioner/guesser for all of these. Immediate
+correction by losing 5 straight matches, including the first loss with a
+~~repeat~~ duplicate keyword "whale tail" that's known to be on the list of
+quite a few alpha agents, and then "ohio" (place?) as a keyword. In total,
+~~20/30~~ 24/34 games were played as guesser.
+In the meantime, my unlucky alpha agent only played 2 games and still did not
+encountered any alpha agents which would boost its score.
+[@bovard](https://www.kaggle.com/bovard) : It seems the deadline has been
+extended by a day until Aug 30 but there's no official announcement.
+
+
+### [loh-maa](/lohmaa)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) just to help clarify, the
+deadline extension has been announced alongside the "confidence reset" in the
+other pinned thread.. also, if by "repeated" you mean duplicate, then it seems
+no -- "whale tail" was not on the public list.
+
+
+### [Jonathan Chan](/jonathanchan)
+[@lohmaa](https://www.kaggle.com/lohmaa) : The announced end date before was
+extending to Aug 29. However, it is now ending on Aug 30. As for "whale tail",
+I do mean duplicate and did not use the term old keyword.
+
+
+### [loh-maa](/lohmaa)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) Aug 29 23:59 GMT+0 is Aug
+30 6:59 ICT.. so if you mean duplicate, then I think no, "whale tail" was not
+in the public set.. at least I can't see it in my public set file.
+
+
+### [Jonathan Chan](/jonathanchan)
+[@lohmaa](https://www.kaggle.com/lohmaa) : We are in different timezone
+indeed. Before the latest reset, the deadline was Aug 29 6:59 ICT. I'm sure of
+that. As for the "whale tail" comment, I'm just frustrated it's reused as I
+don't really see many repeat keywords in my matches.
+
+
+### [loh-maa](/lohmaa)
+[@jonathanchan](https://www.kaggle.com/jonathanchan) I'm sorry but I think
+you're confused.. the deadline extension to Aug 29 23:59 GMT **has been
+announced** , but in **your** time zone it is Aug 30 6:59, that's why you
+think it's Aug 30 while in fact it is Aug 29 which has been announced. I'll
+give up on the keywords, because maybe "whale tail" is in your version of
+public keywords file and not in mine, we would need some oracle to tell.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+Do you think it's fair? How about the agents that don't tie every game and
+have a high sigma because your game engine does not give them an opportunity
+to play?
+
+
+### [prashant kumar](/prashantkumaryt)
+**Update on Confidence Adjustment:**
+To address the high number of ties, I’ll be briefly pausing matches to reduce
+the confidence of agents above 75 to 75. This will ensure a fairer game
+distribution. Further adjustments may be made based on how matches play out.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+They should have paired the agents from the 0-700 zone with agents from the
+700-inf zone without giving negative points to the agents from the 700-inf
+zone. It’s as simple as that. Interventions in the sigma only added randomness
+to the competition and should be avoided at all costs.
+
+
+### [prashant kumar](/prashantkumaryt)
+Thanks for your feedback. Pairing agents from different zones without
+penalizing higher-rated ones is a valid approach. I understand that the
+current adjustments might introduce some randomness, and we'll definitely take
+your suggestion into consideration for future improvements!
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+It benefits more team in the middle, some agents are playing like crazy.
+
+
+### [JK-Piece](/jeannkouagou)
+It depends which place you call middle. I am in the 200's with my modest non-
+alpha agent. I don't feel any advantage there

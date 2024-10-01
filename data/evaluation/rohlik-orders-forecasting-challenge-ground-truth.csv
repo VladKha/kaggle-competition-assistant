@@ -1,0 +1,157 @@
+doc_id,question,answer
+0,What is the name of the competition?,Rohlik Orders Forecasting Challenge
+1,What is the main task in the Rohlik Orders Forecasting Challenge?,Use historical data to predict customer orders
+2,What is the main focus of the Kaggle competition?,Predicting the number of grocery deliveries at selected warehouses for the next 60 days.
+2,In which countries does Rohlik Group operate?,"Czech Republic, Germany, Austria, Hungary, and Romania."
+2,When does the competition close?,"August 23, 2024"
+3,What is the main reason for needing accurate order forecasts?,"Accurate order forecasts are crucial for planning process, impacting workforce allocation, delivery logistics, inventory management, and supply chain efficiency."
+3,What is the expected impact of optimizing forecasts?,"By optimizing forecasts, we can minimize waste and streamline operations, making our e-grocery services more sustainable and efficient."
+3,How will participant contributions directly affect Rohlik?,Your participation in this challenge will directly contribute to Rohlik mission of sustainable and efficient e-grocery delivery. Your insights will help us enhance customer service and achieve a greener future.
+4,What metric is used to evaluate submissions in this Kaggle competition?,Mean Absolute Percentage Error
+5,What is the name of the column that contains the predicted number of orders?,ORDERS
+5,What is the format of the submission file?,"ID,ORDERS"
+6,What is the prize for winning the Kaggle competition?,"$5,000"
+7,When is the final submission deadline for the competition?,"August 23, 2024"
+7,What is the last day to merge with another team?,"August 9, 2024"
+8,Who is the author of the Rohlik Orders Forecasting Challenge?,MichalKecera
+9,Who is the host of this Kaggle competition?,MichalKecera
+10,What is the total prize money for this Kaggle competition?,"$12,000"
+11,How many teams participated in the competition?,"1,017 Teams"
+12,What is the objective of the Kaggle competition?,To forecast the 'orders' column for the test set.
+13,What files are provided in the competition's dataset?,"The competition dataset includes train.csv, test.csv, solution_example.csv, train_calendar.csv, and test_calendar.csv."
+14,What is the name of the column that indicates the number of customer orders attributed to the warehouse?,orders
+14,What is the meaning of the column 'shops_closed'?,Public holiday with most of the shops or large part of shops closed
+14,What is the meaning of the column 'mov_change'?,A change in minimum order value indicating potential change in customer behaviour
+14,What are the two columns in 'train_calendar.csv' that describe user activity on the website?,user_activity_1 and user_activity_2
+14,What type of data is contained in the 'id' column?,row id consisting of warehouse name and date
+14,What is the meaning of the column 'precipitation'?,Precipitation in mm around the location of the warehouse which correlates with location of the customers
+14,How does 'train_calendar.csv' differ from 'train.csv'?,It contains a subset of columns from 'train.csv' but more rows as it contains all dates whereas train.csv does not contain dates where warehouse was closed due to public holidays or other events
+15,How many files are included in the competition dataset?,5
+16,What is the size of the dataset?,1.44 MB
+17,What is the file format of the data?,csv
+18,What governs the usage of competition data?,Competition Rules
+19,What are the names of the data files available for this Kaggle competition?,"The data files are solution_example.csv, test.csv, test_calendar.csv, train.csv, and train_calendar.csv."
+19,What is the size of the solution_example.csv file?,The solution_example.csv file is 1.44 MB.
+20,How many columns are in the dataset?,50
+21,Who won the Kaggle competition?,Anak Lakarsantri 🇮🇩
+22,What score did the team 'techniquetwice' achieve in the competition?,0.0366
+23,What is the score of the team 'DerTeam'?,0.0371
+24,What was the score achieved by the team 'yitiaoxiaoyuer' in the competition?,0.0374
+25,What was the score of the ChickenBoy team?,0.0396
+1038,"What factors contributed to the relative stability of the leaderboard and the absence of a significant shakeup, despite initial expectations of a major shift?","The stability of the leaderboard, particularly at the top, can be attributed to the nature of the data split.  The training data predates the leaderboard data, and a time-based split aligning with the leaderboard's timeframe reveals a strong correlation between performance on a subset of the test data and overall performance. This suggests that models excelling on the public leaderboard likely excel on the private leaderboard as well, explaining the lack of a major shakeup."
+1039,What factors can contribute to a large difference between a model's local evaluation score and its public leaderboard score in a Kaggle competition?,This is bound to happen. This data is very small and such issues may arise due to even a slight overfitting risk
+1040,"What are the possible reasons for the increase in orders observed in the Munich warehouse after January 2022, considering its relatively recent establishment compared to other warehouses?","The increase in orders observed in the Munich warehouse after January 2022 could be attributed to a couple of factors. Firstly, being a new brand in Munich, the demand might not have normalized yet, unlike the established warehouses where a clear seasonal pattern exists. Secondly, the ending of the Covid-19 wave in Germany around April 2023 could have contributed to the increase, as people resumed normal life and possibly opted for online grocery shopping more."
+1041,What is the observed effect of different order groupings on the z-score stability in the provided analysis?,"The analysis reveals that the z-score of orders remains relatively stable when grouped by warehouse, year, month, and weekday, contrary to the author's initial surprise."
+1042,"How is the public leaderboard split in the competition, according to the experiment?","The experiment suggests that the public leaderboard is likely split randomly, without a discernible sequence based on row order or location grouping."
+1043,"What factor can significantly impact the leaderboard shakeup, aside from the random seed mentioned?","The size of the test set can significantly impact the leaderboard shakeup, especially if it's small."
+1044,What can be done to resolve the submission error indicating an incorrect number of columns despite having the expected number?,"You need to remove the index while submitting your submission file. You can use `submission.to_csv('submission.csv', index = False)` to achieve this and resolve the issue."
+1045,What was the general trend observed regarding the stability of ranks within the top 100 participants of the competition?,We observe a very low level of stability across ranks 11-100 as mentioned in the table above. This was also expected considering the small size of the data.
+1046,What are some strategies for utilizing the 'user_activity' features in this competition while adhering to the rules against using external data?,"It could make sense to also investigate if lagged values of user activity would be helpful. That way you can extend them to test without using any external inputs. Or assuming that user activity in future will be an average of the past. So that you don't assume some outlier development in user activity in test. That's why we included this in the dataset.  
+I would advise against using any completely external data sets to create the solution (it could be leaky)."
+1047,What factors contribute to the difficulty of accurately predicting demand for the Munich warehouse in this competition?,The Munich warehouse is very recent and could pose prediction difficulties
+1048,"What evaluation metric issue related to the data can potentially lead to errors, and how can it be mitigated?","The evaluation metric MAPE encounters issues when y_true is 0, leading to division by zero. Adding a small value like 1e-15 to the denominator can prevent errors but may significantly impact the evaluation metric's accuracy."
+1049,"If I am unable to submit a solution by the deadline, is it still possible to submit it later?","You can submit a solution after the deadline, but it will be considered a late submission. Late submissions are not eligible for rewards or points, and some competitions may disable late submissions altogether."
+1050,What is the correlation between lagged user activity and the target variable compared to the correlation of lagged target values with the target variable?,If comparing the correlation of lagged values against target one can also notice that the lagged user_activity_2 in general has higher correlation with target than the lagged target itself.
+1051,Are there any restrictions on the type of hardware or software used to generate predictions for submission to this competition?,You are free to use any resource for generating your prediction submission file.  CPU/ GPU/ Kaggle/ Colab/ local PC/ cloud GPU provider/ excel file are all acceptable options.
+1052,What was the impact of replacing the 2020 orders data with the average of 2022 on the private score?,"Using the average of 2022 improved my Private score from 0.0445 to 0.0437. 
+but i didn't try the approach you mentioned,also using average of other years dropped the score."
+1053,What types of models were used in the ensemble for the competition?,"The stacked ensemble model used a variety of models, including XGB, LightGBM, CatBoost, and NN for the first layer. For the second layer, CatBoost, XGB, and LightGBM were used."
+1054,What could explain the differences in weekly and annual cycles observed in the Frankfurt warehouse's operations compared to other warehouses?,"The periodogram plot for Frankfurt looks different to the other warehouses. The differences suggest that Frankfurt has stronger weekly cycles and more stable operations, while Others' patterns are more influenced by annual cycles."
+1055,Did utilizing the number of continuous days a warehouse was closed before or after a holiday significantly improve your model's performance?,"When I first implement it, it gave me 0.0003 boost on cv (0.0324 -> 0.0321), 0.0001 boost on pb (0.0336 -> 0.0335) and now I can also see it gave me 0.0010 boost on private score.
+I also tried to remove these two features from my public notebook, the public / private score all become worse around 0.002x (public from 0.0304 -> 0.0325, while private from 0.0381 -> 0.0410). You can see here for your reference
+Thank you for your asking."
+1056,"How do you handle the calendar data, particularly regarding holidays, in your model?","Below is main idea when I fill holiday:
+  * In data train, test have column ""holiday"" with values is 0 and 1
+  * ""fill_calendar2df"" will get holiday from calendar.csv(df_cld) to fill for dataframe
+  * With each holiday, we mark both before and after the holiday as 1 (treat it as a holiday).
+  * With 2 special holiday('Labour Day' and 'Easter Monday'), we mark 2 days before and one day after the holiday as 1(Only 2 days before the holiday is weighted at 1.3 instead of 1, I hypothesize that users order more to prepare for the holiday.)
+
+Example:
+#### Input - holiday Easter Monday:
+warehouse | date | holiday | holiday_name  
+---|---|---|---  
+A | 2024-03-28 | 0 | Not  
+A | 2024-03-29 | 0 | Not  
+A | 2024-03-30 | 0 | Not  
+A | 2024-03-31 | 0 | Not  
+A | 2024-04-01 | 1 | Easter Monday  
+A | 2024-04-02 | 0 | Not  
+A | 2024-04-03 | 0 | Not  
+  
+#### Output - 2 days before and 1 day after:
+warehouse | date | holiday | holiday_name  
+---|---|---|---  
+A | 2024-03-28 | 0 | Not  
+A | 2024-03-29 | 0 | Not  
+A | 2024-03-30 | 1.3 | Easter Monday  
+A | 2024-03-31 | 1 | Easter Monday  
+A | 2024-04-01 | 1 | Easter Monday  
+A | 2024-04-02 | 1 | Not  
+A | 2024-04-03 | 0 | Not  
+  
+#### I not fill holiday name for day after holiday"
+1057,Why is using external data for generating solutions in a Kaggle competition generally discouraged?,"It's discouraged because using information not available at the time of prediction, like future weather or population development, would be ""leaky"" and make the solution impractical for real-world application where such data isn't knowable in advance."
+1058,"What techniques can be used to predict the 'user_activity_2' feature in this competition, considering its time-series nature?",I’ve found that using Facebook Prophet for this kind of task can be quite effective Prophet is a robust tool for time-series forecasting and can handle trends and seasonality well
+1059,"What type of cross-validation strategy was employed in this Rohlik Orders Forecasting Challenge solution, and how did its results on the private leaderboard compare to the public leaderboard?","A time-series based cross-validation strategy was implemented, with a custom approach preferred over scikit-learn's due to perceived limitations. The strategy involved using five previous 61-day periods as out-of-fold sets, aligning with the test dataset's duration. This method proved valuable, as it fostered trust in the experiment results and exhibited good correlation with the public leaderboard, ultimately leading to a significant improvement of 13 positions higher on the private leaderboard."
+1060,What leaderboard position did the discussed solution achieve in the private leaderboard?,The discussed solution achieved 330th position in the private leaderboard.
+1061,"Why is logistic regression considered inappropriate for this specific stacking model, given the nature of the problem it aims to solve?","Logistic regression is a classification problem, what we are trying to solve is a regression problem."
+1062,What are some potential areas or approaches one could explore to potentially enhance the LB score in this competition?,"Some ways you may further improve the score:
+  1. Implement a neural network model
+  2. Implement a transformer model
+  3. Understand the scores of each base model
+  4. Understand the scores of each meta-model
+  5. Research new papers on the problem
+  6. Adjust the number of features used
+  7. Explore feature engineering
+  8. How about first predicting the missing columns?"
+1063,Why might the title of a discussion post get automatically modified after being published?,"The example provided mentions that the title of the topic received a ""false"" prefix after being published, implying that the platform might have implemented an automatic system for modifying titles in specific situations."
+1064,"What approaches did the team try to address the Munich warehouse outlier, and why did they ultimately not use a separate model for it?","To address the Munich warehouse outlier, the team attempted training a separate model for Munich, excluding Munich from training other warehouses, and various combinations of these ideas. However, while some attempts showed improvements in CV or validation scores, the public LB score consistently worsened. Therefore, they decided against using a separate model for Munich."
+1065,"What strategy involving data manipulation yielded a score improvement of approximately 0.059 in the competition, and what is the underlying rationale for its effectiveness?","A technique termed ""Smart Duplicating"" resulted in a 0.059 score improvement. This method involves duplicating the order data from the year 2023 and joining it with the training data, aligning by day of the year and day of the week. Additionally, Black Friday data is matched accordingly.  The rationale behind this approach is that it accounts for the yearly increase in orders by calculating the delta for each warehouse.  The effectiveness is attributed to the limitations in using data to predict daily order variations, such as weather or past orders, leaving weekends and holidays as the primary predictable factors which exhibit yearly similarity.  While holiday shifts between days of the week might occur from 2023 to 2024, the model won't capture this variance due to the lack of corresponding training data."
+1066,What can be the reason for submission failure if the code logic for predictions seems correct?,"The submission file might have incorrect column names. Ensure that the column names in your submission file match exactly with the expected column names (e.g., 'id', 'predict')."
+1067,What is the effect of adjusting predictions specifically around the dates identified as potentially significant in the dataset?,Adjusting predictions near the dates identified as potentially significant in the dataset has been observed to have an effect on the Leaderboard score.
+1068,What methods can be used to handle missing values in weather-related features like snow and precipitation in time series data?,"One approach is to use the mode of the snow and precipitation, grouped by warehouse, year, month, and weekday, to fill in the missing values. Another observation is that many missing values might occur when the warehouse is not operational, while others could be attributed to missed recordings."
+1069,What is the potential benefit of ensembling models with different random seeds?,"Ensembling models with different random seeds can reduce the variance in the predictions, leading to a more stable and potentially higher-scoring submission."
+1070,What are some potential strategies for addressing the issue of public leaderboard overfitting in Kaggle competitions?,"The author suggests using a sample size of the training set on the Public Leaderboard to penalize any attempts at exploiting leakage. This would encourage participants to focus on building models that generalize well, rather than merely performing well on the Public Leaderboard."
+1071,What factors might contribute to the higher order volume on Fridays for Rohlik?,"The reason for the higher order volume on Fridays is likely due to people ordering for the weekend. This pattern might also apply to public holidays, with people ordering more frequently."
+1072,Why does a lower score indicate a better submission in this competition?,"A lower score indicates a better submission because it means the relative error between your forecasts and the actual values is smaller. This results in a lower MAPE (Mean Absolute Percentage Error), which signifies more accurate predictions."
+1074,How might a significant change in the public leaderboard be caused by the random seed used for training?,"If the public leaderboard scores are sensitive to the random seed used in training, it's likely that there will be a shakeup in the rankings when the private leaderboard is revealed."
+1075,What are the reasons for missing dates in the warehouse series data?,"The missing dates indicate that the warehouse was closed on those days, mostly due to public holidays and Sundays in Germany."
+1076,"What are some ways to deal with features present in the training set but absent in the test set, especially when these features relate to events like shutdowns and limitations?","The events are rare and don't seem to significantly impact order volume, so they can likely be dropped.  Alternatively, you could try using weekly or monthly averages, but external data is not permitted."
+1077,What are the potential benefits and drawbacks of using time-based cross-validation in a competition like this one?,"I don't know if I would go as far as to say that time-based cross-validation does not work in this competition in general. Just that it did not work for me as well as other approaches. In general I think the benefit with time-based cross-validation is that you don't get a too optimistic cv-result due to leakage, but I'm not that sure that it will generalize better than normal cross-validation on new unseen data."
+1078,What are the main reasons for missing time series data in the test data?,"The missing data is due to national holidays and warehouse closures, particularly for those in Frankfurt and Munich which don't open on Sundays."
+1079,What approach did you take to improve your ARIMA model for your final submission?,"For my final submission, I added exogenous variables based on the 'Warehouse Analysis' section, transforming the ARIMA models into ARIMAX."
+1080,What measures will be taken to ensure winning solutions are not simply overfitted to the leaderboard?,The organizers will be double-checking the winning solutions to make sure they are not just a 'hack' to overfit to leaderboard.
+1081,What are the next steps for the competition winners?,The competition host will be reaching out to the winners this/next week to go over next steps.
+1082,"What is the purpose of the `test_calendar` file, especially when its rows largely overlap with the `test` file?",The `test_calendar` file contains information about holidays for certain warehouses. This information is not present in the `test` file for days with zero orders.
+1083,"Considering the limited size of the test data, what should be the focus of the participants in this competition? ","For this competition, we should probably not care about the public LB. Also complex workflows and models are unlikely to work here."
+1084,What is the most likely reason for the increasing trend in orders for each warehouse?,The most likely reason for the increasing trend in orders for each warehouse is simple business growth.
+1085,"What is the relationship between the two datasets in the competition, `train` and `train_calendar`?","The `train_calendar` dataset contains holiday information for various warehouses, which may not be present in the `train` dataset due to having zero orders on those days. The `train_calendar` provides dates that are not included in the `train` dataset."
+1086,What day of the week consistently has the highest order volume in the Rohlik Orders Forecasting Challenge dataset?,Friday has the highest order volume in the Rohlik Orders Forecasting Challenge dataset.
+1087,What are the main factors affecting the prediction after the warehouse column?,"The main factors affecting the prediction after the warehouse column are Friday, Sunday, and Holiday."
+1088,What other features might be relevant to incorporate into a model to capture pre- and post-holiday effects on consumer behavior?,"The user in the discussion post suggests adding features indicating the number of days before and after a holiday. They also suggest adding binary indicators for is_holiday, before_holiday, and after_holiday. Another user responded by highlighting the importance of Friday's order volume, suggesting that it could significantly influence model performance."
+1089,What is the correct final deadline date for the competition?,"The correct final deadline date for the competition is Aug 23, 2024."
+1090,How can we account for the different data collection frequencies between the training and testing sets in this competition?,"We need to account for the different data collection frequencies between the training and testing sets, along with conflicts, COVID-19 outbreaks, and other crises that have occurred since 2020."
+1091,"In competitions with noisy and small datasets, how can the stability of a model be evaluated and improved, especially when comparing Catboost to other boosted trees like LGB?","Each competition is different and a model should be analyzed apropos to the data and the CV score in the competition. Catboost usually performs well in compliment with other boosted trees but it cannot be generalized, especially with such small and noisy datasets."
+1092,What are some of the challenges in predicting demand for the Munich warehouse?,"The Munich warehouse is newer compared to other warehouses and has a dramatic trend, making it difficult to predict due to sharp peaks and a similar path to Prague 2 and 3. The test period may be similar to those two warehouses."
+1093,"What are some of the key factors for achieving good results in sales prediction models, especially in competitions like Rohlik?","Floating events as anomalies, user_activities and tricks with data drifts are the keys for a good models."
+1094,What are the potential benefits of using large language models (LLMs) for time series forecasting?,LLMs can be used for time series forecasting as suggested in the TimeLLM paper.
+1095,How can features that are only present in the training data be used to improve the model's performance and robustness?,One way to leverage training-only columns is to train models to predict the values of those columns and use those predictions in the final model that predicts the target variable. Another approach is to use those columns to identify outliers and potentially remove or correct their influence on the target variable.
+1097,What are the potential limitations of using complex models like iTransformer on small datasets?,The small training set might be slightly too limited for such complex models.
+1098,What is the difference between user_Activity_1 and user_Activity_2 in this competition's dataset?,"The discussion post describes that the range of values varies between user_Activity_1 and user_Activity_2, but the exact meaning of these features is unclear."
+1099,What is the main issue with the size of the test data in this Kaggle competition?,"The test data is too small, which makes it difficult to accurately evaluate the performance of models and increases the likelihood of a lottery competition where randomness plays a significant role in determining the rankings."
+1100,What are some possible reasons for a CSV file to be corrupt or result in tokenization errors when trying to import it into a Google Colab notebook?,"The file might be corrupt. Try re-downloading it, or try loading the other CSV files to see if the error persists."
+1101,What are some ways to prevent or mitigate the issue of users submitting multiple times from different accounts to manipulate the leaderboard?,"The discussion highlights the use of identification as a potential solution to prevent multiple accounts from being used to manipulate the leaderboard. The author also mentions that some competitions allow for offline participation, which makes using multiple accounts to gain an advantage less appealing."
+1102,What is the impact of school holidays on the time series data for Frankfurt and Munich?,"The discussion post mentions that school holidays are only present in the train dataset for Frankfurt and Munich, and only for the year 2023.  This suggests that school holidays may be a significant factor influencing the time series data for these cities during this period."
+1103,What is the most common reason for avoiding external data in a competition?,The most common reason for avoiding external data in a competition is to ensure fairness and prevent competitors from gaining an unfair advantage by using data that is not available to everyone.
+1104,"What are the common strategies for splitting data in this competition, and how do they impact the consistency between cross-validation (CV) and leaderboard (LB) scores?","Many participants are using a variety of splitting strategies like time-based splitting, group kfold, and custom rolling window cross-validation. However, the consistency between CV and LB scores is often inconsistent. Some experience a large difference, while others observe a good correlation. This highlights the importance of a robust validation strategy in this competition due to the nature of the data and the potential for data leakage."
+1105,Why is this competition a community competition instead of a regular one?,This was an agreement with Kaggle based on the size of the competition.
+1106,What are the factors that determine whether a simple or a complex model is better for forecasting?,"The complexity of the model should be determined by the size and complexity of the data, the desired level of accuracy, and the importance of explainability.  A simple model may be sufficient if the data is small and the goal is to achieve a basic level of accuracy.  A more complex model may be necessary to achieve higher accuracy or to account for complex relationships in the data. Explainability is also an important factor, as simple models are often easier to understand and interpret than complex models."
+1107,What is the meaning of the mov_change column?,0.7 means there was a small minimum order value change. 1 means there was a larger change.
+1108,What is the main reason why participants are concerned about a potential shake-up in the competition leaderboard?,"Participants are concerned about a potential shake-up because of the possibility that some competitors might be overfitting to the public leaderboard data, while others might be using more robust methods that are not reflected in the public leaderboard scores. This could lead to a significant change in the ranking when the private leaderboard scores are revealed."
+1109,What are the potential benefits of incorporating uncertainty quantification into a demand forecasting model?,Uncertainty quantification can help reduce the risk of following unreliable model recommendations and provide more transparency about the model's reliability.
+1110,"Why are there more winter school holiday weeks assigned to the Prague_1 warehouse compared to other warehouses in Czech Republic, considering the size of the city and the common practice of families going skiing during that time?","The 'winter school holidays' is a week-long spring break for school kids. Every 'district' is scheduled for a different week (some coincide, obviously). Prague is a big city, so it is divided into smaller 'districts'. If a warehouse covers more of them, there are more vacation weeks corresponding to it…"
+1112,"What causes the inconsistency in the 'holiday' and 'holiday_name' columns in the dataset, specifically when some holidays are marked as 0 and some non-holidays as 1?","The inconsistency arises from the Czech Republic's holiday system. While Friday and Monday are specifically public holidays, the days between them are also considered part of Easter holidays. Therefore, even though these days are not public holidays, they are still part of the Easter holiday period."
+1113,What were the key factors that contributed to achieving good scores in the competition?,"The key factors that contributed to achieving good scores were feature engineering, deleting strange data during the training phase, using 4 LightGBM to stabilize results, and post-processing predictions to manually correct Easter holiday data."
+1114,What type of external data can be used to enhance the model without causing leakage?,Calendar events is one dataset that could be augmented externally without risk of leakage.
+1115,"What is the purpose of using the ""margin"" value in the offline evaluation metric, and how does it affect the optimization process?","The margin is used to ensure that the `oof` (cross-validation score) value is slightly lower than the `valid` (validation set score) due to potential data leakage in cross-validation. It's not directly relevant to the optuna optimization process, as the goal is to minimize the entire metric, not just the `oof` and `valid` values individually."
+1116,"Was there a specific reason why Budapest_1 was the only warehouse with a latest date of 2024-03-14, while all other warehouses had a latest date of 2024-03-15?",2024-03-15 was a public holiday in Budapest - the warehouse was not open.

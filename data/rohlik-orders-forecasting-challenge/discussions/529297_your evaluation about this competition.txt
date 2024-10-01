@@ -1,0 +1,58 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted a month ago
+
+
+### your evaluation about this competition
+This competition will end in 4 days, everyone can discuss the quality and
+difficulty of the competition's problems, whether it will shake, and anything
+else you want to say.
+
+
+## 6 Comments
+
+
+### [Ravi Ramakrishnan](/ravi20076)
+[@yunsuxiaozi](https://www.kaggle.com/yunsuxiaozi)  
+This is a moderately difficult assignment due to 3 reasons-
+  1. Small dataset could create shakeup issues 
+  2. Munich warehouse is very recent and could pose prediction difficulties 
+  3. Not allowing us to use external datasets could limit oneself to limited information and associated issues 
+  4. Friday spurt and spurts in certain time periods in the training data could pose additional challenges 
+  5. We have a few reasonable public kernels and a few overfitting ones - people blindly following public work may shake up/ down depending on various factors 
+This competition has a shakeup risk in my opinion and one needs to trust the
+CV score first. Final submission choice will be key
+
+
+### [Ern711](/ern711)
+Think there will be some sort of shake-up but not that sure it will be super
+huge. On the other hand I will not be very surprised if it becomes huge
+either. Think there are arguments for both cases. Would guess that the top
+public LB scores (and the ones below 0.0350) are due to overfitting though.
+
+
+### [Sheikh Muhammad Abdullah](/abdmental01)
+I think Trust your cv , because most of the Lb Score Notebooks using Kfold .
+Which is not valid for this Competition as you mention. I think There will be
+a Shakeup in the Final.
+
+
+### [MaxUhl98](/maxuhl98)
+I am really uncertain to which extend I should trust my own CV over the public
+score I am getting, since sometimes one has up to the double MAPE of the
+other. Also there is very little hidden data (0.69*397= 242) which will likely
+cause a huge shakeup. We also saw, that random seeds can hugely impact public
+scores, which is another indicator of a shakeup, since there is a chance that
+even random seeds can significantly influence our final hidden scores.
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+The open-source approach first uses a multitude of weak regressors for the
+initial prediction, and then employs the results of the first prediction for a
+second prediction using a strong regressor. The results of the first
+prediction have not converged, hence the random seed has a significant impact,
+which ultimately also affects the second prediction.
+
+
+### [AC](/ahsuna123)
+I still stick by creating an ensemble on multiple seeds to make the submission
+stable since there's a lot of variance.  
+Who knows it might work.

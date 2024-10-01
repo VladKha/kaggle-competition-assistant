@@ -1,0 +1,23 @@
+FROM grafana/grafana:11.2.0
+
+USER root
+
+# Install Python and venv
+RUN apk add --no-cache python3 py3-pip python3-dev
+
+# Set up a virtual environment
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
+# Copy your Python script and requirements file
+COPY monitoring/* .
+
+# Install Python dependencies
+RUN pip3 install -r requirements-monitoring.txt
+
+RUN chmod +x grafana_entrypoint.sh
+
+USER grafana
+
+ENTRYPOINT ["./grafana_entrypoint.sh"]

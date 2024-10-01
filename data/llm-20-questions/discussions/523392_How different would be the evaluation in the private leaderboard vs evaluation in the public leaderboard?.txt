@@ -1,0 +1,19 @@
+[shiv_314](/shiv314) · 404th in this Competition · Posted a month ago
+
+### How different would be the evaluation in the private leaderboard vs
+evaluation in the public leaderboard?
+I would be happy to discuss around the parameters that will decide the final
+position on the private leaderboard. The number of matches, the kind of
+pairings and anything else that should be kept in mind.
+[NLP](/discussions?tags=13204-NLP)[Model
+Comparison](/discussions?tags=13315-Model+Comparison)[GPU](/discussions?tags=16580-GPU)[Intermediate](/discussions?tags=13103-Intermediate)[Advanced](/discussions?tags=13104-Advanced)
+
+
+## 1 Comment
+
+
+### [gguillard](/gguillard)
+You may want to play with [this
+notebook](https://www.kaggle.com/code/gguillard/llm-20-questions-trueskill-
+simulator) and read comments in [this
+discussion](https://www.kaggle.com/competitions/llm-20-questions/discussion/521385).

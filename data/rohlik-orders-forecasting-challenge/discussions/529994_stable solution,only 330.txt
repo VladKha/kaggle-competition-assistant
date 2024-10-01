@@ -1,0 +1,16 @@
+[yunsuxiaozi](/yunsuxiaozi) · 135th in this Competition · Posted 22 days ago
+
+### stable solution,only 330
+Waited for 2 hours and still didn't see the open source in the front row.
+[baseline](https://www.kaggle.com/code/yunsuxiaozi/rohlik-orders-baseline) is
+342 in public leaderboard,and 330 in private leaderboard.
+this is a stable solution.
+
+
+## 1 Comment
+
+
+### [TuMinhDang](/darkswordmg)
+Hi, we are working on writing tutorials and adding explanations to the source
+code we used.  
+Thanks for your interest.

@@ -1,0 +1,36 @@
+[G John Rao](/jaejohn) · 57th in this Competition · Posted 3 months ago
+arrow_drop_up3
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### Social and Collaborative Problem Solving
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F14464632%2F289ecd894469172eb6fea620b58fd954%2FUntitled.png?generation=1719315097209057&alt=media)
+Ensembling is a group of humans debating together. I thought this idea was
+worth sharing.
+comment
+
+
+## 2 Comments
+
+
+### [Aryan Garg](/aryangarg01)
+arrow_drop_up2
+  * format_quote
+  * link
+Seems like an Autonomous Agent workflow. See solutions like: AutoGPT or
+SuperAGI?
+Unlikely an ensemble of LLMs would be able to do it. Maybe an ensemble of
+fine-tuned (acc. to your workflow) foundation models like CoDi-2 could be
+worth the effort?
+
+
+### [G John Rao](/jaejohn)
+arrow_drop_up0
+  * format_quote
+  * link
+Cool, I'll check them out

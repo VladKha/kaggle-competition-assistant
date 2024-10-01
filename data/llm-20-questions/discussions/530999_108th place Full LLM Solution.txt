@@ -1,0 +1,234 @@
+[Matthew S Farmer](/matthewsfarmer) · 108th in this Competition · Posted 3
+days ago
+
+
+### 108th place Full LLM Solution
+# Full LLM Solution
+The following solution utilizes a full LLM solution for the LLM 20 questions
+competition.  
+Notebook linked
+[here](https://www.kaggle.com/code/matthewsfarmer/solution-l3-1-8b-inst-kraut)
+
+
+## Background
+The objective of this competition was to engineer generative language model
+agents to play a cooperative game of 20 questions with other generative models
+to guess the keyword in as few turns as possible. This is quite challenging
+given the current state of generative models. Human-level deductive reasoning,
+truthful question answering, and following specific constraints/rules are an
+active research area within the generative language model domain
+[1](https://arxiv.org/pdf/2304.10513v1),[2](https://arxiv.org/html/2312.07592v1).
+In their 2024 paper, Zhang, Lu, and Jaitly provide a benchmark for select
+language models (ChatGPT 3.5/4, Claude 1/2, Vicuna 13b/7b in the category
+specifically used in this competition, "things"
+[4](https://arxiv.org/pdf/2310.01468v3). The authors report the human
+benchmark for success rate in Things is ~24%. GPT-4 achieved the highest
+success rate at ~49% with the smaller open-source model Vicuna 13b and 7b
+achieving 20% and 11% respectively.
+
+
+## Aims
+The aim of our notebook was to utilize an ensemble of research-backed
+approaches to examine the upper-bound limits of current language models within
+the compute, time, and memory constraints of the competition environment
+(single T4 GPU, 60 seconds per response, 15GB GPU RAM). With the human
+benchmark documented, ~24% success rate seemed to be a reasonable goal with
+~49% (GPT-4's success rate) being a stretch goal. Lastly, we wanted to examine
+this upper bound using a zero-shot approach.
+
+
+## Problems and Solutions
+**The Parsing Problem**  
+The first major challenge with LLM's in a constrained environment is to parse
+words, phrases, and questions that align to the game rules and expected
+output. Many language models are trained to be "chatty". For examples when you
+prompt a model by saying "We are playing 20 questions, I have a keyword in
+mind", you will likely get the response, "That sounds fun! I would love to
+play. I will start with a question: Is the keyword a living thing? Let me know
+your answer, and I will try my best to guess!" While this response is
+appealing within a chat environment, it does not optimize the cooperative play
+context where the other model is expecting a single question. Additionally,
+many models will give you reasoning for answering "yes" or "no" to a
+questions, despite being prompt to not do so! These issues and other examples
+make the extraction of a specific question, answer, or single guess a barrier
+that must be overcome to have a competitive model in this competition.  
+To address this issue, we utilized the python package Outlines
+[5](https://outlines-dev.github.io/outlines/welcome/). This library supports
+robust, structured generation that fits within specific requirements outlined
+as Pydantic classes, JSON schemas, or regex. Other libraries that offer
+similar capabilities include Llama Index, Langchain, and Instructor. Outlines
+provided the best support (in our opinion) to local Transformer models, which
+we utilized in our notebook.  
+Currently, it appears that structured outputs help improve reasoning
+capabilities [6](https://arxiv.org/html/2408.11061v1),
+[7](https://huggingface.co/blog/evaluation-structured-outputs) and helps merge
+the generative layer with the logic layer in language model applications. With
+OpenAI's recent improvement of GPT-4, allowing structured responses, this is a
+promising development in the generative space.
+4 Pydantic Classes were utilized to create structured output that followed our
+desired schema.
+    
+    
+    class YesNoEnum(str, Enum):
+        yes = "yes"
+        no = "no"
+    
+    class Answer(BaseModel):
+        internal_thoughts: str = Field(
+            description="A short statement explaining the reasoning for your answer to the question.",
+            example= "My keyword is cinnamon roll, since the question asked is it a living thing? my answer is no. A cinnamon roll is not a living thing",
+        )
+        answer: YesNoEnum
+    
+    class Question(BaseModel):
+        internal_thoughts: str = Field(
+            description="A short statement deductively summarizing the game history and coming to a conclusion on the next question to ask",
+            example="We know that the keyword is a living thing and a pet, so the question 'is it a mammal?' further narrows the possibilities.",
+        )
+        question: str = Field(
+            description="A simple yes/no question. Ending in a question mark.", 
+            example="Is it a living thing?", 
+            max_length= 150
+        )
+        probable_secret_keyword: str = Field(
+            description="The most probable keyword, based on the game history", 
+            example="purse",  
+        )
+    
+    class Guess(BaseModel):
+        internal_thoughts: str = Field(
+            description="A short statement reviewing the game history and coming to a conclusion on most probably keyword", 
+            example="We know that the keyword is a living thing and a pet, so dog would be a likely keyword", 
+        )
+        guess: str = Field(
+            description=" This is the most probable keyword based on the current game history and does not repeat previous keywords", 
+            example = "jellybean", 
+            max_length=50
+        )
+    
+    
+    content_copy
+**The Reasoning Problem**  
+Prompt engineering research has identified many approaches to improving the
+performance of language models. Notably, requiring chain-of-thought
+[8](https://arxiv.org/abs/2201.11903) and tree-of-thought
+[9](https://arxiv.org/abs/2305.10601) techniques have shown to improve
+capabilities of most models in problem solving scenarios. Most recently, Zikai
+Xie's Aug 2024 paper shows that the placement of the reasoning generation is
+an important consideration [10](https://arxiv.org/abs/2408.05093). In their
+paper, when reasoning precedes the response, it can improve the factual
+accuracy and consistency of responses.  
+You will notice in the Pydantic classes, that "internal thoughts" are
+explicitly called _prior_ to the response.
+**The Model Problem**  
+There is a vast menu [11](https://huggingface.co/spaces/open-llm-
+leaderboard/open_llm_leaderboard) of open-source models that could be chosen
+for this competition. How does one choose the _right_ model. The parsing
+problem and the reasoning problem helps us identify that the optimal models
+should: (1) follow explicit instructions, (2) display strong reasoning
+capabilities, and (3) have a size and inference time that fit within the
+constraints of the competition.  
+Therefore, we first want to choose a model that can be fully loaded on the T4
+GPU memory (15GB). You can calculate this with a calculator found
+[here](https://huggingface.co/spaces/NyxKrage/LLM-Model-VRAM-Calculator). In
+our case, we used 4-bit quantization which allowed for model sizes up to ~20B
+parameters. This includes popular open source models such as Phi-Medium 14B,
+InternLM2.5 20b, Gemma 2 9b, and Llama 3.1 8B.  
+Now that the parameter upper bound is known, we then want to identify model
+metrics that help us choose a model that would best serve our purposes. The
+metrics that worked best in this competition to identify models were IFEval
+[11](https://arxiv.org/abs/2311.07911),
+BBH[12](https://arxiv.org/abs/2210.09261), and
+MUSR[13](https://arxiv.org/abs/2310.16049). These evaluations demonstrate the
+model's capability to follow instructions, solve challenging tasks, and show
+multi-step reasoning. A quick filter of the [Open LLM
+Leaderboard](https://huggingface.co/spaces/open-llm-
+leaderboard/open_llm_leaderboard) with these metrics in mind, help us arrive
+at a small handful of models that fit our criteria.  
+Ultimately, fine-tuned Llama 3/3.1 models met these criteria the best and
+worked well in the (sometimes frustrating) simulation environment.  
+Our final submission utilized VAGO solutions' Llama-3.1 SauerKrautLM 8b
+Instruct model with IFEval = 80.17, BBH = 31, and MUSR = 13.54. The model card
+can be found
+[here](https://huggingface.co/VAGOsolutions/Llama-3.1-SauerkrautLM-8b-Instruct).
+
+
+## Results and Discussion
+Ranking on the Final leaderboard resulted in 108th place. This ranking lacks
+validity with the project aims due to the inclusion of non-LLM, some-LLM, and
+full-LLM solutions. Alternative metrics such as self-play eval resulted with
+12% success rate, and rank of 30 according to other self-play metrics (thanks
+to [@jademonk](https://www.kaggle.com/jademonk)) found
+[here](https://www.kaggle.com/competitions/llm-20-questions/discussion/530442#2973781).
+Our results showed a slight improvement over the published work showing a 7B
+open-source model achieving 11% success rate. The human benchmark was not
+achieved.
+
+
+## Opportunities for Improvement
+  * Robust exploration of Chain-of-thought, and Tree-of-thought usage within the structured output environment.
+  * Using the internal thoughts as values that are passed between agents to reduce compute needs.
+  * Gemma 2 9b was unable to be used in the simulation environment. This model should be tested. 
+  * Continued development of structured responses to create performant models in restricted environments. 
+  * Evaluation of the placement of Q&A history within the prompts, keeping in mind the attention mechanism for longer prompts. 
+  * Multi-model approach with loading and unloading models that are optimized for questions, answers, and guesses respectively to achieve a higher overall score. 
+
+
+## The Epic Fails
+  * Conditional prompting that used the yes and no responses to follow categorical pathways and highly defined prompt structures was great for self-eval, but when playing cooperatively we were at the mercy of a "truthful" response from the other team. This failed many, many times. 
+  * Using low IFEval models (<70.0). It didn't matter how 'smart' (MUSR, BBH) a model was. If it didn't follow instructions well, it produced terrible questions and answers. 
+  * Submitting solutions. I think we have more failed submissions than successful ones. It was difficult to pass the validation phase. 
+  * Monte Carlo Tree Search. This failed because I was trying to learn while coding. I never got it to work in production but it sounded like a good idea in my head. 
+
+
+## Conclusion
+Zero-shot, small sized language models still struggle will achieving human-
+level success rate in 20 questions. Marginal improvements were found through
+structured responses and prompt engineering. LLM-as-judge, distillation
+techniques, and further exploration of prompt techniques should be pursued in
+unknown entity identification tasks.
+
+
+## Opinion
+The mechanics of this competition leave much to be desired. I believe the
+errors and opportunities found here will improve future comps. I look forward
+to more LLM challenges. I appreciate the engaged community here on the
+discussion boards.
+I would have liked to see LLM-only type submissions be segregated as a
+separate group or require 100% LLM approaches to participate in the
+competition. This would increase the validity of the leaderboard and further
+isolate techniques to advance language model research. I also think it was the
+true objective of the competition. I understand the argument that RAG has many
+parallels with the keyword search approaches that led the leaderboard, but I
+fail to see true-RAG implementations in the posted submissions. As a
+researcher in NLP, I might have more rigid view of what RAG should look like,
+so I am open to debate here. If I (or you the reader) see one I will link it
+here and concede my regrets.
+Overall, I had fun, I learned, and I helped other too. That's enough for me! 🤗
+See you over at the ARC challenge!
+
+
+## 4 Comments
+
+
+### [Andrew Tratz](/jademonk)
+Thank you for sharing. Really appreciate your thoughtful approach to the
+competition and your solution. And thanks again for helping everyone to get
+Llama 3.1 working on Kaggle.
+
+
+### [FullEmpty](/gowillgo)
+Thanks for sharing your code. It was a pleasure to compete with someone like
+you so committed to sharing and learning, which I believe is the spirit of
+Kaggle. But as a newbie, I feel quite disoriented about how things work, and I
+even feel like I'm on X here sometimes.
+You're the real winner. Hope to see you in another competition!
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+Thanks for sharing will go over you solution. Curious to learn how you did it
+:)
+
+
+### [Tanishk Patil](/tanishkpatil)
+Very Informative! Thanks for sharing.

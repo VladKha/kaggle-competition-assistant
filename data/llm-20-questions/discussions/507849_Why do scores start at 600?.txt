@@ -1,0 +1,22 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+
+### Why do scores start at 600?
+I joined this competition a couple of days ago and I was wondering why all
+scores start on 600 and not 500 or just 0? could someone please explain this
+to me?
+
+
+## 2 Comments
+
+
+### [RS Turley](/rturley)
+It's explained in the competition overview
+([www.kaggle.com/competitions/llm-20-questions/overview/evaluation](www.kaggle.com/competitions/llm-20-questions/overview/evaluation))
+Basically, they assume new entries have a skill rating that is centered on 600
+with a wide range of uncertainty. As the agent wins or loses, the skill rating
+moves up or down and the range of uncertainty narrows.
+
+
+### [OminousDude](/max1mum)
+Thanks very helpful!

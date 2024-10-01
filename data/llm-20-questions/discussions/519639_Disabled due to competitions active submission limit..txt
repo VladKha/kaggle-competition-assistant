@@ -1,0 +1,20 @@
+[G R Shanker Sai](/grshankersai) · 128th in this Competition · Posted 2 months
+
+### Disabled due to competitions active submission limit.
+Hi,  
+I have made 4 submissions, the latest one is performing the best, the second
+best performing agent is the first one which i submitted. but the first one
+has stopped playing games because it says "Disabled due to competitions active
+submission limit." how can i make sure that the agent which i submitted first
+is still in the competition?
+
+
+## 2 Comments
+
+
+### [OminousDude](/max1mum)
+You can only have 3 submissions at a time
+
+
+### [Junhua Yang](/junhuay)
+submit it again

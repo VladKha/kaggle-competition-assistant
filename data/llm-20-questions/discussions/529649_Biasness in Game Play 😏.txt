@@ -1,0 +1,31 @@
+[Kuldeep Rathore](/kuldeeprathoree) · 431st in this Competition · Posted 11
+days ago
+
+
+### Biasness in Game Play 😏
+Some of the players played more than **40 games** in last **10 hours** and
+some played just **4 games**.  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8073405%2Fda16fd5c3529151f7de20662b56afa1a%2Fjake-
+johnson-sad-face.gif?generation=1724302101857360&alt=media)
+
+
+## 2 Comments
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+It seems that top rank teams get more plays, to make them converge. I was at
+the top then kicked out immediately after few games.
+Low rank agents get fewer plays, but score grows faster
+
+
+### [Kuldeep Rathore](/kuldeeprathoree)
+I feel like no one got a fair chance to play in this competition from day 1
+because of the poor game environment.
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+They are mainly focused on converging the agents to their proper rank. I was
+sitting at 720+ place pairing with agent that only answers no with score <400
+or less. Now both of my agents converge to the same score with one of them
+scored 400 the day before yesterday.

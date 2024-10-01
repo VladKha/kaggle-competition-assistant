@@ -1,0 +1,62 @@
+[hoon0303](/hoon0303) · 47th in this Competition · Posted 10 days ago
+
+
+### Why Do NaN Occur in LLM Agent Competitions?
+I often observe NaNs occurring in agent-based competitions. Is there any way
+to effectively observe or detect these NaN in order to understand why they
+happen?
+
+
+## 5 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+We've made some improvements to the back end and the NaN issue should be
+resolved!
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+I've been looking into this, the NaNs are a result of a failure during the
+initialization phase (when downloading all the agents). This is the first
+simulation competition we've run where the agent sizes are all 10-20 GB so I'm
+guessing the large size is causing as issue somewhere. Looking into a fix for
+this currently.
+
+
+### [Azat Akhtyamov](/azakhtyamov)
+The issue isn't just that the game crashed; the real concern is that it likely
+impacts the scoring. For instance, I had a game that crashed, and after that,
+the agent didn't play any games for two hours (which is unusual because it
+should have started a new game immediately after the error).
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+nan will make the score converge, if agents are lucky to get nan at high
+score, they will be staying there …
+
+
+### [raconion](/raconion)
+On the other hand, if an agent is unlucky to get nans at low score, they will
+be staying there too…
+
+
+### [yuanzhe zhou](/yuanzhezhou)
+I was this case lol
+
+
+### [loh-maa](/lohmaa)
+[@yuanzhezhou](https://www.kaggle.com/yuanzhezhou) if these games are not even
+recorded or accounted for, the ranking algorithm doesn't even know they
+happened and so they should not affect the scoring directly. Although they
+could affect it indirectly if there's some statistical bias with respect to
+the pairings for which they occur -- then some pairings would "avoid" being
+evaluated properly.
+
+
+### [loh-maa](/lohmaa)
+So far they are a mystery, it looks like they're not even logged in the
+system, i.e. meta-kaggle.

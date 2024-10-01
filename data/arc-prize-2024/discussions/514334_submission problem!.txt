@@ -1,0 +1,34 @@
+[hone Jec](/honejec) · 839th in this Competition · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### submission problem!
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F9706897%2Fd1a22ca92c230d9b070540315758ca83%2FSnipaste_2024-06-24_00-52-13.png?generation=1719161608093211&alt=media)  
+How to solve this submit problem. thks
+comment
+
+
+## 2 Comments
+
+
+### [inversion](/inversion)
+Kaggle Staff
+arrow_drop_up0
+  * format_quote
+  * link
+Please see this post:
+<https://www.kaggle.com/competitions/arc-prize-2024/discussion/514034>
+
+
+### [Van de Rakt](/vanderakt)
+arrow_drop_up0
+  * format_quote
+  * link
+I have a similar problem is you select a .gz is says the other way around.
+What are we missing here?

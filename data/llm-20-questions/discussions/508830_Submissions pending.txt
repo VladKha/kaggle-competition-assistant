@@ -1,0 +1,76 @@
+[tr](/toma78) · 124th in this Competition · Posted 3 months ago
+
+
+### Submissions pending
+My last two submissions are pending for 14 and 11 hours now. Previous similar
+submissions took less than an hour to be tested, so… am I the only one
+experiencing this?
+
+
+## 7 Comments
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Our worker machines went offline for a few hours, we are working to bring them
+back online now. Thanks for reporting!
+
+
+### [OminousDude](/max1mum)
+When do you estimate the servers will be back?
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+Servers are back, they are making their way through the backlog of unfinished
+games. I'll post an estimate of when they will be caught up
+
+
+### [OminousDude](/max1mum)
+Ok thank you very much hopefully my models submit soon.😁
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+
+There are about 2k matches that have been scheduled that the servers need to
+play through. Servers should catch up in the next 12-18 hours.
+
+
+### [OminousDude](/max1mum)
+Wow thats a lot but thank you for finding this thread pretty quickly cause if
+you didn't who knows when they would be back on. Thank you for helping us!
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+They are back up!
+
+
+### [OminousDude](/max1mum)
+This is way too long mine been running for 16 hours 😑  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F1bfdccb72d298163d71cc5a16f578375%2FScreenshot%20from%202024-05-31%2013-19-09.png?generation=1717175984178789&alt=media)
+
+
+### [OminousDude](/max1mum)
+Same for me!  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2F5d69e32a16200f65a12a525fdbe7e69e%2FScreenshot%20from%202024-05-31%2009-40-50.png?generation=1717162873061617&alt=media)
+
+
+### [OminousDude](/max1mum)
+I also have this weird error wich makes my new agent not run against anyone
+(13 hours ago)  
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F8531166%2Fdebc0037da127cd273d7b992761c590a%2FScreenshot%20from%202024-05-31%2009-42-14.png?generation=1717162942910792&alt=media)
+
+
+### [VolodymyrBilyachat](/vovikdrg)
+You are not alone :)
+
+
+### [Ramdhan Russell](/ramdhanrussell)
+Same sadly

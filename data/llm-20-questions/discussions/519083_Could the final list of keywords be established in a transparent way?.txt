@@ -1,0 +1,144 @@
+[loh-maa](/lohmaa) · 3rd in this Competition · Posted 2 months ago
+
+### Could the final list of keywords be established in a transparent way?
+There's plenty of speculation and uncertainty regarding the keywords, in
+particular the final list of keywords. We know from announcements, that hosts
+will be watching the situation and reacting appropriately to ensure fair
+competition. I don't know if the list of keywords is a subject for such
+appropriate adjustments, but it seems likely. In my humble opinion, reacting
+to the situation on the LB in the upcoming phase of the competition
+specifically by adjusting the final list of keywords would be rather unfair.
+Potentially even very unfair. It would be like moving a goalpost, and
+intentionally or unintentionally, favoring some solutions at the expense of
+others.
+Of course there's no ground to believe our hosts are not impartial, although
+sometimes even impartial intent can have a partial effect. Fortunately there's
+a simple way to handle this without leaving any trace of doubt and cut short
+any later speculation about the conduct and the final set -- that is
+**preparing the final list of keywords well before the deadline and celebrate
+the occasion by announcing the hash key of the final list** (e.g. SHA256 or
+any other.) This way everybody could rest assured that the final list was not
+influenced by any hot situation on the LB shortly before the deadline or any
+particular final solutions submitted. It would also reassure everybody
+beforehand that the list is ready and final, and so they don't need to worry
+about any last minute changes. Also giving an opportunity to describe the
+final list in a manner fair to everyone.
+Certainly I don't want to be alone in this call, so please give it a reaction
+if you agree, I'm sure our hosts would consider it more seriously then.. ,)
+
+
+## 4 Comments
+
+
+### [Valentin Baltazar](/valentinbaltazar)
+Just a beginner here…but as someone who took a lot of time to learn about LLMs
+just to even try and compete here, it is a bit disappointing seeing all the
+top LB models have the questions and keywords guesses hard coded and not
+really using LLMs. But I am in no way going for the top spots just was
+surprised since the title is "LLM 20 Questions" I was assuming LLMs. Still
+learning a lot through the shared notebooks so thanks all!
+
+
+### [loh-maa](/lohmaa)
+[@valentinbaltazar](https://www.kaggle.com/valentinbaltazar) Although that's
+another story, don't worry, as far as I know, LLMs are still very useful.
+Especially when used creatively and mixed with other approaches. Just point
+yourself in the direction of your dreams. Find your strength in the sound, and
+make your [transition](https://www.youtube.com/watch?v=rqdrtzCaSHw).
+
+
+### [OminousDude](/max1mum)
+I am not sure if I understand your point do you mean to say that the hosts
+should show us the list of private LB keywords?
+
+
+### [loh-maa](/lohmaa)
+[@max1mum](https://www.kaggle.com/max1mum) No, of course not to show, but just
+to establish it well before the deadline in a way that would rule out any
+possibility of influence from the LB. I think the situation may get hot
+shortly before the deadline and if the list of keywords is still an open
+matter then it may get unpleasantly messy.
+
+
+### [OminousDude](/max1mum)
+I beleive that this would make the competition worse for example if someone
+finds an unfair or "unusual" strategy he keywords can be changed to remove
+this competitor.
+
+
+### [loh-maa](/lohmaa)
+[@max1mum](https://www.kaggle.com/max1mum) I'm surprised anyone could think
+that "unusual" strategies would be unfair… ;) … as far as I know there are no
+rules about allowed or disallowed strategies (except private sharing,
+collusion, etc.) So actually changing the keywords in response to a particular
+strategy would be unfair. I don't believe hosts would ever consider such a
+move, nevertheless there is a possibility of being influenced by the
+situation.
+
+
+### [OminousDude](/max1mum)
+I have a feeling I know what strategy you want to use for private LB 🫣
+
+
+### [Van Mason](/vanmason)
+As far as ‘unusual’ strategies go, I would say a binary search agent or an
+agent that simply knows all the keywords prior does not seem very in the
+spirit of the competition and these agents might benefit more than an LLM from
+an unchanging keyword list.
+
+
+### [OminousDude](/max1mum)
+This is true that is why private LB needs to be different than public. Not
+pointing fingers but [@lohmaa](https://www.kaggle.com/lohmaa) is one of the
+forebearers of such a strategy, but their is one way to adapt it for private
+LB 😉
+
+
+### [loh-maa](/lohmaa)
+[@max1mum](https://www.kaggle.com/max1mum) You make it sound like it was some
+kind of cheat. No it's not, it's not against the rules, it's just a non-LLM
+solution. I've published it and explained why I think it's good to use it. You
+can use it too, totally up to you.
+
+
+### [OminousDude](/max1mum)
+I am not at all calling it a cheat it just relies on other people using it. It
+is just one of the "unusual" strategies since it not only benefits one person
+but all that use it together. The way you made it will not work on private LB
+so it is a bit "unfair" as it fills the public LB with spoof/fake scores that
+will not reflect the private LB. I totally agree it is legal it is just like
+an extremely "overfitted" code. I also believe alpha is a very good idea
+strictly for public LB.
+
+
+### [loh-maa](/lohmaa)
+[@max1mum](https://www.kaggle.com/max1mum) The whole competition has a crucial
+social and communication factor. Your agent's performance depends on how well
+it can communicate with others, not how smart it is in isolation. But I
+totally understand your skepticism. To speak bluntly… what if I could prove
+you wrong? That is, if you didn't change the keywords after seeing my final
+solution… ;) That's my request speaking bluntly. It's a request for
+transparency, although I'm not sure if you can see it that way. Perhaps some
+people would think that I'm trying dirty tricks for my own benefit. Let them
+be. I'm not asking to see the keywords -- I think that would surely mean I'm a
+lunatic, no? If you read my post, I'm asking to "finalize" the list of
+keywords before players start submitting their final solutions. Because
+exactly changing the list of keywords in response to those solutions would be
+unfair. Who knows, maybe we're even going to hear calls like "Oh! That's
+unfair! That terrible strategy is unfairly beating decent players who honestly
+are trying to squeeze out LLMs! We have to change the list of keywords!"
+hahaha.. I'm exaggerating obviously.. no hard feelings^^
+
+
+### [OminousDude](/max1mum)
+Again I believe that I know your idea for the final submission and if it is
+what I think it is I have already done it and have it ready to launch from my
+local. I don't see any problem with your code other than a slight, slight
+"teaming" problem and I fully understand it is a totally fair and respectable
+agent. I also think that if the Kaggle team can give us a pre-made hash code
+for the output then that would be preferable. However, I am not sure if the
+Kaggle team is fully done with the private LB, since the second objects-
+included set of keywords had a 2-3 week delay. But only time will tell. I will
+second this request for transparency if and only if there is:  
+1) No way to get the final keyword set ahead of time  
+2) The current keywords will NOT be included in the final list

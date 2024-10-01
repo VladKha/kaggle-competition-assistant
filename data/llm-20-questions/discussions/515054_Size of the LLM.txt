@@ -1,0 +1,17 @@
+[G R Shanker Sai](/grshankersai) · 128th in this Competition · Posted 2 months
+
+### Size of the LLM
+Hello,  
+I have a question on choosing the model,  
+Is there any restriction on choosing a model (<=7B parameters)? or can I
+choose a model which is much larger?
+
+
+## 1 Comment
+
+
+### [Bovard Doerschuk-Tiberi](/bovard)
+Kaggle Staff
+Competitors have to run their model on a NVIDIA T4 (16GB). In practice using
+the bitsandbyte pip package a 7B param model is about the largest anyone has
+been able to run.

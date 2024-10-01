@@ -1,0 +1,127 @@
+[OminousDude](/max1mum) · 611th in this Competition · Posted 3 months ago
+
+
+### Binary search models are not very useful and LLM Models aiding binary
+search models is not beneficial
+First of all, I will advise against binary models because as one of the
+competition creators says
+> "We will be changing out the list of words after the submission deadline and
+> then we'll wait for the scores to stabilize. Any agent assuming a fixed word
+> list will perform quite poorly."
+Secondly, I recently saw in my logs that I (and many other people) were going
+against binary search strategies. The main type of which is letter guessing
+strategies in which the guesser will ask if the keywords' first letter is
+between a-g then g-m and so on. To help my model I decided to implicitly tell
+it the first letter of the keyword. So inside my prompt-engineering/context, I
+told my model
+> The keyword is "{keyword}" and the first letter of the keyword is
+> "{keyword[0]}"
+This however does not help the model and instead hinders its performance and
+score by quite a bit. I could not imagine why this would happen and if someone
+had any ideas I would love to see them in the comment section.
+I made this discussion to advise against helping (and using) binary search
+models as they will also eventually be almost completely useless in the
+private leaderboard at the end since practically all the keywords will change.
+If you find this discussion helpful please upvote. Thank you for reading and I
+hope this helps you!
+
+
+## 4 Comments
+
+
+### [waechter](/waechter)
+Thanks for sharing your thoughts !
+> This however does not help the model and instead hinders its performance and
+> score by quite a bit
+How did you mesure the performance ? I think the leaderboard score is too
+random to consider right now, and it's better to check if the question are
+answered correctly.  
+From what i saw in [my
+notebook](https://www.kaggle.com/code/waechter/llm-20-questions-leaderbord-
+analyze-best-agents?scriptVersionId=180667811&cellId=30) your agent answer
+questions like `is the last letter of the keyword in this list` correctly. So
+maybe your model don't need that extra help ?
+
+
+### [OminousDude](/max1mum)
+I decided to subimt my models at the same time and take the average of all the
+movements from all games. And this
+> From what i saw in my notebook your agent answer questions like is the last
+> letter of the keyword in this list correctly. So maybe your model don't need
+> that extra help ?
+is weird because I saw my model fail on these cases but it might have bean an
+older version.
+
+
+### [OminousDude](/max1mum)
+This might be useful for your model but for my model it did not improve.
+
+
+### [Lucas Fernandes](/lucasfernandes03)
+why do you assume the binary search model wouldn't have access to all words?
+and LLM will also need to use datasets to find an answer the same way the
+binary search model would
+
+
+### [Marek Przybyłowicz](/marekgp)
+Exactly my thoughts. A dictionary of all english words (around 0.5m) is barely
+5MB. Why not load them all?
+Where I would see a problem is the speed of finding the answer.
+
+
+### [Lucas Fernandes](/lucasfernandes03)
+the way I’m working on it is the search corresponds to the questions asked so
+it’s actually fast enough the challenge is making the tree in a way that every
+word has a unique path that can be found in under 20 questions
+
+
+### [OminousDude](/max1mum)
+The problem with words is that the dictionary is not going to have "mount
+fuji" or "federated states of micronesia" and the keyword list will not be
+revealed so binary search strategies will fail.
+
+
+### [Lucas Fernandes](/lucasfernandes03)
+I see what you mean but there are so many databases for specific topics online
+like mount fuji will definitely be in one you are right however for something
+like federated states of micronesia that it probably won’t be in the BST but I
+honestly doubt any LLM will be able to find something like that in under 20
+questions, also the staff probably will work on adding a lot of different
+words but I wouldn’t think they would go this much in detail I don’t know I
+guess we’ll see best of luck to you and your strategy
+
+
+### [OminousDude](/max1mum)
+Best of luck to you too. However, the competition hosts state
+> The list of possible words will change after the final submission deadline
+> (meaning you won't be able to update your agent with the new list). I would
+> strongly advise against any strategies that hard code in the list of
+> possible words.
+and
+> We will be changing out the list of words after the submission deadline and
+> then we'll wait for the scores to stabilize. Any agent assuming a fixed word
+> list will perform quite poorly.
+So if the binary search has one keyword that is prominent in the train it will
+either be removed in private LB or be a lot rarer. Again best of luck!
+
+
+### [Lucas Fernandes](/lucasfernandes03)
+I completely agree in the sense that if the keyword isn’t in the decision tree
+it’s impossible for the model to predict it but the limit of words being about
+1,000,000 mathematically makes me think the decision tree can perform well
+since finding that many words and categorizing them is very possible, just a
+long process.
+
+
+### [Marek Przybyłowicz](/marekgp)
+Yeah, but there are literally Fuji and Micronesia which are alternatives. If
+you want to argue, it's possible to add Mt or mountain or other suffixes, but
+they are totally random in the sample data. Like, why have "Mount Etna" and
+"Mt Etna" but not "Etna" which is obviously more popular?  
+I have no idea how organizers plan to create a dataset which works for LLMs
+and not for binary search on modified set of all words in English language.  
+Also, as Lucas said: simple decision tree can easily check a bit more than 1m
+of possible words.
+Anyway. There was a competition in which hacking the metric was more viable
+than improving the model, so it's possible that a solution from the 80s (or
+something) game show will work here. I wouldn't strike it off so fast.

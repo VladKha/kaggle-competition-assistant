@@ -1,0 +1,33 @@
+[Agajan Torayev](/torayeff) · Posted 3 months ago
+arrow_drop_up1
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### No private leaderboard?
+Hi all!
+I am a little confused by how there is no private leaderboard. Here,
+<https://arcprize.org/guide>, it says:
+> To ensure fair evaluation results, be sure not to leak information from the
+> evaluation set into your algorithm (e.g. by looking at the tasks in the
+> evaluation set yourself during development, or **by repeatedly modifying an
+> algorithm while using its evaluation score as feedback.**)
+But if this leaderboard is calculated with all of the test data, are we not
+violating the above-quoted recommendation by modifying an algorithm using the
+score from the leaderboard?
+comment
+
+
+## 1 Comment
+
+
+### [waechter](/waechter)
+arrow_drop_up1
+  * format_quote
+  * link
+Hello!  
+Take a look at <https://www.kaggle.com/competitions/arc-
+prize-2024/discussion/511840#2872497> Host answered a similar question

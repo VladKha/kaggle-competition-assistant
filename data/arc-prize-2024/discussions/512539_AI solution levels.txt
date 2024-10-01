@@ -1,0 +1,103 @@
+[Dmitriy Gakh](/dmitriygakh) · Posted 3 months ago
+arrow_drop_up5
+
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### AI solution levels
+Hello.
+Can my development model be used for this AI model development? Probably it
+could bring new ideas and be useful. I think achievement of level 2.4 is Ok.
+It includes self-improvement (2.2), mutations (2.3), and detection of the best
+solution (2.4 - innovations). Does Python have the appropriate libraries or
+does it require low-level code development of absent functionality? Or it is a
+question of developing an appropriate framework? I would appreciate your
+comments.
+# A look at AI solutions (AIS) development levels based on SLMHM
+See the reference at the end of the article for what SLMHM is.
+
+
+## Pattern 1. Structure
+This is a pattern of knowledge. It is a level of modern AI models.
+1.1. Desire. The purpose of AIS.  
+1.2. Intention. Function leading to AIS development/learning. For example, it
+can be reinforcement learning or other.  
+1.3. Feasibility. Algorithm, software, hardware, data.  
+1.4. Action. Running and getting results.
+
+
+## Pattern 2. Intelligence
+This is a pattern of self-development models. It is the level of general AI
+models.
+2.1. Evaluation. AIS can evaluate what is OK and what is Not OK as the
+minimum. It includes the evaluation of not only data but also the AI model
+itself.  
+2.2. Improvement. AIS can improve itself.  
+2.3. Alternatives. AIS can generate/evaluate alternatives to be used for its
+improvement.  
+2.4. Innovations. Here is the level where innovations can be detected.
+Innovations should be able to be detected.
+
+
+## Pattern 3. Connectivity
+This is a pattern of AI models capable of developing interactions with the
+environment.
+3.1. Reward. AIS can evaluate what is OK and what is Not OK with itself as the
+minimum. The evaluation includes interactions with the environment.  
+3.2. Optimization. AIS optimizes interactions with the environment on base of
+the evaluation of the previous level.  
+3.3. Synergy. AIS operates in synergy with the environment.  
+3.4. Extraordinary. Here is the level where extraordinary innovations can be
+detected.
+
+
+## Pattern 4. Creativity
+This is a pattern of AI models capable of creating. Creatures can include many
+types of things, including other AI models.
+4.1. Information. AIS can interact with the environment on base of a wide
+spectrum of data types, including generating new data.  
+4.2. Streamlining. AIS can interact with the environment in real-time,
+optimizing the interaction.  
+4.3. Expansion. AIS can expand interaction channels.  
+4.4. Totality. AIS is presented anywhere.
+
+
+## Reference
+Gakh, D., A Look at Evolution of Teams, Society, Smart Cities, and Information
+Systems based on Patterns of Primary, Adaptable, Information, and Creative
+Society, Proceedings of the 17th Conference on Computer Science and
+Intelligence Systems, M. Ganzha, L. Maciaszek, M. Paprzycki, D. Ślęzak (eds).
+ACSIS, Vol. 30, pages 701–704 (2022), <http://dx.doi.org/10.15439/2022F34>
+comment
+
+
+## 2 Comments
+
+
+### [G John Rao](/jaejohn)
+arrow_drop_up3
+  * format_quote
+  * link
+Thank you for the great read.
+Here's my take (Pattern 2: Intelligence)
+2.1. Evaluation  
+Evaluation Metrics - Scikitlearn, Pytorch
+2.2. Improvement  
+Reinforcement Learning, Meta Learning
+2.3. Alternatives  
+Genetic Algorithms - DEAP  
+Bayesian Optimization - Optuna  
+Neural Architecture Search (NAS) - NASLib
+2.4. Innovations  
+Evaluation Metrics - Scikitlearn, Pytorch  
+Novelty Search Algorithms - Custom implementation of the metric to discover
+novel solutions
+
+
+### [wwiji](/deepsadness)
+arrow_drop_up1
+  * reply
+thanks you

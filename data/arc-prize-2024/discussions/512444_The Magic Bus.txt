@@ -1,0 +1,47 @@
+[James Huddle](/jameshuddle) · 542nd in this Competition · Posted 3 months ago
+arrow_drop_up0
+  * notifications
+  * create_new_folder
+  * bookmark_border
+  * format_quote
+  * link
+
+### The Magic Bus
+It's hard to come up with a good analogue of what is being asked, here. It's
+AGI. But not quite. It's just enough AGI to clear some kind of hurdle. But can
+you code "part of" a solution? Surely an entity like AGI would have to be
+considered as a whole. Like you can't really code 1/2 of a for-loop. At some
+point, you gotta put a "whole" something out there. For lack of a better
+analogy, I will call it a bus. 1/2 of a bus is worthless. You may not need the
+windmill attached to the top of the bus, but the parts that meet the
+requirement (in this case, AGI), all of those parts are required. The whole
+bus. That is the analogue that I will use to explain my approach to this
+"challenge!"
+comment
+
+
+## 2 Comments
+
+
+### [G John Rao](/jaejohn)
+arrow_drop_up0
+  * format_quote
+  * link
+What if there is no bus at all? I see this challenge as a step towards
+improving the current capabilities. It's an open fact, LLMs suck at reasoning.
+But what is reasoning for an LLM? Or rather in problem solving? Does it all
+comes down to pattern recognition? Or there's more to it? We'll find that out
+soon
+
+
+### [James Huddle](/jameshuddle)
+arrow_drop_up1
+  * format_quote
+  * link
+Nice. LLMs were developed for pattern recog. If you can recognize a pattern,
+you can make a prediction. All the current hype is sprouting from those two
+main concepts. And when you just take data from the internet, I won't get into
+it. I think ARC is incredible. It's like the crack of a home run being hit out
+of the field after an extra sleepy 2 hours of summer sun. I plan to ace this
+exam.  
+…"no bus at all…"

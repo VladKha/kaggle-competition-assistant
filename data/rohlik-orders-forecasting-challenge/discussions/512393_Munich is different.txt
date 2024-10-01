@@ -1,0 +1,66 @@
+[Yan Teixeira](/yantxx) · 19th in this Competition · Posted 3 months ago
+
+
+### Munich is different
+The Prague warehouse was founded in 2014 (or earlier), the Brno warehouse in
+2015, and the Budapest warehouse in 2019. These operations were all well-
+established when the historical data started being recorded. This is probably
+why we see a clear seasonal pattern for these locations.
+The Munich warehouse was founded in late 2021, and we can see how the orders
+started to grow quickly.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13062964%2Fcd5f65c142e7d506952fffc26f458099%2Fmunich_1.png?generation=1718409913060427&alt=media)
+What I first noticed is the increase in orders right after January 2022. This
+behavior is the opposite of that seen in the established warehouses, where
+orders start to decrease. My current theory is that since the brand is new in
+the town, the demand has yet to normalize.
+Another important period for this warehouse seems to be from September to
+October 2023, when orders started increasing significantly.
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-
+attachments/o/inbox%2F13062964%2Fe7836f79f517a5c99f684c6d7d8cd834%2Fmunich_2.png?generation=1718411076745627&alt=media)
+Daily orders exceeded 5,000, which is twice the volume of previous periods. It
+is clear that Rohlik must have made some type of investment, so [I searched
+the news and found this](https://www.rockawaycapital.com/en/2023/10/rohlik-
+group-acquires-bringmeister-e-supermarket-from-rockaway-capital-which-is-
+becoming-shareholder-of-entire-rohlik-group/).
+Maybe this information should be consider when forecasting. Will Munich's
+orders continue to increase?
+
+
+## 4 Comments
+
+
+### [Cosimo D'Amicis](/dcosimo)
+Like many, I've found that keeping warehouses separate will definitely improve
+on the forecasting. And it makes sense, as they're based in different
+countries and it looks like their business strategy, its history, and its
+future are different. Germany is definitely much different than Czech Republic
+and Hungary, and its market is showing a different path in growth. I think
+this should be taken into account, probably by estimating different models for
+different time intervals of the series. This also means there could be two
+approaches, one more relevant for the competition itself, and one more
+relevant for a real-life scenario.
+
+
+### [Aryan Pahwani](/aryanpahwani)
+Another reason for that increase could also be Covid ending.
+In all 3 Nations, there was a massive Covid wave right after 2022, which is
+what led to the decrease in sales.
+New cases of Covid in Germany ended around April 2023, according to
+[worldometers.](https://www.worldometers.info/coronavirus/country/germany/)
+There seems to be an increase in every other store around that time as well
+even though the investment, Bringmeister E-Supermarket, is [only available in
+Munich.](https://www.algolia.com/customers/bringmeister/)
+
+
+### [yunsuxiaozi](/yunsuxiaozi)
+Thank you for your discovery. I noticed that the 'orders' of' Munich_1 'have
+increased from 1000 to 6000, which has brought difficulty to the learning of
+the model. I calculated the' MAPE 'separately for each' warehouse 'and found
+that it is particularly large. On the other hand, when fine-tuning the
+prediction results, I can also give it a larger weight.
+
+
+### [Yan Teixeira](/yantxx)
+I'm happy to help. Indeed, keeping track of each warehouse's MAPE is a good
+way to identify where the model is struggling
