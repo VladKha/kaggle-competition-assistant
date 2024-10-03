@@ -62,13 +62,12 @@ To scrape a new version / new competition, use the utility function from the lib
 ```python
 from kaggle_competition_assistant import scrape_competition_data
 
-competition_slug = 'arc-prize-2024'
-scrape_competition_data(competition_slug=competition_slug, path='data')
+scrape_competition_data(competition_slug='arc-prize-2024', path='data')
 ```
 After calling this function the scrapped data will be saved into `data/arc-prize-2024` directory
 and will be ready for ingestion by the assistant.
 
-Depending on the number of pages in the discussion forum scrapping can take some time (~1 hour for arc-prize-2024).   
+Depending on the number of pages in the discussion forum scrapping can take some time (~1 hour for `arc-prize-2024`).   
 Scraping speed is limited by Kaggle rate limits.
 
 Currently, the following information is scrapped:
