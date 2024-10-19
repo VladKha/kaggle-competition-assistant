@@ -129,9 +129,5 @@ Key folders and files:
 3. [Voice support](docs/voice_support.md)
 
 
-## Project self-evaluation
-See self-evaluation with some supplemental comments in [project_self_evaluation.md](docs/project_self_evaluation.md)
-
-
 ## TODOs
 See potential future improvements in [TODO.md](docs/TODO.md)
